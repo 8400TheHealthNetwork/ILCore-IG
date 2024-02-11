@@ -1,0 +1,119 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/MedicationStatement/MedicationStatement-Fluoxetine-20-mg> a fhir:MedicationStatement ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "MedicationStatement-Fluoxetine-20-mg"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Active medication statement reported by a practitioner regarding a patient in a long term care facility for long-term, continuous use of 20mg/day Prozac (Fluoxetine) taken each morning.</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "continuous" ] ;
+         fhir:display [ fhir:v "Continuous long term therapy" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/medication-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "community-other" ] ;
+       fhir:display [ fhir:v "Community Care/Long Term Care/Home" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:372767007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "372767007" ] ;
+       fhir:display [ fhir:v "Fluoxetine (substance)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-with-israeli-id> ;
+     fhir:reference [ fhir:v "Patient/patient-with-israeli-id" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "תמר כהן" ]
+  ] ; # 
+  fhir:context [
+     fhir:link <http://fhir.health.gov.il/Encounter/123> ;
+     fhir:reference [ fhir:v "Encounter/123" ] ;
+     fhir:type [ fhir:v "Encounter"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2022-10-05"^^xsd:date ] ;
+     fhir:end [ fhir:v "2022-10-10"^^xsd:date ]
+  ] ; # 
+  fhir:dateAsserted [ fhir:v "2022-07-30"^^xsd:date] ; # 
+  fhir:informationSource [
+     fhir:link <http://fhir.health.gov.il/Practitioner/1> ;
+     fhir:reference [ fhir:v "Practitioner/1" ] ;
+     fhir:type [ fhir:v "Practitioner"^^xsd:anyURI ]
+  ] ; # 
+  fhir:dosage ( [
+     fhir:text [ fhir:v "20mg per day every morning" ] ;
+     fhir:timing [
+       fhir:repeat [
+         fhir:when ( [ fhir:v "MORN" ] )
+       ]
+     ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         a sct:738995006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "738995006" ] ;
+         fhir:display [ fhir:v "Swallow (administration method)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "20"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:rate [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "mg" ] ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "hour" ]
+         ]
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

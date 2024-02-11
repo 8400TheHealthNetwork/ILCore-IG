@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationRequest xmlns="http://hl7.org/fhir">
+  <id value="metamizole-for-gangreenous-tonsolitis"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-medication-request"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">A request by a GP in an HMO setting for 10 drops of oral Optalgin (Metamizole) up to 3 times a day for the duration of two weeks due to a diagnosis of acute gangrenous tonsillitis.</div>
+  </text>
+  <status value="completed"/>
+  <intent value="order"/>
+  <category>
+    <coding>
+      <system value="http://fhir.health.gov.il/cs/il-core-medicationrequest-category"/>
+      <code value="community-hmo"/>
+      <display value="Community Care/HMO"/>
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="22165008"/>
+      <display value="Metamizole sodium (substance)"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/1"/>
+    <type value="Patient"/>
+    <display value="Ben Binyamini"/>
+  </subject>
+  <encounter>
+    <reference value="Encounter/123"/>
+    <type value="Encounter"/>
+    <display value="GP HMO visit"/>
+  </encounter>
+  <supportingInformation>
+    <reference value="Observation/1"/>
+    <type value="Observation"/>
+  </supportingInformation>
+  <authoredOn value="2022-12-10"/>
+  <requester>
+    <reference value="Practitioner/practitioner-md"/>
+    <type value="Practitioner"/>
+    <display value="Dr. Moshe Ben Haim"/>
+  </requester>
+  <recorder>
+    <reference value="Practitioner/10"/>
+  </recorder>
+  <reasonCode>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="652005"/>
+      <display value="Gangrenous tonsillitis"/>
+    </coding>
+  </reasonCode>
+  <courseOfTherapyType>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+      <code value="acute"/>
+      <display value="Short course (acute) therapy"/>
+    </coding>
+  </courseOfTherapyType>
+  <dosageInstruction>
+    <text value="10 טיפות כל 8 שעות עד 3 פעמים בבליעה דרך הפה"/>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="738995006"/>
+        <display value="Swallow (administration method)"/>
+      </coding>
+    </method>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="10"/>
+        <unit value="drop"/>
+        <system value="http://unitsofmeasure.org"/>
+      </doseQuantity>
+      <rateRatio>
+        <numerator>
+          <value value="10"/>
+          <unit value="drop"/>
+        </numerator>
+        <denominator>
+          <value value="8"/>
+          <unit value="hour"/>
+        </denominator>
+      </rateRatio>
+    </doseAndRate>
+  </dosageInstruction>
+  <substitution>
+    <allowedBoolean value="true"/>
+  </substitution>
+</MedicationRequest>

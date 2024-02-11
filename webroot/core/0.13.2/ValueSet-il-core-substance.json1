@@ -1,0 +1,119 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-substance",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  105590001 (Substance)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  373873005 (Pharmaceutical / biologic product (product))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  373782009 (Diagnostic substance (substance))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  410942007 (Drug or medicament (substance))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  762766007 (Edible substance (substance))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  260769002 (Material (substance))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  115668003 (Biological substance)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  91720002 (Body substance)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  255640000 (Biocide)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  78621006 (Physical force)</li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html\"><code>http://hl7.org/fhir/sid/cvx</code></a></li><li>Import all the codes that are contained in <a href=\"ValueSet-il-core-medication-code.html\">ILCore Medication Code</a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-substance",
+  "version" : "0.13.2",
+  "name" : "ILCoreSubstance",
+  "title" : "IL Core Substance Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for Substances for the IL Core",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "105590001"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373873005"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "373782009"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "410942007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "762766007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "260769002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "115668003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "91720002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "255640000"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "78621006"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/cvx"
+    },
+    {
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/il-core-medication-code"]
+    }]
+  }
+}

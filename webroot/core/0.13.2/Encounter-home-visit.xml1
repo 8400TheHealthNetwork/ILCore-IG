@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="home-visit"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Encounter: Home Visit</div>
+  </text>
+  <identifier>
+    <system value="http://fhir.bait-balev.avot.co.il/identifier/entity-id/encounter"/>
+    <value value="123241"/>
+  </identifier>
+  <status value="in-progress"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="HH"/>
+    <display value="home health"/>
+  </class>
+  <serviceType>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="439708006"/>
+      <display value="Home visit (procedure)"/>
+    </coding>
+  </serviceType>
+  <subject>
+    <reference value="Patient/patient-israeli-with-statistical-area"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-md"/>
+    </individual>
+  </participant>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/condition-type-1-diabetes"/>
+    </condition>
+    <use>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/diagnosis-role"/>
+        <code value="AD"/>
+        <display value="Admission diagnosis"/>
+      </coding>
+    </use>
+    <rank value="1"/>
+  </diagnosis>
+  <hospitalization>
+    <admitSource>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/patient-admit-source-moh"/>
+        <code value="11"/>
+        <display value="מכבי"/>
+      </coding>
+    </admitSource>
+  </hospitalization>
+  <serviceProvider>
+    <identifier>
+      <system value="http://institutions.health.gov.il/Institutions"/>
+      <value value="21702"/>
+    </identifier>
+    <display value="בית בלב ראשון לציון"/>
+  </serviceProvider>
+</Encounter>

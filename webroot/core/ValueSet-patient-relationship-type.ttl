@@ -1,0 +1,61 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/patient-relationship-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-relationship-type"] ; # 
+  fhir:language [ fhir:v "en-US"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v2-0131.html\"><code>http://terminology.hl7.org/CodeSystem/v2-0131</code></a></li><li>Include codes from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a> where concept  is-a  <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-_PersonalRelationshipRoleType\">_PersonalRelationshipRoleType</a></li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-GUARD\">GUARD</a></td><td>Guardian</td><td>The role played by a person or institution legally empowered with responsibility for the care of a ward.</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-HPOWATT\">HPOWATT</a></td><td>healthcare power of attorney</td><td>A relationship between two people in which one person authorizes another to act for him or her in a manner which is a legally binding upon the person giving such authority as if he or she personally were to do the acts that continues (by its terms) to be effective even though the grantor has become mentally incompetent after signing the document.</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/patient-relationship-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCorePatientRelationshipType"] ; # 
+  fhir:title [ fhir:v "IL Core Patient Relationship Type codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A set of codes that can be used to indicate the relationship between a Patient and a Related Person."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0131"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "_PersonalRelationshipRoleType" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "GUARD" ] ;
+         fhir:display [ fhir:v "Guardian" ]
+       ] [
+         fhir:code [ fhir:v "HPOWATT" ] ;
+         fhir:display [ fhir:v "healthcare power of attorney" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

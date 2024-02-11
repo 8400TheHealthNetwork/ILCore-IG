@@ -1,0 +1,49 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-route-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  284009009 (Route of administration values)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  418307001 (Exposure to biological agent (event))</li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-route-code",
+  "version" : "0.13.2",
+  "name" : "ILCoreRouteCode",
+  "title" : "IL Core Route Code",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for Route for the IL Core",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "284009009"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "418307001"
+      }]
+    }]
+  }
+}

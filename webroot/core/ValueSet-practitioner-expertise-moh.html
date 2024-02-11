@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>קוד מומחיות לעוסק בבריאות - IL Core Implementation Guide v0.13.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.121"}
+    h3,h4,h5,h6{--heading-prefix:"3.121"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IL Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.13.2 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://en.fhir-il-community.org/fhir-israel-core" target="_blank">ILCore Community</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>קוד מומחיות לעוסק בבריאות</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the IL-Core IG (v0.13.2: draft-1 Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.health.gov.il/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-practitioner-expertise-moh.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-practitioner-expertise-moh.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-practitioner-expertise-moh.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: קוד מומחיות לעוסק בבריאות
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh<button data-clipboard-text="http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh" title="Click to copy URL" class="btn-copy"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.13.2<button data-clipboard-text="http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh|0.13.2" title="Click to copy versioned URL" class="btn-copy"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-12-23
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PractitionerExpertiseMoH</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-il-core-practitioner.html">ILCore Practitioner Profile</a></li>
+</ul>
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+  <!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div><ul><li>Include all codes defined in <a href="CodeSystem-practitioner-expertise-moh.html"><code>http://fhir.health.gov.il/cs/practitioner-expertise-moh</code></a></li></ul></div>
+
+  <p>&nbsp;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-practitioner-expertise-moh.html">codesystem קוד מומחיות לעוסק בבריאות v0.13.2 (CodeSystem)</a></p><p>This value set contains 117 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td><td><b>Definition</b></td><td><b><a href="http://hl7.org/fhir/concept-properties#status">status</a></b></td></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh--999"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh--999">-999</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>לא ידוע</td><td>inactive</td><td><div><p>ערך ברירת מחדל במקרה שערך המומחיות לא קיים מאחר הגיע ריק</p>
+</div></td><td>deprecated</td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-0"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-0">0</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>ללא התמחות</td><td/><td><div><p>ערך ברירת מחדל כאשר ידוע כי לאיש המקצוע אין מומחיות מיוחדת במקצוע שלו</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-1"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-1">1</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה פנימית</td><td/><td><div><p>מומחיות ברפואה פנימית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-2"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-2">2</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>קרדיולוגיה</td><td/><td><div><p>מומחיות בקרדיולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-3"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-3">3</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>המטולוגיה</td><td/><td><div><p>מומחיות בהמטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-4"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-4">4</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אלרגולוגיה ואימונולוגיה קלינית</td><td/><td><div><p>מומחיות באלרגולוגיה ואימונולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-5"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-5">5</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחלות ריאה</td><td/><td><div><p>מומחיות במחלות ריאה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-6"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-6">6</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>גסטרואנטרולוגיה</td><td/><td><div><p>מומחיות בגסטרואנטרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-7"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-7">7</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אנדוקרינולוגיה</td><td/><td><div><p>מומחיות באנדוקרינולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-8"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-8">8</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>נפרולוגיה</td><td/><td><div><p>מומחיות בנפרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-9"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-9">9</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואת ילדים</td><td/><td><div><p>מומחיות ברפואת ילדים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-10"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-10">10</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>נוירולוגיה</td><td/><td><div><p>מומחיות בנוירולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-11"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-11">11</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכיאטריה</td><td/><td><div><p>מומחיות בפסיכיאטריה שייכת לתחום בריאות הנפשב במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-12"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-12">12</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיה כללית</td><td/><td><div><p>מומחיות בכירורגיה כללית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-13"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-13">13</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>נוירוכירורגיה</td><td/><td><div><p>מומחיות בנוירוכירורגיה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-14"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-14">14</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיה של בית החזה</td><td/><td><div><p>מומחיות בכירורגיה של בית החזה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-15"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-15">15</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיה אורתופדית</td><td/><td><div><p>מומחיות בכירורגיה אורתופדית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-16"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-16">16</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיה פלסטית</td><td/><td><div><p>מומחיות בכירורגיה פלסטית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-17"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-17">17</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיה אורולוגית</td><td/><td><div><p>מומחיות בכירורגיה אורולוגית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-18"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-18">18</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>דרמטולוגיה-מחלות עור ומין</td><td/><td><div><p>מומחיות בדרמטולוגיה-מחלות עור ומין שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-19"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-19">19</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחלות אף אוזן וגרון</td><td/><td><div><p>מומחיות במחלות אף אוזן וגרון שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-20"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-20">20</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחלות עיניים</td><td/><td><div><p>מומחיות במחלות עיניים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-21"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-21">21</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>הרדמה</td><td/><td><div><p>מומחיות בהרדמה שייכת למקצוע הרפואה ולמקצוע רפואת שיניים (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-22"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-22">22</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>יילוד וגינקולוגיה</td><td/><td><div><p>מומחיות ביילוד וגינקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-23"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-23">23</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רדיולוגיה אבחנתית</td><td/><td><div><p>מומחיות ברדיולוגיה אבחנתית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-24"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-24">24</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אונקולוגיה</td><td/><td><div><p>מומחיות באונקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-25"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-25">25</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואת המשפחה</td><td/><td><div><p>מומחיות ברפואת המשפחה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-26"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-26">26</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>בריאות הציבור</td><td/><td><div><p>מומחיות בבריאות הציבור שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-27"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-27">27</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה פיסיקלית ושיקום</td><td/><td><div><p>מומחיות ברפואה פיסיקלית ושיקום שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-28"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-28">28</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מיקרוביולוגיה קלינית</td><td/><td><div><p>מומחיות במיקרוביולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-29"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-29">29</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כימיה קלינית</td><td/><td><div><p>מומחיות בכימיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-30"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-30">30</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אנטומיה פתולוגית</td><td/><td><div><p>מומחיות באנטומיה פתולוגית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-31"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-31">31</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה גרעינית</td><td/><td><div><p>מומחיות ברפואה גרעינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-32"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-32">32</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>גריאטריה</td><td/><td><div><p>מומחיות בגריאטריה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-33"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-33">33</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה משפטית</td><td/><td><div><p>מומחיות ברפואה משפטית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-34"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-34">34</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכיאטריה של הילד והמתבגר</td><td/><td><div><p>מומחיות בפסיכיאטריה של הילד והמתבגר שייכת לתחום בריאות הנפש במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-35"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-35">35</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מנהל רפואי</td><td/><td><div><p>מומחיות במנהל רפואי שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-36"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-36">36</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>גנטיקה רפואית</td><td/><td><div><p>מומחיות בגנטיקה רפואית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-37"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-37">37</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>ניאונטולוגיה</td><td/><td><div><p>מומחיות בניאונטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-38"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-38">38</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגית ילדים</td><td/><td><div><p>מומחיות בכירורגית ילדים שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-39"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-39">39</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיית פה ולסתות</td><td/><td><div><p>מומחיות בכירורגיית פה ולסתות שייכת למקצוע רפואת השיניים (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-40"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-40">40</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פדודונטיה (רפואת שיניים לילדים)</td><td/><td><div><p>מומחיות בפדודונטיה (רפואת שיניים לילדים) שייכת למקצוע תרפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-41"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-41">41</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אורתודונטיה</td><td/><td><div><p>מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-42"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-42">42</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פריודונטיה</td><td/><td><div><p>מומחיות בפריודונטיה שייכת למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-43"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-43">43</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אנדודונטיה</td><td/><td><div><p>מומחיות באנדודונטיה שייכת למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-44"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-44">44</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואת שיניים ציבורית</td><td/><td><div><p>מומחיות ברפואת שיניים ציבורית שייכת למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-45"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-45">45</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואת הפה</td><td/><td><div><p>מומחיות ברפואת הפה שייכת למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-46"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-46">46</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פתולוגיה אורלית</td><td/><td><div><p>מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-47"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-47">47</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>שיקום פרוסתודונטי(שיקום הפה)</td><td/><td><div><p>מומחיות בשיקום פרוסתודונטי(שיקום הפה) שייכת למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-48"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-48">48</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>ראומטולוגיה</td><td/><td><div><p>מומחיות בראומטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-49"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-49">49</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגית חזה ולב</td><td/><td><div><p>מומחיות בכירורגית חזה ולב שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-51"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-51">51</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגית כלי דם</td><td/><td><div><p>מומחיות בכירורגית כלי דם שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-52"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-52">52</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיה של היד</td><td/><td><div><p>מומחיתו בכירורגיה של היד שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-53"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-53">53</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה חברתית-תעסוקתית-ארגונית</td><td/><td><div><p>מומחיות בפסיכולוגיה חברתית-תעסוקתית-ארגונית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-54"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-54">54</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה חינוכית</td><td/><td><div><p>מומחיות בפסיכולוגיה חינוכית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-55"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-55">55</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה קלינית</td><td/><td><div><p>מומחיות בפסיכולוגיה קלינית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-56"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-56">56</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה קלינית באבחון</td><td/><td><div><p>מומחיות בפסיכולוגיה קלינית באבחון שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-57"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-57">57</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה קלינית בטיפול</td><td/><td><div><p>מומחיות בפסיכולוגיה קלינית בטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-58"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-58">58</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה שיקומית</td><td/><td><div><p>מומחיות בפסיכולוגיה שיקומית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-59"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-59">59</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה תעסוקתית שייכת למקצוע הרפואה</td><td/><td><div><p>מומחיות ברפואה תעסוקתית</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-60"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-60">60</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה התפתחותית</td><td/><td><div><p>פסיכולוגיה התפתחותית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-61"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-61">61</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה קלינית באבחון ובטיפול</td><td/><td><div><p>פסיכולוגיה קלינית באבחון ובטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-63"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-63">63</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מקצועות מעבדה קליניים</td><td/><td><div><p>מומחיות במקצועות מעבדה קליניים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-64"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-64">64</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחלות זיהומיות</td><td/><td><div><p>מומחיות במחלות זיהומיות שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-65"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-65">65</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>טיפול נמרץ כללי</td><td/><td><div><p>מומחיות בטיפול נמרץ כללי  שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-66"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-66">66</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>נוירולוגיית ילדים</td><td/><td><div><p>מומחיות בנוירולוגיית ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-67"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-67">67</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>גאסטרואנטרולוגיה ילדים</td><td/><td><div><p>מומחיות בגאסטרואנטרולוגיה ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-68"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-68">68</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחלות ריאה ילדים</td><td/><td><div><p>מומחיות במחלות ריאה ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-69"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-69">69</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>הימטואונקולוגיה ילדים</td><td/><td><div><p>מומחיות בהימטואונקולוגיה ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-70"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-70">70</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>קרדיולוגיה ילדים</td><td/><td><div><p>מומחיות בקרדיולוגיה ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-71"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-71">71</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אימונולוגיה קלינית ילדים</td><td/><td><div><p>מומחיות באימונולוגיה קלינית ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-72"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-72">72</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אלרגולוגיה ילדים</td><td/><td><div><p>מומחיות באלרגולוגיה ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-73"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-73">73</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>נפרולוגיה ילדים</td><td/><td><div><p>מומחיות בנפרולוגיה ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-74"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-74">74</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אנדוקרינולוגיה ילדים</td><td/><td><div><p>מומחיות באנדוקרינולוגיה ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-75"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-75">75</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>איבחון או טיפול רפואי</td><td/><td><div><p>מומחיות באיבחון או טיפול רפואי  שייכת למקצוע הרפואה וכמו כן למקצוע רפואת השיניים</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-76"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-76">76</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>איבחון או טיפול פסיכולוגי</td><td/><td><div><p>מומחיות באיבחון או טיפול פסיכולוגי שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-77"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-77">77</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחקר מדעי בהיפנוזה</td><td/><td><div><p>מומחיות במחקר מדעי בהיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-78"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-78">78</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>הוראה מדעית בתחום ההיפנוזה</td><td/><td><div><p>מומחיות בהוראה מדעית בתחום ההיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-79"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-79">79</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רענון זכרון במהלך חקירה משטרתית/בטחונית</td><td/><td><div><p>מומחיות ברענון זכרון במהלך חקירה משטרתית/בטחונית  שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-80"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-80">80</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>טיפול נמרץ ילדים</td><td/><td><div><p>מומחיות בטיפול נמרץ ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-81"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-81">81</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פרמקולוגיה קלינית</td><td/><td><div><p>מומחיות בפרמקולוגיה קלינית שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-82"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-82">82</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה דחופה</td><td/><td><div><p>מומחיות ברפואה דחופה שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-83"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-83">83</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פסיכולוגיה רפואית</td><td/><td><div><p>מומחיות בפסיכולוגיה רפואית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-84"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-84">84</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחלות א.א.ג. וכירורגיית ראש-צוואר</td><td/><td><div><p>מומחיות במחלות א.א.ג. וכירורגיית ראש-צוואר  שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-85"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-85">85</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגית לב</td><td/><td><div><p>מומחיות בכירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-86"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-86">86</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>שיקום הפה ושיקום פנים ולסתות</td><td/><td><div><p>מומחיות בשיקום הפה ושיקום פנים ולסתות שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-87"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-87">87</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>ציטוגנטיקה קלינית</td><td/><td><div><p>מומחיות בציטוגנטיקה קלינית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-88"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-88">88</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>גנטיקה קלינית מוליקולרית/ביוכימית</td><td/><td><div><p>גנטיקה קלינית מוליקולרית/ביוכימית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-89"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-89">89</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>ייעוץ גנטי</td><td/><td><div><p>מומחיות בייעוץ גנטי שייכך למקצוע הגנטיקה קלינית- יעוץ גנטי</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-90"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-90">90</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>נוירולוגית ילדים והתפתחות הילד</td><td/><td><div><p>מומחיות בנוירולוגית ילדים והתפתחות הילד שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-91"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-91">91</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>טיפול תומך</td><td/><td><div><p>מומחיות בטיפול תומך שייכת לתחום הסיעוד במקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-92"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-92">92</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אונקולוגיה - מסלול אונקולוגיה רפואית</td><td/><td><div><p>מומחיות באונקולוגיה - מסלול אונקולוגיה רפואית שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-93"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-93">93</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>אונקולוגיה - מסלול רדיותרפיה</td><td/><td><div><p>מומחיות באונקולוגיה - מסלול רדיותרפיה שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-94"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-94">94</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>טיפול נמרץ קרדיולוגי</td><td/><td><div><p>מומחיות בטיפול נמרץ קרדיולוגי שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-95"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-95">95</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגית בית החזה - מסלול כירורגית חזה כללית</td><td/><td><div><p>מומחיות בכירורגית בית החזה - מסלול כירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-96"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-96">96</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית</td><td/><td><div><p>מומחיות בכירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-97"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-97">97</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגית בית החזה - מסלול כירורגית לב</td><td/><td><div><p>מומחיות בכירורגית בית החזה - מסלול כירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-98"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-98">98</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה לשיכוך כאב</td><td/><td><div><p>מומחיות ברפואה לשיכוך כאב שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-99"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-99">99</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה דחופה - מסלול מבוגרים</td><td/><td><div><p>מומחיות ברפואה דחופה - מסלול מבוגרים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-100"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-100">100</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה דחופה - מסלול ילדים</td><td/><td><div><p>מומחיות ברפואה דחופה - מסלול ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-101"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-101">101</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>CBT פסיכותרפיה</td><td/><td><div><p>מומחיות בCBT פסיכותרפיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-102"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-102">102</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>סוכרת</td><td/><td><div><p>מומחיות בסוכרת שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-103"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-103">103</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>גריאטריה</td><td/><td><div><p>מומחיות בגריאטריה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-104"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-104">104</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה פליאטיבית</td><td/><td><div><p>מומחיות ברפואה פליאטיבית שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-105"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-105">105</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>בריאות הציבור מסלול אפידמיולוגיה</td><td/><td><div><p>מומחיות בבריאות הציבור מסלול אפידמיולוגיה שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-106"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-106">106</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>ביוכימיה קלינית</td><td/><td><div><p>מומחיות בביוכימיה קלינית שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-107"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-107">107</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מחלות זיהומיות ילדים</td><td/><td><div><p>מומחיות במחלות זיהומיות ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-108"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-108">108</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פגים</td><td/><td><div><p>מומחיות בפגים שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-109"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-109">109</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כירורגיה</td><td/><td><div><p>מומחיות בכירורגיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-110"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-110">110</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>בריאות הציבור במסלול שירותים קהילתיים</td><td/><td><div><p>מומחיות בבריאות הציבור במסלול שירותים קהילתיים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-112"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-112">112</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>כאב</td><td/><td><div><p>מומחיות בכאב שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-113"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-113">113</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>שיקום</td><td/><td><div><p>מומחיות בשיקום שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-114"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-114">114</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>מדיניות ומינהל בסיעוד</td><td/><td><div><p>מומחיות במדיניות ומינהל בסיעוד שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-115"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-115">115</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>רפואה ראשונית</td><td/><td><div><p>מומחיות ברפואה ראשונית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-116"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-116">116</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>נוירופסיכאטריה</td><td/><td><div><p>מומחיות בנוירופסיכאטריה שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-117"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-117">117</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>ראומטולוגיה מסלול ילדים</td><td/><td><div><p>מומחיות בראומטולוגיה מסלול ילדים שייכת למקצוע הרפואה</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-expertise-moh-150"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-expertise-moh.html#practitioner-expertise-moh-150">150</a></td><td>http://fhir.health.gov.il/cs/practitioner-expertise-moh</td><td>פנימית</td><td/><td><div><p>מומחיות בפנימית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</p>
+</div></td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l2603">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ido.levin@moh.gov.il">Israel Core Team</a>.  Package health.gov.il.fhir.core#0.13.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Dec 23, 2023 19:20+0200">2023-12-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

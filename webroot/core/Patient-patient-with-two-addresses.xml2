@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-with-two-addresses"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">רונן חרזי</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-il-hmo">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+        <code value="103"/>
+        <display value="קופת חולים מכבי"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000018"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="he"/>
+    </extension>
+    <text value="רונן חרזי"/>
+    <family value="חרזי"/>
+    <given value="רונן"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="050545411"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="Ronen.h@example.com"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1958-01-01">
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date">
+      <extension url="display">
+        <valueString value="ט' בטבת ה'תשי&quot;ח"/>
+      </extension>
+      <extension url="day">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/hebrew-date-day"/>
+            <code value="9"/>
+            <display value="ט'"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="month">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/hebrew-date-month"/>
+            <code value="4"/>
+            <display value="טבת"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="year">
+        <valueString value="ה'תשי&quot;ח"/>
+      </extension>
+    </extension>
+  </birthDate>
+  <deceasedBoolean value="false"/>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+      <extension url="longitude">
+        <valueDecimal value="182468.59"/>
+      </extension>
+      <extension url="latitude">
+        <valueDecimal value="670131.38"/>
+      </extension>
+    </extension>
+    <use value="home"/>
+    <type value="physical"/>
+    <text value="פרג 7ב' דירה 3 גדרה"/>
+    <line value="פרג 7'">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="פרג"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="7"/>
+      </extension>
+    </line>
+    <line value="כניסה ב'"/>
+    <line value="דירה 3'">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
+        <valueString value="3"/>
+      </extension>
+    </line>
+    <line>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="1446"/>
+      </extension>
+    </line>
+    <city value="גדרה">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="2660"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district value="גדרה"/>
+    <postalCode value="6964101"/>
+    <country value="IL"/>
+  </address>
+  <address>
+    <use value="home"/>
+    <type value="postal"/>
+    <text value="ת&quot;ד 1446 גדרה"/>
+    <city value="גדרה">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="2550"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <postalCode value="6964000"/>
+  </address>
+</Patient>

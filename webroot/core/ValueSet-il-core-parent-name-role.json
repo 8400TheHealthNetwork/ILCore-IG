@@ -1,0 +1,45 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-parent-name-role",
+  "language" : "en-US",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\" xml:lang=\"en-US\" lang=\"en-US\"><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\"><code>http://terminology.hl7.org/CodeSystem/v3-RoleCode</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-FTH\">FTH</a></td><td>father</td><td>The player of the role is a male who begets or raises or nurtures the scoping entity (child).</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html#v3-RoleCode-MTH\">MTH</a></td><td>mother</td><td>The player of the role is a female who conceives, gives birth to, or raises and nurtures the scoping entity (child).</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-parent-name-role",
+  "version" : "0.13.2",
+  "name" : "ILCoreParentNameRole",
+  "title" : "The role of the parent (father/mother) whose name is recorded",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "This set of codes is used to mark a parent name as a father or mother’s name. Should only be used by systems that explicitly differentiate between the two.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+      "concept" : [{
+        "code" : "FTH",
+        "display" : "father"
+      },
+      {
+        "code" : "MTH",
+        "display" : "mother"
+      }]
+    }]
+  }
+}

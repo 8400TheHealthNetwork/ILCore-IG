@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Organization/organization-school-moe> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-school-moe"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">תיכון כצנלסון</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/moe-institute-symbol"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "440172" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name [ fhir:v "תיכון כצנלסון"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "09-7433376" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:text [ fhir:v "אזר 43 כפר סבא" ] ;
+     fhir:line ( [
+       fhir:v "אזר 43" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "אזר" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "43" ]
+       ] )
+     ] ) ;
+     fhir:city [
+       fhir:v "כפר סבא" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-city-code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/city-symbol"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "6900" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:postalCode [ fhir:v "4410601" ] ;
+     fhir:country [ fhir:v "IL" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

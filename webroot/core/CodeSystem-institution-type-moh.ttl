@@ -1,0 +1,328 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/institution-type-moh> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "institution-type-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/institution-type-moh</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"institution-type-moh-99\"> </a></td><td>לא ידוע</td><td>ערך ברירת מחדל במקרה שערך סוג מוסד הבריאות לא קיים מאחר הגיע ריק</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"institution-type-moh-1\"> </a></td><td>אשפוז כללי</td><td>אשפוז כללי הוא הערך המתאים לבתי חולים כלליים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים, הדסה או פרטית.</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"institution-type-moh-2\"> </a></td><td>בתי יולדות</td><td>בתי יולדות הוא הערך המתאים לבתי חולים ליולדות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות שפוז וחדרי לידה לפי הסוגים השונים.</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"institution-type-moh-3\"> </a></td><td>בית חולים לילדים</td><td>בית חולים לילדים הוא הערך המתאים לבתי חולים כלליים לילדים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"institution-type-moh-11\"> </a></td><td>בריאות הנפש</td><td>בריאות הנפש הוא הערך המתאים לבתי חולים פסיכיאטריים המקבלים רישוי ממשרד הבריאות וכמו כן תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים או פרטית.</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"institution-type-moh-12\"> </a></td><td>מעונות נפש</td><td>מעונות נפש הוא הערך המתאים למעונות לשיקום פסיכיאטרי המקבלים רישוי ממשרד הבריאות</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"institution-type-moh-15\"> </a></td><td>גמילה סמים-רפואי</td><td>גמילה סמים-רפואי הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי רפואי, המקבלים רישוי ממשרד הבריאות  ומפורסמים במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"institution-type-moh-16\"> </a></td><td>גמילת סמים-משולב</td><td>גמילה סמים-משולב הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי משולב, המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"institution-type-moh-17\"> </a></td><td>גמילת סמים בבי&quot;ח</td><td/></tr><tr><td style=\"white-space:nowrap\">21<a name=\"institution-type-moh-21\"> </a></td><td>מחלות ממושכות</td><td>מחלות ממושכות הוא הערך המתאים למוסדות אשפוז גריאטרי ארוך במקרה של מחלות ממושכות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"institution-type-moh-22\"> </a></td><td>מרכזים גריאטרים</td><td>מרכזים גריאטרים הוא הערך המתאים לבתי חולים גריאטריים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"institution-type-moh-23\"> </a></td><td>מוסדות גריאטרים</td><td>מוסדות גריאטרים הוא הערך המתאים למוסדות גריאטרים (כמו בתי אבות)  המקבלים רישוי ממשרד הבריאות</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"institution-type-moh-24\"> </a></td><td>מח' סיעוד בקיבוץ</td><td>מח' סיעוד בקיבוץ הוא הערך המתאים למוסדות גריאטרים (בתי אבות בקיבוצים)  המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"institution-type-moh-25\"> </a></td><td>שיקום</td><td>בית חולים שיקומי הוא הערך המתאים לבתי חולים שיקומיים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות. מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים.</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"institution-type-moh-26\"> </a></td><td>רווחה – בתי אבות (תשושים)</td><td>רווחה – בתי אבות (תשושים) הוא הערך המתאים לבתי אבות בהם שוהים תשושים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"institution-type-moh-27\"> </a></td><td>רווחה – דיור מוגן (עצמאים)</td><td>רווחה – דיור מוגן (עצמאים) הוא הערך המתאים לדיור מוגן (בתי אבות) בהם שוהים עצמאים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"institution-type-moh-28\"> </a></td><td>גריאטרי אחר</td><td>גריאטרי אחר הוא הערך המתאים לבתי אבות בהם שוהים מבוגרים שלא מוגדרים כתשושים אך אינם עמצאיים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"institution-type-moh-29\"> </a></td><td>הנסן</td><td>הנסן</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"institution-type-moh-31\"> </a></td><td>ב. הנפש בקהילה</td><td>ב. הנפש בקהילה הוא הערך המתאים למרפאות בריאות הנפש בקהילה (של קופות החולים)</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"institution-type-moh-32\"> </a></td><td>גריאטריה בקהילה</td><td>גריאטריה בקהילה הוא הערך המתאים למרפאות גריאטריים בקהילה (של קופות החולים)</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"institution-type-moh-33\"> </a></td><td>דיאליזה בקהילה</td><td>דיאליזה בקהילה הוא הערך המתאים למרפאות דיאליזה בקהילה (של קופות החולים)</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"institution-type-moh-34\"> </a></td><td>התפתחות הילד</td><td>התפתחות הילד הוא הערך המתאים למרפאות להתפתחות הילד בקהילה (של קופות החולים)</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"institution-type-moh-35\"> </a></td><td>בדיקת סרטן השד</td><td>בדיקת סרטן השד הוא הערך המתאים למרפאות לבדיקת סרטן השד בקהילה (של קופות החולים)</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"institution-type-moh-36\"> </a></td><td>קבלני שירותי רפואה</td><td/></tr><tr><td style=\"white-space:nowrap\">39<a name=\"institution-type-moh-39\"> </a></td><td>מ. טיפול בשחפת</td><td/></tr><tr><td style=\"white-space:nowrap\">37<a name=\"institution-type-moh-37\"> </a></td><td>גמילה סמ-רפו-אמב</td><td>גמילה סמ-רפו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"institution-type-moh-38\"> </a></td><td>גמילה סמ-משו-אמב</td><td>גמילה סמ-משו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול משולב אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"institution-type-moh-40\"> </a></td><td>גמילה סמים ביח א</td><td/></tr><tr><td style=\"white-space:nowrap\">41<a name=\"institution-type-moh-41\"> </a></td><td>מעבדות/מכונים</td><td>מעבדות/מכונים הוא הערך המתאים למעבדות ומכונים המקבלים רישוי ממשרד הבריאות.</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"institution-type-moh-42\"> </a></td><td>מכון צילום שינים</td><td>מכון צילום שינים הוא הערך המתאים למכונים לצילום שיניים המקבלים רישוי ממשרד הבריאות.</td></tr><tr><td style=\"white-space:nowrap\">43<a name=\"institution-type-moh-43\"> </a></td><td>מכון לרפואת שינה</td><td>מכון לרפואת שינה הוא הערך המתאים למכונים לרפואת שינה המקבלים רישוי ממשרד הבריאות.</td></tr><tr><td style=\"white-space:nowrap\">44<a name=\"institution-type-moh-44\"> </a></td><td>מכון גסטרו</td><td/></tr><tr><td style=\"white-space:nowrap\">51<a name=\"institution-type-moh-51\"> </a></td><td>תחנה ב. המשפחה</td><td>תחנה ב. המשפחה הוא הערך המתאים למרפאות לבריאות המשפחה המשמשות כטיפת חלב ומעקב הריון המקבלים רישוי ממשרד הבריאות. מרפאות אלה יכולות להיות בבעלות משרד הבריאות, קופות החולים ורשויות מקומיות.</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"institution-type-moh-52\"> </a></td><td>מרפאה כלל בקהילה</td><td>מרפאה כלל בקהילה הוא הערך המתאים למרפאות לבריאות כללית בקהילה ובעקרן מרפאות קופות החולים.</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"institution-type-moh-53\"> </a></td><td>מרפאות כירורגיות</td><td>מרפאות כירורגיות הוא הערך המתאים למרפאות כירורגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"institution-type-moh-54\"> </a></td><td>מרפאות פסיכיאטרי</td><td/></tr><tr><td style=\"white-space:nowrap\">55<a name=\"institution-type-moh-55\"> </a></td><td>מרפאות שיניים</td><td>מרפאות שיניים הוא הערך המתאים למרפאות שיניים בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"institution-type-moh-56\"> </a></td><td>בתי מרקחת</td><td/></tr><tr><td style=\"white-space:nowrap\">57<a name=\"institution-type-moh-57\"> </a></td><td>ת. לרפואת ספורט</td><td>ת. לרפואת ספורט הוא הערך המתאים לתחנות לרפואת ספורט בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">58<a name=\"institution-type-moh-58\"> </a></td><td>מרפאות אונקולוגיות בקהילה</td><td>מרפאות אונקולוגיות בקהילה הוא הערך המתאים למרפאות אונקולוגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"institution-type-moh-61\"> </a></td><td>בתי ספר לרפואה</td><td>בתי ספר לרפואה הוא הערך המתאים למוסדות לימודי מקצועות הרפואה</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"institution-type-moh-62\"> </a></td><td>בתי&quot;ס ר. שיניים</td><td>בתי&quot;ס ר. שיניים  הוא הערך המתאים למוסדות לימודי מקצועות רפואת השיניים</td></tr><tr><td style=\"white-space:nowrap\">64<a name=\"institution-type-moh-64\"> </a></td><td>בתי ספר לסיעוד</td><td>בתי ספר לסיעוד  הוא הערך המתאים למוסדות לימודי מקצועות הסיעוד</td></tr><tr><td style=\"white-space:nowrap\">63<a name=\"institution-type-moh-63\"> </a></td><td>בתי ספר לרוקחות</td><td/></tr><tr><td style=\"white-space:nowrap\">65<a name=\"institution-type-moh-65\"> </a></td><td>בתי&quot;ס לפרא-רפואי</td><td/></tr><tr><td style=\"white-space:nowrap\">66<a name=\"institution-type-moh-66\"> </a></td><td>בית ספר לרנטגן</td><td/></tr><tr><td style=\"white-space:nowrap\">67<a name=\"institution-type-moh-67\"> </a></td><td>בי&quot;ס לפיזיוטרפיה</td><td/></tr><tr><td style=\"white-space:nowrap\">68<a name=\"institution-type-moh-68\"> </a></td><td>בי&quot;ס שכולל סיעוד</td><td/></tr><tr><td style=\"white-space:nowrap\">71<a name=\"institution-type-moh-71\"> </a></td><td>משרד הבריאות</td><td>משרד הבריאות הוא הערך שייצג את משרד הבריאות כנותן שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"institution-type-moh-72\"> </a></td><td>לשכות בריאות</td><td>לשכות בריאות הוא הערך שייצג את הלשכות המחוזיות של משרד הבריאות כנותנות שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"institution-type-moh-73\"> </a></td><td>קופות חולים</td><td>קופות חולים הוא הערך שייצג את 4 קופות החולים כנותנות שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"institution-type-moh-74\"> </a></td><td>משטרה</td><td>משטרה הוא הערך שייצג את המשטרה שמפנה לקבלת שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"institution-type-moh-75\"> </a></td><td>צ.ה.ל</td><td>צ.ה.ל הוא הערך שייצג את צה&quot;ל כקופת חולים חמישית וכנותנות שירותי בריאות כמו מוסד או חברה או כמפנה לקבלת שירות ע&quot;י גורם אחר</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"institution-type-moh-76\"> </a></td><td>משרדי ממשלה</td><td>משרדי ממשלה הוא הערך שייצג את משרדי הממשלה כנותן שירותי בריאות או מפנה לקבלת שירותים שכאלה ע&quot;י גורם אחר</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"institution-type-moh-77\"> </a></td><td>בית ספר</td><td>בית ספר הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו</td></tr><tr><td style=\"white-space:nowrap\">78<a name=\"institution-type-moh-78\"> </a></td><td>גן ילדים</td><td>גן ילדים הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו</td></tr><tr><td style=\"white-space:nowrap\">79<a name=\"institution-type-moh-79\"> </a></td><td>מעון יום</td><td>מעון יום הוא הערך המתאים למעונות יום לגיל הרך המקבלות רישוי ממשרד הרווחה</td></tr><tr><td style=\"white-space:nowrap\">80<a name=\"institution-type-moh-80\"> </a></td><td>מוסד חינוך אחר</td><td/></tr><tr><td style=\"white-space:nowrap\">84<a name=\"institution-type-moh-84\"> </a></td><td>רווחה – אוטיסטים</td><td/></tr><tr><td style=\"white-space:nowrap\">82<a name=\"institution-type-moh-82\"> </a></td><td>מוסד ללא רישוי</td><td>מוסד ללא רישוי הוא נערך המתאים למוסדות ללא רישוי מיוחד ידוע</td></tr><tr><td style=\"white-space:nowrap\">83<a name=\"institution-type-moh-83\"> </a></td><td>רווחה – מנהל מוגבלויות</td><td>רווחה – מנהל מוגבלויות הוא הערך המתאים למעונות לבעלי מוגבלויות המקבלות רישוי ממשרד הרווחה</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"institution-type-moh-85\"> </a></td><td>רווחה – השירות לעיוור</td><td/></tr><tr><td style=\"white-space:nowrap\">87<a name=\"institution-type-moh-87\"> </a></td><td>מנהל תקון</td><td/></tr><tr><td style=\"white-space:nowrap\">88<a name=\"institution-type-moh-88\"> </a></td><td>מנהל שירותים חברתיים ואישיים</td><td/></tr><tr><td style=\"white-space:nowrap\">86<a name=\"institution-type-moh-86\"> </a></td><td>מרכז יום לקשיש</td><td>מרכז יום לקשיש הוא הערך המתאים למרכזי יום לקשישים המקבלים רישוי ממשרד הרווחה</td></tr><tr><td style=\"white-space:nowrap\">90<a name=\"institution-type-moh-90\"> </a></td><td>רשת</td><td>רשת הוא הערך המתאים לרשות מקומית, מועצה מקומית, מועצה אזורית, עירייה וכו'</td></tr><tr><td style=\"white-space:nowrap\">91<a name=\"institution-type-moh-91\"> </a></td><td>חברות מכשור רפוא</td><td>חברות מכשור רפוא הוא הערך המתאים לחברות למכשור רפואי המקבלות רישוי ממשרד הבריאות</td></tr><tr><td style=\"white-space:nowrap\">92<a name=\"institution-type-moh-92\"> </a></td><td>ספק ציוד רפואי</td><td/></tr><tr><td style=\"white-space:nowrap\">98<a name=\"institution-type-moh-98\"> </a></td><td>אחר</td><td>אחר</td></tr><tr><td style=\"white-space:nowrap\">281<a name=\"institution-type-moh-281\"> </a></td><td>משרד שיכון - בית גיל הזהב</td><td>משרד שיכון - בית גיל הזהב הוא הערך המתאים לבתי אבות של משרד השיכון</td></tr><tr><td style=\"white-space:nowrap\">282<a name=\"institution-type-moh-282\"> </a></td><td>מקבץ דיור</td><td>מקבץ דיור הוא הערך המתאים להגדרות כבאות והצלה</td></tr><tr><td style=\"white-space:nowrap\">731<a name=\"institution-type-moh-731\"> </a></td><td>תת-יחידה של קופת חולים</td><td>תת-יחידה של קופת חולים הוא הערך המתאים ליחידות מאוגדות בקופות החולים עפ&quot;י ההגדרות הקופה</td></tr><tr><td style=\"white-space:nowrap\">779<a name=\"institution-type-moh-779\"> </a></td><td>ישיבה</td><td>ישיבה הוא הערך המתאים לישיבה עפ&quot;י הגדרות משרד החינוך או ועד הישיבות</td></tr><tr><td style=\"white-space:nowrap\">821<a name=\"institution-type-moh-821\"> </a></td><td>מלון מבודדים</td><td>מלון מבודדים הוא הערך המתאים למלו מבודדי קורונה עפ&quot;י הגדרות משרד הבריאות או פקע&quot;ר</td></tr><tr><td style=\"white-space:nowrap\">822<a name=\"institution-type-moh-822\"> </a></td><td>דרייב אין לבדיקות קורונה</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/institution-type-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "InstitutionTypeMoH"] ; # 
+  fhir:title [ fhir:v "סוג מוסד לפי רישוי משרד הבריאות"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "75"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "99" ] ;
+     fhir:display [ fhir:v "לא ידוע" ] ;
+     fhir:definition [ fhir:v "ערך ברירת מחדל במקרה שערך סוג מוסד הבריאות לא קיים מאחר הגיע ריק" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "אשפוז כללי" ] ;
+     fhir:definition [ fhir:v "אשפוז כללי הוא הערך המתאים לבתי חולים כלליים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים, הדסה או פרטית." ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "בתי יולדות" ] ;
+     fhir:definition [ fhir:v "בתי יולדות הוא הערך המתאים לבתי חולים ליולדות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות שפוז וחדרי לידה לפי הסוגים השונים." ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "בית חולים לילדים" ] ;
+     fhir:definition [ fhir:v "בית חולים לילדים הוא הערך המתאים לבתי חולים כלליים לילדים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "בריאות הנפש" ] ;
+     fhir:definition [ fhir:v "בריאות הנפש הוא הערך המתאים לבתי חולים פסיכיאטריים המקבלים רישוי ממשרד הבריאות וכמו כן תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים או פרטית." ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "מעונות נפש" ] ;
+     fhir:definition [ fhir:v "מעונות נפש הוא הערך המתאים למעונות לשיקום פסיכיאטרי המקבלים רישוי ממשרד הבריאות" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "גמילה סמים-רפואי" ] ;
+     fhir:definition [ fhir:v "גמילה סמים-רפואי הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי רפואי, המקבלים רישוי ממשרד הבריאות  ומפורסמים במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "גמילת סמים-משולב" ] ;
+     fhir:definition [ fhir:v "גמילה סמים-משולב הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי משולב, המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "גמילת סמים בבי\"ח" ]
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "מחלות ממושכות" ] ;
+     fhir:definition [ fhir:v "מחלות ממושכות הוא הערך המתאים למוסדות אשפוז גריאטרי ארוך במקרה של מחלות ממושכות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "מרכזים גריאטרים" ] ;
+     fhir:definition [ fhir:v "מרכזים גריאטרים הוא הערך המתאים לבתי חולים גריאטריים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "מוסדות גריאטרים" ] ;
+     fhir:definition [ fhir:v "מוסדות גריאטרים הוא הערך המתאים למוסדות גריאטרים (כמו בתי אבות)  המקבלים רישוי ממשרד הבריאות" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "מח' סיעוד בקיבוץ" ] ;
+     fhir:definition [ fhir:v "מח' סיעוד בקיבוץ הוא הערך המתאים למוסדות גריאטרים (בתי אבות בקיבוצים)  המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "שיקום" ] ;
+     fhir:definition [ fhir:v "בית חולים שיקומי הוא הערך המתאים לבתי חולים שיקומיים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות. מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים." ]
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "רווחה – בתי אבות (תשושים)" ] ;
+     fhir:definition [ fhir:v "רווחה – בתי אבות (תשושים) הוא הערך המתאים לבתי אבות בהם שוהים תשושים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות." ]
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "רווחה – דיור מוגן (עצמאים)" ] ;
+     fhir:definition [ fhir:v "רווחה – דיור מוגן (עצמאים) הוא הערך המתאים לדיור מוגן (בתי אבות) בהם שוהים עצמאים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות." ]
+  ] [
+     fhir:code [ fhir:v "28" ] ;
+     fhir:display [ fhir:v "גריאטרי אחר" ] ;
+     fhir:definition [ fhir:v "גריאטרי אחר הוא הערך המתאים לבתי אבות בהם שוהים מבוגרים שלא מוגדרים כתשושים אך אינם עמצאיים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות." ]
+  ] [
+     fhir:code [ fhir:v "29" ] ;
+     fhir:display [ fhir:v "הנסן" ] ;
+     fhir:definition [ fhir:v "הנסן" ]
+  ] [
+     fhir:code [ fhir:v "31" ] ;
+     fhir:display [ fhir:v "ב. הנפש בקהילה" ] ;
+     fhir:definition [ fhir:v "ב. הנפש בקהילה הוא הערך המתאים למרפאות בריאות הנפש בקהילה (של קופות החולים)" ]
+  ] [
+     fhir:code [ fhir:v "32" ] ;
+     fhir:display [ fhir:v "גריאטריה בקהילה" ] ;
+     fhir:definition [ fhir:v "גריאטריה בקהילה הוא הערך המתאים למרפאות גריאטריים בקהילה (של קופות החולים)" ]
+  ] [
+     fhir:code [ fhir:v "33" ] ;
+     fhir:display [ fhir:v "דיאליזה בקהילה" ] ;
+     fhir:definition [ fhir:v "דיאליזה בקהילה הוא הערך המתאים למרפאות דיאליזה בקהילה (של קופות החולים)" ]
+  ] [
+     fhir:code [ fhir:v "34" ] ;
+     fhir:display [ fhir:v "התפתחות הילד" ] ;
+     fhir:definition [ fhir:v "התפתחות הילד הוא הערך המתאים למרפאות להתפתחות הילד בקהילה (של קופות החולים)" ]
+  ] [
+     fhir:code [ fhir:v "35" ] ;
+     fhir:display [ fhir:v "בדיקת סרטן השד" ] ;
+     fhir:definition [ fhir:v "בדיקת סרטן השד הוא הערך המתאים למרפאות לבדיקת סרטן השד בקהילה (של קופות החולים)" ]
+  ] [
+     fhir:code [ fhir:v "36" ] ;
+     fhir:display [ fhir:v "קבלני שירותי רפואה" ]
+  ] [
+     fhir:code [ fhir:v "39" ] ;
+     fhir:display [ fhir:v "מ. טיפול בשחפת" ]
+  ] [
+     fhir:code [ fhir:v "37" ] ;
+     fhir:display [ fhir:v "גמילה סמ-רפו-אמב" ] ;
+     fhir:definition [ fhir:v "גמילה סמ-רפו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "38" ] ;
+     fhir:display [ fhir:v "גמילה סמ-משו-אמב" ] ;
+     fhir:definition [ fhir:v "גמילה סמ-משו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול משולב אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "40" ] ;
+     fhir:display [ fhir:v "גמילה סמים ביח א" ]
+  ] [
+     fhir:code [ fhir:v "41" ] ;
+     fhir:display [ fhir:v "מעבדות/מכונים" ] ;
+     fhir:definition [ fhir:v "מעבדות/מכונים הוא הערך המתאים למעבדות ומכונים המקבלים רישוי ממשרד הבריאות." ]
+  ] [
+     fhir:code [ fhir:v "42" ] ;
+     fhir:display [ fhir:v "מכון צילום שינים" ] ;
+     fhir:definition [ fhir:v "מכון צילום שינים הוא הערך המתאים למכונים לצילום שיניים המקבלים רישוי ממשרד הבריאות." ]
+  ] [
+     fhir:code [ fhir:v "43" ] ;
+     fhir:display [ fhir:v "מכון לרפואת שינה" ] ;
+     fhir:definition [ fhir:v "מכון לרפואת שינה הוא הערך המתאים למכונים לרפואת שינה המקבלים רישוי ממשרד הבריאות." ]
+  ] [
+     fhir:code [ fhir:v "44" ] ;
+     fhir:display [ fhir:v "מכון גסטרו" ]
+  ] [
+     fhir:code [ fhir:v "51" ] ;
+     fhir:display [ fhir:v "תחנה ב. המשפחה" ] ;
+     fhir:definition [ fhir:v "תחנה ב. המשפחה הוא הערך המתאים למרפאות לבריאות המשפחה המשמשות כטיפת חלב ומעקב הריון המקבלים רישוי ממשרד הבריאות. מרפאות אלה יכולות להיות בבעלות משרד הבריאות, קופות החולים ורשויות מקומיות." ]
+  ] [
+     fhir:code [ fhir:v "52" ] ;
+     fhir:display [ fhir:v "מרפאה כלל בקהילה" ] ;
+     fhir:definition [ fhir:v "מרפאה כלל בקהילה הוא הערך המתאים למרפאות לבריאות כללית בקהילה ובעקרן מרפאות קופות החולים." ]
+  ] [
+     fhir:code [ fhir:v "53" ] ;
+     fhir:display [ fhir:v "מרפאות כירורגיות" ] ;
+     fhir:definition [ fhir:v "מרפאות כירורגיות הוא הערך המתאים למרפאות כירורגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "54" ] ;
+     fhir:display [ fhir:v "מרפאות פסיכיאטרי" ]
+  ] [
+     fhir:code [ fhir:v "55" ] ;
+     fhir:display [ fhir:v "מרפאות שיניים" ] ;
+     fhir:definition [ fhir:v "מרפאות שיניים הוא הערך המתאים למרפאות שיניים בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "56" ] ;
+     fhir:display [ fhir:v "בתי מרקחת" ]
+  ] [
+     fhir:code [ fhir:v "57" ] ;
+     fhir:display [ fhir:v "ת. לרפואת ספורט" ] ;
+     fhir:definition [ fhir:v "ת. לרפואת ספורט הוא הערך המתאים לתחנות לרפואת ספורט בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "58" ] ;
+     fhir:display [ fhir:v "מרפאות אונקולוגיות בקהילה" ] ;
+     fhir:definition [ fhir:v "מרפאות אונקולוגיות בקהילה הוא הערך המתאים למרפאות אונקולוגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות." ]
+  ] [
+     fhir:code [ fhir:v "61" ] ;
+     fhir:display [ fhir:v "בתי ספר לרפואה" ] ;
+     fhir:definition [ fhir:v "בתי ספר לרפואה הוא הערך המתאים למוסדות לימודי מקצועות הרפואה" ]
+  ] [
+     fhir:code [ fhir:v "62" ] ;
+     fhir:display [ fhir:v "בתי\"ס ר. שיניים" ] ;
+     fhir:definition [ fhir:v "בתי\"ס ר. שיניים  הוא הערך המתאים למוסדות לימודי מקצועות רפואת השיניים" ]
+  ] [
+     fhir:code [ fhir:v "64" ] ;
+     fhir:display [ fhir:v "בתי ספר לסיעוד" ] ;
+     fhir:definition [ fhir:v "בתי ספר לסיעוד  הוא הערך המתאים למוסדות לימודי מקצועות הסיעוד" ]
+  ] [
+     fhir:code [ fhir:v "63" ] ;
+     fhir:display [ fhir:v "בתי ספר לרוקחות" ]
+  ] [
+     fhir:code [ fhir:v "65" ] ;
+     fhir:display [ fhir:v "בתי\"ס לפרא-רפואי" ]
+  ] [
+     fhir:code [ fhir:v "66" ] ;
+     fhir:display [ fhir:v "בית ספר לרנטגן" ]
+  ] [
+     fhir:code [ fhir:v "67" ] ;
+     fhir:display [ fhir:v "בי\"ס לפיזיוטרפיה" ]
+  ] [
+     fhir:code [ fhir:v "68" ] ;
+     fhir:display [ fhir:v "בי\"ס שכולל סיעוד" ]
+  ] [
+     fhir:code [ fhir:v "71" ] ;
+     fhir:display [ fhir:v "משרד הבריאות" ] ;
+     fhir:definition [ fhir:v "משרד הבריאות הוא הערך שייצג את משרד הבריאות כנותן שירותי בריאות כמו מוסד או חברה" ]
+  ] [
+     fhir:code [ fhir:v "72" ] ;
+     fhir:display [ fhir:v "לשכות בריאות" ] ;
+     fhir:definition [ fhir:v "לשכות בריאות הוא הערך שייצג את הלשכות המחוזיות של משרד הבריאות כנותנות שירותי בריאות כמו מוסד או חברה" ]
+  ] [
+     fhir:code [ fhir:v "73" ] ;
+     fhir:display [ fhir:v "קופות חולים" ] ;
+     fhir:definition [ fhir:v "קופות חולים הוא הערך שייצג את 4 קופות החולים כנותנות שירותי בריאות כמו מוסד או חברה" ]
+  ] [
+     fhir:code [ fhir:v "74" ] ;
+     fhir:display [ fhir:v "משטרה" ] ;
+     fhir:definition [ fhir:v "משטרה הוא הערך שייצג את המשטרה שמפנה לקבלת שירותי בריאות כמו מוסד או חברה" ]
+  ] [
+     fhir:code [ fhir:v "75" ] ;
+     fhir:display [ fhir:v "צ.ה.ל" ] ;
+     fhir:definition [ fhir:v "צ.ה.ל הוא הערך שייצג את צה\"ל כקופת חולים חמישית וכנותנות שירותי בריאות כמו מוסד או חברה או כמפנה לקבלת שירות ע\"י גורם אחר" ]
+  ] [
+     fhir:code [ fhir:v "76" ] ;
+     fhir:display [ fhir:v "משרדי ממשלה" ] ;
+     fhir:definition [ fhir:v "משרדי ממשלה הוא הערך שייצג את משרדי הממשלה כנותן שירותי בריאות או מפנה לקבלת שירותים שכאלה ע\"י גורם אחר" ]
+  ] [
+     fhir:code [ fhir:v "77" ] ;
+     fhir:display [ fhir:v "בית ספר" ] ;
+     fhir:definition [ fhir:v "בית ספר הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו" ]
+  ] [
+     fhir:code [ fhir:v "78" ] ;
+     fhir:display [ fhir:v "גן ילדים" ] ;
+     fhir:definition [ fhir:v "גן ילדים הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו" ]
+  ] [
+     fhir:code [ fhir:v "79" ] ;
+     fhir:display [ fhir:v "מעון יום" ] ;
+     fhir:definition [ fhir:v "מעון יום הוא הערך המתאים למעונות יום לגיל הרך המקבלות רישוי ממשרד הרווחה" ]
+  ] [
+     fhir:code [ fhir:v "80" ] ;
+     fhir:display [ fhir:v "מוסד חינוך אחר" ]
+  ] [
+     fhir:code [ fhir:v "84" ] ;
+     fhir:display [ fhir:v "רווחה – אוטיסטים" ]
+  ] [
+     fhir:code [ fhir:v "82" ] ;
+     fhir:display [ fhir:v "מוסד ללא רישוי" ] ;
+     fhir:definition [ fhir:v "מוסד ללא רישוי הוא נערך המתאים למוסדות ללא רישוי מיוחד ידוע" ]
+  ] [
+     fhir:code [ fhir:v "83" ] ;
+     fhir:display [ fhir:v "רווחה – מנהל מוגבלויות" ] ;
+     fhir:definition [ fhir:v "רווחה – מנהל מוגבלויות הוא הערך המתאים למעונות לבעלי מוגבלויות המקבלות רישוי ממשרד הרווחה" ]
+  ] [
+     fhir:code [ fhir:v "85" ] ;
+     fhir:display [ fhir:v "רווחה – השירות לעיוור" ]
+  ] [
+     fhir:code [ fhir:v "87" ] ;
+     fhir:display [ fhir:v "מנהל תקון" ]
+  ] [
+     fhir:code [ fhir:v "88" ] ;
+     fhir:display [ fhir:v "מנהל שירותים חברתיים ואישיים" ]
+  ] [
+     fhir:code [ fhir:v "86" ] ;
+     fhir:display [ fhir:v "מרכז יום לקשיש" ] ;
+     fhir:definition [ fhir:v "מרכז יום לקשיש הוא הערך המתאים למרכזי יום לקשישים המקבלים רישוי ממשרד הרווחה" ]
+  ] [
+     fhir:code [ fhir:v "90" ] ;
+     fhir:display [ fhir:v "רשת" ] ;
+     fhir:definition [ fhir:v "רשת הוא הערך המתאים לרשות מקומית, מועצה מקומית, מועצה אזורית, עירייה וכו'" ]
+  ] [
+     fhir:code [ fhir:v "91" ] ;
+     fhir:display [ fhir:v "חברות מכשור רפוא" ] ;
+     fhir:definition [ fhir:v "חברות מכשור רפוא הוא הערך המתאים לחברות למכשור רפואי המקבלות רישוי ממשרד הבריאות" ]
+  ] [
+     fhir:code [ fhir:v "92" ] ;
+     fhir:display [ fhir:v "ספק ציוד רפואי" ]
+  ] [
+     fhir:code [ fhir:v "98" ] ;
+     fhir:display [ fhir:v "אחר" ] ;
+     fhir:definition [ fhir:v "אחר" ]
+  ] [
+     fhir:code [ fhir:v "281" ] ;
+     fhir:display [ fhir:v "משרד שיכון - בית גיל הזהב" ] ;
+     fhir:definition [ fhir:v "משרד שיכון - בית גיל הזהב הוא הערך המתאים לבתי אבות של משרד השיכון" ]
+  ] [
+     fhir:code [ fhir:v "282" ] ;
+     fhir:display [ fhir:v "מקבץ דיור" ] ;
+     fhir:definition [ fhir:v "מקבץ דיור הוא הערך המתאים להגדרות כבאות והצלה" ]
+  ] [
+     fhir:code [ fhir:v "731" ] ;
+     fhir:display [ fhir:v "תת-יחידה של קופת חולים" ] ;
+     fhir:definition [ fhir:v "תת-יחידה של קופת חולים הוא הערך המתאים ליחידות מאוגדות בקופות החולים עפ\"י ההגדרות הקופה" ]
+  ] [
+     fhir:code [ fhir:v "779" ] ;
+     fhir:display [ fhir:v "ישיבה" ] ;
+     fhir:definition [ fhir:v "ישיבה הוא הערך המתאים לישיבה עפ\"י הגדרות משרד החינוך או ועד הישיבות" ]
+  ] [
+     fhir:code [ fhir:v "821" ] ;
+     fhir:display [ fhir:v "מלון מבודדים" ] ;
+     fhir:definition [ fhir:v "מלון מבודדים הוא הערך המתאים למלו מבודדי קורונה עפ\"י הגדרות משרד הבריאות או פקע\"ר" ]
+  ] [
+     fhir:code [ fhir:v "822" ] ;
+     fhir:display [ fhir:v "דרייב אין לבדיקות קורונה" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

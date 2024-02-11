@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="practitioner-certificate-type-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-certificate-type-moh</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="practitioner-certificate-type-moh-1"> </a></td><td>רשיון זמני</td></tr><tr><td style="white-space:nowrap">2<a name="practitioner-certificate-type-moh-2"> </a></td><td>רשיון קבוע</td></tr><tr><td style="white-space:nowrap">3<a name="practitioner-certificate-type-moh-3"> </a></td><td>תעודת הכרה זמנית</td></tr><tr><td style="white-space:nowrap">4<a name="practitioner-certificate-type-moh-4"> </a></td><td>תעודת הכרה</td></tr><tr><td style="white-space:nowrap">5<a name="practitioner-certificate-type-moh-5"> </a></td><td>תעודת מומחה</td></tr><tr><td style="white-space:nowrap">6<a name="practitioner-certificate-type-moh-6"> </a></td><td>היתר מוגבל למומחה</td></tr><tr><td style="white-space:nowrap">7<a name="practitioner-certificate-type-moh-7"> </a></td><td>סטז'</td></tr><tr><td style="white-space:nowrap">8<a name="practitioner-certificate-type-moh-8"> </a></td><td>אישור הכרה</td></tr><tr><td style="white-space:nowrap">9<a name="practitioner-certificate-type-moh-9"> </a></td><td>היתר לניהול מעבדה רפואית</td></tr><tr><td style="white-space:nowrap">10<a name="practitioner-certificate-type-moh-10"> </a></td><td>היתר מוגבל למשתלם</td></tr><tr><td style="white-space:nowrap">11<a name="practitioner-certificate-type-moh-11"> </a></td><td>הרשאה מוגבלת למומחה</td></tr><tr><td style="white-space:nowrap">12<a name="practitioner-certificate-type-moh-12"> </a></td><td>פטור לתלמיד רפואה</td></tr><tr><td style="white-space:nowrap">13<a name="practitioner-certificate-type-moh-13"> </a></td><td>תעודת מדריך</td></tr><tr><td style="white-space:nowrap">14<a name="practitioner-certificate-type-moh-14"> </a></td><td>פטור לפי סעיף 59(14 שנה)</td></tr><tr><td style="white-space:nowrap">15<a name="practitioner-certificate-type-moh-15"> </a></td><td>אישור לרכישת סטג' ל-6 חודשים</td></tr><tr><td style="white-space:nowrap">16<a name="practitioner-certificate-type-moh-16"> </a></td><td>התקן תוך רחמי</td></tr><tr><td style="white-space:nowrap">17<a name="practitioner-certificate-type-moh-17"> </a></td><td>העתק רשיון קבוע</td></tr><tr><td style="white-space:nowrap">18<a name="practitioner-certificate-type-moh-18"> </a></td><td>העתק תעודת הכרה</td></tr><tr><td style="white-space:nowrap">19<a name="practitioner-certificate-type-moh-19"> </a></td><td>היתר לתושבים זרים</td></tr><tr><td style="white-space:nowrap">20<a name="practitioner-certificate-type-moh-20"> </a></td><td>הרשאה לסטז  לבוגרי חו&quot;ל</td></tr><tr><td style="white-space:nowrap">21<a name="practitioner-certificate-type-moh-21"> </a></td><td>העתק רשיון למומחה</td></tr><tr><td style="white-space:nowrap">22<a name="practitioner-certificate-type-moh-22"> </a></td><td>היתר מוגבל למומחה באופטלמולוגיה</td></tr><tr><td style="white-space:nowrap">23<a name="practitioner-certificate-type-moh-23"> </a></td><td>היתר מוגבל למומחה בניתוחי לב ילדים</td></tr><tr><td style="white-space:nowrap">24<a name="practitioner-certificate-type-moh-24"> </a></td><td>העתק תעודת מומחה-מדריך</td></tr><tr><td style="white-space:nowrap">25<a name="practitioner-certificate-type-moh-25"> </a></td><td>רשיון בהיפנוזה</td></tr><tr><td style="white-space:nowrap">26<a name="practitioner-certificate-type-moh-26"> </a></td><td>תעודת רישום</td></tr><tr><td style="white-space:nowrap">27<a name="practitioner-certificate-type-moh-27"> </a></td><td>העתק רשיון זמני</td></tr><tr><td style="white-space:nowrap">28<a name="practitioner-certificate-type-moh-28"> </a></td><td>תעודת יושר</td></tr><tr><td style="white-space:nowrap">29<a name="practitioner-certificate-type-moh-29"> </a></td><td>ויזה</td></tr><tr><td style="white-space:nowrap">30<a name="practitioner-certificate-type-moh-30"> </a></td><td>ויזה - התמחות ראשונית</td></tr><tr><td style="white-space:nowrap">31<a name="practitioner-certificate-type-moh-31"> </a></td><td>היתר מיוחד להעסקה</td></tr><tr><td style="white-space:nowrap">32<a name="practitioner-certificate-type-moh-32"> </a></td><td>העתק תעודת מקצוע - זמנית</td></tr><tr><td style="white-space:nowrap">33<a name="practitioner-certificate-type-moh-33"> </a></td><td>העתק היתר לניהול מעבדה בתוך מערך המעבדות</td></tr><tr><td style="white-space:nowrap">34<a name="practitioner-certificate-type-moh-34"> </a></td><td>אישור העסקה</td></tr><tr><td style="white-space:nowrap">60<a name="practitioner-certificate-type-moh-60"> </a></td><td>היתר לניהול מעבדה בתוך מערך המעבדות</td></tr><tr><td style="white-space:nowrap">101<a name="practitioner-certificate-type-moh-101"> </a></td><td>היתר מוגבל למוסדות</td></tr><tr><td style="white-space:nowrap">102<a name="practitioner-certificate-type-moh-102"> </a></td><td>היתר זמני</td></tr><tr><td style="white-space:nowrap">103<a name="practitioner-certificate-type-moh-103"> </a></td><td>תעודת רישום מוגבלת למתן דם</td></tr><tr><td style="white-space:nowrap">104<a name="practitioner-certificate-type-moh-104"> </a></td><td>אישור הכנה ללידה</td></tr><tr><td style="white-space:nowrap">105<a name="practitioner-certificate-type-moh-105"> </a></td><td>העתק אישור הכנה ללידה</td></tr><tr><td style="white-space:nowrap">106<a name="practitioner-certificate-type-moh-106"> </a></td><td>אישור סיום מודולה מקצועית בסיעוד</td></tr><tr><td style="white-space:nowrap">108<a name="practitioner-certificate-type-moh-108"> </a></td><td>אישור לימודים</td></tr><tr><td style="white-space:nowrap">109<a name="practitioner-certificate-type-moh-109"> </a></td><td>היתר זמני מוגבל למזרח ירושלים</td></tr><tr><td style="white-space:nowrap">110<a name="practitioner-certificate-type-moh-110"> </a></td><td>תעודת רישום קורס ע ב</td></tr><tr><td style="white-space:nowrap">111<a name="practitioner-certificate-type-moh-111"> </a></td><td>העתק תעודת רישום לקורס ע.ב</td></tr><tr><td style="white-space:nowrap">112<a name="practitioner-certificate-type-moh-112"> </a></td><td>אישור לחוץ לארץ</td></tr><tr><td style="white-space:nowrap">113<a name="practitioner-certificate-type-moh-113"> </a></td><td>העתק תעודת רישום</td></tr><tr><td style="white-space:nowrap">114<a name="practitioner-certificate-type-moh-114"> </a></td><td>היתר מוגבל בפיקוח</td></tr><tr><td style="white-space:nowrap">115<a name="practitioner-certificate-type-moh-115"> </a></td><td>אישור הדרכה קלינית</td></tr><tr><td style="white-space:nowrap">116<a name="practitioner-certificate-type-moh-116"> </a></td><td>העתק היתר זמני</td></tr><tr><td style="white-space:nowrap">117<a name="practitioner-certificate-type-moh-117"> </a></td><td>העתק תעודת מדריך</td></tr><tr><td style="white-space:nowrap">118<a name="practitioner-certificate-type-moh-118"> </a></td><td>העתק רשיון בהפנוזה</td></tr><tr><td style="white-space:nowrap">119<a name="practitioner-certificate-type-moh-119"> </a></td><td>ת. רישום ע.ב מודולה מתקדמת</td></tr><tr><td style="white-space:nowrap">120<a name="practitioner-certificate-type-moh-120"> </a></td><td>תעודת מקצוע</td></tr><tr><td style="white-space:nowrap">121<a name="practitioner-certificate-type-moh-121"> </a></td><td>תעודת מקצוע - זמנית</td></tr><tr><td style="white-space:nowrap">122<a name="practitioner-certificate-type-moh-122"> </a></td><td>אחות מומחית בטיפול תומך</td></tr><tr><td style="white-space:nowrap">124<a name="practitioner-certificate-type-moh-124"> </a></td><td>היתר זמני לקורס על בסיסי</td></tr><tr><td style="white-space:nowrap">125<a name="practitioner-certificate-type-moh-125"> </a></td><td>העתק תעודת מקצוע</td></tr><tr><td style="white-space:nowrap">126<a name="practitioner-certificate-type-moh-126"> </a></td><td>טופס השלמה לתעודת יושר</td></tr><tr><td style="white-space:nowrap">127<a name="practitioner-certificate-type-moh-127"> </a></td><td>הרשאה לסטז' לבוגרי הארץ</td></tr><tr><td style="white-space:nowrap">128<a name="practitioner-certificate-type-moh-128"> </a></td><td>היתר מוגבל</td></tr><tr><td style="white-space:nowrap">129<a name="practitioner-certificate-type-moh-129"> </a></td><td>אישור מחנך</td></tr><tr><td style="white-space:nowrap">130<a name="practitioner-certificate-type-moh-130"> </a></td><td>אישור לקנביס</td></tr><tr><td style="white-space:nowrap">131<a name="practitioner-certificate-type-moh-131"> </a></td><td>תעודת הסמכה</td></tr><tr><td style="white-space:nowrap">132<a name="practitioner-certificate-type-moh-132"> </a></td><td>אישור לטיפול בהרדמה</td></tr><tr><td style="white-space:nowrap">133<a name="practitioner-certificate-type-moh-133"> </a></td><td>רשיון זמני לעבודה בפיקוח</td></tr><tr><td style="white-space:nowrap">134<a name="practitioner-certificate-type-moh-134"> </a></td><td>היתר מוגבל- היפנוזה</td></tr><tr><td style="white-space:nowrap">135<a name="practitioner-certificate-type-moh-135"> </a></td><td>אישור תיירות מרפא</td></tr><tr><td style="white-space:nowrap">136<a name="practitioner-certificate-type-moh-136"> </a></td><td>אישור הדרכה קלינית למומחיות</td></tr><tr><td style="white-space:nowrap">137<a name="practitioner-certificate-type-moh-137"> </a></td><td>תעודת ספורט</td></tr><tr><td style="white-space:nowrap">138<a name="practitioner-certificate-type-moh-138"> </a></td><td>היתר מוגבל להתנסות</td></tr><tr><td style="white-space:nowrap">139<a name="practitioner-certificate-type-moh-139"> </a></td><td>אישור סדציה לילדים</td></tr><tr><td style="white-space:nowrap">140<a name="practitioner-certificate-type-moh-140"> </a></td><td>אישור סדציה למבוגרים</td></tr><tr><td style="white-space:nowrap">141<a name="practitioner-certificate-type-moh-141"> </a></td><td>היתר זמני לפסיכולוגיה</td></tr><tr><td style="white-space:nowrap">142<a name="practitioner-certificate-type-moh-142"> </a></td><td>היתר זמני - קורונה</td></tr><tr><td style="white-space:nowrap">143<a name="practitioner-certificate-type-moh-143"> </a></td><td>תעודת הסמכה - אקמו</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-01"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"/>
+  <version value="0.13.2"/>
+  <name value="PractitionerCertificateTypeMoH"/>
+  <title value="MoH Certificate Types"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for certificate types according to Israeli MoH"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="76"/>
+  <concept>
+    <code value="1"/>
+    <display value="רשיון זמני"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="רשיון קבוע"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="תעודת הכרה זמנית"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="תעודת הכרה"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="תעודת מומחה"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="היתר מוגבל למומחה"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="סטז'"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="אישור הכרה"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="היתר לניהול מעבדה רפואית"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="היתר מוגבל למשתלם"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="הרשאה מוגבלת למומחה"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="פטור לתלמיד רפואה"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="תעודת מדריך"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="פטור לפי סעיף 59(14 שנה)"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="אישור לרכישת סטג' ל-6 חודשים"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="התקן תוך רחמי"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="העתק רשיון קבוע"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="העתק תעודת הכרה"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="היתר לתושבים זרים"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="הרשאה לסטז  לבוגרי חו&quot;ל"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="העתק רשיון למומחה"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="היתר מוגבל למומחה באופטלמולוגיה"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="היתר מוגבל למומחה בניתוחי לב ילדים"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="העתק תעודת מומחה-מדריך"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="רשיון בהיפנוזה"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="תעודת רישום"/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="העתק רשיון זמני"/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="תעודת יושר"/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="ויזה"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="ויזה - התמחות ראשונית"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="היתר מיוחד להעסקה"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="העתק תעודת מקצוע - זמנית"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="העתק היתר לניהול מעבדה בתוך מערך המעבדות"/>
+  </concept>
+  <concept>
+    <code value="34"/>
+    <display value="אישור העסקה"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="היתר לניהול מעבדה בתוך מערך המעבדות"/>
+  </concept>
+  <concept>
+    <code value="101"/>
+    <display value="היתר מוגבל למוסדות"/>
+  </concept>
+  <concept>
+    <code value="102"/>
+    <display value="היתר זמני"/>
+  </concept>
+  <concept>
+    <code value="103"/>
+    <display value="תעודת רישום מוגבלת למתן דם"/>
+  </concept>
+  <concept>
+    <code value="104"/>
+    <display value="אישור הכנה ללידה"/>
+  </concept>
+  <concept>
+    <code value="105"/>
+    <display value="העתק אישור הכנה ללידה"/>
+  </concept>
+  <concept>
+    <code value="106"/>
+    <display value="אישור סיום מודולה מקצועית בסיעוד"/>
+  </concept>
+  <concept>
+    <code value="108"/>
+    <display value="אישור לימודים"/>
+  </concept>
+  <concept>
+    <code value="109"/>
+    <display value="היתר זמני מוגבל למזרח ירושלים"/>
+  </concept>
+  <concept>
+    <code value="110"/>
+    <display value="תעודת רישום קורס ע ב"/>
+  </concept>
+  <concept>
+    <code value="111"/>
+    <display value="העתק תעודת רישום לקורס ע.ב"/>
+  </concept>
+  <concept>
+    <code value="112"/>
+    <display value="אישור לחוץ לארץ"/>
+  </concept>
+  <concept>
+    <code value="113"/>
+    <display value="העתק תעודת רישום"/>
+  </concept>
+  <concept>
+    <code value="114"/>
+    <display value="היתר מוגבל בפיקוח"/>
+  </concept>
+  <concept>
+    <code value="115"/>
+    <display value="אישור הדרכה קלינית"/>
+  </concept>
+  <concept>
+    <code value="116"/>
+    <display value="העתק היתר זמני"/>
+  </concept>
+  <concept>
+    <code value="117"/>
+    <display value="העתק תעודת מדריך"/>
+  </concept>
+  <concept>
+    <code value="118"/>
+    <display value="העתק רשיון בהפנוזה"/>
+  </concept>
+  <concept>
+    <code value="119"/>
+    <display value="ת. רישום ע.ב מודולה מתקדמת"/>
+  </concept>
+  <concept>
+    <code value="120"/>
+    <display value="תעודת מקצוע"/>
+  </concept>
+  <concept>
+    <code value="121"/>
+    <display value="תעודת מקצוע - זמנית"/>
+  </concept>
+  <concept>
+    <code value="122"/>
+    <display value="אחות מומחית בטיפול תומך"/>
+  </concept>
+  <concept>
+    <code value="124"/>
+    <display value="היתר זמני לקורס על בסיסי"/>
+  </concept>
+  <concept>
+    <code value="125"/>
+    <display value="העתק תעודת מקצוע"/>
+  </concept>
+  <concept>
+    <code value="126"/>
+    <display value="טופס השלמה לתעודת יושר"/>
+  </concept>
+  <concept>
+    <code value="127"/>
+    <display value="הרשאה לסטז' לבוגרי הארץ"/>
+  </concept>
+  <concept>
+    <code value="128"/>
+    <display value="היתר מוגבל"/>
+  </concept>
+  <concept>
+    <code value="129"/>
+    <display value="אישור מחנך"/>
+  </concept>
+  <concept>
+    <code value="130"/>
+    <display value="אישור לקנביס"/>
+  </concept>
+  <concept>
+    <code value="131"/>
+    <display value="תעודת הסמכה"/>
+  </concept>
+  <concept>
+    <code value="132"/>
+    <display value="אישור לטיפול בהרדמה"/>
+  </concept>
+  <concept>
+    <code value="133"/>
+    <display value="רשיון זמני לעבודה בפיקוח"/>
+  </concept>
+  <concept>
+    <code value="134"/>
+    <display value="היתר מוגבל- היפנוזה"/>
+  </concept>
+  <concept>
+    <code value="135"/>
+    <display value="אישור תיירות מרפא"/>
+  </concept>
+  <concept>
+    <code value="136"/>
+    <display value="אישור הדרכה קלינית למומחיות"/>
+  </concept>
+  <concept>
+    <code value="137"/>
+    <display value="תעודת ספורט"/>
+  </concept>
+  <concept>
+    <code value="138"/>
+    <display value="היתר מוגבל להתנסות"/>
+  </concept>
+  <concept>
+    <code value="139"/>
+    <display value="אישור סדציה לילדים"/>
+  </concept>
+  <concept>
+    <code value="140"/>
+    <display value="אישור סדציה למבוגרים"/>
+  </concept>
+  <concept>
+    <code value="141"/>
+    <display value="היתר זמני לפסיכולוגיה"/>
+  </concept>
+  <concept>
+    <code value="142"/>
+    <display value="היתר זמני - קורונה"/>
+  </concept>
+  <concept>
+    <code value="143"/>
+    <display value="תעודת הסמכה - אקמו"/>
+  </concept>
+</CodeSystem>

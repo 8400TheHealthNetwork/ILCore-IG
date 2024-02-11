@@ -1,0 +1,44 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-allergy-intolerance-end-reason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/63098009\">63098009</a></td><td>Clinical immunologist (occupation)</td></tr><tr><td><a href=\"http://snomed.info/id/165009005\">165009005</a></td><td>Allergy testing - no reaction (finding)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-end-reason",
+  "version" : "0.13.2",
+  "name" : "ILCoreAllergyIntoleranceEndReason",
+  "title" : "IL Core Condition End Reason",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for End Reasons of Allergy Intolerance for the IL Core",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "63098009",
+        "display" : "Clinical immunologist (occupation)"
+      },
+      {
+        "code" : "165009005",
+        "display" : "Allergy testing - no reaction (finding)"
+      }]
+    }]
+  }
+}

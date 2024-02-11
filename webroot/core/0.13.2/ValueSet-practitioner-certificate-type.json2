@@ -1,0 +1,227 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "practitioner-certificate-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-practitioner-certificate-type-molsa.html\"><code>http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-molsa.html#practitioner-certificate-type-molsa-SW\">SW</a></td><td>רשיון עבודה סוציאלית</td></tr></table></li><li>Include these codes as defined in <a href=\"CodeSystem-practitioner-certificate-type-moh.html\"><code>http://fhir.health.gov.il/cs/practitioner-certificate-type-moh</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-1\">1</a></td><td>רשיון זמני</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-2\">2</a></td><td>רשיון קבוע</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-3\">3</a></td><td>תעודת הכרה זמנית</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-4\">4</a></td><td>תעודת הכרה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-5\">5</a></td><td>תעודת מומחה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-6\">6</a></td><td>היתר מוגבל למומחה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-7\">7</a></td><td>סטז'</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-9\">9</a></td><td>היתר לניהול מעבדה רפואית</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-10\">10</a></td><td>היתר מוגבל למשתלם</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-11\">11</a></td><td>הרשאה מוגבלת למומחה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-13\">13</a></td><td>תעודת מדריך</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-19\">19</a></td><td>היתר לתושבים זרים</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-22\">22</a></td><td>היתר מוגבל למומחה באופטלמולוגיה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-23\">23</a></td><td>היתר מוגבל למומחה בניתוחי לב ילדים</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-25\">25</a></td><td>רשיון בהיפנוזה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-26\">26</a></td><td>תעודת רישום</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-28\">28</a></td><td>תעודת יושר</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-31\">31</a></td><td>היתר מיוחד להעסקה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-60\">60</a></td><td>היתר לניהול מעבדה בתוך מערך המעבדות</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-101\">101</a></td><td>היתר מוגבל למוסדות</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-102\">102</a></td><td>היתר זמני</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-103\">103</a></td><td>תעודת רישום מוגבלת למתן דם</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-109\">109</a></td><td>היתר זמני מוגבל למזרח ירושלים</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-110\">110</a></td><td>תעודת רישום קורס ע ב</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-114\">114</a></td><td>היתר מוגבל בפיקוח</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-119\">119</a></td><td>ת. רישום ע.ב מודולה מתקדמת</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-120\">120</a></td><td>תעודת מקצוע</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-121\">121</a></td><td>תעודת מקצוע - זמנית</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-122\">122</a></td><td>אחות מומחית בטיפול תומך</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-124\">124</a></td><td>היתר זמני לקורס על בסיסי</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-127\">127</a></td><td>הרשאה לסטז' לבוגרי הארץ</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-128\">128</a></td><td>היתר מוגבל</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-129\">129</a></td><td>אישור מחנך</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-130\">130</a></td><td>אישור לקנביס</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-131\">131</a></td><td>תעודת הסמכה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-132\">132</a></td><td>אישור לטיפול בהרדמה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-133\">133</a></td><td>רשיון זמני לעבודה בפיקוח</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-134\">134</a></td><td>היתר מוגבל- היפנוזה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-135\">135</a></td><td>אישור תיירות מרפא</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-136\">136</a></td><td>אישור הדרכה קלינית למומחיות</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-138\">138</a></td><td>היתר מוגבל להתנסות</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-139\">139</a></td><td>אישור סדציה לילדים</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-140\">140</a></td><td>אישור סדציה למבוגרים</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-141\">141</a></td><td>היתר זמני לפסיכולוגיה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-142\">142</a></td><td>היתר זמני - קורונה</td></tr><tr><td><a href=\"CodeSystem-practitioner-certificate-type-moh.html#practitioner-certificate-type-moh-143\">143</a></td><td>תעודת הסמכה - אקמו</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/practitioner-certificate-type",
+  "version" : "0.13.2",
+  "name" : "PractitionerCertificateType",
+  "title" : "Practitioner Certificate Types",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for certificate types for all medical practitioners",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa",
+      "concept" : [{
+        "code" : "SW",
+        "display" : "רשיון עבודה סוציאלית"
+      }]
+    },
+    {
+      "system" : "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh",
+      "concept" : [{
+        "code" : "1",
+        "display" : "רשיון זמני"
+      },
+      {
+        "code" : "2",
+        "display" : "רשיון קבוע"
+      },
+      {
+        "code" : "3",
+        "display" : "תעודת הכרה זמנית"
+      },
+      {
+        "code" : "4",
+        "display" : "תעודת הכרה"
+      },
+      {
+        "code" : "5",
+        "display" : "תעודת מומחה"
+      },
+      {
+        "code" : "6",
+        "display" : "היתר מוגבל למומחה"
+      },
+      {
+        "code" : "7",
+        "display" : "סטז'"
+      },
+      {
+        "code" : "9",
+        "display" : "היתר לניהול מעבדה רפואית"
+      },
+      {
+        "code" : "10",
+        "display" : "היתר מוגבל למשתלם"
+      },
+      {
+        "code" : "11",
+        "display" : "הרשאה מוגבלת למומחה"
+      },
+      {
+        "code" : "13",
+        "display" : "תעודת מדריך"
+      },
+      {
+        "code" : "19",
+        "display" : "היתר לתושבים זרים"
+      },
+      {
+        "code" : "22",
+        "display" : "היתר מוגבל למומחה באופטלמולוגיה"
+      },
+      {
+        "code" : "23",
+        "display" : "היתר מוגבל למומחה בניתוחי לב ילדים"
+      },
+      {
+        "code" : "25",
+        "display" : "רשיון בהיפנוזה"
+      },
+      {
+        "code" : "26",
+        "display" : "תעודת רישום"
+      },
+      {
+        "code" : "28",
+        "display" : "תעודת יושר"
+      },
+      {
+        "code" : "31",
+        "display" : "היתר מיוחד להעסקה"
+      },
+      {
+        "code" : "60",
+        "display" : "היתר לניהול מעבדה בתוך מערך המעבדות"
+      },
+      {
+        "code" : "101",
+        "display" : "היתר מוגבל למוסדות"
+      },
+      {
+        "code" : "102",
+        "display" : "היתר זמני"
+      },
+      {
+        "code" : "103",
+        "display" : "תעודת רישום מוגבלת למתן דם"
+      },
+      {
+        "code" : "109",
+        "display" : "היתר זמני מוגבל למזרח ירושלים"
+      },
+      {
+        "code" : "110",
+        "display" : "תעודת רישום קורס ע ב"
+      },
+      {
+        "code" : "114",
+        "display" : "היתר מוגבל בפיקוח"
+      },
+      {
+        "code" : "119",
+        "display" : "ת. רישום ע.ב מודולה מתקדמת"
+      },
+      {
+        "code" : "120",
+        "display" : "תעודת מקצוע"
+      },
+      {
+        "code" : "121",
+        "display" : "תעודת מקצוע - זמנית"
+      },
+      {
+        "code" : "122",
+        "display" : "אחות מומחית בטיפול תומך"
+      },
+      {
+        "code" : "124",
+        "display" : "היתר זמני לקורס על בסיסי"
+      },
+      {
+        "code" : "127",
+        "display" : "הרשאה לסטז' לבוגרי הארץ"
+      },
+      {
+        "code" : "128",
+        "display" : "היתר מוגבל"
+      },
+      {
+        "code" : "129",
+        "display" : "אישור מחנך"
+      },
+      {
+        "code" : "130",
+        "display" : "אישור לקנביס"
+      },
+      {
+        "code" : "131",
+        "display" : "תעודת הסמכה"
+      },
+      {
+        "code" : "132",
+        "display" : "אישור לטיפול בהרדמה"
+      },
+      {
+        "code" : "133",
+        "display" : "רשיון זמני לעבודה בפיקוח"
+      },
+      {
+        "code" : "134",
+        "display" : "היתר מוגבל- היפנוזה"
+      },
+      {
+        "code" : "135",
+        "display" : "אישור תיירות מרפא"
+      },
+      {
+        "code" : "136",
+        "display" : "אישור הדרכה קלינית למומחיות"
+      },
+      {
+        "code" : "138",
+        "display" : "היתר מוגבל להתנסות"
+      },
+      {
+        "code" : "139",
+        "display" : "אישור סדציה לילדים"
+      },
+      {
+        "code" : "140",
+        "display" : "אישור סדציה למבוגרים"
+      },
+      {
+        "code" : "141",
+        "display" : "היתר זמני לפסיכולוגיה"
+      },
+      {
+        "code" : "142",
+        "display" : "היתר זמני - קורונה"
+      },
+      {
+        "code" : "143",
+        "display" : "תעודת הסמכה - אקמו"
+      }]
+    }]
+  }
+}

@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-virtual-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/1258986006\">1258986006</a></td><td>Face-to-face encounter (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/185317003\">185317003</a></td><td>Telephone encounter (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/308720009\">308720009</a></td><td>Letter encounter (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/453131000124105\">453131000124105</a></td><td>Videotelephony encounter (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/445450000\">445450000</a></td><td>Encounter by short message service text messaging (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1197766005\">1197766005</a></td><td>Encounter by electronic text-based asynchronous communication (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/1479971000168100\">1479971000168100</a></td><td>Email encounter (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/185320006\">185320006</a></td><td>Encounter by computer link (procedure)</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-virtual-type",
+  "version" : "0.13.2",
+  "name" : "ILCoreVirtualType",
+  "title" : "IL Core Virtual encounter Type Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of type codes for Virtual Encounters for the IL Core",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "1258986006",
+        "display" : "Face-to-face encounter (procedure)"
+      },
+      {
+        "code" : "185317003",
+        "display" : "Telephone encounter (procedure)"
+      },
+      {
+        "code" : "308720009",
+        "display" : "Letter encounter (procedure)"
+      },
+      {
+        "code" : "453131000124105",
+        "display" : "Videotelephony encounter (procedure)"
+      },
+      {
+        "code" : "445450000",
+        "display" : "Encounter by short message service text messaging (procedure)"
+      },
+      {
+        "code" : "1197766005",
+        "display" : "Encounter by electronic text-based asynchronous communication (procedure)"
+      },
+      {
+        "code" : "1479971000168100",
+        "display" : "Email encounter (procedure)"
+      },
+      {
+        "code" : "185320006",
+        "display" : "Encounter by computer link (procedure)"
+      }]
+    }]
+  }
+}

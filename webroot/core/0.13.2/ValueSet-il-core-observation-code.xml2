@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="il-core-observation-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  363787002 (Observable entity)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  386053000 (Investigations)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  404684003 (Clinical finding (finding))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  413350009 (Context-dependent finding)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  272379006 (Events)</li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/il-core-observation-code"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreObservationCode"/>
+  <title value="IL Core Observation Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of code codes for observations for the IL Core"/>
+  <compose>
+    <include>
+      <system value="http://loinc.org"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="363787002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="386053000"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="404684003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="413350009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="272379006"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

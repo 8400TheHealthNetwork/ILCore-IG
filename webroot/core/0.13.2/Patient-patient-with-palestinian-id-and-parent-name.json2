@@ -1,0 +1,57 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patient-with-palestinian-id-and-parent-name",
+  "meta" : {
+    "profile" : ["http://fhir.health.gov.il/StructureDefinition/il-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">דלאל עומאר</div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "given",
+      "valueString" : "יוסוף"
+    },
+    {
+      "url" : "role",
+      "valueCode" : "FTH"
+    },
+    {
+      "url" : "official",
+      "valueBoolean" : false
+    }],
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name"
+  }],
+  "identifier" : [{
+    "system" : "http://fhir.health.gov.il/identifier/pna-national-id",
+    "value" : "566333344"
+  }],
+  "active" : true,
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/language",
+      "valueCode" : "ar"
+    }],
+    "text" : "עומאר דלאל",
+    "family" : "דלאל",
+    "given" : ["עומאר"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "059334455",
+    "use" : "mobile"
+  },
+  {
+    "system" : "email",
+    "value" : "dalal@example.com"
+  }],
+  "gender" : "male",
+  "birthDate" : "1999-02-05",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "line" : ["חילו 20 עזה"],
+    "city" : "עזה",
+    "country" : "PS"
+  }]
+}

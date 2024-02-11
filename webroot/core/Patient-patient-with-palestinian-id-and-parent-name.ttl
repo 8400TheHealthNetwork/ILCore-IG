@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/patient-with-palestinian-id-and-parent-name> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-with-palestinian-id-and-parent-name"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">דלאל עומאר</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "given"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "יוסוף" ]
+     ] [
+       fhir:url [ fhir:v "role"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "FTH" ]
+     ] [
+       fhir:url [ fhir:v "official"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "false"^^xsd:boolean ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/pna-national-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "566333344" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "ar" ]
+     ] ) ;
+     fhir:text [ fhir:v "עומאר דלאל" ] ;
+     fhir:family [ fhir:v "דלאל" ] ;
+     fhir:given ( [ fhir:v "עומאר" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "059334455" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "dalal@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1999-02-05"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:address ( [
+     fhir:line ( [ fhir:v "חילו 20 עזה" ] ) ;
+     fhir:city [ fhir:v "עזה" ] ;
+     fhir:country [ fhir:v "PS" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

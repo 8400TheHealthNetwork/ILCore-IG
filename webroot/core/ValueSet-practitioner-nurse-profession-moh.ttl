@@ -1,0 +1,51 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/practitioner-nurse-profession-moh> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-nurse-profession-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-practitioner-profession-moh.html\"><code>http://fhir.health.gov.il/cs/practitioner-profession-moh</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-101\">101</a></td><td>אח/ות מוסמכ/ת</td><td>מקצוע האח/ות מוסמכ/ת שייך לתחום הסיעוד לו קיימים ערכי מומחיות Expertise</td></tr><tr><td><a href=\"CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-102\">102</a></td><td>אח/ות מעשי/ת</td><td>מקצוע האח/ות מעשי/ת שייך לתחום הסיעוד ללא מומחיות או התמחות</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/practitioner-nurse-profession-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "PractitionerNurseProfessionMoH"] ; # 
+  fhir:title [ fhir:v "קוד מקצוע לעוסק בסיעוד"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "קוד מקצוע לעוסק בסיעוד לפי רישוי משרד הבריאות"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-profession-moh"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "אח/ות מוסמכ/ת" ]
+       ] [
+         fhir:code [ fhir:v "102" ] ;
+         fhir:display [ fhir:v "אח/ות מעשי/ת" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

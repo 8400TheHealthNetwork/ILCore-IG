@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="il-core-medication-statement-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-il-core-medication-code.html">ILCore Medication Code</a></li><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/787481004">787481004</a></td><td>No known Medication</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/il-core-medication-statement-code"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreMedicationStatementCode"/>
+  <title value="ILCore Medication statement Code"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for Medication statement Code"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.health.gov.il/ValueSet/il-core-medication-code"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="787481004"/>
+        <display value="No known Medication"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

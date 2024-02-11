@@ -1,0 +1,79 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Condition/condition-type-1-diabetes> a fhir:Condition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "condition-type-1-diabetes"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-condition"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-condition>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Condition</b><a name=\"condition-type-1-diabetes\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Condition &quot;condition-type-1-diabetes&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-il-core-condition.html\">ILCore Condition Profile</a></p></div><p><b>clinicalStatus</b>: Active <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html\">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html\">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html\">Condition Category Codes</a>#encounter-diagnosis; <a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#439401001 &quot;Diagnosis&quot;)</span></p><p><b>severity</b>: Severe <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#24484000)</span></p><p><b>code</b>: Type 1 Diabetes <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#46635009 &quot;Type 1 diabetes mellitus&quot;)</span></p><p><b>bodySite</b>: Pancreas <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://browser.ihtsdotools.org/\">SNOMED CT</a>#181277001 &quot;Entire pancreas&quot;)</span></p><p><b>subject</b>: <a href=\"Patient-patient-with-israeli-id.html\">Patient/patient-with-israeli-id</a> &quot; כהן&quot;</p><p><b>onset</b>: 2012-05-24</p></div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "encounter-diagnosis" ] ;
+       fhir:display [ fhir:v "Encounter Diagnosis" ]
+     ] [
+       a sct:439401001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "439401001" ] ;
+       fhir:display [ fhir:v "Diagnosis" ]
+     ] )
+  ] ) ; # 
+  fhir:severity [
+     fhir:coding ( [
+       a sct:24484000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "24484000" ] ;
+       fhir:display [ fhir:v "Severe" ]
+     ] )
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:46635009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "46635009" ] ;
+       fhir:display [ fhir:v "Type 1 diabetes mellitus" ]
+     ] ) ;
+     fhir:text [ fhir:v "Type 1 Diabetes" ]
+  ] ; # 
+  fhir:bodySite ( [
+     fhir:coding ( [
+       a sct:181277001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "181277001" ] ;
+       fhir:display [ fhir:v "Entire pancreas" ]
+     ] ) ;
+     fhir:text [ fhir:v "Pancreas" ]
+  ] ) ; # 
+  fhir:subject [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-with-israeli-id> ;
+     fhir:reference [ fhir:v "Patient/patient-with-israeli-id" ]
+  ] ; # 
+  fhir:onset [ fhir:v "2012-05-24"^^xsd:date] . # 
+
+# -------------------------------------------------------------------------------------
+

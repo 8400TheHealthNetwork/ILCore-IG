@@ -1,0 +1,54 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/il-core-medication-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-medication-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-moh-medication-code.html\"><code>http://israeldrugs.health.gov.il</code></a></li><li>Include all codes defined in <code>http://cosmetics.health.gov.il</code></li><li>Include all codes defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a></li><li>Include all codes defined in <a href=\"http://www.whocc.no/atc\"><code>http://www.whocc.no/atc</code></a></li><li>Include all codes defined in <a href=\"http://www.nlm.nih.gov/research/umls/rxnorm\"><code>http://www.nlm.nih.gov/research/umls/rxnorm</code></a></li><li>Include all codes defined in <code>http://www.gs1.org/gtin</code></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/il-core-medication-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreMedicationCode"] ; # 
+  fhir:title [ fhir:v "ILCore Medication Code"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for medications according to ILCore catalogue"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://israeldrugs.health.gov.il"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://cosmetics.health.gov.il"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://www.nlm.nih.gov/research/umls/rxnorm"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://www.gs1.org/gtin"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

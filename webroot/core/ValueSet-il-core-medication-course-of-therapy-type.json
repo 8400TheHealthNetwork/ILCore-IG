@@ -1,0 +1,47 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-medication-course-of-therapy-type",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-medicationrequest-course-of-therapy.html\"><code>http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-medicationrequest-course-of-therapy.html#medicationrequest-course-of-therapy-continuous\">continuous</a></td><td>Continuous long term therapy</td><td>A medication which is expected to be continued beyond the present order and which the patient should be assumed to be taking unless explicitly stopped.</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-medicationrequest-course-of-therapy.html#medicationrequest-course-of-therapy-acute\">acute</a></td><td>Short course (acute) therapy</td><td>A medication which the patient is only expected to consume for the duration of the current order and which is not expected to be renewed.</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-il-core-medication-course-of-therapy-type.html\"><code>http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type",
+  "version" : "0.13.2",
+  "name" : "ILCoreMedicationCourseOfTherapyType",
+  "title" : "ILCore Medication Course Of Therapy type",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for Medication Course Of Therapy",
+  "compose" : {
+    "include" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+      "concept" : [{
+        "code" : "continuous",
+        "display" : "Continuous long term therapy"
+      },
+      {
+        "code" : "acute",
+        "display" : "Short course (acute) therapy"
+      }]
+    },
+    {
+      "system" : "http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type"
+    }]
+  }
+}

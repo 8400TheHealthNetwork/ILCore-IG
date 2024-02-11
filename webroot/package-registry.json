@@ -1,0 +1,23 @@
+{
+  "packages" : [
+    {
+      "path" : "core/package-list.json",
+      "package-id" : "health.gov.il.fhir.core",
+      "title" : "IL-Core IG",
+      "canonical" : "http://fhir.health.gov.il",
+      "category" : "National Base",
+      "ci-build" : "https://build.fhir.org/ig/il/core",
+      "version-count" : 1,
+      "latest" : {
+        "version" : "0.13.2",
+        "date" : "2023-12-23",
+        "path" : "http://fhir.health.gov.il/0.13.2"
+      },
+      "milestone" : {
+        "version" : "0.13.2",
+        "date" : "2023-12-23",
+        "path" : "http://fhir.health.gov.il/0.13.2"
+      }
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-hight",
+  "meta" : {
+    "profile" : ["http://fhir.health.gov.il/StructureDefinition/il-core-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of Hight - 1.72 Meters</div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "vital-signs",
+      "display" : "Vital Signs"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "8302-2",
+      "display" : "Body height"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-with-israeli-id"
+  },
+  "performer" : [{
+    "reference" : "Practitioner/practitioner-nurse"
+  }],
+  "valueQuantity" : {
+    "value" : 172,
+    "unit" : "cm",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "cm"
+  },
+  "referenceRange" : [{
+    "low" : {
+      "value" : 130,
+      "unit" : "cm",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "cm"
+    },
+    "high" : {
+      "value" : 220,
+      "unit" : "cm",
+      "system" : "http://unitsofmeasure.org",
+      "code" : "cm"
+    }
+  }]
+}

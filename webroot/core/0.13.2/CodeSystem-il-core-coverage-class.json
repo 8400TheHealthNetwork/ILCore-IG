@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "il-core-coverage-class",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-coverage-class</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">OBL-EXT<a name=\"il-core-coverage-class-OBL-EXT\"> </a></td><td>Obligation from HMO extended healthcare</td><td>Obligation from an HMO extended healthcare coverage</td></tr><tr><td style=\"white-space:nowrap\">OBL-BASKET<a name=\"il-core-coverage-class-OBL-BASKET\"> </a></td><td>Obligation from health basket</td><td>Obligation from an Israel national health basket</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate",
+    "valueDate" : "2023-08"
+  }],
+  "url" : "http://fhir.health.gov.il/cs/il-core-coverage-class",
+  "version" : "0.13.2",
+  "name" : "ILCoreCoverageClass",
+  "title" : "IL Core Coverage Class codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for Coverage classes",
+  "caseSensitive" : false,
+  "valueSet" : "http://fhir.health.gov.il/ValueSet/il-core-coverage-class",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "OBL-EXT",
+    "display" : "Obligation from HMO extended healthcare",
+    "definition" : "Obligation from an HMO extended healthcare coverage"
+  },
+  {
+    "code" : "OBL-BASKET",
+    "display" : "Obligation from health basket",
+    "definition" : "Obligation from an Israel national health basket"
+  }]
+}

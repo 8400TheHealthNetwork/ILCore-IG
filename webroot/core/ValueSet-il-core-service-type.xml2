@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="il-core-service-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  224891009 (Healthcare services)</li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/il-core-service-type"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreServiceType"/>
+  <title value="IL Core Service type"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for Service types for the IL Core"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="224891009"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

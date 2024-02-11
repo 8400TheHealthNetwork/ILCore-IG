@@ -1,0 +1,155 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "hebrew-date-day",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/hebrew-date-day</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"hebrew-date-day-1\"> </a></td><td>א'</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"hebrew-date-day-2\"> </a></td><td>ב'</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"hebrew-date-day-3\"> </a></td><td>ג'</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"hebrew-date-day-4\"> </a></td><td>ד'</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"hebrew-date-day-5\"> </a></td><td>ה'</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"hebrew-date-day-6\"> </a></td><td>ו'</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"hebrew-date-day-7\"> </a></td><td>ז'</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"hebrew-date-day-8\"> </a></td><td>ח'</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"hebrew-date-day-9\"> </a></td><td>ט'</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"hebrew-date-day-10\"> </a></td><td>י'</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"hebrew-date-day-11\"> </a></td><td>י&quot;א</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"hebrew-date-day-12\"> </a></td><td>י&quot;ב</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"hebrew-date-day-13\"> </a></td><td>י&quot;ג</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"hebrew-date-day-14\"> </a></td><td>י&quot;ד</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"hebrew-date-day-15\"> </a></td><td>ט&quot;ו</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"hebrew-date-day-16\"> </a></td><td>ט&quot;ז</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"hebrew-date-day-17\"> </a></td><td>י&quot;ז</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"hebrew-date-day-18\"> </a></td><td>י&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"hebrew-date-day-19\"> </a></td><td>י&quot;ט</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"hebrew-date-day-20\"> </a></td><td>כ'</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"hebrew-date-day-21\"> </a></td><td>כ&quot;א</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"hebrew-date-day-22\"> </a></td><td>כ&quot;ב</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"hebrew-date-day-23\"> </a></td><td>כ&quot;ג</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"hebrew-date-day-24\"> </a></td><td>כ&quot;ד</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"hebrew-date-day-25\"> </a></td><td>כ&quot;ה</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"hebrew-date-day-26\"> </a></td><td>כ&quot;ו</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"hebrew-date-day-27\"> </a></td><td>כ&quot;ז</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"hebrew-date-day-28\"> </a></td><td>כ&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"hebrew-date-day-29\"> </a></td><td>כ&quot;ט</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"hebrew-date-day-30\"> </a></td><td>ל'</td></tr></table></div>"
+  },
+  "url" : "http://fhir.health.gov.il/cs/hebrew-date-day",
+  "version" : "0.13.2",
+  "name" : "HebrewDateDay",
+  "title" : "Hebrew Date Day",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for Hebrew date days",
+  "caseSensitive" : false,
+  "valueSet" : "http://fhir.health.gov.il/ValueSet/hebrew-date-day",
+  "content" : "complete",
+  "count" : 30,
+  "concept" : [{
+    "code" : "1",
+    "display" : "א'"
+  },
+  {
+    "code" : "2",
+    "display" : "ב'"
+  },
+  {
+    "code" : "3",
+    "display" : "ג'"
+  },
+  {
+    "code" : "4",
+    "display" : "ד'"
+  },
+  {
+    "code" : "5",
+    "display" : "ה'"
+  },
+  {
+    "code" : "6",
+    "display" : "ו'"
+  },
+  {
+    "code" : "7",
+    "display" : "ז'"
+  },
+  {
+    "code" : "8",
+    "display" : "ח'"
+  },
+  {
+    "code" : "9",
+    "display" : "ט'"
+  },
+  {
+    "code" : "10",
+    "display" : "י'"
+  },
+  {
+    "code" : "11",
+    "display" : "י\"א"
+  },
+  {
+    "code" : "12",
+    "display" : "י\"ב"
+  },
+  {
+    "code" : "13",
+    "display" : "י\"ג"
+  },
+  {
+    "code" : "14",
+    "display" : "י\"ד"
+  },
+  {
+    "code" : "15",
+    "display" : "ט\"ו"
+  },
+  {
+    "code" : "16",
+    "display" : "ט\"ז"
+  },
+  {
+    "code" : "17",
+    "display" : "י\"ז"
+  },
+  {
+    "code" : "18",
+    "display" : "י\"ח"
+  },
+  {
+    "code" : "19",
+    "display" : "י\"ט"
+  },
+  {
+    "code" : "20",
+    "display" : "כ'"
+  },
+  {
+    "code" : "21",
+    "display" : "כ\"א"
+  },
+  {
+    "code" : "22",
+    "display" : "כ\"ב"
+  },
+  {
+    "code" : "23",
+    "display" : "כ\"ג"
+  },
+  {
+    "code" : "24",
+    "display" : "כ\"ד"
+  },
+  {
+    "code" : "25",
+    "display" : "כ\"ה"
+  },
+  {
+    "code" : "26",
+    "display" : "כ\"ו"
+  },
+  {
+    "code" : "27",
+    "display" : "כ\"ז"
+  },
+  {
+    "code" : "28",
+    "display" : "כ\"ח"
+  },
+  {
+    "code" : "29",
+    "display" : "כ\"ט"
+  },
+  {
+    "code" : "30",
+    "display" : "ל'"
+  }]
+}

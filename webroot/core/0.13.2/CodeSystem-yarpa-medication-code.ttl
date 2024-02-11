@@ -1,0 +1,41 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/yarpa-medication-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "yarpa-medication-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://yarpa.co.il/catalog</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://yarpa.co.il/catalog"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "YarpaMedicationCode"] ; # 
+  fhir:title [ fhir:v "Yarpa Medication Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for medications according to 'Yarpa' catalogue"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] . # 
+
+# -------------------------------------------------------------------------------------
+

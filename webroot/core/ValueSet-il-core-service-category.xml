@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="il-core-service-category"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/103693007">103693007</a></td><td>Diagnostic procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/386053000">386053000</a></td><td>Evaluation procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/14734007">14734007</a></td><td>Administrative procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/108252007">108252007</a></td><td>Laboratory procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/363679005">363679005</a></td><td>Imaging (procedure)</td></tr><tr><td><a href="http://snomed.info/id/409073007">409073007</a></td><td>Education (procedure)</td></tr><tr><td><a href="http://snomed.info/id/33879002">33879002</a></td><td>Immunization (procedure)</td></tr><tr><td><a href="http://snomed.info/id/7922000">7922000</a></td><td>General treatment (procedure)</td></tr><tr><td><a href="http://snomed.info/id/409063005">409063005</a></td><td>Counseling (procedure)</td></tr><tr><td><a href="http://snomed.info/id/387713003">387713003</a></td><td>Surgical procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/277132007">277132007</a></td><td>Therapeutic procedure (procedure)</td></tr><tr><td><a href="http://snomed.info/id/182813001">182813001</a></td><td>Emergency treatment (procedure)</td></tr><tr><td><a href="http://snomed.info/id/32485007">32485007</a></td><td>Hospital admission (procedure)</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/il-core-service-category"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreServiceCategory"/>
+  <title value="IL Core ServiceCategory"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for Service Category for the IL Core"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="103693007"/>
+        <display value="Diagnostic procedure (procedure)"/>
+      </concept>
+      <concept>
+        <code value="386053000"/>
+        <display value="Evaluation procedure (procedure)"/>
+      </concept>
+      <concept>
+        <code value="14734007"/>
+        <display value="Administrative procedure (procedure)"/>
+      </concept>
+      <concept>
+        <code value="108252007"/>
+        <display value="Laboratory procedure (procedure)"/>
+      </concept>
+      <concept>
+        <code value="363679005"/>
+        <display value="Imaging (procedure)"/>
+      </concept>
+      <concept>
+        <code value="409073007"/>
+        <display value="Education (procedure)"/>
+      </concept>
+      <concept>
+        <code value="33879002"/>
+        <display value="Immunization (procedure)"/>
+      </concept>
+      <concept>
+        <code value="7922000"/>
+        <display value="General treatment (procedure)"/>
+      </concept>
+      <concept>
+        <code value="409063005"/>
+        <display value="Counseling (procedure)"/>
+      </concept>
+      <concept>
+        <code value="387713003"/>
+        <display value="Surgical procedure (procedure)"/>
+      </concept>
+      <concept>
+        <code value="277132007"/>
+        <display value="Therapeutic procedure (procedure)"/>
+      </concept>
+      <concept>
+        <code value="182813001"/>
+        <display value="Emergency treatment (procedure)"/>
+      </concept>
+      <concept>
+        <code value="32485007"/>
+        <display value="Hospital admission (procedure)"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

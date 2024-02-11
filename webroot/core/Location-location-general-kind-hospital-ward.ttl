@@ -1,0 +1,37 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Location/location-general-kind-hospital-ward> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "location-general-kind-hospital-ward"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-location"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exmple for a general kind of hospital ward, not in a specific hospital or specific location</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.health.gov.il/cs/institute-department-moh"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "010011" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "פנימית ב'"] ; # 
+  fhir:mode [ fhir:v "kind"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HU" ] ;
+       fhir:display [ fhir:v "Hospital Unit" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

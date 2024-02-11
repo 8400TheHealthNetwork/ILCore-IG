@@ -1,0 +1,715 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>סוג מוסד לפי רישוי משרד הבריאות - XML Representation - IL Core Implementation Guide v0.13.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.152"}
+    h3,h4,h5,h6{--heading-prefix:"3.152"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IL Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.13.2 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://en.fhir-il-community.org/fhir-israel-core" target="_blank">ILCore Community</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>סוג מוסד לפי רישוי משרד הבריאות</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 7" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">This page is part of the IL-Core IG (v0.13.2: draft-1 Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.health.gov.il/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-institution-type-moh.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li class="active">
+      <a href="#">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-institution-type-moh.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-institution-type-moh.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: סוג מוסד לפי רישוי משרד הבריאות - XML Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2023-12-23
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-institution-type-moh.xml" no-download="true">Raw xml</a> | <a download="null" href="CodeSystem-institution-type-moh.xml">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; overflow: hidden" class="xml"><code>
+
+&lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem">CodeSystem</a> xmlns="http://hl7.org/fhir"&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">id</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="institution-type-moh"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">text</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="generated"/&gt;
+    &lt;div xmlns="http://www.w3.org/1999/xhtml"&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://fhir.health.gov.il/cs/institution-type-moh&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class="codes"&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;99&lt;a name="institution-type-moh-99"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;לא ידוע&lt;/td&gt;&lt;td&gt;ערך ברירת מחדל במקרה שערך סוג מוסד הבריאות לא קיים מאחר הגיע ריק&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;1&lt;a name="institution-type-moh-1"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;אשפוז כללי&lt;/td&gt;&lt;td&gt;אשפוז כללי הוא הערך המתאים לבתי חולים כלליים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים, הדסה או פרטית.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;2&lt;a name="institution-type-moh-2"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי יולדות&lt;/td&gt;&lt;td&gt;בתי יולדות הוא הערך המתאים לבתי חולים ליולדות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות שפוז וחדרי לידה לפי הסוגים השונים.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;3&lt;a name="institution-type-moh-3"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בית חולים לילדים&lt;/td&gt;&lt;td&gt;בית חולים לילדים הוא הערך המתאים לבתי חולים כלליים לילדים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;11&lt;a name="institution-type-moh-11"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בריאות הנפש&lt;/td&gt;&lt;td&gt;בריאות הנפש הוא הערך המתאים לבתי חולים פסיכיאטריים המקבלים רישוי ממשרד הבריאות וכמו כן תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים או פרטית.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;12&lt;a name="institution-type-moh-12"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מעונות נפש&lt;/td&gt;&lt;td&gt;מעונות נפש הוא הערך המתאים למעונות לשיקום פסיכיאטרי המקבלים רישוי ממשרד הבריאות&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;15&lt;a name="institution-type-moh-15"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גמילה סמים-רפואי&lt;/td&gt;&lt;td&gt;גמילה סמים-רפואי הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי רפואי, המקבלים רישוי ממשרד הבריאות  ומפורסמים במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;16&lt;a name="institution-type-moh-16"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גמילת סמים-משולב&lt;/td&gt;&lt;td&gt;גמילה סמים-משולב הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי משולב, המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;17&lt;a name="institution-type-moh-17"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גמילת סמים בבי&amp;quot;ח&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;21&lt;a name="institution-type-moh-21"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מחלות ממושכות&lt;/td&gt;&lt;td&gt;מחלות ממושכות הוא הערך המתאים למוסדות אשפוז גריאטרי ארוך במקרה של מחלות ממושכות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;22&lt;a name="institution-type-moh-22"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מרכזים גריאטרים&lt;/td&gt;&lt;td&gt;מרכזים גריאטרים הוא הערך המתאים לבתי חולים גריאטריים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;23&lt;a name="institution-type-moh-23"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסדות גריאטרים&lt;/td&gt;&lt;td&gt;מוסדות גריאטרים הוא הערך המתאים למוסדות גריאטרים (כמו בתי אבות)  המקבלים רישוי ממשרד הבריאות&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;24&lt;a name="institution-type-moh-24"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מח' סיעוד בקיבוץ&lt;/td&gt;&lt;td&gt;מח' סיעוד בקיבוץ הוא הערך המתאים למוסדות גריאטרים (בתי אבות בקיבוצים)  המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;25&lt;a name="institution-type-moh-25"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;שיקום&lt;/td&gt;&lt;td&gt;בית חולים שיקומי הוא הערך המתאים לבתי חולים שיקומיים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות. מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;26&lt;a name="institution-type-moh-26"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;רווחה – בתי אבות (תשושים)&lt;/td&gt;&lt;td&gt;רווחה – בתי אבות (תשושים) הוא הערך המתאים לבתי אבות בהם שוהים תשושים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;27&lt;a name="institution-type-moh-27"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;רווחה – דיור מוגן (עצמאים)&lt;/td&gt;&lt;td&gt;רווחה – דיור מוגן (עצמאים) הוא הערך המתאים לדיור מוגן (בתי אבות) בהם שוהים עצמאים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;28&lt;a name="institution-type-moh-28"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גריאטרי אחר&lt;/td&gt;&lt;td&gt;גריאטרי אחר הוא הערך המתאים לבתי אבות בהם שוהים מבוגרים שלא מוגדרים כתשושים אך אינם עמצאיים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;29&lt;a name="institution-type-moh-29"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;הנסן&lt;/td&gt;&lt;td&gt;הנסן&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;31&lt;a name="institution-type-moh-31"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ב. הנפש בקהילה&lt;/td&gt;&lt;td&gt;ב. הנפש בקהילה הוא הערך המתאים למרפאות בריאות הנפש בקהילה (של קופות החולים)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;32&lt;a name="institution-type-moh-32"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גריאטריה בקהילה&lt;/td&gt;&lt;td&gt;גריאטריה בקהילה הוא הערך המתאים למרפאות גריאטריים בקהילה (של קופות החולים)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;33&lt;a name="institution-type-moh-33"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;דיאליזה בקהילה&lt;/td&gt;&lt;td&gt;דיאליזה בקהילה הוא הערך המתאים למרפאות דיאליזה בקהילה (של קופות החולים)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;34&lt;a name="institution-type-moh-34"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;התפתחות הילד&lt;/td&gt;&lt;td&gt;התפתחות הילד הוא הערך המתאים למרפאות להתפתחות הילד בקהילה (של קופות החולים)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;35&lt;a name="institution-type-moh-35"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בדיקת סרטן השד&lt;/td&gt;&lt;td&gt;בדיקת סרטן השד הוא הערך המתאים למרפאות לבדיקת סרטן השד בקהילה (של קופות החולים)&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;36&lt;a name="institution-type-moh-36"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;קבלני שירותי רפואה&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;39&lt;a name="institution-type-moh-39"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מ. טיפול בשחפת&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;37&lt;a name="institution-type-moh-37"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גמילה סמ-רפו-אמב&lt;/td&gt;&lt;td&gt;גמילה סמ-רפו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;38&lt;a name="institution-type-moh-38"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גמילה סמ-משו-אמב&lt;/td&gt;&lt;td&gt;גמילה סמ-משו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול משולב אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;40&lt;a name="institution-type-moh-40"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גמילה סמים ביח א&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;41&lt;a name="institution-type-moh-41"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מעבדות/מכונים&lt;/td&gt;&lt;td&gt;מעבדות/מכונים הוא הערך המתאים למעבדות ומכונים המקבלים רישוי ממשרד הבריאות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;42&lt;a name="institution-type-moh-42"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מכון צילום שינים&lt;/td&gt;&lt;td&gt;מכון צילום שינים הוא הערך המתאים למכונים לצילום שיניים המקבלים רישוי ממשרד הבריאות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;43&lt;a name="institution-type-moh-43"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מכון לרפואת שינה&lt;/td&gt;&lt;td&gt;מכון לרפואת שינה הוא הערך המתאים למכונים לרפואת שינה המקבלים רישוי ממשרד הבריאות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;44&lt;a name="institution-type-moh-44"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מכון גסטרו&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;51&lt;a name="institution-type-moh-51"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;תחנה ב. המשפחה&lt;/td&gt;&lt;td&gt;תחנה ב. המשפחה הוא הערך המתאים למרפאות לבריאות המשפחה המשמשות כטיפת חלב ומעקב הריון המקבלים רישוי ממשרד הבריאות. מרפאות אלה יכולות להיות בבעלות משרד הבריאות, קופות החולים ורשויות מקומיות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;52&lt;a name="institution-type-moh-52"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מרפאה כלל בקהילה&lt;/td&gt;&lt;td&gt;מרפאה כלל בקהילה הוא הערך המתאים למרפאות לבריאות כללית בקהילה ובעקרן מרפאות קופות החולים.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;53&lt;a name="institution-type-moh-53"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מרפאות כירורגיות&lt;/td&gt;&lt;td&gt;מרפאות כירורגיות הוא הערך המתאים למרפאות כירורגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;54&lt;a name="institution-type-moh-54"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מרפאות פסיכיאטרי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;55&lt;a name="institution-type-moh-55"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מרפאות שיניים&lt;/td&gt;&lt;td&gt;מרפאות שיניים הוא הערך המתאים למרפאות שיניים בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;56&lt;a name="institution-type-moh-56"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי מרקחת&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;57&lt;a name="institution-type-moh-57"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ת. לרפואת ספורט&lt;/td&gt;&lt;td&gt;ת. לרפואת ספורט הוא הערך המתאים לתחנות לרפואת ספורט בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;58&lt;a name="institution-type-moh-58"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מרפאות אונקולוגיות בקהילה&lt;/td&gt;&lt;td&gt;מרפאות אונקולוגיות בקהילה הוא הערך המתאים למרפאות אונקולוגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;61&lt;a name="institution-type-moh-61"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי ספר לרפואה&lt;/td&gt;&lt;td&gt;בתי ספר לרפואה הוא הערך המתאים למוסדות לימודי מקצועות הרפואה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;62&lt;a name="institution-type-moh-62"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי&amp;quot;ס ר. שיניים&lt;/td&gt;&lt;td&gt;בתי&amp;quot;ס ר. שיניים  הוא הערך המתאים למוסדות לימודי מקצועות רפואת השיניים&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;64&lt;a name="institution-type-moh-64"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי ספר לסיעוד&lt;/td&gt;&lt;td&gt;בתי ספר לסיעוד  הוא הערך המתאים למוסדות לימודי מקצועות הסיעוד&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;63&lt;a name="institution-type-moh-63"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי ספר לרוקחות&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;65&lt;a name="institution-type-moh-65"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי&amp;quot;ס לפרא-רפואי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;66&lt;a name="institution-type-moh-66"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בית ספר לרנטגן&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;67&lt;a name="institution-type-moh-67"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בי&amp;quot;ס לפיזיוטרפיה&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;68&lt;a name="institution-type-moh-68"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בי&amp;quot;ס שכולל סיעוד&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;71&lt;a name="institution-type-moh-71"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משרד הבריאות&lt;/td&gt;&lt;td&gt;משרד הבריאות הוא הערך שייצג את משרד הבריאות כנותן שירותי בריאות כמו מוסד או חברה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;72&lt;a name="institution-type-moh-72"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;לשכות בריאות&lt;/td&gt;&lt;td&gt;לשכות בריאות הוא הערך שייצג את הלשכות המחוזיות של משרד הבריאות כנותנות שירותי בריאות כמו מוסד או חברה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;73&lt;a name="institution-type-moh-73"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;קופות חולים&lt;/td&gt;&lt;td&gt;קופות חולים הוא הערך שייצג את 4 קופות החולים כנותנות שירותי בריאות כמו מוסד או חברה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;74&lt;a name="institution-type-moh-74"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משטרה&lt;/td&gt;&lt;td&gt;משטרה הוא הערך שייצג את המשטרה שמפנה לקבלת שירותי בריאות כמו מוסד או חברה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;75&lt;a name="institution-type-moh-75"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;צ.ה.ל&lt;/td&gt;&lt;td&gt;צ.ה.ל הוא הערך שייצג את צה&amp;quot;ל כקופת חולים חמישית וכנותנות שירותי בריאות כמו מוסד או חברה או כמפנה לקבלת שירות ע&amp;quot;י גורם אחר&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;76&lt;a name="institution-type-moh-76"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משרדי ממשלה&lt;/td&gt;&lt;td&gt;משרדי ממשלה הוא הערך שייצג את משרדי הממשלה כנותן שירותי בריאות או מפנה לקבלת שירותים שכאלה ע&amp;quot;י גורם אחר&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;77&lt;a name="institution-type-moh-77"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בית ספר&lt;/td&gt;&lt;td&gt;בית ספר הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;78&lt;a name="institution-type-moh-78"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;גן ילדים&lt;/td&gt;&lt;td&gt;גן ילדים הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;79&lt;a name="institution-type-moh-79"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מעון יום&lt;/td&gt;&lt;td&gt;מעון יום הוא הערך המתאים למעונות יום לגיל הרך המקבלות רישוי ממשרד הרווחה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;80&lt;a name="institution-type-moh-80"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסד חינוך אחר&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;84&lt;a name="institution-type-moh-84"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;רווחה – אוטיסטים&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;82&lt;a name="institution-type-moh-82"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסד ללא רישוי&lt;/td&gt;&lt;td&gt;מוסד ללא רישוי הוא נערך המתאים למוסדות ללא רישוי מיוחד ידוע&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;83&lt;a name="institution-type-moh-83"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;רווחה – מנהל מוגבלויות&lt;/td&gt;&lt;td&gt;רווחה – מנהל מוגבלויות הוא הערך המתאים למעונות לבעלי מוגבלויות המקבלות רישוי ממשרד הרווחה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;85&lt;a name="institution-type-moh-85"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;רווחה – השירות לעיוור&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;87&lt;a name="institution-type-moh-87"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מנהל תקון&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;88&lt;a name="institution-type-moh-88"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מנהל שירותים חברתיים ואישיים&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;86&lt;a name="institution-type-moh-86"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מרכז יום לקשיש&lt;/td&gt;&lt;td&gt;מרכז יום לקשיש הוא הערך המתאים למרכזי יום לקשישים המקבלים רישוי ממשרד הרווחה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;90&lt;a name="institution-type-moh-90"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;רשת&lt;/td&gt;&lt;td&gt;רשת הוא הערך המתאים לרשות מקומית, מועצה מקומית, מועצה אזורית, עירייה וכו'&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;91&lt;a name="institution-type-moh-91"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;חברות מכשור רפוא&lt;/td&gt;&lt;td&gt;חברות מכשור רפוא הוא הערך המתאים לחברות למכשור רפואי המקבלות רישוי ממשרד הבריאות&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;92&lt;a name="institution-type-moh-92"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ספק ציוד רפואי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;98&lt;a name="institution-type-moh-98"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;אחר&lt;/td&gt;&lt;td&gt;אחר&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;281&lt;a name="institution-type-moh-281"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משרד שיכון - בית גיל הזהב&lt;/td&gt;&lt;td&gt;משרד שיכון - בית גיל הזהב הוא הערך המתאים לבתי אבות של משרד השיכון&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;282&lt;a name="institution-type-moh-282"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מקבץ דיור&lt;/td&gt;&lt;td&gt;מקבץ דיור הוא הערך המתאים להגדרות כבאות והצלה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;731&lt;a name="institution-type-moh-731"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;תת-יחידה של קופת חולים&lt;/td&gt;&lt;td&gt;תת-יחידה של קופת חולים הוא הערך המתאים ליחידות מאוגדות בקופות החולים עפ&amp;quot;י ההגדרות הקופה&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;779&lt;a name="institution-type-moh-779"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ישיבה&lt;/td&gt;&lt;td&gt;ישיבה הוא הערך המתאים לישיבה עפ&amp;quot;י הגדרות משרד החינוך או ועד הישיבות&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;821&lt;a name="institution-type-moh-821"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מלון מבודדים&lt;/td&gt;&lt;td&gt;מלון מבודדים הוא הערך המתאים למלו מבודדי קורונה עפ&amp;quot;י הגדרות משרד הבריאות או פקע&amp;quot;ר&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style="white-space:nowrap"&gt;822&lt;a name="institution-type-moh-822"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;דרייב אין לבדיקות קורונה&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
+  &lt;/text&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.extension">extension</a>
+             <a href="http://hl7.org/fhir/R4/datatypes.html#uri">url</a>="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">valueDate</a> <a href="http://hl7.org/fhir/R4/datatypes.html#date">value</a>="2023-01"/&gt;
+  &lt;/extension&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a> <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>="http://fhir.health.gov.il/cs/institution-type-moh"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="0.13.2"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="InstitutionTypeMoH"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="סוג מוסד לפי רישוי משרד הבריאות"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="draft"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="false"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>="2023-12-23T19:10:55+02:00"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Israel Core Team"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Israel Core Team"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="email"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ido.levin@moh.gov.il"/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="Kippi Bordowitz"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">telecom</a>&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">system</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="email"/&gt;
+      &lt;<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">value</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ido.levin@moh.gov.il"/&gt;
+    &lt;/telecom&gt;
+  &lt;/contact&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">description</a>
+               <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">value</a>="סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">caseSensitive</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>="false"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">content</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="complete"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">count</a> <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">value</a>="75"/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="99"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="לא ידוע"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ערך ברירת מחדל במקרה שערך סוג מוסד הבריאות לא קיים מאחר הגיע ריק"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="1"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="אשפוז כללי"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="אשפוז כללי הוא הערך המתאים לבתי חולים כלליים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים, הדסה או פרטית."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="2"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי יולדות"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי יולדות הוא הערך המתאים לבתי חולים ליולדות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות שפוז וחדרי לידה לפי הסוגים השונים."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="3"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בית חולים לילדים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בית חולים לילדים הוא הערך המתאים לבתי חולים כלליים לילדים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="11"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בריאות הנפש"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בריאות הנפש הוא הערך המתאים לבתי חולים פסיכיאטריים המקבלים רישוי ממשרד הבריאות וכמו כן תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים או פרטית."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="12"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מעונות נפש"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מעונות נפש הוא הערך המתאים למעונות לשיקום פסיכיאטרי המקבלים רישוי ממשרד הבריאות"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="15"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמים-רפואי"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמים-רפואי הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי רפואי, המקבלים רישוי ממשרד הבריאות  ומפורסמים במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="16"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילת סמים-משולב"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמים-משולב הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי משולב, המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="17"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילת סמים בבי&amp;quot;ח"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="21"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מחלות ממושכות"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מחלות ממושכות הוא הערך המתאים למוסדות אשפוז גריאטרי ארוך במקרה של מחלות ממושכות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="22"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרכזים גריאטרים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרכזים גריאטרים הוא הערך המתאים לבתי חולים גריאטריים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="23"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מוסדות גריאטרים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מוסדות גריאטרים הוא הערך המתאים למוסדות גריאטרים (כמו בתי אבות)  המקבלים רישוי ממשרד הבריאות"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="24"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מח' סיעוד בקיבוץ"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מח' סיעוד בקיבוץ הוא הערך המתאים למוסדות גריאטרים (בתי אבות בקיבוצים)  המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="25"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="שיקום"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בית חולים שיקומי הוא הערך המתאים לבתי חולים שיקומיים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות. מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="26"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – בתי אבות (תשושים)"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – בתי אבות (תשושים) הוא הערך המתאים לבתי אבות בהם שוהים תשושים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="27"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – דיור מוגן (עצמאים)"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – דיור מוגן (עצמאים) הוא הערך המתאים לדיור מוגן (בתי אבות) בהם שוהים עצמאים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="28"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גריאטרי אחר"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גריאטרי אחר הוא הערך המתאים לבתי אבות בהם שוהים מבוגרים שלא מוגדרים כתשושים אך אינם עמצאיים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="29"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="הנסן"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="הנסן"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="31"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ב. הנפש בקהילה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ב. הנפש בקהילה הוא הערך המתאים למרפאות בריאות הנפש בקהילה (של קופות החולים)"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="32"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גריאטריה בקהילה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גריאטריה בקהילה הוא הערך המתאים למרפאות גריאטריים בקהילה (של קופות החולים)"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="33"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="דיאליזה בקהילה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="דיאליזה בקהילה הוא הערך המתאים למרפאות דיאליזה בקהילה (של קופות החולים)"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="34"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="התפתחות הילד"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="התפתחות הילד הוא הערך המתאים למרפאות להתפתחות הילד בקהילה (של קופות החולים)"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="35"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בדיקת סרטן השד"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בדיקת סרטן השד הוא הערך המתאים למרפאות לבדיקת סרטן השד בקהילה (של קופות החולים)"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="36"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="קבלני שירותי רפואה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="39"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מ. טיפול בשחפת"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="37"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמ-רפו-אמב"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמ-רפו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="38"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמ-משו-אמב"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמ-משו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול משולב אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="40"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גמילה סמים ביח א"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="41"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מעבדות/מכונים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מעבדות/מכונים הוא הערך המתאים למעבדות ומכונים המקבלים רישוי ממשרד הבריאות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="42"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מכון צילום שינים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מכון צילום שינים הוא הערך המתאים למכונים לצילום שיניים המקבלים רישוי ממשרד הבריאות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="43"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מכון לרפואת שינה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מכון לרפואת שינה הוא הערך המתאים למכונים לרפואת שינה המקבלים רישוי ממשרד הבריאות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="44"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מכון גסטרו"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="51"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="תחנה ב. המשפחה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="תחנה ב. המשפחה הוא הערך המתאים למרפאות לבריאות המשפחה המשמשות כטיפת חלב ומעקב הריון המקבלים רישוי ממשרד הבריאות. מרפאות אלה יכולות להיות בבעלות משרד הבריאות, קופות החולים ורשויות מקומיות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="52"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאה כלל בקהילה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאה כלל בקהילה הוא הערך המתאים למרפאות לבריאות כללית בקהילה ובעקרן מרפאות קופות החולים."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="53"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאות כירורגיות"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאות כירורגיות הוא הערך המתאים למרפאות כירורגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="54"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאות פסיכיאטרי"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="55"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאות שיניים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאות שיניים הוא הערך המתאים למרפאות שיניים בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="56"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי מרקחת"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="57"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ת. לרפואת ספורט"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ת. לרפואת ספורט הוא הערך המתאים לתחנות לרפואת ספורט בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="58"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאות אונקולוגיות בקהילה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרפאות אונקולוגיות בקהילה הוא הערך המתאים למרפאות אונקולוגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="61"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי ספר לרפואה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי ספר לרפואה הוא הערך המתאים למוסדות לימודי מקצועות הרפואה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="62"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי&amp;quot;ס ר. שיניים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי&amp;quot;ס ר. שיניים  הוא הערך המתאים למוסדות לימודי מקצועות רפואת השיניים"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="64"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי ספר לסיעוד"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי ספר לסיעוד  הוא הערך המתאים למוסדות לימודי מקצועות הסיעוד"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="63"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי ספר לרוקחות"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="65"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בתי&amp;quot;ס לפרא-רפואי"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="66"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בית ספר לרנטגן"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="67"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בי&amp;quot;ס לפיזיוטרפיה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="68"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בי&amp;quot;ס שכולל סיעוד"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="71"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משרד הבריאות"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משרד הבריאות הוא הערך שייצג את משרד הבריאות כנותן שירותי בריאות כמו מוסד או חברה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="72"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="לשכות בריאות"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="לשכות בריאות הוא הערך שייצג את הלשכות המחוזיות של משרד הבריאות כנותנות שירותי בריאות כמו מוסד או חברה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="73"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="קופות חולים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="קופות חולים הוא הערך שייצג את 4 קופות החולים כנותנות שירותי בריאות כמו מוסד או חברה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="74"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משטרה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משטרה הוא הערך שייצג את המשטרה שמפנה לקבלת שירותי בריאות כמו מוסד או חברה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="75"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="צ.ה.ל"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="צ.ה.ל הוא הערך שייצג את צה&amp;quot;ל כקופת חולים חמישית וכנותנות שירותי בריאות כמו מוסד או חברה או כמפנה לקבלת שירות ע&amp;quot;י גורם אחר"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="76"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משרדי ממשלה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משרדי ממשלה הוא הערך שייצג את משרדי הממשלה כנותן שירותי בריאות או מפנה לקבלת שירותים שכאלה ע&amp;quot;י גורם אחר"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="77"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בית ספר"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="בית ספר הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="78"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גן ילדים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="גן ילדים הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="79"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מעון יום"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מעון יום הוא הערך המתאים למעונות יום לגיל הרך המקבלות רישוי ממשרד הרווחה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="80"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מוסד חינוך אחר"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="84"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – אוטיסטים"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="82"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מוסד ללא רישוי"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מוסד ללא רישוי הוא נערך המתאים למוסדות ללא רישוי מיוחד ידוע"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="83"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – מנהל מוגבלויות"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – מנהל מוגבלויות הוא הערך המתאים למעונות לבעלי מוגבלויות המקבלות רישוי ממשרד הרווחה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="85"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רווחה – השירות לעיוור"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="87"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מנהל תקון"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="88"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מנהל שירותים חברתיים ואישיים"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="86"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרכז יום לקשיש"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מרכז יום לקשיש הוא הערך המתאים למרכזי יום לקשישים המקבלים רישוי ממשרד הרווחה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="90"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רשת"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="רשת הוא הערך המתאים לרשות מקומית, מועצה מקומית, מועצה אזורית, עירייה וכו'"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="91"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="חברות מכשור רפוא"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="חברות מכשור רפוא הוא הערך המתאים לחברות למכשור רפואי המקבלות רישוי ממשרד הבריאות"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="92"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ספק ציוד רפואי"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="98"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="אחר"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="אחר"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="281"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משרד שיכון - בית גיל הזהב"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="משרד שיכון - בית גיל הזהב הוא הערך המתאים לבתי אבות של משרד השיכון"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="282"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מקבץ דיור"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מקבץ דיור הוא הערך המתאים להגדרות כבאות והצלה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="731"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="תת-יחידה של קופת חולים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="תת-יחידה של קופת חולים הוא הערך המתאים ליחידות מאוגדות בקופות החולים עפ&amp;quot;י ההגדרות הקופה"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="779"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ישיבה"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="ישיבה הוא הערך המתאים לישיבה עפ&amp;quot;י הגדרות משרד החינוך או ועד הישיבות"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="821"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מלון מבודדים"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">definition</a>
+                <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="מלון מבודדים הוא הערך המתאים למלו מבודדי קורונה עפ&amp;quot;י הגדרות משרד הבריאות או פקע&amp;quot;ר"/&gt;
+  &lt;/concept&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">concept</a>&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">code</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>="822"/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">display</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>="דרייב אין לבדיקות קורונה"/&gt;
+  &lt;/concept&gt;
+&lt;/CodeSystem&gt;</code></pre>
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1950">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ido.levin@moh.gov.il">Israel Core Team</a>.  Package health.gov.il.fhir.core#0.13.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Dec 23, 2023 19:10+0200">2023-12-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

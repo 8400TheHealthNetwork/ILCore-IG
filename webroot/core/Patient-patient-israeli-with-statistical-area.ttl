@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/patient-israeli-with-statistical-area> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-israeli-with-statistical-area"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with statistical area</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/paying-entity-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "קופת חולים כללית" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/il-national-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000000018" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "he" ]
+     ] ) ;
+     fhir:text [ fhir:v "יעלה בן ברוך" ] ;
+     fhir:family [ fhir:v "בן ברוך" ] ;
+     fhir:given ( [ fhir:v "יעלה" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "052467910" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "Israel@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "2003-04-17"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "longitude"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "182468.59"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "latitude"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "670131.38"^^xsd:decimal ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/geolocation"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-statistical-area"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/cbs-statistical-area"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "24000007" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:text [ fhir:v "סעדון אליהו 4 א' אור יהודה" ] ;
+     fhir:line ( [
+       fhir:v "סעדון אליהו 4 א'" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "סעדון אליהו" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "4" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "א'" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "4" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1446" ]
+       ] )
+     ] ) ;
+     fhir:city [
+       fhir:v "אור יהודה" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-city-code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/city-symbol"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "2400" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:district [ fhir:v "אור יהודה" ] ;
+     fhir:postalCode [ fhir:v "6039725" ] ;
+     fhir:country [ fhir:v "IL" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

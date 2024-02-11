@@ -1,0 +1,393 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="institution-type-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/institution-type-moh</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">99<a name="institution-type-moh-99"> </a></td><td>לא ידוע</td><td>ערך ברירת מחדל במקרה שערך סוג מוסד הבריאות לא קיים מאחר הגיע ריק</td></tr><tr><td style="white-space:nowrap">1<a name="institution-type-moh-1"> </a></td><td>אשפוז כללי</td><td>אשפוז כללי הוא הערך המתאים לבתי חולים כלליים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים, הדסה או פרטית.</td></tr><tr><td style="white-space:nowrap">2<a name="institution-type-moh-2"> </a></td><td>בתי יולדות</td><td>בתי יולדות הוא הערך המתאים לבתי חולים ליולדות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות שפוז וחדרי לידה לפי הסוגים השונים.</td></tr><tr><td style="white-space:nowrap">3<a name="institution-type-moh-3"> </a></td><td>בית חולים לילדים</td><td>בית חולים לילדים הוא הערך המתאים לבתי חולים כלליים לילדים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים</td></tr><tr><td style="white-space:nowrap">11<a name="institution-type-moh-11"> </a></td><td>בריאות הנפש</td><td>בריאות הנפש הוא הערך המתאים לבתי חולים פסיכיאטריים המקבלים רישוי ממשרד הבריאות וכמו כן תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים או פרטית.</td></tr><tr><td style="white-space:nowrap">12<a name="institution-type-moh-12"> </a></td><td>מעונות נפש</td><td>מעונות נפש הוא הערך המתאים למעונות לשיקום פסיכיאטרי המקבלים רישוי ממשרד הבריאות</td></tr><tr><td style="white-space:nowrap">15<a name="institution-type-moh-15"> </a></td><td>גמילה סמים-רפואי</td><td>גמילה סמים-רפואי הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי רפואי, המקבלים רישוי ממשרד הבריאות  ומפורסמים במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">16<a name="institution-type-moh-16"> </a></td><td>גמילת סמים-משולב</td><td>גמילה סמים-משולב הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי משולב, המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">17<a name="institution-type-moh-17"> </a></td><td>גמילת סמים בבי&quot;ח</td><td/></tr><tr><td style="white-space:nowrap">21<a name="institution-type-moh-21"> </a></td><td>מחלות ממושכות</td><td>מחלות ממושכות הוא הערך המתאים למוסדות אשפוז גריאטרי ארוך במקרה של מחלות ממושכות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">22<a name="institution-type-moh-22"> </a></td><td>מרכזים גריאטרים</td><td>מרכזים גריאטרים הוא הערך המתאים לבתי חולים גריאטריים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים</td></tr><tr><td style="white-space:nowrap">23<a name="institution-type-moh-23"> </a></td><td>מוסדות גריאטרים</td><td>מוסדות גריאטרים הוא הערך המתאים למוסדות גריאטרים (כמו בתי אבות)  המקבלים רישוי ממשרד הבריאות</td></tr><tr><td style="white-space:nowrap">24<a name="institution-type-moh-24"> </a></td><td>מח' סיעוד בקיבוץ</td><td>מח' סיעוד בקיבוץ הוא הערך המתאים למוסדות גריאטרים (בתי אבות בקיבוצים)  המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">25<a name="institution-type-moh-25"> </a></td><td>שיקום</td><td>בית חולים שיקומי הוא הערך המתאים לבתי חולים שיקומיים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות. מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים.</td></tr><tr><td style="white-space:nowrap">26<a name="institution-type-moh-26"> </a></td><td>רווחה – בתי אבות (תשושים)</td><td>רווחה – בתי אבות (תשושים) הוא הערך המתאים לבתי אבות בהם שוהים תשושים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.</td></tr><tr><td style="white-space:nowrap">27<a name="institution-type-moh-27"> </a></td><td>רווחה – דיור מוגן (עצמאים)</td><td>רווחה – דיור מוגן (עצמאים) הוא הערך המתאים לדיור מוגן (בתי אבות) בהם שוהים עצמאים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.</td></tr><tr><td style="white-space:nowrap">28<a name="institution-type-moh-28"> </a></td><td>גריאטרי אחר</td><td>גריאטרי אחר הוא הערך המתאים לבתי אבות בהם שוהים מבוגרים שלא מוגדרים כתשושים אך אינם עמצאיים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות.</td></tr><tr><td style="white-space:nowrap">29<a name="institution-type-moh-29"> </a></td><td>הנסן</td><td>הנסן</td></tr><tr><td style="white-space:nowrap">31<a name="institution-type-moh-31"> </a></td><td>ב. הנפש בקהילה</td><td>ב. הנפש בקהילה הוא הערך המתאים למרפאות בריאות הנפש בקהילה (של קופות החולים)</td></tr><tr><td style="white-space:nowrap">32<a name="institution-type-moh-32"> </a></td><td>גריאטריה בקהילה</td><td>גריאטריה בקהילה הוא הערך המתאים למרפאות גריאטריים בקהילה (של קופות החולים)</td></tr><tr><td style="white-space:nowrap">33<a name="institution-type-moh-33"> </a></td><td>דיאליזה בקהילה</td><td>דיאליזה בקהילה הוא הערך המתאים למרפאות דיאליזה בקהילה (של קופות החולים)</td></tr><tr><td style="white-space:nowrap">34<a name="institution-type-moh-34"> </a></td><td>התפתחות הילד</td><td>התפתחות הילד הוא הערך המתאים למרפאות להתפתחות הילד בקהילה (של קופות החולים)</td></tr><tr><td style="white-space:nowrap">35<a name="institution-type-moh-35"> </a></td><td>בדיקת סרטן השד</td><td>בדיקת סרטן השד הוא הערך המתאים למרפאות לבדיקת סרטן השד בקהילה (של קופות החולים)</td></tr><tr><td style="white-space:nowrap">36<a name="institution-type-moh-36"> </a></td><td>קבלני שירותי רפואה</td><td/></tr><tr><td style="white-space:nowrap">39<a name="institution-type-moh-39"> </a></td><td>מ. טיפול בשחפת</td><td/></tr><tr><td style="white-space:nowrap">37<a name="institution-type-moh-37"> </a></td><td>גמילה סמ-רפו-אמב</td><td>גמילה סמ-רפו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">38<a name="institution-type-moh-38"> </a></td><td>גמילה סמ-משו-אמב</td><td>גמילה סמ-משו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול משולב אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">40<a name="institution-type-moh-40"> </a></td><td>גמילה סמים ביח א</td><td/></tr><tr><td style="white-space:nowrap">41<a name="institution-type-moh-41"> </a></td><td>מעבדות/מכונים</td><td>מעבדות/מכונים הוא הערך המתאים למעבדות ומכונים המקבלים רישוי ממשרד הבריאות.</td></tr><tr><td style="white-space:nowrap">42<a name="institution-type-moh-42"> </a></td><td>מכון צילום שינים</td><td>מכון צילום שינים הוא הערך המתאים למכונים לצילום שיניים המקבלים רישוי ממשרד הבריאות.</td></tr><tr><td style="white-space:nowrap">43<a name="institution-type-moh-43"> </a></td><td>מכון לרפואת שינה</td><td>מכון לרפואת שינה הוא הערך המתאים למכונים לרפואת שינה המקבלים רישוי ממשרד הבריאות.</td></tr><tr><td style="white-space:nowrap">44<a name="institution-type-moh-44"> </a></td><td>מכון גסטרו</td><td/></tr><tr><td style="white-space:nowrap">51<a name="institution-type-moh-51"> </a></td><td>תחנה ב. המשפחה</td><td>תחנה ב. המשפחה הוא הערך המתאים למרפאות לבריאות המשפחה המשמשות כטיפת חלב ומעקב הריון המקבלים רישוי ממשרד הבריאות. מרפאות אלה יכולות להיות בבעלות משרד הבריאות, קופות החולים ורשויות מקומיות.</td></tr><tr><td style="white-space:nowrap">52<a name="institution-type-moh-52"> </a></td><td>מרפאה כלל בקהילה</td><td>מרפאה כלל בקהילה הוא הערך המתאים למרפאות לבריאות כללית בקהילה ובעקרן מרפאות קופות החולים.</td></tr><tr><td style="white-space:nowrap">53<a name="institution-type-moh-53"> </a></td><td>מרפאות כירורגיות</td><td>מרפאות כירורגיות הוא הערך המתאים למרפאות כירורגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">54<a name="institution-type-moh-54"> </a></td><td>מרפאות פסיכיאטרי</td><td/></tr><tr><td style="white-space:nowrap">55<a name="institution-type-moh-55"> </a></td><td>מרפאות שיניים</td><td>מרפאות שיניים הוא הערך המתאים למרפאות שיניים בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">56<a name="institution-type-moh-56"> </a></td><td>בתי מרקחת</td><td/></tr><tr><td style="white-space:nowrap">57<a name="institution-type-moh-57"> </a></td><td>ת. לרפואת ספורט</td><td>ת. לרפואת ספורט הוא הערך המתאים לתחנות לרפואת ספורט בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">58<a name="institution-type-moh-58"> </a></td><td>מרפאות אונקולוגיות בקהילה</td><td>מרפאות אונקולוגיות בקהילה הוא הערך המתאים למרפאות אונקולוגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות.</td></tr><tr><td style="white-space:nowrap">61<a name="institution-type-moh-61"> </a></td><td>בתי ספר לרפואה</td><td>בתי ספר לרפואה הוא הערך המתאים למוסדות לימודי מקצועות הרפואה</td></tr><tr><td style="white-space:nowrap">62<a name="institution-type-moh-62"> </a></td><td>בתי&quot;ס ר. שיניים</td><td>בתי&quot;ס ר. שיניים  הוא הערך המתאים למוסדות לימודי מקצועות רפואת השיניים</td></tr><tr><td style="white-space:nowrap">64<a name="institution-type-moh-64"> </a></td><td>בתי ספר לסיעוד</td><td>בתי ספר לסיעוד  הוא הערך המתאים למוסדות לימודי מקצועות הסיעוד</td></tr><tr><td style="white-space:nowrap">63<a name="institution-type-moh-63"> </a></td><td>בתי ספר לרוקחות</td><td/></tr><tr><td style="white-space:nowrap">65<a name="institution-type-moh-65"> </a></td><td>בתי&quot;ס לפרא-רפואי</td><td/></tr><tr><td style="white-space:nowrap">66<a name="institution-type-moh-66"> </a></td><td>בית ספר לרנטגן</td><td/></tr><tr><td style="white-space:nowrap">67<a name="institution-type-moh-67"> </a></td><td>בי&quot;ס לפיזיוטרפיה</td><td/></tr><tr><td style="white-space:nowrap">68<a name="institution-type-moh-68"> </a></td><td>בי&quot;ס שכולל סיעוד</td><td/></tr><tr><td style="white-space:nowrap">71<a name="institution-type-moh-71"> </a></td><td>משרד הבריאות</td><td>משרד הבריאות הוא הערך שייצג את משרד הבריאות כנותן שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style="white-space:nowrap">72<a name="institution-type-moh-72"> </a></td><td>לשכות בריאות</td><td>לשכות בריאות הוא הערך שייצג את הלשכות המחוזיות של משרד הבריאות כנותנות שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style="white-space:nowrap">73<a name="institution-type-moh-73"> </a></td><td>קופות חולים</td><td>קופות חולים הוא הערך שייצג את 4 קופות החולים כנותנות שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style="white-space:nowrap">74<a name="institution-type-moh-74"> </a></td><td>משטרה</td><td>משטרה הוא הערך שייצג את המשטרה שמפנה לקבלת שירותי בריאות כמו מוסד או חברה</td></tr><tr><td style="white-space:nowrap">75<a name="institution-type-moh-75"> </a></td><td>צ.ה.ל</td><td>צ.ה.ל הוא הערך שייצג את צה&quot;ל כקופת חולים חמישית וכנותנות שירותי בריאות כמו מוסד או חברה או כמפנה לקבלת שירות ע&quot;י גורם אחר</td></tr><tr><td style="white-space:nowrap">76<a name="institution-type-moh-76"> </a></td><td>משרדי ממשלה</td><td>משרדי ממשלה הוא הערך שייצג את משרדי הממשלה כנותן שירותי בריאות או מפנה לקבלת שירותים שכאלה ע&quot;י גורם אחר</td></tr><tr><td style="white-space:nowrap">77<a name="institution-type-moh-77"> </a></td><td>בית ספר</td><td>בית ספר הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו</td></tr><tr><td style="white-space:nowrap">78<a name="institution-type-moh-78"> </a></td><td>גן ילדים</td><td>גן ילדים הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו</td></tr><tr><td style="white-space:nowrap">79<a name="institution-type-moh-79"> </a></td><td>מעון יום</td><td>מעון יום הוא הערך המתאים למעונות יום לגיל הרך המקבלות רישוי ממשרד הרווחה</td></tr><tr><td style="white-space:nowrap">80<a name="institution-type-moh-80"> </a></td><td>מוסד חינוך אחר</td><td/></tr><tr><td style="white-space:nowrap">84<a name="institution-type-moh-84"> </a></td><td>רווחה – אוטיסטים</td><td/></tr><tr><td style="white-space:nowrap">82<a name="institution-type-moh-82"> </a></td><td>מוסד ללא רישוי</td><td>מוסד ללא רישוי הוא נערך המתאים למוסדות ללא רישוי מיוחד ידוע</td></tr><tr><td style="white-space:nowrap">83<a name="institution-type-moh-83"> </a></td><td>רווחה – מנהל מוגבלויות</td><td>רווחה – מנהל מוגבלויות הוא הערך המתאים למעונות לבעלי מוגבלויות המקבלות רישוי ממשרד הרווחה</td></tr><tr><td style="white-space:nowrap">85<a name="institution-type-moh-85"> </a></td><td>רווחה – השירות לעיוור</td><td/></tr><tr><td style="white-space:nowrap">87<a name="institution-type-moh-87"> </a></td><td>מנהל תקון</td><td/></tr><tr><td style="white-space:nowrap">88<a name="institution-type-moh-88"> </a></td><td>מנהל שירותים חברתיים ואישיים</td><td/></tr><tr><td style="white-space:nowrap">86<a name="institution-type-moh-86"> </a></td><td>מרכז יום לקשיש</td><td>מרכז יום לקשיש הוא הערך המתאים למרכזי יום לקשישים המקבלים רישוי ממשרד הרווחה</td></tr><tr><td style="white-space:nowrap">90<a name="institution-type-moh-90"> </a></td><td>רשת</td><td>רשת הוא הערך המתאים לרשות מקומית, מועצה מקומית, מועצה אזורית, עירייה וכו'</td></tr><tr><td style="white-space:nowrap">91<a name="institution-type-moh-91"> </a></td><td>חברות מכשור רפוא</td><td>חברות מכשור רפוא הוא הערך המתאים לחברות למכשור רפואי המקבלות רישוי ממשרד הבריאות</td></tr><tr><td style="white-space:nowrap">92<a name="institution-type-moh-92"> </a></td><td>ספק ציוד רפואי</td><td/></tr><tr><td style="white-space:nowrap">98<a name="institution-type-moh-98"> </a></td><td>אחר</td><td>אחר</td></tr><tr><td style="white-space:nowrap">281<a name="institution-type-moh-281"> </a></td><td>משרד שיכון - בית גיל הזהב</td><td>משרד שיכון - בית גיל הזהב הוא הערך המתאים לבתי אבות של משרד השיכון</td></tr><tr><td style="white-space:nowrap">282<a name="institution-type-moh-282"> </a></td><td>מקבץ דיור</td><td>מקבץ דיור הוא הערך המתאים להגדרות כבאות והצלה</td></tr><tr><td style="white-space:nowrap">731<a name="institution-type-moh-731"> </a></td><td>תת-יחידה של קופת חולים</td><td>תת-יחידה של קופת חולים הוא הערך המתאים ליחידות מאוגדות בקופות החולים עפ&quot;י ההגדרות הקופה</td></tr><tr><td style="white-space:nowrap">779<a name="institution-type-moh-779"> </a></td><td>ישיבה</td><td>ישיבה הוא הערך המתאים לישיבה עפ&quot;י הגדרות משרד החינוך או ועד הישיבות</td></tr><tr><td style="white-space:nowrap">821<a name="institution-type-moh-821"> </a></td><td>מלון מבודדים</td><td>מלון מבודדים הוא הערך המתאים למלו מבודדי קורונה עפ&quot;י הגדרות משרד הבריאות או פקע&quot;ר</td></tr><tr><td style="white-space:nowrap">822<a name="institution-type-moh-822"> </a></td><td>דרייב אין לבדיקות קורונה</td><td/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-01"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/institution-type-moh"/>
+  <version value="0.13.2"/>
+  <name value="InstitutionTypeMoH"/>
+  <title value="סוג מוסד לפי רישוי משרד הבריאות"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="75"/>
+  <concept>
+    <code value="99"/>
+    <display value="לא ידוע"/>
+    <definition value="ערך ברירת מחדל במקרה שערך סוג מוסד הבריאות לא קיים מאחר הגיע ריק"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="אשפוז כללי"/>
+    <definition value="אשפוז כללי הוא הערך המתאים לבתי חולים כלליים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים, הדסה או פרטית."/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="בתי יולדות"/>
+    <definition value="בתי יולדות הוא הערך המתאים לבתי חולים ליולדות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות שפוז וחדרי לידה לפי הסוגים השונים."/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="בית חולים לילדים"/>
+    <definition value="בית חולים לילדים הוא הערך המתאים לבתי חולים כלליים לילדים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="בריאות הנפש"/>
+    <definition value="בריאות הנפש הוא הערך המתאים לבתי חולים פסיכיאטריים המקבלים רישוי ממשרד הבריאות וכמו כן תקן מיטות ועמדות טיפול לפי הסוגים השונים. בתי החולים יכולים להיות בבעלות ממשלתית, ציבורית, קופות החולים או פרטית."/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="מעונות נפש"/>
+    <definition value="מעונות נפש הוא הערך המתאים למעונות לשיקום פסיכיאטרי המקבלים רישוי ממשרד הבריאות"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="גמילה סמים-רפואי"/>
+    <definition value="גמילה סמים-רפואי הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי רפואי, המקבלים רישוי ממשרד הבריאות  ומפורסמים במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="גמילת סמים-משולב"/>
+    <definition value="גמילה סמים-משולב הוא הערך המתאים למוסדות בריאות הנפש לטיפול במשתמשים בסמים אשפוזי משולב, המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="גמילת סמים בבי&quot;ח"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="מחלות ממושכות"/>
+    <definition value="מחלות ממושכות הוא הערך המתאים למוסדות אשפוז גריאטרי ארוך במקרה של מחלות ממושכות המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="מרכזים גריאטרים"/>
+    <definition value="מרכזים גריאטרים הוא הערך המתאים לבתי חולים גריאטריים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות.  מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="מוסדות גריאטרים"/>
+    <definition value="מוסדות גריאטרים הוא הערך המתאים למוסדות גריאטרים (כמו בתי אבות)  המקבלים רישוי ממשרד הבריאות"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="מח' סיעוד בקיבוץ"/>
+    <definition value="מח' סיעוד בקיבוץ הוא הערך המתאים למוסדות גריאטרים (בתי אבות בקיבוצים)  המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="שיקום"/>
+    <definition value="בית חולים שיקומי הוא הערך המתאים לבתי חולים שיקומיים המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות. מוסדות אלה מקבלים תקן מיטות ועמדות טיפול לפי הסוגים השונים."/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="רווחה – בתי אבות (תשושים)"/>
+    <definition value="רווחה – בתי אבות (תשושים) הוא הערך המתאים לבתי אבות בהם שוהים תשושים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות."/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="רווחה – דיור מוגן (עצמאים)"/>
+    <definition value="רווחה – דיור מוגן (עצמאים) הוא הערך המתאים לדיור מוגן (בתי אבות) בהם שוהים עצמאים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות."/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="גריאטרי אחר"/>
+    <definition value="גריאטרי אחר הוא הערך המתאים לבתי אבות בהם שוהים מבוגרים שלא מוגדרים כתשושים אך אינם עמצאיים. מוסדות אלה מקבלים רישוי ממשרד הרווחה ולא מממשרד הבריאות."/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="הנסן"/>
+    <definition value="הנסן"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="ב. הנפש בקהילה"/>
+    <definition value="ב. הנפש בקהילה הוא הערך המתאים למרפאות בריאות הנפש בקהילה (של קופות החולים)"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="גריאטריה בקהילה"/>
+    <definition value="גריאטריה בקהילה הוא הערך המתאים למרפאות גריאטריים בקהילה (של קופות החולים)"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="דיאליזה בקהילה"/>
+    <definition value="דיאליזה בקהילה הוא הערך המתאים למרפאות דיאליזה בקהילה (של קופות החולים)"/>
+  </concept>
+  <concept>
+    <code value="34"/>
+    <display value="התפתחות הילד"/>
+    <definition value="התפתחות הילד הוא הערך המתאים למרפאות להתפתחות הילד בקהילה (של קופות החולים)"/>
+  </concept>
+  <concept>
+    <code value="35"/>
+    <display value="בדיקת סרטן השד"/>
+    <definition value="בדיקת סרטן השד הוא הערך המתאים למרפאות לבדיקת סרטן השד בקהילה (של קופות החולים)"/>
+  </concept>
+  <concept>
+    <code value="36"/>
+    <display value="קבלני שירותי רפואה"/>
+  </concept>
+  <concept>
+    <code value="39"/>
+    <display value="מ. טיפול בשחפת"/>
+  </concept>
+  <concept>
+    <code value="37"/>
+    <display value="גמילה סמ-רפו-אמב"/>
+    <definition value="גמילה סמ-רפו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="38"/>
+    <display value="גמילה סמ-משו-אמב"/>
+    <definition value="גמילה סמ-משו-אמב הוא הערך המתאים למוסדות בריאות הנפש לטיפול משולב אמבולטורי רפואי במשתמשים בסמים , המקבלים רישוי ממשרד הבריאות ומפורסמים במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="40"/>
+    <display value="גמילה סמים ביח א"/>
+  </concept>
+  <concept>
+    <code value="41"/>
+    <display value="מעבדות/מכונים"/>
+    <definition value="מעבדות/מכונים הוא הערך המתאים למעבדות ומכונים המקבלים רישוי ממשרד הבריאות."/>
+  </concept>
+  <concept>
+    <code value="42"/>
+    <display value="מכון צילום שינים"/>
+    <definition value="מכון צילום שינים הוא הערך המתאים למכונים לצילום שיניים המקבלים רישוי ממשרד הבריאות."/>
+  </concept>
+  <concept>
+    <code value="43"/>
+    <display value="מכון לרפואת שינה"/>
+    <definition value="מכון לרפואת שינה הוא הערך המתאים למכונים לרפואת שינה המקבלים רישוי ממשרד הבריאות."/>
+  </concept>
+  <concept>
+    <code value="44"/>
+    <display value="מכון גסטרו"/>
+  </concept>
+  <concept>
+    <code value="51"/>
+    <display value="תחנה ב. המשפחה"/>
+    <definition value="תחנה ב. המשפחה הוא הערך המתאים למרפאות לבריאות המשפחה המשמשות כטיפת חלב ומעקב הריון המקבלים רישוי ממשרד הבריאות. מרפאות אלה יכולות להיות בבעלות משרד הבריאות, קופות החולים ורשויות מקומיות."/>
+  </concept>
+  <concept>
+    <code value="52"/>
+    <display value="מרפאה כלל בקהילה"/>
+    <definition value="מרפאה כלל בקהילה הוא הערך המתאים למרפאות לבריאות כללית בקהילה ובעקרן מרפאות קופות החולים."/>
+  </concept>
+  <concept>
+    <code value="53"/>
+    <display value="מרפאות כירורגיות"/>
+    <definition value="מרפאות כירורגיות הוא הערך המתאים למרפאות כירורגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="54"/>
+    <display value="מרפאות פסיכיאטרי"/>
+  </concept>
+  <concept>
+    <code value="55"/>
+    <display value="מרפאות שיניים"/>
+    <definition value="מרפאות שיניים הוא הערך המתאים למרפאות שיניים בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="56"/>
+    <display value="בתי מרקחת"/>
+  </concept>
+  <concept>
+    <code value="57"/>
+    <display value="ת. לרפואת ספורט"/>
+    <definition value="ת. לרפואת ספורט הוא הערך המתאים לתחנות לרפואת ספורט בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="58"/>
+    <display value="מרפאות אונקולוגיות בקהילה"/>
+    <definition value="מרפאות אונקולוגיות בקהילה הוא הערך המתאים למרפאות אונקולוגיות בקהילה המקבלות רישוי ממשרד הבריאות ומפורסמות במאגר המוסדות."/>
+  </concept>
+  <concept>
+    <code value="61"/>
+    <display value="בתי ספר לרפואה"/>
+    <definition value="בתי ספר לרפואה הוא הערך המתאים למוסדות לימודי מקצועות הרפואה"/>
+  </concept>
+  <concept>
+    <code value="62"/>
+    <display value="בתי&quot;ס ר. שיניים"/>
+    <definition value="בתי&quot;ס ר. שיניים  הוא הערך המתאים למוסדות לימודי מקצועות רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="64"/>
+    <display value="בתי ספר לסיעוד"/>
+    <definition value="בתי ספר לסיעוד  הוא הערך המתאים למוסדות לימודי מקצועות הסיעוד"/>
+  </concept>
+  <concept>
+    <code value="63"/>
+    <display value="בתי ספר לרוקחות"/>
+  </concept>
+  <concept>
+    <code value="65"/>
+    <display value="בתי&quot;ס לפרא-רפואי"/>
+  </concept>
+  <concept>
+    <code value="66"/>
+    <display value="בית ספר לרנטגן"/>
+  </concept>
+  <concept>
+    <code value="67"/>
+    <display value="בי&quot;ס לפיזיוטרפיה"/>
+  </concept>
+  <concept>
+    <code value="68"/>
+    <display value="בי&quot;ס שכולל סיעוד"/>
+  </concept>
+  <concept>
+    <code value="71"/>
+    <display value="משרד הבריאות"/>
+    <definition value="משרד הבריאות הוא הערך שייצג את משרד הבריאות כנותן שירותי בריאות כמו מוסד או חברה"/>
+  </concept>
+  <concept>
+    <code value="72"/>
+    <display value="לשכות בריאות"/>
+    <definition value="לשכות בריאות הוא הערך שייצג את הלשכות המחוזיות של משרד הבריאות כנותנות שירותי בריאות כמו מוסד או חברה"/>
+  </concept>
+  <concept>
+    <code value="73"/>
+    <display value="קופות חולים"/>
+    <definition value="קופות חולים הוא הערך שייצג את 4 קופות החולים כנותנות שירותי בריאות כמו מוסד או חברה"/>
+  </concept>
+  <concept>
+    <code value="74"/>
+    <display value="משטרה"/>
+    <definition value="משטרה הוא הערך שייצג את המשטרה שמפנה לקבלת שירותי בריאות כמו מוסד או חברה"/>
+  </concept>
+  <concept>
+    <code value="75"/>
+    <display value="צ.ה.ל"/>
+    <definition value="צ.ה.ל הוא הערך שייצג את צה&quot;ל כקופת חולים חמישית וכנותנות שירותי בריאות כמו מוסד או חברה או כמפנה לקבלת שירות ע&quot;י גורם אחר"/>
+  </concept>
+  <concept>
+    <code value="76"/>
+    <display value="משרדי ממשלה"/>
+    <definition value="משרדי ממשלה הוא הערך שייצג את משרדי הממשלה כנותן שירותי בריאות או מפנה לקבלת שירותים שכאלה ע&quot;י גורם אחר"/>
+  </concept>
+  <concept>
+    <code value="77"/>
+    <display value="בית ספר"/>
+    <definition value="בית ספר הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו"/>
+  </concept>
+  <concept>
+    <code value="78"/>
+    <display value="גן ילדים"/>
+    <definition value="גן ילדים הוא הערך המתאים למוסדות משרד החינוך המקבלות רישוי מטעמו"/>
+  </concept>
+  <concept>
+    <code value="79"/>
+    <display value="מעון יום"/>
+    <definition value="מעון יום הוא הערך המתאים למעונות יום לגיל הרך המקבלות רישוי ממשרד הרווחה"/>
+  </concept>
+  <concept>
+    <code value="80"/>
+    <display value="מוסד חינוך אחר"/>
+  </concept>
+  <concept>
+    <code value="84"/>
+    <display value="רווחה – אוטיסטים"/>
+  </concept>
+  <concept>
+    <code value="82"/>
+    <display value="מוסד ללא רישוי"/>
+    <definition value="מוסד ללא רישוי הוא נערך המתאים למוסדות ללא רישוי מיוחד ידוע"/>
+  </concept>
+  <concept>
+    <code value="83"/>
+    <display value="רווחה – מנהל מוגבלויות"/>
+    <definition value="רווחה – מנהל מוגבלויות הוא הערך המתאים למעונות לבעלי מוגבלויות המקבלות רישוי ממשרד הרווחה"/>
+  </concept>
+  <concept>
+    <code value="85"/>
+    <display value="רווחה – השירות לעיוור"/>
+  </concept>
+  <concept>
+    <code value="87"/>
+    <display value="מנהל תקון"/>
+  </concept>
+  <concept>
+    <code value="88"/>
+    <display value="מנהל שירותים חברתיים ואישיים"/>
+  </concept>
+  <concept>
+    <code value="86"/>
+    <display value="מרכז יום לקשיש"/>
+    <definition value="מרכז יום לקשיש הוא הערך המתאים למרכזי יום לקשישים המקבלים רישוי ממשרד הרווחה"/>
+  </concept>
+  <concept>
+    <code value="90"/>
+    <display value="רשת"/>
+    <definition value="רשת הוא הערך המתאים לרשות מקומית, מועצה מקומית, מועצה אזורית, עירייה וכו'"/>
+  </concept>
+  <concept>
+    <code value="91"/>
+    <display value="חברות מכשור רפוא"/>
+    <definition value="חברות מכשור רפוא הוא הערך המתאים לחברות למכשור רפואי המקבלות רישוי ממשרד הבריאות"/>
+  </concept>
+  <concept>
+    <code value="92"/>
+    <display value="ספק ציוד רפואי"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="אחר"/>
+    <definition value="אחר"/>
+  </concept>
+  <concept>
+    <code value="281"/>
+    <display value="משרד שיכון - בית גיל הזהב"/>
+    <definition value="משרד שיכון - בית גיל הזהב הוא הערך המתאים לבתי אבות של משרד השיכון"/>
+  </concept>
+  <concept>
+    <code value="282"/>
+    <display value="מקבץ דיור"/>
+    <definition value="מקבץ דיור הוא הערך המתאים להגדרות כבאות והצלה"/>
+  </concept>
+  <concept>
+    <code value="731"/>
+    <display value="תת-יחידה של קופת חולים"/>
+    <definition value="תת-יחידה של קופת חולים הוא הערך המתאים ליחידות מאוגדות בקופות החולים עפ&quot;י ההגדרות הקופה"/>
+  </concept>
+  <concept>
+    <code value="779"/>
+    <display value="ישיבה"/>
+    <definition value="ישיבה הוא הערך המתאים לישיבה עפ&quot;י הגדרות משרד החינוך או ועד הישיבות"/>
+  </concept>
+  <concept>
+    <code value="821"/>
+    <display value="מלון מבודדים"/>
+    <definition value="מלון מבודדים הוא הערך המתאים למלו מבודדי קורונה עפ&quot;י הגדרות משרד הבריאות או פקע&quot;ר"/>
+  </concept>
+  <concept>
+    <code value="822"/>
+    <display value="דרייב אין לבדיקות קורונה"/>
+  </concept>
+</CodeSystem>

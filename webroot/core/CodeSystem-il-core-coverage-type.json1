@@ -1,0 +1,43 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "il-core-coverage-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-coverage-type</code> defines the following code:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">OBL<a name=\"il-core-coverage-type-OBL\"> </a></td><td>Obligation</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate",
+    "valueDate" : "2023-08"
+  }],
+  "url" : "http://fhir.health.gov.il/cs/il-core-coverage-type",
+  "version" : "0.13.2",
+  "name" : "ILCoreCoverageType",
+  "title" : "IL Core Coverage Type codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for expressing general heigh level coverage types unique to Israel health system",
+  "caseSensitive" : false,
+  "valueSet" : "http://fhir.health.gov.il/ValueSet/il-core-coverage-type",
+  "content" : "complete",
+  "count" : 1,
+  "concept" : [{
+    "code" : "OBL",
+    "display" : "Obligation"
+  }]
+}

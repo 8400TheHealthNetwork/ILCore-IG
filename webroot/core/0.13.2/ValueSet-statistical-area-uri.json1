@@ -1,0 +1,40 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "statistical-area-uri",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-il-core-urn.html\"><code>urn:ietf:rfc:3986</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"CodeSystem-il-core-urn.html#il-core-urn-http.58.47.47fhir.46health.46gov.46il.47identifier.47cbs-statistical-area\">http://fhir.health.gov.il/identifier/cbs-statistical-area</a></td><td>Israeli CBS statistical area code</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/statistical-area-uri",
+  "version" : "0.13.2",
+  "name" : "StatisticalAreaUri",
+  "title" : "Israeli statistical area (אג\"ס) URI",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "URI's of statistical area identifiers. NOTE: When using CBS-statistical area numbers, use as directed in the statistical-area NamingSystem - i.e.,: 4-digit citiy code + 3-digit statistical area code. See [here](https://simplifier.net/ilcore/cbs-statistical-area)",
+  "compose" : {
+    "include" : [{
+      "system" : "urn:ietf:rfc:3986",
+      "concept" : [{
+        "code" : "http://fhir.health.gov.il/identifier/cbs-statistical-area",
+        "display" : "Israeli CBS statistical area code"
+      }]
+    }]
+  }
+}

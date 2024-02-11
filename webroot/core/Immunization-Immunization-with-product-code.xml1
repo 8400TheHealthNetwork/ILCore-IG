@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Immunization xmlns="http://hl7.org/fhir">
+  <id value="Immunization-with-product-code"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-immunization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Immunization with a Product code and SNOMED code</div>
+  </text>
+  <status value="completed"/>
+  <vaccineCode>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="J07BE01"/>
+      <display value="mumps, live attenuated"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="871738001"/>
+      <display value="Live attenuated mumps vaccine"/>
+    </coding>
+  </vaccineCode>
+  <patient>
+    <reference value="Patient/patient-with-israeli-id"/>
+  </patient>
+  <occurrenceDateTime value="2021-02-28"/>
+  <primarySource value="true"/>
+  <lotNumber value="12345"/>
+  <site>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="368208006"/>
+      <display value="Left upper arm structure (body structure)"/>
+    </coding>
+  </site>
+</Immunization>

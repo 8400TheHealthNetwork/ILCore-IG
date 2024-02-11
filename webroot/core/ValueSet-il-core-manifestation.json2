@@ -1,0 +1,77 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-manifestation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  404684003 (Clinical finding (finding))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  241929008 (Acute allergic reaction)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  312850006 (H/O: Disorder)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  49755003 (Abnormal tissue appearance)</li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></li><li>Import all the codes that are contained in <a href=\"ValueSet-icd9-cm-diagnoses.html\">Icd9 Cm diagnoses</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-icd9il-diagnoses.html\">ICD9 IL Diagnoses</a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-manifestation",
+  "version" : "0.13.2",
+  "name" : "ILCoreManifestation",
+  "title" : "IL Core Condition Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for intolerance manifestation for the IL Core",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "404684003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "241929008"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "312850006"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "49755003"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm"
+    },
+    {
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/icd9-cm-diagnoses"]
+    },
+    {
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/icd9il-diagnoses"]
+    }]
+  }
+}

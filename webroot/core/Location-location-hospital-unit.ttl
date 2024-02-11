@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Location/location-hospital-unit> a fhir:Location ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "location-hospital-unit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-location"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-location>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Location</b><a name=\"location-hospital-unit\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Location &quot;location-hospital-unit&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-il-core-location.html\">ILCore Location Profile</a></p></div><p><b>identifier</b>: id: 010011</p><p><b>status</b>: active</p><p><b>name</b>: פנימית א' בית חולים רמב&quot;ם</p><p><b>type</b>: Hospital unit <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html\">RoleCode</a>#HU)</span></p><p><b>telecom</b>: ph: 04-7772518(WORK)</p><p><b>address</b>: העליה השנייה 8 חיפה(WORK)</p><h3>Positions</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style=\"display: none\">*</td><td>32.232325</td><td>34.253251</td></tr></table><p><b>managingOrganization</b>: <a href=\"Organization-organization-ministry-of-health.html\">Organization/organization-ministry-of-health</a> &quot;משרד הבריאות&quot;</p><h3>HoursOfOperations</h3><table class=\"grid\"><tr><td style=\"display: none\">-</td><td><b>AllDay</b></td></tr><tr><td style=\"display: none\">*</td><td>true</td></tr></table></div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://rambam.co.il/department"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "010011" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:name [ fhir:v "פנימית א' בית חולים רמב\"ם"] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-RoleCode"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "HU" ]
+     ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "04-7772518" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-statistical-area"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/cbs-statistical-area"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "4000416" ]
+       ]
+     ] ) ;
+     fhir:use [ fhir:v "work" ] ;
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:text [ fhir:v "העליה השנייה 8 חיפה" ] ;
+     fhir:line ( [
+       fhir:v "העליה השנייה 8" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "העליה השנייה" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "8" ]
+       ] )
+     ] ) ;
+     fhir:city [
+       fhir:v "חיפה" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-city-code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/city-symbol"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "4000" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:postalCode [ fhir:v "3109601" ] ;
+     fhir:country [ fhir:v "IL" ]
+  ] ; # 
+  fhir:position [
+     fhir:longitude [ fhir:v "32.232325"^^xsd:decimal ] ;
+     fhir:latitude [ fhir:v "34.253251"^^xsd:decimal ]
+  ] ; # 
+  fhir:managingOrganization [
+     fhir:link <http://fhir.health.gov.il/Organization/organization-ministry-of-health> ;
+     fhir:reference [ fhir:v "Organization/organization-ministry-of-health" ]
+  ] ; # 
+  fhir:hoursOfOperation ( [
+     fhir:allDay [ fhir:v "true"^^xsd:boolean ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

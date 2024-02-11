@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="moh-medication-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://israeldrugs.health.gov.il</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <url value="http://israeldrugs.health.gov.il"/>
+  <version value="0.13.2"/>
+  <name value="MoHMedicationCode"/>
+  <title value="MoH Medication Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for medications according to MoH catalogue"/>
+  <caseSensitive value="false"/>
+  <content value="not-present"/>
+</CodeSystem>

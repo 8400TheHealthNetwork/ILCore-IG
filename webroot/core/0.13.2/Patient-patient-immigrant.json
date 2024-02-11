@@ -1,0 +1,141 @@
+{
+  "resourceType" : "Patient",
+  "id" : "patient-immigrant",
+  "meta" : {
+    "profile" : ["http://fhir.health.gov.il/StructureDefinition/il-core-patient"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient - immigrant</div>"
+  },
+  "extension" : [{
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://fhir.health.gov.il/cs/paying-entity-moh",
+        "code" : "103",
+        "display" : "קופת חולים מכבי"
+      }]
+    }
+  },
+  {
+    "extension" : [{
+      "url" : "origin",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "USA"
+        }]
+      }
+    },
+    {
+      "url" : "destination",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "urn:iso:std:iso:3166",
+          "code" : "IL"
+        }]
+      }
+    },
+    {
+      "url" : "date",
+      "valueDate" : "1982-06-30"
+    },
+    {
+      "url" : "status",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "LA29155-1",
+          "display" : "Naturalized citizen"
+        }]
+      }
+    }],
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration"
+  }],
+  "identifier" : [{
+    "system" : "http://fhir.health.gov.il/identifier/il-national-id",
+    "value" : "000000018"
+  }],
+  "active" : true,
+  "name" : [{
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/StructureDefinition/language",
+      "valueCode" : "he"
+    }],
+    "text" : "הרצל לוי",
+    "family" : "לוי",
+    "given" : ["הרצל"]
+  }],
+  "telecom" : [{
+    "system" : "phone",
+    "value" : "052467911",
+    "use" : "home"
+  },
+  {
+    "system" : "email",
+    "value" : "Israel@example.com"
+  }],
+  "gender" : "female",
+  "birthDate" : "1951-04-17",
+  "deceasedBoolean" : false,
+  "address" : [{
+    "extension" : [{
+      "extension" : [{
+        "url" : "longitude",
+        "valueDecimal" : 34.764885
+      },
+      {
+        "url" : "latitude",
+        "valueDecimal" : 32.058317
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/geolocation"
+    }],
+    "use" : "home",
+    "type" : "physical",
+    "text" : "אילת 34 תל אביב דירה 2",
+    "line" : ["אילת 34"],
+    "_line" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+        "valueString" : "אילת"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+        "valueString" : "34"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+        "valueString" : "2"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+        "valueString" : "1446"
+      }]
+    }],
+    "city" : "תל אביב",
+    "_city" : {
+      "extension" : [{
+        "url" : "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+        "valueCodeableConcept" : {
+          "coding" : [{
+            "system" : "http://fhir.health.gov.il/cs/city-symbol",
+            "code" : "5000"
+          }]
+        }
+      }]
+    },
+    "district" : "תל אביב",
+    "postalCode" : "6684501",
+    "country" : "IL"
+  }],
+  "communication" : [{
+    "language" : {
+      "coding" : [{
+        "system" : "urn:ietf:bcp:47",
+        "code" : "ar",
+        "display" : "Arabic"
+      }]
+    }
+  }]
+}

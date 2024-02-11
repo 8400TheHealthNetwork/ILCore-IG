@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="il-core-error-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-error-code</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unknown-pat<a name="il-core-error-code-unknown-pat"> </a></td><td>המטופל אינו מזוהה</td><td>לא נמצא בקופה מבוטח עם אותו המזהה העסקי</td></tr><tr><td style="white-space:nowrap">missing-pat-data<a name="il-core-error-code-missing-pat-data"> </a></td><td>חסרים פרטי המטופל</td><td>לדוגמא, אין ישות Patient, או שחסר מידע קריטי בישות כגון שם משפחה או מגדר</td></tr><tr><td style="white-space:nowrap">unknown-code<a name="il-core-error-code-unknown-code"> </a></td><td>קוד לא מזוהה</td><td/></tr><tr><td style="white-space:nowrap">missing-code<a name="il-core-error-code-missing-code"> </a></td><td>חסר קוד</td><td/></tr><tr><td style="white-space:nowrap">technical-issue<a name="il-core-error-code-technical-issue"> </a></td><td>בעייה טכנית</td><td>לדוגמא, נפילת מערכת.</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-10"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/il-core-error-code"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreErrorCode"/>
+  <title value="IL Core Error code"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of error codes for ILCore profiles"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="unknown-pat"/>
+    <display value="המטופל אינו מזוהה"/>
+    <definition value="לא נמצא בקופה מבוטח עם אותו המזהה העסקי"/>
+  </concept>
+  <concept>
+    <code value="missing-pat-data"/>
+    <display value="חסרים פרטי המטופל"/>
+    <definition value="לדוגמא, אין ישות Patient, או שחסר מידע קריטי בישות כגון שם משפחה או מגדר"/>
+  </concept>
+  <concept>
+    <code value="unknown-code"/>
+    <display value="קוד לא מזוהה"/>
+  </concept>
+  <concept>
+    <code value="missing-code"/>
+    <display value="חסר קוד"/>
+  </concept>
+  <concept>
+    <code value="technical-issue"/>
+    <display value="בעייה טכנית"/>
+    <definition value="לדוגמא, נפילת מערכת."/>
+  </concept>
+</CodeSystem>

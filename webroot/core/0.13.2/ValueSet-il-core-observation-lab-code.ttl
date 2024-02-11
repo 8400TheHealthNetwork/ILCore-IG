@@ -1,0 +1,172 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/il-core-observation-lab-code> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-observation-lab-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from <a href=\"http://loinc.org\"><code>http://loinc.org</code></a> where CLASSTYPE  =  1</li><li>Include these codes as defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"https://loinc.org/11778-8/\">11778-8</a></td><td>Delivery date Estimated</td></tr><tr><td><a href=\"https://loinc.org/15325-4/\">15325-4</a></td><td>Prostate specific Ag/Prostate volume calculated</td></tr><tr><td><a href=\"https://loinc.org/19991-9/\">19991-9</a></td><td>Alveolar-arterial oxygen Partial pressure difference</td></tr><tr><td><a href=\"https://loinc.org/20564-1/\">20564-1</a></td><td>Oxygen saturation in Blood</td></tr><tr><td><a href=\"https://loinc.org/2709-4/\">2709-4</a></td><td>Oxygen saturation in Capillary blood</td></tr><tr><td><a href=\"https://loinc.org/2711-0/\">2711-0</a></td><td>Oxygen saturation in Venous blood</td></tr><tr><td><a href=\"https://loinc.org/29463-7/\">29463-7</a></td><td>Body weight</td></tr><tr><td><a href=\"https://loinc.org/3137-7/\">3137-7</a></td><td>Body height Measured</td></tr><tr><td><a href=\"https://loinc.org/33069-6/\">33069-6</a></td><td>Fetal nuchal translucency measured by US</td></tr><tr><td><a href=\"https://loinc.org/33434-2/\">33434-2</a></td><td>Volume expired (vol/time)</td></tr><tr><td><a href=\"https://loinc.org/38018-8/\">38018-8</a></td><td>US Guidance for fine needle aspiration of Unspecified body region</td></tr><tr><td><a href=\"https://loinc.org/39231-6/\">39231-6</a></td><td>Syphilis screen test status CPHS</td></tr><tr><td><a href=\"https://loinc.org/43150-2/\">43150-2</a></td><td>Hemoglobin A1c measurement device panel</td></tr><tr><td><a href=\"https://loinc.org/45251-6/\">45251-6</a></td><td>HIV confirmation facility</td></tr><tr><td><a href=\"https://loinc.org/45687-1/\">45687-1</a></td><td>Sexually transmitted diseases [Minimum Data Set]</td></tr><tr><td><a href=\"https://loinc.org/46633-4/\">46633-4</a></td><td>Remarks [RFC]</td></tr><tr><td><a href=\"https://loinc.org/48585-4/\">48585-4</a></td><td>NM Exhaled gas Gastric emptying time post 100 mg sodium acetate PO</td></tr><tr><td><a href=\"https://loinc.org/48770-2/\">48770-2</a></td><td>Fetal Biophysical profile panel US</td></tr><tr><td><a href=\"https://loinc.org/48807-2/\">48807-2</a></td><td>Bone marrow aspiration report</td></tr><tr><td><a href=\"https://loinc.org/55399-0/\">55399-0</a></td><td>Diabetes tracking panel</td></tr><tr><td><a href=\"https://loinc.org/60834-9/\">60834-9</a></td><td>Blood temperature</td></tr><tr><td><a href=\"https://loinc.org/62855-2/\">62855-2</a></td><td>Deprecated PhenX measure - oral glucose tolerance test</td></tr><tr><td><a href=\"https://loinc.org/62856-0/\">62856-0</a></td><td>PhenX - oral glucose tolerance test protocol 141001</td></tr><tr><td><a href=\"https://loinc.org/64604-2/\">64604-2</a></td><td>Technician [Identifier]</td></tr><tr><td><a href=\"https://loinc.org/64711-5/\">64711-5</a></td><td>How many weeks or months did that pregnancy last [#] [PhenX]</td></tr><tr><td><a href=\"https://loinc.org/68608-9/\">68608-9</a></td><td>Summary note</td></tr><tr><td><a href=\"https://loinc.org/71853-6/\">71853-6</a></td><td>Oxygen saturation [Pure mass fraction] in Blood</td></tr><tr><td><a href=\"https://loinc.org/73806-2/\">73806-2</a></td><td>Newborn age in hours</td></tr><tr><td><a href=\"https://loinc.org/76282-3/\">76282-3</a></td><td>Heart rate.beat-to-beat by EKG</td></tr><tr><td><a href=\"https://loinc.org/78354-8/\">78354-8</a></td><td>Arterial-alveolar oxygen Partial pressure ratio</td></tr><tr><td><a href=\"https://loinc.org/78940-4/\">78940-4</a></td><td>Coronary artery disease risk factor panel</td></tr><tr><td><a href=\"https://loinc.org/80333-8/\">80333-8</a></td><td>Other elements in Urine</td></tr><tr><td><a href=\"https://loinc.org/81035-8/\">81035-8</a></td><td>Trans fat intake 24 hour Measured</td></tr><tr><td><a href=\"https://loinc.org/8277-6/\">8277-6</a></td><td>Body surface area</td></tr><tr><td><a href=\"https://loinc.org/8310-5/\">8310-5</a></td><td>Body temperature</td></tr><tr><td><a href=\"https://loinc.org/8609-0/\">8609-0</a></td><td>Hypertrophy [Interpretation] by EKG</td></tr><tr><td><a href=\"https://loinc.org/87179-8/\">87179-8</a></td><td>Guidance for fine needle aspiration</td></tr><tr><td><a href=\"https://loinc.org/9187-6/\">9187-6</a></td><td>Urine output</td></tr><tr><td><a href=\"https://loinc.org/92573-5/\">92573-5</a></td><td>Resident of region that is endemic for the disease of interest</td></tr><tr><td><a href=\"https://loinc.org/99742-9/\">99742-9</a></td><td>Peritoneal dialysis panel</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/il-core-observation-lab-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreObservationLabCode"] ; # 
+  fhir:title [ fhir:v "IL Core Observation Lab Code"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of lab-code codes for lab observations for the IL Core"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "CLASSTYPE" ] ;
+         fhir:op [ fhir:v "=" ] ;
+         fhir:value [ fhir:v "1" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "11778-8" ] ;
+         fhir:display [ fhir:v "Delivery date Estimated" ]
+       ] [
+         fhir:code [ fhir:v "15325-4" ] ;
+         fhir:display [ fhir:v "Prostate specific Ag/Prostate volume calculated" ]
+       ] [
+         fhir:code [ fhir:v "19991-9" ] ;
+         fhir:display [ fhir:v "Alveolar-arterial oxygen Partial pressure difference" ]
+       ] [
+         fhir:code [ fhir:v "20564-1" ] ;
+         fhir:display [ fhir:v "Oxygen saturation in Blood" ]
+       ] [
+         fhir:code [ fhir:v "2709-4" ] ;
+         fhir:display [ fhir:v "Oxygen saturation in Capillary blood" ]
+       ] [
+         fhir:code [ fhir:v "2711-0" ] ;
+         fhir:display [ fhir:v "Oxygen saturation in Venous blood" ]
+       ] [
+         fhir:code [ fhir:v "29463-7" ] ;
+         fhir:display [ fhir:v "Body weight" ]
+       ] [
+         fhir:code [ fhir:v "3137-7" ] ;
+         fhir:display [ fhir:v "Body height Measured" ]
+       ] [
+         fhir:code [ fhir:v "33069-6" ] ;
+         fhir:display [ fhir:v "Fetal nuchal translucency measured by US" ]
+       ] [
+         fhir:code [ fhir:v "33434-2" ] ;
+         fhir:display [ fhir:v "Volume expired (vol/time)" ]
+       ] [
+         fhir:code [ fhir:v "38018-8" ] ;
+         fhir:display [ fhir:v "US Guidance for fine needle aspiration of Unspecified body region" ]
+       ] [
+         fhir:code [ fhir:v "39231-6" ] ;
+         fhir:display [ fhir:v "Syphilis screen test status CPHS" ]
+       ] [
+         fhir:code [ fhir:v "43150-2" ] ;
+         fhir:display [ fhir:v "Hemoglobin A1c measurement device panel" ]
+       ] [
+         fhir:code [ fhir:v "45251-6" ] ;
+         fhir:display [ fhir:v "HIV confirmation facility" ]
+       ] [
+         fhir:code [ fhir:v "45687-1" ] ;
+         fhir:display [ fhir:v "Sexually transmitted diseases [Minimum Data Set]" ]
+       ] [
+         fhir:code [ fhir:v "46633-4" ] ;
+         fhir:display [ fhir:v "Remarks [RFC]" ]
+       ] [
+         fhir:code [ fhir:v "48585-4" ] ;
+         fhir:display [ fhir:v "NM Exhaled gas Gastric emptying time post 100 mg sodium acetate PO" ]
+       ] [
+         fhir:code [ fhir:v "48770-2" ] ;
+         fhir:display [ fhir:v "Fetal Biophysical profile panel US" ]
+       ] [
+         fhir:code [ fhir:v "48807-2" ] ;
+         fhir:display [ fhir:v "Bone marrow aspiration report" ]
+       ] [
+         fhir:code [ fhir:v "55399-0" ] ;
+         fhir:display [ fhir:v "Diabetes tracking panel" ]
+       ] [
+         fhir:code [ fhir:v "60834-9" ] ;
+         fhir:display [ fhir:v "Blood temperature" ]
+       ] [
+         fhir:code [ fhir:v "62855-2" ] ;
+         fhir:display [ fhir:v "Deprecated PhenX measure - oral glucose tolerance test" ]
+       ] [
+         fhir:code [ fhir:v "62856-0" ] ;
+         fhir:display [ fhir:v "PhenX - oral glucose tolerance test protocol 141001" ]
+       ] [
+         fhir:code [ fhir:v "64604-2" ] ;
+         fhir:display [ fhir:v "Technician [Identifier]" ]
+       ] [
+         fhir:code [ fhir:v "64711-5" ] ;
+         fhir:display [ fhir:v "How many weeks or months did that pregnancy last [#] [PhenX]" ]
+       ] [
+         fhir:code [ fhir:v "68608-9" ] ;
+         fhir:display [ fhir:v "Summary note" ]
+       ] [
+         fhir:code [ fhir:v "71853-6" ] ;
+         fhir:display [ fhir:v "Oxygen saturation [Pure mass fraction] in Blood" ]
+       ] [
+         fhir:code [ fhir:v "73806-2" ] ;
+         fhir:display [ fhir:v "Newborn age in hours" ]
+       ] [
+         fhir:code [ fhir:v "76282-3" ] ;
+         fhir:display [ fhir:v "Heart rate.beat-to-beat by EKG" ]
+       ] [
+         fhir:code [ fhir:v "78354-8" ] ;
+         fhir:display [ fhir:v "Arterial-alveolar oxygen Partial pressure ratio" ]
+       ] [
+         fhir:code [ fhir:v "78940-4" ] ;
+         fhir:display [ fhir:v "Coronary artery disease risk factor panel" ]
+       ] [
+         fhir:code [ fhir:v "80333-8" ] ;
+         fhir:display [ fhir:v "Other elements in Urine" ]
+       ] [
+         fhir:code [ fhir:v "81035-8" ] ;
+         fhir:display [ fhir:v "Trans fat intake 24 hour Measured" ]
+       ] [
+         fhir:code [ fhir:v "8277-6" ] ;
+         fhir:display [ fhir:v "Body surface area" ]
+       ] [
+         fhir:code [ fhir:v "8310-5" ] ;
+         fhir:display [ fhir:v "Body temperature" ]
+       ] [
+         fhir:code [ fhir:v "8609-0" ] ;
+         fhir:display [ fhir:v "Hypertrophy [Interpretation] by EKG" ]
+       ] [
+         fhir:code [ fhir:v "87179-8" ] ;
+         fhir:display [ fhir:v "Guidance for fine needle aspiration" ]
+       ] [
+         fhir:code [ fhir:v "9187-6" ] ;
+         fhir:display [ fhir:v "Urine output" ]
+       ] [
+         fhir:code [ fhir:v "92573-5" ] ;
+         fhir:display [ fhir:v "Resident of region that is endemic for the disease of interest" ]
+       ] [
+         fhir:code [ fhir:v "99742-9" ] ;
+         fhir:display [ fhir:v "Peritoneal dialysis panel" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

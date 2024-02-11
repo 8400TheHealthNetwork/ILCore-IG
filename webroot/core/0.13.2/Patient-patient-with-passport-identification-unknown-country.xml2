@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-with-passport-identification-unknown-country"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient with foreign passport- unknown-country</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-il-hmo">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+        <code value="101"/>
+        <display value="קופת חולים כללית"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+      </coding>
+    </type>
+    <system>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="unknown"/>
+      </extension>
+    </system>
+    <value value="8876543"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="en"/>
+    </extension>
+    <text value="David John Smith"/>
+    <family value="Smith"/>
+    <given value="David"/>
+    <given value="John"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="+4423456789"/>
+    <use value="mobile"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="johnsmith@example.com"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="1994-03-22"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+      <extension url="longitude">
+        <valueDecimal value="182468.59"/>
+      </extension>
+      <extension url="latitude">
+        <valueDecimal value="670131.38"/>
+      </extension>
+    </extension>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-statistical-area">
+      <valueIdentifier>
+        <system value="http://fhir.health.gov.il/identifier/cbs-statistical-area"/>
+        <value value="40000733"/>
+      </valueIdentifier>
+    </extension>
+    <text value="חניתה 20 חיפה"/>
+    <line value="חניתה 20">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="חניתה"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="20"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
+        <valueString value="4"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="272"/>
+      </extension>
+    </line>
+    <city value="חיפה">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="4000"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district value="חיפה"/>
+    <postalCode value="3244010"/>
+    <country value="IL"/>
+  </address>
+</Patient>

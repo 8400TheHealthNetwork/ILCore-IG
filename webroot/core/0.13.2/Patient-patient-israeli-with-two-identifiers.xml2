@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-israeli-with-two-identifiers"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient with two identifiers</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-il-hmo">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+        <code value="103"/>
+        <display value="קופת חולים מכבי"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000018"/>
+  </identifier>
+  <identifier>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+        <code value="PPN"/>
+      </coding>
+    </type>
+    <system value="http://hl7.org/fhir/sid/passport-GBR"/>
+    <value value="8876543"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="he"/>
+    </extension>
+    <text value="ישראל ישראלי"/>
+    <family value="ישראל"/>
+    <given value="ישראלי"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="052467911"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="Israel@example.com"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="2003-04-17"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+      <extension url="longitude">
+        <valueDecimal value="182468.59"/>
+      </extension>
+      <extension url="latitude">
+        <valueDecimal value="670131.38"/>
+      </extension>
+    </extension>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-statistical-area">
+      <valueIdentifier>
+        <system value="http://fhir.health.gov.il/identifier/cbs-statistical-area"/>
+        <value value="50000935"/>
+      </valueIdentifier>
+    </extension>
+    <use value="home"/>
+    <type value="physical"/>
+    <text value="לח&quot;י 1 דירה 4 תל אביב"/>
+    <line value="לח&quot;י 1">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="לח&quot;י"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="1"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">
+        <valueString value="א'"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
+        <valueString value="4"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="32"/>
+      </extension>
+    </line>
+    <city value="תל אביב">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="5000"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district value="תל אביב"/>
+    <postalCode value="6710341"/>
+    <country value="IL"/>
+  </address>
+</Patient>

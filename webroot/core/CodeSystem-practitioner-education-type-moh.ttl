@@ -1,0 +1,62 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-education-type-moh> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-education-type-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-education-type-moh</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"practitioner-education-type-moh-1\"> </a></td><td>לימודים אקדמאים</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"practitioner-education-type-moh-2\"> </a></td><td>קורס מוכר</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"practitioner-education-type-moh-3\"> </a></td><td>קורס על בסיסי</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"practitioner-education-type-moh-4\"> </a></td><td>קורס למקצוע</td></tr><tr><td style=\"white-space:nowrap\">-999<a name=\"practitioner-education-type-moh--999\"> </a></td><td>לא ידוע</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/practitioner-education-type-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "PractitionerEducationTypeMoH"] ; # 
+  fhir:title [ fhir:v "Ministry of Health practitioner-education-type codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for practitioner-education-types according to Israeli MoH"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "לימודים אקדמאים" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "קורס מוכר" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "קורס על בסיסי" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "קורס למקצוע" ]
+  ] [
+     fhir:code [ fhir:v "-999" ] ;
+     fhir:display [ fhir:v "לא ידוע" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML>
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+<head>
+   <meta charset="UTF-8"/>
+  <title>[%title%]</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="author" content="http://www.hl7.org"/>
+  <link href="fhir.css" rel="stylesheet"/>
+  <link href="dist-hist/css/bootstrap.css" rel="stylesheet"/>
+  <link href="assets-hist/css/bootstrap-fhir.css" rel="stylesheet"/>
+  <link href="assets-hist/css/project.css" rel="stylesheet"/>
+  <link href="assets-hist/css/pygments-manni.css" rel="stylesheet"/>
+	<link href="jquery-ui.css" rel="stylesheet"/>
+  <script type="application/javascript" src="https://hl7.org/fhir/history-cm.js"> </script>
+  <script type="application/javascript" src="https://hl7.org/fhir/history.js"> </script>
+  <link href="history.css" rel="stylesheet"/>
+  <!-- header.template starts here -->
+$header$  
+  <!-- header.template ends here -->
+</head>
+<!-- preamble.template starts here -->
+$preamble$
+<!-- preamble.template ends here -->
+
+<div class="col-12">
+
+<h2>Publication (Version) History</h2>
+
+<div id="intro"></div>
+
+  <!-- ============CONTENT CONTENT=============== -->
+
+<div id="history-data"></div>
+<style>
+    #history-data table td { padding-right: 1em; }
+</style>
+
+  <!-- postamble.template starts here -->
+$postamble$
+  <!-- postamble.template ends here -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script src="./assets-hist/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script src="./dist-hist/js/bootstrap.min.js"> </script>
+<script src="./assets-hist/js/respond.min.js"> </script>
+<script src="./assets-hist/js/fhir.js"> </script>
+
+<!-- Analytics Below
+================================================== -->
+
+<!--- Include in the page --->
+<script>
+var pageJSON = '[%json%]';
+load(pageJSON);
+</script>
+
+</body>
+</html>
+
+

@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "vaccine-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  787859002 (Vaccine product)</li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/vaccine-code",
+  "version" : "0.13.2",
+  "name" : "VaccineCode",
+  "title" : "Vaccine Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of SNOMED codes for vaccines",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "787859002"
+      }]
+    }]
+  }
+}

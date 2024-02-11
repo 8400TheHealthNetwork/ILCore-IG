@@ -1,0 +1,153 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Practitioner/practitioner-nurse-with-expertise-and-advanced-courses> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-nurse-with-expertise-and-advanced-courses"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">אחות מוסמכת עם מומחיות וקורס על בסיסי</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://practitioners.health.gov.il/Nurses"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "207927" ] ;
+     fhir:period [
+       fhir:start [ fhir:v "2012-09-06"^^xsd:date ]
+     ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "he" ]
+     ] ) ;
+     fhir:text [ fhir:v "אביב אייזקס" ] ;
+     fhir:family [ fhir:v "אייזקס" ] ;
+     fhir:given ( [ fhir:v "אביב" ] ) ;
+     fhir:prefix ( [ fhir:v "גב'" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "02-5334295" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1987-04-30"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-profession-moh"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "101" ] ;
+           fhir:display [ fhir:v "אח/ות מוסמכ/ת" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://practitioners.health.gov.il/Nurses"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "207927" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2012-09-06"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26" ] ;
+         fhir:display [ fhir:v "תעודת רישום" ]
+       ] )
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/practitioner-expertise"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "108" ] ;
+           fhir:display [ fhir:v "פגים" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/nurse-expertise"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "108-0030" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2021-05-05"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "תעודת מומחה" ]
+       ] )
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "65" ] ;
+           fhir:display [ fhir:v "הדרכה קלינית" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/nurse-advanced-course"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "65-207927" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "1900-01-01"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "110" ] ;
+         fhir:display [ fhir:v "תעודת רישום קורס ע ב" ]
+       ] )
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "71" ] ;
+           fhir:display [ fhir:v "טיפול נמרץ פגים" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/nurse-advanced-course"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "71-207927" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "1900-01-01"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "110" ] ;
+         fhir:display [ fhir:v "תעודת רישום קורס ע ב" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

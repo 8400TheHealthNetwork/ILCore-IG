@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="allergyIntolerance-latex-allergy"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Latex Allergy</div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="biologic"/>
+  <criticality value="low"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="1003755004"/>
+      <display value="Allergy to Hevea brasiliensis latex protein (finding)"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/patient-with-israeli-id"/>
+  </patient>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="111088007"/>
+        <display value="Latex (substance)"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="271807003"/>
+        <display value="Eruption of skin (disorder)"/>
+      </coding>
+    </manifestation>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="418290006"/>
+        <display value="Itching (finding)"/>
+      </coding>
+    </manifestation>
+    <severity value="mild"/>
+    <exposureRoute>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="6064005"/>
+        <display value="Topical route (qualifier value)"/>
+      </coding>
+    </exposureRoute>
+  </reaction>
+</AllergyIntolerance>

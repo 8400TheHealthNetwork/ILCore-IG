@@ -1,0 +1,117 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/patient-with-passport-identification> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-with-passport-identification"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with foreign passport</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/paying-entity-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "קופת חולים כללית" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:type [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPN" ]
+       ] )
+     ] ;
+     fhir:system [ fhir:v "http://hl7.org/fhir/sid/passport-USA"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "8876543" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "en" ]
+     ] ) ;
+     fhir:text [ fhir:v "David John Smith" ] ;
+     fhir:family [ fhir:v "Smith" ] ;
+     fhir:given ( [ fhir:v "David" ] [ fhir:v "John" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "+4423456789" ] ;
+     fhir:use [ fhir:v "mobile" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "johnsmith@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [ fhir:v "1994-03-22"^^xsd:date] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "longitude"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "182468.59"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "latitude"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "670131.38"^^xsd:decimal ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/geolocation"^^xsd:anyURI ]
+     ] [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-statistical-area"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:Identifier ;
+         fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/cbs-statistical-area"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "40000733" ]
+       ]
+     ] ) ;
+     fhir:text [ fhir:v "חניתה 20 חיפה" ] ;
+     fhir:line ( [
+       fhir:v "חניתה 20" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "חניתה" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "20" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "4" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "272" ]
+       ] )
+     ] ) ;
+     fhir:city [
+       fhir:v "חיפה" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-city-code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/city-symbol"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "4000" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:district [ fhir:v "חיפה" ] ;
+     fhir:postalCode [ fhir:v "3244010" ] ;
+     fhir:country [ fhir:v "IL" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

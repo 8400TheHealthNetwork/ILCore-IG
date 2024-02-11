@@ -1,0 +1,627 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="practitioner-expertise-moh"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-expertise-moh</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap">-999<a name="practitioner-expertise-moh--999"> </a></td><td>לא ידוע</td><td>ערך ברירת מחדל במקרה שערך המומחיות לא קיים מאחר הגיע ריק</td><td>Deprecated</td></tr><tr><td style="white-space:nowrap">0<a name="practitioner-expertise-moh-0"> </a></td><td>ללא התמחות</td><td>ערך ברירת מחדל כאשר ידוע כי לאיש המקצוע אין מומחיות מיוחדת במקצוע שלו</td><td/></tr><tr><td style="white-space:nowrap">1<a name="practitioner-expertise-moh-1"> </a></td><td>רפואה פנימית</td><td>מומחיות ברפואה פנימית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">2<a name="practitioner-expertise-moh-2"> </a></td><td>קרדיולוגיה</td><td>מומחיות בקרדיולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">3<a name="practitioner-expertise-moh-3"> </a></td><td>המטולוגיה</td><td>מומחיות בהמטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">4<a name="practitioner-expertise-moh-4"> </a></td><td>אלרגולוגיה ואימונולוגיה קלינית</td><td>מומחיות באלרגולוגיה ואימונולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">5<a name="practitioner-expertise-moh-5"> </a></td><td>מחלות ריאה</td><td>מומחיות במחלות ריאה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">6<a name="practitioner-expertise-moh-6"> </a></td><td>גסטרואנטרולוגיה</td><td>מומחיות בגסטרואנטרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">7<a name="practitioner-expertise-moh-7"> </a></td><td>אנדוקרינולוגיה</td><td>מומחיות באנדוקרינולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">8<a name="practitioner-expertise-moh-8"> </a></td><td>נפרולוגיה</td><td>מומחיות בנפרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">9<a name="practitioner-expertise-moh-9"> </a></td><td>רפואת ילדים</td><td>מומחיות ברפואת ילדים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">10<a name="practitioner-expertise-moh-10"> </a></td><td>נוירולוגיה</td><td>מומחיות בנוירולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">11<a name="practitioner-expertise-moh-11"> </a></td><td>פסיכיאטריה</td><td>מומחיות בפסיכיאטריה שייכת לתחום בריאות הנפשב במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">12<a name="practitioner-expertise-moh-12"> </a></td><td>כירורגיה כללית</td><td>מומחיות בכירורגיה כללית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">13<a name="practitioner-expertise-moh-13"> </a></td><td>נוירוכירורגיה</td><td>מומחיות בנוירוכירורגיה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">14<a name="practitioner-expertise-moh-14"> </a></td><td>כירורגיה של בית החזה</td><td>מומחיות בכירורגיה של בית החזה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">15<a name="practitioner-expertise-moh-15"> </a></td><td>כירורגיה אורתופדית</td><td>מומחיות בכירורגיה אורתופדית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">16<a name="practitioner-expertise-moh-16"> </a></td><td>כירורגיה פלסטית</td><td>מומחיות בכירורגיה פלסטית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">17<a name="practitioner-expertise-moh-17"> </a></td><td>כירורגיה אורולוגית</td><td>מומחיות בכירורגיה אורולוגית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">18<a name="practitioner-expertise-moh-18"> </a></td><td>דרמטולוגיה-מחלות עור ומין</td><td>מומחיות בדרמטולוגיה-מחלות עור ומין שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">19<a name="practitioner-expertise-moh-19"> </a></td><td>מחלות אף אוזן וגרון</td><td>מומחיות במחלות אף אוזן וגרון שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">20<a name="practitioner-expertise-moh-20"> </a></td><td>מחלות עיניים</td><td>מומחיות במחלות עיניים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">21<a name="practitioner-expertise-moh-21"> </a></td><td>הרדמה</td><td>מומחיות בהרדמה שייכת למקצוע הרפואה ולמקצוע רפואת שיניים (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">22<a name="practitioner-expertise-moh-22"> </a></td><td>יילוד וגינקולוגיה</td><td>מומחיות ביילוד וגינקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">23<a name="practitioner-expertise-moh-23"> </a></td><td>רדיולוגיה אבחנתית</td><td>מומחיות ברדיולוגיה אבחנתית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">24<a name="practitioner-expertise-moh-24"> </a></td><td>אונקולוגיה</td><td>מומחיות באונקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">25<a name="practitioner-expertise-moh-25"> </a></td><td>רפואת המשפחה</td><td>מומחיות ברפואת המשפחה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">26<a name="practitioner-expertise-moh-26"> </a></td><td>בריאות הציבור</td><td>מומחיות בבריאות הציבור שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">27<a name="practitioner-expertise-moh-27"> </a></td><td>רפואה פיסיקלית ושיקום</td><td>מומחיות ברפואה פיסיקלית ושיקום שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">28<a name="practitioner-expertise-moh-28"> </a></td><td>מיקרוביולוגיה קלינית</td><td>מומחיות במיקרוביולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">29<a name="practitioner-expertise-moh-29"> </a></td><td>כימיה קלינית</td><td>מומחיות בכימיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">30<a name="practitioner-expertise-moh-30"> </a></td><td>אנטומיה פתולוגית</td><td>מומחיות באנטומיה פתולוגית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">31<a name="practitioner-expertise-moh-31"> </a></td><td>רפואה גרעינית</td><td>מומחיות ברפואה גרעינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">32<a name="practitioner-expertise-moh-32"> </a></td><td>גריאטריה</td><td>מומחיות בגריאטריה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">33<a name="practitioner-expertise-moh-33"> </a></td><td>רפואה משפטית</td><td>מומחיות ברפואה משפטית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">34<a name="practitioner-expertise-moh-34"> </a></td><td>פסיכיאטריה של הילד והמתבגר</td><td>מומחיות בפסיכיאטריה של הילד והמתבגר שייכת לתחום בריאות הנפש במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">35<a name="practitioner-expertise-moh-35"> </a></td><td>מנהל רפואי</td><td>מומחיות במנהל רפואי שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">36<a name="practitioner-expertise-moh-36"> </a></td><td>גנטיקה רפואית</td><td>מומחיות בגנטיקה רפואית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">37<a name="practitioner-expertise-moh-37"> </a></td><td>ניאונטולוגיה</td><td>מומחיות בניאונטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">38<a name="practitioner-expertise-moh-38"> </a></td><td>כירורגית ילדים</td><td>מומחיות בכירורגית ילדים שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">39<a name="practitioner-expertise-moh-39"> </a></td><td>כירורגיית פה ולסתות</td><td>מומחיות בכירורגיית פה ולסתות שייכת למקצוע רפואת השיניים (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">40<a name="practitioner-expertise-moh-40"> </a></td><td>פדודונטיה (רפואת שיניים לילדים)</td><td>מומחיות בפדודונטיה (רפואת שיניים לילדים) שייכת למקצוע תרפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">41<a name="practitioner-expertise-moh-41"> </a></td><td>אורתודונטיה</td><td>מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">42<a name="practitioner-expertise-moh-42"> </a></td><td>פריודונטיה</td><td>מומחיות בפריודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">43<a name="practitioner-expertise-moh-43"> </a></td><td>אנדודונטיה</td><td>מומחיות באנדודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">44<a name="practitioner-expertise-moh-44"> </a></td><td>רפואת שיניים ציבורית</td><td>מומחיות ברפואת שיניים ציבורית שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">45<a name="practitioner-expertise-moh-45"> </a></td><td>רפואת הפה</td><td>מומחיות ברפואת הפה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">46<a name="practitioner-expertise-moh-46"> </a></td><td>פתולוגיה אורלית</td><td>מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">47<a name="practitioner-expertise-moh-47"> </a></td><td>שיקום פרוסתודונטי(שיקום הפה)</td><td>מומחיות בשיקום פרוסתודונטי(שיקום הפה) שייכת למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">48<a name="practitioner-expertise-moh-48"> </a></td><td>ראומטולוגיה</td><td>מומחיות בראומטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">49<a name="practitioner-expertise-moh-49"> </a></td><td>כירורגית חזה ולב</td><td>מומחיות בכירורגית חזה ולב שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">51<a name="practitioner-expertise-moh-51"> </a></td><td>כירורגית כלי דם</td><td>מומחיות בכירורגית כלי דם שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">52<a name="practitioner-expertise-moh-52"> </a></td><td>כירורגיה של היד</td><td>מומחיתו בכירורגיה של היד שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)</td><td/></tr><tr><td style="white-space:nowrap">53<a name="practitioner-expertise-moh-53"> </a></td><td>פסיכולוגיה חברתית-תעסוקתית-ארגונית</td><td>מומחיות בפסיכולוגיה חברתית-תעסוקתית-ארגונית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">54<a name="practitioner-expertise-moh-54"> </a></td><td>פסיכולוגיה חינוכית</td><td>מומחיות בפסיכולוגיה חינוכית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">55<a name="practitioner-expertise-moh-55"> </a></td><td>פסיכולוגיה קלינית</td><td>מומחיות בפסיכולוגיה קלינית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">56<a name="practitioner-expertise-moh-56"> </a></td><td>פסיכולוגיה קלינית באבחון</td><td>מומחיות בפסיכולוגיה קלינית באבחון שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">57<a name="practitioner-expertise-moh-57"> </a></td><td>פסיכולוגיה קלינית בטיפול</td><td>מומחיות בפסיכולוגיה קלינית בטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">58<a name="practitioner-expertise-moh-58"> </a></td><td>פסיכולוגיה שיקומית</td><td>מומחיות בפסיכולוגיה שיקומית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">59<a name="practitioner-expertise-moh-59"> </a></td><td>רפואה תעסוקתית שייכת למקצוע הרפואה</td><td>מומחיות ברפואה תעסוקתית</td><td/></tr><tr><td style="white-space:nowrap">60<a name="practitioner-expertise-moh-60"> </a></td><td>פסיכולוגיה התפתחותית</td><td>פסיכולוגיה התפתחותית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">61<a name="practitioner-expertise-moh-61"> </a></td><td>פסיכולוגיה קלינית באבחון ובטיפול</td><td>פסיכולוגיה קלינית באבחון ובטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">63<a name="practitioner-expertise-moh-63"> </a></td><td>מקצועות מעבדה קליניים</td><td>מומחיות במקצועות מעבדה קליניים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">64<a name="practitioner-expertise-moh-64"> </a></td><td>מחלות זיהומיות</td><td>מומחיות במחלות זיהומיות שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">65<a name="practitioner-expertise-moh-65"> </a></td><td>טיפול נמרץ כללי</td><td>מומחיות בטיפול נמרץ כללי  שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">66<a name="practitioner-expertise-moh-66"> </a></td><td>נוירולוגיית ילדים</td><td>מומחיות בנוירולוגיית ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">67<a name="practitioner-expertise-moh-67"> </a></td><td>גאסטרואנטרולוגיה ילדים</td><td>מומחיות בגאסטרואנטרולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">68<a name="practitioner-expertise-moh-68"> </a></td><td>מחלות ריאה ילדים</td><td>מומחיות במחלות ריאה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">69<a name="practitioner-expertise-moh-69"> </a></td><td>הימטואונקולוגיה ילדים</td><td>מומחיות בהימטואונקולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">70<a name="practitioner-expertise-moh-70"> </a></td><td>קרדיולוגיה ילדים</td><td>מומחיות בקרדיולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">71<a name="practitioner-expertise-moh-71"> </a></td><td>אימונולוגיה קלינית ילדים</td><td>מומחיות באימונולוגיה קלינית ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">72<a name="practitioner-expertise-moh-72"> </a></td><td>אלרגולוגיה ילדים</td><td>מומחיות באלרגולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">73<a name="practitioner-expertise-moh-73"> </a></td><td>נפרולוגיה ילדים</td><td>מומחיות בנפרולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">74<a name="practitioner-expertise-moh-74"> </a></td><td>אנדוקרינולוגיה ילדים</td><td>מומחיות באנדוקרינולוגיה ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">75<a name="practitioner-expertise-moh-75"> </a></td><td>איבחון או טיפול רפואי</td><td>מומחיות באיבחון או טיפול רפואי  שייכת למקצוע הרפואה וכמו כן למקצוע רפואת השיניים</td><td/></tr><tr><td style="white-space:nowrap">76<a name="practitioner-expertise-moh-76"> </a></td><td>איבחון או טיפול פסיכולוגי</td><td>מומחיות באיבחון או טיפול פסיכולוגי שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">77<a name="practitioner-expertise-moh-77"> </a></td><td>מחקר מדעי בהיפנוזה</td><td>מומחיות במחקר מדעי בהיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">78<a name="practitioner-expertise-moh-78"> </a></td><td>הוראה מדעית בתחום ההיפנוזה</td><td>מומחיות בהוראה מדעית בתחום ההיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">79<a name="practitioner-expertise-moh-79"> </a></td><td>רענון זכרון במהלך חקירה משטרתית/בטחונית</td><td>מומחיות ברענון זכרון במהלך חקירה משטרתית/בטחונית  שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">80<a name="practitioner-expertise-moh-80"> </a></td><td>טיפול נמרץ ילדים</td><td>מומחיות בטיפול נמרץ ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">81<a name="practitioner-expertise-moh-81"> </a></td><td>פרמקולוגיה קלינית</td><td>מומחיות בפרמקולוגיה קלינית שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">82<a name="practitioner-expertise-moh-82"> </a></td><td>רפואה דחופה</td><td>מומחיות ברפואה דחופה שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">83<a name="practitioner-expertise-moh-83"> </a></td><td>פסיכולוגיה רפואית</td><td>מומחיות בפסיכולוגיה רפואית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג</td><td/></tr><tr><td style="white-space:nowrap">84<a name="practitioner-expertise-moh-84"> </a></td><td>מחלות א.א.ג. וכירורגיית ראש-צוואר</td><td>מומחיות במחלות א.א.ג. וכירורגיית ראש-צוואר  שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">85<a name="practitioner-expertise-moh-85"> </a></td><td>כירורגית לב</td><td>מומחיות בכירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">86<a name="practitioner-expertise-moh-86"> </a></td><td>שיקום הפה ושיקום פנים ולסתות</td><td>מומחיות בשיקום הפה ושיקום פנים ולסתות שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">87<a name="practitioner-expertise-moh-87"> </a></td><td>ציטוגנטיקה קלינית</td><td>מומחיות בציטוגנטיקה קלינית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי</td><td/></tr><tr><td style="white-space:nowrap">88<a name="practitioner-expertise-moh-88"> </a></td><td>גנטיקה קלינית מוליקולרית/ביוכימית</td><td>גנטיקה קלינית מוליקולרית/ביוכימית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי</td><td/></tr><tr><td style="white-space:nowrap">89<a name="practitioner-expertise-moh-89"> </a></td><td>ייעוץ גנטי</td><td>מומחיות בייעוץ גנטי שייכך למקצוע הגנטיקה קלינית- יעוץ גנטי</td><td/></tr><tr><td style="white-space:nowrap">90<a name="practitioner-expertise-moh-90"> </a></td><td>נוירולוגית ילדים והתפתחות הילד</td><td>מומחיות בנוירולוגית ילדים והתפתחות הילד שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">91<a name="practitioner-expertise-moh-91"> </a></td><td>טיפול תומך</td><td>מומחיות בטיפול תומך שייכת לתחום הסיעוד במקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">92<a name="practitioner-expertise-moh-92"> </a></td><td>אונקולוגיה - מסלול אונקולוגיה רפואית</td><td>מומחיות באונקולוגיה - מסלול אונקולוגיה רפואית שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">93<a name="practitioner-expertise-moh-93"> </a></td><td>אונקולוגיה - מסלול רדיותרפיה</td><td>מומחיות באונקולוגיה - מסלול רדיותרפיה שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">94<a name="practitioner-expertise-moh-94"> </a></td><td>טיפול נמרץ קרדיולוגי</td><td>מומחיות בטיפול נמרץ קרדיולוגי שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">95<a name="practitioner-expertise-moh-95"> </a></td><td>כירורגית בית החזה - מסלול כירורגית חזה כללית</td><td>מומחיות בכירורגית בית החזה - מסלול כירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">96<a name="practitioner-expertise-moh-96"> </a></td><td>כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית</td><td>מומחיות בכירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">97<a name="practitioner-expertise-moh-97"> </a></td><td>כירורגית בית החזה - מסלול כירורגית לב</td><td>מומחיות בכירורגית בית החזה - מסלול כירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">98<a name="practitioner-expertise-moh-98"> </a></td><td>רפואה לשיכוך כאב</td><td>מומחיות ברפואה לשיכוך כאב שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">99<a name="practitioner-expertise-moh-99"> </a></td><td>רפואה דחופה - מסלול מבוגרים</td><td>מומחיות ברפואה דחופה - מסלול מבוגרים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">100<a name="practitioner-expertise-moh-100"> </a></td><td>רפואה דחופה - מסלול ילדים</td><td>מומחיות ברפואה דחופה - מסלול ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">101<a name="practitioner-expertise-moh-101"> </a></td><td>CBT פסיכותרפיה</td><td>מומחיות בCBT פסיכותרפיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">102<a name="practitioner-expertise-moh-102"> </a></td><td>סוכרת</td><td>מומחיות בסוכרת שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">103<a name="practitioner-expertise-moh-103"> </a></td><td>גריאטריה</td><td>מומחיות בגריאטריה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">104<a name="practitioner-expertise-moh-104"> </a></td><td>רפואה פליאטיבית</td><td>מומחיות ברפואה פליאטיבית שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">105<a name="practitioner-expertise-moh-105"> </a></td><td>בריאות הציבור מסלול אפידמיולוגיה</td><td>מומחיות בבריאות הציבור מסלול אפידמיולוגיה שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">106<a name="practitioner-expertise-moh-106"> </a></td><td>ביוכימיה קלינית</td><td>מומחיות בביוכימיה קלינית שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">107<a name="practitioner-expertise-moh-107"> </a></td><td>מחלות זיהומיות ילדים</td><td>מומחיות במחלות זיהומיות ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">108<a name="practitioner-expertise-moh-108"> </a></td><td>פגים</td><td>מומחיות בפגים שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">109<a name="practitioner-expertise-moh-109"> </a></td><td>כירורגיה</td><td>מומחיות בכירורגיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">110<a name="practitioner-expertise-moh-110"> </a></td><td>בריאות הציבור במסלול שירותים קהילתיים</td><td>מומחיות בבריאות הציבור במסלול שירותים קהילתיים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">112<a name="practitioner-expertise-moh-112"> </a></td><td>כאב</td><td>מומחיות בכאב שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">113<a name="practitioner-expertise-moh-113"> </a></td><td>שיקום</td><td>מומחיות בשיקום שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">114<a name="practitioner-expertise-moh-114"> </a></td><td>מדיניות ומינהל בסיעוד</td><td>מומחיות במדיניות ומינהל בסיעוד שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">115<a name="practitioner-expertise-moh-115"> </a></td><td>רפואה ראשונית</td><td>מומחיות ברפואה ראשונית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr><tr><td style="white-space:nowrap">116<a name="practitioner-expertise-moh-116"> </a></td><td>נוירופסיכאטריה</td><td>מומחיות בנוירופסיכאטריה שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">117<a name="practitioner-expertise-moh-117"> </a></td><td>ראומטולוגיה מסלול ילדים</td><td>מומחיות בראומטולוגיה מסלול ילדים שייכת למקצוע הרפואה</td><td/></tr><tr><td style="white-space:nowrap">150<a name="practitioner-expertise-moh-150"> </a></td><td>פנימית</td><td>מומחיות בפנימית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת</td><td/></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-01"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/practitioner-expertise-moh"/>
+  <version value="0.13.2"/>
+  <name value="PractitionerExpertiseMoH"/>
+  <title value="קוד מומחיות לעוסק בבריאות"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh"/>
+  <content value="complete"/>
+  <count value="117"/>
+  <concept>
+    <code value="-999"/>
+    <display value="לא ידוע"/>
+    <definition value="ערך ברירת מחדל במקרה שערך המומחיות לא קיים מאחר הגיע ריק"/>
+    <property>
+      <code value="status"/>
+      <valueCode value="deprecated"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="0"/>
+    <display value="ללא התמחות"/>
+    <definition value="ערך ברירת מחדל כאשר ידוע כי לאיש המקצוע אין מומחיות מיוחדת במקצוע שלו"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="רפואה פנימית"/>
+    <definition value="מומחיות ברפואה פנימית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="קרדיולוגיה"/>
+    <definition value="מומחיות בקרדיולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="המטולוגיה"/>
+    <definition value="מומחיות בהמטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="אלרגולוגיה ואימונולוגיה קלינית"/>
+    <definition value="מומחיות באלרגולוגיה ואימונולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="מחלות ריאה"/>
+    <definition value="מומחיות במחלות ריאה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="גסטרואנטרולוגיה"/>
+    <definition value="מומחיות בגסטרואנטרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="אנדוקרינולוגיה"/>
+    <definition value="מומחיות באנדוקרינולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="נפרולוגיה"/>
+    <definition value="מומחיות בנפרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="רפואת ילדים"/>
+    <definition value="מומחיות ברפואת ילדים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="נוירולוגיה"/>
+    <definition value="מומחיות בנוירולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="פסיכיאטריה"/>
+    <definition value="מומחיות בפסיכיאטריה שייכת לתחום בריאות הנפשב במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="כירורגיה כללית"/>
+    <definition value="מומחיות בכירורגיה כללית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="נוירוכירורגיה"/>
+    <definition value="מומחיות בנוירוכירורגיה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="כירורגיה של בית החזה"/>
+    <definition value="מומחיות בכירורגיה של בית החזה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="כירורגיה אורתופדית"/>
+    <definition value="מומחיות בכירורגיה אורתופדית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="כירורגיה פלסטית"/>
+    <definition value="מומחיות בכירורגיה פלסטית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="כירורגיה אורולוגית"/>
+    <definition value="מומחיות בכירורגיה אורולוגית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="דרמטולוגיה-מחלות עור ומין"/>
+    <definition value="מומחיות בדרמטולוגיה-מחלות עור ומין שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="מחלות אף אוזן וגרון"/>
+    <definition value="מומחיות במחלות אף אוזן וגרון שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="מחלות עיניים"/>
+    <definition value="מומחיות במחלות עיניים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="הרדמה"/>
+    <definition value="מומחיות בהרדמה שייכת למקצוע הרפואה ולמקצוע רפואת שיניים (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="יילוד וגינקולוגיה"/>
+    <definition value="מומחיות ביילוד וגינקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="רדיולוגיה אבחנתית"/>
+    <definition value="מומחיות ברדיולוגיה אבחנתית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="אונקולוגיה"/>
+    <definition value="מומחיות באונקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="רפואת המשפחה"/>
+    <definition value="מומחיות ברפואת המשפחה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="בריאות הציבור"/>
+    <definition value="מומחיות בבריאות הציבור שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="רפואה פיסיקלית ושיקום"/>
+    <definition value="מומחיות ברפואה פיסיקלית ושיקום שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="מיקרוביולוגיה קלינית"/>
+    <definition value="מומחיות במיקרוביולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="כימיה קלינית"/>
+    <definition value="מומחיות בכימיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="אנטומיה פתולוגית"/>
+    <definition value="מומחיות באנטומיה פתולוגית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="רפואה גרעינית"/>
+    <definition value="מומחיות ברפואה גרעינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="גריאטריה"/>
+    <definition value="מומחיות בגריאטריה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="רפואה משפטית"/>
+    <definition value="מומחיות ברפואה משפטית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="34"/>
+    <display value="פסיכיאטריה של הילד והמתבגר"/>
+    <definition value="מומחיות בפסיכיאטריה של הילד והמתבגר שייכת לתחום בריאות הנפש במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="35"/>
+    <display value="מנהל רפואי"/>
+    <definition value="מומחיות במנהל רפואי שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="36"/>
+    <display value="גנטיקה רפואית"/>
+    <definition value="מומחיות בגנטיקה רפואית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="37"/>
+    <display value="ניאונטולוגיה"/>
+    <definition value="מומחיות בניאונטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="38"/>
+    <display value="כירורגית ילדים"/>
+    <definition value="מומחיות בכירורגית ילדים שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="39"/>
+    <display value="כירורגיית פה ולסתות"/>
+    <definition value="מומחיות בכירורגיית פה ולסתות שייכת למקצוע רפואת השיניים (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="40"/>
+    <display value="פדודונטיה (רפואת שיניים לילדים)"/>
+    <definition value="מומחיות בפדודונטיה (רפואת שיניים לילדים) שייכת למקצוע תרפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="41"/>
+    <display value="אורתודונטיה"/>
+    <definition value="מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="42"/>
+    <display value="פריודונטיה"/>
+    <definition value="מומחיות בפריודונטיה שייכת למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="43"/>
+    <display value="אנדודונטיה"/>
+    <definition value="מומחיות באנדודונטיה שייכת למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="44"/>
+    <display value="רפואת שיניים ציבורית"/>
+    <definition value="מומחיות ברפואת שיניים ציבורית שייכת למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="45"/>
+    <display value="רפואת הפה"/>
+    <definition value="מומחיות ברפואת הפה שייכת למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="46"/>
+    <display value="פתולוגיה אורלית"/>
+    <definition value="מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="47"/>
+    <display value="שיקום פרוסתודונטי(שיקום הפה)"/>
+    <definition value="מומחיות בשיקום פרוסתודונטי(שיקום הפה) שייכת למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="48"/>
+    <display value="ראומטולוגיה"/>
+    <definition value="מומחיות בראומטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="49"/>
+    <display value="כירורגית חזה ולב"/>
+    <definition value="מומחיות בכירורגית חזה ולב שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="51"/>
+    <display value="כירורגית כלי דם"/>
+    <definition value="מומחיות בכירורגית כלי דם שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="52"/>
+    <display value="כירורגיה של היד"/>
+    <definition value="מומחיתו בכירורגיה של היד שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"/>
+  </concept>
+  <concept>
+    <code value="53"/>
+    <display value="פסיכולוגיה חברתית-תעסוקתית-ארגונית"/>
+    <definition value="מומחיות בפסיכולוגיה חברתית-תעסוקתית-ארגונית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="54"/>
+    <display value="פסיכולוגיה חינוכית"/>
+    <definition value="מומחיות בפסיכולוגיה חינוכית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="55"/>
+    <display value="פסיכולוגיה קלינית"/>
+    <definition value="מומחיות בפסיכולוגיה קלינית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="56"/>
+    <display value="פסיכולוגיה קלינית באבחון"/>
+    <definition value="מומחיות בפסיכולוגיה קלינית באבחון שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="57"/>
+    <display value="פסיכולוגיה קלינית בטיפול"/>
+    <definition value="מומחיות בפסיכולוגיה קלינית בטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="58"/>
+    <display value="פסיכולוגיה שיקומית"/>
+    <definition value="מומחיות בפסיכולוגיה שיקומית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="59"/>
+    <display value="רפואה תעסוקתית שייכת למקצוע הרפואה"/>
+    <definition value="מומחיות ברפואה תעסוקתית"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="פסיכולוגיה התפתחותית"/>
+    <definition value="פסיכולוגיה התפתחותית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="61"/>
+    <display value="פסיכולוגיה קלינית באבחון ובטיפול"/>
+    <definition value="פסיכולוגיה קלינית באבחון ובטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="63"/>
+    <display value="מקצועות מעבדה קליניים"/>
+    <definition value="מומחיות במקצועות מעבדה קליניים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="64"/>
+    <display value="מחלות זיהומיות"/>
+    <definition value="מומחיות במחלות זיהומיות שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="65"/>
+    <display value="טיפול נמרץ כללי"/>
+    <definition value="מומחיות בטיפול נמרץ כללי  שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="66"/>
+    <display value="נוירולוגיית ילדים"/>
+    <definition value="מומחיות בנוירולוגיית ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="67"/>
+    <display value="גאסטרואנטרולוגיה ילדים"/>
+    <definition value="מומחיות בגאסטרואנטרולוגיה ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="68"/>
+    <display value="מחלות ריאה ילדים"/>
+    <definition value="מומחיות במחלות ריאה ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="69"/>
+    <display value="הימטואונקולוגיה ילדים"/>
+    <definition value="מומחיות בהימטואונקולוגיה ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="70"/>
+    <display value="קרדיולוגיה ילדים"/>
+    <definition value="מומחיות בקרדיולוגיה ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="71"/>
+    <display value="אימונולוגיה קלינית ילדים"/>
+    <definition value="מומחיות באימונולוגיה קלינית ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="72"/>
+    <display value="אלרגולוגיה ילדים"/>
+    <definition value="מומחיות באלרגולוגיה ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="73"/>
+    <display value="נפרולוגיה ילדים"/>
+    <definition value="מומחיות בנפרולוגיה ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="74"/>
+    <display value="אנדוקרינולוגיה ילדים"/>
+    <definition value="מומחיות באנדוקרינולוגיה ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="75"/>
+    <display value="איבחון או טיפול רפואי"/>
+    <definition value="מומחיות באיבחון או טיפול רפואי  שייכת למקצוע הרפואה וכמו כן למקצוע רפואת השיניים"/>
+  </concept>
+  <concept>
+    <code value="76"/>
+    <display value="איבחון או טיפול פסיכולוגי"/>
+    <definition value="מומחיות באיבחון או טיפול פסיכולוגי שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="77"/>
+    <display value="מחקר מדעי בהיפנוזה"/>
+    <definition value="מומחיות במחקר מדעי בהיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="78"/>
+    <display value="הוראה מדעית בתחום ההיפנוזה"/>
+    <definition value="מומחיות בהוראה מדעית בתחום ההיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="79"/>
+    <display value="רענון זכרון במהלך חקירה משטרתית/בטחונית"/>
+    <definition value="מומחיות ברענון זכרון במהלך חקירה משטרתית/בטחונית  שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="80"/>
+    <display value="טיפול נמרץ ילדים"/>
+    <definition value="מומחיות בטיפול נמרץ ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="81"/>
+    <display value="פרמקולוגיה קלינית"/>
+    <definition value="מומחיות בפרמקולוגיה קלינית שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="82"/>
+    <display value="רפואה דחופה"/>
+    <definition value="מומחיות ברפואה דחופה שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="83"/>
+    <display value="פסיכולוגיה רפואית"/>
+    <definition value="מומחיות בפסיכולוגיה רפואית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"/>
+  </concept>
+  <concept>
+    <code value="84"/>
+    <display value="מחלות א.א.ג. וכירורגיית ראש-צוואר"/>
+    <definition value="מומחיות במחלות א.א.ג. וכירורגיית ראש-צוואר  שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="85"/>
+    <display value="כירורגית לב"/>
+    <definition value="מומחיות בכירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="86"/>
+    <display value="שיקום הפה ושיקום פנים ולסתות"/>
+    <definition value="מומחיות בשיקום הפה ושיקום פנים ולסתות שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="87"/>
+    <display value="ציטוגנטיקה קלינית"/>
+    <definition value="מומחיות בציטוגנטיקה קלינית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי"/>
+  </concept>
+  <concept>
+    <code value="88"/>
+    <display value="גנטיקה קלינית מוליקולרית/ביוכימית"/>
+    <definition value="גנטיקה קלינית מוליקולרית/ביוכימית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי"/>
+  </concept>
+  <concept>
+    <code value="89"/>
+    <display value="ייעוץ גנטי"/>
+    <definition value="מומחיות בייעוץ גנטי שייכך למקצוע הגנטיקה קלינית- יעוץ גנטי"/>
+  </concept>
+  <concept>
+    <code value="90"/>
+    <display value="נוירולוגית ילדים והתפתחות הילד"/>
+    <definition value="מומחיות בנוירולוגית ילדים והתפתחות הילד שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="91"/>
+    <display value="טיפול תומך"/>
+    <definition value="מומחיות בטיפול תומך שייכת לתחום הסיעוד במקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="92"/>
+    <display value="אונקולוגיה - מסלול אונקולוגיה רפואית"/>
+    <definition value="מומחיות באונקולוגיה - מסלול אונקולוגיה רפואית שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="93"/>
+    <display value="אונקולוגיה - מסלול רדיותרפיה"/>
+    <definition value="מומחיות באונקולוגיה - מסלול רדיותרפיה שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="94"/>
+    <display value="טיפול נמרץ קרדיולוגי"/>
+    <definition value="מומחיות בטיפול נמרץ קרדיולוגי שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="95"/>
+    <display value="כירורגית בית החזה - מסלול כירורגית חזה כללית"/>
+    <definition value="מומחיות בכירורגית בית החזה - מסלול כירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="96"/>
+    <display value="כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית"/>
+    <definition value="מומחיות בכירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="97"/>
+    <display value="כירורגית בית החזה - מסלול כירורגית לב"/>
+    <definition value="מומחיות בכירורגית בית החזה - מסלול כירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="רפואה לשיכוך כאב"/>
+    <definition value="מומחיות ברפואה לשיכוך כאב שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="רפואה דחופה - מסלול מבוגרים"/>
+    <definition value="מומחיות ברפואה דחופה - מסלול מבוגרים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="100"/>
+    <display value="רפואה דחופה - מסלול ילדים"/>
+    <definition value="מומחיות ברפואה דחופה - מסלול ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="101"/>
+    <display value="CBT פסיכותרפיה"/>
+    <definition value="מומחיות בCBT פסיכותרפיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="102"/>
+    <display value="סוכרת"/>
+    <definition value="מומחיות בסוכרת שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="103"/>
+    <display value="גריאטריה"/>
+    <definition value="מומחיות בגריאטריה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="104"/>
+    <display value="רפואה פליאטיבית"/>
+    <definition value="מומחיות ברפואה פליאטיבית שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="105"/>
+    <display value="בריאות הציבור מסלול אפידמיולוגיה"/>
+    <definition value="מומחיות בבריאות הציבור מסלול אפידמיולוגיה שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="106"/>
+    <display value="ביוכימיה קלינית"/>
+    <definition value="מומחיות בביוכימיה קלינית שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="107"/>
+    <display value="מחלות זיהומיות ילדים"/>
+    <definition value="מומחיות במחלות זיהומיות ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="108"/>
+    <display value="פגים"/>
+    <definition value="מומחיות בפגים שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="109"/>
+    <display value="כירורגיה"/>
+    <definition value="מומחיות בכירורגיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="110"/>
+    <display value="בריאות הציבור במסלול שירותים קהילתיים"/>
+    <definition value="מומחיות בבריאות הציבור במסלול שירותים קהילתיים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="112"/>
+    <display value="כאב"/>
+    <definition value="מומחיות בכאב שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="113"/>
+    <display value="שיקום"/>
+    <definition value="מומחיות בשיקום שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="114"/>
+    <display value="מדיניות ומינהל בסיעוד"/>
+    <definition value="מומחיות במדיניות ומינהל בסיעוד שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="115"/>
+    <display value="רפואה ראשונית"/>
+    <definition value="מומחיות ברפואה ראשונית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+  <concept>
+    <code value="116"/>
+    <display value="נוירופסיכאטריה"/>
+    <definition value="מומחיות בנוירופסיכאטריה שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="117"/>
+    <display value="ראומטולוגיה מסלול ילדים"/>
+    <definition value="מומחיות בראומטולוגיה מסלול ילדים שייכת למקצוע הרפואה"/>
+  </concept>
+  <concept>
+    <code value="150"/>
+    <display value="פנימית"/>
+    <definition value="מומחיות בפנימית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"/>
+  </concept>
+</CodeSystem>

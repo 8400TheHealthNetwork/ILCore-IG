@@ -1,0 +1,61 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-procedure-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href=\"ValueSet-icd9-cm-procedures.html\">Icd9 Cm Procedures</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-icd9il-procedures.html\">ICD9 IL Procedures</a></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  71388002 (Procedure)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  129125009 (Context-dependent procedure)</li><li>Include all codes defined in <a href=\"CodeSystem-medical-service-moh.html\"><code>http://fhir.health.gov.il/cs/medical-service-moh</code></a></li><li>Include all codes defined in <a href=\"http://loinc.org\"><code>http://loinc.org</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-procedure-code",
+  "version" : "0.13.2",
+  "name" : "ILCoreProcedureCode",
+  "title" : "IL Core procedure Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for procedures for the IL Core",
+  "compose" : {
+    "include" : [{
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/icd9-cm-procedures"]
+    },
+    {
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/icd9il-procedures"]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "71388002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "129125009"
+      }]
+    },
+    {
+      "system" : "http://fhir.health.gov.il/cs/medical-service-moh"
+    },
+    {
+      "system" : "http://loinc.org"
+    }]
+  }
+}

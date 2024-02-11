@@ -1,0 +1,49 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "il-core-premium-type",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-coverage-premium-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">individ-month<a name=\"il-core-premium-type-individ-month\"> </a></td><td>Family monthly premium</td><td>A premium paid for an individual</td></tr><tr><td style=\"white-space:nowrap\">family-month<a name=\"il-core-premium-type-family-month\"> </a></td><td>Obligation from health basket</td><td>A premium paid for a family. The exact definition of a family isn't part of this code system and can vary between HMOs/Organizations</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate",
+    "valueDate" : "2023-08"
+  }],
+  "url" : "http://fhir.health.gov.il/cs/il-core-coverage-premium-type",
+  "version" : "0.13.2",
+  "name" : "ILCoreCoveragePremiumType",
+  "title" : "IL Core Coverage Premium Type codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for Types of premium payment methods",
+  "caseSensitive" : false,
+  "valueSet" : "http://fhir.health.gov.il/ValueSet/il-core-premium-type",
+  "content" : "complete",
+  "count" : 2,
+  "concept" : [{
+    "code" : "individ-month",
+    "display" : "Family monthly premium",
+    "definition" : "A premium paid for an individual"
+  },
+  {
+    "code" : "family-month",
+    "display" : "Obligation from health basket",
+    "definition" : "A premium paid for a family. The exact definition of a family isn't part of this code system and can vary between HMOs/Organizations"
+  }]
+}

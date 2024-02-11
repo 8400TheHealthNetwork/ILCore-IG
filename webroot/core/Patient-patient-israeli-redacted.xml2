@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-israeli-redacted"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-patient"/>
+    <tag>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-ObservationValue"/>
+      <code value="REDACTED"/>
+      <display value="redacted"/>
+    </tag>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient with missing</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-il-hmo">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+        <code value="104"/>
+        <display value="קופת חולים מאוחדת"/>
+      </coding>
+      <text value="קופת חולים מאוחדת"/>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000018"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="he"/>
+    </extension>
+    <family>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </family>
+    <given>
+      <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+        <valueCode value="masked"/>
+      </extension>
+    </given>
+  </name>
+  <gender value="unknown">
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
+  </gender>
+  <birthDate>
+    <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+      <valueCode value="masked"/>
+    </extension>
+  </birthDate>
+  <deceasedBoolean value="false"/>
+  <contact>
+    <name>
+      <text value="ggg">
+        <extension url="http://hl7.org/fhir/StructureDefinition/data-absent-reason">
+          <valueCode value="masked"/>
+        </extension>
+      </text>
+    </name>
+  </contact>
+</Patient>

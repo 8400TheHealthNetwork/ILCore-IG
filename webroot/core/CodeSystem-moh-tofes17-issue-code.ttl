@@ -1,0 +1,97 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/moh-tofes17-issue-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "moh-tofes17-issue-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/moh-tofes17-issue-code</code> defines codes, but no codes are represented here</p></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-10"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/moh-tofes17-issue-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "MohTofes17IssueCode"] ; # 
+  fhir:title [ fhir:v "Moh Form-17 Issue Code"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "קודי שגיאה \\ סירוב לתהליכים הקשורים לטופס 17"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "not-present"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "miss-apnt-data" ] ;
+     fhir:display [ fhir:v "חסרים פרטי התור החוזר" ] ;
+     fhir:definition [ fhir:v "למשל, במקרה שאין ישות Appointment, או שחסר מידע קריטי בישות כגון תאריך הביקור" ]
+  ] [
+     fhir:code [ fhir:v "apnt-too-far" ] ;
+     fhir:display [ fhir:v "מועד התור החוזר רחוק מדי" ] ;
+     fhir:definition [ fhir:v "הבקשה מוקדמת מדי ועדיין אין באפשרות הקופה להתייחס אליה" ]
+  ] [
+     fhir:code [ fhir:v "miss-doc" ] ;
+     fhir:display [ fhir:v "חסר מסמך סיכום עם ההמלצה לביקור חוזר" ] ;
+     fhir:definition [ fhir:v "במקרה בו הבקשה נשלחה ללא DocumentReference עם סיכום הביקור בו הומלץ למטופל לקבוע ביקור חוזר" ]
+  ] [
+     fhir:code [ fhir:v "miss-orig-req" ] ;
+     fhir:display [ fhir:v "בבקשה לעדכון או ביטול - חסר קישור לבקשה המקורית" ]
+  ] [
+     fhir:code [ fhir:v "pat-not-eligible" ] ;
+     fhir:display [ fhir:v "המטופל אינו זכאי להתחייבות" ]
+  ] [
+     fhir:code [ fhir:v "referred-to-community" ] ;
+     fhir:display [ fhir:v "הטיפול יבוצע בקהילה" ]
+  ] [
+     fhir:code [ fhir:v "not-ambulatory" ] ;
+     fhir:display [ fhir:v "השירות המבוקש אינו אמבולטורי" ]
+  ] [
+     fhir:code [ fhir:v "charge-not-authorized" ] ;
+     fhir:display [ fhir:v "ללקוח אין הרשאת חיוב" ]
+  ] [
+     fhir:code [ fhir:v "service-with-co-payment" ] ;
+     fhir:display [ fhir:v "הבקשה כוללת שירות עם השתתפות עצמית" ]
+  ] [
+     fhir:code [ fhir:v "service-not-covered" ] ;
+     fhir:display [ fhir:v "השירות אינו בסל" ]
+  ] [
+     fhir:code [ fhir:v "age-limit" ] ;
+     fhir:display [ fhir:v "קוד השירות מוגבל גיל" ]
+  ] [
+     fhir:code [ fhir:v "quantity-mismatch" ] ;
+     fhir:display [ fhir:v "כמות הטיפולים אינה תואמת את תוכנית הטיפול" ]
+  ] [
+     fhir:code [ fhir:v "req-not-compliant" ] ;
+     fhir:display [ fhir:v "הבקשה להתחייבות אינה תואמת לכללי החיוב" ]
+  ] [
+     fhir:code [ fhir:v "srv-code-mismatch" ] ;
+     fhir:display [ fhir:v "קוד השירות אינו תואם את הטיפול המתוכנן" ]
+  ] [
+     fhir:code [ fhir:v "pat-hospitalized" ] ;
+     fhir:display [ fhir:v "המטופל מאושפז" ]
+  ] [
+     fhir:code [ fhir:v "other" ] ;
+     fhir:display [ fhir:v "אחר" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

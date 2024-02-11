@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="breast-screaning"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Encounter: Breast Scraening</div>
+  </text>
+  <identifier>
+    <system value="http://fhir.hospital-emr.co.il/identifier/entity-id/encounter"/>
+    <value value="123241"/>
+  </identifier>
+  <status value="in-progress"/>
+  <class>
+    <system value="http://terminology.hl7.org/CodeSystem/v3-ActCode"/>
+    <code value="IMP"/>
+    <display value="inpatient encounter"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="185346005"/>
+      <display value="Encounter for sign (procedure)"/>
+    </coding>
+  </type>
+  <serviceType>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="310126000"/>
+      <display value="Breast screening service"/>
+    </coding>
+  </serviceType>
+  <subject>
+    <reference value="Patient/patient-israeli-with-statistical-area"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-md"/>
+    </individual>
+  </participant>
+  <diagnosis>
+    <condition>
+      <reference value="Condition/condition-type-1-diabetes"/>
+    </condition>
+    <use>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/diagnosis-role"/>
+        <code value="AD"/>
+        <display value="Admission diagnosis"/>
+      </coding>
+    </use>
+    <rank value="1"/>
+  </diagnosis>
+  <serviceProvider>
+    <identifier>
+      <system value="http://institutions.health.gov.il/Institutions"/>
+      <value value="1302"/>
+    </identifier>
+    <display value="מרכז רפואי אוניברסיטאי סורוקה"/>
+  </serviceProvider>
+</Encounter>

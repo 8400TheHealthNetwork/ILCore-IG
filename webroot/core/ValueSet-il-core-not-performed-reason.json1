@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-not-performed-reason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-il-core-not-performed-reason.html\"><code>http://fhir.health.gov.il/cs/il-core-not-performed-reason</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason",
+  "version" : "0.13.2",
+  "name" : "ILCoreNotPerformedReason",
+  "title" : "IL Core procedure Reason",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for procedure reasons for the IL Core",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.health.gov.il/cs/il-core-not-performed-reason"
+    }]
+  }
+}

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organization-school-moe"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">תיכון כצנלסון</div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://fhir.health.gov.il/identifier/moe-institute-symbol"/>
+    <value value="440172"/>
+  </identifier>
+  <active value="true"/>
+  <name value="תיכון כצנלסון"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="09-7433376"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="physical"/>
+    <text value="אזר 43 כפר סבא"/>
+    <line value="אזר 43">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="אזר"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="43"/>
+      </extension>
+    </line>
+    <city value="כפר סבא">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="6900"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <postalCode value="4410601"/>
+    <country value="IL"/>
+  </address>
+</Organization>

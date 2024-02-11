@@ -1,0 +1,215 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/patient-admit-source-moh> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-admit-source-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/patient-admit-source-moh</code> provides some codes <b>that are example only</b>:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"patient-admit-source-moh-1\"> </a></td><td>מוסד רפ' אחר</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"patient-admit-source-moh-2\"> </a></td><td>מוסד לא רפואי</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"patient-admit-source-moh-5\"> </a></td><td>אשפוז יום</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"patient-admit-source-moh-6\"> </a></td><td>מח' אשפוז בבי&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"patient-admit-source-moh-7\"> </a></td><td>ממיון בבי&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"patient-admit-source-moh-8\"> </a></td><td>ממרפאה בבי&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"patient-admit-source-moh-10\"> </a></td><td>כללית</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"patient-admit-source-moh-11\"> </a></td><td>מכבי</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"patient-admit-source-moh-12\"> </a></td><td>מאוחדת</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"patient-admit-source-moh-13\"> </a></td><td>לאומית</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"patient-admit-source-moh-15\"> </a></td><td>שר&quot;פ / מלר&quot;ם</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"patient-admit-source-moh-16\"> </a></td><td>ביטוח לאומי</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"patient-admit-source-moh-17\"> </a></td><td>לידה</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"patient-admit-source-moh-18\"> </a></td><td>ביקור רדיולוגיה</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"patient-admit-source-moh-19\"> </a></td><td>ביק. חוזר במיון</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"patient-admit-source-moh-20\"> </a></td><td>מרופא פרטי</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"patient-admit-source-moh-21\"> </a></td><td>מרפאת מהגרים</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"patient-admit-source-moh-22\"> </a></td><td>מדא מרשות ציבור</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"patient-admit-source-moh-23\"> </a></td><td>אמבולנס נתב''ג</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"patient-admit-source-moh-24\"> </a></td><td>רופא בית חולים</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"patient-admit-source-moh-30\"> </a></td><td>מד&quot;א</td></tr><tr><td style=\"white-space:nowrap\">31<a name=\"patient-admit-source-moh-31\"> </a></td><td>שח&quot;ל</td></tr><tr><td style=\"white-space:nowrap\">32<a name=\"patient-admit-source-moh-32\"> </a></td><td>נט&quot;ן</td></tr><tr><td style=\"white-space:nowrap\">33<a name=\"patient-admit-source-moh-33\"> </a></td><td>נ.ט.ל.י</td></tr><tr><td style=\"white-space:nowrap\">34<a name=\"patient-admit-source-moh-34\"> </a></td><td>טרם</td></tr><tr><td style=\"white-space:nowrap\">35<a name=\"patient-admit-source-moh-35\"> </a></td><td>לשכת בריאות</td></tr><tr><td style=\"white-space:nowrap\">36<a name=\"patient-admit-source-moh-36\"> </a></td><td>אמבולנס</td></tr><tr><td style=\"white-space:nowrap\">38<a name=\"patient-admit-source-moh-38\"> </a></td><td>פסיכיאטר מחוזי</td></tr><tr><td style=\"white-space:nowrap\">39<a name=\"patient-admit-source-moh-39\"> </a></td><td>ביקור רופא</td></tr><tr><td style=\"white-space:nowrap\">40<a name=\"patient-admit-source-moh-40\"> </a></td><td>צה&quot;ל</td></tr><tr><td style=\"white-space:nowrap\">41<a name=\"patient-admit-source-moh-41\"> </a></td><td>משטרה</td></tr><tr><td style=\"white-space:nowrap\">42<a name=\"patient-admit-source-moh-42\"> </a></td><td>צה&quot;ל-מזור</td></tr><tr><td style=\"white-space:nowrap\">45<a name=\"patient-admit-source-moh-45\"> </a></td><td>שרות בתי הסוהר</td></tr><tr><td style=\"white-space:nowrap\">46<a name=\"patient-admit-source-moh-46\"> </a></td><td>משרד הביטחון</td></tr><tr><td style=\"white-space:nowrap\">47<a name=\"patient-admit-source-moh-47\"> </a></td><td>רשות פלסטינאית</td></tr><tr><td style=\"white-space:nowrap\">48<a name=\"patient-admit-source-moh-48\"> </a></td><td>מאוחדת חיילים</td></tr><tr><td style=\"white-space:nowrap\">49<a name=\"patient-admit-source-moh-49\"> </a></td><td>לאומית חיילים</td></tr><tr><td style=\"white-space:nowrap\">50<a name=\"patient-admit-source-moh-50\"> </a></td><td>פניה עצמית</td></tr><tr><td style=\"white-space:nowrap\">51<a name=\"patient-admit-source-moh-51\"> </a></td><td>מעסיק/ת.עבודה</td></tr><tr><td style=\"white-space:nowrap\">52<a name=\"patient-admit-source-moh-52\"> </a></td><td>הפניה טלפונית</td></tr><tr><td style=\"white-space:nowrap\">53<a name=\"patient-admit-source-moh-53\"> </a></td><td>כללית חיילים</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"patient-admit-source-moh-54\"> </a></td><td>מכבי חיילים</td></tr><tr><td style=\"white-space:nowrap\">55<a name=\"patient-admit-source-moh-55\"> </a></td><td>כללית מכביה</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"patient-admit-source-moh-56\"> </a></td><td>ביקור רופא צה&quot;ל</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"patient-admit-source-moh-57\"> </a></td><td>מוקד רפואי ק&quot;ש</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"patient-admit-source-moh-60\"> </a></td><td>אחות בית ספר</td></tr><tr><td style=\"white-space:nowrap\">61<a name=\"patient-admit-source-moh-61\"> </a></td><td>תחנה לבריאות המ</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"patient-admit-source-moh-62\"> </a></td><td>שרותי רווחה</td></tr><tr><td style=\"white-space:nowrap\">74<a name=\"patient-admit-source-moh-74\"> </a></td><td>איחוד הצלה</td></tr><tr><td style=\"white-space:nowrap\">85<a name=\"patient-admit-source-moh-85\"> </a></td><td>קבלת אחסון גויה</td></tr><tr><td style=\"white-space:nowrap\">98<a name=\"patient-admit-source-moh-98\"> </a></td><td>מסוק</td></tr><tr><td style=\"white-space:nowrap\">99<a name=\"patient-admit-source-moh-99\"> </a></td><td>לא ידוע</td></tr><tr><td style=\"white-space:nowrap\">Z1<a name=\"patient-admit-source-moh-Z1\"> </a></td><td>הסבה-המשך טיפול</td></tr><tr><td style=\"white-space:nowrap\">Z2<a name=\"patient-admit-source-moh-Z2\"> </a></td><td>הסבה-מקופ&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">Z4<a name=\"patient-admit-source-moh-Z4\"> </a></td><td>הסבה-פניה טלפון</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-08"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/patient-admit-source-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "PatientAdmitSourceMoH"] ; # 
+  fhir:title [ fhir:v "Patient Admit Source MoH"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Moh Codes for Patient Admit Source"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.health.gov.il/ValueSet/patient-admit-source-moh"^^xsd:anyURI ;
+     fhir:link <http://fhir.health.gov.il/ValueSet/patient-admit-source-moh>
+  ] ; # 
+  fhir:content [ fhir:v "example"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "מוסד רפ' אחר" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "מוסד לא רפואי" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "אשפוז יום" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "מח' אשפוז בבי\"ח" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "ממיון בבי\"ח" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "ממרפאה בבי\"ח" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "כללית" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "מכבי" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "מאוחדת" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "לאומית" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "שר\"פ / מלר\"ם" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "ביטוח לאומי" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "לידה" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "ביקור רדיולוגיה" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "ביק. חוזר במיון" ]
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "מרופא פרטי" ]
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "מרפאת מהגרים" ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "מדא מרשות ציבור" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "אמבולנס נתב''ג" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "רופא בית חולים" ]
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "מד\"א" ]
+  ] [
+     fhir:code [ fhir:v "31" ] ;
+     fhir:display [ fhir:v "שח\"ל" ]
+  ] [
+     fhir:code [ fhir:v "32" ] ;
+     fhir:display [ fhir:v "נט\"ן" ]
+  ] [
+     fhir:code [ fhir:v "33" ] ;
+     fhir:display [ fhir:v "נ.ט.ל.י" ]
+  ] [
+     fhir:code [ fhir:v "34" ] ;
+     fhir:display [ fhir:v "טרם" ]
+  ] [
+     fhir:code [ fhir:v "35" ] ;
+     fhir:display [ fhir:v "לשכת בריאות" ]
+  ] [
+     fhir:code [ fhir:v "36" ] ;
+     fhir:display [ fhir:v "אמבולנס" ]
+  ] [
+     fhir:code [ fhir:v "38" ] ;
+     fhir:display [ fhir:v "פסיכיאטר מחוזי" ]
+  ] [
+     fhir:code [ fhir:v "39" ] ;
+     fhir:display [ fhir:v "ביקור רופא" ]
+  ] [
+     fhir:code [ fhir:v "40" ] ;
+     fhir:display [ fhir:v "צה\"ל" ]
+  ] [
+     fhir:code [ fhir:v "41" ] ;
+     fhir:display [ fhir:v "משטרה" ]
+  ] [
+     fhir:code [ fhir:v "42" ] ;
+     fhir:display [ fhir:v "צה\"ל-מזור" ]
+  ] [
+     fhir:code [ fhir:v "45" ] ;
+     fhir:display [ fhir:v "שרות בתי הסוהר" ]
+  ] [
+     fhir:code [ fhir:v "46" ] ;
+     fhir:display [ fhir:v "משרד הביטחון" ]
+  ] [
+     fhir:code [ fhir:v "47" ] ;
+     fhir:display [ fhir:v "רשות פלסטינאית" ]
+  ] [
+     fhir:code [ fhir:v "48" ] ;
+     fhir:display [ fhir:v "מאוחדת חיילים" ]
+  ] [
+     fhir:code [ fhir:v "49" ] ;
+     fhir:display [ fhir:v "לאומית חיילים" ]
+  ] [
+     fhir:code [ fhir:v "50" ] ;
+     fhir:display [ fhir:v "פניה עצמית" ]
+  ] [
+     fhir:code [ fhir:v "51" ] ;
+     fhir:display [ fhir:v "מעסיק/ת.עבודה" ]
+  ] [
+     fhir:code [ fhir:v "52" ] ;
+     fhir:display [ fhir:v "הפניה טלפונית" ]
+  ] [
+     fhir:code [ fhir:v "53" ] ;
+     fhir:display [ fhir:v "כללית חיילים" ]
+  ] [
+     fhir:code [ fhir:v "54" ] ;
+     fhir:display [ fhir:v "מכבי חיילים" ]
+  ] [
+     fhir:code [ fhir:v "55" ] ;
+     fhir:display [ fhir:v "כללית מכביה" ]
+  ] [
+     fhir:code [ fhir:v "56" ] ;
+     fhir:display [ fhir:v "ביקור רופא צה\"ל" ]
+  ] [
+     fhir:code [ fhir:v "57" ] ;
+     fhir:display [ fhir:v "מוקד רפואי ק\"ש" ]
+  ] [
+     fhir:code [ fhir:v "60" ] ;
+     fhir:display [ fhir:v "אחות בית ספר" ]
+  ] [
+     fhir:code [ fhir:v "61" ] ;
+     fhir:display [ fhir:v "תחנה לבריאות המ" ]
+  ] [
+     fhir:code [ fhir:v "62" ] ;
+     fhir:display [ fhir:v "שרותי רווחה" ]
+  ] [
+     fhir:code [ fhir:v "74" ] ;
+     fhir:display [ fhir:v "איחוד הצלה" ]
+  ] [
+     fhir:code [ fhir:v "85" ] ;
+     fhir:display [ fhir:v "קבלת אחסון גויה" ]
+  ] [
+     fhir:code [ fhir:v "98" ] ;
+     fhir:display [ fhir:v "מסוק" ]
+  ] [
+     fhir:code [ fhir:v "99" ] ;
+     fhir:display [ fhir:v "לא ידוע" ]
+  ] [
+     fhir:code [ fhir:v "Z1" ] ;
+     fhir:display [ fhir:v "הסבה-המשך טיפול" ]
+  ] [
+     fhir:code [ fhir:v "Z2" ] ;
+     fhir:display [ fhir:v "הסבה-מקופ\"ח" ]
+  ] [
+     fhir:code [ fhir:v "Z4" ] ;
+     fhir:display [ fhir:v "הסבה-פניה טלפון" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

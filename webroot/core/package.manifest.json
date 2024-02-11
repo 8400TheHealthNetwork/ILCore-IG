@@ -1,0 +1,6 @@
+{
+  "version" : "0.13.2",
+  "fhirVersion" : ["4.0.1"],
+  "date" : "20231223191923",
+  "name" : "health.gov.il.fhir.core"
+}

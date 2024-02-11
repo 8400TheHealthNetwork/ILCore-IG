@@ -1,0 +1,742 @@
+{
+  "package": "health.gov.il.fhir.core",
+  "version": "0.13.2",
+  "fhirVersion": "4.0.1",
+  "extensions": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name",
+      "title": "Ext: Administrative Parent Name",
+      "types": [
+        "string",
+        "code",
+        "boolean",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-allergy-intolerance-end",
+      "title": "Ext: Allergy Intolerance End",
+      "types": [
+        "dateTime",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+      "title": "Ext: City Code",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-diagnostic-report-note",
+      "title": "Ext: DiagnosticReport Note",
+      "types": [
+        "Annotation"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-documented-event-date",
+      "title": "Ext: ILCore Documented Event Date",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-event-occurrence-location",
+      "title": "Ext: Event Occurrence Location",
+      "types": [
+        "Address",
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date",
+      "title": "Ext: Hebrew Date",
+      "types": [
+        "string",
+        "CodeableConcept",
+        "CodeableConcept",
+        "string",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+      "title": "Ext: Israel Health Management Organization (קופת חולים)",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type",
+      "title": "Ext: Medication Course-Of-Therapy Type",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-movement-number",
+      "title": "Ext: Movement Sequence-Number",
+      "types": [
+        "positiveInt"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication",
+      "title": "Ext: ILCore Narcotic Medication",
+      "types": [
+        "boolean"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-parent-name",
+      "title": "Ext: Name of parent",
+      "types": [
+        "string"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration",
+      "title": "Ext: Patient Immigration",
+      "types": [
+        "CodeableConcept",
+        "CodeableConcept",
+        "date",
+        "CodeableConcept",
+        "base64Binary",
+        "boolean",
+        "canonical",
+        "code",
+        "date",
+        "dateTime",
+        "decimal",
+        "id",
+        "instant",
+        "integer",
+        "markdown",
+        "oid",
+        "positiveInt",
+        "string",
+        "time",
+        "unsignedInt",
+        "uri",
+        "url",
+        "uuid",
+        "Address",
+        "Age",
+        "Annotation",
+        "Attachment",
+        "CodeableConcept",
+        "Coding",
+        "ContactPoint",
+        "Count",
+        "Distance",
+        "Duration",
+        "HumanName",
+        "Identifier",
+        "Money",
+        "Period",
+        "Quantity",
+        "Range",
+        "Ratio",
+        "Reference",
+        "SampledData",
+        "Signature",
+        "Timing",
+        "ContactDetail",
+        "Contributor",
+        "DataRequirement",
+        "Expression",
+        "ParameterDefinition",
+        "RelatedArtifact",
+        "TriggerDefinition",
+        "UsageContext",
+        "Dosage",
+        "Meta"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-procedure-reference",
+      "title": "Ext: ILCore Procedure Reference",
+      "types": [
+        "Reference"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice",
+      "title": "Ext: Qualification Practice",
+      "types": [
+        "CodeableConcept"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration",
+      "title": "Reaction Duration",
+      "types": [
+        "Duration"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-recorded-time",
+      "title": "Ext: ILCore Recorded Time",
+      "types": [
+        "dateTime"
+      ]
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-statistical-area",
+      "title": "Ext: Statistical Area",
+      "types": [
+        "Identifier",
+        "string",
+        "Extension",
+        "code",
+        "CodeableConcept",
+        "uri",
+        "string",
+        "Period",
+        "Reference"
+      ]
+    }
+  ],
+  "profiles": {
+    "AllergyIntolerance": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance",
+        "title": "ILCore AllergyIntolerance Profile"
+      }
+    ],
+    "CareTeam": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-care-team",
+        "title": "ILCore CareTeam Profile"
+      }
+    ],
+    "Claim": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-claim",
+        "title": "ILCore Claim Profile"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-condition",
+        "title": "ILCore Condition Profile"
+      }
+    ],
+    "Coverage": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-coverage",
+        "title": "ILCore Coverage Profile"
+      }
+    ],
+    "CoverageEligibilityRequest": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-coverage-eligibility-request",
+        "title": "ILCore CoverageEligibilityRequest Profile"
+      }
+    ],
+    "CoverageEligibilityResponse": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-coverage-eligibility-response",
+        "title": "ILCore CoverageEligibilityResponse Profile"
+      }
+    ],
+    "Device": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-device",
+        "title": "ILCore Device Profile"
+      }
+    ],
+    "DeviceDefinition": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-device-definition",
+        "title": "ILCore DeviceDefinition Profile"
+      }
+    ],
+    "DiagnosticReport": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-diagnostic-report",
+        "title": "ILCore DiagnosticReport Profile"
+      }
+    ],
+    "DocumentReference": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-document-reference",
+        "title": "ILCore DocumentReference Profile"
+      }
+    ],
+    "Encounter": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-encounter",
+        "title": "ILCore Encounter Profile"
+      }
+    ],
+    "FamilyMemberHistory": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-family-member-history",
+        "title": "ILCore FamilyMemberHistory Profile"
+      }
+    ],
+    "Group": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-group",
+        "title": "ILCore Group Profile"
+      }
+    ],
+    "ImagingStudy": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-imaging-study",
+        "title": "ILCore ImagingStudy Profile"
+      }
+    ],
+    "Immunization": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-immunization",
+        "title": "ILCore Immunization Profile"
+      }
+    ],
+    "Observation": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-observation",
+        "title": "ILCore Observation Profile"
+      },
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab",
+        "title": "ILCore Observation Lab Profile"
+      }
+    ],
+    "ImmunizationRecommendation": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-immunization-recommendation",
+        "title": "ILCore ImmunizationRecommendation Profile"
+      }
+    ],
+    "Location": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-location",
+        "title": "ILCore Location Profile"
+      }
+    ],
+    "Media": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-media",
+        "title": "ILCore Media Profile"
+      }
+    ],
+    "Medication": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-medication",
+        "title": "ILCore Medication Profile"
+      }
+    ],
+    "MedicationAdministration": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration",
+        "title": "ILCore MedicationAdministration Profile"
+      }
+    ],
+    "MedicationRequest": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-medication-request",
+        "title": "ILCore MedicationRequest Profile"
+      }
+    ],
+    "MedicationStatement": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement",
+        "title": "ILCore MedicationStatement Profile"
+      }
+    ],
+    "Organization": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+        "title": "ILCore Organization Profile"
+      }
+    ],
+    "Patient": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-patient",
+        "title": "ILCore Patient Profile"
+      }
+    ],
+    "PlanDefinition": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-plan-definition",
+        "title": "ILCore PlanDefinition Profile"
+      }
+    ],
+    "Practitioner": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner",
+        "title": "ILCore Practitioner Profile"
+      }
+    ],
+    "PractitionerRole": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role",
+        "title": "ILCore PractitionerRole Profile"
+      }
+    ],
+    "Procedure": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-procedure",
+        "title": "ILCore Procedure Profile"
+      }
+    ],
+    "Questionnaire": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-questionnaire",
+        "title": "ILCore Questionnaire Profile"
+      }
+    ],
+    "QuestionnaireResponse": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-questionnaire-response",
+        "title": "ILCore QuestionnaireResponse Profile"
+      }
+    ],
+    "RelatedPerson": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-related-person",
+        "title": "ILCore RelatedPerson Profile"
+      }
+    ],
+    "ServiceRequest": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-service-request",
+        "title": "ILCore ServiceRequest Profile"
+      }
+    ],
+    "Substance": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-service-substance",
+        "title": "ILCore Substance Profile"
+      }
+    ],
+    "Specimen": [
+      {
+        "url": "http://fhir.health.gov.il/StructureDefinition/il-core-specimen",
+        "title": "ILCore Specimen Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name": [
+      "Patient",
+      "RelatedPerson"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-allergy-intolerance-end": [
+      "AllergyIntolerance"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-city-code": [
+      "Address.city",
+      "Location.address.city",
+      "Organization.address.city",
+      "Patient.address.city"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date": [
+      "Patient.birthDate"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo": [
+      "Patient"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type": [
+      "MedicationStatement"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-movement-number": [
+      "Encounter.hospitalization"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication": [
+      "MedicationAdministration",
+      "MedicationRequest"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration": [
+      "Patient"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-procedure-reference": [
+      "MedicationRequest.reasonReference"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice": [
+      "Practitioner.qualification"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration": [
+      "AllergyIntolerance.reaction"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-recorded-time": [
+      "MedicationAdministration",
+      "MedicationRequest"
+    ],
+    "http://fhir.health.gov.il/StructureDefinition/ext-statistical-area": [
+      "Address",
+      "Location.address",
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence": [
+      "ConceptMap.group.element.target"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version": [
+      "NamingSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate": [
+      "CodeSystem"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/data-absent-reason": [
+      "Patient.birthDate",
+      "Patient.contact.name.text",
+      "Patient.gender",
+      "Patient.identifier.system",
+      "Patient.name",
+      "Patient.name.family",
+      "Patient.name.given",
+      "Practitioner.name",
+      "RelatedPerson.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.differential.element.binding",
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/geolocation": [
+      "Address",
+      "Location.address",
+      "Patient.address"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix": [
+      "Address.line",
+      "Location.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber": [
+      "Address.line",
+      "Location.address.line",
+      "Organization.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox": [
+      "Address.line",
+      "Location.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName": [
+      "Address.line",
+      "Location.address.line",
+      "Organization.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID": [
+      "Address.line",
+      "Location.address.line",
+      "Patient.address.line"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/language": [
+      "Patient.name",
+      "Practitioner.name",
+      "RelatedPerson.name"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/patient-birthPlace": [
+      "Patient"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/regex": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/relative-date": [
+      "Procedure.performedDateTime",
+      "Procedure.performed[x]",
+      "ServiceRequest.occurrence[x]"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-display-hint": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-hierarchy": [
+      "StructureDefinition.differential.element.type",
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex": [
+      "Patient"
+    ]
+  }
+}

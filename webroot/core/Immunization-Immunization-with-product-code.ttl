@@ -1,0 +1,52 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Immunization/Immunization-with-product-code> a fhir:Immunization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Immunization-with-product-code"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-immunization"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-immunization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immunization with a Product code and SNOMED code</div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:vaccineCode [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "J07BE01" ] ;
+       fhir:display [ fhir:v "mumps, live attenuated" ]
+     ] [
+       a sct:871738001 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "871738001" ] ;
+       fhir:display [ fhir:v "Live attenuated mumps vaccine" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-with-israeli-id> ;
+     fhir:reference [ fhir:v "Patient/patient-with-israeli-id" ]
+  ] ; # 
+  fhir:occurrence [ fhir:v "2021-02-28"^^xsd:date] ; # 
+  fhir:primarySource [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:lotNumber [ fhir:v "12345"] ; # 
+  fhir:site [
+     fhir:coding ( [
+       a sct:368208006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "368208006" ] ;
+       fhir:display [ fhir:v "Left upper arm structure (body structure)" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

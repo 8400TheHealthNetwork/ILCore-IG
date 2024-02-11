@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="practitioner-profession-moh"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-practitioner-profession-moh.html"><code>http://fhir.health.gov.il/cs/practitioner-profession-moh</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="CodeSystem-practitioner-profession-moh.html"><code>http://fhir.health.gov.il/cs/practitioner-profession-moh</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-101">101</a></td><td>אח/ות מוסמכ/ת</td><td>מקצוע האח/ות מוסמכ/ת שייך לתחום הסיעוד לו קיימים ערכי מומחיות Expertise</td></tr><tr><td><a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-102">102</a></td><td>אח/ות מעשי/ת</td><td>מקצוע האח/ות מעשי/ת שייך לתחום הסיעוד ללא מומחיות או התמחות</td></tr><tr><td><a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-103">103</a></td><td>אח/ות</td><td>מקצוע אח/ות שייך לתחום הסיעוד ללא מומחיות או התמחות</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/practitioner-profession-moh"/>
+  <version value="0.13.2"/>
+  <name value="PractitionerProfessionMoH"/>
+  <title value="קוד מקצוע לעוסק בבריאות"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות. שימו לב: מקצועות הסיעוד הוחרגו מרשימה זו ונמצאים ברשימה נפרדת"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/practitioner-profession-moh"/>
+    </include>
+    <exclude>
+      <system value="http://fhir.health.gov.il/cs/practitioner-profession-moh"/>
+      <concept>
+        <code value="101"/>
+        <display value="אח/ות מוסמכ/ת"/>
+      </concept>
+      <concept>
+        <code value="102"/>
+        <display value="אח/ות מעשי/ת"/>
+      </concept>
+      <concept>
+        <code value="103"/>
+        <display value="אח/ות"/>
+      </concept>
+    </exclude>
+  </compose>
+</ValueSet>

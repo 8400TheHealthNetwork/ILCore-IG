@@ -1,0 +1,73 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Medication/paracetamol> a fhir:Medication ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "paracetamol"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-medication"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-medication>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">500mg paracetamol, manufactured by TEVA pharma.</div>"
+  ] ; # 
+  fhir:code [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://israeldrugs.health.gov.il"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "020162053400" ] ;
+       fhir:display [ fhir:v "אקמול" ]
+     ] [
+       fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "N02BE01" ] ;
+       fhir:display [ fhir:v "paracetamol" ]
+     ] )
+  ] ; # 
+  fhir:manufacturer [
+     fhir:link <http://fhir.health.gov.il/Organization/organization-ministry-of-health> ;
+     fhir:reference [ fhir:v "Organization/organization-ministry-of-health" ] ;
+     fhir:type [ fhir:v "Organization"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "TEVA PHARMACEUTICAL INDUSTRIES LTD, ISRAEL" ]
+  ] ; # 
+  fhir:form [
+     fhir:coding ( [
+       a sct:421026006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "421026006" ] ;
+       fhir:display [ fhir:v "Oral tablet" ]
+     ] )
+  ] ; # 
+  fhir:ingredient ( [
+     fhir:item [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://www.whocc.no/atc"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "N02BE01" ] ;
+         fhir:display [ fhir:v "paracetamol" ]
+       ] )
+     ] ;
+     fhir:isActive [ fhir:v "true"^^xsd:boolean ] ;
+     fhir:strength [
+       fhir:numerator [
+         fhir:value [ fhir:v "500"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "מיליגרם" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "mg" ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "1"^^xsd:decimal ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "428673006" ]
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

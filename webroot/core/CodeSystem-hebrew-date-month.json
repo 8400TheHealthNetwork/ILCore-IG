@@ -1,0 +1,91 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "hebrew-date-month",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/hebrew-date-month</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"hebrew-date-month-1\"> </a></td><td>תשרי</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"hebrew-date-month-2\"> </a></td><td>חשון</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"hebrew-date-month-3\"> </a></td><td>כסלו</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"hebrew-date-month-4\"> </a></td><td>טבת</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"hebrew-date-month-5\"> </a></td><td>שבט</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"hebrew-date-month-6\"> </a></td><td>אדר</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"hebrew-date-month-7\"> </a></td><td>ניסן</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"hebrew-date-month-8\"> </a></td><td>אייר</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"hebrew-date-month-9\"> </a></td><td>סיון</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"hebrew-date-month-10\"> </a></td><td>תמוז</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"hebrew-date-month-11\"> </a></td><td>אב</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"hebrew-date-month-12\"> </a></td><td>אלול</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"hebrew-date-month-13\"> </a></td><td>אדר א'</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"hebrew-date-month-14\"> </a></td><td>אדר ב'</td></tr></table></div>"
+  },
+  "url" : "http://fhir.health.gov.il/cs/hebrew-date-month",
+  "version" : "0.13.2",
+  "name" : "HebrewDateMonth",
+  "title" : "Hebrew Date Month",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for Hebrew date months",
+  "caseSensitive" : false,
+  "valueSet" : "http://fhir.health.gov.il/ValueSet/hebrew-date-month",
+  "content" : "complete",
+  "count" : 14,
+  "concept" : [{
+    "code" : "1",
+    "display" : "תשרי"
+  },
+  {
+    "code" : "2",
+    "display" : "חשון"
+  },
+  {
+    "code" : "3",
+    "display" : "כסלו"
+  },
+  {
+    "code" : "4",
+    "display" : "טבת"
+  },
+  {
+    "code" : "5",
+    "display" : "שבט"
+  },
+  {
+    "code" : "6",
+    "display" : "אדר"
+  },
+  {
+    "code" : "7",
+    "display" : "ניסן"
+  },
+  {
+    "code" : "8",
+    "display" : "אייר"
+  },
+  {
+    "code" : "9",
+    "display" : "סיון"
+  },
+  {
+    "code" : "10",
+    "display" : "תמוז"
+  },
+  {
+    "code" : "11",
+    "display" : "אב"
+  },
+  {
+    "code" : "12",
+    "display" : "אלול"
+  },
+  {
+    "code" : "13",
+    "display" : "אדר א'"
+  },
+  {
+    "code" : "14",
+    "display" : "אדר ב'"
+  }]
+}

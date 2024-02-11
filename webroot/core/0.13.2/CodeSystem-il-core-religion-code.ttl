@@ -1,0 +1,71 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/il-core-religion-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-religion-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-religion-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"il-core-religion-code-2\"> </a></td><td>שומרוני</td><td>Samaritan</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"il-core-religion-code-54\"> </a></td><td>נוצרי ארמני</td><td>Armenian Christian</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"il-core-religion-code-57\"> </a></td><td>נוצרי קופטי</td><td>Coptic Christian</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"il-core-religion-code-60\"> </a></td><td>דרוזי</td><td>Druze</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"il-core-religion-code-70\"> </a></td><td>ללא דת</td><td>No Religious Affiliation</td></tr><tr><td style=\"white-space:nowrap\">90<a name=\"il-core-religion-code-90\"> </a></td><td>קראי</td><td>Karaite</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-12"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/il-core-religion-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreReligionCode"] ; # 
+  fhir:title [ fhir:v "IL Core relirion code"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for religions, an addendum to the HL7 religions CodeSystem"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "6"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "שומרוני" ] ;
+     fhir:definition [ fhir:v "Samaritan" ]
+  ] [
+     fhir:code [ fhir:v "54" ] ;
+     fhir:display [ fhir:v "נוצרי ארמני" ] ;
+     fhir:definition [ fhir:v "Armenian Christian" ]
+  ] [
+     fhir:code [ fhir:v "57" ] ;
+     fhir:display [ fhir:v "נוצרי קופטי" ] ;
+     fhir:definition [ fhir:v "Coptic Christian" ]
+  ] [
+     fhir:code [ fhir:v "60" ] ;
+     fhir:display [ fhir:v "דרוזי" ] ;
+     fhir:definition [ fhir:v "Druze" ]
+  ] [
+     fhir:code [ fhir:v "70" ] ;
+     fhir:display [ fhir:v "ללא דת" ] ;
+     fhir:definition [ fhir:v "No Religious Affiliation" ]
+  ] [
+     fhir:code [ fhir:v "90" ] ;
+     fhir:display [ fhir:v "קראי" ] ;
+     fhir:definition [ fhir:v "Karaite" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

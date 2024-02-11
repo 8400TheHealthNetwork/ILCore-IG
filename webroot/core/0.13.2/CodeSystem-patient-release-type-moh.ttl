@@ -1,0 +1,112 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/patient-release-type-moh> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-release-type-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/patient-release-type-moh</code> provides some codes <b>that are example only</b>:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">-999<a name=\"patient-release-type-moh--999\"> </a></td><td>לא ידוע</td></tr><tr><td style=\"white-space:nowrap\">0<a name=\"patient-release-type-moh-0\"> </a></td><td>לא רשום</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"patient-release-type-moh-1\"> </a></td><td>שחרור למוסד אחר</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"patient-release-type-moh-2\"> </a></td><td>שחרור הביתה</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"patient-release-type-moh-3\"> </a></td><td>פטירה</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"patient-release-type-moh-4\"> </a></td><td>ביטול ביקור</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"patient-release-type-moh-5\"> </a></td><td>ביטול אשפוז</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"patient-release-type-moh-6\"> </a></td><td>שחרור ממיון לאשפוז</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"patient-release-type-moh-7\"> </a></td><td>עזב על דעת עצמו</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"patient-release-type-moh-8\"> </a></td><td>התקבל מת</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"patient-release-type-moh-9\"> </a></td><td>לא ידוע</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"patient-release-type-moh-10\"> </a></td><td>עזב עם הגיליון</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"patient-release-type-moh-106\"> </a></td><td>העברה למחלקה אחרת בבי&quot;ח הזה</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"patient-release-type-moh-11\"> </a></td><td>חולה אונקולוגי</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"patient-release-type-moh-14\"> </a></td><td>הועבר להוסטל</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"patient-release-type-moh-15\"> </a></td><td>שוחרר לטיפול ביתי</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"patient-release-type-moh-17\"> </a></td><td>שוחרר למרפאה</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"patient-release-type-moh-18\"> </a></td><td>ביטול לאחר קבלה ותשלום במיון</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"patient-release-type-moh-60\"> </a></td><td>אחר</td></tr><tr><td style=\"white-space:nowrap\">94<a name=\"patient-release-type-moh-94\"> </a></td><td>הסבה אחר</td></tr><tr><td style=\"white-space:nowrap\">95<a name=\"patient-release-type-moh-95\"> </a></td><td>הסבה למוסד צבאי</td></tr><tr><td style=\"white-space:nowrap\">96<a name=\"patient-release-type-moh-96\"> </a></td><td>הסבה העברה למחלקה</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-08"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/patient-release-type-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "PatientRealeaseTypeMoH"] ; # 
+  fhir:title [ fhir:v "Patient Realease Type MoH"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Moh Codes for Patient Realease Type"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "example"] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "-999" ] ;
+     fhir:display [ fhir:v "לא ידוע" ]
+  ] [
+     fhir:code [ fhir:v "0" ] ;
+     fhir:display [ fhir:v "לא רשום" ]
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "שחרור למוסד אחר" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "שחרור הביתה" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "פטירה" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "ביטול ביקור" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "ביטול אשפוז" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "שחרור ממיון לאשפוז" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "עזב על דעת עצמו" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "התקבל מת" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "לא ידוע" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "עזב עם הגיליון" ]
+  ] [
+     fhir:code [ fhir:v "106" ] ;
+     fhir:display [ fhir:v "העברה למחלקה אחרת בבי\"ח הזה" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "חולה אונקולוגי" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "הועבר להוסטל" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "שוחרר לטיפול ביתי" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "שוחרר למרפאה" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "ביטול לאחר קבלה ותשלום במיון" ]
+  ] [
+     fhir:code [ fhir:v "60" ] ;
+     fhir:display [ fhir:v "אחר" ]
+  ] [
+     fhir:code [ fhir:v "94" ] ;
+     fhir:display [ fhir:v "הסבה אחר" ]
+  ] [
+     fhir:code [ fhir:v "95" ] ;
+     fhir:display [ fhir:v "הסבה למוסד צבאי" ]
+  ] [
+     fhir:code [ fhir:v "96" ] ;
+     fhir:display [ fhir:v "הסבה העברה למחלקה" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="il-core-religion-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-religion-code</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">2<a name="il-core-religion-code-2"> </a></td><td>שומרוני</td><td>Samaritan</td></tr><tr><td style="white-space:nowrap">54<a name="il-core-religion-code-54"> </a></td><td>נוצרי ארמני</td><td>Armenian Christian</td></tr><tr><td style="white-space:nowrap">57<a name="il-core-religion-code-57"> </a></td><td>נוצרי קופטי</td><td>Coptic Christian</td></tr><tr><td style="white-space:nowrap">60<a name="il-core-religion-code-60"> </a></td><td>דרוזי</td><td>Druze</td></tr><tr><td style="white-space:nowrap">70<a name="il-core-religion-code-70"> </a></td><td>ללא דת</td><td>No Religious Affiliation</td></tr><tr><td style="white-space:nowrap">90<a name="il-core-religion-code-90"> </a></td><td>קראי</td><td>Karaite</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-12"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/il-core-religion-code"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreReligionCode"/>
+  <title value="IL Core relirion code"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for religions, an addendum to the HL7 religions CodeSystem"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="6"/>
+  <concept>
+    <code value="2"/>
+    <display value="שומרוני"/>
+    <definition value="Samaritan"/>
+  </concept>
+  <concept>
+    <code value="54"/>
+    <display value="נוצרי ארמני"/>
+    <definition value="Armenian Christian"/>
+  </concept>
+  <concept>
+    <code value="57"/>
+    <display value="נוצרי קופטי"/>
+    <definition value="Coptic Christian"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="דרוזי"/>
+    <definition value="Druze"/>
+  </concept>
+  <concept>
+    <code value="70"/>
+    <display value="ללא דת"/>
+    <definition value="No Religious Affiliation"/>
+  </concept>
+  <concept>
+    <code value="90"/>
+    <display value="קראי"/>
+    <definition value="Karaite"/>
+  </concept>
+</CodeSystem>

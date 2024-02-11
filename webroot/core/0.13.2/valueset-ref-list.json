@@ -1,0 +1,1055 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/city-symbol",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "CitySymbol",
+      "title" : "City Symbol (סמל ישוב)",
+      "description" : "City classification according to the Israeli Postal Company city-symbol coding system",
+      "systems" : ["http://fhir.health.gov.il/cs/city-symbol"],
+      "uses" : {
+      },
+      "StructureDefinition-ext-city-code.html" : "Ext: City Code"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/department-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "DepartmentTypeMoH",
+      "title" : "Department Type MoH",
+      "description" : "Israel ministry of health coding system for department types",
+      "systems" : ["http://fhir.health.gov.il/cs/department-type-moh"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-organization.html" : "ILCore Organization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/hebrew-date-day",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "HebrewDateDay",
+      "title" : "Hebrew Date Day",
+      "description" : "Codes for Hebrew date days",
+      "systems" : ["http://fhir.health.gov.il/cs/hebrew-date-day"],
+      "uses" : {
+      },
+      "StructureDefinition-ext-hebrew-date.html" : "Ext: Hebrew Date"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/hebrew-date-month",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "HebrewDateMonth",
+      "title" : "Hebrew Date Month",
+      "description" : "Codes for Hebrew date months",
+      "systems" : ["http://fhir.health.gov.il/cs/hebrew-date-month"],
+      "uses" : {
+      },
+      "StructureDefinition-ext-hebrew-date.html" : "Ext: Hebrew Date"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/icd9-cm-diagnoses",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "Icd9CmDiagnoses",
+      "title" : "Icd9 Cm diagnoses",
+      "description" : "All Diagnosis codes from ICD9-CM codesystem",
+      "systems" : ["http://hl7.org/fhir/sid/icd-9-cm"],
+      "uses" : {
+      },
+      "ValueSet-il-core-manifestation.html" : "IL Core Condition Codes",
+      "ValueSet-il-core-allergy-intolerance-code.html" : "IL Core Allergy Intolerance Code",
+      "ValueSet-il-core-condition-code.html" : "IL Core Condition Code"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/icd9-cm-procedures",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "Icd9CmProcedures",
+      "title" : "Icd9 Cm Procedures",
+      "description" : "All Procedure codes from ICD9-CM codesystem",
+      "systems" : ["http://hl7.org/fhir/sid/icd-9-cm"],
+      "uses" : {
+      },
+      "ValueSet-il-core-procedure-code.html" : "IL Core procedure Codes"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/icd9il-diagnoses",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ICD9ILDiagnoses",
+      "title" : "ICD9 IL Diagnoses",
+      "description" : "codes of diagnoses from ICD9-IL",
+      "systems" : ["http://fhir.health.gov.il/cs/icd9il"],
+      "uses" : {
+      },
+      "ValueSet-il-core-manifestation.html" : "IL Core Condition Codes",
+      "ValueSet-il-core-allergy-intolerance-code.html" : "IL Core Allergy Intolerance Code",
+      "ValueSet-il-core-condition-code.html" : "IL Core Condition Code"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/icd9il-procedures",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ICD9ILProcedures",
+      "title" : "ICD9 IL Procedures",
+      "description" : "codes of procedures from ICD9-IL",
+      "systems" : ["http://fhir.health.gov.il/cs/icd9il"],
+      "uses" : {
+      },
+      "ValueSet-il-core-procedure-code.html" : "IL Core procedure Codes"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreAllergyIntoleranceCode",
+      "title" : "IL Core Allergy Intolerance Code",
+      "description" : "A list of codes for Allergy Intolerance for the IL Core",
+      "systems" : [
+        "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "http://cosmetics.health.gov.il",
+        "http://hl7.org/fhir/sid/icd-10",
+        "http://fhir.health.gov.il/cs/icd9il",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://hl7.org/fhir/sid/icd-9-cm",
+        "http://www.gs1.org/gtin",
+        "http://snomed.info/sct",
+        "http://israeldrugs.health.gov.il",
+        "http://www.whocc.no/atc",
+        "http://hl7.org/fhir/sid/cvx"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-allergy-intolerance.html" : "ILCore AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-end-reason",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreAllergyIntoleranceEndReason",
+      "title" : "IL Core Condition End Reason",
+      "description" : "A list of codes for End Reasons of Allergy Intolerance for the IL Core",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-ext-allergy-intolerance-end.html" : "Ext: Allergy Intolerance End"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-common-units-of-measure",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreCommonUnitsOfMeasure",
+      "title" : "IL Core Units Of Measure Codes",
+      "description" : "A list of codes for Units Of Measure for the IL Core. <mark>Note:</mark> UCUM code SHALL be used, unless one cannot be found, in which case a SNOMED-CT code SHALL be used",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/ucum-common",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-administration.html" : "ILCore MedicationAdministration Profile",
+      "StructureDefinition-il-core-dosage.html" : "ILCore Dosage Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-condition-category",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreConditionCategory",
+      "title" : "IL Core Condition Category Codes",
+      "description" : "A list of category codes for conditions for the IL Core",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/condition-category",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-condition.html" : "ILCore Condition Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-condition-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreConditionCode",
+      "title" : "IL Core Condition Code",
+      "description" : "A list of codes for conditions for the IL Core",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icd-10",
+        "http://fhir.health.gov.il/cs/icd9il",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "http://hl7.org/fhir/sid/icd-9-cm",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-procedure.html" : "ILCore Procedure Profile",
+      "ValueSet-il-core-procedure-reason.html" : "IL Core procedure Reason",
+      "StructureDefinition-il-core-condition.html" : "ILCore Condition Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-coverage-class",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreCoverageClass",
+      "title" : "IL Core Coverage Class codes",
+      "description" : "Codes for Coverage classes",
+      "systems" : ["http://fhir.health.gov.il/cs/il-core-coverage-class"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-coverage-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreCoverageType",
+      "title" : "IL Core Coverage Type codes",
+      "description" : "Codes for expressing general heigh level coverage types unique to Israel health system",
+      "systems" : [
+        "http://hl7.org/fhir/ValueSet/coverage-type",
+        "http://fhir.health.gov.il/cs/il-core-coverage-type"
+      ]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-doctor-to-doctor",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreDoctorToDoctor",
+      "title" : "IL Core Doctor To Doctor Codes",
+      "description" : "Codes for Doctor To Doctor encounter for the IL Core",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-encounter.html" : "ILCore Encounter Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-encounter-class",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreEncounterClass",
+      "title" : "IL Core Encounter Class Codes",
+      "description" : "A list of class codes for Encounters for the IL Core",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/il-core-encounter-class",
+        "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-encounter.html" : "ILCore Encounter Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-jurisdiction",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreJurisdiction",
+      "title" : "Country Codes",
+      "description" : "Codes for countries according to ISO 3166",
+      "systems" : ["urn:iso:std:iso:3166"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-address.html" : "ILCore Address Profile",
+      "StructureDefinition-ext-patient-immigration.html" : "Ext: Patient Immigration"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-manifestation",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreManifestation",
+      "title" : "IL Core Condition Codes",
+      "description" : "A list of codes for intolerance manifestation for the IL Core",
+      "systems" : [
+        "http://hl7.org/fhir/sid/icd-10",
+        "http://fhir.health.gov.il/cs/icd9il",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://hl7.org/fhir/sid/icd-9-cm",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-allergy-intolerance.html" : "ILCore AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-administration-category",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationAdministrartionCategory",
+      "title" : "ILCore Medication administrartion Category",
+      "description" : "Codes for Medication administrartion Category",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/il-core-medicationrequest-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-administration.html" : "ILCore MedicationAdministration Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationCode",
+      "title" : "ILCore Medication Code",
+      "description" : "Codes for medications according to ILCore catalogue",
+      "systems" : [
+        "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "http://cosmetics.health.gov.il",
+        "http://www.gs1.org/gtin",
+        "http://israeldrugs.health.gov.il",
+        "http://snomed.info/sct",
+        "http://www.whocc.no/atc"
+      ],
+      "uses" : {
+      },
+      "ValueSet-il-core-substance.html" : "IL Core Substance Codes",
+      "ValueSet-il-core-medication-statement-code.html" : "ILCore Medication statement Code",
+      "StructureDefinition-il-core-medication-request.html" : "ILCore MedicationRequest Profile",
+      "StructureDefinition-il-core-medication.html" : "ILCore Medication Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationCourseOfTherapyType",
+      "title" : "ILCore Medication Course Of Therapy type",
+      "description" : "Codes for Medication Course Of Therapy",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy",
+        "http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ext-medication-course-of-therapy-type.html" : "Ext: Medication Course-Of-Therapy Type",
+      "StructureDefinition-il-core-medication-request.html" : "ILCore MedicationRequest Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-request-category",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationRequestCategory",
+      "title" : "ILCore Medication Request Category",
+      "description" : "Codes for Medication Request Category",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/il-core-medicationrequest-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-request.html" : "ILCore MedicationRequest Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationStatementCategory",
+      "title" : "ILCore Medication statement Category",
+      "description" : "Codes for Medication statement Category",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/il-core-medicationrequest-category"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-statement.html" : "ILCore MedicationStatement Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-statement-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationStatementCode",
+      "title" : "ILCore Medication statement Code",
+      "description" : "Codes for Medication statement Code",
+      "systems" : [
+        "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "http://cosmetics.health.gov.il",
+        "http://www.gs1.org/gtin",
+        "http://israeldrugs.health.gov.il",
+        "http://snomed.info/sct",
+        "http://www.whocc.no/atc"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-administration.html" : "ILCore MedicationAdministration Profile",
+      "StructureDefinition-il-core-medication-statement.html" : "ILCore MedicationStatement Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreNotPerformedReason",
+      "title" : "IL Core procedure Reason",
+      "description" : "A list of codes for procedure reasons for the IL Core",
+      "systems" : ["http://fhir.health.gov.il/cs/il-core-not-performed-reason"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-observation-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreObservationCode",
+      "title" : "IL Core Observation Codes",
+      "description" : "A list of code codes for observations for the IL Core",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-observation.html" : "ILCore Observation Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-observation-lab-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreObservationLabCode",
+      "title" : "IL Core Observation Lab Code",
+      "description" : "A list of lab-code codes for lab observations for the IL Core",
+      "systems" : ["http://loinc.org"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-observation-lab.html" : "ILCore Observation Lab Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-observation-value",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreObservationValue",
+      "title" : "IL Core Observation Value Codes",
+      "description" : "A list of value codes for observations for the IL Core \n\nNote: The entire LOINC code system is included in this ValueSet although it should only include LOINC Answers - LOINC codes that start with 'LA'. Since there is no computable way to define a ValueSet according to the code's prefix, we rely on an invariant to enforce this rule.",
+      "systems" : ["http://loinc.org", "http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-observation.html" : "ILCore Observation Profile",
+      "StructureDefinition-il-core-observation-lab.html" : "ILCore Observation Lab Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-parent-name-role",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreParentNameRole",
+      "title" : "The role of the parent (father/mother) whose name is recorded",
+      "description" : "This set of codes is used to mark a parent name as a father or mother’s name. Should only be used by systems that explicitly differentiate between the two.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/v3-RoleCode"],
+      "uses" : {
+      },
+      "StructureDefinition-ext-administrative-parent-name.html" : "Ext: Administrative Parent Name"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-premium-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreCoveragePremiumType",
+      "title" : "IL Core Coverage Premium Type codes",
+      "description" : "Codes for Types of premium payment methods",
+      "systems" : ["http://fhir.health.gov.il/cs/il-core-coverage-premium-type"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-procedure-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreProcedureCode",
+      "title" : "IL Core procedure Codes",
+      "description" : "A list of codes for procedures for the IL Core",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/medical-service-moh",
+        "http://fhir.health.gov.il/cs/icd9il",
+        "http://loinc.org",
+        "http://hl7.org/fhir/sid/icd-9-cm",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-procedure.html" : "ILCore Procedure Profile",
+      "StructureDefinition-il-core-service-request.html" : "ILCore ServiceRequest Profile",
+      "ValueSet-il-core-procedure-reason.html" : "IL Core procedure Reason"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-procedure-reason",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreProcedureReason",
+      "title" : "IL Core procedure Reason",
+      "description" : "A list of codes for procedure reasons for the IL Core",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/medical-service-moh",
+        "http://hl7.org/fhir/sid/icd-10",
+        "http://fhir.health.gov.il/cs/icd9il",
+        "http://loinc.org",
+        "http://hl7.org/fhir/sid/icd-10-cm",
+        "http://terminology.hl7.org/CodeSystem/icd-o-3",
+        "http://hl7.org/fhir/sid/icd-9-cm",
+        "http://snomed.info/sct"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-procedure.html" : "ILCore Procedure Profile",
+      "StructureDefinition-il-core-service-request.html" : "ILCore ServiceRequest Profile",
+      "StructureDefinition-il-core-medication-statement.html" : "ILCore MedicationStatement Profile",
+      "StructureDefinition-il-core-medication-request.html" : "ILCore MedicationRequest Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-route-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreRouteCode",
+      "title" : "IL Core Route Code",
+      "description" : "A list of codes for Route for the IL Core",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-allergy-intolerance.html" : "ILCore AllergyIntolerance Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-service-category",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreServiceCategory",
+      "title" : "IL Core ServiceCategory",
+      "description" : "A list of codes for Service Category for the IL Core",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-service-request.html" : "ILCore ServiceRequest Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-service-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreServiceType",
+      "title" : "IL Core Service type",
+      "description" : "A list of codes for Service types for the IL Core",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-encounter.html" : "ILCore Encounter Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-substance",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreSubstance",
+      "title" : "IL Core Substance Codes",
+      "description" : "A list of codes for Substances for the IL Core",
+      "systems" : [
+        "http://www.nlm.nih.gov/research/umls/rxnorm",
+        "http://cosmetics.health.gov.il",
+        "http://www.gs1.org/gtin",
+        "http://snomed.info/sct",
+        "http://israeldrugs.health.gov.il",
+        "http://www.whocc.no/atc",
+        "http://hl7.org/fhir/sid/cvx"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-allergy-intolerance.html" : "ILCore AllergyIntolerance Profile",
+      "ValueSet-il-core-allergy-intolerance-code.html" : "IL Core Allergy Intolerance Code"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-units-of-measure",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreUnitsOfMeasure",
+      "title" : "IL Core Units Of Measure Codes",
+      "description" : "A list of codes for Units Of Measure for the IL Core. <mark>Note:</mark> UCUM code SHALL be used, unless one cannot be found, in which case a SNOMED-CT code SHALL be used",
+      "systems" : ["http://unitsofmeasure.org", "http://snomed.info/sct"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-core-virtual-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreVirtualType",
+      "title" : "IL Core Virtual encounter Type Codes",
+      "description" : "A list of type codes for Virtual Encounters for the IL Core",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-encounter.html" : "ILCore Encounter Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/il-religion-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreReligionCode",
+      "title" : "IL Core Religion Code",
+      "description" : "A list of codes for Religion for the IL Core",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+        "http://fhir.health.gov.il/cs/il-core-religion-code"
+      ]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/immunization-body-site",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ImmunizationBodySite",
+      "title" : "Immunization Observation Body Site list",
+      "description" : "All codes from SNOMED CT describing body sites for Immunization Observation",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization.html" : "ILCore Immunization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/immunization-side-effect",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ImmunizationSideEffects",
+      "title" : "Immunization side-effect codes",
+      "description" : "Codes from SNOMED CT detailing possible immunization-side-effects for ILCoreImmunizationReactionObservation profile",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization-reaction-observation.html" : "ILCore ImmunizationReactionObservation Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/institution-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "InstitutionTypeMoH",
+      "title" : "סוג מוסד לפי רישוי משרד הבריאות",
+      "description" : "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות",
+      "systems" : ["http://fhir.health.gov.il/cs/institution-type-moh"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-organization.html" : "ILCore Organization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/israel-hmo",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "IsraelHMO",
+      "title" : "Israeli Health Management Organization (קופת חולים)",
+      "description" : "A code classifying Health Management Organizations",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/paying-entity-moh",
+        "https://terminology.hl7.org/1.0.0/CodeSystem-v3-NullFlavor.html"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-ext-il-hmo.html" : "Ext: Israel Health Management Organization (קופת חולים)"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/medical-service-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "MedicalServiceMoH",
+      "title" : "קוד מוצר או שירות",
+      "description" : "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש",
+      "systems" : ["http://fhir.health.gov.il/cs/medical-service-moh"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/moh-admit-source",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "MoHAdmitSource",
+      "title" : "MoH Admit Source Codes",
+      "description" : "Codes for admit source according to MoH catalogue",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/patient-admit-source-moh",
+        "http://terminology.hl7.org/CodeSystem/admit-source"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-encounter.html" : "ILCore Encounter Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/moh-medication-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "MoHMedicationCode",
+      "title" : "MoH Medication Code",
+      "description" : "Codes for medications according to MoH catalogue",
+      "systems" : ["http://israeldrugs.health.gov.il"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/organization-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "OrganizationType",
+      "title" : "Organization Type",
+      "description" : "SNOMED based value set of recommended types of organizations and organization units",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-organization.html" : "ILCore Organization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/passport-uri",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PassportUri",
+      "title" : "Passport URIs",
+      "description" : "A country specific URI for passport numbers",
+      "systems" : ["urn:ietf:rfc:3986"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-practitioner.html" : "ILCore Practitioner Profile",
+      "StructureDefinition-il-core-patient.html" : "ILCore Patient Profile",
+      "StructureDefinition-il-core-related-person.html" : "ILCore RelatedPerson Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/patient-admit-source-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PatientAdmitSourceMoH",
+      "title" : "Patient Admit Source MoH",
+      "description" : "Moh Codes for Patient Admit Source",
+      "systems" : ["http://fhir.health.gov.il/cs/patient-admit-source-moh"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/patient-relationship-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCorePatientRelationshipType",
+      "title" : "IL Core Patient Relationship Type codes",
+      "description" : "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "http://terminology.hl7.org/CodeSystem/v2-0131"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-related-person.html" : "ILCore RelatedPerson Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/patient-release-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PatientRealeaseTypeMoH",
+      "title" : "Patient Realease Type MoH",
+      "description" : "Moh Codes for Patient Realease Type",
+      "systems" : ["http://fhir.health.gov.il/cs/patient-release-type-moh"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-encounter.html" : "ILCore Encounter Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/patient-visit-reason-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PatientVisitReasonMoH",
+      "title" : "Patient Visit Reason MoH",
+      "description" : "Moh Codes for Patient Visit Reason",
+      "systems" : ["http://fhir.health.gov.il/cs/patient-visit-reason-moh"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-encounter.html" : "ILCore Encounter Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/practitioner-advanced-course-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerAdvancedCourseMoH",
+      "title" : "קוד קורס על בסיסי לעוסק בסיעוד",
+      "description" : "קוד קורס על בסיסי לעוסק בסיעוד לפי רישוי משרד הבריאות",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-practitioner.html" : "ILCore Practitioner Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/practitioner-certificate-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerCertificateType",
+      "title" : "Practitioner Certificate Types",
+      "description" : "A list of codes for certificate types for all medical practitioners",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh",
+        "http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa"
+      ],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-practitioner.html" : "ILCore Practitioner Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/practitioner-education-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerEducationMoH",
+      "title" : "קוד מומחיות לעוסק בבריאות",
+      "description" : "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות",
+      "systems" : ["http://fhir.health.gov.il/cs/practitioner-education-moh"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerExpertiseMoH",
+      "title" : "קוד מומחיות לעוסק בבריאות",
+      "description" : "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות",
+      "systems" : ["http://fhir.health.gov.il/cs/practitioner-expertise-moh"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-practitioner.html" : "ILCore Practitioner Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/practitioner-nurse-profession-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerNurseProfessionMoH",
+      "title" : "קוד מקצוע לעוסק בסיעוד",
+      "description" : "קוד מקצוע לעוסק בסיעוד לפי רישוי משרד הבריאות",
+      "systems" : ["http://fhir.health.gov.il/cs/practitioner-profession-moh"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-practitioner.html" : "ILCore Practitioner Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/practitioner-profession-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerProfessionMoH",
+      "title" : "קוד מקצוע לעוסק בבריאות",
+      "description" : "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות. שימו לב: מקצועות הסיעוד הוחרגו מרשימה זו ונמצאים ברשימה נפרדת",
+      "systems" : ["http://fhir.health.gov.il/cs/practitioner-profession-moh"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-practitioner.html" : "ILCore Practitioner Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/reason-not-done",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ReasonNotDone",
+      "title" : "statusReason codes for Immunization profile",
+      "description" : "Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization.html" : "ILCore Immunization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/statistical-area-uri",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "StatisticalAreaUri",
+      "title" : "Israeli statistical area (אג\"ס) URI",
+      "description" : "URI's of statistical area identifiers. NOTE: When using CBS-statistical area numbers, use as directed in the statistical-area NamingSystem - i.e.,: 4-digit citiy code + 3-digit statistical area code. See [here](https://simplifier.net/ilcore/cbs-statistical-area)",
+      "systems" : ["urn:ietf:rfc:3986"],
+      "uses" : {
+      },
+      "StructureDefinition-ext-statistical-area.html" : "Ext: Statistical Area"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/target-disease",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "TargetDisease",
+      "title" : "Target Disease Codes",
+      "description" : "SNOMED based valueset of all Disease caused by microorganism or bacterial toxin",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization.html" : "ILCore Immunization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/tofes17-error-codes",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "Tofes17ErrorCodes",
+      "title" : "Tofes17 Error Codes",
+      "description" : "קודי שגיאה לתהליכים הקשורים לטופס 17",
+      "systems" : [
+        "http://fhir.health.gov.il/cs/il-core-error-code",
+        "http://fhir.health.gov.il/cs/moh-tofes17-issue-code"
+      ]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/tofes17-reject-codes",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "Tofes17RejectCodes",
+      "title" : "Tofes17 Reject Codes",
+      "description" : "קודי שגיאה לתהליכים הקשורים לטופס 17",
+      "systems" : ["http://fhir.health.gov.il/cs/moh-tofes17-issue-code"]
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/vaccine-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "VaccineCode",
+      "title" : "Vaccine Codes",
+      "description" : "A list of SNOMED codes for vaccines",
+      "systems" : ["http://snomed.info/sct"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization.html" : "ILCore Immunization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/vaccine-product-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "VaccineProductCode",
+      "title" : "Vaccine Product Codes",
+      "description" : "A list of codes for vaccine products from atc, YARPA and cvx codeSystems",
+      "systems" : ["http://www.whocc.no/atc", "http://hl7.org/fhir/sid/cvx"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization.html" : "ILCore Immunization Profile"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/ValueSet/yarpa-medication-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "YarpaMedicationCode",
+      "title" : "Yarpa Medication Code",
+      "description" : "Codes for medications according to 'Yarpa' catalogue",
+      "systems" : ["http://yarpa.co.il/catalog"]
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/additional-instruction-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdditionalDosageInstructions",
+      "title" : "SNOMED CT Additional Dosage Instructions",
+      "description" : "This value set includes all SNOMED CT Additional Dosage Instructions.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.95"],
+      "sources" : ["2.16.840.1.113883.4.642.3.95"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-dosage.html" : "ILCore Dosage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/administration-method-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAdministrationMethodCodes",
+      "title" : "SNOMED CT Administration Method Codes",
+      "description" : "This value set includes some method codes from SNOMED CT - provided as an exemplar",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.97"],
+      "sources" : ["2.16.840.1.113883.4.642.3.97"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-administration.html" : "ILCore MedicationAdministration Profile",
+      "StructureDefinition-il-core-dosage.html" : "ILCore Dosage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/age-units",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "CommonUCUMCodesForAge",
+      "title" : "Common UCUM Codes for Age",
+      "description" : "Unified Code for Units of Measure (UCUM). This value set includes all UCUM codes",
+      "systems" : ["http://unitsofmeasure.org"],
+      "oids" : ["2.16.840.1.113883.4.642.3.19"],
+      "sources" : ["2.16.840.1.113883.4.642.3.19"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-observation.html" : "ILCore Observation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/approach-site-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTAnatomicalStructureForAdministrationSiteCodes",
+      "title" : "SNOMED CT Anatomical Structure for Administration Site Codes",
+      "description" : "This value set includes Anatomical Structure codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.346"],
+      "sources" : ["2.16.840.1.113883.4.642.3.346"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-administration.html" : "ILCore MedicationAdministration Profile",
+      "StructureDefinition-il-core-dosage.html" : "ILCore Dosage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/body-site",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTBodyStructures",
+      "title" : "SNOMED CT Body Structures",
+      "description" : "This value set includes all codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 442083009 (Anatomical or acquired body site (body structure)).",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.141"],
+      "sources" : ["2.16.840.1.113883.4.642.3.141"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization-reaction-observation.html" : "ILCore ImmunizationReactionObservation Profile",
+      "StructureDefinition-il-core-procedure.html" : "ILCore Procedure Profile",
+      "StructureDefinition-il-core-observation.html" : "ILCore Observation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/dose-rate-type",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "DoseAndRateType",
+      "title" : "DoseAndRateType",
+      "description" : "The kind of dose or rate specified.",
+      "systems" : ["http://terminology.hl7.org/CodeSystem/dose-rate-type"],
+      "oids" : ["2.16.840.1.113883.4.642.3.981"],
+      "sources" : ["2.16.840.1.113883.4.642.3.981"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-dosage.html" : "ILCore Dosage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/immunization-route",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ImmunizationRouteCodes",
+      "title" : "Immunization Route Codes",
+      "description" : "The value set to instantiate this attribute should be drawn from a terminologically robust code system that consists of or contains concepts to support describing the administrative routes used during vaccination. This value set is provided as a suggestive example.",
+      "systems" : [
+        "http://terminology.hl7.org/CodeSystem/v3-RouteOfAdministration"
+      ],
+      "oids" : ["2.16.840.1.113883.4.642.3.289"],
+      "sources" : ["2.16.840.1.113883.4.642.3.289"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-immunization.html" : "ILCore Immunization Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-as-needed-reason",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTMedicationAsNeededReasonCodes",
+      "title" : "SNOMED CT Medication As Needed Reason Codes",
+      "description" : "This value set includes all clinical findings from SNOMED CT - provided as an exemplar value set.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.96"],
+      "sources" : ["2.16.840.1.113883.4.642.3.96"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-dosage.html" : "ILCore Dosage Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/medication-form-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTFormCodes",
+      "title" : "SNOMED CT Form Codes",
+      "description" : "This value set includes all dose form codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.374"],
+      "sources" : ["2.16.840.1.113883.4.642.3.374"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication.html" : "ILCore Medication Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/observation-methods",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "ObservationMethods",
+      "title" : "Observation Methods",
+      "description" : "Observation Method codes from [SNOMED CT](http://snomed.info/sct) where concept is-a 272394005 (Technique (qualifier value)) or is-a 129264002 (Action (qualifier value)) or is-a 386053000 (Evaluation procedure(procedure))",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.395"],
+      "sources" : ["2.16.840.1.113883.4.642.3.395"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-observation.html" : "ILCore Observation Profile"
+    },
+    {
+      "url" : "http://hl7.org/fhir/ValueSet/route-codes",
+      "version" : "4.0.1",
+      "status" : "draft",
+      "name" : "SNOMEDCTRouteCodes",
+      "title" : "SNOMED CT Route Codes",
+      "description" : "This value set includes all Route codes from SNOMED CT - provided as an exemplar.",
+      "systems" : ["http://snomed.info/sct"],
+      "oids" : ["2.16.840.1.113883.4.642.3.98"],
+      "sources" : ["2.16.840.1.113883.4.642.3.98"],
+      "uses" : {
+      },
+      "StructureDefinition-il-core-medication-administration.html" : "ILCore MedicationAdministration Profile",
+      "StructureDefinition-il-core-dosage.html" : "ILCore Dosage Profile"
+    }
+  ]
+}

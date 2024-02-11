@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="hebrew-date-day"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/hebrew-date-day</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="hebrew-date-day-1"> </a></td><td>א'</td></tr><tr><td style="white-space:nowrap">2<a name="hebrew-date-day-2"> </a></td><td>ב'</td></tr><tr><td style="white-space:nowrap">3<a name="hebrew-date-day-3"> </a></td><td>ג'</td></tr><tr><td style="white-space:nowrap">4<a name="hebrew-date-day-4"> </a></td><td>ד'</td></tr><tr><td style="white-space:nowrap">5<a name="hebrew-date-day-5"> </a></td><td>ה'</td></tr><tr><td style="white-space:nowrap">6<a name="hebrew-date-day-6"> </a></td><td>ו'</td></tr><tr><td style="white-space:nowrap">7<a name="hebrew-date-day-7"> </a></td><td>ז'</td></tr><tr><td style="white-space:nowrap">8<a name="hebrew-date-day-8"> </a></td><td>ח'</td></tr><tr><td style="white-space:nowrap">9<a name="hebrew-date-day-9"> </a></td><td>ט'</td></tr><tr><td style="white-space:nowrap">10<a name="hebrew-date-day-10"> </a></td><td>י'</td></tr><tr><td style="white-space:nowrap">11<a name="hebrew-date-day-11"> </a></td><td>י&quot;א</td></tr><tr><td style="white-space:nowrap">12<a name="hebrew-date-day-12"> </a></td><td>י&quot;ב</td></tr><tr><td style="white-space:nowrap">13<a name="hebrew-date-day-13"> </a></td><td>י&quot;ג</td></tr><tr><td style="white-space:nowrap">14<a name="hebrew-date-day-14"> </a></td><td>י&quot;ד</td></tr><tr><td style="white-space:nowrap">15<a name="hebrew-date-day-15"> </a></td><td>ט&quot;ו</td></tr><tr><td style="white-space:nowrap">16<a name="hebrew-date-day-16"> </a></td><td>ט&quot;ז</td></tr><tr><td style="white-space:nowrap">17<a name="hebrew-date-day-17"> </a></td><td>י&quot;ז</td></tr><tr><td style="white-space:nowrap">18<a name="hebrew-date-day-18"> </a></td><td>י&quot;ח</td></tr><tr><td style="white-space:nowrap">19<a name="hebrew-date-day-19"> </a></td><td>י&quot;ט</td></tr><tr><td style="white-space:nowrap">20<a name="hebrew-date-day-20"> </a></td><td>כ'</td></tr><tr><td style="white-space:nowrap">21<a name="hebrew-date-day-21"> </a></td><td>כ&quot;א</td></tr><tr><td style="white-space:nowrap">22<a name="hebrew-date-day-22"> </a></td><td>כ&quot;ב</td></tr><tr><td style="white-space:nowrap">23<a name="hebrew-date-day-23"> </a></td><td>כ&quot;ג</td></tr><tr><td style="white-space:nowrap">24<a name="hebrew-date-day-24"> </a></td><td>כ&quot;ד</td></tr><tr><td style="white-space:nowrap">25<a name="hebrew-date-day-25"> </a></td><td>כ&quot;ה</td></tr><tr><td style="white-space:nowrap">26<a name="hebrew-date-day-26"> </a></td><td>כ&quot;ו</td></tr><tr><td style="white-space:nowrap">27<a name="hebrew-date-day-27"> </a></td><td>כ&quot;ז</td></tr><tr><td style="white-space:nowrap">28<a name="hebrew-date-day-28"> </a></td><td>כ&quot;ח</td></tr><tr><td style="white-space:nowrap">29<a name="hebrew-date-day-29"> </a></td><td>כ&quot;ט</td></tr><tr><td style="white-space:nowrap">30<a name="hebrew-date-day-30"> </a></td><td>ל'</td></tr></table></div>
+  </text>
+  <url value="http://fhir.health.gov.il/cs/hebrew-date-day"/>
+  <version value="0.13.2"/>
+  <name value="HebrewDateDay"/>
+  <title value="Hebrew Date Day"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for Hebrew date days"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://fhir.health.gov.il/ValueSet/hebrew-date-day"/>
+  <content value="complete"/>
+  <count value="30"/>
+  <concept>
+    <code value="1"/>
+    <display value="א'"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="ב'"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="ג'"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="ד'"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="ה'"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="ו'"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="ז'"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="ח'"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="ט'"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="י'"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="י&quot;א"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="י&quot;ב"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="י&quot;ג"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="י&quot;ד"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="ט&quot;ו"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="ט&quot;ז"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="י&quot;ז"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="י&quot;ח"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="י&quot;ט"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="כ'"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="כ&quot;א"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="כ&quot;ב"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="כ&quot;ג"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="כ&quot;ד"/>
+  </concept>
+  <concept>
+    <code value="25"/>
+    <display value="כ&quot;ה"/>
+  </concept>
+  <concept>
+    <code value="26"/>
+    <display value="כ&quot;ו"/>
+  </concept>
+  <concept>
+    <code value="27"/>
+    <display value="כ&quot;ז"/>
+  </concept>
+  <concept>
+    <code value="28"/>
+    <display value="כ&quot;ח"/>
+  </concept>
+  <concept>
+    <code value="29"/>
+    <display value="כ&quot;ט"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="ל'"/>
+  </concept>
+</CodeSystem>

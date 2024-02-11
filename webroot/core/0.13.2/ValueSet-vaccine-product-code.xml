@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="vaccine-product-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html"><code>http://hl7.org/fhir/sid/cvx</code></a></li><li>Include codes from <a href="http://www.whocc.no/atc"><code>http://www.whocc.no/atc</code></a> where concept  is-a  J07 (VACCINES)</li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/vaccine-product-code"/>
+  <version value="0.13.2"/>
+  <name value="VaccineProductCode"/>
+  <title value="Vaccine Product Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for vaccine products from atc, YARPA and cvx codeSystems"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/cvx"/>
+    </include>
+    <include>
+      <system value="http://www.whocc.no/atc"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="J07"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

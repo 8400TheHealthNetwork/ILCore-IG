@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="patient-release-type-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/patient-release-type-moh</code> provides some codes <b>that are example only</b>:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">-999<a name="patient-release-type-moh--999"> </a></td><td>לא ידוע</td></tr><tr><td style="white-space:nowrap">0<a name="patient-release-type-moh-0"> </a></td><td>לא רשום</td></tr><tr><td style="white-space:nowrap">1<a name="patient-release-type-moh-1"> </a></td><td>שחרור למוסד אחר</td></tr><tr><td style="white-space:nowrap">2<a name="patient-release-type-moh-2"> </a></td><td>שחרור הביתה</td></tr><tr><td style="white-space:nowrap">3<a name="patient-release-type-moh-3"> </a></td><td>פטירה</td></tr><tr><td style="white-space:nowrap">4<a name="patient-release-type-moh-4"> </a></td><td>ביטול ביקור</td></tr><tr><td style="white-space:nowrap">5<a name="patient-release-type-moh-5"> </a></td><td>ביטול אשפוז</td></tr><tr><td style="white-space:nowrap">6<a name="patient-release-type-moh-6"> </a></td><td>שחרור ממיון לאשפוז</td></tr><tr><td style="white-space:nowrap">7<a name="patient-release-type-moh-7"> </a></td><td>עזב על דעת עצמו</td></tr><tr><td style="white-space:nowrap">8<a name="patient-release-type-moh-8"> </a></td><td>התקבל מת</td></tr><tr><td style="white-space:nowrap">9<a name="patient-release-type-moh-9"> </a></td><td>לא ידוע</td></tr><tr><td style="white-space:nowrap">10<a name="patient-release-type-moh-10"> </a></td><td>עזב עם הגיליון</td></tr><tr><td style="white-space:nowrap">106<a name="patient-release-type-moh-106"> </a></td><td>העברה למחלקה אחרת בבי&quot;ח הזה</td></tr><tr><td style="white-space:nowrap">11<a name="patient-release-type-moh-11"> </a></td><td>חולה אונקולוגי</td></tr><tr><td style="white-space:nowrap">14<a name="patient-release-type-moh-14"> </a></td><td>הועבר להוסטל</td></tr><tr><td style="white-space:nowrap">15<a name="patient-release-type-moh-15"> </a></td><td>שוחרר לטיפול ביתי</td></tr><tr><td style="white-space:nowrap">17<a name="patient-release-type-moh-17"> </a></td><td>שוחרר למרפאה</td></tr><tr><td style="white-space:nowrap">18<a name="patient-release-type-moh-18"> </a></td><td>ביטול לאחר קבלה ותשלום במיון</td></tr><tr><td style="white-space:nowrap">60<a name="patient-release-type-moh-60"> </a></td><td>אחר</td></tr><tr><td style="white-space:nowrap">94<a name="patient-release-type-moh-94"> </a></td><td>הסבה אחר</td></tr><tr><td style="white-space:nowrap">95<a name="patient-release-type-moh-95"> </a></td><td>הסבה למוסד צבאי</td></tr><tr><td style="white-space:nowrap">96<a name="patient-release-type-moh-96"> </a></td><td>הסבה העברה למחלקה</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-08"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/patient-release-type-moh"/>
+  <version value="0.13.2"/>
+  <name value="PatientRealeaseTypeMoH"/>
+  <title value="Patient Realease Type MoH"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Moh Codes for Patient Realease Type"/>
+  <caseSensitive value="false"/>
+  <content value="example"/>
+  <concept>
+    <code value="-999"/>
+    <display value="לא ידוע"/>
+  </concept>
+  <concept>
+    <code value="0"/>
+    <display value="לא רשום"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="שחרור למוסד אחר"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="שחרור הביתה"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="פטירה"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="ביטול ביקור"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="ביטול אשפוז"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="שחרור ממיון לאשפוז"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="עזב על דעת עצמו"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="התקבל מת"/>
+  </concept>
+  <concept>
+    <code value="9"/>
+    <display value="לא ידוע"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="עזב עם הגיליון"/>
+  </concept>
+  <concept>
+    <code value="106"/>
+    <display value="העברה למחלקה אחרת בבי&quot;ח הזה"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="חולה אונקולוגי"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="הועבר להוסטל"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="שוחרר לטיפול ביתי"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="שוחרר למרפאה"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="ביטול לאחר קבלה ותשלום במיון"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="אחר"/>
+  </concept>
+  <concept>
+    <code value="94"/>
+    <display value="הסבה אחר"/>
+  </concept>
+  <concept>
+    <code value="95"/>
+    <display value="הסבה למוסד צבאי"/>
+  </concept>
+  <concept>
+    <code value="96"/>
+    <display value="הסבה העברה למחלקה"/>
+  </concept>
+</CodeSystem>

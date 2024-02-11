@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "institution-type-moh",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-institution-type-moh.html\"><code>http://fhir.health.gov.il/cs/institution-type-moh</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/institution-type-moh",
+  "version" : "0.13.2",
+  "name" : "InstitutionTypeMoH",
+  "title" : "סוג מוסד לפי רישוי משרד הבריאות",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.health.gov.il/cs/institution-type-moh"
+    }]
+  }
+}

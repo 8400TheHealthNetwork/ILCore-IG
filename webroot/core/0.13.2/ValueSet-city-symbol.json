@@ -1,0 +1,36 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "city-symbol",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include all codes defined in <a href=\"CodeSystem-city-symbol.html\"><code>http://fhir.health.gov.il/cs/city-symbol</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/city-symbol",
+  "version" : "0.13.2",
+  "name" : "CitySymbol",
+  "title" : "City Symbol (סמל ישוב)",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "City classification according to the Israeli Postal Company city-symbol coding system",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.health.gov.il/cs/city-symbol"
+    }]
+  }
+}

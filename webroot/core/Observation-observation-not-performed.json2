@@ -1,0 +1,31 @@
+{
+  "resourceType" : "Observation",
+  "id" : "observation-not-performed",
+  "meta" : {
+    "profile" : ["http://fhir.health.gov.il/StructureDefinition/il-core-observation"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-not-performed\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-not-performed&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-il-core-observation.html\">ILCore Observation Profile</a></p></div><p><b>status</b>: unknown</p><p><b>code</b>: Acyclovir [Susceptibility] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#1-8)</span></p><p><b>dataAbsentReason</b>: not performed medical reason <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-il-core-not-performed-reason.html\">IL Core Not Perfomed Reasons</a>#not-performed-medical-reason; <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-data-absent-reason.html\">DataAbsentReason</a>#not-performed &quot;Not Performed&quot;)</span></p></div>"
+  },
+  "status" : "unknown",
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "1-8",
+      "display" : "Acyclovir [Susceptibility]"
+    }]
+  },
+  "dataAbsentReason" : {
+    "coding" : [{
+      "system" : "http://fhir.health.gov.il/cs/il-core-not-performed-reason",
+      "code" : "not-performed-medical-reason",
+      "display" : "not performed medical reason"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/data-absent-reason",
+      "code" : "not-performed",
+      "display" : "Not Performed"
+    }]
+  }
+}

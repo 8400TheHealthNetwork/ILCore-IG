@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="il-core-premium-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-coverage-premium-type</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">individ-month<a name="il-core-premium-type-individ-month"> </a></td><td>Family monthly premium</td><td>A premium paid for an individual</td></tr><tr><td style="white-space:nowrap">family-month<a name="il-core-premium-type-family-month"> </a></td><td>Obligation from health basket</td><td>A premium paid for a family. The exact definition of a family isn't part of this code system and can vary between HMOs/Organizations</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-08"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/il-core-coverage-premium-type"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreCoveragePremiumType"/>
+  <title value="IL Core Coverage Premium Type codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for Types of premium payment methods"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://fhir.health.gov.il/ValueSet/il-core-premium-type"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="individ-month"/>
+    <display value="Family monthly premium"/>
+    <definition value="A premium paid for an individual"/>
+  </concept>
+  <concept>
+    <code value="family-month"/>
+    <display value="Obligation from health basket"/>
+    <definition value="A premium paid for a family. The exact definition of a family isn't part of this code system and can vary between HMOs/Organizations"/>
+  </concept>
+</CodeSystem>

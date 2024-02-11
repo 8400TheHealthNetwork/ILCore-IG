@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner-psychologist"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">psychologist with an instructor certificate</div>
+  </text>
+  <identifier>
+    <system value="http://practitioners.health.gov.il/Practitioners"/>
+    <value value="27-1234"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="he"/>
+    </extension>
+    <text value="גב' שרי לוין"/>
+    <family value="לוין"/>
+    <given value="שרי"/>
+    <prefix value="גב'"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="04-44442254"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="DG@example.com"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1980-06-22"/>
+  <qualification>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.health.gov.il/cs/practitioner-profession-moh"/>
+          <code value="27"/>
+          <display value="פסיכולוג"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="http://practitioners.health.gov.il/practitioner-certificate"/>
+      <value value="27-1234"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"/>
+        <code value="2"/>
+        <display value="רשיון קבוע"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.health.gov.il/cs/practitioner-expertise-moh"/>
+          <code value="21"/>
+          <display value="הרדמה"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="http://fhir.health.gov.il/identifier/practitioner-expertise"/>
+      <value value="123445"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"/>
+        <code value="5"/>
+        <display value="תעודת מומחה"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

@@ -1,0 +1,74 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Encounter/community-consultation> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "community-consultation"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Community Consultation</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.community-emr.co.il/identifier/entity-id/encounter"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "234234234" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://fhir.health.gov.il/cs/il-core-encounter-class"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "COMMUNITY-OR-HMO" ] ;
+     fhir:display [ fhir:v "Community Care/HMO setting" ]
+  ] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       a sct:11429006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "11429006" ] ;
+       fhir:display [ fhir:v "Consultation" ]
+     ] )
+  ] ) ; # 
+  fhir:serviceType [
+     fhir:coding ( [
+       a sct:310116007 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "310116007" ] ;
+       fhir:display [ fhir:v "Psychiatry service" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-israeli-with-statistical-area> ;
+     fhir:reference [ fhir:v "Patient/patient-israeli-with-statistical-area" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-md> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-md" ]
+     ]
+  ] ) ; # 
+  fhir:serviceProvider [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/legal-entity"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "589902279" ]
+     ] ;
+     fhir:display [ fhir:v "מכבי שירותי בריאות" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

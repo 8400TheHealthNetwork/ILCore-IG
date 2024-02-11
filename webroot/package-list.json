@@ -1,0 +1,25 @@
+﻿{
+  "list" : [
+    {
+      "version" : "current",
+      "path" : "https://build.fhir.org/ig/il/core",
+      "status" : "ci-build",
+      "sequence" : "ci-build"
+    },
+    {
+      "version" : "0.13.2",
+      "path" : "http://fhir.health.gov.il/core/0.13.2",
+      "status" : "draft",
+      "sequence" : "draft-1",
+      "fhirversion" : "4.0.1",
+      "date" : "2023-12-04",
+      "current" : true,
+      "desc" : "This is the implementation guide (IG) for the Israeli FHIR Core"
+    }
+  ],
+  "package-id" : "health.gov.il.fhir.core",
+  "canonical" : "http://fhir.health.gov.il",
+  "title" : "IL-Core IG",
+  "category" : "National Base",
+  "introduction" : "This is the implementation guide (IG) for the Israeli FHIR Core"
+}

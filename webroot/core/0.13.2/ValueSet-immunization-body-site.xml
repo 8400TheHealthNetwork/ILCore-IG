@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="immunization-body-site"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/279549004">279549004</a></td><td>Nasal cavity structure</td></tr><tr><td><a href="http://snomed.info/id/46862004">46862004</a></td><td>Structure of buttock</td></tr><tr><td><a href="http://snomed.info/id/723979003">723979003</a></td><td>Structure of left buttock</td></tr><tr><td><a href="http://snomed.info/id/61396006">61396006</a></td><td>Structure of left thigh</td></tr><tr><td><a href="http://snomed.info/id/368208006">368208006</a></td><td>Structure of left upper arm</td></tr><tr><td><a href="http://snomed.info/id/74262004">74262004</a></td><td>Structure of oral cavity</td></tr><tr><td><a href="http://snomed.info/id/723980000">723980000</a></td><td>Structure of right buttock</td></tr><tr><td><a href="http://snomed.info/id/11207009">11207009</a></td><td>Structure of right thigh</td></tr><tr><td><a href="http://snomed.info/id/368209003">368209003</a></td><td>Structure of right upper arm</td></tr><tr><td><a href="http://snomed.info/id/69695003">69695003</a></td><td>Structure of stomach</td></tr><tr><td><a href="http://snomed.info/id/68367000">68367000</a></td><td>Structure of thigh</td></tr><tr><td><a href="http://snomed.info/id/40983000">40983000</a></td><td>Structure of upper extremity between shoulder and elbow</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/immunization-body-site"/>
+  <version value="0.13.2"/>
+  <name value="ImmunizationBodySite"/>
+  <title value="Immunization Observation Body Site list"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="All codes from SNOMED CT describing body sites for Immunization Observation"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="279549004"/>
+        <display value="Nasal cavity structure"/>
+      </concept>
+      <concept>
+        <code value="46862004"/>
+        <display value="Structure of buttock"/>
+      </concept>
+      <concept>
+        <code value="723979003"/>
+        <display value="Structure of left buttock"/>
+      </concept>
+      <concept>
+        <code value="61396006"/>
+        <display value="Structure of left thigh"/>
+      </concept>
+      <concept>
+        <code value="368208006"/>
+        <display value="Structure of left upper arm"/>
+      </concept>
+      <concept>
+        <code value="74262004"/>
+        <display value="Structure of oral cavity"/>
+      </concept>
+      <concept>
+        <code value="723980000"/>
+        <display value="Structure of right buttock"/>
+      </concept>
+      <concept>
+        <code value="11207009"/>
+        <display value="Structure of right thigh"/>
+      </concept>
+      <concept>
+        <code value="368209003"/>
+        <display value="Structure of right upper arm"/>
+      </concept>
+      <concept>
+        <code value="69695003"/>
+        <display value="Structure of stomach"/>
+      </concept>
+      <concept>
+        <code value="68367000"/>
+        <display value="Structure of thigh"/>
+      </concept>
+      <concept>
+        <code value="40983000"/>
+        <display value="Structure of upper extremity between shoulder and elbow"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "moh-admit-source",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-patient-admit-source-moh.html\"><code>http://fhir.health.gov.il/cs/patient-admit-source-moh</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-admit-source.html\"><code>http://terminology.hl7.org/CodeSystem/admit-source</code></a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/moh-admit-source",
+  "version" : "0.13.2",
+  "name" : "MoHAdmitSource",
+  "title" : "MoH Admit Source Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for admit source according to MoH catalogue",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.health.gov.il/cs/patient-admit-source-moh"
+    },
+    {
+      "system" : "http://terminology.hl7.org/CodeSystem/admit-source"
+    }]
+  }
+}

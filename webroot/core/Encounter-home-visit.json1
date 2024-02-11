@@ -1,0 +1,72 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "home-visit",
+  "meta" : {
+    "profile" : ["http://fhir.health.gov.il/StructureDefinition/il-core-encounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Home Visit</div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.bait-balev.avot.co.il/identifier/entity-id/encounter",
+    "value" : "123241"
+  }],
+  "status" : "in-progress",
+  "class" : {
+    "system" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "code" : "HH",
+    "display" : "home health"
+  },
+  "serviceType" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "439708006",
+      "display" : "Home visit (procedure)"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-israeli-with-statistical-area"
+  },
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PPRF",
+        "display" : "primary performer"
+      }]
+    }],
+    "individual" : {
+      "reference" : "Practitioner/practitioner-md"
+    }
+  }],
+  "diagnosis" : [{
+    "condition" : {
+      "reference" : "Condition/condition-type-1-diabetes"
+    },
+    "use" : {
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/diagnosis-role",
+        "code" : "AD",
+        "display" : "Admission diagnosis"
+      }]
+    },
+    "rank" : 1
+  }],
+  "hospitalization" : {
+    "admitSource" : {
+      "coding" : [{
+        "system" : "http://fhir.health.gov.il/cs/patient-admit-source-moh",
+        "code" : "11",
+        "display" : "מכבי"
+      }]
+    }
+  },
+  "serviceProvider" : {
+    "identifier" : {
+      "system" : "http://institutions.health.gov.il/Institutions",
+      "value" : "21702"
+    },
+    "display" : "בית בלב ראשון לציון"
+  }
+}

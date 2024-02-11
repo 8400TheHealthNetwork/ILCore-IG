@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Practitioner xmlns="http://hl7.org/fhir">
+  <id value="practitioner-nurse-no-expertise-with-advanced-courses"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">אחות מוסמכת ללא מומחיות עם קורסים על בסיסיים</div>
+  </text>
+  <identifier>
+    <system value="http://practitioners.health.gov.il/Nurses"/>
+    <value value="118699"/>
+    <period>
+      <start value="1991-10-14"/>
+    </period>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="he"/>
+    </extension>
+    <text value="אביבה לוזון"/>
+    <family value="לוזון"/>
+    <given value="אביבה"/>
+    <prefix value="גב'"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="02-5334295"/>
+    <use value="work"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1965-11-30"/>
+  <qualification>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.health.gov.il/cs/practitioner-profession-moh"/>
+          <code value="101"/>
+          <display value="אח/ות מוסמכ/ת"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="http://practitioners.health.gov.il/Nurses"/>
+      <value value="118699"/>
+      <period>
+        <start value="1991-10-14"/>
+      </period>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"/>
+        <code value="26"/>
+        <display value="תעודת רישום"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"/>
+          <code value="18"/>
+          <display value="אונקולוגיה"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="http://fhir.health.gov.il/identifier/nurse-advanced-course"/>
+      <value value="18-118699"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"/>
+        <code value="110"/>
+        <display value="תעודת רישום קורס ע ב"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"/>
+          <code value="65"/>
+          <display value="הדרכה קלינית"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="http://fhir.health.gov.il/identifier/nurse-advanced-course"/>
+      <value value="65-118699"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"/>
+        <code value="110"/>
+        <display value="תעודת רישום קורס ע ב"/>
+      </coding>
+    </code>
+  </qualification>
+  <qualification>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"/>
+          <code value="109"/>
+          <display value="רישום מרשמי המשך על ידי אחות"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <identifier>
+      <system value="http://fhir.health.gov.il/identifier/nurse-advanced-course"/>
+      <value value="109-118699"/>
+    </identifier>
+    <code>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"/>
+        <code value="110"/>
+        <display value="תעודת רישום קורס ע ב"/>
+      </coding>
+    </code>
+  </qualification>
+</Practitioner>

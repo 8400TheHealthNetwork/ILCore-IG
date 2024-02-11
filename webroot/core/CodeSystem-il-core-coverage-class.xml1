@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="il-core-coverage-class"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-coverage-class</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">OBL-EXT<a name="il-core-coverage-class-OBL-EXT"> </a></td><td>Obligation from HMO extended healthcare</td><td>Obligation from an HMO extended healthcare coverage</td></tr><tr><td style="white-space:nowrap">OBL-BASKET<a name="il-core-coverage-class-OBL-BASKET"> </a></td><td>Obligation from health basket</td><td>Obligation from an Israel national health basket</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-08"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/il-core-coverage-class"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreCoverageClass"/>
+  <title value="IL Core Coverage Class codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for Coverage classes"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://fhir.health.gov.il/ValueSet/il-core-coverage-class"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="OBL-EXT"/>
+    <display value="Obligation from HMO extended healthcare"/>
+    <definition value="Obligation from an HMO extended healthcare coverage"/>
+  </concept>
+  <concept>
+    <code value="OBL-BASKET"/>
+    <display value="Obligation from health basket"/>
+    <definition value="Obligation from an Israel national health basket"/>
+  </concept>
+</CodeSystem>

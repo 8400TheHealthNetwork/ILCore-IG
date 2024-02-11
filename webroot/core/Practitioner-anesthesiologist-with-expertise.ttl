@@ -1,0 +1,98 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Practitioner/anesthesiologist-with-expertise> a fhir:Practitioner ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "anesthesiologist-with-expertise"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">anesthesiologist with expertise</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://practitioners.health.gov.il/Practitioners"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "1-1234" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "he" ]
+     ] ) ;
+     fhir:text [ fhir:v "דר' ליאת ברקוביץ" ] ;
+     fhir:family [ fhir:v "ברקוביץ" ] ;
+     fhir:given ( [ fhir:v "ליאת" ] ) ;
+     fhir:prefix ( [ fhir:v "דר'" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "04-6421420" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "DG@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "female"] ; # 
+  fhir:birthDate [ fhir:v "1977-04-01"^^xsd:date] ; # 
+  fhir:qualification ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-profession-moh"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "1" ] ;
+           fhir:display [ fhir:v "רפואה" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://practitioners.health.gov.il/practitioner-certificate"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "1-1234" ] ;
+       fhir:period [
+         fhir:start [ fhir:v "2012-09-06"^^xsd:date ]
+       ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "2" ] ;
+         fhir:display [ fhir:v "רשיון קבוע" ]
+       ] )
+     ]
+  ] [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-expertise-moh"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "21" ] ;
+           fhir:display [ fhir:v "הרדמה" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:identifier ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/practitioner-expertise"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "123445" ]
+     ] ) ;
+     fhir:code [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "5" ] ;
+         fhir:display [ fhir:v "תעודת מומחה" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

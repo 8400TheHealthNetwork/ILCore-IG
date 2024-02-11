@@ -1,0 +1,57 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "IsraelCorePatient",
+  "url": "http://moh.org.il/fhir/CorePatient/ImplementationGuide/IsraelCorePatient",
+  "version": "0.1.0",
+  "name": "IsraelCorePatientImplementationGuide",
+  "title": "Israel Core Patient Implementation Guide",
+  "status": "draft",
+  "contact": [
+    {
+      "name": "Amos Bordowitz",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "amosref1@gmail.com"
+        }
+      ]
+    }
+  ],
+  "description": "An implementation guide for Israel Core Patient",
+  "packageId": "IsraelCorePatient",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "definition": {
+    "resource": [],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": []
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ci-build"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      }
+    ]
+  }
+}

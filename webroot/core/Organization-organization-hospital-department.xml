@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="organization-hospital-department"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">מחלקת אשפוז - פנימיתטרית</div>
+  </text>
+  <identifier>
+    <use value="official"/>
+    <system value="http://fhir.health.gov.il/identifier/moh-hospital-department"/>
+    <value value="12345-abc12"/>
+  </identifier>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://fhir.health.gov.il/cs/department-type-moh"/>
+      <code value="10000"/>
+      <display value="אשפוז - פנימית"/>
+    </coding>
+  </type>
+  <name value="מחלקת אשפוז - פנימיתטרית"/>
+  <telecom>
+    <system value="phone"/>
+    <value value="08-6241010"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <use value="work"/>
+    <type value="physical"/>
+    <text value="ירמיהו 39 ירושלים"/>
+    <line value="ירמיהו 39">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="ירמיהו"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="39"/>
+      </extension>
+    </line>
+    <city value="ירושלים">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="3000"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <postalCode value="9446724"/>
+    <country value="IL"/>
+  </address>
+</Organization>

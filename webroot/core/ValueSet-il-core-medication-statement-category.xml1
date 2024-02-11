@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="il-core-medication-statement-category"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="CodeSystem-il-core-medication-category.html"><code>http://fhir.health.gov.il/cs/il-core-medicationrequest-category</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-il-core-medication-category.html#il-core-medication-category-inpatient">inpatient</a></td><td>Inpatient</td><td>Includes medications to be administered or consumed in an inpatient or acute care setting.</td></tr><tr><td><a href="CodeSystem-il-core-medication-category.html#il-core-medication-category-outpatient">outpatient</a></td><td>Outpatient</td><td>Includes medications to be administered or consumed  in an outpatient setting or ambulatory setting ( for example Hospital outpatient clinics setting, Urgent care settings (e.g. health organization urgent care center, Outpatient Surgery center</td></tr><tr><td><a href="CodeSystem-il-core-medication-category.html#il-core-medication-category-community-hmo">community-hmo</a></td><td>Community Care/HMO</td><td>Includes medications to be administered or consumed  in HMOs (this would include HMO clinics, doctor offices, ect.)</td></tr><tr><td><a href="CodeSystem-il-core-medication-category.html#il-core-medication-category-community-other">community-other</a></td><td>Community Care/Long Term Care/Home</td><td>Includes medications to be administered or consumed  in community care settings  (this would include long term care or nursing homes, hospices,  patient’s home etc.).</td></tr><tr><td><a href="CodeSystem-il-core-medication-category.html#il-core-medication-category-patientspecified">patientspecified</a></td><td>Patient Specified</td><td>Includes statements about medication use, including over the counter medication, provided by the patient, agent or another provider</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreMedicationStatementCategory"/>
+  <title value="ILCore Medication statement Category"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for Medication statement Category"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/il-core-medicationrequest-category"/>
+      <concept>
+        <code value="inpatient"/>
+        <display value="Inpatient"/>
+      </concept>
+      <concept>
+        <code value="outpatient"/>
+        <display value="Outpatient"/>
+      </concept>
+      <concept>
+        <code value="community-hmo"/>
+        <display value="Community Care/HMO"/>
+      </concept>
+      <concept>
+        <code value="community-other"/>
+        <display value="Community Care/Long Term Care/Home"/>
+      </concept>
+      <concept>
+        <code value="patientspecified"/>
+        <display value="Patient Specified"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

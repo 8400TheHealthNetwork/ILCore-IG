@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Procedure/procedure-bloodwork-before-partial-parotidectomy> a fhir:Procedure ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "procedure-bloodwork-before-partial-parotidectomy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-procedure"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-procedure>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Bloodwork 24H before Partial Parotidectomy</div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:396550006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "396550006" ] ;
+       fhir:display [ fhir:v "Blood test (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-with-israeli-id> ;
+     fhir:reference [ fhir:v "Patient/patient-with-israeli-id" ]
+  ] ; # 
+  fhir:performed [
+     fhir:v "2020-02-07"^^xsd:date ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "event"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Reference ;
+           fhir:link <http://fhir.health.gov.il/Procedure/partial-parotidectomy> ;
+           fhir:reference [ fhir:v "Procedure/partial-parotidectomy" ]
+         ]
+       ] [
+         fhir:url [ fhir:v "relationship"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "before-start" ]
+       ] [
+         fhir:url [ fhir:v "offset"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:Duration ;
+           fhir:value [ fhir:v "24"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "hour" ] ;
+           fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "h" ]
+         ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/relative-date"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

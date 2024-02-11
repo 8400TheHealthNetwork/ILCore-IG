@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="partial-parotidectomy"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Partial Parotidectomy</div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="11150009"/>
+      <display value="Partial parotidectomy"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-with-israeli-id"/>
+  </subject>
+  <performedDateTime value="2020-02-07"/>
+</Procedure>

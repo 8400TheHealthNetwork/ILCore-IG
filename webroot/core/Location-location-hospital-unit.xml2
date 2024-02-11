@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-hospital-unit"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Location</b><a name="location-hospital-unit"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Location &quot;location-hospital-unit&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-il-core-location.html">ILCore Location Profile</a></p></div><p><b>identifier</b>: id: 010011</p><p><b>status</b>: active</p><p><b>name</b>: פנימית א' בית חולים רמב&quot;ם</p><p><b>type</b>: Hospital unit <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-RoleCode.html">RoleCode</a>#HU)</span></p><p><b>telecom</b>: ph: 04-7772518(WORK)</p><p><b>address</b>: העליה השנייה 8 חיפה(WORK)</p><h3>Positions</h3><table class="grid"><tr><td style="display: none">-</td><td><b>Longitude</b></td><td><b>Latitude</b></td></tr><tr><td style="display: none">*</td><td>32.232325</td><td>34.253251</td></tr></table><p><b>managingOrganization</b>: <a href="Organization-organization-ministry-of-health.html">Organization/organization-ministry-of-health</a> &quot;משרד הבריאות&quot;</p><h3>HoursOfOperations</h3><table class="grid"><tr><td style="display: none">-</td><td><b>AllDay</b></td></tr><tr><td style="display: none">*</td><td>true</td></tr></table></div>
+  </text>
+  <identifier>
+    <system value="http://rambam.co.il/department"/>
+    <value value="010011"/>
+  </identifier>
+  <status value="active"/>
+  <name value="פנימית א' בית חולים רמב&quot;ם"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HU"/>
+    </coding>
+  </type>
+  <telecom>
+    <system value="phone"/>
+    <value value="04-7772518"/>
+    <use value="work"/>
+  </telecom>
+  <address>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-statistical-area">
+      <valueIdentifier>
+        <system value="http://fhir.health.gov.il/identifier/cbs-statistical-area"/>
+        <value value="4000416"/>
+      </valueIdentifier>
+    </extension>
+    <use value="work"/>
+    <type value="physical"/>
+    <text value="העליה השנייה 8 חיפה"/>
+    <line value="העליה השנייה 8">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="העליה השנייה"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="8"/>
+      </extension>
+    </line>
+    <city value="חיפה">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="4000"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <postalCode value="3109601"/>
+    <country value="IL"/>
+  </address>
+  <position>
+    <longitude value="32.232325"/>
+    <latitude value="34.253251"/>
+  </position>
+  <managingOrganization>
+    <reference value="Organization/organization-ministry-of-health"/>
+  </managingOrganization>
+  <hoursOfOperation>
+    <allDay value="true"/>
+  </hoursOfOperation>
+</Location>

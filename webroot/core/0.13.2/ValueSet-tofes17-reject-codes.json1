@@ -1,0 +1,84 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "tofes17-reject-codes",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-moh-tofes17-issue-code.html\"><code>http://fhir.health.gov.il/cs/moh-tofes17-issue-code</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>pat-not-eligible</td><td>המטופל אינו זכאי להתחייבות</td></tr><tr><td>referred-to-community</td><td>הטיפול יבוצע בקהילה</td></tr><tr><td>not-ambulatory</td><td>השירות המבוקש אינו אמבולטורי</td></tr><tr><td>charge-not-authorized</td><td>ללקוח אין הרשאת חיוב </td></tr><tr><td>service-with-co-payment</td><td>הבקשה כוללת שירות עם השתתפות עצמית</td></tr><tr><td>service-not-covered</td><td>השירות אינו בסל</td></tr><tr><td>age-limit</td><td>קוד השירות מוגבל גיל</td></tr><tr><td>quantity-mismatch</td><td>כמות הטיפולים אינה תואמת את תוכנית הטיפול</td></tr><tr><td>req-not-compliant</td><td>הבקשה להתחייבות אינה תואמת לכללי החיוב</td></tr><tr><td>srv-code-mismatch</td><td>קוד השירות אינו תואם את הטיפול המתוכנן</td></tr><tr><td>pat-hospitalized</td><td>המטופל מאושפז</td></tr><tr><td>other</td><td>אחר</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/tofes17-reject-codes",
+  "version" : "0.13.2",
+  "name" : "Tofes17RejectCodes",
+  "title" : "Tofes17 Reject Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "קודי שגיאה לתהליכים הקשורים לטופס 17",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.health.gov.il/cs/moh-tofes17-issue-code",
+      "concept" : [{
+        "code" : "pat-not-eligible",
+        "display" : "המטופל אינו זכאי להתחייבות"
+      },
+      {
+        "code" : "referred-to-community",
+        "display" : "הטיפול יבוצע בקהילה"
+      },
+      {
+        "code" : "not-ambulatory",
+        "display" : "השירות המבוקש אינו אמבולטורי"
+      },
+      {
+        "code" : "charge-not-authorized",
+        "display" : "ללקוח אין הרשאת חיוב "
+      },
+      {
+        "code" : "service-with-co-payment",
+        "display" : "הבקשה כוללת שירות עם השתתפות עצמית"
+      },
+      {
+        "code" : "service-not-covered",
+        "display" : "השירות אינו בסל"
+      },
+      {
+        "code" : "age-limit",
+        "display" : "קוד השירות מוגבל גיל"
+      },
+      {
+        "code" : "quantity-mismatch",
+        "display" : "כמות הטיפולים אינה תואמת את תוכנית הטיפול"
+      },
+      {
+        "code" : "req-not-compliant",
+        "display" : "הבקשה להתחייבות אינה תואמת לכללי החיוב"
+      },
+      {
+        "code" : "srv-code-mismatch",
+        "display" : "קוד השירות אינו תואם את הטיפול המתוכנן"
+      },
+      {
+        "code" : "pat-hospitalized",
+        "display" : "המטופל מאושפז"
+      },
+      {
+        "code" : "other",
+        "display" : "אחר"
+      }]
+    }]
+  }
+}

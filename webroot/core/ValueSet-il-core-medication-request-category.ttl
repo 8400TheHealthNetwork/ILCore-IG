@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/il-core-medication-request-category> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-medication-request-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"CodeSystem-il-core-medication-category.html\"><code>http://fhir.health.gov.il/cs/il-core-medicationrequest-category</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-il-core-medication-category.html#il-core-medication-category-inpatient\">inpatient</a></td><td>Inpatient</td><td>Includes medications to be administered or consumed in an inpatient or acute care setting.</td></tr><tr><td><a href=\"CodeSystem-il-core-medication-category.html#il-core-medication-category-outpatient\">outpatient</a></td><td>Outpatient</td><td>Includes medications to be administered or consumed  in an outpatient setting or ambulatory setting ( for example Hospital outpatient clinics setting, Urgent care settings (e.g. health organization urgent care center, Outpatient Surgery center</td></tr><tr><td><a href=\"CodeSystem-il-core-medication-category.html#il-core-medication-category-community-hmo\">community-hmo</a></td><td>Community Care/HMO</td><td>Includes medications to be administered or consumed  in HMOs (this would include HMO clinics, doctor offices, ect.)</td></tr><tr><td><a href=\"CodeSystem-il-core-medication-category.html#il-core-medication-category-community-other\">community-other</a></td><td>Community Care/Long Term Care/Home</td><td>Includes medications to be administered or consumed  in community care settings  (this would include long term care or nursing homes, hospices,  patient’s home etc.).</td></tr><tr><td><a href=\"CodeSystem-il-core-medication-category.html#il-core-medication-category-discharge\">discharge</a></td><td>Discharge</td><td>Includes  medications when the patient is being released from a facility.</td></tr><tr><td><a href=\"CodeSystem-il-core-medication-category.html#il-core-medication-category-leave\">leave</a></td><td>Leave</td><td>Includes medications that the patient will take during any short break from inpatient care (this would include administrations dispensed by the hospital pharmacy to be self-administered at home with or without the assistance of community-based nursing staff).</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/il-core-medication-request-category"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreMedicationRequestCategory"] ; # 
+  fhir:title [ fhir:v "ILCore Medication Request Category"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for Medication Request Category"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/il-core-medicationrequest-category"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "inpatient" ] ;
+         fhir:display [ fhir:v "Inpatient" ]
+       ] [
+         fhir:code [ fhir:v "outpatient" ] ;
+         fhir:display [ fhir:v "Outpatient" ]
+       ] [
+         fhir:code [ fhir:v "community-hmo" ] ;
+         fhir:display [ fhir:v "Community Care/HMO" ]
+       ] [
+         fhir:code [ fhir:v "community-other" ] ;
+         fhir:display [ fhir:v "Community Care/Long Term Care/Home" ]
+       ] [
+         fhir:code [ fhir:v "discharge" ] ;
+         fhir:display [ fhir:v "Discharge" ]
+       ] [
+         fhir:code [ fhir:v "leave" ] ;
+         fhir:display [ fhir:v "Leave" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

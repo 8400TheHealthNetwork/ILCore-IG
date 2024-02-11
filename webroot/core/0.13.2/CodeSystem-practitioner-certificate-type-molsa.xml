@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="practitioner-certificate-type-molsa"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">SW<a name="practitioner-certificate-type-molsa-SW"> </a></td><td>רשיון עבודה סוציאלית</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-01"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa"/>
+  <version value="0.13.2"/>
+  <name value="PractitionerCertificateTypeMoLSA"/>
+  <title value="MoLSA Certificate Types"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for certificate types according to Israeli MoLSA"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="SW"/>
+    <display value="רשיון עבודה סוציאלית"/>
+  </concept>
+</CodeSystem>

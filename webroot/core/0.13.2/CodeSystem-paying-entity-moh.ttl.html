@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Payer (Paying Entity / גורם משלם) - TTL Representation - IL Core Implementation Guide v0.13.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.150"}
+    h3,h4,h5,h6{--heading-prefix:"3.150"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IL Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.13.2 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://en.fhir-il-community.org/fhir-israel-core" target="_blank">ILCore Community</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>Payer (Paying Entity / גורם משלם)</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 9" class="col-12">
+  <!-- ReleaseHeader --><p id="publish-box">This page is part of the IL-Core IG (v0.13.2: draft-1 Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version in its permanent home (it will always be available at this URL).  For a full list of available versions, see the <a no-external="true" href="http://fhir.health.gov.il/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="CodeSystem-paying-entity-moh.html">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="CodeSystem-paying-entity-moh.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="CodeSystem-paying-entity-moh.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li class="active">
+      <a href="#">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+
+<a name="root"> </a>
+
+
+<h2 id="root">: Payer (Paying Entity / גורם משלם) - TTL Representation</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2023-12-23
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+<p><a href="CodeSystem-paying-entity-moh.ttl" no-download="true">Raw ttl</a> | <a download="null" href="CodeSystem-paying-entity-moh.ttl">Download</a></p>
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <pre style="white-space: pre; overflow: hidden" class="rdf">
+@prefix fhir: &lt;http://hl7.org/fhir/&gt; .
+@prefix owl: &lt;http://www.w3.org/2002/07/owl#&gt; .
+@prefix rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt; .
+@prefix xsd: &lt;http://www.w3.org/2001/XMLSchema#&gt; .
+
+# - resource -------------------------------------------------------------------
+
+ a fhir:CodeSystem ;
+  <a href="http://hl7.org/fhir/R4/rdf.html#tree-root">fhir:nodeRole</a> fhir:treeRoot ;
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "paying-entity-moh"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.text">fhir:text</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "extensions" ] ;
+fhir:div "&lt;div xmlns=\"http://www.w3.org/1999/xhtml\"&gt;&lt;p&gt;This case-insensitive code system &lt;code&gt;http://fhir.health.gov.il/cs/paying-entity-moh&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\"codes\"&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Deprecated&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\"background-color: #ffeeee\"&gt;&lt;td style=\"white-space:nowrap\"&gt;-888&lt;a name=\"paying-entity-moh--888\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;לא רלוונטי&lt;/td&gt;&lt;td&gt;ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL&lt;/td&gt;&lt;td&gt;Deprecated&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\"background-color: #ffeeee\"&gt;&lt;td style=\"white-space:nowrap\"&gt;-999&lt;a name=\"paying-entity-moh--999\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;לא ידוע&lt;/td&gt;&lt;td&gt;ערך ברירת מחדל במקרה שערך הגורם המשלם איננו רלוונטי או לא קיים מאחר ולא מדובר בתשלום&lt;/td&gt;&lt;td&gt;Deprecated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;101&lt;a name=\"paying-entity-moh-101\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;קופת חולים כללית&lt;/td&gt;&lt;td&gt;הערך קופת חולים כללית מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית (לא מדובר בשיוך לקופה)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;102&lt;a name=\"paying-entity-moh-102\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;קופת חולים לאומית&lt;/td&gt;&lt;td&gt;הערך קופת חולים לאומית מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית (לא מדובר בשיוך לקופה)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;103&lt;a name=\"paying-entity-moh-103\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;קופת חולים מכבי&lt;/td&gt;&lt;td&gt;הערך קופת חולים מכבי מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי (לא מדובר בשיוך לקופה)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;104&lt;a name=\"paying-entity-moh-104\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;קופת חולים מאוחדת&lt;/td&gt;&lt;td&gt;הערך קופת חולים מאוחדת מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת (לא מדובר בשיוך לקופה)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;401&lt;a name=\"paying-entity-moh-401\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;צה&amp;quot;ל&lt;/td&gt;&lt;td&gt;הערך צה&amp;quot;ל מתאים למקרה בו הגורם המשלם הוא צה&amp;quot;ל (לא מדובר בשיוך אליו כקופה חמישת)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;402&lt;a name=\"paying-entity-moh-402\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משרד הבטחון&lt;/td&gt;&lt;td&gt;הערך משרד הבטחון מתאים למקרה בו הגורם המשלם הוא משרד הביטחון&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;480&lt;a name=\"paying-entity-moh-480\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;רשות פלסטינאית&lt;/td&gt;&lt;td&gt;הערך רשות פלסטינאית מתאים למקרה בו הגורם המשלם הוא הרשות הפלסטינאית&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;405&lt;a name=\"paying-entity-moh-405\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;שירותי בתי הסוהר&lt;/td&gt;&lt;td&gt;הערך שירותי בתי הסוהר  מתאים למקרה בו הגורם המשלם הוא&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;501&lt;a name=\"paying-entity-moh-501\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;חברות ביטוח&lt;/td&gt;&lt;td&gt;הערך חברות ביטוח  מתאים למקרה בו הגורם המשלם הוא חברת ביטוח (לזיהוי מימון חברות פרטיות)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;541&lt;a name=\"paying-entity-moh-541\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;כללית ביטוחים משלימים&lt;/td&gt;&lt;td&gt;הערך כללית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים כללית (לזיהוי שב&amp;quot;ן)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;542&lt;a name=\"paying-entity-moh-542\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מכבי ביטוחים משלימים&lt;/td&gt;&lt;td&gt;הערך מכבי ביטוחים משלימים  מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מכבי(לזיהוי שב&amp;quot;ן)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;543&lt;a name=\"paying-entity-moh-543\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מאוחדת ביטוחים משלימים&lt;/td&gt;&lt;td&gt;הערך מאוחדת ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מאוחדת (לזיהוי שב&amp;quot;ן)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;544&lt;a name=\"paying-entity-moh-544\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;לאומית ביטוחים משלימים&lt;/td&gt;&lt;td&gt;הערך לאומית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים לאומית (לזיהוי שב&amp;quot;ן)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr style=\"background-color: #ffeeee\"&gt;&lt;td style=\"white-space:nowrap\"&gt;1Z1&lt;a name=\"paying-entity-moh-1Z1\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;כללית חיילים&lt;/td&gt;&lt;td&gt;הערך כללית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים כללית (לא תקף יותר)&lt;/td&gt;&lt;td&gt;Deprecated&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\"background-color: #ffeeee\"&gt;&lt;td style=\"white-space:nowrap\"&gt;1Z2&lt;a name=\"paying-entity-moh-1Z2\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;לאומית חיילים&lt;/td&gt;&lt;td&gt;הערך לאומית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים לאומית (לא תקף יותר)&lt;/td&gt;&lt;td&gt;Deprecated&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\"background-color: #ffeeee\"&gt;&lt;td style=\"white-space:nowrap\"&gt;1Z3&lt;a name=\"paying-entity-moh-1Z3\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מכבי חיילים&lt;/td&gt;&lt;td&gt;הערך מכבי חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מכבי(לא תקף יותר)&lt;/td&gt;&lt;td&gt;Deprecated&lt;/td&gt;&lt;/tr&gt;&lt;tr style=\"background-color: #ffeeee\"&gt;&lt;td style=\"white-space:nowrap\"&gt;1Z4&lt;a name=\"paying-entity-moh-1Z4\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מאוחדת חיילים&lt;/td&gt;&lt;td&gt;הערך מאוחדת חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מאוחדת (לא תקף יותר)&lt;/td&gt;&lt;td&gt;Deprecated&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;1P1&lt;a name=\"paying-entity-moh-1P1\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;כללית פסיכיאטריה&lt;/td&gt;&lt;td&gt;הערך כללית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית לשירותי בריאות הנפש&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;1P2&lt;a name=\"paying-entity-moh-1P2\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;לאומית פסיכיאטריה&lt;/td&gt;&lt;td&gt;הערך לאומית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית לשירותי בריאות הנפש&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;1P3&lt;a name=\"paying-entity-moh-1P3\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מכבי פסיכיאטריה&lt;/td&gt;&lt;td&gt;הערך מכבי פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי לשירותי בריאות הנפש&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;1P4&lt;a name=\"paying-entity-moh-1P4\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מאוחדת פסיכיאטריה&lt;/td&gt;&lt;td&gt;הערך מאוחדת פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת לשירותי בריאות הנפש&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;200&lt;a name=\"paying-entity-moh-200\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי חולים&lt;/td&gt;&lt;td&gt;הערך בתי חולים מתאים למקרה בו הגורם המשלם הוא בית החולים&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;201&lt;a name=\"paying-entity-moh-201\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסדות לאשפוז כללי&lt;/td&gt;&lt;td&gt;הערך מוסדות לאשפוז כללי מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז כללי כלשהו (יכול להיות בית יולדות&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;202&lt;a name=\"paying-entity-moh-202\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסדות לאשפוז נפש&lt;/td&gt;&lt;td&gt;הערך מוסדות לאשפוז נפש מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז בבריאות הנפש (בית חולים פסיכיאטרי)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;203&lt;a name=\"paying-entity-moh-203\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסדות למחלות ממושכות&lt;/td&gt;&lt;td&gt;הערך מוסדות למחלות ממושכות מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז ממושך (בית חולים גריאטרי)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;204&lt;a name=\"paying-entity-moh-204\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסדות לשיקום&lt;/td&gt;&lt;td&gt;הערך מוסדות לשיקום מתאים למקרה בו הגורם המשלם הוא מוסד שיקום&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;300&lt;a name=\"paying-entity-moh-300\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ביטוח לאומי&lt;/td&gt;&lt;td&gt;הערך ביטוח לאומי מתאים למקרה בו הגורם המשלם הוא ביטוח לאומי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;400&lt;a name=\"paying-entity-moh-400\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משרדי ממשלה ומוסדות ציבור&lt;/td&gt;&lt;td&gt;משרדי ממשלה ומוסדות ציבור מתאים למקרה בו הגורם המשלם הוא גורם ממשלתי או ציבורי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;403&lt;a name=\"paying-entity-moh-403\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ממשל צבאי&lt;/td&gt;&lt;td&gt;ממשל צבאי מתאים למקרה בו הגורם המשלם הוא הממשל הצבאי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;404&lt;a name=\"paying-entity-moh-404\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משטרה&lt;/td&gt;&lt;td&gt;הערך משטרה מתאים למקרה בו הגורם המשלם הוא המשטרה&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;406&lt;a name=\"paying-entity-moh-406\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;משרד הבריאות&lt;/td&gt;&lt;td&gt;הערך משרד הבריאות מתאים למקרה בו הגורם המשלם הוא משרד הבריאות&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;465&lt;a name=\"paying-entity-moh-465\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;בתי ספר&lt;/td&gt;&lt;td&gt;הערך בתי ספר מתאים למקרה בו הגורם המשלם הוא בית ספר&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;475&lt;a name=\"paying-entity-moh-475\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מוסדות דת&lt;/td&gt;&lt;td&gt;הערך מוסדות דת מתאים למקרה בו הגורם המשלם הוא מוסד דת&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;490&lt;a name=\"paying-entity-moh-490\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;או&amp;quot;ם /כוח רב לאומי&lt;/td&gt;&lt;td&gt;הערך או&amp;quot;ם /כוח רב לאומי מתאים למקרה בו הגורם המשלם הוא האו&amp;quot;ם או הכוח הרב לאומי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;500&lt;a name=\"paying-entity-moh-500\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;חברות פרטיות&lt;/td&gt;&lt;td&gt;הערך חברות פרטיות מתאים למקרה בו הגורם המשלם הוא חברה פרטית (לאוו דווקא חברת ביטוח)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;504&lt;a name=\"paying-entity-moh-504\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;שגרירויות&lt;/td&gt;&lt;td&gt;הערך שגרירויות מתאים למקרה בו הגורם המשלם הוא שגרירות&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;515&lt;a name=\"paying-entity-moh-515\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;חברות ביטוח בהסדר&lt;/td&gt;&lt;td&gt;הערך חברות ביטוח בהסדר מתאים למקרה בו הגורם המשלם הוא חברת ביטוח שבהסדר&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;530&lt;a name=\"paying-entity-moh-530\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;חברות ביטוח זרות&lt;/td&gt;&lt;td&gt;הערך חברות ביטוח זרות מתאים למקרה בו הגורם המשלם הוא חברת ביטוח זרה&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;593&lt;a name=\"paying-entity-moh-593\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;חברות/הסכמי בתי חולים&lt;/td&gt;&lt;td&gt;הערך חברות/הסכמי בתי חולים מתאים למקרה בו הגורם המשלם הוא חברה בהסכמי בתי חולים&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;600&lt;a name=\"paying-entity-moh-600\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;פרטי&lt;/td&gt;&lt;td&gt;הערך פרטי מתאים לכל המקרים בו הגורם המשלם הוא פרטי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;601&lt;a name=\"paying-entity-moh-601\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;פרטי- אזרח / תושב ארעי&lt;/td&gt;&lt;td&gt;הערך פרטי- אזרח / תושב ארעי מתאים למקרה בו הגורם המשלם הוא אזרח או תושב ארעי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;602&lt;a name=\"paying-entity-moh-602\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;תושב חוץ&lt;/td&gt;&lt;td&gt;הערך תושב חוץ מתאים למקרה בו הגורם המשלם הוא תושב חוץ (אזרח ישראלי המתגורר בחו&amp;quot;ל)&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;603&lt;a name=\"paying-entity-moh-603\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;פרטי - תושב חוץ / תייר&lt;/td&gt;&lt;td&gt;הערך פרטי - תושב חוץ / תייר מתאים למקרה בו הגורם המשלם הוא תושב חוץ או תייר&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;700&lt;a name=\"paying-entity-moh-700\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;חינם&lt;/td&gt;&lt;td&gt;הערך חינם מתאים למקרה בו השירות ניתן בחינם ולא נדרש גורם משלם&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;701&lt;a name=\"paying-entity-moh-701\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ב&amp;quot;ח חינם פרסונל&lt;/td&gt;&lt;td&gt;הערך ב&amp;quot;ח חינם פרסונל מתאים למקרה בו השירות ניתן בחינם למטופל פרוסנל והגורם המשלם הוא בעצם בית החולים&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;800&lt;a name=\"paying-entity-moh-800\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;קרן מחקרים&lt;/td&gt;&lt;td&gt;הערך קרן מחקרים מתאים מקרה בו קרן המחקרים משלמת לשירותי עובדיה&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;900&lt;a name=\"paying-entity-moh-900\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;ברורים&lt;/td&gt;&lt;td&gt;הערך ברורים מתאים למקרה בו עדיין לא ברור מי יהיה הגורם המשלם&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;901&lt;a name=\"paying-entity-moh-901\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;מחיקת חובות&lt;/td&gt;&lt;td&gt;הערך מחיקת חובות מתאים למקרה בו ישנו ויתור על תשלום חוב&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\"white-space:nowrap\"&gt;280&lt;a name=\"paying-entity-moh-280\"&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;תאגידים במרכז רפואי מחוץ&lt;/td&gt;&lt;td&gt;הערך תאגידים במרכז רפואי מחוץ מתאים למקרה בו הגורם המשלם הוא התאגיד במרכז הרפואי&lt;/td&gt;&lt;td/&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
+  ] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.extension">fhir:extension</a> ( [
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#date">fhir:v</a> "2023-01"^^xsd:gYearMonth ]
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">fhir:url</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> "http://fhir.health.gov.il/cs/paying-entity-moh"^^xsd:anyURI] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "0.13.2"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "PayingEntityMoH"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Payer (Paying Entity / גורם משלם)"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "draft"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">fhir:experimental</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Israel Core Team"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">fhir:contact</a> ( [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Israel Core Team" ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "email" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ido.levin@moh.gov.il" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "Kippi Bordowitz" ] ;
+    ( <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.telecom">fhir:telecom</a> [
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.system">fhir:system</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "email" ] ;
+<a href="http://hl7.org/fhir/R4/datatypes.html#ContactPoint#ContactPoint.value">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ido.levin@moh.gov.il" ]     ] )
+  ] ) ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.description">fhir:description</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#markdown">fhir:v</a> "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.caseSensitive">fhir:caseSensitive</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">fhir:v</a> "false"^^xsd:boolean] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.content">fhir:content</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "complete"] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.count">fhir:count</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#unsignedInt">fhir:v</a> "51"^^xsd:nonNegativeInteger] ; # 
+  <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept">fhir:concept</a> ( [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "-888" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "לא רלוונטי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL" ] ;
+    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "status" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "deprecated" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "-999" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "לא ידוע" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ערך ברירת מחדל במקרה שערך הגורם המשלם איננו רלוונטי או לא קיים מאחר ולא מדובר בתשלום" ] ;
+    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "status" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "deprecated" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "101" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "קופת חולים כללית" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך קופת חולים כללית מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית (לא מדובר בשיוך לקופה)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "102" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "קופת חולים לאומית" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך קופת חולים לאומית מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית (לא מדובר בשיוך לקופה)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "103" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "קופת חולים מכבי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך קופת חולים מכבי מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי (לא מדובר בשיוך לקופה)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "104" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "קופת חולים מאוחדת" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך קופת חולים מאוחדת מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת (לא מדובר בשיוך לקופה)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "401" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "צה\"ל" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך צה\"ל מתאים למקרה בו הגורם המשלם הוא צה\"ל (לא מדובר בשיוך אליו כקופה חמישת)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "402" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "משרד הבטחון" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך משרד הבטחון מתאים למקרה בו הגורם המשלם הוא משרד הביטחון" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "480" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "רשות פלסטינאית" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך רשות פלסטינאית מתאים למקרה בו הגורם המשלם הוא הרשות הפלסטינאית" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "405" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "שירותי בתי הסוהר" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך שירותי בתי הסוהר  מתאים למקרה בו הגורם המשלם הוא" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "501" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "חברות ביטוח" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך חברות ביטוח  מתאים למקרה בו הגורם המשלם הוא חברת ביטוח (לזיהוי מימון חברות פרטיות)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "541" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "כללית ביטוחים משלימים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך כללית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים כללית (לזיהוי שב\"ן)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "542" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מכבי ביטוחים משלימים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מכבי ביטוחים משלימים  מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מכבי(לזיהוי שב\"ן)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "543" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מאוחדת ביטוחים משלימים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מאוחדת ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מאוחדת (לזיהוי שב\"ן)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "544" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "לאומית ביטוחים משלימים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך לאומית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים לאומית (לזיהוי שב\"ן)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1Z1" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "כללית חיילים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך כללית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים כללית (לא תקף יותר)" ] ;
+    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "status" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "deprecated" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1Z2" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "לאומית חיילים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך לאומית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים לאומית (לא תקף יותר)" ] ;
+    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "status" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "deprecated" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1Z3" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מכבי חיילים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מכבי חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מכבי(לא תקף יותר)" ] ;
+    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "status" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "deprecated" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1Z4" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מאוחדת חיילים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מאוחדת חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מאוחדת (לא תקף יותר)" ] ;
+    ( <a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property">fhir:property</a> [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "status" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.property.value[x]">fhir:value</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "deprecated" ]     ] )
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1P1" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "כללית פסיכיאטריה" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך כללית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית לשירותי בריאות הנפש" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1P2" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "לאומית פסיכיאטריה" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך לאומית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית לשירותי בריאות הנפש" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1P3" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מכבי פסיכיאטריה" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מכבי פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי לשירותי בריאות הנפש" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "1P4" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מאוחדת פסיכיאטריה" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מאוחדת פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת לשירותי בריאות הנפש" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "200" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "בתי חולים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך בתי חולים מתאים למקרה בו הגורם המשלם הוא בית החולים" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "201" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מוסדות לאשפוז כללי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מוסדות לאשפוז כללי מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז כללי כלשהו (יכול להיות בית יולדות" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "202" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מוסדות לאשפוז נפש" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מוסדות לאשפוז נפש מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז בבריאות הנפש (בית חולים פסיכיאטרי)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "203" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מוסדות למחלות ממושכות" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מוסדות למחלות ממושכות מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז ממושך (בית חולים גריאטרי)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "204" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מוסדות לשיקום" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מוסדות לשיקום מתאים למקרה בו הגורם המשלם הוא מוסד שיקום" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "300" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ביטוח לאומי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך ביטוח לאומי מתאים למקרה בו הגורם המשלם הוא ביטוח לאומי" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "400" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "משרדי ממשלה ומוסדות ציבור" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "משרדי ממשלה ומוסדות ציבור מתאים למקרה בו הגורם המשלם הוא גורם ממשלתי או ציבורי" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "403" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ממשל צבאי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ממשל צבאי מתאים למקרה בו הגורם המשלם הוא הממשל הצבאי" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "404" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "משטרה" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך משטרה מתאים למקרה בו הגורם המשלם הוא המשטרה" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "406" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "משרד הבריאות" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך משרד הבריאות מתאים למקרה בו הגורם המשלם הוא משרד הבריאות" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "465" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "בתי ספר" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך בתי ספר מתאים למקרה בו הגורם המשלם הוא בית ספר" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "475" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מוסדות דת" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מוסדות דת מתאים למקרה בו הגורם המשלם הוא מוסד דת" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "490" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "או\"ם /כוח רב לאומי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך או\"ם /כוח רב לאומי מתאים למקרה בו הגורם המשלם הוא האו\"ם או הכוח הרב לאומי" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "500" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "חברות פרטיות" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך חברות פרטיות מתאים למקרה בו הגורם המשלם הוא חברה פרטית (לאוו דווקא חברת ביטוח)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "504" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "שגרירויות" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך שגרירויות מתאים למקרה בו הגורם המשלם הוא שגרירות" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "515" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "חברות ביטוח בהסדר" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך חברות ביטוח בהסדר מתאים למקרה בו הגורם המשלם הוא חברת ביטוח שבהסדר" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "530" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "חברות ביטוח זרות" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך חברות ביטוח זרות מתאים למקרה בו הגורם המשלם הוא חברת ביטוח זרה" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "593" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "חברות/הסכמי בתי חולים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך חברות/הסכמי בתי חולים מתאים למקרה בו הגורם המשלם הוא חברה בהסכמי בתי חולים" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "600" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "פרטי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך פרטי מתאים לכל המקרים בו הגורם המשלם הוא פרטי" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "601" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "פרטי- אזרח / תושב ארעי" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך פרטי- אזרח / תושב ארעי מתאים למקרה בו הגורם המשלם הוא אזרח או תושב ארעי" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "602" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "תושב חוץ" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך תושב חוץ מתאים למקרה בו הגורם המשלם הוא תושב חוץ (אזרח ישראלי המתגורר בחו\"ל)" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "603" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "פרטי - תושב חוץ / תייר" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך פרטי - תושב חוץ / תייר מתאים למקרה בו הגורם המשלם הוא תושב חוץ או תייר" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "700" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "חינם" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך חינם מתאים למקרה בו השירות ניתן בחינם ולא נדרש גורם משלם" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "701" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ב\"ח חינם פרסונל" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך ב\"ח חינם פרסונל מתאים למקרה בו השירות ניתן בחינם למטופל פרוסנל והגורם המשלם הוא בעצם בית החולים" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "800" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "קרן מחקרים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך קרן מחקרים מתאים מקרה בו קרן המחקרים משלמת לשירותי עובדיה" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "900" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "ברורים" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך ברורים מתאים למקרה בו עדיין לא ברור מי יהיה הגורם המשלם" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "901" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "מחיקת חובות" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך מחיקת חובות מתאים למקרה בו ישנו ויתור על תשלום חוב" ]
+  ] [
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.code">fhir:code</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> "280" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.display">fhir:display</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "תאגידים במרכז רפואי מחוץ" ] ;
+<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.concept.definition">fhir:definition</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> "הערך תאגידים במרכז רפואי מחוץ מתאים למקרה בו הגורם המשלם הוא התאגיד במרכז הרפואי" ]
+  ] ) . # 
+
+</pre>
+
+
+
+    <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1497">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ido.levin@moh.gov.il">Israel Core Team</a>.  Package health.gov.il.fhir.core#0.13.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Dec 23, 2023 19:10+0200">2023-12-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

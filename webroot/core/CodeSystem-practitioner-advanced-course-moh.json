@@ -1,0 +1,226 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "practitioner-advanced-course-moh",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-advanced-course-moh</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"practitioner-advanced-course-moh-5\"> </a></td><td>מיילדות</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"practitioner-advanced-course-moh-7\"> </a></td><td>בריאות הציבור</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"practitioner-advanced-course-moh-8\"> </a></td><td>פסיכיאטריה</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"practitioner-advanced-course-moh-9\"> </a></td><td>סיעוד בבריאות תעסוקתית</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"practitioner-advanced-course-moh-16\"> </a></td><td>טיפול נמרץ משולב (כללי)</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"practitioner-advanced-course-moh-18\"> </a></td><td>אונקולוגיה</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"practitioner-advanced-course-moh-19\"> </a></td><td>נפרולוגיה</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"practitioner-advanced-course-moh-56\"> </a></td><td>סיעוד התלמיד כהכנה לברצ&quot;ב</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"practitioner-advanced-course-moh-62\"> </a></td><td>קביעת מעמד - מעשיות</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"practitioner-advanced-course-moh-65\"> </a></td><td>הדרכה קלינית</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"practitioner-advanced-course-moh-67\"> </a></td><td>רפואה דחופה</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"practitioner-advanced-course-moh-68\"> </a></td><td>שיקום</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"practitioner-advanced-course-moh-70\"> </a></td><td>מניעת זיהומים</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"practitioner-advanced-course-moh-71\"> </a></td><td>טיפול נמרץ פגים</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"practitioner-advanced-course-moh-72\"> </a></td><td>טיפול נמרץ ילדים</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"practitioner-advanced-course-moh-73\"> </a></td><td>רפואה ראשונית</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"practitioner-advanced-course-moh-75\"> </a></td><td>רפואה מונעת</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"practitioner-advanced-course-moh-76\"> </a></td><td>סוכרת</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"practitioner-advanced-course-moh-77\"> </a></td><td>ניהול הטיפול באי ספיקת לב</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"practitioner-advanced-course-moh-100\"> </a></td><td>חדר ניתוח</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"practitioner-advanced-course-moh-106\"> </a></td><td>גריאטריה</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"practitioner-advanced-course-moh-107\"> </a></td><td>יועצת הנקה</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"practitioner-advanced-course-moh-108\"> </a></td><td>מדיניות ומינהל בסיעוד</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"practitioner-advanced-course-moh-109\"> </a></td><td>רישום מרשמי המשך על ידי אחות</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"practitioner-advanced-course-moh-110\"> </a></td><td>פסיכותרפיה</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"practitioner-advanced-course-moh-111\"> </a></td><td>פסיכותרפיה בשיטת CBT</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"practitioner-advanced-course-moh-112\"> </a></td><td>מבחן ממיין</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"practitioner-advanced-course-moh-113\"> </a></td><td>ייעוץ לפעילות גופנית</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"practitioner-advanced-course-moh-114\"> </a></td><td>ייעוץ שינה</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"practitioner-advanced-course-moh-115\"> </a></td><td>טיפול בפצעים וסטומה</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"practitioner-advanced-course-moh-116\"> </a></td><td>גסטרואנטרולוגיה</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"practitioner-advanced-course-moh-117\"> </a></td><td>שבץ מוחי</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"practitioner-advanced-course-moh-118\"> </a></td><td>אי ספיקת לב</td></tr><tr><td style=\"white-space:nowrap\">119<a name=\"practitioner-advanced-course-moh-119\"> </a></td><td>פוריות</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"practitioner-advanced-course-moh-120\"> </a></td><td>רפואה ראשונית ורישום מרשמי המשך</td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"practitioner-advanced-course-moh-1001\"> </a></td><td>מומחיות סוכרת</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"practitioner-advanced-course-moh-1002\"> </a></td><td>מומחיות גריאטריה</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"practitioner-advanced-course-moh-1003\"> </a></td><td>מומחיות טיפול תומך</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"practitioner-advanced-course-moh-1005\"> </a></td><td>רפואה ראשונית צבאית-רפואה ראשונית</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"practitioner-advanced-course-moh-1006\"> </a></td><td>מודולת השלמה בייעוץ הנקה</td></tr><tr><td style=\"white-space:nowrap\">1007<a name=\"practitioner-advanced-course-moh-1007\"> </a></td><td>מודולת השלמה בשבץ מוחי</td></tr><tr><td style=\"white-space:nowrap\">1008<a name=\"practitioner-advanced-course-moh-1008\"> </a></td><td>חטיבה משותפת אקוטית מבוגרים</td></tr><tr><td style=\"white-space:nowrap\">1009<a name=\"practitioner-advanced-course-moh-1009\"> </a></td><td>חטיבה משותפת אקוטית ילדים</td></tr><tr><td style=\"white-space:nowrap\">1010<a name=\"practitioner-advanced-course-moh-1010\"> </a></td><td>חטיבה משותפת אקוטית כרונית</td></tr><tr><td style=\"white-space:nowrap\">1011<a name=\"practitioner-advanced-course-moh-1011\"> </a></td><td>חטיבה משותפת כרונית</td></tr><tr><td style=\"white-space:nowrap\">1012<a name=\"practitioner-advanced-course-moh-1012\"> </a></td><td>מניעה וקידום בריאות וייעוץ הנקה</td></tr><tr><td style=\"white-space:nowrap\">1014<a name=\"practitioner-advanced-course-moh-1014\"> </a></td><td>רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate",
+    "valueDate" : "2023-01"
+  }],
+  "url" : "http://fhir.health.gov.il/cs/practitioner-advanced-course-moh",
+  "version" : "0.13.2",
+  "name" : "PractitionerAdvancedCourseMoH",
+  "title" : "Ministry of Health practitioner advanced courses codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for practitioner advanced courses according to Israeli MoH",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 47,
+  "concept" : [{
+    "code" : "5",
+    "display" : "מיילדות"
+  },
+  {
+    "code" : "7",
+    "display" : "בריאות הציבור"
+  },
+  {
+    "code" : "8",
+    "display" : "פסיכיאטריה"
+  },
+  {
+    "code" : "9",
+    "display" : "סיעוד בבריאות תעסוקתית"
+  },
+  {
+    "code" : "16",
+    "display" : "טיפול נמרץ משולב (כללי)"
+  },
+  {
+    "code" : "18",
+    "display" : "אונקולוגיה"
+  },
+  {
+    "code" : "19",
+    "display" : "נפרולוגיה"
+  },
+  {
+    "code" : "56",
+    "display" : "סיעוד התלמיד כהכנה לברצ\"ב"
+  },
+  {
+    "code" : "62",
+    "display" : "קביעת מעמד - מעשיות"
+  },
+  {
+    "code" : "65",
+    "display" : "הדרכה קלינית"
+  },
+  {
+    "code" : "67",
+    "display" : "רפואה דחופה"
+  },
+  {
+    "code" : "68",
+    "display" : "שיקום"
+  },
+  {
+    "code" : "70",
+    "display" : "מניעת זיהומים"
+  },
+  {
+    "code" : "71",
+    "display" : "טיפול נמרץ פגים"
+  },
+  {
+    "code" : "72",
+    "display" : "טיפול נמרץ ילדים"
+  },
+  {
+    "code" : "73",
+    "display" : "רפואה ראשונית"
+  },
+  {
+    "code" : "75",
+    "display" : "רפואה מונעת"
+  },
+  {
+    "code" : "76",
+    "display" : "סוכרת"
+  },
+  {
+    "code" : "77",
+    "display" : "ניהול הטיפול באי ספיקת לב"
+  },
+  {
+    "code" : "100",
+    "display" : "חדר ניתוח"
+  },
+  {
+    "code" : "106",
+    "display" : "גריאטריה"
+  },
+  {
+    "code" : "107",
+    "display" : "יועצת הנקה"
+  },
+  {
+    "code" : "108",
+    "display" : "מדיניות ומינהל בסיעוד"
+  },
+  {
+    "code" : "109",
+    "display" : "רישום מרשמי המשך על ידי אחות"
+  },
+  {
+    "code" : "110",
+    "display" : "פסיכותרפיה"
+  },
+  {
+    "code" : "111",
+    "display" : "פסיכותרפיה בשיטת CBT"
+  },
+  {
+    "code" : "112",
+    "display" : "מבחן ממיין"
+  },
+  {
+    "code" : "113",
+    "display" : "ייעוץ לפעילות גופנית"
+  },
+  {
+    "code" : "114",
+    "display" : "ייעוץ שינה"
+  },
+  {
+    "code" : "115",
+    "display" : "טיפול בפצעים וסטומה"
+  },
+  {
+    "code" : "116",
+    "display" : "גסטרואנטרולוגיה"
+  },
+  {
+    "code" : "117",
+    "display" : "שבץ מוחי"
+  },
+  {
+    "code" : "118",
+    "display" : "אי ספיקת לב"
+  },
+  {
+    "code" : "119",
+    "display" : "פוריות"
+  },
+  {
+    "code" : "120",
+    "display" : "רפואה ראשונית ורישום מרשמי המשך"
+  },
+  {
+    "code" : "1001",
+    "display" : "מומחיות סוכרת"
+  },
+  {
+    "code" : "1002",
+    "display" : "מומחיות גריאטריה"
+  },
+  {
+    "code" : "1003",
+    "display" : "מומחיות טיפול תומך"
+  },
+  {
+    "code" : "1005",
+    "display" : "רפואה ראשונית צבאית-רפואה ראשונית"
+  },
+  {
+    "code" : "1006",
+    "display" : "מודולת השלמה בייעוץ הנקה"
+  },
+  {
+    "code" : "1007",
+    "display" : "מודולת השלמה בשבץ מוחי"
+  },
+  {
+    "code" : "1008",
+    "display" : "חטיבה משותפת אקוטית מבוגרים"
+  },
+  {
+    "code" : "1009",
+    "display" : "חטיבה משותפת אקוטית ילדים"
+  },
+  {
+    "code" : "1010",
+    "display" : "חטיבה משותפת אקוטית כרונית"
+  },
+  {
+    "code" : "1011",
+    "display" : "חטיבה משותפת כרונית"
+  },
+  {
+    "code" : "1012",
+    "display" : "מניעה וקידום בריאות וייעוץ הנקה"
+  },
+  {
+    "code" : "1014",
+    "display" : "רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך"
+  }]
+}

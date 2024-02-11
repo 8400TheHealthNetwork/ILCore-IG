@@ -1,0 +1,503 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-profession-moh> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-profession-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-profession-moh</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">-888<a name=\"practitioner-profession-moh--888\"> </a></td><td>לא ידוע</td><td>ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL</td><td>Deprecated</td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">-999<a name=\"practitioner-profession-moh--999\"> </a></td><td>לא קיים</td><td>ערך ברירת מחדל במקרה שערך המקצוע איננו רלוונטי או לא קיים מאחר ולא מדובר במקצוע רפואי</td><td>Deprecated</td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"practitioner-profession-moh-1\"> </a></td><td>רפואה</td><td>מקצוע הרפואה לו קיימים גם ערכי מומחיות Expertise</td><td/></tr><tr><td style=\"white-space:nowrap\">2<a name=\"practitioner-profession-moh-2\"> </a></td><td>רפואת שיניים</td><td>מקצוע רפואת השינייים לו קיימים גם ערכי מומחיות Expertise</td><td/></tr><tr><td style=\"white-space:nowrap\">3<a name=\"practitioner-profession-moh-3\"> </a></td><td>רוקחים</td><td>מקצוע הרוקחות לו קיימים גם ערכי התמחות Specialist (אך לא מומחיות Expertise)</td><td/></tr><tr><td style=\"white-space:nowrap\">4<a name=\"practitioner-profession-moh-4\"> </a></td><td>עוזרי רוקחים</td><td>מקצוע עוזר רוקח ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">5<a name=\"practitioner-profession-moh-5\"> </a></td><td>מיילדת</td><td>מקצוע המיילדת שייך לתחום הסיעוד ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">6<a name=\"practitioner-profession-moh-6\"> </a></td><td>שיננית</td><td>מקצוע השיננית שייך לתחום רפואת השניים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">7<a name=\"practitioner-profession-moh-7\"> </a></td><td>טכנאי שיניים-מעשי</td><td>מקצוע טכנאי שיניים מעשי שייך לתחום רפואת השיניים (מופרד ממקצוע טכנאי שיניים) וללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">8<a name=\"practitioner-profession-moh-8\"> </a></td><td>אופטומטריה</td><td>מקצוע האופטומטריה ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">9<a name=\"practitioner-profession-moh-9\"> </a></td><td>אורטופטיסט</td><td>מקצוע האורטופטיסט שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">10<a name=\"practitioner-profession-moh-10\"> </a></td><td>פיזיותרפיה</td><td>מקצוע הפיזיותרפיה שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">11<a name=\"practitioner-profession-moh-11\"> </a></td><td>דיאטן תזונאי</td><td>מקצוע הדיאטן תזונאי שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">12<a name=\"practitioner-profession-moh-12\"> </a></td><td>כירופרקטיקה</td><td>מקצוע הכירופרקטיקה שייך לתחום הפר&quot;א וללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">13<a name=\"practitioner-profession-moh-13\"> </a></td><td>קלינאי-תיקשורת</td><td>מקצוע הקלינאי-תיקשורת שייך לתחום הפר&quot;א לו קיימים גם ערכי התמחות Specialist</td><td/></tr><tr><td style=\"white-space:nowrap\">14<a name=\"practitioner-profession-moh-14\"> </a></td><td>מרפא בעיסוק</td><td>מקצוע מרפא בעיסוק שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">15<a name=\"practitioner-profession-moh-15\"> </a></td><td>ריפוי ביצירה והבעה</td><td>מקצוע הריפוי ביצירה והבעה שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">16<a name=\"practitioner-profession-moh-16\"> </a></td><td>טכנאי-הנשמה (רספירטורי טרפיסט)</td><td>מקצוע הטכנאי-הנשמה (רספירטורי טרפיסט) ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">17<a name=\"practitioner-profession-moh-17\"> </a></td><td>עובד מעבדה רפואית</td><td>מקצוע עובד מעבדה רפואית לו קיימים ערכי התמחות Specialist</td><td/></tr><tr><td style=\"white-space:nowrap\">18<a name=\"practitioner-profession-moh-18\"> </a></td><td>טכנולוגים אלקטרו פיסיולוגים</td><td>מקצוע הטכנולוגים אלקטרו פיסיולוגים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">19<a name=\"practitioner-profession-moh-19\"> </a></td><td>רנטגנאים</td><td>מקצוע הרנטגנאים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">20<a name=\"practitioner-profession-moh-20\"> </a></td><td>טכנולוגים ברפואה גרעינית</td><td>מקצוע הטכנולוגים ברפואה גרעינית ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">21<a name=\"practitioner-profession-moh-21\"> </a></td><td>טכנאי אולטרה-סאונד</td><td>מקצוע הטכנולוגים ברפואה גרעינית ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">22<a name=\"practitioner-profession-moh-22\"> </a></td><td>אורטוטיסטים - פרוטוטיסטים</td><td>מקצוע האורטוטיסטים - פרוטוטיסטים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">23<a name=\"practitioner-profession-moh-23\"> </a></td><td>כירופודיסטים</td><td>מקצוע הכירופודיסטים שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">24<a name=\"practitioner-profession-moh-24\"> </a></td><td>פודיאטריסטים</td><td>מקצוע הפודיאטריסטים שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">25<a name=\"practitioner-profession-moh-25\"> </a></td><td>סייעת</td><td>מקצוע הסייעת שייך לתחום השיניים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">26<a name=\"practitioner-profession-moh-26\"> </a></td><td>אקופונקטורה</td><td>מקצוע האקופונקטורה שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">27<a name=\"practitioner-profession-moh-27\"> </a></td><td>פסיכולוג</td><td>מקצוע הפסיכולוג שייך לתחום בריאות הנפש לו קיימים ערכי מומחיות Expertise וכמו כן ערכי התמחות Specialist</td><td/></tr><tr><td style=\"white-space:nowrap\">29<a name=\"practitioner-profession-moh-29\"> </a></td><td>קרימינולוגיה קלינית</td><td>מקצוע הקרימינולוגיה קלינית שייך לתחום בריאות הנפש ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">30<a name=\"practitioner-profession-moh-30\"> </a></td><td>גנטיקה קלינית- יעוץ גנטי</td><td>מקצוע הגנטיקה קלינית- יעוץ גנטי לו קיימים ערכי מומחיות Expertise</td><td/></tr><tr><td style=\"white-space:nowrap\">31<a name=\"practitioner-profession-moh-31\"> </a></td><td>עובד מעבדה רפואית בכיר</td><td>מקצוע העובד מעבדה רפואית בכיר מופרד מעובד מעבדה אחר לו קיימים ערכי התמחות Specialist</td><td/></tr><tr><td style=\"white-space:nowrap\">32<a name=\"practitioner-profession-moh-32\"> </a></td><td>מרפא שיניים</td><td>מקצוע מרפא שיניים שייך לתחום רפואת השיניים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">33<a name=\"practitioner-profession-moh-33\"> </a></td><td>עובד מעבדה רפואי אקדמאי</td><td>מקצוע העובד מעבדה רפואי אקדמאי (מופרד מעובד מעבדה אחר) ולו קיימים התמחות Specialist</td><td/></tr><tr><td style=\"white-space:nowrap\">34<a name=\"practitioner-profession-moh-34\"> </a></td><td>פיזיותרפיסט אקדמאי</td><td>מקצוע הפיזיותרפיסט אקדמאי שייך לתחום הפר&quot;א (מופרד מפיזיותרפיה) ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">35<a name=\"practitioner-profession-moh-35\"> </a></td><td>מפעיל מכונות לב ריאה</td><td>מקצוע המפעיל מכונות לב ריאה ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">36<a name=\"practitioner-profession-moh-36\"> </a></td><td>פרוסטטיקה אורטוטיקה והנעלה</td><td>מקצוע פרוסטטיקה אורטוטיקה והנעלה ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">37<a name=\"practitioner-profession-moh-37\"> </a></td><td>אוסטאופתיה</td><td>מקצוע האוסטאופתיה שייך לתחום הפר&quot;א ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">38<a name=\"practitioner-profession-moh-38\"> </a></td><td>טכנאי שיניים-מוסמך</td><td>מקצוע הטכנאי שיניים-מוסמך שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">39<a name=\"practitioner-profession-moh-39\"> </a></td><td>טכנאי שיניים-אומן</td><td>מקצוע טכנאי שיניים-אומן שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">40<a name=\"practitioner-profession-moh-40\"> </a></td><td>טכנאי שיניים-מומחה</td><td>מקצוע טכנאי שיניים-מומחה שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">41<a name=\"practitioner-profession-moh-41\"> </a></td><td>עוזרי רופאים</td><td>מקצוע עוזרי רופאים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">42<a name=\"practitioner-profession-moh-42\"> </a></td><td>סוכן תיירות מרפא</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">43<a name=\"practitioner-profession-moh-43\"> </a></td><td>פודיאטר מנתח</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">44<a name=\"practitioner-profession-moh-44\"> </a></td><td>חברת תיירות מרפא</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">45<a name=\"practitioner-profession-moh-45\"> </a></td><td>עבודה סוציאלית</td><td/><td/></tr><tr><td style=\"white-space:nowrap\">97<a name=\"practitioner-profession-moh-97\"> </a></td><td>אחר</td><td>אחר</td><td/></tr><tr><td style=\"white-space:nowrap\">101<a name=\"practitioner-profession-moh-101\"> </a></td><td>אח/ות מוסמכ/ת</td><td>מקצוע האח/ות מוסמכ/ת שייך לתחום הסיעוד לו קיימים ערכי מומחיות Expertise</td><td/></tr><tr><td style=\"white-space:nowrap\">102<a name=\"practitioner-profession-moh-102\"> </a></td><td>אח/ות מעשי/ת</td><td>מקצוע האח/ות מעשי/ת שייך לתחום הסיעוד ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">103<a name=\"practitioner-profession-moh-103\"> </a></td><td>אח/ות</td><td>מקצוע אח/ות שייך לתחום הסיעוד ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">109<a name=\"practitioner-profession-moh-109\"> </a></td><td>מעשי היתר זמני</td><td>מקצוע האח/ות מעשי./- היתר זמני שייך לתחום הסיעוד ללא מומחיות או התמחות ומהווה רישוי זמני בלבד של אח/ות מעשי/ת</td><td/></tr><tr><td style=\"white-space:nowrap\">110<a name=\"practitioner-profession-moh-110\"> </a></td><td>כח עזר</td><td>מקצוע הכח עזר ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">115<a name=\"practitioner-profession-moh-115\"> </a></td><td>טכנאי ח. ניתוח</td><td>מקצוע הטכנאי חדר ניתוח ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">116<a name=\"practitioner-profession-moh-116\"> </a></td><td>מכשירן חדר ניתוח</td><td>מקצוע המכשירן חדר ניתוח ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">117<a name=\"practitioner-profession-moh-117\"> </a></td><td>מטפלת</td><td>מקצוע המטפל שייך לתחום הסיעוד ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">118<a name=\"practitioner-profession-moh-118\"> </a></td><td>טכנאי שיניים</td><td>מקצוע הטכנאי שינייםשייך לתחום רפואת השיניים ללא מומחיות או התמחות</td><td/></tr><tr><td style=\"white-space:nowrap\">133<a name=\"practitioner-profession-moh-133\"> </a></td><td>מעשי מוגבל</td><td>מקצוע מעשי מוגבל שייך לתחום הסיעוד ללא מומחיות או התמחות מהווה רישוי מוגבל של אח/ות מעשי/ת</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/practitioner-profession-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "PractitionerProfessionMoH"] ; # 
+  fhir:title [ fhir:v "קוד מקצוע לעוסק בבריאות"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.health.gov.il/ValueSet/practitioner-profession-moh"^^xsd:anyURI ;
+     fhir:link <http://fhir.health.gov.il/ValueSet/practitioner-profession-moh>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "57"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "-888" ] ;
+     fhir:display [ fhir:v "לא ידוע" ] ;
+     fhir:definition [ fhir:v "ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "-999" ] ;
+     fhir:display [ fhir:v "לא קיים" ] ;
+     fhir:definition [ fhir:v "ערך ברירת מחדל במקרה שערך המקצוע איננו רלוונטי או לא קיים מאחר ולא מדובר במקצוע רפואי" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "רפואה" ] ;
+     fhir:definition [ fhir:v "מקצוע הרפואה לו קיימים גם ערכי מומחיות Expertise" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "רפואת שיניים" ] ;
+     fhir:definition [ fhir:v "מקצוע רפואת השינייים לו קיימים גם ערכי מומחיות Expertise" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "רוקחים" ] ;
+     fhir:definition [ fhir:v "מקצוע הרוקחות לו קיימים גם ערכי התמחות Specialist (אך לא מומחיות Expertise)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "עוזרי רוקחים" ] ;
+     fhir:definition [ fhir:v "מקצוע עוזר רוקח ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "מיילדת" ] ;
+     fhir:definition [ fhir:v "מקצוע המיילדת שייך לתחום הסיעוד ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "שיננית" ] ;
+     fhir:definition [ fhir:v "מקצוע השיננית שייך לתחום רפואת השניים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "טכנאי שיניים-מעשי" ] ;
+     fhir:definition [ fhir:v "מקצוע טכנאי שיניים מעשי שייך לתחום רפואת השיניים (מופרד ממקצוע טכנאי שיניים) וללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "אופטומטריה" ] ;
+     fhir:definition [ fhir:v "מקצוע האופטומטריה ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "אורטופטיסט" ] ;
+     fhir:definition [ fhir:v "מקצוע האורטופטיסט שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "פיזיותרפיה" ] ;
+     fhir:definition [ fhir:v "מקצוע הפיזיותרפיה שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "דיאטן תזונאי" ] ;
+     fhir:definition [ fhir:v "מקצוע הדיאטן תזונאי שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "כירופרקטיקה" ] ;
+     fhir:definition [ fhir:v "מקצוע הכירופרקטיקה שייך לתחום הפר\"א וללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "קלינאי-תיקשורת" ] ;
+     fhir:definition [ fhir:v "מקצוע הקלינאי-תיקשורת שייך לתחום הפר\"א לו קיימים גם ערכי התמחות Specialist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "מרפא בעיסוק" ] ;
+     fhir:definition [ fhir:v "מקצוע מרפא בעיסוק שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "ריפוי ביצירה והבעה" ] ;
+     fhir:definition [ fhir:v "מקצוע הריפוי ביצירה והבעה שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "טכנאי-הנשמה (רספירטורי טרפיסט)" ] ;
+     fhir:definition [ fhir:v "מקצוע הטכנאי-הנשמה (רספירטורי טרפיסט) ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "עובד מעבדה רפואית" ] ;
+     fhir:definition [ fhir:v "מקצוע עובד מעבדה רפואית לו קיימים ערכי התמחות Specialist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "טכנולוגים אלקטרו פיסיולוגים" ] ;
+     fhir:definition [ fhir:v "מקצוע הטכנולוגים אלקטרו פיסיולוגים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "רנטגנאים" ] ;
+     fhir:definition [ fhir:v "מקצוע הרנטגנאים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "טכנולוגים ברפואה גרעינית" ] ;
+     fhir:definition [ fhir:v "מקצוע הטכנולוגים ברפואה גרעינית ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "טכנאי אולטרה-סאונד" ] ;
+     fhir:definition [ fhir:v "מקצוע הטכנולוגים ברפואה גרעינית ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "אורטוטיסטים - פרוטוטיסטים" ] ;
+     fhir:definition [ fhir:v "מקצוע האורטוטיסטים - פרוטוטיסטים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "כירופודיסטים" ] ;
+     fhir:definition [ fhir:v "מקצוע הכירופודיסטים שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "פודיאטריסטים" ] ;
+     fhir:definition [ fhir:v "מקצוע הפודיאטריסטים שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "סייעת" ] ;
+     fhir:definition [ fhir:v "מקצוע הסייעת שייך לתחום השיניים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "אקופונקטורה" ] ;
+     fhir:definition [ fhir:v "מקצוע האקופונקטורה שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "פסיכולוג" ] ;
+     fhir:definition [ fhir:v "מקצוע הפסיכולוג שייך לתחום בריאות הנפש לו קיימים ערכי מומחיות Expertise וכמו כן ערכי התמחות Specialist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "29" ] ;
+     fhir:display [ fhir:v "קרימינולוגיה קלינית" ] ;
+     fhir:definition [ fhir:v "מקצוע הקרימינולוגיה קלינית שייך לתחום בריאות הנפש ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "גנטיקה קלינית- יעוץ גנטי" ] ;
+     fhir:definition [ fhir:v "מקצוע הגנטיקה קלינית- יעוץ גנטי לו קיימים ערכי מומחיות Expertise" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "31" ] ;
+     fhir:display [ fhir:v "עובד מעבדה רפואית בכיר" ] ;
+     fhir:definition [ fhir:v "מקצוע העובד מעבדה רפואית בכיר מופרד מעובד מעבדה אחר לו קיימים ערכי התמחות Specialist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "32" ] ;
+     fhir:display [ fhir:v "מרפא שיניים" ] ;
+     fhir:definition [ fhir:v "מקצוע מרפא שיניים שייך לתחום רפואת השיניים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "33" ] ;
+     fhir:display [ fhir:v "עובד מעבדה רפואי אקדמאי" ] ;
+     fhir:definition [ fhir:v "מקצוע העובד מעבדה רפואי אקדמאי (מופרד מעובד מעבדה אחר) ולו קיימים התמחות Specialist" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "34" ] ;
+     fhir:display [ fhir:v "פיזיותרפיסט אקדמאי" ] ;
+     fhir:definition [ fhir:v "מקצוע הפיזיותרפיסט אקדמאי שייך לתחום הפר\"א (מופרד מפיזיותרפיה) ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "35" ] ;
+     fhir:display [ fhir:v "מפעיל מכונות לב ריאה" ] ;
+     fhir:definition [ fhir:v "מקצוע המפעיל מכונות לב ריאה ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "36" ] ;
+     fhir:display [ fhir:v "פרוסטטיקה אורטוטיקה והנעלה" ] ;
+     fhir:definition [ fhir:v "מקצוע פרוסטטיקה אורטוטיקה והנעלה ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "37" ] ;
+     fhir:display [ fhir:v "אוסטאופתיה" ] ;
+     fhir:definition [ fhir:v "מקצוע האוסטאופתיה שייך לתחום הפר\"א ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "38" ] ;
+     fhir:display [ fhir:v "טכנאי שיניים-מוסמך" ] ;
+     fhir:definition [ fhir:v "מקצוע הטכנאי שיניים-מוסמך שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "39" ] ;
+     fhir:display [ fhir:v "טכנאי שיניים-אומן" ] ;
+     fhir:definition [ fhir:v "מקצוע טכנאי שיניים-אומן שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "40" ] ;
+     fhir:display [ fhir:v "טכנאי שיניים-מומחה" ] ;
+     fhir:definition [ fhir:v "מקצוע טכנאי שיניים-מומחה שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "41" ] ;
+     fhir:display [ fhir:v "עוזרי רופאים" ] ;
+     fhir:definition [ fhir:v "מקצוע עוזרי רופאים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "42" ] ;
+     fhir:display [ fhir:v "סוכן תיירות מרפא" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "43" ] ;
+     fhir:display [ fhir:v "פודיאטר מנתח" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "44" ] ;
+     fhir:display [ fhir:v "חברת תיירות מרפא" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "45" ] ;
+     fhir:display [ fhir:v "עבודה סוציאלית" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "97" ] ;
+     fhir:display [ fhir:v "אחר" ] ;
+     fhir:definition [ fhir:v "אחר" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "101" ] ;
+     fhir:display [ fhir:v "אח/ות מוסמכ/ת" ] ;
+     fhir:definition [ fhir:v "מקצוע האח/ות מוסמכ/ת שייך לתחום הסיעוד לו קיימים ערכי מומחיות Expertise" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "102" ] ;
+     fhir:display [ fhir:v "אח/ות מעשי/ת" ] ;
+     fhir:definition [ fhir:v "מקצוע האח/ות מעשי/ת שייך לתחום הסיעוד ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "103" ] ;
+     fhir:display [ fhir:v "אח/ות" ] ;
+     fhir:definition [ fhir:v "מקצוע אח/ות שייך לתחום הסיעוד ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "109" ] ;
+     fhir:display [ fhir:v "מעשי היתר זמני" ] ;
+     fhir:definition [ fhir:v "מקצוע האח/ות מעשי./- היתר זמני שייך לתחום הסיעוד ללא מומחיות או התמחות ומהווה רישוי זמני בלבד של אח/ות מעשי/ת" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "110" ] ;
+     fhir:display [ fhir:v "כח עזר" ] ;
+     fhir:definition [ fhir:v "מקצוע הכח עזר ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "115" ] ;
+     fhir:display [ fhir:v "טכנאי ח. ניתוח" ] ;
+     fhir:definition [ fhir:v "מקצוע הטכנאי חדר ניתוח ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "116" ] ;
+     fhir:display [ fhir:v "מכשירן חדר ניתוח" ] ;
+     fhir:definition [ fhir:v "מקצוע המכשירן חדר ניתוח ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "117" ] ;
+     fhir:display [ fhir:v "מטפלת" ] ;
+     fhir:definition [ fhir:v "מקצוע המטפל שייך לתחום הסיעוד ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "118" ] ;
+     fhir:display [ fhir:v "טכנאי שיניים" ] ;
+     fhir:definition [ fhir:v "מקצוע הטכנאי שינייםשייך לתחום רפואת השיניים ללא מומחיות או התמחות" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "133" ] ;
+     fhir:display [ fhir:v "מעשי מוגבל" ] ;
+     fhir:definition [ fhir:v "מקצוע מעשי מוגבל שייך לתחום הסיעוד ללא מומחיות או התמחות מהווה רישוי מוגבל של אח/ות מעשי/ת" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "active" ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

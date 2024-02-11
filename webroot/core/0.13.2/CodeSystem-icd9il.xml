@@ -1,0 +1,729 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="icd9il"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Properties</b></p><p><b>This code system  defines the following properties for its concepts</b></p><table class="grid"><tr><td><b>Code</b></td><td><b>Type</b></td></tr><tr><td>type</td><td>string</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/icd9il</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>type</b></td></tr><tr><td style="white-space:nowrap">00.97<a name="icd9il-00.4697"> </a></td><td>INTRAVENOUS INFUSION OF MONOCLONAL ANTIBODIES (IGG1) FOR CORONAVIRUS (COVID-19) PATIENT</td><td>procedure</td></tr><tr><td style="white-space:nowrap">079.84<a name="icd9il-079.4684"> </a></td><td>CORONAVIRUS (COVID-19) INFECTION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">079.85<a name="icd9il-079.4685"> </a></td><td>CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING ONE VACCINE DOSE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">079.86<a name="icd9il-079.4686"> </a></td><td>CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING TWO VACCINE DOSES</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">079.87<a name="icd9il-079.4687"> </a></td><td>CORONAVIRUS (COVID-19) RECURRENT INFECTION AFTER PREVIOUS EPISODE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">079.90<a name="icd9il-079.4690"> </a></td><td>CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING THREE VACCINE DOSES</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">079.91<a name="icd9il-079.4691"> </a></td><td>CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING FOUR VACCINE DOSES</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">139.2<a name="icd9il-139.462"> </a></td><td>LATE EFFECTS OF CORONAVIRUS (COVID-19) INFECTION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">250.76<a name="icd9il-250.4676"> </a></td><td>DIABETIC FOOT GANGRENE, ACTIVE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">250.86<a name="icd9il-250.4686"> </a></td><td>DIABETIC FOOT ULCER, ACTIVE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.02<a name="icd9il-539.4602"> </a></td><td>PORT LEAK OF GASTRIC BAND PROCEDURE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.03<a name="icd9il-539.4603"> </a></td><td>PORT DISPLACEMENT OF GASTRIC BAND PROCEDURE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.04<a name="icd9il-539.4604"> </a></td><td>MINOR PORT INFECTION OF GASTRIC BAND PROCEDURE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.05<a name="icd9il-539.4605"> </a></td><td>STOMACH OBSTRUCTION BY BAND SLIPPAGE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.06<a name="icd9il-539.4606"> </a></td><td>BAND EROSION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.07<a name="icd9il-539.4607"> </a></td><td>LATE PORT OR BAND EROSION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.08<a name="icd9il-539.4608"> </a></td><td>ESOPHAGEAL DILATATION, ESOPHAGITIS DUE TO GASTRIC BAND</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.82<a name="icd9il-539.4682"> </a></td><td>LEAKAGE DUE TO OTHER BARIATRIC PROCEDURE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">539.83<a name="icd9il-539.4683"> </a></td><td>HEMORRHAGE DUE TO OTHER BARIATRIC PROCEDURE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">747.65<a name="icd9il-747.4665"> </a></td><td>UTERINE ARTERIOVENOUS MALFORMATION (AVM)</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">796.61<a name="icd9il-796.4661"> </a></td><td>NEONATAL OAE SCREEN PASSED</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">796.62<a name="icd9il-796.4662"> </a></td><td>NEONATAL OAE SCREEN UNILATERAL FAIL</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">796.63<a name="icd9il-796.4663"> </a></td><td>NEONATAL OAE SCREEN BILATERAL FAIL</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">796.64<a name="icd9il-796.4664"> </a></td><td>NEONATAL AABR SCREEN PASSED</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">796.65<a name="icd9il-796.4665"> </a></td><td>NEONATAL AABR SCREEN UNILATERAL FAIL</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">796.66<a name="icd9il-796.4666"> </a></td><td>NEONATAL AABR SCREEN BILATERAL FAIL</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">796.67<a name="icd9il-796.4667"> </a></td><td>NEONATAL HEARING SCREEN NOT PERFORMED</td><td>procedure</td></tr><tr><td style="white-space:nowrap">995.25<a name="icd9il-995.4625"> </a></td><td>ADVERSE EFFECT OF COVID-19 VACCINATION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">995.95<a name="icd9il-995.4695"> </a></td><td>MULTISYSTEM INFLAMMATORY SYNDROME ASSOCIATED WITH COVID-19</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">998.84<a name="icd9il-998.4684"> </a></td><td>FAILED OR DIFFICULT INTUBATION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">E829.2<a name="icd9il-E829.462"> </a></td><td>POWERED SCOOTER ACCIDENT INJURING PEDESTRIAN</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">E829.3<a name="icd9il-E829.463"> </a></td><td>POWERED SCOOTER ACCIDENT INJURING RIDER</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">E949.8<a name="icd9il-E949.468"> </a></td><td>COVID-19 VACCINE CAUSING ADVERSE EFFECTS IN THERAPEUTIC USE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V01.72<a name="icd9il-V01.4672"> </a></td><td>CONTACT WITH OR EXPOSURE TO CONFIRMED CORONAVIRUS (COVID-19)</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V02.55<a name="icd9il-V02.4655"> </a></td><td>ASYMPTOMATIC PATIENT TESTED POSITIVE FOR CORONAVIRUS (COVID-19)</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V07.00<a name="icd9il-V07.4600"> </a></td><td>NEED FOR ISOLATION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V07.01<a name="icd9il-V07.4601"> </a></td><td>PROPHYLACTIC HOME ISOLATION AFTER CONTACT WITH CORONAVIRUS (COVID-19) PATIENT</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V12.05<a name="icd9il-V12.4605"> </a></td><td>CORONAVIRUS (COVID-19) RECOVERED PATIENT - CURRENT EPISODE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V13.82<a name="icd9il-V13.4682"> </a></td><td>HISTORY OF CORONAVIRUS (COVID-19) INFECTION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V13.83<a name="icd9il-V13.4683"> </a></td><td>EVIDENCE OF PREVIOUS CORONAVIRUS (COVID-19) INFECTION BY SEROLOGY</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V13.84<a name="icd9il-V13.4684"> </a></td><td>STATUS POST CORONAVIRUS (COVID-19) VACCINE, FIRST DOSE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V13.85<a name="icd9il-V13.4685"> </a></td><td>STATUS POST CORONAVIRUS (COVID-19) VACCINE, SECOND DOSE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V13.86<a name="icd9il-V13.4686"> </a></td><td>STATUS POST CORONAVIRUS (COVID-19) VACCINATION TO RECOVERED PATIENT</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V13.87<a name="icd9il-V13.4687"> </a></td><td>STATUS POST CORONAVIRUS (COVID-19) VACCINE, THIRD DOSE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V13.88<a name="icd9il-V13.4688"> </a></td><td>STATUS POST CORONAVIRUS (COVID-19) VACCINE,FOURTH DOSE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V15.90<a name="icd9il-V15.4690"> </a></td><td>UNSPECIFIED PERSONAL HISTORY PRESENTING HAZARDS TO HEALTH</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V15.91<a name="icd9il-V15.4691"> </a></td><td>HISTORY OF FAILED OR DIFFICULT INTUBATION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V15.92<a name="icd9il-V15.4692"> </a></td><td>HISTORY OF DIABETIC FOOT ULCER</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V58.60<a name="icd9il-V58.4660"> </a></td><td>LONG TERM (CURRENT) CANNABIS USE</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V64.20<a name="icd9il-V64.4620"> </a></td><td>SURGICAL OR OTHER PROCEDURE NOT CARRIED OUT BECAUSE OF PATIENT'S DECISION</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V64.21<a name="icd9il-V64.4621"> </a></td><td>MEDICAL INTERVENTION NOT CARRIED OUT BECAUSE OF CAREGIVER REFUSAL</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V64.50<a name="icd9il-V64.4650"> </a></td><td>CORONAVIRUS (COVID-19) TEST NOT CARRIED OUT</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V65.47<a name="icd9il-V65.4647"> </a></td><td>CORONAVIRUS COVID-19 VACCINE COUNSELING</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V71.84<a name="icd9il-V71.4684"> </a></td><td>OBSERVATION AND EVALUATION FOR SUSPECTED EXPOSURE TO CORONAVIRUS COVID-19</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V71.85<a name="icd9il-V71.4685"> </a></td><td>OBSERVATION AND EVALUATION FOR SUSPECTED ADVERSE EFFECT OF COVID-19 VACCINATION NOT FOUND</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V72.64<a name="icd9il-V72.4664"> </a></td><td>CORONAVIRUS (COVID-19) TEST PERFORMED FOR ADMINISTRATIVE PURPOSES</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">V73.70<a name="icd9il-V73.4670"> </a></td><td>EXAMINATION FOR SUSPECTED CORONAVIRUS (COVID-19)</td><td>diagnosis</td></tr><tr><td style="white-space:nowrap">00.98<a name="icd9il-00.4698"> </a></td><td>SUBCUTANEOUS INJECTION OF MONOCLONAL ANTIBODIES (IGG1) FOR CORONAVIRUS (COVID-19) PATIENT</td><td>procedure</td></tr><tr><td style="white-space:nowrap">11.77<a name="icd9il-11.4677"> </a></td><td>AMNIOTIC MEMBRANE GRAFT</td><td>procedure</td></tr><tr><td style="white-space:nowrap">13.73<a name="icd9il-13.4673"> </a></td><td>INSERTION OF TORIC INTRAOCULAR LENS, UP TO 9 CYLINDER</td><td>procedure</td></tr><tr><td style="white-space:nowrap">13.74<a name="icd9il-13.4674"> </a></td><td>INSERTION OF TORIC INTRAOCULAR LENS, 9 CYLINDER OR OVER</td><td>procedure</td></tr><tr><td style="white-space:nowrap">13.75<a name="icd9il-13.4675"> </a></td><td>INSERTION OF MULTIFOCAL INTRAOCULAR LENS</td><td>procedure</td></tr><tr><td style="white-space:nowrap">13.76<a name="icd9il-13.4676"> </a></td><td>INSERTION OF MULTIFOCAL TORIC INTRAOCULAR LENS</td><td>procedure</td></tr><tr><td style="white-space:nowrap">26.33<a name="icd9il-26.4633"> </a></td><td>PARTIAL PAROTIDECTOMY</td><td>procedure</td></tr><tr><td style="white-space:nowrap">26.34<a name="icd9il-26.4634"> </a></td><td>COMPLETE PAROTIDECTOMY</td><td>procedure</td></tr><tr><td style="white-space:nowrap">36.08<a name="icd9il-36.4608"> </a></td><td>INSERTION OF CORONARY SINUS REDUCER SYSTEM</td><td>procedure</td></tr><tr><td style="white-space:nowrap">43.83<a name="icd9il-43.4683"> </a></td><td>ENDOSCOPIC (OVERSTITCH) SLEEVE GASTROPLASTY</td><td>procedure</td></tr><tr><td style="white-space:nowrap">43.84<a name="icd9il-43.4684"> </a></td><td>TRANSORAL ENDOSCOPIC (OVERSTITCH) REVISION OF GASTRIC ANASTOMOSIS</td><td>procedure</td></tr><tr><td style="white-space:nowrap">44.33<a name="icd9il-44.4633"> </a></td><td>ONE ANASTOMOTIC GASTRIC BYPASS (LAP MINI GASTRIC BYPASS)</td><td>procedure</td></tr><tr><td style="white-space:nowrap">44.34<a name="icd9il-44.4634"> </a></td><td>OPEN ONE ANASTOMOTIC GASTRIC BYPASS (OPEN MINI GASTRIC BYPASS)</td><td>procedure</td></tr><tr><td style="white-space:nowrap">58.7<a name="icd9il-58.467"> </a></td><td>INSERTION OF URETHRAL STENT</td><td>procedure</td></tr><tr><td style="white-space:nowrap">75.10<a name="icd9il-75.4610"> </a></td><td>DIAGNOSTIC AMNIOCENTESIS</td><td>procedure</td></tr><tr><td style="white-space:nowrap">75.11<a name="icd9il-75.4611"> </a></td><td>THERAPEUTIC AMNIOCENTESIS</td><td>procedure</td></tr><tr><td style="white-space:nowrap">75.39<a name="icd9il-75.4639"> </a></td><td>UMBILICAL CORD OCCLUSION FOR FETAL REDUCTION</td><td>procedure</td></tr><tr><td style="white-space:nowrap">96.61<a name="icd9il-96.4661"> </a></td><td>FECAL MICROBIOTA TRANSPLANT (FMT) BY TRANSANAL ENEMA</td><td>procedure</td></tr><tr><td style="white-space:nowrap">96.62<a name="icd9il-96.4662"> </a></td><td>FECAL MICROBIOTA TRANSPLANT (FMT) BY ENTERAL INFUSION OF NUTRITIONAL SUBSTANCES</td><td>procedure</td></tr><tr><td style="white-space:nowrap">96.63<a name="icd9il-96.4663"> </a></td><td>FECAL MICROBIOTA TRANSPLANT (FMT) BY NASO-INTESTINAL TUBE</td><td>procedure</td></tr><tr><td style="white-space:nowrap">96.64<a name="icd9il-96.4664"> </a></td><td>FECAL MICROBIOTA TRANSPLANT (FMT) BY PEG</td><td>procedure</td></tr><tr><td style="white-space:nowrap">96.65<a name="icd9il-96.4665"> </a></td><td>FECAL MICROBIOTA TRANSPLANT (FMT) BY COLONOSCOPY</td><td>procedure</td></tr><tr><td style="white-space:nowrap">96.66<a name="icd9il-96.4666"> </a></td><td>FECAL MICROBIOTA TRANSPLANT (FMT) BY GASTROSCOPY</td><td>procedure</td></tr><tr><td style="white-space:nowrap">96.67<a name="icd9il-96.4667"> </a></td><td>FECAL MICROBIOTA TRANSPLANT (FMT)- PER OS</td><td>procedure</td></tr><tr><td style="white-space:nowrap">99.40<a name="icd9il-99.4640"> </a></td><td>CORONAVIRUS (COVID-19) VACCINATION TO RECOVERED PATIENT</td><td>procedure</td></tr><tr><td style="white-space:nowrap">99.49<a name="icd9il-99.4649"> </a></td><td>CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, FIRST DOSE</td><td>procedure</td></tr><tr><td style="white-space:nowrap">99.50<a name="icd9il-99.4650"> </a></td><td>CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, SECOND DOSE</td><td>procedure</td></tr><tr><td style="white-space:nowrap">99.5A<a name="icd9il-99.465A"> </a></td><td>CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, THIRD DOSE</td><td>procedure</td></tr><tr><td style="white-space:nowrap">99.5B<a name="icd9il-99.465B"> </a></td><td>CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, FOURTH DOSE</td><td>procedure</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-01"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/icd9il"/>
+  <version value="0.13.2"/>
+  <name value="ICD9IL"/>
+  <title value="ICD9IL: Adendum to ICD9 according to codes by Israeli MoH"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Strings for procedures and diagnoses, added to ICD9"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="86"/>
+  <property>
+    <code value="type"/>
+    <type value="string"/>
+  </property>
+  <concept>
+    <code value="00.97"/>
+    <display value="INTRAVENOUS INFUSION OF MONOCLONAL ANTIBODIES (IGG1) FOR CORONAVIRUS (COVID-19) PATIENT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="079.84"/>
+    <display value="CORONAVIRUS (COVID-19) INFECTION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="079.85"/>
+    <display value="CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING ONE VACCINE DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="079.86"/>
+    <display value="CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING TWO VACCINE DOSES"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="079.87"/>
+    <display value="CORONAVIRUS (COVID-19) RECURRENT INFECTION AFTER PREVIOUS EPISODE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="079.90"/>
+    <display value="CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING THREE VACCINE DOSES"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="079.91"/>
+    <display value="CORONAVIRUS (COVID-19) INFECTION AFTER RECEIVING FOUR VACCINE DOSES"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="139.2"/>
+    <display value="LATE EFFECTS OF CORONAVIRUS (COVID-19) INFECTION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="250.76"/>
+    <display value="DIABETIC FOOT GANGRENE, ACTIVE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="250.86"/>
+    <display value="DIABETIC FOOT ULCER, ACTIVE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.02"/>
+    <display value="PORT LEAK OF GASTRIC BAND PROCEDURE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.03"/>
+    <display value="PORT DISPLACEMENT OF GASTRIC BAND PROCEDURE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.04"/>
+    <display value="MINOR PORT INFECTION OF GASTRIC BAND PROCEDURE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.05"/>
+    <display value="STOMACH OBSTRUCTION BY BAND SLIPPAGE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.06"/>
+    <display value="BAND EROSION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.07"/>
+    <display value="LATE PORT OR BAND EROSION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.08"/>
+    <display value="ESOPHAGEAL DILATATION, ESOPHAGITIS DUE TO GASTRIC BAND"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.82"/>
+    <display value="LEAKAGE DUE TO OTHER BARIATRIC PROCEDURE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="539.83"/>
+    <display value="HEMORRHAGE DUE TO OTHER BARIATRIC PROCEDURE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="747.65"/>
+    <display value="UTERINE ARTERIOVENOUS MALFORMATION (AVM)"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="796.61"/>
+    <display value="NEONATAL OAE SCREEN PASSED"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="796.62"/>
+    <display value="NEONATAL OAE SCREEN UNILATERAL FAIL"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="796.63"/>
+    <display value="NEONATAL OAE SCREEN BILATERAL FAIL"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="796.64"/>
+    <display value="NEONATAL AABR SCREEN PASSED"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="796.65"/>
+    <display value="NEONATAL AABR SCREEN UNILATERAL FAIL"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="796.66"/>
+    <display value="NEONATAL AABR SCREEN BILATERAL FAIL"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="796.67"/>
+    <display value="NEONATAL HEARING SCREEN NOT PERFORMED"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="995.25"/>
+    <display value="ADVERSE EFFECT OF COVID-19 VACCINATION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="995.95"/>
+    <display value="MULTISYSTEM INFLAMMATORY SYNDROME ASSOCIATED WITH COVID-19"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="998.84"/>
+    <display value="FAILED OR DIFFICULT INTUBATION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="E829.2"/>
+    <display value="POWERED SCOOTER ACCIDENT INJURING PEDESTRIAN"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="E829.3"/>
+    <display value="POWERED SCOOTER ACCIDENT INJURING RIDER"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="E949.8"/>
+    <display value="COVID-19 VACCINE CAUSING ADVERSE EFFECTS IN THERAPEUTIC USE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V01.72"/>
+    <display value="CONTACT WITH OR EXPOSURE TO CONFIRMED CORONAVIRUS (COVID-19)"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V02.55"/>
+    <display value="ASYMPTOMATIC PATIENT TESTED POSITIVE FOR CORONAVIRUS (COVID-19)"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V07.00"/>
+    <display value="NEED FOR ISOLATION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V07.01"/>
+    <display value="PROPHYLACTIC HOME ISOLATION AFTER CONTACT WITH CORONAVIRUS (COVID-19) PATIENT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V12.05"/>
+    <display value="CORONAVIRUS (COVID-19) RECOVERED PATIENT - CURRENT EPISODE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V13.82"/>
+    <display value="HISTORY OF CORONAVIRUS (COVID-19) INFECTION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V13.83"/>
+    <display value="EVIDENCE OF PREVIOUS CORONAVIRUS (COVID-19) INFECTION BY SEROLOGY"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V13.84"/>
+    <display value="STATUS POST CORONAVIRUS (COVID-19) VACCINE, FIRST DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V13.85"/>
+    <display value="STATUS POST CORONAVIRUS (COVID-19) VACCINE, SECOND DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V13.86"/>
+    <display value="STATUS POST CORONAVIRUS (COVID-19) VACCINATION TO RECOVERED PATIENT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V13.87"/>
+    <display value="STATUS POST CORONAVIRUS (COVID-19) VACCINE, THIRD DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V13.88"/>
+    <display value="STATUS POST CORONAVIRUS (COVID-19) VACCINE,FOURTH DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V15.90"/>
+    <display value="UNSPECIFIED PERSONAL HISTORY PRESENTING HAZARDS TO HEALTH"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V15.91"/>
+    <display value="HISTORY OF FAILED OR DIFFICULT INTUBATION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V15.92"/>
+    <display value="HISTORY OF DIABETIC FOOT ULCER"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V58.60"/>
+    <display value="LONG TERM (CURRENT) CANNABIS USE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V64.20"/>
+    <display value="SURGICAL OR OTHER PROCEDURE NOT CARRIED OUT BECAUSE OF PATIENT'S DECISION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V64.21"/>
+    <display value="MEDICAL INTERVENTION NOT CARRIED OUT BECAUSE OF CAREGIVER REFUSAL"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V64.50"/>
+    <display value="CORONAVIRUS (COVID-19) TEST NOT CARRIED OUT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V65.47"/>
+    <display value="CORONAVIRUS COVID-19 VACCINE COUNSELING"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V71.84"/>
+    <display value="OBSERVATION AND EVALUATION FOR SUSPECTED EXPOSURE TO CORONAVIRUS COVID-19"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V71.85"/>
+    <display value="OBSERVATION AND EVALUATION FOR SUSPECTED ADVERSE EFFECT OF COVID-19 VACCINATION NOT FOUND"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V72.64"/>
+    <display value="CORONAVIRUS (COVID-19) TEST PERFORMED FOR ADMINISTRATIVE PURPOSES"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="V73.70"/>
+    <display value="EXAMINATION FOR SUSPECTED CORONAVIRUS (COVID-19)"/>
+    <property>
+      <code value="type"/>
+      <valueString value="diagnosis"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="00.98"/>
+    <display value="SUBCUTANEOUS INJECTION OF MONOCLONAL ANTIBODIES (IGG1) FOR CORONAVIRUS (COVID-19) PATIENT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="11.77"/>
+    <display value="AMNIOTIC MEMBRANE GRAFT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="13.73"/>
+    <display value="INSERTION OF TORIC INTRAOCULAR LENS, UP TO 9 CYLINDER"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="13.74"/>
+    <display value="INSERTION OF TORIC INTRAOCULAR LENS, 9 CYLINDER OR OVER"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="13.75"/>
+    <display value="INSERTION OF MULTIFOCAL INTRAOCULAR LENS"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="13.76"/>
+    <display value="INSERTION OF MULTIFOCAL TORIC INTRAOCULAR LENS"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="26.33"/>
+    <display value="PARTIAL PAROTIDECTOMY"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="26.34"/>
+    <display value="COMPLETE PAROTIDECTOMY"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="36.08"/>
+    <display value="INSERTION OF CORONARY SINUS REDUCER SYSTEM"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="43.83"/>
+    <display value="ENDOSCOPIC (OVERSTITCH) SLEEVE GASTROPLASTY"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="43.84"/>
+    <display value="TRANSORAL ENDOSCOPIC (OVERSTITCH) REVISION OF GASTRIC ANASTOMOSIS"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="44.33"/>
+    <display value="ONE ANASTOMOTIC GASTRIC BYPASS (LAP MINI GASTRIC BYPASS)"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="44.34"/>
+    <display value="OPEN ONE ANASTOMOTIC GASTRIC BYPASS (OPEN MINI GASTRIC BYPASS)"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="58.7"/>
+    <display value="INSERTION OF URETHRAL STENT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="75.10"/>
+    <display value="DIAGNOSTIC AMNIOCENTESIS"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="75.11"/>
+    <display value="THERAPEUTIC AMNIOCENTESIS"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="75.39"/>
+    <display value="UMBILICAL CORD OCCLUSION FOR FETAL REDUCTION"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="96.61"/>
+    <display value="FECAL MICROBIOTA TRANSPLANT (FMT) BY TRANSANAL ENEMA"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="96.62"/>
+    <display value="FECAL MICROBIOTA TRANSPLANT (FMT) BY ENTERAL INFUSION OF NUTRITIONAL SUBSTANCES"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="96.63"/>
+    <display value="FECAL MICROBIOTA TRANSPLANT (FMT) BY NASO-INTESTINAL TUBE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="96.64"/>
+    <display value="FECAL MICROBIOTA TRANSPLANT (FMT) BY PEG"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="96.65"/>
+    <display value="FECAL MICROBIOTA TRANSPLANT (FMT) BY COLONOSCOPY"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="96.66"/>
+    <display value="FECAL MICROBIOTA TRANSPLANT (FMT) BY GASTROSCOPY"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="96.67"/>
+    <display value="FECAL MICROBIOTA TRANSPLANT (FMT)- PER OS"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="99.40"/>
+    <display value="CORONAVIRUS (COVID-19) VACCINATION TO RECOVERED PATIENT"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="99.49"/>
+    <display value="CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, FIRST DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="99.50"/>
+    <display value="CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, SECOND DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="99.5A"/>
+    <display value="CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, THIRD DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+  <concept>
+    <code value="99.5B"/>
+    <display value="CORONAVIRUS COVID-19 VACCINE ADMINISTRATION, FOURTH DOSE"/>
+    <property>
+      <code value="type"/>
+      <valueString value="procedure"/>
+    </property>
+  </concept>
+</CodeSystem>

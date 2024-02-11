@@ -1,0 +1,1185 @@
+[
+  {
+    "id" : "health.gov.il.fhir.core",
+    "type" : "ImplementationGuide",
+    "url" : "http://fhir.health.gov.il/ImplementationGuide/health.gov.il.fhir.core",
+    "version" : "0.13.2",
+    "name" : "ILCoreImplementationGuide"
+  },
+  {
+    "id" : "cbs-statistical-area",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/cbs-statistical-area",
+    "version" : "0.13.2",
+    "name" : "Israeli CBS statistical area"
+  },
+  {
+    "id" : "il-national-id",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/il-national-id",
+    "version" : "0.13.2",
+    "name" : "Israeli National Identifier - Individual"
+  },
+  {
+    "id" : "israel-drugs",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/israel-drugs",
+    "version" : "0.13.2",
+    "name" : "The Israeli Drug Registry"
+  },
+  {
+    "id" : "legal-entity",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/legal-entity",
+    "version" : "0.13.2",
+    "name" : "Israeli Legal Entity"
+  },
+  {
+    "id" : "nurse-advanced-course",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/nurse-advanced-course",
+    "version" : "0.13.2",
+    "name" : "Israeli Ministry of Health nurse advanced course"
+  },
+  {
+    "id" : "nurse-expertise",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/nurse-expertise",
+    "version" : "0.13.2",
+    "name" : "Israeli Ministry of Health nurse expertise"
+  },
+  {
+    "id" : "nurse-registration",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/nurse-registration",
+    "version" : "0.13.2",
+    "name" : "Israeli Ministry of Health nurse registration"
+  },
+  {
+    "id" : "pna-national-id",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/pna-national-id",
+    "version" : "0.13.2",
+    "name" : "Palestinian National Identifier - Individual"
+  },
+  {
+    "id" : "practitioner-expertise",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/practitioner-expertise",
+    "version" : "0.13.2",
+    "name" : "Israeli Ministry of Health practitioner expertise"
+  },
+  {
+    "id" : "practitioner-instructor",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/practitioner-instructor",
+    "version" : "0.13.2",
+    "name" : "Israeli Ministry of Health instructor accreditation"
+  },
+  {
+    "id" : "practitioner-license",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/practitioner-license",
+    "version" : "0.13.2",
+    "name" : "Israeli Ministry of Health practitioner license"
+  },
+  {
+    "id" : "social-worker",
+    "type" : "NamingSystem",
+    "url" : "http://fhir.health.gov.il/NamingSystem/social-worker",
+    "version" : "0.13.2",
+    "name" : "Israeli Ministry of Labor, Social Affairs and Social Services social-worker license"
+  },
+  {
+    "id" : "ext-administrative-parent-name",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name",
+    "version" : "0.13.2",
+    "name" : "AdminParentName"
+  },
+  {
+    "id" : "ext-allergy-intolerance-end",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-allergy-intolerance-end",
+    "version" : "0.13.2",
+    "name" : "AllergyIntoleranceEnd"
+  },
+  {
+    "id" : "ext-city-code",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+    "version" : "0.13.2",
+    "name" : "CityCode"
+  },
+  {
+    "id" : "ext-diagnostic-report-note",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-diagnostic-report-note",
+    "version" : "0.13.2",
+    "name" : "DiagnosticReportNote"
+  },
+  {
+    "id" : "ext-documented-event-date",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-documented-event-date",
+    "version" : "0.13.2",
+    "name" : "ILCoreDocumentedEventDate"
+  },
+  {
+    "id" : "ext-event-occurrence-location",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-event-occurrence-location",
+    "version" : "0.13.2",
+    "name" : "EventOccurrenceLocation"
+  },
+  {
+    "id" : "ext-hebrew-date",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date",
+    "version" : "0.13.2",
+    "name" : "HebrewDate"
+  },
+  {
+    "id" : "ext-il-hmo",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+    "version" : "0.13.2",
+    "name" : "IsraelHMO"
+  },
+  {
+    "id" : "ext-medication-course-of-therapy-type",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type",
+    "version" : "0.13.2",
+    "name" : "MedicationCourseOfTherapyType"
+  },
+  {
+    "id" : "ext-movement-sequence-number",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-movement-number",
+    "version" : "0.13.2",
+    "name" : "MovementSequenceNumber"
+  },
+  {
+    "id" : "ext-narcotic-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication",
+    "version" : "0.13.2",
+    "name" : "ILCoreNarcoticMedication"
+  },
+  {
+    "id" : "ext-parent-name",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-parent-name",
+    "version" : "0.13.2",
+    "name" : "ParentName"
+  },
+  {
+    "id" : "ext-patient-immigration",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration",
+    "version" : "0.13.2",
+    "name" : "PatientImmigration"
+  },
+  {
+    "id" : "ext-procedure-reference",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-procedure-reference",
+    "version" : "0.13.2",
+    "name" : "ILCoreProcedureReference"
+  },
+  {
+    "id" : "ext-qualification-practice",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice",
+    "version" : "0.13.2",
+    "name" : "QualificationPractice"
+  },
+  {
+    "id" : "ext-reaction-duration",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration",
+    "version" : "0.13.2",
+    "name" : "ReactionDuration"
+  },
+  {
+    "id" : "ext-recorded-time",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-recorded-time",
+    "version" : "0.13.2",
+    "name" : "ILCoreRecordedTime"
+  },
+  {
+    "id" : "ext-statistical-area",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/ext-statistical-area",
+    "version" : "0.13.2",
+    "name" : "StatisticalArea"
+  },
+  {
+    "id" : "il-core-address",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-address",
+    "version" : "0.13.2",
+    "name" : "ILCoreAddress"
+  },
+  {
+    "id" : "il-core-allergy-intolerance",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance",
+    "version" : "0.13.2",
+    "name" : "ILCoreAllergyIntolerance"
+  },
+  {
+    "id" : "il-core-care-team",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-care-team",
+    "version" : "0.13.2",
+    "name" : "ILCoreCareTeam"
+  },
+  {
+    "id" : "il-core-claim",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-claim",
+    "version" : "0.13.2",
+    "name" : "ILCoreClaim"
+  },
+  {
+    "id" : "il-core-condition",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-condition",
+    "version" : "0.13.2",
+    "name" : "ILCoreCondition"
+  },
+  {
+    "id" : "il-core-coverage",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-coverage",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoverage"
+  },
+  {
+    "id" : "il-core-coverage-eligibility-request",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-coverage-eligibility-request",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoverageEligibilityRequest"
+  },
+  {
+    "id" : "il-core-coverage-eligibility-response",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-coverage-eligibility-response",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoverageEligibilityResponse"
+  },
+  {
+    "id" : "il-core-device",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-device",
+    "version" : "0.13.2",
+    "name" : "ILCoreDevice"
+  },
+  {
+    "id" : "il-core-device-definition",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-device-definition",
+    "version" : "0.13.2",
+    "name" : "ILCoreDeviceDefinition"
+  },
+  {
+    "id" : "il-core-diagnostic-report",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-diagnostic-report",
+    "version" : "0.13.2",
+    "name" : "ILCoreDiagnosticReport"
+  },
+  {
+    "id" : "il-core-document-reference",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-document-reference",
+    "version" : "0.13.2",
+    "name" : "ILCoreDocumentReference"
+  },
+  {
+    "id" : "il-core-dosage",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-dosage",
+    "version" : "0.13.2",
+    "name" : "ILCoreDosage"
+  },
+  {
+    "id" : "il-core-encounter",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-encounter",
+    "version" : "0.13.2",
+    "name" : "ILCoreEncounter"
+  },
+  {
+    "id" : "il-core-family-member-history",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-family-member-history",
+    "version" : "0.13.2",
+    "name" : "ILCoreFamilyMemberHistory"
+  },
+  {
+    "id" : "il-core-group",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-group",
+    "version" : "0.13.2",
+    "name" : "ILCoreGroup"
+  },
+  {
+    "id" : "il-core-imaging-study",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-imaging-study",
+    "version" : "0.13.2",
+    "name" : "ILCoreImagingStudy"
+  },
+  {
+    "id" : "il-core-immunization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-immunization",
+    "version" : "0.13.2",
+    "name" : "ILCoreImmunization"
+  },
+  {
+    "id" : "il-core-immunization-reaction-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-immunization-reaction-observation",
+    "version" : "0.13.2",
+    "name" : "ILCoreImmunizationReactionObservation"
+  },
+  {
+    "id" : "il-core-immunization-recommendation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-immunization-recommendation",
+    "version" : "0.13.2",
+    "name" : "ILCoreImmunizationRecommendation"
+  },
+  {
+    "id" : "il-core-location",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-location",
+    "version" : "0.13.2",
+    "name" : "ILCoreLocation"
+  },
+  {
+    "id" : "il-core-media",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-media",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedia"
+  },
+  {
+    "id" : "il-core-medication",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-medication",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedication"
+  },
+  {
+    "id" : "il-core-medication-administration",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationAdministration"
+  },
+  {
+    "id" : "il-core-medication-request",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-medication-request",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationRequest"
+  },
+  {
+    "id" : "il-core-medication-statement",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationStatement"
+  },
+  {
+    "id" : "il-core-observation",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-observation",
+    "version" : "0.13.2",
+    "name" : "ILCoreObservation"
+  },
+  {
+    "id" : "il-core-observation-lab",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab",
+    "version" : "0.13.2",
+    "name" : "ILCoreObservationLab"
+  },
+  {
+    "id" : "il-core-organization",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-organization",
+    "version" : "0.13.2",
+    "name" : "ILCoreOrganization"
+  },
+  {
+    "id" : "il-core-patient",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-patient",
+    "version" : "0.13.2",
+    "name" : "ILCorePatient"
+  },
+  {
+    "id" : "il-core-plan-definition",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-plan-definition",
+    "version" : "0.13.2",
+    "name" : "ILCorePlanDefinition"
+  },
+  {
+    "id" : "il-core-practitioner",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner",
+    "version" : "0.13.2",
+    "name" : "ILCorePractitioner"
+  },
+  {
+    "id" : "il-core-practitioner-role",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role",
+    "version" : "0.13.2",
+    "name" : "ILCorePractitionerRole"
+  },
+  {
+    "id" : "il-core-procedure",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-procedure",
+    "version" : "0.13.2",
+    "name" : "ILCoreProcedure"
+  },
+  {
+    "id" : "il-core-questionnaire",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-questionnaire",
+    "version" : "0.13.2",
+    "name" : "ILCoreQuestionnaire"
+  },
+  {
+    "id" : "il-core-questionnaire-response",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-questionnaire-response",
+    "version" : "0.13.2",
+    "name" : "ILCoreQuestionnaireResponse"
+  },
+  {
+    "id" : "il-core-related-person",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-related-person",
+    "version" : "0.13.2",
+    "name" : "ILCoreRelatedPerson"
+  },
+  {
+    "id" : "il-core-service-request",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-service-request",
+    "version" : "0.13.2",
+    "name" : "ILCoreServiceRequest"
+  },
+  {
+    "id" : "il-core-substance",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-service-substance",
+    "version" : "0.13.2",
+    "name" : "ILCoreSubstance"
+  },
+  {
+    "id" : "il-core-specimen",
+    "type" : "StructureDefinition",
+    "url" : "http://fhir.health.gov.il/StructureDefinition/il-core-specimen",
+    "version" : "0.13.2",
+    "name" : "ILCoreSpecimen"
+  },
+  {
+    "id" : "city-symbol",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/city-symbol",
+    "version" : "0.13.2",
+    "name" : "CitySymbol"
+  },
+  {
+    "id" : "department-type-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/department-type-moh",
+    "version" : "0.13.2",
+    "name" : "DepartmentTypeMoH"
+  },
+  {
+    "id" : "hebrew-date-day",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/hebrew-date-day",
+    "version" : "0.13.2",
+    "name" : "HebrewDateDay"
+  },
+  {
+    "id" : "hebrew-date-month",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/hebrew-date-month",
+    "version" : "0.13.2",
+    "name" : "HebrewDateMonth"
+  },
+  {
+    "id" : "icd9-cm-diagnoses",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/icd9-cm-diagnoses",
+    "version" : "0.13.2",
+    "name" : "Icd9CmDiagnoses"
+  },
+  {
+    "id" : "icd9-cm-procedures",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/icd9-cm-procedures",
+    "version" : "0.13.2",
+    "name" : "Icd9CmProcedures"
+  },
+  {
+    "id" : "icd9il-diagnoses",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/icd9il-diagnoses",
+    "version" : "0.13.2",
+    "name" : "ICD9ILDiagnoses"
+  },
+  {
+    "id" : "icd9il-procedures",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/icd9il-procedures",
+    "version" : "0.13.2",
+    "name" : "ICD9ILProcedures"
+  },
+  {
+    "id" : "il-core-allergy-intolerance-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreAllergyIntoleranceCode"
+  },
+  {
+    "id" : "il-core-allergy-intolerance-end-reason",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-end-reason",
+    "version" : "0.13.2",
+    "name" : "ILCoreAllergyIntoleranceEndReason"
+  },
+  {
+    "id" : "il-core-common-units-of-measure",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-common-units-of-measure",
+    "version" : "0.13.2",
+    "name" : "ILCoreCommonUnitsOfMeasure"
+  },
+  {
+    "id" : "il-core-condition-category",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-condition-category",
+    "version" : "0.13.2",
+    "name" : "ILCoreConditionCategory"
+  },
+  {
+    "id" : "il-core-condition-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-condition-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreConditionCode"
+  },
+  {
+    "id" : "il-core-coverage-class",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-coverage-class",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoverageClass"
+  },
+  {
+    "id" : "il-core-coverage-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-coverage-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoverageType"
+  },
+  {
+    "id" : "il-core-doctor-to-doctor",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-doctor-to-doctor",
+    "version" : "0.13.2",
+    "name" : "ILCoreDoctorToDoctor"
+  },
+  {
+    "id" : "il-core-encounter-class",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-encounter-class",
+    "version" : "0.13.2",
+    "name" : "ILCoreEncounterClass"
+  },
+  {
+    "id" : "il-core-jurisdiction",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-jurisdiction",
+    "version" : "0.13.2",
+    "name" : "ILCoreJurisdiction"
+  },
+  {
+    "id" : "il-core-manifestation",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-manifestation",
+    "version" : "0.13.2",
+    "name" : "ILCoreManifestation"
+  },
+  {
+    "id" : "il-core-medication-administrartion-category",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-administration-category",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationAdministrartionCategory"
+  },
+  {
+    "id" : "il-core-medication-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationCode"
+  },
+  {
+    "id" : "il-core-medication-course-of-therapy-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationCourseOfTherapyType"
+  },
+  {
+    "id" : "il-core-medication-request-category",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-request-category",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationRequestCategory"
+  },
+  {
+    "id" : "il-core-medication-statement-category",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationStatementCategory"
+  },
+  {
+    "id" : "il-core-medication-statement-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-medication-statement-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationStatementCode"
+  },
+  {
+    "id" : "il-core-not-performed-reason",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason",
+    "version" : "0.13.2",
+    "name" : "ILCoreNotPerformedReason"
+  },
+  {
+    "id" : "il-core-observation-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-observation-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreObservationCode"
+  },
+  {
+    "id" : "il-core-observation-lab-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-observation-lab-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreObservationLabCode"
+  },
+  {
+    "id" : "il-core-observation-value",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-observation-value",
+    "version" : "0.13.2",
+    "name" : "ILCoreObservationValue"
+  },
+  {
+    "id" : "il-core-parent-name-role",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-parent-name-role",
+    "version" : "0.13.2",
+    "name" : "ILCoreParentNameRole"
+  },
+  {
+    "id" : "il-core-premium-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-premium-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoveragePremiumType"
+  },
+  {
+    "id" : "il-core-procedure-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-procedure-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreProcedureCode"
+  },
+  {
+    "id" : "il-core-procedure-reason",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-procedure-reason",
+    "version" : "0.13.2",
+    "name" : "ILCoreProcedureReason"
+  },
+  {
+    "id" : "il-core-route-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-route-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreRouteCode"
+  },
+  {
+    "id" : "il-core-service-category",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-service-category",
+    "version" : "0.13.2",
+    "name" : "ILCoreServiceCategory"
+  },
+  {
+    "id" : "il-core-service-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-service-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreServiceType"
+  },
+  {
+    "id" : "il-core-substance",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-substance",
+    "version" : "0.13.2",
+    "name" : "ILCoreSubstance"
+  },
+  {
+    "id" : "il-core-units-of-measure",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-units-of-measure",
+    "version" : "0.13.2",
+    "name" : "ILCoreUnitsOfMeasure"
+  },
+  {
+    "id" : "il-core-virtual-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-core-virtual-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreVirtualType"
+  },
+  {
+    "id" : "il-core-religion-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/il-religion-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreReligionCode"
+  },
+  {
+    "id" : "immunization-body-site",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/immunization-body-site",
+    "version" : "0.13.2",
+    "name" : "ImmunizationBodySite"
+  },
+  {
+    "id" : "immunization-side-effect",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/immunization-side-effect",
+    "version" : "0.13.2",
+    "name" : "ImmunizationSideEffects"
+  },
+  {
+    "id" : "institution-type-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/institution-type-moh",
+    "version" : "0.13.2",
+    "name" : "InstitutionTypeMoH"
+  },
+  {
+    "id" : "israel-hmo",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/israel-hmo",
+    "version" : "0.13.2",
+    "name" : "IsraelHMO"
+  },
+  {
+    "id" : "medical-service-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/medical-service-moh",
+    "version" : "0.13.2",
+    "name" : "MedicalServiceMoH"
+  },
+  {
+    "id" : "moh-admit-source",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/moh-admit-source",
+    "version" : "0.13.2",
+    "name" : "MoHAdmitSource"
+  },
+  {
+    "id" : "moh-medication-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/moh-medication-code",
+    "version" : "0.13.2",
+    "name" : "MoHMedicationCode"
+  },
+  {
+    "id" : "organization-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/organization-type",
+    "version" : "0.13.2",
+    "name" : "OrganizationType"
+  },
+  {
+    "id" : "passport-uri",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/passport-uri",
+    "version" : "0.13.2",
+    "name" : "PassportUri"
+  },
+  {
+    "id" : "patient-admit-source-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/patient-admit-source-moh",
+    "version" : "0.13.2",
+    "name" : "PatientAdmitSourceMoH"
+  },
+  {
+    "id" : "patient-relationship-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/patient-relationship-type",
+    "version" : "0.13.2",
+    "name" : "ILCorePatientRelationshipType"
+  },
+  {
+    "id" : "patient-release-type-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/patient-release-type-moh",
+    "version" : "0.13.2",
+    "name" : "PatientRealeaseTypeMoH"
+  },
+  {
+    "id" : "patient-visit-reason-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/patient-visit-reason-moh",
+    "version" : "0.13.2",
+    "name" : "PatientVisitReasonMoH"
+  },
+  {
+    "id" : "practitioner-advanced-course-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/practitioner-advanced-course-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerAdvancedCourseMoH"
+  },
+  {
+    "id" : "practitioner-certificate-type",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/practitioner-certificate-type",
+    "version" : "0.13.2",
+    "name" : "PractitionerCertificateType"
+  },
+  {
+    "id" : "practitioner-education-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/practitioner-education-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerEducationMoH"
+  },
+  {
+    "id" : "practitioner-expertise-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/practitioner-expertise-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerExpertiseMoH"
+  },
+  {
+    "id" : "practitioner-nurse-profession-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/practitioner-nurse-profession-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerNurseProfessionMoH"
+  },
+  {
+    "id" : "practitioner-profession-moh",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/practitioner-profession-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerProfessionMoH"
+  },
+  {
+    "id" : "reason-not-done",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/reason-not-done",
+    "version" : "0.13.2",
+    "name" : "ReasonNotDone"
+  },
+  {
+    "id" : "statistical-area-uri",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/statistical-area-uri",
+    "version" : "0.13.2",
+    "name" : "StatisticalAreaUri"
+  },
+  {
+    "id" : "target-disease",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/target-disease",
+    "version" : "0.13.2",
+    "name" : "TargetDisease"
+  },
+  {
+    "id" : "tofes17-error-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/tofes17-error-codes",
+    "version" : "0.13.2",
+    "name" : "Tofes17ErrorCodes"
+  },
+  {
+    "id" : "tofes17-reject-codes",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/tofes17-reject-codes",
+    "version" : "0.13.2",
+    "name" : "Tofes17RejectCodes"
+  },
+  {
+    "id" : "vaccine-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/vaccine-code",
+    "version" : "0.13.2",
+    "name" : "VaccineCode"
+  },
+  {
+    "id" : "vaccine-product-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/vaccine-product-code",
+    "version" : "0.13.2",
+    "name" : "VaccineProductCode"
+  },
+  {
+    "id" : "yarpa-medication-code",
+    "type" : "ValueSet",
+    "url" : "http://fhir.health.gov.il/ValueSet/yarpa-medication-code",
+    "version" : "0.13.2",
+    "name" : "YarpaMedicationCode"
+  },
+  {
+    "id" : "city-symbol",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/city-symbol",
+    "version" : "0.13.2",
+    "name" : "CitySymbol"
+  },
+  {
+    "id" : "department-type-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/department-type-moh",
+    "version" : "0.13.2",
+    "name" : "DepartmentTypeMoH"
+  },
+  {
+    "id" : "hebrew-date-day",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/hebrew-date-day",
+    "version" : "0.13.2",
+    "name" : "HebrewDateDay"
+  },
+  {
+    "id" : "hebrew-date-month",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/hebrew-date-month",
+    "version" : "0.13.2",
+    "name" : "HebrewDateMonth"
+  },
+  {
+    "id" : "icd9il",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/icd9il",
+    "version" : "0.13.2",
+    "name" : "ICD9IL"
+  },
+  {
+    "id" : "il-core-coverage-class",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-coverage-class",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoverageClass"
+  },
+  {
+    "id" : "il-core-premium-type",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-coverage-premium-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoveragePremiumType"
+  },
+  {
+    "id" : "il-core-coverage-type",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-coverage-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreCoverageType"
+  },
+  {
+    "id" : "il-core-encounter-class",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-encounter-class",
+    "version" : "0.13.2",
+    "name" : "ILCoreEncounterClass"
+  },
+  {
+    "id" : "il-core-error-code",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-error-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreErrorCode"
+  },
+  {
+    "id" : "il-core-medication-course-of-therapy-type",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationCourseOfTherapyType"
+  },
+  {
+    "id" : "il-core-medication-category",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-medicationrequest-category",
+    "version" : "0.13.2",
+    "name" : "ILCoreMedicationCategory"
+  },
+  {
+    "id" : "il-core-not-performed-reason",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-not-performed-reason",
+    "version" : "0.13.2",
+    "name" : "ILCoreNotPerformedReason"
+  },
+  {
+    "id" : "il-core-religion-code",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/il-core-religion-code",
+    "version" : "0.13.2",
+    "name" : "ILCoreReligionCode"
+  },
+  {
+    "id" : "institution-type-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/institution-type-moh",
+    "version" : "0.13.2",
+    "name" : "InstitutionTypeMoH"
+  },
+  {
+    "id" : "medical-service-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/medical-service-moh",
+    "version" : "0.13.2",
+    "name" : "MedicalServiceMoH"
+  },
+  {
+    "id" : "moh-tofes17-issue-code",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/moh-tofes17-issue-code",
+    "version" : "0.13.2",
+    "name" : "MohTofes17IssueCode"
+  },
+  {
+    "id" : "patient-admit-source-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/patient-admit-source-moh",
+    "version" : "0.13.2",
+    "name" : "PatientAdmitSourceMoH"
+  },
+  {
+    "id" : "patient-release-type-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/patient-release-type-moh",
+    "version" : "0.13.2",
+    "name" : "PatientRealeaseTypeMoH"
+  },
+  {
+    "id" : "patient-visit-reason-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/patient-visit-reason-moh",
+    "version" : "0.13.2",
+    "name" : "PatientVisitReasonMoH"
+  },
+  {
+    "id" : "paying-entity-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/paying-entity-moh",
+    "version" : "0.13.2",
+    "name" : "PayingEntityMoH"
+  },
+  {
+    "id" : "practitioner-advanced-course-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/practitioner-advanced-course-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerAdvancedCourseMoH"
+  },
+  {
+    "id" : "practitioner-certificate-type-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerCertificateTypeMoH"
+  },
+  {
+    "id" : "practitioner-certificate-type-molsa",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa",
+    "version" : "0.13.2",
+    "name" : "PractitionerCertificateTypeMoLSA"
+  },
+  {
+    "id" : "practitioner-education-type-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/practitioner-education-type-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerEducationTypeMoH"
+  },
+  {
+    "id" : "practitioner-expertise-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/practitioner-expertise-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerExpertiseMoH"
+  },
+  {
+    "id" : "practitioner-profession-moh",
+    "type" : "CodeSystem",
+    "url" : "http://fhir.health.gov.il/cs/practitioner-profession-moh",
+    "version" : "0.13.2",
+    "name" : "PractitionerProfessionMoH"
+  },
+  {
+    "id" : "ILCoreReligions",
+    "type" : "ConceptMap",
+    "url" : "http://hl7.org/fhir/ConceptMap/102",
+    "version" : "0.13.2",
+    "name" : "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"
+  },
+  {
+    "id" : "moh-medication-code",
+    "type" : "CodeSystem",
+    "url" : "http://israeldrugs.health.gov.il",
+    "version" : "0.13.2",
+    "name" : "MoHMedicationCode"
+  },
+  {
+    "id" : "yarpa-medication-code",
+    "type" : "CodeSystem",
+    "url" : "http://yarpa.co.il/catalog",
+    "version" : "0.13.2",
+    "name" : "YarpaMedicationCode"
+  },
+  {
+    "id" : "il-core-urn",
+    "type" : "CodeSystem",
+    "url" : "urn:ietf:rfc:3986",
+    "version" : "0.13.2",
+    "name" : "ILCoreURN"
+  }
+]

@@ -1,0 +1,68 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "reason-not-done",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/281399006\">281399006</a></td><td>Did not attend</td></tr><tr><td><a href=\"http://snomed.info/id/213257006\">213257006</a></td><td>Generally unwell</td></tr><tr><td><a href=\"http://snomed.info/id/310376006\">310376006</a></td><td>Immunisation consent not given</td></tr><tr><td><a href=\"http://snomed.info/id/266758009\">266758009</a></td><td>Immunisation contraindicated</td></tr><tr><td><a href=\"http://snomed.info/id/365861007\">365861007</a></td><td>Finding of immune status</td></tr><tr><td><a href=\"http://snomed.info/id/182856006\">182856006</a></td><td>Drug not available - out of stock</td></tr><tr><td><a href=\"http://snomed.info/id/871879005\">871879005</a></td><td>Vaccination hesitancy by parent</td></tr><tr><td><a href=\"http://snomed.info/id/871868000\">871868000</a></td><td>Vaccination hesitancy by patient</td></tr></table></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/reason-not-done",
+  "version" : "0.13.2",
+  "name" : "ReasonNotDone",
+  "title" : "statusReason codes for Immunization profile",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode",
+  "compose" : {
+    "include" : [{
+      "system" : "http://snomed.info/sct",
+      "concept" : [{
+        "code" : "281399006",
+        "display" : "Did not attend"
+      },
+      {
+        "code" : "213257006",
+        "display" : "Generally unwell"
+      },
+      {
+        "code" : "310376006",
+        "display" : "Immunisation consent not given"
+      },
+      {
+        "code" : "266758009",
+        "display" : "Immunisation contraindicated"
+      },
+      {
+        "code" : "365861007",
+        "display" : "Finding of immune status"
+      },
+      {
+        "code" : "182856006",
+        "display" : "Drug not available - out of stock"
+      },
+      {
+        "code" : "871879005",
+        "display" : "Vaccination hesitancy by parent"
+      },
+      {
+        "code" : "871868000",
+        "display" : "Vaccination hesitancy by patient"
+      }]
+    }]
+  }
+}

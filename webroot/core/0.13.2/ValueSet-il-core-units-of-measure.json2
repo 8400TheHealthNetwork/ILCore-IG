@@ -1,0 +1,52 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-units-of-measure",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://unitsofmeasure.org\"><code>http://unitsofmeasure.org</code></a></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  408102007 (Unit dose (qualifier value))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  descends from  732935002 (Unit of presentation (unit of presentation))</li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-units-of-measure",
+  "version" : "0.13.2",
+  "name" : "ILCoreUnitsOfMeasure",
+  "title" : "IL Core Units Of Measure Codes",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for Units Of Measure for the IL Core. <mark>Note:</mark> UCUM code SHALL be used, unless one cannot be found, in which case a SNOMED-CT code SHALL be used",
+  "compose" : {
+    "include" : [{
+      "system" : "http://unitsofmeasure.org"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "408102007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "descendent-of",
+        "value" : "732935002"
+      }]
+    }]
+  }
+}

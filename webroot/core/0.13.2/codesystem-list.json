@@ -1,0 +1,244 @@
+{
+  "codeSystems" : [
+    {
+      "url" : "http://fhir.health.gov.il/cs/city-symbol",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "CitySymbol",
+      "title" : "City Symbol (סמל ישוב)",
+      "description" : "Codes for cities in Israel"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/department-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "DepartmentTypeMoH",
+      "title" : "Department Type MoH",
+      "description" : "Israel ministry of health coding system for department types"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/hebrew-date-day",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "HebrewDateDay",
+      "title" : "Hebrew Date Day",
+      "description" : "Codes for Hebrew date days"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/hebrew-date-month",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "HebrewDateMonth",
+      "title" : "Hebrew Date Month",
+      "description" : "Codes for Hebrew date months"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/icd9il",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ICD9IL",
+      "title" : "ICD9IL: Adendum to ICD9 according to codes by Israeli MoH",
+      "description" : "Strings for procedures and diagnoses, added to ICD9"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-coverage-class",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreCoverageClass",
+      "title" : "IL Core Coverage Class codes",
+      "description" : "Codes for Coverage classes"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-coverage-premium-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreCoveragePremiumType",
+      "title" : "IL Core Coverage Premium Type codes",
+      "description" : "Codes for Types of premium payment methods"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-coverage-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreCoverageType",
+      "title" : "IL Core Coverage Type codes",
+      "description" : "Codes for expressing general heigh level coverage types unique to Israel health system"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-encounter-class",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreEncounterClass",
+      "title" : "IL Core Encounter Class codes",
+      "description" : "A list of codes for class types of encounters"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-error-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreErrorCode",
+      "title" : "IL Core Error code",
+      "description" : "A list of error codes for ILCore profiles"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationCourseOfTherapyType",
+      "title" : "Codes for Medication Course of therpy types",
+      "description" : "A list of codes for Medication Course of therpy types"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-medicationrequest-category",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreMedicationCategory",
+      "title" : "Codes for MedicationRequest categories",
+      "description" : "A list of codes for MedicationRequest categories"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-not-performed-reason",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreNotPerformedReason",
+      "title" : "IL Core Not Perfomed Reasons",
+      "description" : "A list of codes for reasons an observation was not made"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/il-core-religion-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreReligionCode",
+      "title" : "IL Core relirion code",
+      "description" : "Codes for religions, an addendum to the HL7 religions CodeSystem"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/institution-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "InstitutionTypeMoH",
+      "title" : "סוג מוסד לפי רישוי משרד הבריאות",
+      "description" : "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/medical-service-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "MedicalServiceMoH",
+      "title" : "קוד מוצר או שירות על פי משרד הבריאות",
+      "description" : "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש \n Codes for medical services. Note that while this code system closely resembles CPT and includes a large number of CPT codes, there are some additional codes that are not covered by CPT and, more importantly, some cases where CPT codes are remapped and have different semantic meanings (e.g., code #28899 has two different meanings in CPT and in MoH codesytem). Therefore, despite apparent resemblance, this code system MUST NOT be treated as CPT."
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/moh-tofes17-issue-code",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "MohTofes17IssueCode",
+      "title" : "Moh Form-17 Issue Code",
+      "description" : "קודי שגיאה \\ סירוב לתהליכים הקשורים לטופס 17"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/patient-admit-source-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PatientAdmitSourceMoH",
+      "title" : "Patient Admit Source MoH",
+      "description" : "Moh Codes for Patient Admit Source"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/patient-release-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PatientRealeaseTypeMoH",
+      "title" : "Patient Realease Type MoH",
+      "description" : "Moh Codes for Patient Realease Type"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/patient-visit-reason-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PatientVisitReasonMoH",
+      "title" : "Patient Visit Reason MoH",
+      "description" : "Moh Codes for Patient Visit Reason"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/paying-entity-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PayingEntityMoH",
+      "title" : "Payer (Paying Entity / גורם משלם)",
+      "description" : "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/practitioner-advanced-course-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerAdvancedCourseMoH",
+      "title" : "Ministry of Health practitioner advanced courses codes",
+      "description" : "Codes for practitioner advanced courses according to Israeli MoH"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/practitioner-certificate-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerCertificateTypeMoH",
+      "title" : "MoH Certificate Types",
+      "description" : "A list of codes for certificate types according to Israeli MoH"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerCertificateTypeMoLSA",
+      "title" : "MoLSA Certificate Types",
+      "description" : "A list of codes for certificate types according to Israeli MoLSA"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/practitioner-education-type-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerEducationTypeMoH",
+      "title" : "Ministry of Health practitioner-education-type codes",
+      "description" : "Codes for practitioner-education-types according to Israeli MoH"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/practitioner-expertise-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerExpertiseMoH",
+      "title" : "קוד מומחיות לעוסק בבריאות",
+      "description" : "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות"
+    },
+    {
+      "url" : "http://fhir.health.gov.il/cs/practitioner-profession-moh",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "PractitionerProfessionMoH",
+      "title" : "קוד מקצוע לעוסק בבריאות",
+      "description" : "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות"
+    },
+    {
+      "url" : "http://israeldrugs.health.gov.il",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "MoHMedicationCode",
+      "title" : "MoH Medication Codes",
+      "description" : "Codes for medications according to MoH catalogue"
+    },
+    {
+      "url" : "http://yarpa.co.il/catalog",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "YarpaMedicationCode",
+      "title" : "Yarpa Medication Codes",
+      "description" : "Codes for medications according to 'Yarpa' catalogue"
+    },
+    {
+      "url" : "urn:ietf:rfc:3986",
+      "version" : "0.13.2",
+      "status" : "draft",
+      "name" : "ILCoreURN",
+      "title" : "CodeSyestem for URNs",
+      "description" : "Codes for for URNs of different kinds, instead of using urn:ietf:rfc:3986 and urn:iso:std:iso:3166 as CodeSystem identifiers"
+    }
+  ]
+}

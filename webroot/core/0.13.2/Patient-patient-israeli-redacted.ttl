@@ -1,0 +1,91 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/patient-israeli-redacted> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-israeli-redacted"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+     ] ) ;
+     fhir:tag ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ObservationValue"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "REDACTED" ] ;
+       fhir:display [ fhir:v "redacted" ]
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with missing</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/paying-entity-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "104" ] ;
+         fhir:display [ fhir:v "קופת חולים מאוחדת" ]
+       ] ) ;
+       fhir:text [ fhir:v "קופת חולים מאוחדת" ]
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/il-national-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000000018" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "he" ]
+     ] ) ;
+     fhir:family [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ] ;
+     fhir:given ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "masked" ]
+       ] )
+     ] )
+  ] ) ; # 
+  fhir:gender [
+     fhir:v "unknown" ;
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] )
+  ] ; # 
+  fhir:birthDate [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "masked" ]
+     ] )
+  ] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:contact ( [
+     fhir:name [
+       fhir:text [
+         fhir:v "ggg" ;
+         fhir:extension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/data-absent-reason"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "masked" ]
+         ] )
+       ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

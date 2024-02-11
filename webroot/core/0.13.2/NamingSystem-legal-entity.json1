@@ -1,0 +1,66 @@
+{
+  "resourceType" : "NamingSystem",
+  "id" : "legal-entity",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><h3>Summary</h3><table class=\"grid\"><tr><td>Defining URL</td><td>http://fhir.health.gov.il/NamingSystem/legal-entity</td></tr><tr><td>Version</td><td>0.13.2</td></tr><tr><td>Name</td><td>Israeli Legal Entity</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Israeli legal entity number</p>\n</div></td></tr><tr><td>Publisher</td><td>Israel Core Team</td></tr></table><h3>Identifiers</h3><table class=\"grid\"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td><td><b>Period</b></td><td><b>Comment</b></td></tr><tr><td>URI</td><td>http://fhir.health.gov.il/identifier/legal-entity</td><td>true</td><td></td><td/></tr><tr><td>URI</td><td>http://fhir.health.org.il/identifier/legal-entity</td><td>false</td><td>(?) --&gt; 2021-07-11</td><td>This value was mistakenly set in the first drafts of ILCore</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url",
+    "valueUri" : "http://fhir.health.gov.il/NamingSystem/legal-entity"
+  },
+  {
+    "url" : "http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version",
+    "valueString" : "0.13.2"
+  }],
+  "name" : "Israeli Legal Entity",
+  "status" : "active",
+  "kind" : "identifier",
+  "date" : "2021-07-28",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "responsible" : "Israeli Ministry of Justice",
+  "type" : {
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+      "code" : "XX",
+      "display" : "Organization identifier"
+    }],
+    "text" : "Organization identifier"
+  },
+  "description" : "Israeli legal entity number",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "IL"
+    }]
+  }],
+  "usage" : "Used in Israel for identifying legal entities",
+  "uniqueId" : [{
+    "type" : "uri",
+    "value" : "http://fhir.health.gov.il/identifier/legal-entity",
+    "preferred" : true
+  },
+  {
+    "type" : "uri",
+    "value" : "http://fhir.health.org.il/identifier/legal-entity",
+    "preferred" : false,
+    "comment" : "This value was mistakenly set in the first drafts of ILCore",
+    "period" : {
+      "end" : "2021-07-11"
+    }
+  }]
+}

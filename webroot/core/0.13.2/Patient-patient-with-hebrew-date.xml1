@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-with-hebrew-date"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">אילן רם</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-il-hmo">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+        <code value="102"/>
+        <display value="קופת חולים לאומית"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <identifier>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000018"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="he"/>
+    </extension>
+    <text value="אילן רם"/>
+    <family value="רם"/>
+    <given value="אילן"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="052467911"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="Israel@example.com"/>
+  </telecom>
+  <gender value="male"/>
+  <birthDate value="2021-04-17">
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date">
+      <extension url="display">
+        <valueString value="ה' באייר ה'תשפ&quot;א"/>
+      </extension>
+      <extension url="day">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/hebrew-date-day"/>
+            <code value="5"/>
+            <display value="ה'"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="month">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/hebrew-date-month"/>
+            <code value="8"/>
+            <display value="אייר"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+      <extension url="year">
+        <valueString value="ה'תשפ&quot;א"/>
+      </extension>
+    </extension>
+  </birthDate>
+  <deceasedBoolean value="false"/>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+      <extension url="longitude">
+        <valueDecimal value="182468.59"/>
+      </extension>
+      <extension url="latitude">
+        <valueDecimal value="670131.38"/>
+      </extension>
+    </extension>
+    <use value="home"/>
+    <type value="physical"/>
+    <text value="אלכסנדר פן 1א' דירה 4 תל אביב"/>
+    <line value="אלכסנדר פן 1א">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="פן אלכסנדר"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="1"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix">
+        <valueString value="א'"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
+        <valueString value="4"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="1446"/>
+      </extension>
+    </line>
+    <city value="תל אביב">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="5000"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district value="תל אביב"/>
+    <postalCode value="6964101"/>
+    <country value="IL"/>
+  </address>
+</Patient>

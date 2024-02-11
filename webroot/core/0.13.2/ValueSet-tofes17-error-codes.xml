@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="tofes17-error-codes"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-il-core-error-code.html"><code>http://fhir.health.gov.il/cs/il-core-error-code</code></a></li><li>Include these codes as defined in <a href="CodeSystem-moh-tofes17-issue-code.html"><code>http://fhir.health.gov.il/cs/moh-tofes17-issue-code</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>miss-apnt-data</td><td>חסרים פרטי התור החוזר</td></tr><tr><td>apnt-too-far</td><td>מועד התור החוזר רחוק מדי</td></tr><tr><td>miss-doc</td><td>חסר מסמך סיכום עם ההמלצה לביקור חוזר</td></tr><tr><td>miss-orig-req</td><td>בבקשה לעדכון או ביטול - חסר קישור לבקשה המקורית</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/tofes17-error-codes"/>
+  <version value="0.13.2"/>
+  <name value="Tofes17ErrorCodes"/>
+  <title value="Tofes17 Error Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="קודי שגיאה לתהליכים הקשורים לטופס 17"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/il-core-error-code"/>
+    </include>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/moh-tofes17-issue-code"/>
+      <concept>
+        <code value="miss-apnt-data"/>
+        <display value="חסרים פרטי התור החוזר"/>
+      </concept>
+      <concept>
+        <code value="apnt-too-far"/>
+        <display value="מועד התור החוזר רחוק מדי"/>
+      </concept>
+      <concept>
+        <code value="miss-doc"/>
+        <display value="חסר מסמך סיכום עם ההמלצה לביקור חוזר"/>
+      </concept>
+      <concept>
+        <code value="miss-orig-req"/>
+        <display value="בבקשה לעדכון או ביטול - חסר קישור לבקשה המקורית"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

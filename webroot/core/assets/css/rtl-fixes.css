@@ -1,0 +1,13 @@
+table.grid {
+  margin-right: inherit;
+}
+
+/* keep artifacts ToC on the right */
+h2#artifacts-summary + div.markdown-toc {
+  float: right;
+}
+
+/* move all other ToC's to the left */
+div.markdown-toc {
+  float: left;
+}

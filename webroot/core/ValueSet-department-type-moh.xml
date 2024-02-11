@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="department-type-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-department-type-moh.html"><code>http://fhir.health.gov.il/cs/department-type-moh</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/department-type-moh"/>
+  <version value="0.13.2"/>
+  <name value="DepartmentTypeMoH"/>
+  <title value="Department Type MoH"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Israel ministry of health coding system for department types"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/department-type-moh"/>
+    </include>
+  </compose>
+</ValueSet>

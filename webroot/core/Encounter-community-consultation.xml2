@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Encounter xmlns="http://hl7.org/fhir">
+  <id value="community-consultation"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-encounter"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Encounter: Community Consultation</div>
+  </text>
+  <identifier>
+    <system value="http://fhir.community-emr.co.il/identifier/entity-id/encounter"/>
+    <value value="234234234"/>
+  </identifier>
+  <status value="in-progress"/>
+  <class>
+    <system value="http://fhir.health.gov.il/cs/il-core-encounter-class"/>
+    <code value="COMMUNITY-OR-HMO"/>
+    <display value="Community Care/HMO setting"/>
+  </class>
+  <type>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="11429006"/>
+      <display value="Consultation"/>
+    </coding>
+  </type>
+  <serviceType>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="310116007"/>
+      <display value="Psychiatry service"/>
+    </coding>
+  </serviceType>
+  <subject>
+    <reference value="Patient/patient-israeli-with-statistical-area"/>
+  </subject>
+  <participant>
+    <type>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/v3-ParticipationType"/>
+        <code value="PPRF"/>
+        <display value="primary performer"/>
+      </coding>
+    </type>
+    <individual>
+      <reference value="Practitioner/practitioner-md"/>
+    </individual>
+  </participant>
+  <serviceProvider>
+    <identifier>
+      <system value="http://fhir.health.gov.il/identifier/legal-entity"/>
+      <value value="589902279"/>
+    </identifier>
+    <display value="מכבי שירותי בריאות"/>
+  </serviceProvider>
+</Encounter>

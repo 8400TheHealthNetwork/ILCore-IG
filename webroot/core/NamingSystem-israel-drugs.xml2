@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<NamingSystem xmlns="http://hl7.org/fhir">
+  <id value="israel-drugs"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><h3>Summary</h3><table class="grid"><tr><td>Defining URL</td><td>http://fhir.health.gov.il/NamingSystem/israel-drugs</td></tr><tr><td>Version</td><td>0.13.2</td></tr><tr><td>Name</td><td>The Israeli Drug Registry</td></tr><tr><td>Status</td><td>active</td></tr><tr><td>Definition</td><td><div><p>Identifies drugs according to the Israeli MoH.</p>
+</div></td></tr><tr><td>Publisher</td><td>Israel Core Team</td></tr></table><h3>Identifiers</h3><table class="grid"><tr><td><b>Type</b></td><td><b>Value</b></td><td><b>Preferred</b></td></tr><tr><td>URI</td><td>http://https://israeldrugs.health.gov.il</td><td>true</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.url">
+    <valueUri value="http://fhir.health.gov.il/NamingSystem/israel-drugs"/>
+  </extension>
+  <extension url="http://hl7.org/fhir/5.0/StructureDefinition/extension-NamingSystem.version">
+    <valueString value="0.13.2"/>
+  </extension>
+  <name value="The Israeli Drug Registry"/>
+  <status value="active"/>
+  <kind value="identifier"/>
+  <date value="2023-06-11"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <responsible value="Israeli MoH"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+      <code value="LI"/>
+      <display value="Labor and industries number"/>
+    </coding>
+    <text value="National Drug Identifier"/>
+  </type>
+  <description value="Identifies drugs according to the Israeli MoH."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="IL"/>
+    </coding>
+  </jurisdiction>
+  <usage value="Used in Israel for identifying drugs"/>
+  <uniqueId>
+    <type value="uri"/>
+    <value value="http://https://israeldrugs.health.gov.il"/>
+    <preferred value="true"/>
+  </uniqueId>
+</NamingSystem>

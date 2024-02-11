@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/tofes17-error-codes> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "tofes17-error-codes"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"CodeSystem-il-core-error-code.html\"><code>http://fhir.health.gov.il/cs/il-core-error-code</code></a></li><li>Include these codes as defined in <a href=\"CodeSystem-moh-tofes17-issue-code.html\"><code>http://fhir.health.gov.il/cs/moh-tofes17-issue-code</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>miss-apnt-data</td><td>חסרים פרטי התור החוזר</td></tr><tr><td>apnt-too-far</td><td>מועד התור החוזר רחוק מדי</td></tr><tr><td>miss-doc</td><td>חסר מסמך סיכום עם ההמלצה לביקור חוזר</td></tr><tr><td>miss-orig-req</td><td>בבקשה לעדכון או ביטול - חסר קישור לבקשה המקורית</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/tofes17-error-codes"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "Tofes17ErrorCodes"] ; # 
+  fhir:title [ fhir:v "Tofes17 Error Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "קודי שגיאה לתהליכים הקשורים לטופס 17"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/il-core-error-code"^^xsd:anyURI ]
+     ] [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/moh-tofes17-issue-code"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "miss-apnt-data" ] ;
+         fhir:display [ fhir:v "חסרים פרטי התור החוזר" ]
+       ] [
+         fhir:code [ fhir:v "apnt-too-far" ] ;
+         fhir:display [ fhir:v "מועד התור החוזר רחוק מדי" ]
+       ] [
+         fhir:code [ fhir:v "miss-doc" ] ;
+         fhir:display [ fhir:v "חסר מסמך סיכום עם ההמלצה לביקור חוזר" ]
+       ] [
+         fhir:code [ fhir:v "miss-orig-req" ] ;
+         fhir:display [ fhir:v "בבקשה לעדכון או ביטול - חסר קישור לבקשה המקורית" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

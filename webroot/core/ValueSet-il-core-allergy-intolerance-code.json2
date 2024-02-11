@@ -1,0 +1,88 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "il-core-allergy-intolerance-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html\"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include all codes defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  418038007 (Propensity to adverse reactions to substance)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  716186003 (No known allergy (situation))</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  416098002 (Drug allergy)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  414285001 (Food allergy)</li><li>Include codes from <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a> where concept  is-a  426232007 (Environmental allergy)</li><li>Import all the codes that are contained in <a href=\"ValueSet-icd9-cm-diagnoses.html\">Icd9 Cm diagnoses</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-icd9il-diagnoses.html\">ICD9 IL Diagnoses</a></li><li>Import all the codes that are contained in <a href=\"ValueSet-il-core-substance.html\">IL Core Substance Codes</a></li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code",
+  "version" : "0.13.2",
+  "name" : "ILCoreAllergyIntoleranceCode",
+  "title" : "IL Core Allergy Intolerance Code",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for Allergy Intolerance for the IL Core",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10"
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm"
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "418038007"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "716186003"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "416098002"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "414285001"
+      }]
+    },
+    {
+      "system" : "http://snomed.info/sct",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "426232007"
+      }]
+    },
+    {
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/icd9-cm-diagnoses"]
+    },
+    {
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/icd9il-diagnoses"]
+    },
+    {
+      "valueSet" : ["http://fhir.health.gov.il/ValueSet/il-core-substance"]
+    }]
+  }
+}

@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Encounter/home-visit> a fhir:Encounter ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "home-visit"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-encounter"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-encounter>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Home Visit</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.bait-balev.avot.co.il/identifier/entity-id/encounter"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "123241" ]
+  ] ) ; # 
+  fhir:status [ fhir:v "in-progress"] ; # 
+  fhir:class [
+     fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ActCode"^^xsd:anyURI ] ;
+     fhir:code [ fhir:v "HH" ] ;
+     fhir:display [ fhir:v "home health" ]
+  ] ; # 
+  fhir:serviceType [
+     fhir:coding ( [
+       a sct:439708006 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "439708006" ] ;
+       fhir:display [ fhir:v "Home visit (procedure)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-israeli-with-statistical-area> ;
+     fhir:reference [ fhir:v "Patient/patient-israeli-with-statistical-area" ]
+  ] ; # 
+  fhir:participant ( [
+     fhir:type ( [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ParticipationType"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "PPRF" ] ;
+         fhir:display [ fhir:v "primary performer" ]
+       ] )
+     ] ) ;
+     fhir:individual [
+       fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-md> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-md" ]
+     ]
+  ] ) ; # 
+  fhir:diagnosis ( [
+     fhir:condition [
+       fhir:link <http://fhir.health.gov.il/Condition/condition-type-1-diabetes> ;
+       fhir:reference [ fhir:v "Condition/condition-type-1-diabetes" ]
+     ] ;
+     fhir:use [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/diagnosis-role"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "AD" ] ;
+         fhir:display [ fhir:v "Admission diagnosis" ]
+       ] )
+     ] ;
+     fhir:rank [ fhir:v "1"^^xsd:positiveInteger ]
+  ] ) ; # 
+  fhir:hospitalization [
+     fhir:admitSource [
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/patient-admit-source-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "11" ] ;
+         fhir:display [ fhir:v "מכבי" ]
+       ] )
+     ]
+  ] ; # 
+  fhir:serviceProvider [
+     fhir:identifier [
+       fhir:system [ fhir:v "http://institutions.health.gov.il/Institutions"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "21702" ]
+     ] ;
+     fhir:display [ fhir:v "בית בלב ראשון לציון" ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,316 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>Downloads - IL Core Implementation Guide v0.13.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"2"}
+    h3,h4,h5,h6{--heading-prefix:"2"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IL Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.13.2 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://en.fhir-il-community.org/fhir-israel-core" target="_blank">ILCore Community</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><b>Downloads</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the IL-Core IG (v0.13.2: draft-1 Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.health.gov.il/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  <h2>Downloads</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+    <p>  <!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#kippi-test" id="markdown-toc-kippi-test">Kippi Test</a></li>
+  <li><a href="#section" id="markdown-toc-section">עותק להורדה של המפרט המלא</a></li>
+  <li><a href="#section-1" id="markdown-toc-section-1">דוגמאות</a></li>
+  <li><a href="#ig" id="markdown-toc-ig">תלות ב-IG/חבילה</a></li>
+  <li><a href="#טבלת-גלובלים" id="markdown-toc-טבלת-גלובלים">טבלת גלובלים</a></li>
+  <li><a href="#ניתוח-r4-r4b" id="markdown-toc-ניתוח-r4-r4b">ניתוח R4-R4B</a></li>
+</ul>
+
+</div>
+<div dir="rtl">
+
+  <h3 id="kippi-test">Kippi Test</h3>
+
+  <p>Download Kippi’s test files</p>
+  <ul>
+    <li><a href="https://github.com/amosref/MyILCoreFiles/archive/refs/heads/main.zip">Package(compressed folder)</a></li>
+  </ul>
+
+  <h3 id="section">עותק להורדה של המפרט המלא</h3>
+
+  <p>גרסה להורדה של IG זה זמינה כך שניתן לארח אותו באופן מקומי:</p>
+
+  <ul>
+    <li><a href="full-ig.zip">Downloadable Copy(compressed folder)</a></li>
+  </ul>
+
+  <h3 id="section-1">דוגמאות</h3>
+
+  <p>כל הדוגמאות המשמשות במדריך יישום זה זמינות להורדה:</p>
+
+  <ul>
+    <li><a href="examples.xml.zip">XML(compressed folder)</a></li>
+    <li><a href="examples.json.zip">JSON(compressed folder)</a></li>
+  </ul>
+
+  <h2 id="ig">תלות ב-IG/חבילה</h2>
+
+  <p>התלות הבאה משמשת בהפקת מדריך זה:</p>
+</div>
+
+<div><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Implementation Guide Reference">IG</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The NPM Package Id">Package</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="The version of FHIR that the package is based on">FHIR</span></th><th style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span title="Explains why this dependency exists">Comment</span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\owner\AppData\Local\Temp\health.gov.il.fhir.core#0.13.2-milestone\temp\pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> <span title="Canonical: http://fhir.health.gov.il">IL Core Implementation Guide</span></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/health.gov.il.fhir.core/0.13.2">health.gov.il.fhir.core#0.13.2</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\owner\AppData\Local\Temp\health.gov.il.fhir.core#0.13.2-milestone\temp\pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://terminology.hl7.org/5.3.0" title="Canonical: http://terminology.hl7.org">HL7 Terminology (THO)</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.terminology.r4/5.3.0">hl7.terminology.r4#5.3.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on HL7 Terminology</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\owner\AppData\Local\Temp\health.gov.il.fhir.core#0.13.2-milestone\temp\pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAALUlEQVR4Xu3IoREAIAwEwfT6/ddA0GBAxO3NrLlKUj9263wAAAAvrgEAADClAVWFQIBRHMicAAAAAElFTkSuQmCC)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzI3XJ6V3QAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+2RsQ0AIAzDav7/2VzQwoCY4iWbZSmo1QGoUgNMghvWaIejPQW/CrrNCylIwcOCDYfLNRcNer4SAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: white; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://hl7.org/fhir/extensions/1.0.0" title="Canonical: http://hl7.org/fhir/extensions">FHIR Extensions Pack</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.uv.extensions.r4/1.0.0">hl7.fhir.uv.extensions.r4#1.0.0</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Automatically added as a dependency - all IGs depend on the HL7 Extension Pack</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(C:\Users\owner\AppData\Local\Temp\health.gov.il.fhir.core#0.13.2-milestone\temp\pagesdata:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAyAAAAACCAYAAACg/LjIAAAAJUlEQVR4Xu3IIQEAAAgDsHd9/w4EQIOamFnaBgAA4MMKAACAKwNp30CqZFfFmwAAAABJRU5ErkJggg==)" class="hierarchy"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAAWCAYAAAABxvaqAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzIs1vtcMQAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAAE0lEQVQI12P4//8/AxMDAwNdCABMPwMo2ctnoQAAAABJRU5ErkJggg==" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAWCAYAAADJqhx8AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3wYeFzME+lXFigAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAANklEQVQ4y+3OsRUAIAjEUOL+O8cJABttJM11/x1qZAGqRBEVcNIqdWj1efDqQbb3HwwwwEfABmQUHSPM9dtDAAAAAElFTkSuQmCC" alt="." style="background-color: inherit" class="hierarchy"/><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAIAAACQkWg2AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3QYZCik0qECmbAAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAABtUlEQVQoz2P8//8/Ayb4///v8xfM4iIMzKxoMkwMOMC3DVv/vXmEKY5Dw///Pw8c+Xn2CLEa/r55+/P07t/nrxKl4f/PX6+8g1mlP/44c4eAhn8fP33bsOV1dBoT51V2+z/MohIfeyYy/P2LXcPfFy8/NLb9efTs//utgjUfft35xRUY8Hnm/N/Xb2LT8P//h5ZOnvjoj+11giXcTH//MTLp/v/x9c/z279uXsOi4e/LRwzsbz6vmMyTLM6m9fnXE3Y2l+yv+yez2nL9eX0Wi4afF5eyW4r/+3qYP1Xjz/N3P17ZsRsKMrJd4rL9wcTxDIsGZqEvLEKv2VT/Mgl+/XGbXSB72s/zxXyBYmwqLCxSLFg0sKkHsAg+YJX7xfBTmt204s/NXE4dQTZtT2beH6yqFv9ebkDXwMhnxixrySb68f9fcWYRTSbGA6ya2QwMsixCvxk/djByiWIJVkbBBGaNOoafO5nYWVlkPRjYtP5/388s+JdJkI+R1xquDMl9zOqMQioM7BIMjJ8Z2IUYWOQZeT0Y/u5mEF+G7AdGLMn7712GnycY/v1g+HOZga+WgUkYWRIAe6ip9OnE1GoAAAAASUVORK5CYII=" alt="." style="background-color: #F7F7F7; background-color: inherit" title="NPM Package" class="hierarchy"/> <a href="http://hl7.org/fhir/us/core/2022Jan" title="Canonical: http://hl7.org/fhir/us/core">US Core Implementation Guide</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://simplifier.net/packages/hl7.fhir.us.core/4.1.0">hl7.fhir.us.core#4.1.0</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4">R4</a></td><td style="vertical-align: top; text-align : left; background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/></tr>
+</table></div>
+  <!-- $$3$$ -->
+
+<h2 id="טבלת-גלובלים">טבלת גלובלים</h2>
+
+<p><i>There are no Global profiles defined</i></p>
+  <!-- $$4$$ -->
+
+<h2 id="ניתוח-r4-r4b">ניתוח R4-R4B</h2>
+
+<p>This is an R4 IG. None of the features it uses are changed in R4B, so it can be used as is with R4B systems. Packages for both <a href="package.r4.tgz">R4 (health.gov.il.fhir.core.r4)</a> and <a href="package.r4b.tgz">R4B (health.gov.il.fhir.core.r4b)</a> are available.  <!-- $$2$$ --></p>
+
+<h4 id="הצהרות-ip">הצהרות IP</h4>
+
+<p>This publication includes IP covered under the following statements.</p>
+<ul>
+<li>Copyright HL7. Licensed under creative commons public domain<div onclick="if (document.getElementById('ipp2_1').innerHTML != '') {document.getElementById('ipp_1').innerHTML = document.getElementById('ipp2_1').innerHTML; document.getElementById('ipp2_1').innerHTML = ''}" id="ipp_1"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_1">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0131.html">contactRole2</a>: <a href="ValueSet-patient-relationship-type.html">ILCorePatientRelationshipType</a> and <a href="StructureDefinition-il-core-related-person.html">ILCoreRelatedPerson</a></li>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v2-0203.html">identifierType</a>: <a href="StructureDefinition-il-core-patient.html">ILCorePatient</a>, <a href="StructureDefinition-il-core-practitioner.html">ILCorePractitioner</a><span onclick="document.getElementById('ips_2').innerHTML = document.getElementById('ips2_2').innerHTML" id="ips_2">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 16 more</span></span><span style="display: none" id="ips2_2">, <a href="StructureDefinition-il-core-related-person.html">ILCoreRelatedPerson</a>, <a href="NamingSystem-cbs-statistical-area.html">Israeli CBS statistical area</a>, <a href="NamingSystem-legal-entity.html">Israeli Legal Entity</a>, <a href="NamingSystem-practitioner-instructor.html">Israeli Ministry of Health instructor accreditation</a>, <a href="NamingSystem-nurse-advanced-course.html">Israeli Ministry of Health nurse advanced course</a>, <a href="NamingSystem-nurse-expertise.html">Israeli Ministry of Health nurse expertise</a>, <a href="NamingSystem-nurse-registration.html">Israeli Ministry of Health nurse registration</a>, <a href="NamingSystem-practitioner-expertise.html">Israeli Ministry of Health practitioner expertise</a>, <a href="NamingSystem-practitioner-license.html">Israeli Ministry of Health practitioner license</a>, <a href="NamingSystem-social-worker.html">Israeli Ministry of Labor, Social Affairs and Social Services social-worker license</a>, <a href="NamingSystem-il-national-id.html">Israeli National Identifier - Individual</a>, <a href="NamingSystem-pna-national-id.html">Palestinian National Identifier - Individual</a>, <a href="Patient-patient-israeli-with-two-identifiers.html">Patient/patient-israeli-with-two-identifiers</a>, <a href="Patient-patient-with-passport-identification.html">Patient/patient-with-passport-identification</a>, <a href="Patient-patient-with-passport-identification-unknown-country.html">Patient/patient-with-passport-identification-unknown-country</a> and <a href="NamingSystem-israel-drugs.html">The Israeli Drug Registry</a></span></li>
+</ul>
+</div></li>
+<li>ISO Maintains the copyright on the country codes, and controls it's use carefully. For futher details see the ISO 3166 web page: <a href="https://www.iso.org/iso-3166-country-codes.html">https://www.iso.org/iso-3166-country-codes.html</a><div onclick="if (document.getElementById('ipp2_2').innerHTML != '') {document.getElementById('ipp_2').innerHTML = document.getElementById('ipp2_2').innerHTML; document.getElementById('ipp2_2').innerHTML = ''}" id="ipp_2"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_2">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-ISO3166Part1.html">ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code</a>: <a href="StructureDefinition-il-core-address.html">ILCoreAddress</a>, <a href="StructureDefinition-il-core-dosage.html">ILCoreDosage</a><span onclick="document.getElementById('ips_3').innerHTML = document.getElementById('ips2_3').innerHTML" id="ips_3">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 15 more</span></span><span style="display: none" id="ips2_3">, <a href="ValueSet-il-core-jurisdiction.html">ILCoreJurisdiction</a>, <a href="NamingSystem-cbs-statistical-area.html">Israeli CBS statistical area</a>, <a href="NamingSystem-legal-entity.html">Israeli Legal Entity</a>, <a href="NamingSystem-practitioner-instructor.html">Israeli Ministry of Health instructor accreditation</a>, <a href="NamingSystem-nurse-advanced-course.html">Israeli Ministry of Health nurse advanced course</a>, <a href="NamingSystem-nurse-expertise.html">Israeli Ministry of Health nurse expertise</a>, <a href="NamingSystem-nurse-registration.html">Israeli Ministry of Health nurse registration</a>, <a href="NamingSystem-practitioner-expertise.html">Israeli Ministry of Health practitioner expertise</a>, <a href="NamingSystem-practitioner-license.html">Israeli Ministry of Health practitioner license</a>, <a href="NamingSystem-social-worker.html">Israeli Ministry of Labor, Social Affairs and Social Services social-worker license</a>, <a href="NamingSystem-il-national-id.html">Israeli National Identifier - Individual</a>, <a href="NamingSystem-pna-national-id.html">Palestinian National Identifier - Individual</a>, <a href="Patient-patient-immigrant.html">Patient/patient-immigrant</a>, <a href="StructureDefinition-ext-patient-immigration.html">PatientImmigration</a> and <a href="NamingSystem-israel-drugs.html">The Israeli Drug Registry</a></span></li>
+</ul>
+</div></li>
+<li>Most of the information on the CDC and ATSDR websites is not subject to copyright, is in the public domain, and may be freely used or reproduced without obtaining copyright permission. For information and exceptions regarding use of CDC material please see <a href="https://www.cdc.gov/other/agencymaterials.html"><a href="https://www.cdc.gov/other/agencymaterials.html">https://www.cdc.gov/other/agencymaterials.html</a></a>
+<div onclick="if (document.getElementById('ipp2_3').innerHTML != '') {document.getElementById('ipp_3').innerHTML = document.getElementById('ipp2_3').innerHTML; document.getElementById('ipp2_3').innerHTML = ''}" id="ipp_3"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_3">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-CVX.html">Vaccine Administered Code Set (CVX)</a>: <a href="StructureDefinition-il-core-allergy-intolerance.html">ILCoreAllergyIntolerance</a>, <a href="StructureDefinition-il-core-immunization.html">ILCoreImmunization</a>, <a href="ValueSet-il-core-substance.html">ILCoreSubstance</a> and <a href="ValueSet-vaccine-product-code.html">VaccineProductCode</a></li>
+</ul>
+</div></li>
+<li>The UCUM codes, UCUM table (regardless of format), and UCUM Specification are copyright 1999-2009, Regenstrief Institute, Inc. and the Unified Codes for Units of Measures (UCUM) Organization. All rights reserved. <a href="https://ucum.org/trac/wiki/TermsOfUse">https://ucum.org/trac/wiki/TermsOfUse</a><div onclick="if (document.getElementById('ipp2_4').innerHTML != '') {document.getElementById('ipp_4').innerHTML = document.getElementById('ipp2_4').innerHTML; document.getElementById('ipp2_4').innerHTML = ''}" id="ipp_4"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_4">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ucum.html">Unified Code for Units of Measure (UCUM)</a>: <a href="StructureDefinition-il-core-observation.html">ILCoreObservation</a>, <a href="ValueSet-il-core-units-of-measure.html">ILCoreUnitsOfMeasure</a><span onclick="document.getElementById('ips_5').innerHTML = document.getElementById('ips2_5').innerHTML" id="ips_5">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 5 more</span></span><span style="display: none" id="ips2_5">, <a href="Medication-paracetamol.html">Medication/paracetamol</a>, <a href="MedicationAdministration-morphine-hospitalization.html">MedicationAdministration/morphine-hospitalization</a>, <a href="MedicationRequest-metamizole-for-gangreenous-tonsolitis.html">MedicationRequest/metamizole-for-gangreenous-tonsolitis</a>, <a href="MedicationStatement-MedicationStatement-Fluoxetine-20-mg.html">MedicationStatement/MedicationStatement-Fluoxetine-20-mg</a> and <a href="Observation-observation-hight.html">Observation/observation-hight</a></span></li>
+</ul>
+</div></li>
+<li>This material contains content from <a href="http://loinc.org">LOINC</a>. LOINC is copyright &copy; 1995-2020, Regenstrief Institute, Inc. and the Logical Observation Identifiers Names and Codes (LOINC) Committee and is available at no cost under the <a href="http://loinc.org/license">license</a>. LOINC&reg; is a registered United States trademark of Regenstrief Institute, Inc.<div onclick="if (document.getElementById('ipp2_5').innerHTML != '') {document.getElementById('ipp_5').innerHTML = document.getElementById('ipp2_5').innerHTML; document.getElementById('ipp2_5').innerHTML = ''}" id="ipp_5"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_5">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-loinc.html">LOINC</a>: <a href="StructureDefinition-il-core-observation.html">ILCoreObservation</a>, <a href="ValueSet-il-core-observation-code.html">ILCoreObservationCode</a><span onclick="document.getElementById('ips_6').innerHTML = document.getElementById('ips2_6').innerHTML" id="ips_6">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 10 more</span></span><span style="display: none" id="ips2_6">, <a href="StructureDefinition-il-core-observation-lab.html">ILCoreObservationLab</a>, <a href="ValueSet-il-core-observation-lab-code.html">ILCoreObservationLabCode</a>, <a href="ValueSet-il-core-observation-value.html">ILCoreObservationValue</a>, <a href="StructureDefinition-il-core-procedure.html">ILCoreProcedure</a>, <a href="ValueSet-il-core-procedure-code.html">ILCoreProcedureCode</a>, <a href="StructureDefinition-il-core-service-request.html">ILCoreServiceRequest</a>, <a href="Observation-observation-hight.html">Observation/observation-hight</a>, <a href="Observation-observation-not-performed.html">Observation/observation-not-performed</a>, <a href="Patient-patient-immigrant.html">Patient/patient-immigrant</a> and <a href="StructureDefinition-ext-patient-immigration.html">PatientImmigration</a></span></li>
+</ul>
+</div></li>
+<li>This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact <a href="https://www.snomed.org/get-snomed">https://www.snomed.org/get-snomed</a> or <a href="mailto:info@snomed.org">info@snomed.org</a>.<div onclick="if (document.getElementById('ipp2_6').innerHTML != '') {document.getElementById('ipp_6').innerHTML = document.getElementById('ipp2_6').innerHTML; document.getElementById('ipp2_6').innerHTML = ''}" id="ipp_6"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_6">
+<ul>
+<li><a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&reg; (SNOMED CT&reg;)</a>: <a href="AllergyIntolerance-allergyIntolerance-aspirin-intolerance.html">AllergyIntolerance/allergyIntolerance-aspirin-intolerance</a>, <a href="AllergyIntolerance-allergyIntolerance-cat-dander-allergy.html">AllergyIntolerance/allergyIntolerance-cat-dander-allergy</a><span onclick="document.getElementById('ips_7').innerHTML = document.getElementById('ips2_7').innerHTML" id="ips_7">... <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show 56 more</span></span><span style="display: none" id="ips2_7">, <a href="AllergyIntolerance-allergyIntolerance-latex-allergy.html">AllergyIntolerance/allergyIntolerance-latex-allergy</a>, <a href="AllergyIntolerance-allergyIntolerance-no-known-allergy.html">AllergyIntolerance/allergyIntolerance-no-known-allergy</a>, <a href="AllergyIntolerance-allergyIntolerance-penut-allergy-resolved.html">AllergyIntolerance/allergyIntolerance-penut-allergy-resolved</a>, <a href="StructureDefinition-ext-allergy-intolerance-end.html">AllergyIntoleranceEnd</a>, <a href="Condition-condition-burnt-ear.html">Condition/condition-burnt-ear</a>, <a href="Condition-condition-type-1-diabetes.html">Condition/condition-type-1-diabetes</a>, <a href="Encounter-breast-screaning.html">Encounter/breast-screaning</a>, <a href="Encounter-community-consultation.html">Encounter/community-consultation</a>, <a href="Encounter-home-visit.html">Encounter/home-visit</a>, <a href="StructureDefinition-il-core-allergy-intolerance.html">ILCoreAllergyIntolerance</a>, <a href="ValueSet-il-core-allergy-intolerance-code.html">ILCoreAllergyIntoleranceCode</a>, <a href="ValueSet-il-core-allergy-intolerance-end-reason.html">ILCoreAllergyIntoleranceEndReason</a>, <a href="ValueSet-il-core-common-units-of-measure.html">ILCoreCommonUnitsOfMeasure</a>, <a href="StructureDefinition-il-core-condition.html">ILCoreCondition</a>, <a href="ValueSet-il-core-condition-category.html">ILCoreConditionCategory</a>, <a href="ValueSet-il-core-condition-code.html">ILCoreConditionCode</a>, <a href="ValueSet-il-core-doctor-to-doctor.html">ILCoreDoctorToDoctor</a>, <a href="StructureDefinition-il-core-dosage.html">ILCoreDosage</a>, <a href="StructureDefinition-il-core-encounter.html">ILCoreEncounter</a>, <a href="StructureDefinition-il-core-immunization.html">ILCoreImmunization</a>, <a href="StructureDefinition-il-core-immunization-reaction-observation.html">ILCoreImmunizationReactionObservation</a>, <a href="ValueSet-il-core-manifestation.html">ILCoreManifestation</a>, <a href="StructureDefinition-il-core-medication.html">ILCoreMedication</a>, <a href="StructureDefinition-il-core-medication-administration.html">ILCoreMedicationAdministration</a>, <a href="ValueSet-il-core-medication-code.html">ILCoreMedicationCode</a>, <a href="StructureDefinition-il-core-medication-request.html">ILCoreMedicationRequest</a>, <a href="StructureDefinition-il-core-medication-statement.html">ILCoreMedicationStatement</a>, <a href="ValueSet-il-core-medication-statement-code.html">ILCoreMedicationStatementCode</a>, <a href="StructureDefinition-il-core-observation.html">ILCoreObservation</a>, <a href="ValueSet-il-core-observation-code.html">ILCoreObservationCode</a>, <a href="StructureDefinition-il-core-observation-lab.html">ILCoreObservationLab</a>, <a href="ValueSet-il-core-observation-value.html">ILCoreObservationValue</a>, <a href="StructureDefinition-il-core-organization.html">ILCoreOrganization</a>, <a href="StructureDefinition-il-core-procedure.html">ILCoreProcedure</a>, <a href="ValueSet-il-core-procedure-code.html">ILCoreProcedureCode</a>, <a href="ValueSet-il-core-route-code.html">ILCoreRouteCode</a>, <a href="ValueSet-il-core-service-category.html">ILCoreServiceCategory</a>, <a href="StructureDefinition-il-core-service-request.html">ILCoreServiceRequest</a>, <a href="ValueSet-il-core-service-type.html">ILCoreServiceType</a>, <a href="ValueSet-il-core-substance.html">ILCoreSubstance</a>, <a href="ValueSet-il-core-units-of-measure.html">ILCoreUnitsOfMeasure</a>, <a href="ValueSet-il-core-virtual-type.html">ILCoreVirtualType</a>, <a href="Immunization-Immunization-with-product-code.html">Immunization/Immunization-with-product-code</a>, <a href="Immunization-Immunization-with-vaccine-code.html">Immunization/Immunization-with-vaccine-code</a>, <a href="ValueSet-immunization-body-site.html">ImmunizationBodySite</a>, <a href="ValueSet-immunization-side-effect.html">ImmunizationSideEffects</a>, <a href="Medication-paracetamol.html">Medication/paracetamol</a>, <a href="MedicationAdministration-morphine-hospitalization.html">MedicationAdministration/morphine-hospitalization</a>, <a href="MedicationRequest-metamizole-for-gangreenous-tonsolitis.html">MedicationRequest/metamizole-for-gangreenous-tonsolitis</a>, <a href="MedicationStatement-MedicationStatement-Fluoxetine-20-mg.html">MedicationStatement/MedicationStatement-Fluoxetine-20-mg</a>, <a href="ValueSet-organization-type.html">OrganizationType</a>, <a href="Procedure-partial-parotidectomy.html">Procedure/partial-parotidectomy</a>, <a href="Procedure-procedure-bloodwork-before-partial-parotidectomy.html">Procedure/procedure-bloodwork-before-partial-parotidectomy</a>, <a href="ValueSet-reason-not-done.html">ReasonNotDone</a>, <a href="ValueSet-target-disease.html">TargetDisease</a> and <a href="ValueSet-vaccine-code.html">VaccineCode</a></span></li>
+</ul>
+</div></li>
+<li>Using RxNorm codes of type SAB=RXNORM as this specification describes does not require  a UMLS license. Access to the full set of RxNorm definitions, and/or additional use of other RxNorm structures and information requires a UMLS license. The use of RxNorm in this specification is pursuant to HL7's status as a licensee of the NLM UMLS. HL7's license does not convey the right to use RxNorm to any users of this specification; implementers must acquire a license to use RxNorm in their own right.<div onclick="if (document.getElementById('ipp2_7').innerHTML != '') {document.getElementById('ipp_7').innerHTML = document.getElementById('ipp2_7').innerHTML; document.getElementById('ipp2_7').innerHTML = ''}" id="ipp_7"> <span style="cursor: pointer; border: 1px grey solid; background-color: #fcdcb3; padding-left: 3px; padding-right: 3px; color: black">Show Usage</span></div><div style="display: none" id="ipp2_7">
+<ul>
+<li><a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-rxNorm.html">RxNorm</a>: <a href="StructureDefinition-il-core-medication.html">ILCoreMedication</a>, <a href="ValueSet-il-core-medication-code.html">ILCoreMedicationCode</a> and <a href="StructureDefinition-il-core-medication-request.html">ILCoreMedicationRequest</a></li>
+</ul>
+</div></li>
+</ul>
+  <!-- $$1$$ -->
+
+
+
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1007">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ido.levin@moh.gov.il">Israel Core Team</a>.  Package health.gov.il.fhir.core#0.13.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Dec 23, 2023 19:20+0200">2023-12-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="il-core-procedure-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Import all the codes that are contained in <a href="ValueSet-icd9-cm-procedures.html">Icd9 Cm Procedures</a></li><li>Import all the codes that are contained in <a href="ValueSet-icd9il-procedures.html">ICD9 IL Procedures</a></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  71388002 (Procedure)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  129125009 (Context-dependent procedure)</li><li>Include all codes defined in <a href="CodeSystem-medical-service-moh.html"><code>http://fhir.health.gov.il/cs/medical-service-moh</code></a></li><li>Include all codes defined in <a href="http://loinc.org"><code>http://loinc.org</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/il-core-procedure-code"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreProcedureCode"/>
+  <title value="IL Core procedure Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for procedures for the IL Core"/>
+  <compose>
+    <include>
+      <valueSet value="http://fhir.health.gov.il/ValueSet/icd9-cm-procedures"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.health.gov.il/ValueSet/icd9il-procedures"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="71388002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="129125009"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/medical-service-moh"/>
+    </include>
+    <include>
+      <system value="http://loinc.org"/>
+    </include>
+  </compose>
+</ValueSet>

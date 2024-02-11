@@ -1,0 +1,275 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/paying-entity-moh> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "paying-entity-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/paying-entity-moh</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>Deprecated</b></td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">-888<a name=\"paying-entity-moh--888\"> </a></td><td>לא רלוונטי</td><td>ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL</td><td>Deprecated</td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">-999<a name=\"paying-entity-moh--999\"> </a></td><td>לא ידוע</td><td>ערך ברירת מחדל במקרה שערך הגורם המשלם איננו רלוונטי או לא קיים מאחר ולא מדובר בתשלום</td><td>Deprecated</td></tr><tr><td style=\"white-space:nowrap\">101<a name=\"paying-entity-moh-101\"> </a></td><td>קופת חולים כללית</td><td>הערך קופת חולים כללית מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית (לא מדובר בשיוך לקופה)</td><td/></tr><tr><td style=\"white-space:nowrap\">102<a name=\"paying-entity-moh-102\"> </a></td><td>קופת חולים לאומית</td><td>הערך קופת חולים לאומית מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית (לא מדובר בשיוך לקופה)</td><td/></tr><tr><td style=\"white-space:nowrap\">103<a name=\"paying-entity-moh-103\"> </a></td><td>קופת חולים מכבי</td><td>הערך קופת חולים מכבי מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי (לא מדובר בשיוך לקופה)</td><td/></tr><tr><td style=\"white-space:nowrap\">104<a name=\"paying-entity-moh-104\"> </a></td><td>קופת חולים מאוחדת</td><td>הערך קופת חולים מאוחדת מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת (לא מדובר בשיוך לקופה)</td><td/></tr><tr><td style=\"white-space:nowrap\">401<a name=\"paying-entity-moh-401\"> </a></td><td>צה&quot;ל</td><td>הערך צה&quot;ל מתאים למקרה בו הגורם המשלם הוא צה&quot;ל (לא מדובר בשיוך אליו כקופה חמישת)</td><td/></tr><tr><td style=\"white-space:nowrap\">402<a name=\"paying-entity-moh-402\"> </a></td><td>משרד הבטחון</td><td>הערך משרד הבטחון מתאים למקרה בו הגורם המשלם הוא משרד הביטחון</td><td/></tr><tr><td style=\"white-space:nowrap\">480<a name=\"paying-entity-moh-480\"> </a></td><td>רשות פלסטינאית</td><td>הערך רשות פלסטינאית מתאים למקרה בו הגורם המשלם הוא הרשות הפלסטינאית</td><td/></tr><tr><td style=\"white-space:nowrap\">405<a name=\"paying-entity-moh-405\"> </a></td><td>שירותי בתי הסוהר</td><td>הערך שירותי בתי הסוהר  מתאים למקרה בו הגורם המשלם הוא</td><td/></tr><tr><td style=\"white-space:nowrap\">501<a name=\"paying-entity-moh-501\"> </a></td><td>חברות ביטוח</td><td>הערך חברות ביטוח  מתאים למקרה בו הגורם המשלם הוא חברת ביטוח (לזיהוי מימון חברות פרטיות)</td><td/></tr><tr><td style=\"white-space:nowrap\">541<a name=\"paying-entity-moh-541\"> </a></td><td>כללית ביטוחים משלימים</td><td>הערך כללית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים כללית (לזיהוי שב&quot;ן)</td><td/></tr><tr><td style=\"white-space:nowrap\">542<a name=\"paying-entity-moh-542\"> </a></td><td>מכבי ביטוחים משלימים</td><td>הערך מכבי ביטוחים משלימים  מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מכבי(לזיהוי שב&quot;ן)</td><td/></tr><tr><td style=\"white-space:nowrap\">543<a name=\"paying-entity-moh-543\"> </a></td><td>מאוחדת ביטוחים משלימים</td><td>הערך מאוחדת ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מאוחדת (לזיהוי שב&quot;ן)</td><td/></tr><tr><td style=\"white-space:nowrap\">544<a name=\"paying-entity-moh-544\"> </a></td><td>לאומית ביטוחים משלימים</td><td>הערך לאומית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים לאומית (לזיהוי שב&quot;ן)</td><td/></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">1Z1<a name=\"paying-entity-moh-1Z1\"> </a></td><td>כללית חיילים</td><td>הערך כללית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים כללית (לא תקף יותר)</td><td>Deprecated</td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">1Z2<a name=\"paying-entity-moh-1Z2\"> </a></td><td>לאומית חיילים</td><td>הערך לאומית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים לאומית (לא תקף יותר)</td><td>Deprecated</td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">1Z3<a name=\"paying-entity-moh-1Z3\"> </a></td><td>מכבי חיילים</td><td>הערך מכבי חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מכבי(לא תקף יותר)</td><td>Deprecated</td></tr><tr style=\"background-color: #ffeeee\"><td style=\"white-space:nowrap\">1Z4<a name=\"paying-entity-moh-1Z4\"> </a></td><td>מאוחדת חיילים</td><td>הערך מאוחדת חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מאוחדת (לא תקף יותר)</td><td>Deprecated</td></tr><tr><td style=\"white-space:nowrap\">1P1<a name=\"paying-entity-moh-1P1\"> </a></td><td>כללית פסיכיאטריה</td><td>הערך כללית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית לשירותי בריאות הנפש</td><td/></tr><tr><td style=\"white-space:nowrap\">1P2<a name=\"paying-entity-moh-1P2\"> </a></td><td>לאומית פסיכיאטריה</td><td>הערך לאומית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית לשירותי בריאות הנפש</td><td/></tr><tr><td style=\"white-space:nowrap\">1P3<a name=\"paying-entity-moh-1P3\"> </a></td><td>מכבי פסיכיאטריה</td><td>הערך מכבי פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי לשירותי בריאות הנפש</td><td/></tr><tr><td style=\"white-space:nowrap\">1P4<a name=\"paying-entity-moh-1P4\"> </a></td><td>מאוחדת פסיכיאטריה</td><td>הערך מאוחדת פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת לשירותי בריאות הנפש</td><td/></tr><tr><td style=\"white-space:nowrap\">200<a name=\"paying-entity-moh-200\"> </a></td><td>בתי חולים</td><td>הערך בתי חולים מתאים למקרה בו הגורם המשלם הוא בית החולים</td><td/></tr><tr><td style=\"white-space:nowrap\">201<a name=\"paying-entity-moh-201\"> </a></td><td>מוסדות לאשפוז כללי</td><td>הערך מוסדות לאשפוז כללי מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז כללי כלשהו (יכול להיות בית יולדות</td><td/></tr><tr><td style=\"white-space:nowrap\">202<a name=\"paying-entity-moh-202\"> </a></td><td>מוסדות לאשפוז נפש</td><td>הערך מוסדות לאשפוז נפש מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז בבריאות הנפש (בית חולים פסיכיאטרי)</td><td/></tr><tr><td style=\"white-space:nowrap\">203<a name=\"paying-entity-moh-203\"> </a></td><td>מוסדות למחלות ממושכות</td><td>הערך מוסדות למחלות ממושכות מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז ממושך (בית חולים גריאטרי)</td><td/></tr><tr><td style=\"white-space:nowrap\">204<a name=\"paying-entity-moh-204\"> </a></td><td>מוסדות לשיקום</td><td>הערך מוסדות לשיקום מתאים למקרה בו הגורם המשלם הוא מוסד שיקום</td><td/></tr><tr><td style=\"white-space:nowrap\">300<a name=\"paying-entity-moh-300\"> </a></td><td>ביטוח לאומי</td><td>הערך ביטוח לאומי מתאים למקרה בו הגורם המשלם הוא ביטוח לאומי</td><td/></tr><tr><td style=\"white-space:nowrap\">400<a name=\"paying-entity-moh-400\"> </a></td><td>משרדי ממשלה ומוסדות ציבור</td><td>משרדי ממשלה ומוסדות ציבור מתאים למקרה בו הגורם המשלם הוא גורם ממשלתי או ציבורי</td><td/></tr><tr><td style=\"white-space:nowrap\">403<a name=\"paying-entity-moh-403\"> </a></td><td>ממשל צבאי</td><td>ממשל צבאי מתאים למקרה בו הגורם המשלם הוא הממשל הצבאי</td><td/></tr><tr><td style=\"white-space:nowrap\">404<a name=\"paying-entity-moh-404\"> </a></td><td>משטרה</td><td>הערך משטרה מתאים למקרה בו הגורם המשלם הוא המשטרה</td><td/></tr><tr><td style=\"white-space:nowrap\">406<a name=\"paying-entity-moh-406\"> </a></td><td>משרד הבריאות</td><td>הערך משרד הבריאות מתאים למקרה בו הגורם המשלם הוא משרד הבריאות</td><td/></tr><tr><td style=\"white-space:nowrap\">465<a name=\"paying-entity-moh-465\"> </a></td><td>בתי ספר</td><td>הערך בתי ספר מתאים למקרה בו הגורם המשלם הוא בית ספר</td><td/></tr><tr><td style=\"white-space:nowrap\">475<a name=\"paying-entity-moh-475\"> </a></td><td>מוסדות דת</td><td>הערך מוסדות דת מתאים למקרה בו הגורם המשלם הוא מוסד דת</td><td/></tr><tr><td style=\"white-space:nowrap\">490<a name=\"paying-entity-moh-490\"> </a></td><td>או&quot;ם /כוח רב לאומי</td><td>הערך או&quot;ם /כוח רב לאומי מתאים למקרה בו הגורם המשלם הוא האו&quot;ם או הכוח הרב לאומי</td><td/></tr><tr><td style=\"white-space:nowrap\">500<a name=\"paying-entity-moh-500\"> </a></td><td>חברות פרטיות</td><td>הערך חברות פרטיות מתאים למקרה בו הגורם המשלם הוא חברה פרטית (לאוו דווקא חברת ביטוח)</td><td/></tr><tr><td style=\"white-space:nowrap\">504<a name=\"paying-entity-moh-504\"> </a></td><td>שגרירויות</td><td>הערך שגרירויות מתאים למקרה בו הגורם המשלם הוא שגרירות</td><td/></tr><tr><td style=\"white-space:nowrap\">515<a name=\"paying-entity-moh-515\"> </a></td><td>חברות ביטוח בהסדר</td><td>הערך חברות ביטוח בהסדר מתאים למקרה בו הגורם המשלם הוא חברת ביטוח שבהסדר</td><td/></tr><tr><td style=\"white-space:nowrap\">530<a name=\"paying-entity-moh-530\"> </a></td><td>חברות ביטוח זרות</td><td>הערך חברות ביטוח זרות מתאים למקרה בו הגורם המשלם הוא חברת ביטוח זרה</td><td/></tr><tr><td style=\"white-space:nowrap\">593<a name=\"paying-entity-moh-593\"> </a></td><td>חברות/הסכמי בתי חולים</td><td>הערך חברות/הסכמי בתי חולים מתאים למקרה בו הגורם המשלם הוא חברה בהסכמי בתי חולים</td><td/></tr><tr><td style=\"white-space:nowrap\">600<a name=\"paying-entity-moh-600\"> </a></td><td>פרטי</td><td>הערך פרטי מתאים לכל המקרים בו הגורם המשלם הוא פרטי</td><td/></tr><tr><td style=\"white-space:nowrap\">601<a name=\"paying-entity-moh-601\"> </a></td><td>פרטי- אזרח / תושב ארעי</td><td>הערך פרטי- אזרח / תושב ארעי מתאים למקרה בו הגורם המשלם הוא אזרח או תושב ארעי</td><td/></tr><tr><td style=\"white-space:nowrap\">602<a name=\"paying-entity-moh-602\"> </a></td><td>תושב חוץ</td><td>הערך תושב חוץ מתאים למקרה בו הגורם המשלם הוא תושב חוץ (אזרח ישראלי המתגורר בחו&quot;ל)</td><td/></tr><tr><td style=\"white-space:nowrap\">603<a name=\"paying-entity-moh-603\"> </a></td><td>פרטי - תושב חוץ / תייר</td><td>הערך פרטי - תושב חוץ / תייר מתאים למקרה בו הגורם המשלם הוא תושב חוץ או תייר</td><td/></tr><tr><td style=\"white-space:nowrap\">700<a name=\"paying-entity-moh-700\"> </a></td><td>חינם</td><td>הערך חינם מתאים למקרה בו השירות ניתן בחינם ולא נדרש גורם משלם</td><td/></tr><tr><td style=\"white-space:nowrap\">701<a name=\"paying-entity-moh-701\"> </a></td><td>ב&quot;ח חינם פרסונל</td><td>הערך ב&quot;ח חינם פרסונל מתאים למקרה בו השירות ניתן בחינם למטופל פרוסנל והגורם המשלם הוא בעצם בית החולים</td><td/></tr><tr><td style=\"white-space:nowrap\">800<a name=\"paying-entity-moh-800\"> </a></td><td>קרן מחקרים</td><td>הערך קרן מחקרים מתאים מקרה בו קרן המחקרים משלמת לשירותי עובדיה</td><td/></tr><tr><td style=\"white-space:nowrap\">900<a name=\"paying-entity-moh-900\"> </a></td><td>ברורים</td><td>הערך ברורים מתאים למקרה בו עדיין לא ברור מי יהיה הגורם המשלם</td><td/></tr><tr><td style=\"white-space:nowrap\">901<a name=\"paying-entity-moh-901\"> </a></td><td>מחיקת חובות</td><td>הערך מחיקת חובות מתאים למקרה בו ישנו ויתור על תשלום חוב</td><td/></tr><tr><td style=\"white-space:nowrap\">280<a name=\"paying-entity-moh-280\"> </a></td><td>תאגידים במרכז רפואי מחוץ</td><td>הערך תאגידים במרכז רפואי מחוץ מתאים למקרה בו הגורם המשלם הוא התאגיד במרכז הרפואי</td><td/></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/paying-entity-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "PayingEntityMoH"] ; # 
+  fhir:title [ fhir:v "Payer (Paying Entity / גורם משלם)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "51"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "-888" ] ;
+     fhir:display [ fhir:v "לא רלוונטי" ] ;
+     fhir:definition [ fhir:v "ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "-999" ] ;
+     fhir:display [ fhir:v "לא ידוע" ] ;
+     fhir:definition [ fhir:v "ערך ברירת מחדל במקרה שערך הגורם המשלם איננו רלוונטי או לא קיים מאחר ולא מדובר בתשלום" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "101" ] ;
+     fhir:display [ fhir:v "קופת חולים כללית" ] ;
+     fhir:definition [ fhir:v "הערך קופת חולים כללית מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית (לא מדובר בשיוך לקופה)" ]
+  ] [
+     fhir:code [ fhir:v "102" ] ;
+     fhir:display [ fhir:v "קופת חולים לאומית" ] ;
+     fhir:definition [ fhir:v "הערך קופת חולים לאומית מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית (לא מדובר בשיוך לקופה)" ]
+  ] [
+     fhir:code [ fhir:v "103" ] ;
+     fhir:display [ fhir:v "קופת חולים מכבי" ] ;
+     fhir:definition [ fhir:v "הערך קופת חולים מכבי מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי (לא מדובר בשיוך לקופה)" ]
+  ] [
+     fhir:code [ fhir:v "104" ] ;
+     fhir:display [ fhir:v "קופת חולים מאוחדת" ] ;
+     fhir:definition [ fhir:v "הערך קופת חולים מאוחדת מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת (לא מדובר בשיוך לקופה)" ]
+  ] [
+     fhir:code [ fhir:v "401" ] ;
+     fhir:display [ fhir:v "צה\"ל" ] ;
+     fhir:definition [ fhir:v "הערך צה\"ל מתאים למקרה בו הגורם המשלם הוא צה\"ל (לא מדובר בשיוך אליו כקופה חמישת)" ]
+  ] [
+     fhir:code [ fhir:v "402" ] ;
+     fhir:display [ fhir:v "משרד הבטחון" ] ;
+     fhir:definition [ fhir:v "הערך משרד הבטחון מתאים למקרה בו הגורם המשלם הוא משרד הביטחון" ]
+  ] [
+     fhir:code [ fhir:v "480" ] ;
+     fhir:display [ fhir:v "רשות פלסטינאית" ] ;
+     fhir:definition [ fhir:v "הערך רשות פלסטינאית מתאים למקרה בו הגורם המשלם הוא הרשות הפלסטינאית" ]
+  ] [
+     fhir:code [ fhir:v "405" ] ;
+     fhir:display [ fhir:v "שירותי בתי הסוהר" ] ;
+     fhir:definition [ fhir:v "הערך שירותי בתי הסוהר  מתאים למקרה בו הגורם המשלם הוא" ]
+  ] [
+     fhir:code [ fhir:v "501" ] ;
+     fhir:display [ fhir:v "חברות ביטוח" ] ;
+     fhir:definition [ fhir:v "הערך חברות ביטוח  מתאים למקרה בו הגורם המשלם הוא חברת ביטוח (לזיהוי מימון חברות פרטיות)" ]
+  ] [
+     fhir:code [ fhir:v "541" ] ;
+     fhir:display [ fhir:v "כללית ביטוחים משלימים" ] ;
+     fhir:definition [ fhir:v "הערך כללית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים כללית (לזיהוי שב\"ן)" ]
+  ] [
+     fhir:code [ fhir:v "542" ] ;
+     fhir:display [ fhir:v "מכבי ביטוחים משלימים" ] ;
+     fhir:definition [ fhir:v "הערך מכבי ביטוחים משלימים  מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מכבי(לזיהוי שב\"ן)" ]
+  ] [
+     fhir:code [ fhir:v "543" ] ;
+     fhir:display [ fhir:v "מאוחדת ביטוחים משלימים" ] ;
+     fhir:definition [ fhir:v "הערך מאוחדת ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים מאוחדת (לזיהוי שב\"ן)" ]
+  ] [
+     fhir:code [ fhir:v "544" ] ;
+     fhir:display [ fhir:v "לאומית ביטוחים משלימים" ] ;
+     fhir:definition [ fhir:v "הערך לאומית ביטוחים משלימים מתאים למקרה בו הגורם המשלם הוא הביטוח המשלים של קופת חולים לאומית (לזיהוי שב\"ן)" ]
+  ] [
+     fhir:code [ fhir:v "1Z1" ] ;
+     fhir:display [ fhir:v "כללית חיילים" ] ;
+     fhir:definition [ fhir:v "הערך כללית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים כללית (לא תקף יותר)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1Z2" ] ;
+     fhir:display [ fhir:v "לאומית חיילים" ] ;
+     fhir:definition [ fhir:v "הערך לאומית חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים לאומית (לא תקף יותר)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1Z3" ] ;
+     fhir:display [ fhir:v "מכבי חיילים" ] ;
+     fhir:definition [ fhir:v "הערך מכבי חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מכבי(לא תקף יותר)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1Z4" ] ;
+     fhir:display [ fhir:v "מאוחדת חיילים" ] ;
+     fhir:definition [ fhir:v "הערך מאוחדת חיילים מתאים למקרה היסטורי בו הגורם המשלם היה ביטוח החיילים בקופת חולים מאוחדת (לא תקף יותר)" ] ;
+     fhir:property ( [
+       fhir:code [ fhir:v "status" ] ;
+       fhir:value [ fhir:v "deprecated" ]
+     ] )
+  ] [
+     fhir:code [ fhir:v "1P1" ] ;
+     fhir:display [ fhir:v "כללית פסיכיאטריה" ] ;
+     fhir:definition [ fhir:v "הערך כללית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית לשירותי בריאות הנפש" ]
+  ] [
+     fhir:code [ fhir:v "1P2" ] ;
+     fhir:display [ fhir:v "לאומית פסיכיאטריה" ] ;
+     fhir:definition [ fhir:v "הערך לאומית פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית לשירותי בריאות הנפש" ]
+  ] [
+     fhir:code [ fhir:v "1P3" ] ;
+     fhir:display [ fhir:v "מכבי פסיכיאטריה" ] ;
+     fhir:definition [ fhir:v "הערך מכבי פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי לשירותי בריאות הנפש" ]
+  ] [
+     fhir:code [ fhir:v "1P4" ] ;
+     fhir:display [ fhir:v "מאוחדת פסיכיאטריה" ] ;
+     fhir:definition [ fhir:v "הערך מאוחדת פסיכיאטריה מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת לשירותי בריאות הנפש" ]
+  ] [
+     fhir:code [ fhir:v "200" ] ;
+     fhir:display [ fhir:v "בתי חולים" ] ;
+     fhir:definition [ fhir:v "הערך בתי חולים מתאים למקרה בו הגורם המשלם הוא בית החולים" ]
+  ] [
+     fhir:code [ fhir:v "201" ] ;
+     fhir:display [ fhir:v "מוסדות לאשפוז כללי" ] ;
+     fhir:definition [ fhir:v "הערך מוסדות לאשפוז כללי מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז כללי כלשהו (יכול להיות בית יולדות" ]
+  ] [
+     fhir:code [ fhir:v "202" ] ;
+     fhir:display [ fhir:v "מוסדות לאשפוז נפש" ] ;
+     fhir:definition [ fhir:v "הערך מוסדות לאשפוז נפש מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז בבריאות הנפש (בית חולים פסיכיאטרי)" ]
+  ] [
+     fhir:code [ fhir:v "203" ] ;
+     fhir:display [ fhir:v "מוסדות למחלות ממושכות" ] ;
+     fhir:definition [ fhir:v "הערך מוסדות למחלות ממושכות מתאים למקרה בו הגורם המשלם הוא מוסד לאשפוז ממושך (בית חולים גריאטרי)" ]
+  ] [
+     fhir:code [ fhir:v "204" ] ;
+     fhir:display [ fhir:v "מוסדות לשיקום" ] ;
+     fhir:definition [ fhir:v "הערך מוסדות לשיקום מתאים למקרה בו הגורם המשלם הוא מוסד שיקום" ]
+  ] [
+     fhir:code [ fhir:v "300" ] ;
+     fhir:display [ fhir:v "ביטוח לאומי" ] ;
+     fhir:definition [ fhir:v "הערך ביטוח לאומי מתאים למקרה בו הגורם המשלם הוא ביטוח לאומי" ]
+  ] [
+     fhir:code [ fhir:v "400" ] ;
+     fhir:display [ fhir:v "משרדי ממשלה ומוסדות ציבור" ] ;
+     fhir:definition [ fhir:v "משרדי ממשלה ומוסדות ציבור מתאים למקרה בו הגורם המשלם הוא גורם ממשלתי או ציבורי" ]
+  ] [
+     fhir:code [ fhir:v "403" ] ;
+     fhir:display [ fhir:v "ממשל צבאי" ] ;
+     fhir:definition [ fhir:v "ממשל צבאי מתאים למקרה בו הגורם המשלם הוא הממשל הצבאי" ]
+  ] [
+     fhir:code [ fhir:v "404" ] ;
+     fhir:display [ fhir:v "משטרה" ] ;
+     fhir:definition [ fhir:v "הערך משטרה מתאים למקרה בו הגורם המשלם הוא המשטרה" ]
+  ] [
+     fhir:code [ fhir:v "406" ] ;
+     fhir:display [ fhir:v "משרד הבריאות" ] ;
+     fhir:definition [ fhir:v "הערך משרד הבריאות מתאים למקרה בו הגורם המשלם הוא משרד הבריאות" ]
+  ] [
+     fhir:code [ fhir:v "465" ] ;
+     fhir:display [ fhir:v "בתי ספר" ] ;
+     fhir:definition [ fhir:v "הערך בתי ספר מתאים למקרה בו הגורם המשלם הוא בית ספר" ]
+  ] [
+     fhir:code [ fhir:v "475" ] ;
+     fhir:display [ fhir:v "מוסדות דת" ] ;
+     fhir:definition [ fhir:v "הערך מוסדות דת מתאים למקרה בו הגורם המשלם הוא מוסד דת" ]
+  ] [
+     fhir:code [ fhir:v "490" ] ;
+     fhir:display [ fhir:v "או\"ם /כוח רב לאומי" ] ;
+     fhir:definition [ fhir:v "הערך או\"ם /כוח רב לאומי מתאים למקרה בו הגורם המשלם הוא האו\"ם או הכוח הרב לאומי" ]
+  ] [
+     fhir:code [ fhir:v "500" ] ;
+     fhir:display [ fhir:v "חברות פרטיות" ] ;
+     fhir:definition [ fhir:v "הערך חברות פרטיות מתאים למקרה בו הגורם המשלם הוא חברה פרטית (לאוו דווקא חברת ביטוח)" ]
+  ] [
+     fhir:code [ fhir:v "504" ] ;
+     fhir:display [ fhir:v "שגרירויות" ] ;
+     fhir:definition [ fhir:v "הערך שגרירויות מתאים למקרה בו הגורם המשלם הוא שגרירות" ]
+  ] [
+     fhir:code [ fhir:v "515" ] ;
+     fhir:display [ fhir:v "חברות ביטוח בהסדר" ] ;
+     fhir:definition [ fhir:v "הערך חברות ביטוח בהסדר מתאים למקרה בו הגורם המשלם הוא חברת ביטוח שבהסדר" ]
+  ] [
+     fhir:code [ fhir:v "530" ] ;
+     fhir:display [ fhir:v "חברות ביטוח זרות" ] ;
+     fhir:definition [ fhir:v "הערך חברות ביטוח זרות מתאים למקרה בו הגורם המשלם הוא חברת ביטוח זרה" ]
+  ] [
+     fhir:code [ fhir:v "593" ] ;
+     fhir:display [ fhir:v "חברות/הסכמי בתי חולים" ] ;
+     fhir:definition [ fhir:v "הערך חברות/הסכמי בתי חולים מתאים למקרה בו הגורם המשלם הוא חברה בהסכמי בתי חולים" ]
+  ] [
+     fhir:code [ fhir:v "600" ] ;
+     fhir:display [ fhir:v "פרטי" ] ;
+     fhir:definition [ fhir:v "הערך פרטי מתאים לכל המקרים בו הגורם המשלם הוא פרטי" ]
+  ] [
+     fhir:code [ fhir:v "601" ] ;
+     fhir:display [ fhir:v "פרטי- אזרח / תושב ארעי" ] ;
+     fhir:definition [ fhir:v "הערך פרטי- אזרח / תושב ארעי מתאים למקרה בו הגורם המשלם הוא אזרח או תושב ארעי" ]
+  ] [
+     fhir:code [ fhir:v "602" ] ;
+     fhir:display [ fhir:v "תושב חוץ" ] ;
+     fhir:definition [ fhir:v "הערך תושב חוץ מתאים למקרה בו הגורם המשלם הוא תושב חוץ (אזרח ישראלי המתגורר בחו\"ל)" ]
+  ] [
+     fhir:code [ fhir:v "603" ] ;
+     fhir:display [ fhir:v "פרטי - תושב חוץ / תייר" ] ;
+     fhir:definition [ fhir:v "הערך פרטי - תושב חוץ / תייר מתאים למקרה בו הגורם המשלם הוא תושב חוץ או תייר" ]
+  ] [
+     fhir:code [ fhir:v "700" ] ;
+     fhir:display [ fhir:v "חינם" ] ;
+     fhir:definition [ fhir:v "הערך חינם מתאים למקרה בו השירות ניתן בחינם ולא נדרש גורם משלם" ]
+  ] [
+     fhir:code [ fhir:v "701" ] ;
+     fhir:display [ fhir:v "ב\"ח חינם פרסונל" ] ;
+     fhir:definition [ fhir:v "הערך ב\"ח חינם פרסונל מתאים למקרה בו השירות ניתן בחינם למטופל פרוסנל והגורם המשלם הוא בעצם בית החולים" ]
+  ] [
+     fhir:code [ fhir:v "800" ] ;
+     fhir:display [ fhir:v "קרן מחקרים" ] ;
+     fhir:definition [ fhir:v "הערך קרן מחקרים מתאים מקרה בו קרן המחקרים משלמת לשירותי עובדיה" ]
+  ] [
+     fhir:code [ fhir:v "900" ] ;
+     fhir:display [ fhir:v "ברורים" ] ;
+     fhir:definition [ fhir:v "הערך ברורים מתאים למקרה בו עדיין לא ברור מי יהיה הגורם המשלם" ]
+  ] [
+     fhir:code [ fhir:v "901" ] ;
+     fhir:display [ fhir:v "מחיקת חובות" ] ;
+     fhir:definition [ fhir:v "הערך מחיקת חובות מתאים למקרה בו ישנו ויתור על תשלום חוב" ]
+  ] [
+     fhir:code [ fhir:v "280" ] ;
+     fhir:display [ fhir:v "תאגידים במרכז רפואי מחוץ" ] ;
+     fhir:definition [ fhir:v "הערך תאגידים במרכז רפואי מחוץ מתאים למקרה בו הגורם המשלם הוא התאגיד במרכז הרפואי" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Location xmlns="http://hl7.org/fhir">
+  <id value="location-general-kind-hospital-ward"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-location"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Exmple for a general kind of hospital ward, not in a specific hospital or specific location</div>
+  </text>
+  <identifier>
+    <system value="http://fhir.health.gov.il/cs/institute-department-moh"/>
+    <value value="010011"/>
+  </identifier>
+  <status value="active"/>
+  <name value="פנימית ב'"/>
+  <mode value="kind"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v3-RoleCode"/>
+      <code value="HU"/>
+      <display value="Hospital Unit"/>
+    </coding>
+  </type>
+</Location>

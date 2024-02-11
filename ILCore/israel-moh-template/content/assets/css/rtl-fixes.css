@@ -1,0 +1,49 @@
+div#intro {
+  FLOAT: right;
+}
+
+table.grid {
+  margin-right: inherit;
+}
+
+
+
+nav.navbar.navbar-inverse {
+  direction: rtl;
+  display: flex;
+}
+
+.navbar .nav > li > a {
+  font-size: 1.2em;
+}
+
+:root {
+  --ig-status-text-color: #0000ff; /* 1. IG Title and status text color */
+  --navbar-bg-color: #0000ff; /* 2. Header container color */
+  --footer-container-bg-color: #0000ff; /* 4. Footer container color */
+  --btn-hover-color: #0000ff;  /* 6. Menu button hover color */
+}
+
+p, li {
+  font-size: 15px;
+  line-height: 1.4em;
+  font-family: SANS-SERIF;
+}
+
+li {
+/* margin-right: 2em; */
+  margin: 0 2em 5px 0;
+}
+
+
+.dropdown-menu li > a {
+font-size: 14px;
+font-family: SANS-SERIF;
+}
+
+
+table, th, td {
+  border: 1px solid;
+  font-size: 16px;
+  border-collapse: collapse;
+}

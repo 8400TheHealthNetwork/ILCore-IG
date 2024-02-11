@@ -1,0 +1,1010 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "il-core-urn",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>urn:ietf:rfc:3986</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AFG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-AFG\"> </a></td><td>Afghanistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ALB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ALB\"> </a></td><td>Albania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DZA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-DZA\"> </a></td><td>Algeria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ASM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ASM\"> </a></td><td>American Samoa</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AND<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-AND\"> </a></td><td>Andorra</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AGO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-AGO\"> </a></td><td>Angola</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AIA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-AIA\"> </a></td><td>Anguilla</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ATA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ATA\"> </a></td><td>Antarctica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ATG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ATG\"> </a></td><td>Antigua and Barbuda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ARG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ARG\"> </a></td><td>Argentina</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ARM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ARM\"> </a></td><td>Armenia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ABW<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ABW\"> </a></td><td>Aruba</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AUS<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-AUS\"> </a></td><td>Australia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AUT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-AUT\"> </a></td><td>Austria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-AZE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-AZE\"> </a></td><td>Azerbaijan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BHS<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BHS\"> </a></td><td>Bahamas</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BHR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BHR\"> </a></td><td>Bahrain</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BGD<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BGD\"> </a></td><td>Bangladesh</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BRB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BRB\"> </a></td><td>Barbados</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BLR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BLR\"> </a></td><td>Belarus</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BEL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BEL\"> </a></td><td>Belgium</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BLZ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BLZ\"> </a></td><td>Belize</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BEN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BEN\"> </a></td><td>Benin</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BMU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BMU\"> </a></td><td>Bermuda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BTN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BTN\"> </a></td><td>Bhutan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BOL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BOL\"> </a></td><td>Bolivia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BIH<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BIH\"> </a></td><td>Bosnia and Herzegovina</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BWA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BWA\"> </a></td><td>Botswana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BVT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BVT\"> </a></td><td>Bouvet Island</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BRA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BRA\"> </a></td><td>Brazil</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IOT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-IOT\"> </a></td><td>British Indian Ocean Territory</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BRN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BRN\"> </a></td><td>Brunei</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BGR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BGR\"> </a></td><td>Bulgaria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BFA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BFA\"> </a></td><td>Burkina Faso</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-BDI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-BDI\"> </a></td><td>Burundi</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KHM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KHM\"> </a></td><td>Cambodia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CMR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CMR\"> </a></td><td>Cameroon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CAN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CAN\"> </a></td><td>Canada</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CPV<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CPV\"> </a></td><td>Cape Verde</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CYM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CYM\"> </a></td><td>Cayman Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CAF<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CAF\"> </a></td><td>Central African Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TCD<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TCD\"> </a></td><td>Chad</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CHL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CHL\"> </a></td><td>Chile</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CHN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CHN\"> </a></td><td>China</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CXR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CXR\"> </a></td><td>Christmas Island</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CCK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CCK\"> </a></td><td>Cocos (Keeling) Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-COL\"> </a></td><td>Colombia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-COM\"> </a></td><td>Comoros</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-COG\"> </a></td><td>Congo</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COD<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-COD\"> </a></td><td>Congo, the Democratic Republic of the</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-COK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-COK\"> </a></td><td>Cook Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CRI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CRI\"> </a></td><td>Costa Rica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CIV<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CIV\"> </a></td><td>Ivory Coast</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HRV<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-HRV\"> </a></td><td>Croatia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CUB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CUB\"> </a></td><td>Cuba</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CYP<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CYP\"> </a></td><td>Cyprus</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CZE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CZE\"> </a></td><td>Czech Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DNK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-DNK\"> </a></td><td>Denmark</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DJI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-DJI\"> </a></td><td>Djibouti</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DMA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-DMA\"> </a></td><td>Dominica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DOM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-DOM\"> </a></td><td>Dominican Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ECU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ECU\"> </a></td><td>Ecuador</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-EGY<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-EGY\"> </a></td><td>Egypt</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SLV<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SLV\"> </a></td><td>El Salvador</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GNQ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GNQ\"> </a></td><td>Equatorial Guinea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ERI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ERI\"> </a></td><td>Eritrea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-EST<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-EST\"> </a></td><td>Estonia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ETH<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ETH\"> </a></td><td>Ethiopia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FLK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-FLK\"> </a></td><td>Falkland Islands (Malvinas)</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FRO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-FRO\"> </a></td><td>Faroe Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FJI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-FJI\"> </a></td><td>Fiji</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FIN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-FIN\"> </a></td><td>Finland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FRA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-FRA\"> </a></td><td>France</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GUF<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GUF\"> </a></td><td>French Guiana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PYF<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PYF\"> </a></td><td>French Polynesia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ATF<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ATF\"> </a></td><td>French Southern Territories</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GAB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GAB\"> </a></td><td>Gabon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GMB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GMB\"> </a></td><td>Gambia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GEO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GEO\"> </a></td><td>Georgia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-DEU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-DEU\"> </a></td><td>Germany</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GHA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GHA\"> </a></td><td>Ghana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GIB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GIB\"> </a></td><td>Gibraltar</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GRC<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GRC\"> </a></td><td>Greece</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GRL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GRL\"> </a></td><td>Greenland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GRD<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GRD\"> </a></td><td>Grenada</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GLP<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GLP\"> </a></td><td>Guadeloupe</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GUM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GUM\"> </a></td><td>Guam</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GTM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GTM\"> </a></td><td>Guatemala</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GGY<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GGY\"> </a></td><td>Guernsey</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GIN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GIN\"> </a></td><td>Guinea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GNB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GNB\"> </a></td><td>Guinea-Bissau</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GUY<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GUY\"> </a></td><td>Guyana</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HTI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-HTI\"> </a></td><td>Haiti</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HMD<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-HMD\"> </a></td><td>Heard Island and McDonald Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VAT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-VAT\"> </a></td><td>Holy See (Vatican City State)</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HND<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-HND\"> </a></td><td>Honduras</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HKG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-HKG\"> </a></td><td>Hong Kong</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-HUN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-HUN\"> </a></td><td>Hungary</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ISL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ISL\"> </a></td><td>Iceland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IND<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-IND\"> </a></td><td>India</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IDN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-IDN\"> </a></td><td>Indonesia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IRN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-IRN\"> </a></td><td>Iran, Islamic Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IRQ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-IRQ\"> </a></td><td>Iraq</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IRL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-IRL\"> </a></td><td>Ireland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-IMN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-IMN\"> </a></td><td>Isle of Man</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ISR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ISR\"> </a></td><td>Israel</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ITA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ITA\"> </a></td><td>Italy</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JAM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-JAM\"> </a></td><td>Jamaica</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JPN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-JPN\"> </a></td><td>Japan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JEY<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-JEY\"> </a></td><td>Jersey</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-JOR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-JOR\"> </a></td><td>Jordan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KAZ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KAZ\"> </a></td><td>Kazakhstan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KEN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KEN\"> </a></td><td>Kenya</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KIR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KIR\"> </a></td><td>Kiribati</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRK\"> </a></td><td>Korea, Democratic People's Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KOR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KOR\"> </a></td><td>Korea, Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KWT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KWT\"> </a></td><td>Kuwait</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KGZ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KGZ\"> </a></td><td>Kyrgyzstan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LAO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LAO\"> </a></td><td>Lao People's Democratic Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LVA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LVA\"> </a></td><td>Latvia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LBN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LBN\"> </a></td><td>Lebanon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LSO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LSO\"> </a></td><td>Lesotho</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LBR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LBR\"> </a></td><td>Liberia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LBY<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LBY\"> </a></td><td>Libya</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LIE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LIE\"> </a></td><td>Liechtenstein</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LTU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LTU\"> </a></td><td>Lithuania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LUX<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LUX\"> </a></td><td>Luxembourg</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MAC<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MAC\"> </a></td><td>Macao</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MKD<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MKD\"> </a></td><td>Macedonia, the former Yugoslav Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MDG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MDG\"> </a></td><td>Madagascar</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MWI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MWI\"> </a></td><td>Malawi</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MYS<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MYS\"> </a></td><td>Malaysia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MDV<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MDV\"> </a></td><td>Maldives</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MLI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MLI\"> </a></td><td>Mali</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MLT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MLT\"> </a></td><td>Malta</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MHL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MHL\"> </a></td><td>Marshall Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MTQ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MTQ\"> </a></td><td>Martinique</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MRT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MRT\"> </a></td><td>Mauritania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MUS<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MUS\"> </a></td><td>Mauritius</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MYT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MYT\"> </a></td><td>Mayotte</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MEX<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MEX\"> </a></td><td>Mexico</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-FSM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-FSM\"> </a></td><td>Micronesia, Federated States of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MDA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MDA\"> </a></td><td>Moldova, Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MCO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MCO\"> </a></td><td>Monaco</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MNG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MNG\"> </a></td><td>Mongolia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MNE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MNE\"> </a></td><td>Montenegro</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MSR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MSR\"> </a></td><td>Montserrat</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MAR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MAR\"> </a></td><td>Morocco</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MOZ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MOZ\"> </a></td><td>Mozambique</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MMR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MMR\"> </a></td><td>Myanmar/Burma</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NAM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NAM\"> </a></td><td>Namibia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NRU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NRU\"> </a></td><td>Nauru</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NPL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NPL\"> </a></td><td>Nepal</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NLD<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NLD\"> </a></td><td>Netherlands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ANT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ANT\"> </a></td><td>Netherlands Antilles</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NCL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NCL\"> </a></td><td>New Caledonia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NZL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NZL\"> </a></td><td>New Zealand</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NIC<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NIC\"> </a></td><td>Nicaragua</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NER<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NER\"> </a></td><td>Niger</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NGA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NGA\"> </a></td><td>Nigeria</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NIU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NIU\"> </a></td><td>Niue</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NFK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NFK\"> </a></td><td>Norfolk Island</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-MNP<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-MNP\"> </a></td><td>Northern Mariana Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-NOR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-NOR\"> </a></td><td>Norway</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-OMN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-OMN\"> </a></td><td>Oman</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PAK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PAK\"> </a></td><td>Pakistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PLW<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PLW\"> </a></td><td>Palau</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PSE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PSE\"> </a></td><td>Palestinian Territory, Occupied</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PAN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PAN\"> </a></td><td>Panama</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PNG<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PNG\"> </a></td><td>Papua New Guinea</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRY<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRY\"> </a></td><td>Paraguay</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PER<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PER\"> </a></td><td>Peru</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PHL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PHL\"> </a></td><td>Philippines</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PCN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PCN\"> </a></td><td>Pitcairn</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-POL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-POL\"> </a></td><td>Poland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRT\"> </a></td><td>Portugal</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-PRI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-PRI\"> </a></td><td>Puerto Rico</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-QAT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-QAT\"> </a></td><td>Qatar</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-REU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-REU\"> </a></td><td>Réunion</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ROU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ROU\"> </a></td><td>Romania</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-RUS<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-RUS\"> </a></td><td>Russia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-RWA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-RWA\"> </a></td><td>Rwanda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SHN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SHN\"> </a></td><td>Saint Helena, Ascension and Tristan da Cunha</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-KNA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-KNA\"> </a></td><td>Saint Kitts and Nevis</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LCA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LCA\"> </a></td><td>Saint Lucia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SPM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SPM\"> </a></td><td>Saint Pierre and Miquelon</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VCT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-VCT\"> </a></td><td>Saint Vincent and the Grenadines</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-WSM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-WSM\"> </a></td><td>Samoa</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SMR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SMR\"> </a></td><td>San Marino</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-STP<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-STP\"> </a></td><td>Sao Tome and Principe</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SAU<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SAU\"> </a></td><td>Saudi Arabia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SEN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SEN\"> </a></td><td>Senegal</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SRB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SRB\"> </a></td><td>Serbia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SYC<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SYC\"> </a></td><td>Seychelles</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SLE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SLE\"> </a></td><td>Sierra Leone</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SGP<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SGP\"> </a></td><td>Singapore</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SVK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SVK\"> </a></td><td>Slovakia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SVN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SVN\"> </a></td><td>Slovenia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SLB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SLB\"> </a></td><td>Solomon Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SOM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SOM\"> </a></td><td>Somalia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ZAF<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ZAF\"> </a></td><td>South Africa</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SGS<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SGS\"> </a></td><td>South Georgia and the South Sandwich Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ESP<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ESP\"> </a></td><td>Spain</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-LKA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-LKA\"> </a></td><td>Sri Lanka</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SDN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SDN\"> </a></td><td>Sudan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SUR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SUR\"> </a></td><td>Suriname</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SJM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SJM\"> </a></td><td>Svalbard and Jan Mayen</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SWZ<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SWZ\"> </a></td><td>Swaziland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SWE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SWE\"> </a></td><td>Sweden</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-CHE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-CHE\"> </a></td><td>Switzerland</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-SYR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-SYR\"> </a></td><td>Syrian Arab Republic</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TWN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TWN\"> </a></td><td>Taiwan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TJK<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TJK\"> </a></td><td>Tajikistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TZA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TZA\"> </a></td><td>Tanzania, United Republic of</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-THA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-THA\"> </a></td><td>Thailand</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TLS<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TLS\"> </a></td><td>Timor-Leste</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TGO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TGO\"> </a></td><td>Togo</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TKL<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TKL\"> </a></td><td>Tokelau</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TON<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TON\"> </a></td><td>Tonga</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TTO<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TTO\"> </a></td><td>Trinidad and Tobago</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TUN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TUN\"> </a></td><td>Tunisia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TUR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TUR\"> </a></td><td>Turkey</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TKM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TKM\"> </a></td><td>Turkmenistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TCA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TCA\"> </a></td><td>Turks and Caicos Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-TUV<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-TUV\"> </a></td><td>Tuvalu</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UGA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-UGA\"> </a></td><td>Uganda</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UKR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-UKR\"> </a></td><td>Ukraine</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ARE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ARE\"> </a></td><td>United Arab Emirates</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-GBR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-GBR\"> </a></td><td>United Kingdom</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-USA<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-USA\"> </a></td><td>United States</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UMI<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-UMI\"> </a></td><td>United States Minor Outlying Islands</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-URY<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-URY\"> </a></td><td>Uruguay</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-UZB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-UZB\"> </a></td><td>Uzbekistan</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VUT<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-VUT\"> </a></td><td>Vanuatu</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VEN<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-VEN\"> </a></td><td>Venezuela</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VNM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-VNM\"> </a></td><td>Vietnam</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VGB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-VGB\"> </a></td><td>Virgin Islands, British</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-VIR<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-VIR\"> </a></td><td>Virgin Islands, U.S.</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-WLF<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-WLF\"> </a></td><td>Wallis and Futuna</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ESH<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ESH\"> </a></td><td>Western Sahara</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-YEM<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-YEM\"> </a></td><td>Yemen</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ZMB<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ZMB\"> </a></td><td>Zambia</td></tr><tr><td style=\"white-space:nowrap\">http://hl7.org/fhir/sid/passport-ZWE<a name=\"il-core-urn-http.58.47.47hl7.46org.47fhir.47sid.47passport-ZWE\"> </a></td><td>Zimbabwe</td></tr><tr><td style=\"white-space:nowrap\">http://fhir.health.gov.il/identifier/cbs-statistical-area<a name=\"il-core-urn-http.58.47.47fhir.46health.46gov.46il.47identifier.47cbs-statistical-area\"> </a></td><td>Israeli CBS statistical area code</td></tr></table></div>"
+  },
+  "url" : "urn:ietf:rfc:3986",
+  "version" : "0.13.2",
+  "name" : "ILCoreURN",
+  "title" : "CodeSyestem for URNs",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:20:26+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for for URNs of different kinds, instead of using urn:ietf:rfc:3986 and urn:iso:std:iso:3166 as CodeSystem identifiers",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 244,
+  "concept" : [{
+    "code" : "http://hl7.org/fhir/sid/passport-AFG",
+    "display" : "Afghanistan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ALB",
+    "display" : "Albania"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-DZA",
+    "display" : "Algeria"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ASM",
+    "display" : "American Samoa"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-AND",
+    "display" : "Andorra"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-AGO",
+    "display" : "Angola"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-AIA",
+    "display" : "Anguilla"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ATA",
+    "display" : "Antarctica"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ATG",
+    "display" : "Antigua and Barbuda"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ARG",
+    "display" : "Argentina"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ARM",
+    "display" : "Armenia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ABW",
+    "display" : "Aruba"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-AUS",
+    "display" : "Australia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-AUT",
+    "display" : "Austria"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-AZE",
+    "display" : "Azerbaijan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BHS",
+    "display" : "Bahamas"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BHR",
+    "display" : "Bahrain"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BGD",
+    "display" : "Bangladesh"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BRB",
+    "display" : "Barbados"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BLR",
+    "display" : "Belarus"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BEL",
+    "display" : "Belgium"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BLZ",
+    "display" : "Belize"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BEN",
+    "display" : "Benin"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BMU",
+    "display" : "Bermuda"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BTN",
+    "display" : "Bhutan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BOL",
+    "display" : "Bolivia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BIH",
+    "display" : "Bosnia and Herzegovina"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BWA",
+    "display" : "Botswana"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BVT",
+    "display" : "Bouvet Island"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BRA",
+    "display" : "Brazil"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-IOT",
+    "display" : "British Indian Ocean Territory"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BRN",
+    "display" : "Brunei"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BGR",
+    "display" : "Bulgaria"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BFA",
+    "display" : "Burkina Faso"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-BDI",
+    "display" : "Burundi"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KHM",
+    "display" : "Cambodia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CMR",
+    "display" : "Cameroon"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CAN",
+    "display" : "Canada"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CPV",
+    "display" : "Cape Verde"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CYM",
+    "display" : "Cayman Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CAF",
+    "display" : "Central African Republic"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TCD",
+    "display" : "Chad"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CHL",
+    "display" : "Chile"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CHN",
+    "display" : "China"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CXR",
+    "display" : "Christmas Island"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CCK",
+    "display" : "Cocos (Keeling) Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-COL",
+    "display" : "Colombia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-COM",
+    "display" : "Comoros"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-COG",
+    "display" : "Congo"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-COD",
+    "display" : "Congo, the Democratic Republic of the"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-COK",
+    "display" : "Cook Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CRI",
+    "display" : "Costa Rica"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CIV",
+    "display" : "Ivory Coast"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-HRV",
+    "display" : "Croatia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CUB",
+    "display" : "Cuba"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CYP",
+    "display" : "Cyprus"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CZE",
+    "display" : "Czech Republic"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-DNK",
+    "display" : "Denmark"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-DJI",
+    "display" : "Djibouti"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-DMA",
+    "display" : "Dominica"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-DOM",
+    "display" : "Dominican Republic"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ECU",
+    "display" : "Ecuador"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-EGY",
+    "display" : "Egypt"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SLV",
+    "display" : "El Salvador"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GNQ",
+    "display" : "Equatorial Guinea"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ERI",
+    "display" : "Eritrea"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-EST",
+    "display" : "Estonia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ETH",
+    "display" : "Ethiopia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-FLK",
+    "display" : "Falkland Islands (Malvinas)"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-FRO",
+    "display" : "Faroe Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-FJI",
+    "display" : "Fiji"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-FIN",
+    "display" : "Finland"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-FRA",
+    "display" : "France"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GUF",
+    "display" : "French Guiana"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PYF",
+    "display" : "French Polynesia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ATF",
+    "display" : "French Southern Territories"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GAB",
+    "display" : "Gabon"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GMB",
+    "display" : "Gambia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GEO",
+    "display" : "Georgia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-DEU",
+    "display" : "Germany"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GHA",
+    "display" : "Ghana"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GIB",
+    "display" : "Gibraltar"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GRC",
+    "display" : "Greece"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GRL",
+    "display" : "Greenland"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GRD",
+    "display" : "Grenada"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GLP",
+    "display" : "Guadeloupe"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GUM",
+    "display" : "Guam"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GTM",
+    "display" : "Guatemala"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GGY",
+    "display" : "Guernsey"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GIN",
+    "display" : "Guinea"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GNB",
+    "display" : "Guinea-Bissau"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GUY",
+    "display" : "Guyana"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-HTI",
+    "display" : "Haiti"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-HMD",
+    "display" : "Heard Island and McDonald Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-VAT",
+    "display" : "Holy See (Vatican City State)"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-HND",
+    "display" : "Honduras"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-HKG",
+    "display" : "Hong Kong"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-HUN",
+    "display" : "Hungary"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ISL",
+    "display" : "Iceland"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-IND",
+    "display" : "India"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-IDN",
+    "display" : "Indonesia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-IRN",
+    "display" : "Iran, Islamic Republic of"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-IRQ",
+    "display" : "Iraq"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-IRL",
+    "display" : "Ireland"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-IMN",
+    "display" : "Isle of Man"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ISR",
+    "display" : "Israel"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ITA",
+    "display" : "Italy"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-JAM",
+    "display" : "Jamaica"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-JPN",
+    "display" : "Japan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-JEY",
+    "display" : "Jersey"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-JOR",
+    "display" : "Jordan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KAZ",
+    "display" : "Kazakhstan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KEN",
+    "display" : "Kenya"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KIR",
+    "display" : "Kiribati"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PRK",
+    "display" : "Korea, Democratic People's Republic of"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KOR",
+    "display" : "Korea, Republic of"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KWT",
+    "display" : "Kuwait"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KGZ",
+    "display" : "Kyrgyzstan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LAO",
+    "display" : "Lao People's Democratic Republic"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LVA",
+    "display" : "Latvia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LBN",
+    "display" : "Lebanon"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LSO",
+    "display" : "Lesotho"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LBR",
+    "display" : "Liberia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LBY",
+    "display" : "Libya"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LIE",
+    "display" : "Liechtenstein"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LTU",
+    "display" : "Lithuania"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LUX",
+    "display" : "Luxembourg"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MAC",
+    "display" : "Macao"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MKD",
+    "display" : "Macedonia, the former Yugoslav Republic of"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MDG",
+    "display" : "Madagascar"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MWI",
+    "display" : "Malawi"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MYS",
+    "display" : "Malaysia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MDV",
+    "display" : "Maldives"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MLI",
+    "display" : "Mali"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MLT",
+    "display" : "Malta"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MHL",
+    "display" : "Marshall Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MTQ",
+    "display" : "Martinique"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MRT",
+    "display" : "Mauritania"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MUS",
+    "display" : "Mauritius"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MYT",
+    "display" : "Mayotte"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MEX",
+    "display" : "Mexico"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-FSM",
+    "display" : "Micronesia, Federated States of"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MDA",
+    "display" : "Moldova, Republic of"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MCO",
+    "display" : "Monaco"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MNG",
+    "display" : "Mongolia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MNE",
+    "display" : "Montenegro"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MSR",
+    "display" : "Montserrat"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MAR",
+    "display" : "Morocco"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MOZ",
+    "display" : "Mozambique"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MMR",
+    "display" : "Myanmar/Burma"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NAM",
+    "display" : "Namibia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NRU",
+    "display" : "Nauru"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NPL",
+    "display" : "Nepal"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NLD",
+    "display" : "Netherlands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ANT",
+    "display" : "Netherlands Antilles"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NCL",
+    "display" : "New Caledonia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NZL",
+    "display" : "New Zealand"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NIC",
+    "display" : "Nicaragua"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NER",
+    "display" : "Niger"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NGA",
+    "display" : "Nigeria"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NIU",
+    "display" : "Niue"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NFK",
+    "display" : "Norfolk Island"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-MNP",
+    "display" : "Northern Mariana Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-NOR",
+    "display" : "Norway"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-OMN",
+    "display" : "Oman"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PAK",
+    "display" : "Pakistan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PLW",
+    "display" : "Palau"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PSE",
+    "display" : "Palestinian Territory, Occupied"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PAN",
+    "display" : "Panama"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PNG",
+    "display" : "Papua New Guinea"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PRY",
+    "display" : "Paraguay"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PER",
+    "display" : "Peru"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PHL",
+    "display" : "Philippines"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PCN",
+    "display" : "Pitcairn"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-POL",
+    "display" : "Poland"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PRT",
+    "display" : "Portugal"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-PRI",
+    "display" : "Puerto Rico"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-QAT",
+    "display" : "Qatar"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-REU",
+    "display" : "Réunion"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ROU",
+    "display" : "Romania"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-RUS",
+    "display" : "Russia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-RWA",
+    "display" : "Rwanda"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SHN",
+    "display" : "Saint Helena, Ascension and Tristan da Cunha"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-KNA",
+    "display" : "Saint Kitts and Nevis"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LCA",
+    "display" : "Saint Lucia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SPM",
+    "display" : "Saint Pierre and Miquelon"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-VCT",
+    "display" : "Saint Vincent and the Grenadines"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-WSM",
+    "display" : "Samoa"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SMR",
+    "display" : "San Marino"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-STP",
+    "display" : "Sao Tome and Principe"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SAU",
+    "display" : "Saudi Arabia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SEN",
+    "display" : "Senegal"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SRB",
+    "display" : "Serbia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SYC",
+    "display" : "Seychelles"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SLE",
+    "display" : "Sierra Leone"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SGP",
+    "display" : "Singapore"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SVK",
+    "display" : "Slovakia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SVN",
+    "display" : "Slovenia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SLB",
+    "display" : "Solomon Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SOM",
+    "display" : "Somalia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ZAF",
+    "display" : "South Africa"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SGS",
+    "display" : "South Georgia and the South Sandwich Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ESP",
+    "display" : "Spain"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-LKA",
+    "display" : "Sri Lanka"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SDN",
+    "display" : "Sudan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SUR",
+    "display" : "Suriname"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SJM",
+    "display" : "Svalbard and Jan Mayen"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SWZ",
+    "display" : "Swaziland"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SWE",
+    "display" : "Sweden"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-CHE",
+    "display" : "Switzerland"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-SYR",
+    "display" : "Syrian Arab Republic"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TWN",
+    "display" : "Taiwan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TJK",
+    "display" : "Tajikistan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TZA",
+    "display" : "Tanzania, United Republic of"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-THA",
+    "display" : "Thailand"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TLS",
+    "display" : "Timor-Leste"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TGO",
+    "display" : "Togo"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TKL",
+    "display" : "Tokelau"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TON",
+    "display" : "Tonga"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TTO",
+    "display" : "Trinidad and Tobago"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TUN",
+    "display" : "Tunisia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TUR",
+    "display" : "Turkey"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TKM",
+    "display" : "Turkmenistan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TCA",
+    "display" : "Turks and Caicos Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-TUV",
+    "display" : "Tuvalu"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-UGA",
+    "display" : "Uganda"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-UKR",
+    "display" : "Ukraine"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ARE",
+    "display" : "United Arab Emirates"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-GBR",
+    "display" : "United Kingdom"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-USA",
+    "display" : "United States"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-UMI",
+    "display" : "United States Minor Outlying Islands"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-URY",
+    "display" : "Uruguay"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-UZB",
+    "display" : "Uzbekistan"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-VUT",
+    "display" : "Vanuatu"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-VEN",
+    "display" : "Venezuela"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-VNM",
+    "display" : "Vietnam"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-VGB",
+    "display" : "Virgin Islands, British"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-VIR",
+    "display" : "Virgin Islands, U.S."
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-WLF",
+    "display" : "Wallis and Futuna"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ESH",
+    "display" : "Western Sahara"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-YEM",
+    "display" : "Yemen"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ZMB",
+    "display" : "Zambia"
+  },
+  {
+    "code" : "http://hl7.org/fhir/sid/passport-ZWE",
+    "display" : "Zimbabwe"
+  },
+  {
+    "code" : "http://fhir.health.gov.il/identifier/cbs-statistical-area",
+    "display" : "Israeli CBS statistical area code"
+  }]
+}

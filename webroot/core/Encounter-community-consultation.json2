@@ -1,0 +1,57 @@
+{
+  "resourceType" : "Encounter",
+  "id" : "community-consultation",
+  "meta" : {
+    "profile" : ["http://fhir.health.gov.il/StructureDefinition/il-core-encounter"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Community Consultation</div>"
+  },
+  "identifier" : [{
+    "system" : "http://fhir.community-emr.co.il/identifier/entity-id/encounter",
+    "value" : "234234234"
+  }],
+  "status" : "in-progress",
+  "class" : {
+    "system" : "http://fhir.health.gov.il/cs/il-core-encounter-class",
+    "code" : "COMMUNITY-OR-HMO",
+    "display" : "Community Care/HMO setting"
+  },
+  "type" : [{
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "11429006",
+      "display" : "Consultation"
+    }]
+  }],
+  "serviceType" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "310116007",
+      "display" : "Psychiatry service"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/patient-israeli-with-statistical-area"
+  },
+  "participant" : [{
+    "type" : [{
+      "coding" : [{
+        "system" : "http://terminology.hl7.org/CodeSystem/v3-ParticipationType",
+        "code" : "PPRF",
+        "display" : "primary performer"
+      }]
+    }],
+    "individual" : {
+      "reference" : "Practitioner/practitioner-md"
+    }
+  }],
+  "serviceProvider" : {
+    "identifier" : {
+      "system" : "http://fhir.health.gov.il/identifier/legal-entity",
+      "value" : "589902279"
+    },
+    "display" : "מכבי שירותי בריאות"
+  }
+}

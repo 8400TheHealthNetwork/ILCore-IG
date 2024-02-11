@@ -1,0 +1,104 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "moh-tofes17-issue-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/moh-tofes17-issue-code</code> defines codes, but no codes are represented here</p></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate",
+    "valueDate" : "2023-10"
+  }],
+  "url" : "http://fhir.health.gov.il/cs/moh-tofes17-issue-code",
+  "version" : "0.13.2",
+  "name" : "MohTofes17IssueCode",
+  "title" : "Moh Form-17 Issue Code",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "קודי שגיאה \\ סירוב לתהליכים הקשורים לטופס 17",
+  "caseSensitive" : false,
+  "content" : "not-present",
+  "concept" : [{
+    "code" : "miss-apnt-data",
+    "display" : "חסרים פרטי התור החוזר",
+    "definition" : "למשל, במקרה שאין ישות Appointment, או שחסר מידע קריטי בישות כגון תאריך הביקור"
+  },
+  {
+    "code" : "apnt-too-far",
+    "display" : "מועד התור החוזר רחוק מדי",
+    "definition" : "הבקשה מוקדמת מדי ועדיין אין באפשרות הקופה להתייחס אליה"
+  },
+  {
+    "code" : "miss-doc",
+    "display" : "חסר מסמך סיכום עם ההמלצה לביקור חוזר",
+    "definition" : "במקרה בו הבקשה נשלחה ללא DocumentReference עם סיכום הביקור בו הומלץ למטופל לקבוע ביקור חוזר"
+  },
+  {
+    "code" : "miss-orig-req",
+    "display" : "בבקשה לעדכון או ביטול - חסר קישור לבקשה המקורית"
+  },
+  {
+    "code" : "pat-not-eligible",
+    "display" : "המטופל אינו זכאי להתחייבות"
+  },
+  {
+    "code" : "referred-to-community",
+    "display" : "הטיפול יבוצע בקהילה"
+  },
+  {
+    "code" : "not-ambulatory",
+    "display" : "השירות המבוקש אינו אמבולטורי"
+  },
+  {
+    "code" : "charge-not-authorized",
+    "display" : "ללקוח אין הרשאת חיוב"
+  },
+  {
+    "code" : "service-with-co-payment",
+    "display" : "הבקשה כוללת שירות עם השתתפות עצמית"
+  },
+  {
+    "code" : "service-not-covered",
+    "display" : "השירות אינו בסל"
+  },
+  {
+    "code" : "age-limit",
+    "display" : "קוד השירות מוגבל גיל"
+  },
+  {
+    "code" : "quantity-mismatch",
+    "display" : "כמות הטיפולים אינה תואמת את תוכנית הטיפול"
+  },
+  {
+    "code" : "req-not-compliant",
+    "display" : "הבקשה להתחייבות אינה תואמת לכללי החיוב"
+  },
+  {
+    "code" : "srv-code-mismatch",
+    "display" : "קוד השירות אינו תואם את הטיפול המתוכנן"
+  },
+  {
+    "code" : "pat-hospitalized",
+    "display" : "המטופל מאושפז"
+  },
+  {
+    "code" : "other",
+    "display" : "אחר"
+  }]
+}

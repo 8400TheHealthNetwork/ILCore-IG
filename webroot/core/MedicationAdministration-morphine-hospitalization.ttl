@@ -1,0 +1,108 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/MedicationAdministration/morphine-hospitalization> a fhir:MedicationAdministration ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "morphine-hospitalization"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exmple of a MedicationAdministration - morphine administered during hospitalization. Completed inpatient administration of 15mg of oral morphine every 4 hours as needed by a practitioner to a patient due to a procedure.</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "true"^^xsd:boolean ]
+  ] [
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-recorded-time"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2022-10-11"^^xsd:date ]
+  ] ) ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:category [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/il-core-medicationrequest-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "inpatient" ] ;
+       fhir:display [ fhir:v "Inpatient" ]
+     ] )
+  ] ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:373529000 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "373529000" ] ;
+       fhir:display [ fhir:v "Morphine (substance)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-with-israeli-id> ;
+     fhir:reference [ fhir:v "Patient/patient-with-israeli-id" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "תמר כהן" ]
+  ] ; # 
+  fhir:context [
+     fhir:link <http://fhir.health.gov.il/Encounter/home-visit> ;
+     fhir:reference [ fhir:v "Encounter/home-visit" ] ;
+     fhir:type [ fhir:v "Encounter"^^xsd:anyURI ]
+  ] ; # 
+  fhir:effective [
+     a fhir:Period ;
+     fhir:start [ fhir:v "2022-10-05"^^xsd:date ] ;
+     fhir:end [ fhir:v "2022-10-10"^^xsd:date ]
+  ] ; # 
+  fhir:performer ( [
+     fhir:actor [
+       fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-md> ;
+       fhir:reference [ fhir:v "Practitioner/practitioner-md" ] ;
+       fhir:type [ fhir:v "Practitioner"^^xsd:anyURI ]
+     ]
+  ] ) ; # 
+  fhir:dosage [
+     fhir:text [ fhir:v "15mg every 4 hours" ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         a sct:738995006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "738995006" ] ;
+         fhir:display [ fhir:v "Swallow (administration method)" ]
+       ] )
+     ] ;
+     fhir:dose [
+       fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+       fhir:unit [ fhir:v "mg" ] ;
+       fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "mg" ]
+     ] ;
+     fhir:rate [
+       a fhir:Ratio ;
+       fhir:numerator [
+         fhir:value [ fhir:v "15"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "mg" ] ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ]
+       ] ;
+       fhir:denominator [
+         fhir:value [ fhir:v "4"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "hour" ]
+       ]
+     ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,85 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/AllergyIntolerance/allergyIntolerance-cat-dander-allergy> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "allergyIntolerance-cat-dander-allergy"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cat Dander Allergy</div>"
+  ] ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "active" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "biologic"] ) ; # 
+  fhir:criticality [ fhir:v "low"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:232346004 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "232346004" ] ;
+       fhir:display [ fhir:v "Allergy to cat dander" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-with-israeli-id> ;
+     fhir:reference [ fhir:v "Patient/patient-with-israeli-id" ]
+  ] ; # 
+  fhir:reaction ( [
+     fhir:substance [
+       fhir:coding ( [
+         a sct:260152009 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "260152009" ] ;
+         fhir:display [ fhir:v "Cat dander (substance)" ]
+       ] )
+     ] ;
+     fhir:manifestation ( [
+       fhir:coding ( [
+         a sct:271807003 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "271807003" ] ;
+         fhir:display [ fhir:v "Eruption of skin (disorder)" ]
+       ] )
+     ] [
+       fhir:coding ( [
+         a sct:418290006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "418290006" ] ;
+         fhir:display [ fhir:v "Itching (finding)" ]
+       ] )
+     ] ) ;
+     fhir:severity [ fhir:v "mild" ] ;
+     fhir:exposureRoute [
+       fhir:coding ( [
+         a sct:6064005 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "6064005" ] ;
+         fhir:display [ fhir:v "Topical route (qualifier value)" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

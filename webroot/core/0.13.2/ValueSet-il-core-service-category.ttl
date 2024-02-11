@@ -1,0 +1,84 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/il-core-service-category> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-service-category"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/103693007\">103693007</a></td><td>Diagnostic procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/386053000\">386053000</a></td><td>Evaluation procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/14734007\">14734007</a></td><td>Administrative procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/108252007\">108252007</a></td><td>Laboratory procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/363679005\">363679005</a></td><td>Imaging (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/409073007\">409073007</a></td><td>Education (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/33879002\">33879002</a></td><td>Immunization (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/7922000\">7922000</a></td><td>General treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/409063005\">409063005</a></td><td>Counseling (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/387713003\">387713003</a></td><td>Surgical procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/277132007\">277132007</a></td><td>Therapeutic procedure (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/182813001\">182813001</a></td><td>Emergency treatment (procedure)</td></tr><tr><td><a href=\"http://snomed.info/id/32485007\">32485007</a></td><td>Hospital admission (procedure)</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/il-core-service-category"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreServiceCategory"] ; # 
+  fhir:title [ fhir:v "IL Core ServiceCategory"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of codes for Service Category for the IL Core"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "103693007" ] ;
+         fhir:display [ fhir:v "Diagnostic procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "386053000" ] ;
+         fhir:display [ fhir:v "Evaluation procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "14734007" ] ;
+         fhir:display [ fhir:v "Administrative procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "108252007" ] ;
+         fhir:display [ fhir:v "Laboratory procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "363679005" ] ;
+         fhir:display [ fhir:v "Imaging (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "409073007" ] ;
+         fhir:display [ fhir:v "Education (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "33879002" ] ;
+         fhir:display [ fhir:v "Immunization (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "7922000" ] ;
+         fhir:display [ fhir:v "General treatment (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "409063005" ] ;
+         fhir:display [ fhir:v "Counseling (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "387713003" ] ;
+         fhir:display [ fhir:v "Surgical procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "277132007" ] ;
+         fhir:display [ fhir:v "Therapeutic procedure (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "182813001" ] ;
+         fhir:display [ fhir:v "Emergency treatment (procedure)" ]
+       ] [
+         fhir:code [ fhir:v "32485007" ] ;
+         fhir:display [ fhir:v "Hospital admission (procedure)" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

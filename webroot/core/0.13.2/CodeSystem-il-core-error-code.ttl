@@ -1,0 +1,65 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/il-core-error-code> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-error-code"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-error-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unknown-pat<a name=\"il-core-error-code-unknown-pat\"> </a></td><td>המטופל אינו מזוהה</td><td>לא נמצא בקופה מבוטח עם אותו המזהה העסקי</td></tr><tr><td style=\"white-space:nowrap\">missing-pat-data<a name=\"il-core-error-code-missing-pat-data\"> </a></td><td>חסרים פרטי המטופל</td><td>לדוגמא, אין ישות Patient, או שחסר מידע קריטי בישות כגון שם משפחה או מגדר</td></tr><tr><td style=\"white-space:nowrap\">unknown-code<a name=\"il-core-error-code-unknown-code\"> </a></td><td>קוד לא מזוהה</td><td/></tr><tr><td style=\"white-space:nowrap\">missing-code<a name=\"il-core-error-code-missing-code\"> </a></td><td>חסר קוד</td><td/></tr><tr><td style=\"white-space:nowrap\">technical-issue<a name=\"il-core-error-code-technical-issue\"> </a></td><td>בעייה טכנית</td><td>לדוגמא, נפילת מערכת.</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-10"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/il-core-error-code"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreErrorCode"] ; # 
+  fhir:title [ fhir:v "IL Core Error code"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of error codes for ILCore profiles"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "5"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "unknown-pat" ] ;
+     fhir:display [ fhir:v "המטופל אינו מזוהה" ] ;
+     fhir:definition [ fhir:v "לא נמצא בקופה מבוטח עם אותו המזהה העסקי" ]
+  ] [
+     fhir:code [ fhir:v "missing-pat-data" ] ;
+     fhir:display [ fhir:v "חסרים פרטי המטופל" ] ;
+     fhir:definition [ fhir:v "לדוגמא, אין ישות Patient, או שחסר מידע קריטי בישות כגון שם משפחה או מגדר" ]
+  ] [
+     fhir:code [ fhir:v "unknown-code" ] ;
+     fhir:display [ fhir:v "קוד לא מזוהה" ]
+  ] [
+     fhir:code [ fhir:v "missing-code" ] ;
+     fhir:display [ fhir:v "חסר קוד" ]
+  ] [
+     fhir:code [ fhir:v "technical-issue" ] ;
+     fhir:display [ fhir:v "בעייה טכנית" ] ;
+     fhir:definition [ fhir:v "לדוגמא, נפילת מערכת." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

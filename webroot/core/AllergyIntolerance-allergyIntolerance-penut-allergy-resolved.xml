@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="allergyIntolerance-penut-allergy-resolved"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Penut Allergy</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-allergy-intolerance-end">
+    <extension url="endDate">
+      <valueDateTime value="2020-01-01"/>
+    </extension>
+    <extension url="reasonEnded">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://snomed.info/sct"/>
+          <code value="63098009"/>
+          <display value="Clinical immunologist (occupation)"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="resolved"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="allergy"/>
+  <category value="food"/>
+  <criticality value="high"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="91935009"/>
+      <display value="Allergy to peanuts"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/patient-israeli-with-two-identifiers"/>
+  </patient>
+  <reaction>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="417889008"/>
+        <display value="Arachis oil (substance)"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="39579001"/>
+        <display value="Anaphylaxis (disorder)"/>
+      </coding>
+    </manifestation>
+    <severity value="severe"/>
+    <exposureRoute>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </exposureRoute>
+  </reaction>
+</AllergyIntolerance>

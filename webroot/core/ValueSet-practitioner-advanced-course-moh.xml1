@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="practitioner-advanced-course-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include all codes defined in <a href="CodeSystem-practitioner-advanced-course-moh.html"><code>http://fhir.health.gov.il/cs/practitioner-advanced-course-moh</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/practitioner-advanced-course-moh"/>
+  <version value="0.13.2"/>
+  <name value="PractitionerAdvancedCourseMoH"/>
+  <title value="קוד קורס על בסיסי לעוסק בסיעוד"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="קוד קורס על בסיסי לעוסק בסיעוד לפי רישוי משרד הבריאות"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"/>
+    </include>
+  </compose>
+</ValueSet>

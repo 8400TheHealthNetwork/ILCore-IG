@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="moh-admit-source"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-patient-admit-source-moh.html"><code>http://fhir.health.gov.il/cs/patient-admit-source-moh</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-admit-source.html"><code>http://terminology.hl7.org/CodeSystem/admit-source</code></a></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/moh-admit-source"/>
+  <version value="0.13.2"/>
+  <name value="MoHAdmitSource"/>
+  <title value="MoH Admit Source Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for admit source according to MoH catalogue"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/patient-admit-source-moh"/>
+    </include>
+    <include>
+      <system value="http://terminology.hl7.org/CodeSystem/admit-source"/>
+    </include>
+  </compose>
+</ValueSet>

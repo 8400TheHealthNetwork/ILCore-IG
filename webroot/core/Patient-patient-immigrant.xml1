@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Patient xmlns="http://hl7.org/fhir">
+  <id value="patient-immigrant"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-patient"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient - immigrant</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-il-hmo">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+        <code value="103"/>
+        <display value="קופת חולים מכבי"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration">
+    <extension url="origin">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166"/>
+          <code value="USA"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="destination">
+      <valueCodeableConcept>
+        <coding>
+          <system value="urn:iso:std:iso:3166"/>
+          <code value="IL"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+    <extension url="date">
+      <valueDate value="1982-06-30"/>
+    </extension>
+    <extension url="status">
+      <valueCodeableConcept>
+        <coding>
+          <system value="http://loinc.org"/>
+          <code value="LA29155-1"/>
+          <display value="Naturalized citizen"/>
+        </coding>
+      </valueCodeableConcept>
+    </extension>
+  </extension>
+  <identifier>
+    <system value="http://fhir.health.gov.il/identifier/il-national-id"/>
+    <value value="000000018"/>
+  </identifier>
+  <active value="true"/>
+  <name>
+    <extension url="http://hl7.org/fhir/StructureDefinition/language">
+      <valueCode value="he"/>
+    </extension>
+    <text value="הרצל לוי"/>
+    <family value="לוי"/>
+    <given value="הרצל"/>
+  </name>
+  <telecom>
+    <system value="phone"/>
+    <value value="052467911"/>
+    <use value="home"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="Israel@example.com"/>
+  </telecom>
+  <gender value="female"/>
+  <birthDate value="1951-04-17"/>
+  <deceasedBoolean value="false"/>
+  <address>
+    <extension url="http://hl7.org/fhir/StructureDefinition/geolocation">
+      <extension url="longitude">
+        <valueDecimal value="34.764885"/>
+      </extension>
+      <extension url="latitude">
+        <valueDecimal value="32.058317"/>
+      </extension>
+    </extension>
+    <use value="home"/>
+    <type value="physical"/>
+    <text value="אילת 34 תל אביב דירה 2"/>
+    <line value="אילת 34">
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName">
+        <valueString value="אילת"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber">
+        <valueString value="34"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID">
+        <valueString value="2"/>
+      </extension>
+      <extension url="http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox">
+        <valueString value="1446"/>
+      </extension>
+    </line>
+    <city value="תל אביב">
+      <extension url="http://fhir.health.gov.il/StructureDefinition/ext-city-code">
+        <valueCodeableConcept>
+          <coding>
+            <system value="http://fhir.health.gov.il/cs/city-symbol"/>
+            <code value="5000"/>
+          </coding>
+        </valueCodeableConcept>
+      </extension>
+    </city>
+    <district value="תל אביב"/>
+    <postalCode value="6684501"/>
+    <country value="IL"/>
+  </address>
+  <communication>
+    <language>
+      <coding>
+        <system value="urn:ietf:bcp:47"/>
+        <code value="ar"/>
+        <display value="Arabic"/>
+      </coding>
+    </language>
+  </communication>
+</Patient>

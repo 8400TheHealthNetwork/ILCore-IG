@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="il-core-encounter-class"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-encounter-class</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">COMMUNITY-OR-HMO<a name="il-core-encounter-class-COMMUNITY-OR-HMO"> </a></td><td>Community Care/HMO setting</td></tr><tr><td style="white-space:nowrap">RALTCF<a name="il-core-encounter-class-RALTCF"> </a></td><td>Residential Aged Care/Long Term Care Facility</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-01"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/il-core-encounter-class"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreEncounterClass"/>
+  <title value="IL Core Encounter Class codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for class types of encounters"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="COMMUNITY-OR-HMO"/>
+    <display value="Community Care/HMO setting"/>
+  </concept>
+  <concept>
+    <code value="RALTCF"/>
+    <display value="Residential Aged Care/Long Term Care Facility"/>
+  </concept>
+</CodeSystem>

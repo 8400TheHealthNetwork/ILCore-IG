@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Procedure xmlns="http://hl7.org/fhir">
+  <id value="procedure-bloodwork-before-partial-parotidectomy"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-procedure"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Bloodwork 24H before Partial Parotidectomy</div>
+  </text>
+  <status value="completed"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="396550006"/>
+      <display value="Blood test (procedure)"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/patient-with-israeli-id"/>
+  </subject>
+  <performedDateTime value="2020-02-07">
+    <extension url="http://hl7.org/fhir/StructureDefinition/relative-date">
+      <extension url="event">
+        <valueReference>
+          <reference value="Procedure/partial-parotidectomy"/>
+        </valueReference>
+      </extension>
+      <extension url="relationship">
+        <valueCode value="before-start"/>
+      </extension>
+      <extension url="offset">
+        <valueDuration>
+          <value value="24"/>
+          <unit value="hour"/>
+          <system value="http://unitsofmeasure.org"/>
+          <code value="h"/>
+        </valueDuration>
+      </extension>
+    </extension>
+  </performedDateTime>
+</Procedure>

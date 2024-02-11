@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ConceptMap xmlns="http://hl7.org/fhir">
+  <id value="ILCoreReligions"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>Mapping from <a href="CodeSystem-il-core-religion-code.html">http://fhir.health.gov.il/cs/il-core-religion-code</a> to <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ReligiousAffiliation.html">http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation</a></p><p>DRAFT. Published on 2023-11-30 by Israel Core Team (Israel Core Team: <a href="mailto:ido.levin@moh.gov.il">ido.levin@moh.gov.il</a>, Kippi Bordowitz: <a href="mailto:ido.levin@moh.gov.il">ido.levin@moh.gov.il</a>). </p><div><p>Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation</p>
+</div><br/><p><b>Group 1</b>Mapping from <a href="CodeSystem-il-core-religion-code.html">IL Core relirion code</a> to <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ReligiousAffiliation.html">Religious Affiliation</a></p><table class="grid"><tr><td colspan="2"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan="2"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan="2"><b>Properties</b></td></tr><tr><td colspan="2"><b>Codes</b> from <a href="CodeSystem-il-core-religion-code.html" title="http://fhir.health.gov.il/cs/il-core-religion-code">IL Core relirion code</a></td><td/><td colspan="2"><b>Codes</b> from <a href="http://terminology.hl7.org/5.3.0/CodeSystem-v3-ReligiousAffiliation.html" title="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation">Religious Affiliation</a></td><td/></tr><tr><td style="border-right-width: 0px">1</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1008</td><td style="border-left-width: 0px">Babi &amp; Baha'I faiths</td><td/></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">2</td><td style="border-left-width: 0px">שומרוני</td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px">10</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1026</td><td style="border-left-width: 0px">Judaism</td><td/></tr><tr><td style="border-right-width: 0px">20</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1049</td><td style="border-left-width: 0px">Sunni (Islam)</td><td/></tr><tr><td style="border-right-width: 0px">21</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1045</td><td style="border-left-width: 0px">Shiite (Islam)</td><td/></tr><tr><td style="border-right-width: 0px">22</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1013</td><td style="border-left-width: 0px">Christian (non-Catholic, non-specific)</td><td/></tr><tr><td style="border-right-width: 0px">40</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1036</td><td style="border-left-width: 0px">Orthodox</td><td/></tr><tr><td style="border-right-width: 0px">41</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1034</td><td style="border-left-width: 0px">non-Roman Catholic</td><td/></tr><tr><td style="border-right-width: 0px">42</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1077</td><td style="border-left-width: 0px">Protestant</td><td/></tr><tr><td style="border-right-width: 0px">45</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1005</td><td style="border-left-width: 0px">Anglican</td><td/></tr><tr><td style="border-right-width: 0px">46</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1041</td><td style="border-left-width: 0px">Roman Catholic Church</td><td/></tr><tr><td style="border-right-width: 0px">53</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px"/><td style="border-left-width: 0px"></td><td/></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">54</td><td style="border-left-width: 0px">נוצרי ארמני</td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px">57</td><td style="border-left-width: 0px">נוצרי קופטי</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1009</td><td style="border-left-width: 0px">Baptist</td><td>Coptic Christian</td></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">60</td><td style="border-left-width: 0px">דרוזי</td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr><tr><td style="border-right-width: 0px">70</td><td style="border-left-width: 0px">ללא דת</td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1059</td><td style="border-left-width: 0px">Zen Buddhism</td><td>No Religious Affiliation</td></tr><tr><td style="border-right-width: 0px">80</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1020</td><td style="border-left-width: 0px">Hinduism</td><td/></tr><tr><td style="border-right-width: 0px">81</td><td style="border-left-width: 0px"></td><td><a href="http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent" title="equivalent">is equivalent to</a></td><td style="border-right-width: 0px">1047</td><td style="border-left-width: 0px">Sikism</td><td/></tr><tr><td style="border-right-width: 0px; border-bottom-style: none">90</td><td style="border-left-width: 0px">קראי</td><td colspan="4" style="background-color: #efefef">(not mapped)</td></tr></table></div>
+  </text>
+  <url value="http://hl7.org/fhir/ConceptMap/102"/>
+  <version value="0.13.2"/>
+  <name value="Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"/>
+  <title value="IL Core Religions"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-11-30"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"/>
+  <sourceCanonical value="http://fhir.health.gov.il/cs/il-core-religion-code"/>
+  <targetCanonical value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
+  <group>
+    <source value="http://fhir.health.gov.il/cs/il-core-religion-code"/>
+    <target value="http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"/>
+    <element>
+      <code value="1"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1008"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="2"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="10"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1026"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="20"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1049"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="21"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1045"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="22"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1013"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="40"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1036"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="41"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1034"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="42"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1077"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="45"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1005"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="46"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1041"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="53"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="54"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="57"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1009"/>
+        <equivalence value="equivalent"/>
+        <comment value="Coptic Christian"/>
+      </target>
+    </element>
+    <element>
+      <code value="58"/>
+    </element>
+    <element>
+      <code value="60"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+    <element>
+      <code value="70"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1059"/>
+        <equivalence value="equivalent"/>
+        <comment value="No Religious Affiliation"/>
+      </target>
+    </element>
+    <element>
+      <code value="80"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1020"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="81"/>
+      <target>
+        <modifierExtension url="http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence">
+          <valueCode value="equivalent"/>
+        </modifierExtension>
+        <code value="1047"/>
+        <equivalence value="equivalent"/>
+      </target>
+    </element>
+    <element>
+      <code value="82"/>
+    </element>
+    <element>
+      <code value="90"/>
+      <target>
+        <equivalence value="unmatched"/>
+      </target>
+    </element>
+  </group>
+</ConceptMap>

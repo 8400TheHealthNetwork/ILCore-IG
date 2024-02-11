@@ -1,0 +1,89 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/hebrew-date-month> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hebrew-date-month"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/hebrew-date-month</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"hebrew-date-month-1\"> </a></td><td>תשרי</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"hebrew-date-month-2\"> </a></td><td>חשון</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"hebrew-date-month-3\"> </a></td><td>כסלו</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"hebrew-date-month-4\"> </a></td><td>טבת</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"hebrew-date-month-5\"> </a></td><td>שבט</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"hebrew-date-month-6\"> </a></td><td>אדר</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"hebrew-date-month-7\"> </a></td><td>ניסן</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"hebrew-date-month-8\"> </a></td><td>אייר</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"hebrew-date-month-9\"> </a></td><td>סיון</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"hebrew-date-month-10\"> </a></td><td>תמוז</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"hebrew-date-month-11\"> </a></td><td>אב</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"hebrew-date-month-12\"> </a></td><td>אלול</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"hebrew-date-month-13\"> </a></td><td>אדר א'</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"hebrew-date-month-14\"> </a></td><td>אדר ב'</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/hebrew-date-month"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "HebrewDateMonth"] ; # 
+  fhir:title [ fhir:v "Hebrew Date Month"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for Hebrew date months"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.health.gov.il/ValueSet/hebrew-date-month"^^xsd:anyURI ;
+     fhir:link <http://fhir.health.gov.il/ValueSet/hebrew-date-month>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "14"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "תשרי" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "חשון" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "כסלו" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "טבת" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "שבט" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "אדר" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "ניסן" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "אייר" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "סיון" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "תמוז" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "אב" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "אלול" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "אדר א'" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "אדר ב'" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

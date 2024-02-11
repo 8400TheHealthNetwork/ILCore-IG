@@ -1,0 +1,75 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/israel-hmo> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "israel-hmo"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"CodeSystem-paying-entity-moh.html\"><code>http://fhir.health.gov.il/cs/paying-entity-moh</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-101\">101</a></td><td>קופת חולים כללית</td><td>הערך קופת חולים כללית מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-102\">102</a></td><td>קופת חולים לאומית</td><td>הערך קופת חולים לאומית מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-103\">103</a></td><td>קופת חולים מכבי</td><td>הערך קופת חולים מכבי מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-104\">104</a></td><td>קופת חולים מאוחדת</td><td>הערך קופת חולים מאוחדת מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-401\">401</a></td><td>צה&quot;ל</td><td>הערך צה&quot;ל מתאים למקרה בו הגורם המשלם הוא צה&quot;ל (לא מדובר בשיוך אליו כקופה חמישת)</td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-402\">402</a></td><td>משרד הבטחון</td><td>הערך משרד הבטחון מתאים למקרה בו הגורם המשלם הוא משרד הביטחון</td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-480\">480</a></td><td>רשות פלסטינאית</td><td>הערך רשות פלסטינאית מתאים למקרה בו הגורם המשלם הוא הרשות הפלסטינאית</td></tr><tr><td><a href=\"CodeSystem-paying-entity-moh.html#paying-entity-moh-405\">405</a></td><td>שירות בתי הסוהר</td><td>הערך שירותי בתי הסוהר  מתאים למקרה בו הגורם המשלם הוא</td></tr></table></li><li>Include these codes as defined in <code>https://terminology.hl7.org/1.0.0/CodeSystem-v3-NullFlavor.html</code><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>UNK</td><td>unknown</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/israel-hmo"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "IsraelHMO"] ; # 
+  fhir:title [ fhir:v "Israeli Health Management Organization (קופת חולים)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A code classifying Health Management Organizations"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/paying-entity-moh"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "101" ] ;
+         fhir:display [ fhir:v "קופת חולים כללית" ]
+       ] [
+         fhir:code [ fhir:v "102" ] ;
+         fhir:display [ fhir:v "קופת חולים לאומית" ]
+       ] [
+         fhir:code [ fhir:v "103" ] ;
+         fhir:display [ fhir:v "קופת חולים מכבי" ]
+       ] [
+         fhir:code [ fhir:v "104" ] ;
+         fhir:display [ fhir:v "קופת חולים מאוחדת" ]
+       ] [
+         fhir:code [ fhir:v "401" ] ;
+         fhir:display [ fhir:v "צה\"ל" ]
+       ] [
+         fhir:code [ fhir:v "402" ] ;
+         fhir:display [ fhir:v "משרד הבטחון" ]
+       ] [
+         fhir:code [ fhir:v "480" ] ;
+         fhir:display [ fhir:v "רשות פלסטינאית" ]
+       ] [
+         fhir:code [ fhir:v "405" ] ;
+         fhir:display [ fhir:v "שירות בתי הסוהר" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "https://terminology.hl7.org/1.0.0/CodeSystem-v3-NullFlavor.html"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "UNK" ] ;
+         fhir:display [ fhir:v "unknown" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

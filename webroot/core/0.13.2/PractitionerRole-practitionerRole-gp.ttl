@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/PractitionerRole/practitionerRole-gp> a fhir:PractitionerRole ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitionerRole-gp"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">רופאת משפחה</div>"
+  ] ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:practitioner [
+     fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-md> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-md" ]
+  ] ; # 
+  fhir:location ( [
+     fhir:link <http://fhir.health.gov.il/Location/location-hospital-unit> ;
+     fhir:reference [ fhir:v "Location/location-hospital-unit" ]
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "04-6421420" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "DG@example.com" ]
+  ] ) ; # 
+  fhir:availableTime ( [
+     fhir:availableStartTime [ fhir:v "09:00:00"^^xsd:time ] ;
+     fhir:availableEndTime [ fhir:v "17:00:00"^^xsd:time ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

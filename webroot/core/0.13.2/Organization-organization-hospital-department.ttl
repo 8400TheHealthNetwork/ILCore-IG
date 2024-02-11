@@ -1,0 +1,72 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Organization/organization-hospital-department> a fhir:Organization ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "organization-hospital-department"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-organization"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-organization>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">מחלקת אשפוז - פנימיתטרית</div>"
+  ] ; # 
+  fhir:identifier ( [
+     fhir:use [ fhir:v "official" ] ;
+     fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/moh-hospital-department"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "12345-abc12" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:type ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/department-type-moh"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "10000" ] ;
+       fhir:display [ fhir:v "אשפוז - פנימית" ]
+     ] )
+  ] ) ; # 
+  fhir:name [ fhir:v "מחלקת אשפוז - פנימיתטרית"] ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "08-6241010" ] ;
+     fhir:use [ fhir:v "work" ]
+  ] ) ; # 
+  fhir:address ( [
+     fhir:use [ fhir:v "work" ] ;
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:text [ fhir:v "ירמיהו 39 ירושלים" ] ;
+     fhir:line ( [
+       fhir:v "ירמיהו 39" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ירמיהו" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "39" ]
+       ] )
+     ] ) ;
+     fhir:city [
+       fhir:v "ירושלים" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-city-code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/city-symbol"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "3000" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:postalCode [ fhir:v "9446724" ] ;
+     fhir:country [ fhir:v "IL" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

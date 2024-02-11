@@ -1,0 +1,59 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/il-core-premium-type> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-premium-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-coverage-premium-type</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">individ-month<a name=\"il-core-premium-type-individ-month\"> </a></td><td>Family monthly premium</td><td>A premium paid for an individual</td></tr><tr><td style=\"white-space:nowrap\">family-month<a name=\"il-core-premium-type-family-month\"> </a></td><td>Obligation from health basket</td><td>A premium paid for a family. The exact definition of a family isn't part of this code system and can vary between HMOs/Organizations</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-08"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/il-core-coverage-premium-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreCoveragePremiumType"] ; # 
+  fhir:title [ fhir:v "IL Core Coverage Premium Type codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for Types of premium payment methods"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.health.gov.il/ValueSet/il-core-premium-type"^^xsd:anyURI ;
+     fhir:link <http://fhir.health.gov.il/ValueSet/il-core-premium-type>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "individ-month" ] ;
+     fhir:display [ fhir:v "Family monthly premium" ] ;
+     fhir:definition [ fhir:v "A premium paid for an individual" ]
+  ] [
+     fhir:code [ fhir:v "family-month" ] ;
+     fhir:display [ fhir:v "Obligation from health basket" ] ;
+     fhir:definition [ fhir:v "A premium paid for a family. The exact definition of a family isn't part of this code system and can vary between HMOs/Organizations" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

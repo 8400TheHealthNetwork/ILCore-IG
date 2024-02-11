@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="il-core-medication-course-of-therapy-type"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type</code> defines the following code:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">sos<a name="il-core-medication-course-of-therapy-type-sos"> </a></td><td>SOS</td><td>A medication which is expected to be used on-demand when needed in emergency (e.g. opioid medication, laxative medication)</td></tr></table></div>
+  </text>
+  <url value="http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreMedicationCourseOfTherapyType"/>
+  <title value="Codes for Medication Course of therpy types"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for Medication Course of therpy types"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="1"/>
+  <concept>
+    <code value="sos"/>
+    <display value="SOS"/>
+    <definition value="A medication which is expected to be used on-demand when needed in emergency (e.g. opioid medication, laxative medication)"/>
+  </concept>
+</CodeSystem>

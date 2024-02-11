@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Condition xmlns="http://hl7.org/fhir">
+  <id value="condition-type-1-diabetes"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-condition"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p><b>Generated Narrative: Condition</b><a name="condition-type-1-diabetes"> </a></p><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Resource Condition &quot;condition-type-1-diabetes&quot; </p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-il-core-condition.html">ILCore Condition Profile</a></p></div><p><b>clinicalStatus</b>: Active <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-clinical.html">Condition Clinical Status Codes</a>#active)</span></p><p><b>verificationStatus</b>: Confirmed <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-ver-status.html">ConditionVerificationStatus</a>#confirmed)</span></p><p><b>category</b>: Encounter Diagnosis <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="http://terminology.hl7.org/5.3.0/CodeSystem-condition-category.html">Condition Category Codes</a>#encounter-diagnosis; <a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#439401001 &quot;Diagnosis&quot;)</span></p><p><b>severity</b>: Severe <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#24484000)</span></p><p><b>code</b>: Type 1 Diabetes <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#46635009 &quot;Type 1 diabetes mellitus&quot;)</span></p><p><b>bodySite</b>: Pancreas <span style="background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki"> (<a href="https://browser.ihtsdotools.org/">SNOMED CT</a>#181277001 &quot;Entire pancreas&quot;)</span></p><p><b>subject</b>: <a href="Patient-patient-with-israeli-id.html">Patient/patient-with-israeli-id</a> &quot; כהן&quot;</p><p><b>onset</b>: 2012-05-24</p></div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+      <code value="encounter-diagnosis"/>
+      <display value="Encounter Diagnosis"/>
+    </coding>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="439401001"/>
+      <display value="Diagnosis"/>
+    </coding>
+  </category>
+  <severity>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="24484000"/>
+      <display value="Severe"/>
+    </coding>
+  </severity>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="46635009"/>
+      <display value="Type 1 diabetes mellitus"/>
+    </coding>
+    <text value="Type 1 Diabetes"/>
+  </code>
+  <bodySite>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="181277001"/>
+      <display value="Entire pancreas"/>
+    </coding>
+    <text value="Pancreas"/>
+  </bodySite>
+  <subject>
+    <reference value="Patient/patient-with-israeli-id"/>
+  </subject>
+  <onsetDateTime value="2012-05-24"/>
+</Condition>

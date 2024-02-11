@@ -1,0 +1,188 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/practitioner-advanced-course-moh> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "practitioner-advanced-course-moh"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-advanced-course-moh</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"practitioner-advanced-course-moh-5\"> </a></td><td>מיילדות</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"practitioner-advanced-course-moh-7\"> </a></td><td>בריאות הציבור</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"practitioner-advanced-course-moh-8\"> </a></td><td>פסיכיאטריה</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"practitioner-advanced-course-moh-9\"> </a></td><td>סיעוד בבריאות תעסוקתית</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"practitioner-advanced-course-moh-16\"> </a></td><td>טיפול נמרץ משולב (כללי)</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"practitioner-advanced-course-moh-18\"> </a></td><td>אונקולוגיה</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"practitioner-advanced-course-moh-19\"> </a></td><td>נפרולוגיה</td></tr><tr><td style=\"white-space:nowrap\">56<a name=\"practitioner-advanced-course-moh-56\"> </a></td><td>סיעוד התלמיד כהכנה לברצ&quot;ב</td></tr><tr><td style=\"white-space:nowrap\">62<a name=\"practitioner-advanced-course-moh-62\"> </a></td><td>קביעת מעמד - מעשיות</td></tr><tr><td style=\"white-space:nowrap\">65<a name=\"practitioner-advanced-course-moh-65\"> </a></td><td>הדרכה קלינית</td></tr><tr><td style=\"white-space:nowrap\">67<a name=\"practitioner-advanced-course-moh-67\"> </a></td><td>רפואה דחופה</td></tr><tr><td style=\"white-space:nowrap\">68<a name=\"practitioner-advanced-course-moh-68\"> </a></td><td>שיקום</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"practitioner-advanced-course-moh-70\"> </a></td><td>מניעת זיהומים</td></tr><tr><td style=\"white-space:nowrap\">71<a name=\"practitioner-advanced-course-moh-71\"> </a></td><td>טיפול נמרץ פגים</td></tr><tr><td style=\"white-space:nowrap\">72<a name=\"practitioner-advanced-course-moh-72\"> </a></td><td>טיפול נמרץ ילדים</td></tr><tr><td style=\"white-space:nowrap\">73<a name=\"practitioner-advanced-course-moh-73\"> </a></td><td>רפואה ראשונית</td></tr><tr><td style=\"white-space:nowrap\">75<a name=\"practitioner-advanced-course-moh-75\"> </a></td><td>רפואה מונעת</td></tr><tr><td style=\"white-space:nowrap\">76<a name=\"practitioner-advanced-course-moh-76\"> </a></td><td>סוכרת</td></tr><tr><td style=\"white-space:nowrap\">77<a name=\"practitioner-advanced-course-moh-77\"> </a></td><td>ניהול הטיפול באי ספיקת לב</td></tr><tr><td style=\"white-space:nowrap\">100<a name=\"practitioner-advanced-course-moh-100\"> </a></td><td>חדר ניתוח</td></tr><tr><td style=\"white-space:nowrap\">106<a name=\"practitioner-advanced-course-moh-106\"> </a></td><td>גריאטריה</td></tr><tr><td style=\"white-space:nowrap\">107<a name=\"practitioner-advanced-course-moh-107\"> </a></td><td>יועצת הנקה</td></tr><tr><td style=\"white-space:nowrap\">108<a name=\"practitioner-advanced-course-moh-108\"> </a></td><td>מדיניות ומינהל בסיעוד</td></tr><tr><td style=\"white-space:nowrap\">109<a name=\"practitioner-advanced-course-moh-109\"> </a></td><td>רישום מרשמי המשך על ידי אחות</td></tr><tr><td style=\"white-space:nowrap\">110<a name=\"practitioner-advanced-course-moh-110\"> </a></td><td>פסיכותרפיה</td></tr><tr><td style=\"white-space:nowrap\">111<a name=\"practitioner-advanced-course-moh-111\"> </a></td><td>פסיכותרפיה בשיטת CBT</td></tr><tr><td style=\"white-space:nowrap\">112<a name=\"practitioner-advanced-course-moh-112\"> </a></td><td>מבחן ממיין</td></tr><tr><td style=\"white-space:nowrap\">113<a name=\"practitioner-advanced-course-moh-113\"> </a></td><td>ייעוץ לפעילות גופנית</td></tr><tr><td style=\"white-space:nowrap\">114<a name=\"practitioner-advanced-course-moh-114\"> </a></td><td>ייעוץ שינה</td></tr><tr><td style=\"white-space:nowrap\">115<a name=\"practitioner-advanced-course-moh-115\"> </a></td><td>טיפול בפצעים וסטומה</td></tr><tr><td style=\"white-space:nowrap\">116<a name=\"practitioner-advanced-course-moh-116\"> </a></td><td>גסטרואנטרולוגיה</td></tr><tr><td style=\"white-space:nowrap\">117<a name=\"practitioner-advanced-course-moh-117\"> </a></td><td>שבץ מוחי</td></tr><tr><td style=\"white-space:nowrap\">118<a name=\"practitioner-advanced-course-moh-118\"> </a></td><td>אי ספיקת לב</td></tr><tr><td style=\"white-space:nowrap\">119<a name=\"practitioner-advanced-course-moh-119\"> </a></td><td>פוריות</td></tr><tr><td style=\"white-space:nowrap\">120<a name=\"practitioner-advanced-course-moh-120\"> </a></td><td>רפואה ראשונית ורישום מרשמי המשך</td></tr><tr><td style=\"white-space:nowrap\">1001<a name=\"practitioner-advanced-course-moh-1001\"> </a></td><td>מומחיות סוכרת</td></tr><tr><td style=\"white-space:nowrap\">1002<a name=\"practitioner-advanced-course-moh-1002\"> </a></td><td>מומחיות גריאטריה</td></tr><tr><td style=\"white-space:nowrap\">1003<a name=\"practitioner-advanced-course-moh-1003\"> </a></td><td>מומחיות טיפול תומך</td></tr><tr><td style=\"white-space:nowrap\">1005<a name=\"practitioner-advanced-course-moh-1005\"> </a></td><td>רפואה ראשונית צבאית-רפואה ראשונית</td></tr><tr><td style=\"white-space:nowrap\">1006<a name=\"practitioner-advanced-course-moh-1006\"> </a></td><td>מודולת השלמה בייעוץ הנקה</td></tr><tr><td style=\"white-space:nowrap\">1007<a name=\"practitioner-advanced-course-moh-1007\"> </a></td><td>מודולת השלמה בשבץ מוחי</td></tr><tr><td style=\"white-space:nowrap\">1008<a name=\"practitioner-advanced-course-moh-1008\"> </a></td><td>חטיבה משותפת אקוטית מבוגרים</td></tr><tr><td style=\"white-space:nowrap\">1009<a name=\"practitioner-advanced-course-moh-1009\"> </a></td><td>חטיבה משותפת אקוטית ילדים</td></tr><tr><td style=\"white-space:nowrap\">1010<a name=\"practitioner-advanced-course-moh-1010\"> </a></td><td>חטיבה משותפת אקוטית כרונית</td></tr><tr><td style=\"white-space:nowrap\">1011<a name=\"practitioner-advanced-course-moh-1011\"> </a></td><td>חטיבה משותפת כרונית</td></tr><tr><td style=\"white-space:nowrap\">1012<a name=\"practitioner-advanced-course-moh-1012\"> </a></td><td>מניעה וקידום בריאות וייעוץ הנקה</td></tr><tr><td style=\"white-space:nowrap\">1014<a name=\"practitioner-advanced-course-moh-1014\"> </a></td><td>רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך</td></tr></table></div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "2023-01"^^xsd:gYearMonth ]
+  ] ) ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/practitioner-advanced-course-moh"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "PractitionerAdvancedCourseMoH"] ; # 
+  fhir:title [ fhir:v "Ministry of Health practitioner advanced courses codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for practitioner advanced courses according to Israeli MoH"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "47"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "מיילדות" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "בריאות הציבור" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "פסיכיאטריה" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "סיעוד בבריאות תעסוקתית" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "טיפול נמרץ משולב (כללי)" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "אונקולוגיה" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "נפרולוגיה" ]
+  ] [
+     fhir:code [ fhir:v "56" ] ;
+     fhir:display [ fhir:v "סיעוד התלמיד כהכנה לברצ\"ב" ]
+  ] [
+     fhir:code [ fhir:v "62" ] ;
+     fhir:display [ fhir:v "קביעת מעמד - מעשיות" ]
+  ] [
+     fhir:code [ fhir:v "65" ] ;
+     fhir:display [ fhir:v "הדרכה קלינית" ]
+  ] [
+     fhir:code [ fhir:v "67" ] ;
+     fhir:display [ fhir:v "רפואה דחופה" ]
+  ] [
+     fhir:code [ fhir:v "68" ] ;
+     fhir:display [ fhir:v "שיקום" ]
+  ] [
+     fhir:code [ fhir:v "70" ] ;
+     fhir:display [ fhir:v "מניעת זיהומים" ]
+  ] [
+     fhir:code [ fhir:v "71" ] ;
+     fhir:display [ fhir:v "טיפול נמרץ פגים" ]
+  ] [
+     fhir:code [ fhir:v "72" ] ;
+     fhir:display [ fhir:v "טיפול נמרץ ילדים" ]
+  ] [
+     fhir:code [ fhir:v "73" ] ;
+     fhir:display [ fhir:v "רפואה ראשונית" ]
+  ] [
+     fhir:code [ fhir:v "75" ] ;
+     fhir:display [ fhir:v "רפואה מונעת" ]
+  ] [
+     fhir:code [ fhir:v "76" ] ;
+     fhir:display [ fhir:v "סוכרת" ]
+  ] [
+     fhir:code [ fhir:v "77" ] ;
+     fhir:display [ fhir:v "ניהול הטיפול באי ספיקת לב" ]
+  ] [
+     fhir:code [ fhir:v "100" ] ;
+     fhir:display [ fhir:v "חדר ניתוח" ]
+  ] [
+     fhir:code [ fhir:v "106" ] ;
+     fhir:display [ fhir:v "גריאטריה" ]
+  ] [
+     fhir:code [ fhir:v "107" ] ;
+     fhir:display [ fhir:v "יועצת הנקה" ]
+  ] [
+     fhir:code [ fhir:v "108" ] ;
+     fhir:display [ fhir:v "מדיניות ומינהל בסיעוד" ]
+  ] [
+     fhir:code [ fhir:v "109" ] ;
+     fhir:display [ fhir:v "רישום מרשמי המשך על ידי אחות" ]
+  ] [
+     fhir:code [ fhir:v "110" ] ;
+     fhir:display [ fhir:v "פסיכותרפיה" ]
+  ] [
+     fhir:code [ fhir:v "111" ] ;
+     fhir:display [ fhir:v "פסיכותרפיה בשיטת CBT" ]
+  ] [
+     fhir:code [ fhir:v "112" ] ;
+     fhir:display [ fhir:v "מבחן ממיין" ]
+  ] [
+     fhir:code [ fhir:v "113" ] ;
+     fhir:display [ fhir:v "ייעוץ לפעילות גופנית" ]
+  ] [
+     fhir:code [ fhir:v "114" ] ;
+     fhir:display [ fhir:v "ייעוץ שינה" ]
+  ] [
+     fhir:code [ fhir:v "115" ] ;
+     fhir:display [ fhir:v "טיפול בפצעים וסטומה" ]
+  ] [
+     fhir:code [ fhir:v "116" ] ;
+     fhir:display [ fhir:v "גסטרואנטרולוגיה" ]
+  ] [
+     fhir:code [ fhir:v "117" ] ;
+     fhir:display [ fhir:v "שבץ מוחי" ]
+  ] [
+     fhir:code [ fhir:v "118" ] ;
+     fhir:display [ fhir:v "אי ספיקת לב" ]
+  ] [
+     fhir:code [ fhir:v "119" ] ;
+     fhir:display [ fhir:v "פוריות" ]
+  ] [
+     fhir:code [ fhir:v "120" ] ;
+     fhir:display [ fhir:v "רפואה ראשונית ורישום מרשמי המשך" ]
+  ] [
+     fhir:code [ fhir:v "1001" ] ;
+     fhir:display [ fhir:v "מומחיות סוכרת" ]
+  ] [
+     fhir:code [ fhir:v "1002" ] ;
+     fhir:display [ fhir:v "מומחיות גריאטריה" ]
+  ] [
+     fhir:code [ fhir:v "1003" ] ;
+     fhir:display [ fhir:v "מומחיות טיפול תומך" ]
+  ] [
+     fhir:code [ fhir:v "1005" ] ;
+     fhir:display [ fhir:v "רפואה ראשונית צבאית-רפואה ראשונית" ]
+  ] [
+     fhir:code [ fhir:v "1006" ] ;
+     fhir:display [ fhir:v "מודולת השלמה בייעוץ הנקה" ]
+  ] [
+     fhir:code [ fhir:v "1007" ] ;
+     fhir:display [ fhir:v "מודולת השלמה בשבץ מוחי" ]
+  ] [
+     fhir:code [ fhir:v "1008" ] ;
+     fhir:display [ fhir:v "חטיבה משותפת אקוטית מבוגרים" ]
+  ] [
+     fhir:code [ fhir:v "1009" ] ;
+     fhir:display [ fhir:v "חטיבה משותפת אקוטית ילדים" ]
+  ] [
+     fhir:code [ fhir:v "1010" ] ;
+     fhir:display [ fhir:v "חטיבה משותפת אקוטית כרונית" ]
+  ] [
+     fhir:code [ fhir:v "1011" ] ;
+     fhir:display [ fhir:v "חטיבה משותפת כרונית" ]
+  ] [
+     fhir:code [ fhir:v "1012" ] ;
+     fhir:display [ fhir:v "מניעה וקידום בריאות וייעוץ הנקה" ]
+  ] [
+     fhir:code [ fhir:v "1014" ] ;
+     fhir:display [ fhir:v "רפואה ראשונית צבאית - רפואה ראשונית ורישום מרשמי המשך" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

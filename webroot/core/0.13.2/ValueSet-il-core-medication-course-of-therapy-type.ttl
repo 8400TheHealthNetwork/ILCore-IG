@@ -1,0 +1,53 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-medication-course-of-therapy-type"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-medicationrequest-course-of-therapy.html\"><code>http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-medicationrequest-course-of-therapy.html#medicationrequest-course-of-therapy-continuous\">continuous</a></td><td>Continuous long term therapy</td><td>A medication which is expected to be continued beyond the present order and which the patient should be assumed to be taking unless explicitly stopped.</td></tr><tr><td><a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-medicationrequest-course-of-therapy.html#medicationrequest-course-of-therapy-acute\">acute</a></td><td>Short course (acute) therapy</td><td>A medication which the patient is only expected to consume for the duration of the current order and which is not expected to be renewed.</td></tr></table></li><li>Include all codes defined in <a href=\"CodeSystem-il-core-medication-course-of-therapy-type.html\"><code>http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type</code></a></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreMedicationCourseOfTherapyType"] ; # 
+  fhir:title [ fhir:v "ILCore Medication Course Of Therapy type"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for Medication Course Of Therapy"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "continuous" ] ;
+         fhir:display [ fhir:v "Continuous long term therapy" ]
+       ] [
+         fhir:code [ fhir:v "acute" ] ;
+         fhir:display [ fhir:v "Short course (acute) therapy" ]
+       ] )
+     ] [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type"^^xsd:anyURI ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

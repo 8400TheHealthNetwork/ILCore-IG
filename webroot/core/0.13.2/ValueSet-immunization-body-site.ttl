@@ -1,0 +1,81 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ValueSet/immunization-body-site> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "immunization-body-site"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include these codes as defined in <a href=\"http://www.snomed.org/\"><code>http://snomed.info/sct</code></a><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href=\"http://snomed.info/id/279549004\">279549004</a></td><td>Nasal cavity structure</td></tr><tr><td><a href=\"http://snomed.info/id/46862004\">46862004</a></td><td>Structure of buttock</td></tr><tr><td><a href=\"http://snomed.info/id/723979003\">723979003</a></td><td>Structure of left buttock</td></tr><tr><td><a href=\"http://snomed.info/id/61396006\">61396006</a></td><td>Structure of left thigh</td></tr><tr><td><a href=\"http://snomed.info/id/368208006\">368208006</a></td><td>Structure of left upper arm</td></tr><tr><td><a href=\"http://snomed.info/id/74262004\">74262004</a></td><td>Structure of oral cavity</td></tr><tr><td><a href=\"http://snomed.info/id/723980000\">723980000</a></td><td>Structure of right buttock</td></tr><tr><td><a href=\"http://snomed.info/id/11207009\">11207009</a></td><td>Structure of right thigh</td></tr><tr><td><a href=\"http://snomed.info/id/368209003\">368209003</a></td><td>Structure of right upper arm</td></tr><tr><td><a href=\"http://snomed.info/id/69695003\">69695003</a></td><td>Structure of stomach</td></tr><tr><td><a href=\"http://snomed.info/id/68367000\">68367000</a></td><td>Structure of thigh</td></tr><tr><td><a href=\"http://snomed.info/id/40983000\">40983000</a></td><td>Structure of upper extremity between shoulder and elbow</td></tr></table></li></ul></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/ValueSet/immunization-body-site"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ImmunizationBodySite"] ; # 
+  fhir:title [ fhir:v "Immunization Observation Body Site list"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:10:55+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "All codes from SNOMED CT describing body sites for Immunization Observation"] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "279549004" ] ;
+         fhir:display [ fhir:v "Nasal cavity structure" ]
+       ] [
+         fhir:code [ fhir:v "46862004" ] ;
+         fhir:display [ fhir:v "Structure of buttock" ]
+       ] [
+         fhir:code [ fhir:v "723979003" ] ;
+         fhir:display [ fhir:v "Structure of left buttock" ]
+       ] [
+         fhir:code [ fhir:v "61396006" ] ;
+         fhir:display [ fhir:v "Structure of left thigh" ]
+       ] [
+         fhir:code [ fhir:v "368208006" ] ;
+         fhir:display [ fhir:v "Structure of left upper arm" ]
+       ] [
+         fhir:code [ fhir:v "74262004" ] ;
+         fhir:display [ fhir:v "Structure of oral cavity" ]
+       ] [
+         fhir:code [ fhir:v "723980000" ] ;
+         fhir:display [ fhir:v "Structure of right buttock" ]
+       ] [
+         fhir:code [ fhir:v "11207009" ] ;
+         fhir:display [ fhir:v "Structure of right thigh" ]
+       ] [
+         fhir:code [ fhir:v "368209003" ] ;
+         fhir:display [ fhir:v "Structure of right upper arm" ]
+       ] [
+         fhir:code [ fhir:v "69695003" ] ;
+         fhir:display [ fhir:v "Structure of stomach" ]
+       ] [
+         fhir:code [ fhir:v "68367000" ] ;
+         fhir:display [ fhir:v "Structure of thigh" ]
+       ] [
+         fhir:code [ fhir:v "40983000" ] ;
+         fhir:display [ fhir:v "Structure of upper extremity between shoulder and elbow" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

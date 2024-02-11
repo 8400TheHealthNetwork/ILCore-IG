@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="israel-hmo"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include these codes as defined in <a href="CodeSystem-paying-entity-moh.html"><code>http://fhir.health.gov.il/cs/paying-entity-moh</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-101">101</a></td><td>קופת חולים כללית</td><td>הערך קופת חולים כללית מתאים למקרה בו הגורם המשלם הוא קופת חולים כללית (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-102">102</a></td><td>קופת חולים לאומית</td><td>הערך קופת חולים לאומית מתאים למקרה בו הגורם המשלם הוא קופת חולים לאומית (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-103">103</a></td><td>קופת חולים מכבי</td><td>הערך קופת חולים מכבי מתאים למקרה בו הגורם המשלם הוא קופת חולים מכבי (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-104">104</a></td><td>קופת חולים מאוחדת</td><td>הערך קופת חולים מאוחדת מתאים למקרה בו הגורם המשלם הוא קופת חולים מאוחדת (לא מדובר בשיוך לקופה)</td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-401">401</a></td><td>צה&quot;ל</td><td>הערך צה&quot;ל מתאים למקרה בו הגורם המשלם הוא צה&quot;ל (לא מדובר בשיוך אליו כקופה חמישת)</td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-402">402</a></td><td>משרד הבטחון</td><td>הערך משרד הבטחון מתאים למקרה בו הגורם המשלם הוא משרד הביטחון</td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-480">480</a></td><td>רשות פלסטינאית</td><td>הערך רשות פלסטינאית מתאים למקרה בו הגורם המשלם הוא הרשות הפלסטינאית</td></tr><tr><td><a href="CodeSystem-paying-entity-moh.html#paying-entity-moh-405">405</a></td><td>שירות בתי הסוהר</td><td>הערך שירותי בתי הסוהר  מתאים למקרה בו הגורם המשלם הוא</td></tr></table></li><li>Include these codes as defined in <code>https://terminology.hl7.org/1.0.0/CodeSystem-v3-NullFlavor.html</code><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>UNK</td><td>unknown</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/israel-hmo"/>
+  <version value="0.13.2"/>
+  <name value="IsraelHMO"/>
+  <title value="Israeli Health Management Organization (קופת חולים)"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A code classifying Health Management Organizations"/>
+  <compose>
+    <include>
+      <system value="http://fhir.health.gov.il/cs/paying-entity-moh"/>
+      <concept>
+        <code value="101"/>
+        <display value="קופת חולים כללית"/>
+      </concept>
+      <concept>
+        <code value="102"/>
+        <display value="קופת חולים לאומית"/>
+      </concept>
+      <concept>
+        <code value="103"/>
+        <display value="קופת חולים מכבי"/>
+      </concept>
+      <concept>
+        <code value="104"/>
+        <display value="קופת חולים מאוחדת"/>
+      </concept>
+      <concept>
+        <code value="401"/>
+        <display value="צה&quot;ל"/>
+      </concept>
+      <concept>
+        <code value="402"/>
+        <display value="משרד הבטחון"/>
+      </concept>
+      <concept>
+        <code value="480"/>
+        <display value="רשות פלסטינאית"/>
+      </concept>
+      <concept>
+        <code value="405"/>
+        <display value="שירות בתי הסוהר"/>
+      </concept>
+    </include>
+    <include>
+      <system value="https://terminology.hl7.org/1.0.0/CodeSystem-v3-NullFlavor.html"/>
+      <concept>
+        <code value="UNK"/>
+        <display value="unknown"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

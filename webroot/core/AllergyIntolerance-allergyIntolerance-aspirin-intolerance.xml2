@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<AllergyIntolerance xmlns="http://hl7.org/fhir">
+  <id value="allergyIntolerance-aspirin-intolerance"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Penut Allergy</div>
+  </text>
+  <clinicalStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"/>
+      <code value="active"/>
+    </coding>
+  </clinicalStatus>
+  <verificationStatus>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"/>
+      <code value="confirmed"/>
+    </coding>
+  </verificationStatus>
+  <type value="intolerance"/>
+  <category value="medication"/>
+  <criticality value="low"/>
+  <code>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="292044008"/>
+      <display value="Aspirin adverse reaction"/>
+    </coding>
+  </code>
+  <patient>
+    <reference value="Patient/patient-with-israeli-id"/>
+  </patient>
+  <reaction>
+    <extension url="http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration">
+      <valueDuration>
+        <value value="3"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="h"/>
+      </valueDuration>
+    </extension>
+    <substance>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="387458008"/>
+        <display value="Aspirin (substance)"/>
+      </coding>
+    </substance>
+    <manifestation>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="60862001"/>
+        <display value="Tinnitus (finding)"/>
+      </coding>
+    </manifestation>
+    <severity value="mild"/>
+    <exposureRoute>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route (qualifier value)"/>
+      </coding>
+    </exposureRoute>
+  </reaction>
+</AllergyIntolerance>

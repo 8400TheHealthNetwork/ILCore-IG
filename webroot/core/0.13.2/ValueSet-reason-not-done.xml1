@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="reason-not-done"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><ul><li>Include these codes as defined in <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td><a href="http://snomed.info/id/281399006">281399006</a></td><td>Did not attend</td></tr><tr><td><a href="http://snomed.info/id/213257006">213257006</a></td><td>Generally unwell</td></tr><tr><td><a href="http://snomed.info/id/310376006">310376006</a></td><td>Immunisation consent not given</td></tr><tr><td><a href="http://snomed.info/id/266758009">266758009</a></td><td>Immunisation contraindicated</td></tr><tr><td><a href="http://snomed.info/id/365861007">365861007</a></td><td>Finding of immune status</td></tr><tr><td><a href="http://snomed.info/id/182856006">182856006</a></td><td>Drug not available - out of stock</td></tr><tr><td><a href="http://snomed.info/id/871879005">871879005</a></td><td>Vaccination hesitancy by parent</td></tr><tr><td><a href="http://snomed.info/id/871868000">871868000</a></td><td>Vaccination hesitancy by patient</td></tr></table></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/reason-not-done"/>
+  <version value="0.13.2"/>
+  <name value="ReasonNotDone"/>
+  <title value="statusReason codes for Immunization profile"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode"/>
+  <compose>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <concept>
+        <code value="281399006"/>
+        <display value="Did not attend"/>
+      </concept>
+      <concept>
+        <code value="213257006"/>
+        <display value="Generally unwell"/>
+      </concept>
+      <concept>
+        <code value="310376006"/>
+        <display value="Immunisation consent not given"/>
+      </concept>
+      <concept>
+        <code value="266758009"/>
+        <display value="Immunisation contraindicated"/>
+      </concept>
+      <concept>
+        <code value="365861007"/>
+        <display value="Finding of immune status"/>
+      </concept>
+      <concept>
+        <code value="182856006"/>
+        <display value="Drug not available - out of stock"/>
+      </concept>
+      <concept>
+        <code value="871879005"/>
+        <display value="Vaccination hesitancy by parent"/>
+      </concept>
+      <concept>
+        <code value="871868000"/>
+        <display value="Vaccination hesitancy by patient"/>
+      </concept>
+    </include>
+  </compose>
+</ValueSet>

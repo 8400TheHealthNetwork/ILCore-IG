@@ -1,0 +1,96 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/AllergyIntolerance/allergyIntolerance-penut-allergy-resolved> a fhir:AllergyIntolerance ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "allergyIntolerance-penut-allergy-resolved"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">Penut Allergy</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "endDate"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "2020-01-01"^^xsd:date ]
+     ] [
+       fhir:url [ fhir:v "reasonEnded"^^xsd:anyURI ] ;
+       fhir:value [
+         a fhir:CodeableConcept ;
+         fhir:coding ( [
+           a sct:63098009 ;
+           fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+           fhir:code [ fhir:v "63098009" ] ;
+           fhir:display [ fhir:v "Clinical immunologist (occupation)" ]
+         ] )
+       ]
+     ] ) ;
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-allergy-intolerance-end"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:clinicalStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "resolved" ]
+     ] )
+  ] ; # 
+  fhir:verificationStatus [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "confirmed" ]
+     ] )
+  ] ; # 
+  fhir:type [ fhir:v "allergy"] ; # 
+  fhir:category ( [ fhir:v "food"] ) ; # 
+  fhir:criticality [ fhir:v "high"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a sct:91935009 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "91935009" ] ;
+       fhir:display [ fhir:v "Allergy to peanuts" ]
+     ] )
+  ] ; # 
+  fhir:patient [
+     fhir:link <http://fhir.health.gov.il/Patient/patient-israeli-with-two-identifiers> ;
+     fhir:reference [ fhir:v "Patient/patient-israeli-with-two-identifiers" ]
+  ] ; # 
+  fhir:reaction ( [
+     fhir:substance [
+       fhir:coding ( [
+         a sct:417889008 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "417889008" ] ;
+         fhir:display [ fhir:v "Arachis oil (substance)" ]
+       ] )
+     ] ;
+     fhir:manifestation ( [
+       fhir:coding ( [
+         a sct:39579001 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "39579001" ] ;
+         fhir:display [ fhir:v "Anaphylaxis (disorder)" ]
+       ] )
+     ] ) ;
+     fhir:severity [ fhir:v "severe" ] ;
+     fhir:exposureRoute [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

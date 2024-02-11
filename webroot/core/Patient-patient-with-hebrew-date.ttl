@@ -1,0 +1,141 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Patient/patient-with-hebrew-date> a fhir:Patient ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "patient-with-hebrew-date"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-patient"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-patient>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">אילן רם</div>"
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo"^^xsd:anyURI ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [ fhir:v "http://fhir.health.gov.il/cs/paying-entity-moh"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "102" ] ;
+         fhir:display [ fhir:v "קופת חולים לאומית" ]
+       ] )
+     ]
+  ] ) ; # 
+  fhir:identifier ( [
+     fhir:system [ fhir:v "http://fhir.health.gov.il/identifier/il-national-id"^^xsd:anyURI ] ;
+     fhir:value [ fhir:v "000000018" ]
+  ] ) ; # 
+  fhir:active [ fhir:v "true"^^xsd:boolean] ; # 
+  fhir:name ( [
+     fhir:extension ( [
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/language"^^xsd:anyURI ] ;
+       fhir:value [ fhir:v "he" ]
+     ] ) ;
+     fhir:text [ fhir:v "אילן רם" ] ;
+     fhir:family [ fhir:v "רם" ] ;
+     fhir:given ( [ fhir:v "אילן" ] )
+  ] ) ; # 
+  fhir:telecom ( [
+     fhir:system [ fhir:v "phone" ] ;
+     fhir:value [ fhir:v "052467911" ] ;
+     fhir:use [ fhir:v "home" ]
+  ] [
+     fhir:system [ fhir:v "email" ] ;
+     fhir:value [ fhir:v "Israel@example.com" ]
+  ] ) ; # 
+  fhir:gender [ fhir:v "male"] ; # 
+  fhir:birthDate [
+     fhir:v "2021-04-17"^^xsd:date ;
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "display"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ה' באייר ה'תשפ\"א" ]
+       ] [
+         fhir:url [ fhir:v "day"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/hebrew-date-day"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "5" ] ;
+             fhir:display [ fhir:v "ה'" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "month"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/hebrew-date-month"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "8" ] ;
+             fhir:display [ fhir:v "אייר" ]
+           ] )
+         ]
+       ] [
+         fhir:url [ fhir:v "year"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "ה'תשפ\"א" ]
+       ] ) ;
+       fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date"^^xsd:anyURI ]
+     ] )
+  ] ; # 
+  fhir:deceased [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:address ( [
+     fhir:extension ( [
+       fhir:extension ( [
+         fhir:url [ fhir:v "longitude"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "182468.59"^^xsd:decimal ]
+       ] [
+         fhir:url [ fhir:v "latitude"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "670131.38"^^xsd:decimal ]
+       ] ) ;
+       fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/geolocation"^^xsd:anyURI ]
+     ] ) ;
+     fhir:use [ fhir:v "home" ] ;
+     fhir:type [ fhir:v "physical" ] ;
+     fhir:text [ fhir:v "אלכסנדר פן 1א' דירה 4 תל אביב" ] ;
+     fhir:line ( [
+       fhir:v "אלכסנדר פן 1א" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "פן אלכסנדר" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-buildingNumberSuffix"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "א'" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "4" ]
+       ] [
+         fhir:url [ fhir:v "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox"^^xsd:anyURI ] ;
+         fhir:value [ fhir:v "1446" ]
+       ] )
+     ] ) ;
+     fhir:city [
+       fhir:v "תל אביב" ;
+       fhir:extension ( [
+         fhir:url [ fhir:v "http://fhir.health.gov.il/StructureDefinition/ext-city-code"^^xsd:anyURI ] ;
+         fhir:value [
+           a fhir:CodeableConcept ;
+           fhir:coding ( [
+             fhir:system [ fhir:v "http://fhir.health.gov.il/cs/city-symbol"^^xsd:anyURI ] ;
+             fhir:code [ fhir:v "5000" ]
+           ] )
+         ]
+       ] )
+     ] ;
+     fhir:district [ fhir:v "תל אביב" ] ;
+     fhir:postalCode [ fhir:v "6964101" ] ;
+     fhir:country [ fhir:v "IL" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

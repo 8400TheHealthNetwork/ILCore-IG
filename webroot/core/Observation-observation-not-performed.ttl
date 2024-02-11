@@ -1,0 +1,44 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix loinc: <https://loinc.org/rdf/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/Observation/observation-not-performed> a fhir:Observation ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "observation-not-performed"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-observation"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-observation>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p><b>Generated Narrative: Observation</b><a name=\"observation-not-performed\"> </a></p><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Resource Observation &quot;observation-not-performed&quot; </p><p style=\"margin-bottom: 0px\">Profile: <a href=\"StructureDefinition-il-core-observation.html\">ILCore Observation Profile</a></p></div><p><b>status</b>: unknown</p><p><b>code</b>: Acyclovir [Susceptibility] <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"https://loinc.org/\">LOINC</a>#1-8)</span></p><p><b>dataAbsentReason</b>: not performed medical reason <span style=\"background: LightGoldenRodYellow; margin: 4px; border: 1px solid khaki\"> (<a href=\"CodeSystem-il-core-not-performed-reason.html\">IL Core Not Perfomed Reasons</a>#not-performed-medical-reason; <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-data-absent-reason.html\">DataAbsentReason</a>#not-performed &quot;Not Performed&quot;)</span></p></div>"
+  ] ; # 
+  fhir:status [ fhir:v "unknown"] ; # 
+  fhir:code [
+     fhir:coding ( [
+       a loinc:1-8 ;
+       fhir:system [ fhir:v "http://loinc.org"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "1-8" ] ;
+       fhir:display [ fhir:v "Acyclovir [Susceptibility]" ]
+     ] )
+  ] ; # 
+  fhir:dataAbsentReason [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/il-core-not-performed-reason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "not-performed-medical-reason" ] ;
+       fhir:display [ fhir:v "not performed medical reason" ]
+     ] [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/data-absent-reason"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "not-performed" ] ;
+       fhir:display [ fhir:v "Not Performed" ]
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

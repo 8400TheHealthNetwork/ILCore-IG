@@ -1,0 +1,68 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "il-core-religion-code",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-religion-code</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"il-core-religion-code-2\"> </a></td><td>שומרוני</td><td>Samaritan</td></tr><tr><td style=\"white-space:nowrap\">54<a name=\"il-core-religion-code-54\"> </a></td><td>נוצרי ארמני</td><td>Armenian Christian</td></tr><tr><td style=\"white-space:nowrap\">57<a name=\"il-core-religion-code-57\"> </a></td><td>נוצרי קופטי</td><td>Coptic Christian</td></tr><tr><td style=\"white-space:nowrap\">60<a name=\"il-core-religion-code-60\"> </a></td><td>דרוזי</td><td>Druze</td></tr><tr><td style=\"white-space:nowrap\">70<a name=\"il-core-religion-code-70\"> </a></td><td>ללא דת</td><td>No Religious Affiliation</td></tr><tr><td style=\"white-space:nowrap\">90<a name=\"il-core-religion-code-90\"> </a></td><td>קראי</td><td>Karaite</td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate",
+    "valueDate" : "2023-12"
+  }],
+  "url" : "http://fhir.health.gov.il/cs/il-core-religion-code",
+  "version" : "0.13.2",
+  "name" : "ILCoreReligionCode",
+  "title" : "IL Core relirion code",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "Codes for religions, an addendum to the HL7 religions CodeSystem",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 6,
+  "concept" : [{
+    "code" : "2",
+    "display" : "שומרוני",
+    "definition" : "Samaritan"
+  },
+  {
+    "code" : "54",
+    "display" : "נוצרי ארמני",
+    "definition" : "Armenian Christian"
+  },
+  {
+    "code" : "57",
+    "display" : "נוצרי קופטי",
+    "definition" : "Coptic Christian"
+  },
+  {
+    "code" : "60",
+    "display" : "דרוזי",
+    "definition" : "Druze"
+  },
+  {
+    "code" : "70",
+    "display" : "ללא דת",
+    "definition" : "No Religious Affiliation"
+  },
+  {
+    "code" : "90",
+    "display" : "קראי",
+    "definition" : "Karaite"
+  }]
+}

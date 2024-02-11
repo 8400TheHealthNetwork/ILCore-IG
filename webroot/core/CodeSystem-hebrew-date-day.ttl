@@ -1,0 +1,137 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/hebrew-date-day> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "hebrew-date-day"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/hebrew-date-day</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">1<a name=\"hebrew-date-day-1\"> </a></td><td>א'</td></tr><tr><td style=\"white-space:nowrap\">2<a name=\"hebrew-date-day-2\"> </a></td><td>ב'</td></tr><tr><td style=\"white-space:nowrap\">3<a name=\"hebrew-date-day-3\"> </a></td><td>ג'</td></tr><tr><td style=\"white-space:nowrap\">4<a name=\"hebrew-date-day-4\"> </a></td><td>ד'</td></tr><tr><td style=\"white-space:nowrap\">5<a name=\"hebrew-date-day-5\"> </a></td><td>ה'</td></tr><tr><td style=\"white-space:nowrap\">6<a name=\"hebrew-date-day-6\"> </a></td><td>ו'</td></tr><tr><td style=\"white-space:nowrap\">7<a name=\"hebrew-date-day-7\"> </a></td><td>ז'</td></tr><tr><td style=\"white-space:nowrap\">8<a name=\"hebrew-date-day-8\"> </a></td><td>ח'</td></tr><tr><td style=\"white-space:nowrap\">9<a name=\"hebrew-date-day-9\"> </a></td><td>ט'</td></tr><tr><td style=\"white-space:nowrap\">10<a name=\"hebrew-date-day-10\"> </a></td><td>י'</td></tr><tr><td style=\"white-space:nowrap\">11<a name=\"hebrew-date-day-11\"> </a></td><td>י&quot;א</td></tr><tr><td style=\"white-space:nowrap\">12<a name=\"hebrew-date-day-12\"> </a></td><td>י&quot;ב</td></tr><tr><td style=\"white-space:nowrap\">13<a name=\"hebrew-date-day-13\"> </a></td><td>י&quot;ג</td></tr><tr><td style=\"white-space:nowrap\">14<a name=\"hebrew-date-day-14\"> </a></td><td>י&quot;ד</td></tr><tr><td style=\"white-space:nowrap\">15<a name=\"hebrew-date-day-15\"> </a></td><td>ט&quot;ו</td></tr><tr><td style=\"white-space:nowrap\">16<a name=\"hebrew-date-day-16\"> </a></td><td>ט&quot;ז</td></tr><tr><td style=\"white-space:nowrap\">17<a name=\"hebrew-date-day-17\"> </a></td><td>י&quot;ז</td></tr><tr><td style=\"white-space:nowrap\">18<a name=\"hebrew-date-day-18\"> </a></td><td>י&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">19<a name=\"hebrew-date-day-19\"> </a></td><td>י&quot;ט</td></tr><tr><td style=\"white-space:nowrap\">20<a name=\"hebrew-date-day-20\"> </a></td><td>כ'</td></tr><tr><td style=\"white-space:nowrap\">21<a name=\"hebrew-date-day-21\"> </a></td><td>כ&quot;א</td></tr><tr><td style=\"white-space:nowrap\">22<a name=\"hebrew-date-day-22\"> </a></td><td>כ&quot;ב</td></tr><tr><td style=\"white-space:nowrap\">23<a name=\"hebrew-date-day-23\"> </a></td><td>כ&quot;ג</td></tr><tr><td style=\"white-space:nowrap\">24<a name=\"hebrew-date-day-24\"> </a></td><td>כ&quot;ד</td></tr><tr><td style=\"white-space:nowrap\">25<a name=\"hebrew-date-day-25\"> </a></td><td>כ&quot;ה</td></tr><tr><td style=\"white-space:nowrap\">26<a name=\"hebrew-date-day-26\"> </a></td><td>כ&quot;ו</td></tr><tr><td style=\"white-space:nowrap\">27<a name=\"hebrew-date-day-27\"> </a></td><td>כ&quot;ז</td></tr><tr><td style=\"white-space:nowrap\">28<a name=\"hebrew-date-day-28\"> </a></td><td>כ&quot;ח</td></tr><tr><td style=\"white-space:nowrap\">29<a name=\"hebrew-date-day-29\"> </a></td><td>כ&quot;ט</td></tr><tr><td style=\"white-space:nowrap\">30<a name=\"hebrew-date-day-30\"> </a></td><td>ל'</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/hebrew-date-day"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "HebrewDateDay"] ; # 
+  fhir:title [ fhir:v "Hebrew Date Day"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Codes for Hebrew date days"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.health.gov.il/ValueSet/hebrew-date-day"^^xsd:anyURI ;
+     fhir:link <http://fhir.health.gov.il/ValueSet/hebrew-date-day>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "30"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "1" ] ;
+     fhir:display [ fhir:v "א'" ]
+  ] [
+     fhir:code [ fhir:v "2" ] ;
+     fhir:display [ fhir:v "ב'" ]
+  ] [
+     fhir:code [ fhir:v "3" ] ;
+     fhir:display [ fhir:v "ג'" ]
+  ] [
+     fhir:code [ fhir:v "4" ] ;
+     fhir:display [ fhir:v "ד'" ]
+  ] [
+     fhir:code [ fhir:v "5" ] ;
+     fhir:display [ fhir:v "ה'" ]
+  ] [
+     fhir:code [ fhir:v "6" ] ;
+     fhir:display [ fhir:v "ו'" ]
+  ] [
+     fhir:code [ fhir:v "7" ] ;
+     fhir:display [ fhir:v "ז'" ]
+  ] [
+     fhir:code [ fhir:v "8" ] ;
+     fhir:display [ fhir:v "ח'" ]
+  ] [
+     fhir:code [ fhir:v "9" ] ;
+     fhir:display [ fhir:v "ט'" ]
+  ] [
+     fhir:code [ fhir:v "10" ] ;
+     fhir:display [ fhir:v "י'" ]
+  ] [
+     fhir:code [ fhir:v "11" ] ;
+     fhir:display [ fhir:v "י\"א" ]
+  ] [
+     fhir:code [ fhir:v "12" ] ;
+     fhir:display [ fhir:v "י\"ב" ]
+  ] [
+     fhir:code [ fhir:v "13" ] ;
+     fhir:display [ fhir:v "י\"ג" ]
+  ] [
+     fhir:code [ fhir:v "14" ] ;
+     fhir:display [ fhir:v "י\"ד" ]
+  ] [
+     fhir:code [ fhir:v "15" ] ;
+     fhir:display [ fhir:v "ט\"ו" ]
+  ] [
+     fhir:code [ fhir:v "16" ] ;
+     fhir:display [ fhir:v "ט\"ז" ]
+  ] [
+     fhir:code [ fhir:v "17" ] ;
+     fhir:display [ fhir:v "י\"ז" ]
+  ] [
+     fhir:code [ fhir:v "18" ] ;
+     fhir:display [ fhir:v "י\"ח" ]
+  ] [
+     fhir:code [ fhir:v "19" ] ;
+     fhir:display [ fhir:v "י\"ט" ]
+  ] [
+     fhir:code [ fhir:v "20" ] ;
+     fhir:display [ fhir:v "כ'" ]
+  ] [
+     fhir:code [ fhir:v "21" ] ;
+     fhir:display [ fhir:v "כ\"א" ]
+  ] [
+     fhir:code [ fhir:v "22" ] ;
+     fhir:display [ fhir:v "כ\"ב" ]
+  ] [
+     fhir:code [ fhir:v "23" ] ;
+     fhir:display [ fhir:v "כ\"ג" ]
+  ] [
+     fhir:code [ fhir:v "24" ] ;
+     fhir:display [ fhir:v "כ\"ד" ]
+  ] [
+     fhir:code [ fhir:v "25" ] ;
+     fhir:display [ fhir:v "כ\"ה" ]
+  ] [
+     fhir:code [ fhir:v "26" ] ;
+     fhir:display [ fhir:v "כ\"ו" ]
+  ] [
+     fhir:code [ fhir:v "27" ] ;
+     fhir:display [ fhir:v "כ\"ז" ]
+  ] [
+     fhir:code [ fhir:v "28" ] ;
+     fhir:display [ fhir:v "כ\"ח" ]
+  ] [
+     fhir:code [ fhir:v "29" ] ;
+     fhir:display [ fhir:v "כ\"ט" ]
+  ] [
+     fhir:code [ fhir:v "30" ] ;
+     fhir:display [ fhir:v "ל'" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

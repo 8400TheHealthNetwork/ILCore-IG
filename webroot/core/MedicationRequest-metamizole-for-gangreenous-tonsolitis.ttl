@@ -1,0 +1,126 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sct: <http://snomed.info/id/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/MedicationRequest/metamizole-for-gangreenous-tonsolitis> a fhir:MedicationRequest ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "metamizole-for-gangreenous-tonsolitis"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "http://fhir.health.gov.il/StructureDefinition/il-core-medication-request"^^xsd:anyURI ;
+       fhir:link <http://fhir.health.gov.il/StructureDefinition/il-core-medication-request>
+     ] )
+  ] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\">A request by a GP in an HMO setting for 10 drops of oral Optalgin (Metamizole) up to 3 times a day for the duration of two weeks due to a diagnosis of acute gangrenous tonsillitis.</div>"
+  ] ; # 
+  fhir:status [ fhir:v "completed"] ; # 
+  fhir:intent [ fhir:v "order"] ; # 
+  fhir:category ( [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://fhir.health.gov.il/cs/il-core-medicationrequest-category"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "community-hmo" ] ;
+       fhir:display [ fhir:v "Community Care/HMO" ]
+     ] )
+  ] ) ; # 
+  fhir:medication [
+     a fhir:CodeableConcept ;
+     fhir:coding ( [
+       a sct:22165008 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "22165008" ] ;
+       fhir:display [ fhir:v "Metamizole sodium (substance)" ]
+     ] )
+  ] ; # 
+  fhir:subject [
+     fhir:link <http://fhir.health.gov.il/Patient/1> ;
+     fhir:reference [ fhir:v "Patient/1" ] ;
+     fhir:type [ fhir:v "Patient"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Ben Binyamini" ]
+  ] ; # 
+  fhir:encounter [
+     fhir:link <http://fhir.health.gov.il/Encounter/123> ;
+     fhir:reference [ fhir:v "Encounter/123" ] ;
+     fhir:type [ fhir:v "Encounter"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "GP HMO visit" ]
+  ] ; # 
+  fhir:supportingInformation ( [
+     fhir:link <http://fhir.health.gov.il/Observation/1> ;
+     fhir:reference [ fhir:v "Observation/1" ] ;
+     fhir:type [ fhir:v "Observation"^^xsd:anyURI ]
+  ] ) ; # 
+  fhir:authoredOn [ fhir:v "2022-12-10"^^xsd:date] ; # 
+  fhir:requester [
+     fhir:link <http://fhir.health.gov.il/Practitioner/practitioner-md> ;
+     fhir:reference [ fhir:v "Practitioner/practitioner-md" ] ;
+     fhir:type [ fhir:v "Practitioner"^^xsd:anyURI ] ;
+     fhir:display [ fhir:v "Dr. Moshe Ben Haim" ]
+  ] ; # 
+  fhir:recorder [
+     fhir:link <http://fhir.health.gov.il/Practitioner/10> ;
+     fhir:reference [ fhir:v "Practitioner/10" ]
+  ] ; # 
+  fhir:reasonCode ( [
+     fhir:coding ( [
+       a sct:652005 ;
+       fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "652005" ] ;
+       fhir:display [ fhir:v "Gangrenous tonsillitis" ]
+     ] )
+  ] ) ; # 
+  fhir:courseOfTherapyType [
+     fhir:coding ( [
+       fhir:system [ fhir:v "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"^^xsd:anyURI ] ;
+       fhir:code [ fhir:v "acute" ] ;
+       fhir:display [ fhir:v "Short course (acute) therapy" ]
+     ] )
+  ] ; # 
+  fhir:dosageInstruction ( [
+     fhir:text [ fhir:v "10 טיפות כל 8 שעות עד 3 פעמים בבליעה דרך הפה" ] ;
+     fhir:route [
+       fhir:coding ( [
+         a sct:26643006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "26643006" ] ;
+         fhir:display [ fhir:v "Oral route" ]
+       ] )
+     ] ;
+     fhir:method [
+       fhir:coding ( [
+         a sct:738995006 ;
+         fhir:system [ fhir:v "http://snomed.info/sct"^^xsd:anyURI ] ;
+         fhir:code [ fhir:v "738995006" ] ;
+         fhir:display [ fhir:v "Swallow (administration method)" ]
+       ] )
+     ] ;
+     fhir:doseAndRate ( [
+       fhir:dose [
+         a fhir:Quantity ;
+         fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+         fhir:unit [ fhir:v "drop" ] ;
+         fhir:system [ fhir:v "http://unitsofmeasure.org"^^xsd:anyURI ]
+       ] ;
+       fhir:rate [
+         a fhir:Ratio ;
+         fhir:numerator [
+           fhir:value [ fhir:v "10"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "drop" ]
+         ] ;
+         fhir:denominator [
+           fhir:value [ fhir:v "8"^^xsd:decimal ] ;
+           fhir:unit [ fhir:v "hour" ]
+         ]
+       ]
+     ] )
+  ] ) ; # 
+  fhir:substitution [
+     fhir:allowed [ fhir:v "true"^^xsd:boolean ]
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

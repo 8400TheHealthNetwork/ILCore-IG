@@ -1,0 +1,394 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8"/>
+    <title>קוד מקצוע לעוסק בבריאות - IL Core Implementation Guide v0.13.2</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link rel="stylesheet" href="fhir.css"/>
+
+      <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="assets/css/bootstrap-fhir.css"/>
+
+      <!-- Project extras -->
+    <link rel="stylesheet" href="assets/css/project.css"/>
+    <link rel="stylesheet" href="assets/css/pygments-manni.css"/>
+    <link rel="stylesheet" href="assets/css/jquery-ui.css"/>
+  	<link rel="stylesheet" href="assets/css/prism.css"/>
+      <!-- Placeholder for child template CSS declarations -->
+
+    <script src="fhir-table-scripts.js" type="text/javascript"> </script>
+
+      <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+      <!-- [if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif] -->
+
+      <!-- Favicons -->
+    <link sizes="144x144" rel="fhir-logo" href="assets/ico/icon-fhir-144.png"/>
+    <link sizes="114x114" rel="fhir-logo" href="assets/ico/icon-fhir-114.png"/>
+    <link sizes="72x72" rel="fhir-logo" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"3.123"}
+    h3,h4,h5,h6{--heading-prefix:"3.123"}</style>
+    <div id="segment-header" class="segment">    <!-- segment-header -->
+      <div class="container">    <!-- container -->
+          <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">IL Core Implementation Guide</span>
+            <br/>
+            <span style="display:inline-block;">0.13.2 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div>   <!-- /container -->
+    </div>    <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">    <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">    <!-- container -->
+          <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+            <!-- status-bar -->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" data-toggle="collapse" type="button" class="navbar-toggle">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a href="http://hl7.org/fhir/R4/index.html" class="navbar-brand hidden">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml -->
+
+<ul class="nav navbar-nav">
+  <li>
+    <a href="index.html">IG Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts Summary</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Other Resources
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="http://hl7.org/fhir/R4/index.html" target="_blank">FHIR Spec</a>
+      </li>
+      <li>
+        <a href="https://en.fhir-il-community.org/fhir-israel-core" target="_blank">ILCore Community</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+            </div>    <!-- /.nav-collapse -->
+          </div>    <!-- /.container -->
+        </nav>    <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-navbar -->
+      <!-- status-bar -->
+
+    <div id="segment-breadcrumb" class="segment">    <!-- segment-breadcrumb -->
+      <div class="container">    <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href="toc.html"><b>Table of Contents</b></a></li><li><a href="artifacts.html"><b>Artifacts Summary</b></a></li><li><b>קוד מקצוע לעוסק בבריאות</b></li>
+
+        </ul>
+      </div>    <!-- /container -->
+    </div>    <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">    <!-- segment-content -->
+      <div class="container">    <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+    <!-- ReleaseHeader --><p id="publish-box">This page is part of the IL-Core IG (v0.13.2: draft-1 Draft) based on <a no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. This is the current published version.  For a full list of available versions, see the <a no-external="true" href="http://fhir.health.gov.il/history.html">Directory of published versions</a></p>  <!-- EndReleaseHeader -->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-practitioner-profession-moh.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-practitioner-profession-moh.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-practitioner-profession-moh.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: קוד מקצוע לעוסק בבריאות
+
+  </h2>
+  <table class="colsd">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">http://fhir.health.gov.il/ValueSet/practitioner-profession-moh<button data-clipboard-text="http://fhir.health.gov.il/ValueSet/practitioner-profession-moh" title="Click to copy URL" class="btn-copy"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.13.2<button data-clipboard-text="http://fhir.health.gov.il/ValueSet/practitioner-profession-moh|0.13.2" title="Click to copy versioned URL" class="btn-copy"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Draft
+          
+            as of 2023-12-23
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">PractitionerProfessionMoH</span></td>
+    </tr>
+
+
+
+
+  </table>
+
+<p>
+<p>קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות. שימו לב: מקצועות הסיעוד הוחרגו מרשימה זו ונמצאים ברשימה נפרדת</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-il-core-practitioner.html">ILCore Practitioner Profile</a></li>
+</ul>
+
+
+    <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+  <!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="CodeSystem-practitioner-profession-moh.html"><code>http://fhir.health.gov.il/cs/practitioner-profession-moh</code></a></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href="CodeSystem-practitioner-profession-moh.html"><code>http://fhir.health.gov.il/cs/practitioner-profession-moh</code></a><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td><a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-101">101</a></td><td>אח/ות מוסמכ/ת</td><td>מקצוע האח/ות מוסמכ/ת שייך לתחום הסיעוד לו קיימים ערכי מומחיות Expertise</td></tr><tr><td><a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-102">102</a></td><td>אח/ות מעשי/ת</td><td>מקצוע האח/ות מעשי/ת שייך לתחום הסיעוד ללא מומחיות או התמחות</td></tr><tr><td><a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-103">103</a></td><td>אח/ות</td><td>מקצוע אח/ות שייך לתחום הסיעוד ללא מומחיות או התמחות</td></tr></table></li></ul></div>
+
+  <p>&nbsp;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion based on <a href="CodeSystem-practitioner-profession-moh.html">codesystem קוד מקצוע לעוסק בבריאות v0.13.2 (CodeSystem)</a></p><p>This value set contains 54 concepts</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>System</b></td><td><b>Display</b></td><td><b>Inactive</b></td><td><b>Definition</b></td><td><b><a href="http://hl7.org/fhir/concept-properties#status">status</a></b></td></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh--888"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh--888">-888</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>לא ידוע</td><td>inactive</td><td><div><p>ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL</p>
+</div></td><td>deprecated</td></tr><tr style="background-color: #ffeeee"><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh--999"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh--999">-999</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>לא קיים</td><td>inactive</td><td><div><p>ערך ברירת מחדל במקרה שערך המקצוע איננו רלוונטי או לא קיים מאחר ולא מדובר במקצוע רפואי</p>
+</div></td><td>deprecated</td></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-1"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-1">1</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>רפואה</td><td/><td><div><p>מקצוע הרפואה לו קיימים גם ערכי מומחיות Expertise</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-2"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-2">2</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>רפואת שיניים</td><td/><td><div><p>מקצוע רפואת השינייים לו קיימים גם ערכי מומחיות Expertise</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-3"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-3">3</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>רוקחים</td><td/><td><div><p>מקצוע הרוקחות לו קיימים גם ערכי התמחות Specialist (אך לא מומחיות Expertise)</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-4"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-4">4</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>עוזרי רוקחים</td><td/><td><div><p>מקצוע עוזר רוקח ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-5"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-5">5</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מיילדת</td><td/><td><div><p>מקצוע המיילדת שייך לתחום הסיעוד ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-6"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-6">6</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>שיננית</td><td/><td><div><p>מקצוע השיננית שייך לתחום רפואת השניים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-7"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-7">7</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי שיניים-מעשי</td><td/><td><div><p>מקצוע טכנאי שיניים מעשי שייך לתחום רפואת השיניים (מופרד ממקצוע טכנאי שיניים) וללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-8"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-8">8</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>אופטומטריה</td><td/><td><div><p>מקצוע האופטומטריה ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-9"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-9">9</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>אורטופטיסט</td><td/><td><div><p>מקצוע האורטופטיסט שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-10"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-10">10</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>פיזיותרפיה</td><td/><td><div><p>מקצוע הפיזיותרפיה שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-11"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-11">11</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>דיאטן תזונאי</td><td/><td><div><p>מקצוע הדיאטן תזונאי שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-12"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-12">12</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>כירופרקטיקה</td><td/><td><div><p>מקצוע הכירופרקטיקה שייך לתחום הפר"א וללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-13"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-13">13</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>קלינאי-תיקשורת</td><td/><td><div><p>מקצוע הקלינאי-תיקשורת שייך לתחום הפר"א לו קיימים גם ערכי התמחות Specialist</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-14"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-14">14</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מרפא בעיסוק</td><td/><td><div><p>מקצוע מרפא בעיסוק שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-15"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-15">15</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>ריפוי ביצירה והבעה</td><td/><td><div><p>מקצוע הריפוי ביצירה והבעה שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-16"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-16">16</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי-הנשמה (רספירטורי טרפיסט)</td><td/><td><div><p>מקצוע הטכנאי-הנשמה (רספירטורי טרפיסט) ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-17"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-17">17</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>עובד מעבדה רפואית</td><td/><td><div><p>מקצוע עובד מעבדה רפואית לו קיימים ערכי התמחות Specialist</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-18"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-18">18</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנולוגים אלקטרו פיסיולוגים</td><td/><td><div><p>מקצוע הטכנולוגים אלקטרו פיסיולוגים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-19"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-19">19</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>רנטגנאים</td><td/><td><div><p>מקצוע הרנטגנאים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-20"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-20">20</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנולוגים ברפואה גרעינית</td><td/><td><div><p>מקצוע הטכנולוגים ברפואה גרעינית ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-21"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-21">21</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי אולטרה-סאונד</td><td/><td><div><p>מקצוע הטכנולוגים ברפואה גרעינית ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-22"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-22">22</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>אורטוטיסטים - פרוטוטיסטים</td><td/><td><div><p>מקצוע האורטוטיסטים - פרוטוטיסטים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-23"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-23">23</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>כירופודיסטים</td><td/><td><div><p>מקצוע הכירופודיסטים שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-24"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-24">24</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>פודיאטריסטים</td><td/><td><div><p>מקצוע הפודיאטריסטים שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-25"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-25">25</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>סייעת</td><td/><td><div><p>מקצוע הסייעת שייך לתחום השיניים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-26"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-26">26</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>אקופונקטורה</td><td/><td><div><p>מקצוע האקופונקטורה שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-27"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-27">27</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>פסיכולוג</td><td/><td><div><p>מקצוע הפסיכולוג שייך לתחום בריאות הנפש לו קיימים ערכי מומחיות Expertise וכמו כן ערכי התמחות Specialist</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-29"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-29">29</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>קרימינולוגיה קלינית</td><td/><td><div><p>מקצוע הקרימינולוגיה קלינית שייך לתחום בריאות הנפש ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-30"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-30">30</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>גנטיקה קלינית- יעוץ גנטי</td><td/><td><div><p>מקצוע הגנטיקה קלינית- יעוץ גנטי לו קיימים ערכי מומחיות Expertise</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-31"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-31">31</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>עובד מעבדה רפואית בכיר</td><td/><td><div><p>מקצוע העובד מעבדה רפואית בכיר מופרד מעובד מעבדה אחר לו קיימים ערכי התמחות Specialist</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-32"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-32">32</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מרפא שיניים</td><td/><td><div><p>מקצוע מרפא שיניים שייך לתחום רפואת השיניים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-33"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-33">33</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>עובד מעבדה רפואי אקדמאי</td><td/><td><div><p>מקצוע העובד מעבדה רפואי אקדמאי (מופרד מעובד מעבדה אחר) ולו קיימים התמחות Specialist</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-34"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-34">34</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>פיזיותרפיסט אקדמאי</td><td/><td><div><p>מקצוע הפיזיותרפיסט אקדמאי שייך לתחום הפר"א (מופרד מפיזיותרפיה) ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-35"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-35">35</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מפעיל מכונות לב ריאה</td><td/><td><div><p>מקצוע המפעיל מכונות לב ריאה ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-36"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-36">36</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>פרוסטטיקה אורטוטיקה והנעלה</td><td/><td><div><p>מקצוע פרוסטטיקה אורטוטיקה והנעלה ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-37"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-37">37</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>אוסטאופתיה</td><td/><td><div><p>מקצוע האוסטאופתיה שייך לתחום הפר"א ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-38"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-38">38</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי שיניים-מוסמך</td><td/><td><div><p>מקצוע הטכנאי שיניים-מוסמך שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-39"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-39">39</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי שיניים-אומן</td><td/><td><div><p>מקצוע טכנאי שיניים-אומן שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-40"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-40">40</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי שיניים-מומחה</td><td/><td><div><p>מקצוע טכנאי שיניים-מומחה שייך לתחום רפאת השיניים (מופרד מטכנאי שיניים אחר) ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-41"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-41">41</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>עוזרי רופאים</td><td/><td><div><p>מקצוע עוזרי רופאים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-42"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-42">42</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>סוכן תיירות מרפא</td><td/><td><div></div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-43"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-43">43</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>פודיאטר מנתח</td><td/><td><div></div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-44"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-44">44</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>חברת תיירות מרפא</td><td/><td><div></div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-45"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-45">45</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>עבודה סוציאלית</td><td/><td><div></div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-97"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-97">97</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>אחר</td><td/><td><div><p>אחר</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-109"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-109">109</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מעשי היתר זמני</td><td/><td><div><p>מקצוע האח/ות מעשי./- היתר זמני שייך לתחום הסיעוד ללא מומחיות או התמחות ומהווה רישוי זמני בלבד של אח/ות מעשי/ת</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-110"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-110">110</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>כח עזר</td><td/><td><div><p>מקצוע הכח עזר ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-115"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-115">115</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי ח. ניתוח</td><td/><td><div><p>מקצוע הטכנאי חדר ניתוח ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-116"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-116">116</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מכשירן חדר ניתוח</td><td/><td><div><p>מקצוע המכשירן חדר ניתוח ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-117"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-117">117</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מטפלת</td><td/><td><div><p>מקצוע המטפל שייך לתחום הסיעוד ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-118"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-118">118</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>טכנאי שיניים</td><td/><td><div><p>מקצוע הטכנאי שינייםשייך לתחום רפואת השיניים ללא מומחיות או התמחות</p>
+</div></td><td/></tr><tr><td style="white-space:nowrap"><a name="http---fhir.health.gov.il-cs-practitioner-profession-moh-133"> </a>&nbsp;&nbsp;<a href="CodeSystem-practitioner-profession-moh.html#practitioner-profession-moh-133">133</a></td><td>http://fhir.health.gov.il/cs/practitioner-profession-moh</td><td>מעשי מוגבל</td><td/><td><div><p>מקצוע מעשי מוגבל שייך לתחום הסיעוד ללא מומחיות או התמחות מהווה רישוי מוגבל של אח/ות מעשי/ת</p>
+</div></td><td/></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+    <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>    <!-- /inner-wrapper -->
+      </div>    <!-- /row -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-content -->
+
+  <script src="assets/js/jquery.js" type="text/javascript"> </script>       <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script src="assets/js/jquery-ui.min.js" type="text/javascript"> </script>
+
+  <script type="text/javascript">
+    $(document).ready(function(){
+      if(window.location.hash != "") {
+          $('a[href="' + window.location.hash + '"]').click()
+      }
+    });
+  </script>
+  <a name="bottom"> </a>
+  <div igtool="footer" id="segment-footer" class="segment">    <!-- segment-footer -->
+    <div class="container">    <!-- container -->
+
+      <div class="inner-wrapper">
+        <p><a name="l1504">​</a>
+          IG &copy; 2020+ <a style="color:var(--footer-hyperlink-text-color)" href="ido.levin@moh.gov.il">Israel Core Team</a>.  Package health.gov.il.fhir.core#0.13.2 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Sat, Dec 23, 2023 19:20+0200">2023-12-23</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>    <!-- /inner-wrapper -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">    <!-- segment-post-footer -->
+    <div class="container">    <!-- container -->
+    </div>    <!-- /container -->
+  </div>    <!-- /segment-post-footer -->
+  
+    <!-- JS and analytics only. -->
+    <!-- Bootstrap core JavaScript
+  ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+  <script src="assets/js/bootstrap.min.js" type="text/javascript"> </script>
+  <script src="assets/js/respond.min.js" type="text/javascript"> </script>
+  <script src="assets/js/anchor.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard.min.js" type="text/javascript"> </script>
+  <script src="assets/js/clipboard-btn.js" type="text/javascript"> </script>
+  <script>anchors.options.visible = 'hover'
+anchors.add()</script>
+  
+  <!-- feedback form - Google forms -->
+  <!-- v0.1, 2021-01-09 -->
+
+
+
+  <!-- / feedback form -->
+
+    <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>

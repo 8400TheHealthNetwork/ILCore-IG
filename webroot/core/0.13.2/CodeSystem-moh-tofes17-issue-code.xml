@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="moh-tofes17-issue-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/moh-tofes17-issue-code</code> defines codes, but no codes are represented here</p></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-10"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/moh-tofes17-issue-code"/>
+  <version value="0.13.2"/>
+  <name value="MohTofes17IssueCode"/>
+  <title value="Moh Form-17 Issue Code"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="קודי שגיאה \ סירוב לתהליכים הקשורים לטופס 17"/>
+  <caseSensitive value="false"/>
+  <content value="not-present"/>
+  <concept>
+    <code value="miss-apnt-data"/>
+    <display value="חסרים פרטי התור החוזר"/>
+    <definition value="למשל, במקרה שאין ישות Appointment, או שחסר מידע קריטי בישות כגון תאריך הביקור"/>
+  </concept>
+  <concept>
+    <code value="apnt-too-far"/>
+    <display value="מועד התור החוזר רחוק מדי"/>
+    <definition value="הבקשה מוקדמת מדי ועדיין אין באפשרות הקופה להתייחס אליה"/>
+  </concept>
+  <concept>
+    <code value="miss-doc"/>
+    <display value="חסר מסמך סיכום עם ההמלצה לביקור חוזר"/>
+    <definition value="במקרה בו הבקשה נשלחה ללא DocumentReference עם סיכום הביקור בו הומלץ למטופל לקבוע ביקור חוזר"/>
+  </concept>
+  <concept>
+    <code value="miss-orig-req"/>
+    <display value="בבקשה לעדכון או ביטול - חסר קישור לבקשה המקורית"/>
+  </concept>
+  <concept>
+    <code value="pat-not-eligible"/>
+    <display value="המטופל אינו זכאי להתחייבות"/>
+  </concept>
+  <concept>
+    <code value="referred-to-community"/>
+    <display value="הטיפול יבוצע בקהילה"/>
+  </concept>
+  <concept>
+    <code value="not-ambulatory"/>
+    <display value="השירות המבוקש אינו אמבולטורי"/>
+  </concept>
+  <concept>
+    <code value="charge-not-authorized"/>
+    <display value="ללקוח אין הרשאת חיוב"/>
+  </concept>
+  <concept>
+    <code value="service-with-co-payment"/>
+    <display value="הבקשה כוללת שירות עם השתתפות עצמית"/>
+  </concept>
+  <concept>
+    <code value="service-not-covered"/>
+    <display value="השירות אינו בסל"/>
+  </concept>
+  <concept>
+    <code value="age-limit"/>
+    <display value="קוד השירות מוגבל גיל"/>
+  </concept>
+  <concept>
+    <code value="quantity-mismatch"/>
+    <display value="כמות הטיפולים אינה תואמת את תוכנית הטיפול"/>
+  </concept>
+  <concept>
+    <code value="req-not-compliant"/>
+    <display value="הבקשה להתחייבות אינה תואמת לכללי החיוב"/>
+  </concept>
+  <concept>
+    <code value="srv-code-mismatch"/>
+    <display value="קוד השירות אינו תואם את הטיפול המתוכנן"/>
+  </concept>
+  <concept>
+    <code value="pat-hospitalized"/>
+    <display value="המטופל מאושפז"/>
+  </concept>
+  <concept>
+    <code value="other"/>
+    <display value="אחר"/>
+  </concept>
+</CodeSystem>

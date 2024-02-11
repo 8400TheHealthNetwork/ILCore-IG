@@ -1,0 +1,16 @@
+{
+  "url" : "http://fhir.health.gov.il/ImplementationGuide/health.gov.il.fhir.core",
+  "name" : "ILCoreImplementationGuide",
+  "title" : "IL Core Implementation Guide",
+  "description" : "Implementation guide for Israel Core FHIR",
+  "status" : "draft",
+  "package-id" : "health.gov.il.fhir.core",
+  "ig-ver" : "0.13.2",
+  "date" : "Sat, 23 Dec, 2023 19:20:26 +0200",
+  "errs" : 105,
+  "warnings" : 182,
+  "hints" : 45,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 4158652352
+}

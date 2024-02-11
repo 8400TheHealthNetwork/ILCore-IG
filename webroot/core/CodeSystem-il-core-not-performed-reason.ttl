@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/CodeSystem/il-core-not-performed-reason> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "il-core-not-performed-reason"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-not-performed-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">not-performed-medical-reason<a name=\"il-core-not-performed-reason-not-performed-medical-reason\"> </a></td><td>not performed medical reason</td><td>The value is not available because the observation procedure was not performed due to Medical Reason</td></tr><tr><td style=\"white-space:nowrap\">not-performed-administrative-reason<a name=\"il-core-not-performed-reason-not-performed-administrative-reason\"> </a></td><td>not performed administrative reason</td><td>The value is not available because the observation procedure was not performed due to Administrative Reason, e.g., observation cannot be measured because of a remote visit (telemedicine), absent practitioner (patient need EKG but no technician available), etc.</td></tr><tr><td style=\"white-space:nowrap\">not-performed-equipment-reason<a name=\"il-core-not-performed-reason-not-performed-equipment-reason\"> </a></td><td>not performed equipment reason</td><td>The value is not available because the observation procedure was not performed due to Equipment Reason, e.g., EKG malfunction, blood pressure monitor out of batteries, autoscope only available in adult size and the patient is two years old, etc</td></tr><tr><td style=\"white-space:nowrap\">not-performed-patient-reason<a name=\"il-core-not-performed-reason-not-performed-patient-reason\"> </a></td><td>not performed patient reason</td><td>The value is not available because the observation procedure was not performed due to Patient Reason e.g., patient refused to do the test, patient didn’t come etc.</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://fhir.health.gov.il/cs/il-core-not-performed-reason"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "ILCoreNotPerformedReason"] ; # 
+  fhir:title [ fhir:v "IL Core Not Perfomed Reasons"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-12-23T19:20:26+02:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "A list of codes for reasons an observation was not made"] ; # 
+  fhir:caseSensitive [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:valueSet [
+     fhir:v "http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason"^^xsd:anyURI ;
+     fhir:link <http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason>
+  ] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "4"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "not-performed-medical-reason" ] ;
+     fhir:display [ fhir:v "not performed medical reason" ] ;
+     fhir:definition [ fhir:v "The value is not available because the observation procedure was not performed due to Medical Reason" ]
+  ] [
+     fhir:code [ fhir:v "not-performed-administrative-reason" ] ;
+     fhir:display [ fhir:v "not performed administrative reason" ] ;
+     fhir:definition [ fhir:v "The value is not available because the observation procedure was not performed due to Administrative Reason, e.g., observation cannot be measured because of a remote visit (telemedicine), absent practitioner (patient need EKG but no technician available), etc." ]
+  ] [
+     fhir:code [ fhir:v "not-performed-equipment-reason" ] ;
+     fhir:display [ fhir:v "not performed equipment reason" ] ;
+     fhir:definition [ fhir:v "The value is not available because the observation procedure was not performed due to Equipment Reason, e.g., EKG malfunction, blood pressure monitor out of batteries, autoscope only available in adult size and the patient is two years old, etc" ]
+  ] [
+     fhir:code [ fhir:v "not-performed-patient-reason" ] ;
+     fhir:display [ fhir:v "not performed patient reason" ] ;
+     fhir:definition [ fhir:v "The value is not available because the observation procedure was not performed due to Patient Reason e.g., patient refused to do the test, patient didn’t come etc." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

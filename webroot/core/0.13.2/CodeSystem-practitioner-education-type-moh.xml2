@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="practitioner-education-type-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/practitioner-education-type-moh</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="practitioner-education-type-moh-1"> </a></td><td>לימודים אקדמאים</td></tr><tr><td style="white-space:nowrap">2<a name="practitioner-education-type-moh-2"> </a></td><td>קורס מוכר</td></tr><tr><td style="white-space:nowrap">3<a name="practitioner-education-type-moh-3"> </a></td><td>קורס על בסיסי</td></tr><tr><td style="white-space:nowrap">4<a name="practitioner-education-type-moh-4"> </a></td><td>קורס למקצוע</td></tr><tr><td style="white-space:nowrap">-999<a name="practitioner-education-type-moh--999"> </a></td><td>לא ידוע</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-01"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/practitioner-education-type-moh"/>
+  <version value="0.13.2"/>
+  <name value="PractitionerEducationTypeMoH"/>
+  <title value="Ministry of Health practitioner-education-type codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Codes for practitioner-education-types according to Israeli MoH"/>
+  <caseSensitive value="false"/>
+  <content value="complete"/>
+  <count value="5"/>
+  <concept>
+    <code value="1"/>
+    <display value="לימודים אקדמאים"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="קורס מוכר"/>
+  </concept>
+  <concept>
+    <code value="3"/>
+    <display value="קורס על בסיסי"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="קורס למקצוע"/>
+  </concept>
+  <concept>
+    <code value="-999"/>
+    <display value="לא ידוע"/>
+  </concept>
+</CodeSystem>

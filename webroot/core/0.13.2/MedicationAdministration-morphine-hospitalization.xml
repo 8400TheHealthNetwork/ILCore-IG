@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationAdministration xmlns="http://hl7.org/fhir">
+  <id value="morphine-hospitalization"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Exmple of a MedicationAdministration - morphine administered during hospitalization. Completed inpatient administration of 15mg of oral morphine every 4 hours as needed by a practitioner to a patient due to a procedure.</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication">
+    <valueBoolean value="true"/>
+  </extension>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-recorded-time">
+    <valueDateTime value="2022-10-11"/>
+  </extension>
+  <status value="completed"/>
+  <category>
+    <coding>
+      <system value="http://fhir.health.gov.il/cs/il-core-medicationrequest-category"/>
+      <code value="inpatient"/>
+      <display value="Inpatient"/>
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="373529000"/>
+      <display value="Morphine (substance)"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/patient-with-israeli-id"/>
+    <type value="Patient"/>
+    <display value="תמר כהן"/>
+  </subject>
+  <context>
+    <reference value="Encounter/home-visit"/>
+    <type value="Encounter"/>
+  </context>
+  <effectivePeriod>
+    <start value="2022-10-05"/>
+    <end value="2022-10-10"/>
+  </effectivePeriod>
+  <performer>
+    <actor>
+      <reference value="Practitioner/practitioner-md"/>
+      <type value="Practitioner"/>
+    </actor>
+  </performer>
+  <dosage>
+    <text value="15mg every 4 hours"/>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="738995006"/>
+        <display value="Swallow (administration method)"/>
+      </coding>
+    </method>
+    <dose>
+      <value value="15"/>
+      <unit value="mg"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mg"/>
+    </dose>
+    <rateRatio>
+      <numerator>
+        <value value="15"/>
+        <unit value="mg"/>
+        <system value="http://snomed.info/sct"/>
+      </numerator>
+      <denominator>
+        <value value="4"/>
+        <unit value="hour"/>
+      </denominator>
+    </rateRatio>
+  </dosage>
+</MedicationAdministration>

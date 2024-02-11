@@ -1,0 +1,55 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "il-core-not-performed-reason",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-not-performed-reason</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">not-performed-medical-reason<a name=\"il-core-not-performed-reason-not-performed-medical-reason\"> </a></td><td>not performed medical reason</td><td>The value is not available because the observation procedure was not performed due to Medical Reason</td></tr><tr><td style=\"white-space:nowrap\">not-performed-administrative-reason<a name=\"il-core-not-performed-reason-not-performed-administrative-reason\"> </a></td><td>not performed administrative reason</td><td>The value is not available because the observation procedure was not performed due to Administrative Reason, e.g., observation cannot be measured because of a remote visit (telemedicine), absent practitioner (patient need EKG but no technician available), etc.</td></tr><tr><td style=\"white-space:nowrap\">not-performed-equipment-reason<a name=\"il-core-not-performed-reason-not-performed-equipment-reason\"> </a></td><td>not performed equipment reason</td><td>The value is not available because the observation procedure was not performed due to Equipment Reason,\u202fe.g., EKG malfunction, blood pressure monitor out of batteries, autoscope only available in adult size and the patient is two years old, etc</td></tr><tr><td style=\"white-space:nowrap\">not-performed-patient-reason<a name=\"il-core-not-performed-reason-not-performed-patient-reason\"> </a></td><td>not performed patient reason</td><td>The value is not available because the observation procedure was not performed due to Patient Reason e.g., patient refused to do the test, patient didn’t come etc.</td></tr></table></div>"
+  },
+  "url" : "http://fhir.health.gov.il/cs/il-core-not-performed-reason",
+  "version" : "0.13.2",
+  "name" : "ILCoreNotPerformedReason",
+  "title" : "IL Core Not Perfomed Reasons",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "A list of codes for reasons an observation was not made",
+  "caseSensitive" : false,
+  "valueSet" : "http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "not-performed-medical-reason",
+    "display" : "not performed medical reason",
+    "definition" : "The value is not available because the observation procedure was not performed due to Medical Reason"
+  },
+  {
+    "code" : "not-performed-administrative-reason",
+    "display" : "not performed administrative reason",
+    "definition" : "The value is not available because the observation procedure was not performed due to Administrative Reason, e.g., observation cannot be measured because of a remote visit (telemedicine), absent practitioner (patient need EKG but no technician available), etc."
+  },
+  {
+    "code" : "not-performed-equipment-reason",
+    "display" : "not performed equipment reason",
+    "definition" : "The value is not available because the observation procedure was not performed due to Equipment Reason,\u202fe.g., EKG malfunction, blood pressure monitor out of batteries, autoscope only available in adult size and the patient is two years old, etc"
+  },
+  {
+    "code" : "not-performed-patient-reason",
+    "display" : "not performed patient reason",
+    "definition" : "The value is not available because the observation procedure was not performed due to Patient Reason e.g., patient refused to do the test, patient didn’t come etc."
+  }]
+}

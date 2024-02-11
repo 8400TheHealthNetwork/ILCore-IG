@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<MedicationStatement xmlns="http://hl7.org/fhir">
+  <id value="MedicationStatement-Fluoxetine-20-mg"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Active medication statement reported by a practitioner regarding a patient in a long term care facility for long-term, continuous use of 20mg/day Prozac (Fluoxetine) taken each morning.</div>
+  </text>
+  <extension url="http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type">
+    <valueCodeableConcept>
+      <coding>
+        <system value="http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"/>
+        <code value="continuous"/>
+        <display value="Continuous long term therapy"/>
+      </coding>
+    </valueCodeableConcept>
+  </extension>
+  <status value="active"/>
+  <category>
+    <coding>
+      <system value="http://fhir.health.gov.il/cs/medication-category"/>
+      <code value="community-other"/>
+      <display value="Community Care/Long Term Care/Home"/>
+    </coding>
+  </category>
+  <medicationCodeableConcept>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="372767007"/>
+      <display value="Fluoxetine (substance)"/>
+    </coding>
+  </medicationCodeableConcept>
+  <subject>
+    <reference value="Patient/patient-with-israeli-id"/>
+    <type value="Patient"/>
+    <display value="תמר כהן"/>
+  </subject>
+  <context>
+    <reference value="Encounter/123"/>
+    <type value="Encounter"/>
+  </context>
+  <effectivePeriod>
+    <start value="2022-10-05"/>
+    <end value="2022-10-10"/>
+  </effectivePeriod>
+  <dateAsserted value="2022-07-30"/>
+  <informationSource>
+    <reference value="Practitioner/1"/>
+    <type value="Practitioner"/>
+  </informationSource>
+  <dosage>
+    <text value="20mg per day every morning"/>
+    <timing>
+      <repeat>
+        <when value="MORN"/>
+      </repeat>
+    </timing>
+    <route>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="26643006"/>
+        <display value="Oral route"/>
+      </coding>
+    </route>
+    <method>
+      <coding>
+        <system value="http://snomed.info/sct"/>
+        <code value="738995006"/>
+        <display value="Swallow (administration method)"/>
+      </coding>
+    </method>
+    <doseAndRate>
+      <doseQuantity>
+        <value value="20"/>
+        <unit value="mg"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </doseQuantity>
+      <rateRatio>
+        <numerator>
+          <value value="15"/>
+          <unit value="mg"/>
+          <system value="http://snomed.info/sct"/>
+        </numerator>
+        <denominator>
+          <value value="4"/>
+          <unit value="hour"/>
+        </denominator>
+      </rateRatio>
+    </doseAndRate>
+  </dosage>
+</MedicationStatement>

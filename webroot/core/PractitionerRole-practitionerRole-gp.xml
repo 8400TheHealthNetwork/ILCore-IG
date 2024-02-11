@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<PractitionerRole xmlns="http://hl7.org/fhir">
+  <id value="practitionerRole-gp"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">רופאת משפחה</div>
+  </text>
+  <active value="true"/>
+  <practitioner>
+    <reference value="Practitioner/practitioner-md"/>
+  </practitioner>
+  <location>
+    <reference value="Location/location-hospital-unit"/>
+  </location>
+  <telecom>
+    <system value="phone"/>
+    <value value="04-6421420"/>
+    <use value="work"/>
+  </telecom>
+  <telecom>
+    <system value="email"/>
+    <value value="DG@example.com"/>
+  </telecom>
+  <availableTime>
+    <availableStartTime value="09:00:00"/>
+    <availableEndTime value="17:00:00"/>
+  </availableTime>
+</PractitionerRole>

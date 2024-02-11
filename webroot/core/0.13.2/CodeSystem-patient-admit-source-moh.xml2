@@ -1,0 +1,257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="patient-admit-source-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/patient-admit-source-moh</code> provides some codes <b>that are example only</b>:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">1<a name="patient-admit-source-moh-1"> </a></td><td>מוסד רפ' אחר</td></tr><tr><td style="white-space:nowrap">2<a name="patient-admit-source-moh-2"> </a></td><td>מוסד לא רפואי</td></tr><tr><td style="white-space:nowrap">5<a name="patient-admit-source-moh-5"> </a></td><td>אשפוז יום</td></tr><tr><td style="white-space:nowrap">6<a name="patient-admit-source-moh-6"> </a></td><td>מח' אשפוז בבי&quot;ח</td></tr><tr><td style="white-space:nowrap">7<a name="patient-admit-source-moh-7"> </a></td><td>ממיון בבי&quot;ח</td></tr><tr><td style="white-space:nowrap">8<a name="patient-admit-source-moh-8"> </a></td><td>ממרפאה בבי&quot;ח</td></tr><tr><td style="white-space:nowrap">10<a name="patient-admit-source-moh-10"> </a></td><td>כללית</td></tr><tr><td style="white-space:nowrap">11<a name="patient-admit-source-moh-11"> </a></td><td>מכבי</td></tr><tr><td style="white-space:nowrap">12<a name="patient-admit-source-moh-12"> </a></td><td>מאוחדת</td></tr><tr><td style="white-space:nowrap">13<a name="patient-admit-source-moh-13"> </a></td><td>לאומית</td></tr><tr><td style="white-space:nowrap">15<a name="patient-admit-source-moh-15"> </a></td><td>שר&quot;פ / מלר&quot;ם</td></tr><tr><td style="white-space:nowrap">16<a name="patient-admit-source-moh-16"> </a></td><td>ביטוח לאומי</td></tr><tr><td style="white-space:nowrap">17<a name="patient-admit-source-moh-17"> </a></td><td>לידה</td></tr><tr><td style="white-space:nowrap">18<a name="patient-admit-source-moh-18"> </a></td><td>ביקור רדיולוגיה</td></tr><tr><td style="white-space:nowrap">19<a name="patient-admit-source-moh-19"> </a></td><td>ביק. חוזר במיון</td></tr><tr><td style="white-space:nowrap">20<a name="patient-admit-source-moh-20"> </a></td><td>מרופא פרטי</td></tr><tr><td style="white-space:nowrap">21<a name="patient-admit-source-moh-21"> </a></td><td>מרפאת מהגרים</td></tr><tr><td style="white-space:nowrap">22<a name="patient-admit-source-moh-22"> </a></td><td>מדא מרשות ציבור</td></tr><tr><td style="white-space:nowrap">23<a name="patient-admit-source-moh-23"> </a></td><td>אמבולנס נתב''ג</td></tr><tr><td style="white-space:nowrap">24<a name="patient-admit-source-moh-24"> </a></td><td>רופא בית חולים</td></tr><tr><td style="white-space:nowrap">30<a name="patient-admit-source-moh-30"> </a></td><td>מד&quot;א</td></tr><tr><td style="white-space:nowrap">31<a name="patient-admit-source-moh-31"> </a></td><td>שח&quot;ל</td></tr><tr><td style="white-space:nowrap">32<a name="patient-admit-source-moh-32"> </a></td><td>נט&quot;ן</td></tr><tr><td style="white-space:nowrap">33<a name="patient-admit-source-moh-33"> </a></td><td>נ.ט.ל.י</td></tr><tr><td style="white-space:nowrap">34<a name="patient-admit-source-moh-34"> </a></td><td>טרם</td></tr><tr><td style="white-space:nowrap">35<a name="patient-admit-source-moh-35"> </a></td><td>לשכת בריאות</td></tr><tr><td style="white-space:nowrap">36<a name="patient-admit-source-moh-36"> </a></td><td>אמבולנס</td></tr><tr><td style="white-space:nowrap">38<a name="patient-admit-source-moh-38"> </a></td><td>פסיכיאטר מחוזי</td></tr><tr><td style="white-space:nowrap">39<a name="patient-admit-source-moh-39"> </a></td><td>ביקור רופא</td></tr><tr><td style="white-space:nowrap">40<a name="patient-admit-source-moh-40"> </a></td><td>צה&quot;ל</td></tr><tr><td style="white-space:nowrap">41<a name="patient-admit-source-moh-41"> </a></td><td>משטרה</td></tr><tr><td style="white-space:nowrap">42<a name="patient-admit-source-moh-42"> </a></td><td>צה&quot;ל-מזור</td></tr><tr><td style="white-space:nowrap">45<a name="patient-admit-source-moh-45"> </a></td><td>שרות בתי הסוהר</td></tr><tr><td style="white-space:nowrap">46<a name="patient-admit-source-moh-46"> </a></td><td>משרד הביטחון</td></tr><tr><td style="white-space:nowrap">47<a name="patient-admit-source-moh-47"> </a></td><td>רשות פלסטינאית</td></tr><tr><td style="white-space:nowrap">48<a name="patient-admit-source-moh-48"> </a></td><td>מאוחדת חיילים</td></tr><tr><td style="white-space:nowrap">49<a name="patient-admit-source-moh-49"> </a></td><td>לאומית חיילים</td></tr><tr><td style="white-space:nowrap">50<a name="patient-admit-source-moh-50"> </a></td><td>פניה עצמית</td></tr><tr><td style="white-space:nowrap">51<a name="patient-admit-source-moh-51"> </a></td><td>מעסיק/ת.עבודה</td></tr><tr><td style="white-space:nowrap">52<a name="patient-admit-source-moh-52"> </a></td><td>הפניה טלפונית</td></tr><tr><td style="white-space:nowrap">53<a name="patient-admit-source-moh-53"> </a></td><td>כללית חיילים</td></tr><tr><td style="white-space:nowrap">54<a name="patient-admit-source-moh-54"> </a></td><td>מכבי חיילים</td></tr><tr><td style="white-space:nowrap">55<a name="patient-admit-source-moh-55"> </a></td><td>כללית מכביה</td></tr><tr><td style="white-space:nowrap">56<a name="patient-admit-source-moh-56"> </a></td><td>ביקור רופא צה&quot;ל</td></tr><tr><td style="white-space:nowrap">57<a name="patient-admit-source-moh-57"> </a></td><td>מוקד רפואי ק&quot;ש</td></tr><tr><td style="white-space:nowrap">60<a name="patient-admit-source-moh-60"> </a></td><td>אחות בית ספר</td></tr><tr><td style="white-space:nowrap">61<a name="patient-admit-source-moh-61"> </a></td><td>תחנה לבריאות המ</td></tr><tr><td style="white-space:nowrap">62<a name="patient-admit-source-moh-62"> </a></td><td>שרותי רווחה</td></tr><tr><td style="white-space:nowrap">74<a name="patient-admit-source-moh-74"> </a></td><td>איחוד הצלה</td></tr><tr><td style="white-space:nowrap">85<a name="patient-admit-source-moh-85"> </a></td><td>קבלת אחסון גויה</td></tr><tr><td style="white-space:nowrap">98<a name="patient-admit-source-moh-98"> </a></td><td>מסוק</td></tr><tr><td style="white-space:nowrap">99<a name="patient-admit-source-moh-99"> </a></td><td>לא ידוע</td></tr><tr><td style="white-space:nowrap">Z1<a name="patient-admit-source-moh-Z1"> </a></td><td>הסבה-המשך טיפול</td></tr><tr><td style="white-space:nowrap">Z2<a name="patient-admit-source-moh-Z2"> </a></td><td>הסבה-מקופ&quot;ח</td></tr><tr><td style="white-space:nowrap">Z4<a name="patient-admit-source-moh-Z4"> </a></td><td>הסבה-פניה טלפון</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-08"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/patient-admit-source-moh"/>
+  <version value="0.13.2"/>
+  <name value="PatientAdmitSourceMoH"/>
+  <title value="Patient Admit Source MoH"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Moh Codes for Patient Admit Source"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://fhir.health.gov.il/ValueSet/patient-admit-source-moh"/>
+  <content value="example"/>
+  <concept>
+    <code value="1"/>
+    <display value="מוסד רפ' אחר"/>
+  </concept>
+  <concept>
+    <code value="2"/>
+    <display value="מוסד לא רפואי"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="אשפוז יום"/>
+  </concept>
+  <concept>
+    <code value="6"/>
+    <display value="מח' אשפוז בבי&quot;ח"/>
+  </concept>
+  <concept>
+    <code value="7"/>
+    <display value="ממיון בבי&quot;ח"/>
+  </concept>
+  <concept>
+    <code value="8"/>
+    <display value="ממרפאה בבי&quot;ח"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="כללית"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="מכבי"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="מאוחדת"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="לאומית"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="שר&quot;פ / מלר&quot;ם"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="ביטוח לאומי"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="לידה"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="ביקור רדיולוגיה"/>
+  </concept>
+  <concept>
+    <code value="19"/>
+    <display value="ביק. חוזר במיון"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="מרופא פרטי"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="מרפאת מהגרים"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="מדא מרשות ציבור"/>
+  </concept>
+  <concept>
+    <code value="23"/>
+    <display value="אמבולנס נתב''ג"/>
+  </concept>
+  <concept>
+    <code value="24"/>
+    <display value="רופא בית חולים"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="מד&quot;א"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="שח&quot;ל"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="נט&quot;ן"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="נ.ט.ל.י"/>
+  </concept>
+  <concept>
+    <code value="34"/>
+    <display value="טרם"/>
+  </concept>
+  <concept>
+    <code value="35"/>
+    <display value="לשכת בריאות"/>
+  </concept>
+  <concept>
+    <code value="36"/>
+    <display value="אמבולנס"/>
+  </concept>
+  <concept>
+    <code value="38"/>
+    <display value="פסיכיאטר מחוזי"/>
+  </concept>
+  <concept>
+    <code value="39"/>
+    <display value="ביקור רופא"/>
+  </concept>
+  <concept>
+    <code value="40"/>
+    <display value="צה&quot;ל"/>
+  </concept>
+  <concept>
+    <code value="41"/>
+    <display value="משטרה"/>
+  </concept>
+  <concept>
+    <code value="42"/>
+    <display value="צה&quot;ל-מזור"/>
+  </concept>
+  <concept>
+    <code value="45"/>
+    <display value="שרות בתי הסוהר"/>
+  </concept>
+  <concept>
+    <code value="46"/>
+    <display value="משרד הביטחון"/>
+  </concept>
+  <concept>
+    <code value="47"/>
+    <display value="רשות פלסטינאית"/>
+  </concept>
+  <concept>
+    <code value="48"/>
+    <display value="מאוחדת חיילים"/>
+  </concept>
+  <concept>
+    <code value="49"/>
+    <display value="לאומית חיילים"/>
+  </concept>
+  <concept>
+    <code value="50"/>
+    <display value="פניה עצמית"/>
+  </concept>
+  <concept>
+    <code value="51"/>
+    <display value="מעסיק/ת.עבודה"/>
+  </concept>
+  <concept>
+    <code value="52"/>
+    <display value="הפניה טלפונית"/>
+  </concept>
+  <concept>
+    <code value="53"/>
+    <display value="כללית חיילים"/>
+  </concept>
+  <concept>
+    <code value="54"/>
+    <display value="מכבי חיילים"/>
+  </concept>
+  <concept>
+    <code value="55"/>
+    <display value="כללית מכביה"/>
+  </concept>
+  <concept>
+    <code value="56"/>
+    <display value="ביקור רופא צה&quot;ל"/>
+  </concept>
+  <concept>
+    <code value="57"/>
+    <display value="מוקד רפואי ק&quot;ש"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="אחות בית ספר"/>
+  </concept>
+  <concept>
+    <code value="61"/>
+    <display value="תחנה לבריאות המ"/>
+  </concept>
+  <concept>
+    <code value="62"/>
+    <display value="שרותי רווחה"/>
+  </concept>
+  <concept>
+    <code value="74"/>
+    <display value="איחוד הצלה"/>
+  </concept>
+  <concept>
+    <code value="85"/>
+    <display value="קבלת אחסון גויה"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="מסוק"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="לא ידוע"/>
+  </concept>
+  <concept>
+    <code value="Z1"/>
+    <display value="הסבה-המשך טיפול"/>
+  </concept>
+  <concept>
+    <code value="Z2"/>
+    <display value="הסבה-מקופ&quot;ח"/>
+  </concept>
+  <concept>
+    <code value="Z4"/>
+    <display value="הסבה-פניה טלפון"/>
+  </concept>
+</CodeSystem>

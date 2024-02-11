@@ -1,0 +1,58 @@
+{
+  "resourceType" : "Medication",
+  "id" : "paracetamol",
+  "meta" : {
+    "profile" : ["http://fhir.health.gov.il/StructureDefinition/il-core-medication"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">500mg paracetamol, manufactured by TEVA pharma.</div>"
+  },
+  "code" : {
+    "coding" : [{
+      "system" : "http://israeldrugs.health.gov.il",
+      "code" : "020162053400",
+      "display" : "אקמול"
+    },
+    {
+      "system" : "http://www.whocc.no/atc",
+      "code" : "N02BE01",
+      "display" : "paracetamol"
+    }]
+  },
+  "manufacturer" : {
+    "reference" : "Organization/organization-ministry-of-health",
+    "type" : "Organization",
+    "display" : "TEVA PHARMACEUTICAL INDUSTRIES LTD, ISRAEL"
+  },
+  "form" : {
+    "coding" : [{
+      "system" : "http://snomed.info/sct",
+      "code" : "421026006",
+      "display" : "Oral tablet"
+    }]
+  },
+  "ingredient" : [{
+    "itemCodeableConcept" : {
+      "coding" : [{
+        "system" : "http://www.whocc.no/atc",
+        "code" : "N02BE01",
+        "display" : "paracetamol"
+      }]
+    },
+    "isActive" : true,
+    "strength" : {
+      "numerator" : {
+        "value" : 500,
+        "unit" : "מיליגרם",
+        "system" : "http://unitsofmeasure.org",
+        "code" : "mg"
+      },
+      "denominator" : {
+        "value" : 1,
+        "system" : "http://snomed.info/sct",
+        "code" : "428673006"
+      }
+    }
+  }]
+}

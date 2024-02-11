@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="il-core-not-performed-reason"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/il-core-not-performed-reason</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">not-performed-medical-reason<a name="il-core-not-performed-reason-not-performed-medical-reason"> </a></td><td>not performed medical reason</td><td>The value is not available because the observation procedure was not performed due to Medical Reason</td></tr><tr><td style="white-space:nowrap">not-performed-administrative-reason<a name="il-core-not-performed-reason-not-performed-administrative-reason"> </a></td><td>not performed administrative reason</td><td>The value is not available because the observation procedure was not performed due to Administrative Reason, e.g., observation cannot be measured because of a remote visit (telemedicine), absent practitioner (patient need EKG but no technician available), etc.</td></tr><tr><td style="white-space:nowrap">not-performed-equipment-reason<a name="il-core-not-performed-reason-not-performed-equipment-reason"> </a></td><td>not performed equipment reason</td><td>The value is not available because the observation procedure was not performed due to Equipment Reason, e.g., EKG malfunction, blood pressure monitor out of batteries, autoscope only available in adult size and the patient is two years old, etc</td></tr><tr><td style="white-space:nowrap">not-performed-patient-reason<a name="il-core-not-performed-reason-not-performed-patient-reason"> </a></td><td>not performed patient reason</td><td>The value is not available because the observation procedure was not performed due to Patient Reason e.g., patient refused to do the test, patient didn’t come etc.</td></tr></table></div>
+  </text>
+  <url value="http://fhir.health.gov.il/cs/il-core-not-performed-reason"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreNotPerformedReason"/>
+  <title value="IL Core Not Perfomed Reasons"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for reasons an observation was not made"/>
+  <caseSensitive value="false"/>
+  <valueSet value="http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="not-performed-medical-reason"/>
+    <display value="not performed medical reason"/>
+    <definition value="The value is not available because the observation procedure was not performed due to Medical Reason"/>
+  </concept>
+  <concept>
+    <code value="not-performed-administrative-reason"/>
+    <display value="not performed administrative reason"/>
+    <definition value="The value is not available because the observation procedure was not performed due to Administrative Reason, e.g., observation cannot be measured because of a remote visit (telemedicine), absent practitioner (patient need EKG but no technician available), etc."/>
+  </concept>
+  <concept>
+    <code value="not-performed-equipment-reason"/>
+    <display value="not performed equipment reason"/>
+    <definition value="The value is not available because the observation procedure was not performed due to Equipment Reason, e.g., EKG malfunction, blood pressure monitor out of batteries, autoscope only available in adult size and the patient is two years old, etc"/>
+  </concept>
+  <concept>
+    <code value="not-performed-patient-reason"/>
+    <display value="not performed patient reason"/>
+    <definition value="The value is not available because the observation procedure was not performed due to Patient Reason e.g., patient refused to do the test, patient didn’t come etc."/>
+  </concept>
+</CodeSystem>

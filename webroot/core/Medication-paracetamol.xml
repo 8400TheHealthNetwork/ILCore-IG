@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Medication xmlns="http://hl7.org/fhir">
+  <id value="paracetamol"/>
+  <meta>
+    <profile value="http://fhir.health.gov.il/StructureDefinition/il-core-medication"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">500mg paracetamol, manufactured by TEVA pharma.</div>
+  </text>
+  <code>
+    <coding>
+      <system value="http://israeldrugs.health.gov.il"/>
+      <code value="020162053400"/>
+      <display value="אקמול"/>
+    </coding>
+    <coding>
+      <system value="http://www.whocc.no/atc"/>
+      <code value="N02BE01"/>
+      <display value="paracetamol"/>
+    </coding>
+  </code>
+  <manufacturer>
+    <reference value="Organization/organization-ministry-of-health"/>
+    <type value="Organization"/>
+    <display value="TEVA PHARMACEUTICAL INDUSTRIES LTD, ISRAEL"/>
+  </manufacturer>
+  <form>
+    <coding>
+      <system value="http://snomed.info/sct"/>
+      <code value="421026006"/>
+      <display value="Oral tablet"/>
+    </coding>
+  </form>
+  <ingredient>
+    <itemCodeableConcept>
+      <coding>
+        <system value="http://www.whocc.no/atc"/>
+        <code value="N02BE01"/>
+        <display value="paracetamol"/>
+      </coding>
+    </itemCodeableConcept>
+    <isActive value="true"/>
+    <strength>
+      <numerator>
+        <value value="500"/>
+        <unit value="מיליגרם"/>
+        <system value="http://unitsofmeasure.org"/>
+        <code value="mg"/>
+      </numerator>
+      <denominator>
+        <value value="1"/>
+        <system value="http://snomed.info/sct"/>
+        <code value="428673006"/>
+      </denominator>
+    </strength>
+  </ingredient>
+</Medication>

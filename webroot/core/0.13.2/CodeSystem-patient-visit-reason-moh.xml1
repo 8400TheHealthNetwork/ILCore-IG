@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="patient-visit-reason-moh"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This case-insensitive code system <code>http://fhir.health.gov.il/cs/patient-visit-reason-moh</code> provides some codes <b>that are example only</b>:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">0<a name="patient-visit-reason-moh-0"> </a></td><td>לא רשום</td></tr><tr><td style="white-space:nowrap">1<a name="patient-visit-reason-moh-1"> </a></td><td>עם הפניה רפואית</td></tr><tr><td style="white-space:nowrap">4<a name="patient-visit-reason-moh-4"> </a></td><td>פינוי מד&quot;א</td></tr><tr><td style="white-space:nowrap">5<a name="patient-visit-reason-moh-5"> </a></td><td>סיוע לצוות מד&quot;א</td></tr><tr><td style="white-space:nowrap">10<a name="patient-visit-reason-moh-10"> </a></td><td>מחלה</td></tr><tr><td style="white-space:nowrap">11<a name="patient-visit-reason-moh-11"> </a></td><td>חולה אונקולוגי</td></tr><tr><td style="white-space:nowrap">12<a name="patient-visit-reason-moh-12"> </a></td><td>חולה המופיליה</td></tr><tr><td style="white-space:nowrap">13<a name="patient-visit-reason-moh-13"> </a></td><td>חולה דיאליזה</td></tr><tr><td style="white-space:nowrap">14<a name="patient-visit-reason-moh-14"> </a></td><td>חום עד גיל חודשיים</td></tr><tr><td style="white-space:nowrap">15<a name="patient-visit-reason-moh-15"> </a></td><td>חולה FC (סיסטיק פיברוזיס)</td></tr><tr><td style="white-space:nowrap">16<a name="patient-visit-reason-moh-16"> </a></td><td>חשד לקורונה</td></tr><tr><td style="white-space:nowrap">17<a name="patient-visit-reason-moh-17"> </a></td><td>חיובי לקורונה</td></tr><tr><td style="white-space:nowrap">18<a name="patient-visit-reason-moh-18"> </a></td><td>קורונה מבידוד בית</td></tr><tr><td style="white-space:nowrap">20<a name="patient-visit-reason-moh-20"> </a></td><td>לידה</td></tr><tr><td style="white-space:nowrap">21<a name="patient-visit-reason-moh-21"> </a></td><td>ילוד</td></tr><tr><td style="white-space:nowrap">22<a name="patient-visit-reason-moh-22"> </a></td><td>צירי לידה</td></tr><tr><td style="white-space:nowrap">30<a name="patient-visit-reason-moh-30"> </a></td><td>תאונת דרכים</td></tr><tr><td style="white-space:nowrap">31<a name="patient-visit-reason-moh-31"> </a></td><td>תאונת דרכים חוזר</td></tr><tr><td style="white-space:nowrap">32<a name="patient-visit-reason-moh-32"> </a></td><td>תאונת דרכים-עבודה</td></tr><tr><td style="white-space:nowrap">33<a name="patient-visit-reason-moh-33"> </a></td><td>תאונת דרכים-עבודה חוזר</td></tr><tr><td style="white-space:nowrap">34<a name="patient-visit-reason-moh-34"> </a></td><td>חשד לאירוע מוחי</td></tr><tr><td style="white-space:nowrap">35<a name="patient-visit-reason-moh-35"> </a></td><td>תאונת אופניים חשמליים</td></tr><tr><td style="white-space:nowrap">36<a name="patient-visit-reason-moh-36"> </a></td><td>תאונת קורקינט חשמלי</td></tr><tr><td style="white-space:nowrap">40<a name="patient-visit-reason-moh-40"> </a></td><td>תאונת עבודה</td></tr><tr><td style="white-space:nowrap">41<a name="patient-visit-reason-moh-41"> </a></td><td>תאונת עבודה חוזר</td></tr><tr><td style="white-space:nowrap">42<a name="patient-visit-reason-moh-42"> </a></td><td>חשיפת עובד בריאות</td></tr><tr><td style="white-space:nowrap">43<a name="patient-visit-reason-moh-43"> </a></td><td>כשירות למעצר</td></tr><tr><td style="white-space:nowrap">44<a name="patient-visit-reason-moh-44"> </a></td><td>טיפול בעציר</td></tr><tr><td style="white-space:nowrap">45<a name="patient-visit-reason-moh-45"> </a></td><td>לקיחת דם לרמת אלכוהול</td></tr><tr><td style="white-space:nowrap">46<a name="patient-visit-reason-moh-46"> </a></td><td>סיכון תוקפני</td></tr><tr><td style="white-space:nowrap">47<a name="patient-visit-reason-moh-47"> </a></td><td>חזרה ממוסד רפואי</td></tr><tr><td style="white-space:nowrap">48<a name="patient-visit-reason-moh-48"> </a></td><td>הוראת בית משפט</td></tr><tr><td style="white-space:nowrap">49<a name="patient-visit-reason-moh-49"> </a></td><td>טיפול TCE (נזע חשמלי)</td></tr><tr><td style="white-space:nowrap">50<a name="patient-visit-reason-moh-50"> </a></td><td>פעולת איבה</td></tr><tr><td style="white-space:nowrap">51<a name="patient-visit-reason-moh-51"> </a></td><td>פעולת איבה חוזר</td></tr><tr><td style="white-space:nowrap">52<a name="patient-visit-reason-moh-52"> </a></td><td>פיגוע חבלני</td></tr><tr><td style="white-space:nowrap">53<a name="patient-visit-reason-moh-53"> </a></td><td>פיגוע המוני</td></tr><tr><td style="white-space:nowrap">54<a name="patient-visit-reason-moh-54"> </a></td><td>פיגוע מלחמה</td></tr><tr><td style="white-space:nowrap">55<a name="patient-visit-reason-moh-55"> </a></td><td>פיגוע כימי</td></tr><tr><td style="white-space:nowrap">56<a name="patient-visit-reason-moh-56"> </a></td><td>פיגוע ביולוגי</td></tr><tr><td style="white-space:nowrap">57<a name="patient-visit-reason-moh-57"> </a></td><td>פיגוע קרינה</td></tr><tr><td style="white-space:nowrap">58<a name="patient-visit-reason-moh-58"> </a></td><td>הפרות סדר</td></tr><tr><td style="white-space:nowrap">59<a name="patient-visit-reason-moh-59"> </a></td><td>אסון רב נפגעים</td></tr><tr><td style="white-space:nowrap">60<a name="patient-visit-reason-moh-60"> </a></td><td>פגיעה מכוונת</td></tr><tr><td style="white-space:nowrap">61<a name="patient-visit-reason-moh-61"> </a></td><td>אלימות במשפחה</td></tr><tr><td style="white-space:nowrap">62<a name="patient-visit-reason-moh-62"> </a></td><td>תקיפה מינית</td></tr><tr><td style="white-space:nowrap">63<a name="patient-visit-reason-moh-63"> </a></td><td>תקיפה, קטטה</td></tr><tr><td style="white-space:nowrap">64<a name="patient-visit-reason-moh-64"> </a></td><td>ניסיון התאבדות</td></tr><tr><td style="white-space:nowrap">65<a name="patient-visit-reason-moh-65"> </a></td><td>פצע ירי</td></tr><tr><td style="white-space:nowrap">66<a name="patient-visit-reason-moh-66"> </a></td><td>דקירת סכין</td></tr><tr><td style="white-space:nowrap">67<a name="patient-visit-reason-moh-67"> </a></td><td>סיכון אובדני</td></tr><tr><td style="white-space:nowrap">68<a name="patient-visit-reason-moh-68"> </a></td><td>פגיעה עצמית מכוונת ללא כוונת התאבדות</td></tr><tr><td style="white-space:nowrap">69<a name="patient-visit-reason-moh-69"> </a></td><td>פגיעה מכוונת אחרת</td></tr><tr><td style="white-space:nowrap">70<a name="patient-visit-reason-moh-70"> </a></td><td>פגיעה לא מכוונת</td></tr><tr><td style="white-space:nowrap">71<a name="patient-visit-reason-moh-71"> </a></td><td>הרעלה</td></tr><tr><td style="white-space:nowrap">72<a name="patient-visit-reason-moh-72"> </a></td><td>כוויה</td></tr><tr><td style="white-space:nowrap">73<a name="patient-visit-reason-moh-73"> </a></td><td>נפילה, חבלה, חתך</td></tr><tr><td style="white-space:nowrap">74<a name="patient-visit-reason-moh-74"> </a></td><td>חדירת גוף זר (פרט לעין)</td></tr><tr><td style="white-space:nowrap">75<a name="patient-visit-reason-moh-75"> </a></td><td>מכת חום, חשמל</td></tr><tr><td style="white-space:nowrap">76<a name="patient-visit-reason-moh-76"> </a></td><td>טביעה</td></tr><tr><td style="white-space:nowrap">77<a name="patient-visit-reason-moh-77"> </a></td><td>שריפה</td></tr><tr><td style="white-space:nowrap">78<a name="patient-visit-reason-moh-78"> </a></td><td>שאיפה</td></tr><tr><td style="white-space:nowrap">79<a name="patient-visit-reason-moh-79"> </a></td><td>חבלה אחרת</td></tr><tr><td style="white-space:nowrap">80<a name="patient-visit-reason-moh-80"> </a></td><td>פגיעה אחרת</td></tr><tr><td style="white-space:nowrap">81<a name="patient-visit-reason-moh-81"> </a></td><td>פגיעת בעלי-חיים</td></tr><tr><td style="white-space:nowrap">82<a name="patient-visit-reason-moh-82"> </a></td><td>תאונת ספורט</td></tr><tr><td style="white-space:nowrap">83<a name="patient-visit-reason-moh-83"> </a></td><td>תאונת בית ספר</td></tr><tr><td style="white-space:nowrap">84<a name="patient-visit-reason-moh-84"> </a></td><td>תאונת גן</td></tr><tr><td style="white-space:nowrap">85<a name="patient-visit-reason-moh-85"> </a></td><td>גוף זר בעין</td></tr><tr><td style="white-space:nowrap">86<a name="patient-visit-reason-moh-86"> </a></td><td>שבר, תפירה, פריקה</td></tr><tr><td style="white-space:nowrap">87<a name="patient-visit-reason-moh-87"> </a></td><td>תאונת אופניים</td></tr><tr><td style="white-space:nowrap">89<a name="patient-visit-reason-moh-89"> </a></td><td>תאונה אחרת</td></tr><tr><td style="white-space:nowrap">90<a name="patient-visit-reason-moh-90"> </a></td><td>תלונות נפשיות</td></tr><tr><td style="white-space:nowrap">91<a name="patient-visit-reason-moh-91"> </a></td><td>קביעת מוות</td></tr><tr><td style="white-space:nowrap">92<a name="patient-visit-reason-moh-92"> </a></td><td>החמרה קלינית</td></tr><tr><td style="white-space:nowrap">93<a name="patient-visit-reason-moh-93"> </a></td><td>איזון תרופתי</td></tr><tr><td style="white-space:nowrap">94<a name="patient-visit-reason-moh-94"> </a></td><td>פסיכוסוציאלי</td></tr><tr><td style="white-space:nowrap">96<a name="patient-visit-reason-moh-96"> </a></td><td>הסבה</td></tr><tr><td style="white-space:nowrap">97<a name="patient-visit-reason-moh-97"> </a></td><td>חוות דעת משפטית</td></tr><tr><td style="white-space:nowrap">98<a name="patient-visit-reason-moh-98"> </a></td><td>התקבל מת</td></tr><tr><td style="white-space:nowrap">99<a name="patient-visit-reason-moh-99"> </a></td><td>לא ידוע</td></tr><tr><td style="white-space:nowrap">4A<a name="patient-visit-reason-moh-4A"> </a></td><td>תאונת עבודה-דקירה ממחט</td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate">
+    <valueDate value="2023-08"/>
+  </extension>
+  <url value="http://fhir.health.gov.il/cs/patient-visit-reason-moh"/>
+  <version value="0.13.2"/>
+  <name value="PatientVisitReasonMoH"/>
+  <title value="Patient Visit Reason MoH"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:10:55+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="Moh Codes for Patient Visit Reason"/>
+  <caseSensitive value="false"/>
+  <content value="example"/>
+  <concept>
+    <code value="0"/>
+    <display value="לא רשום"/>
+  </concept>
+  <concept>
+    <code value="1"/>
+    <display value="עם הפניה רפואית"/>
+  </concept>
+  <concept>
+    <code value="4"/>
+    <display value="פינוי מד&quot;א"/>
+  </concept>
+  <concept>
+    <code value="5"/>
+    <display value="סיוע לצוות מד&quot;א"/>
+  </concept>
+  <concept>
+    <code value="10"/>
+    <display value="מחלה"/>
+  </concept>
+  <concept>
+    <code value="11"/>
+    <display value="חולה אונקולוגי"/>
+  </concept>
+  <concept>
+    <code value="12"/>
+    <display value="חולה המופיליה"/>
+  </concept>
+  <concept>
+    <code value="13"/>
+    <display value="חולה דיאליזה"/>
+  </concept>
+  <concept>
+    <code value="14"/>
+    <display value="חום עד גיל חודשיים"/>
+  </concept>
+  <concept>
+    <code value="15"/>
+    <display value="חולה FC (סיסטיק פיברוזיס)"/>
+  </concept>
+  <concept>
+    <code value="16"/>
+    <display value="חשד לקורונה"/>
+  </concept>
+  <concept>
+    <code value="17"/>
+    <display value="חיובי לקורונה"/>
+  </concept>
+  <concept>
+    <code value="18"/>
+    <display value="קורונה מבידוד בית"/>
+  </concept>
+  <concept>
+    <code value="20"/>
+    <display value="לידה"/>
+  </concept>
+  <concept>
+    <code value="21"/>
+    <display value="ילוד"/>
+  </concept>
+  <concept>
+    <code value="22"/>
+    <display value="צירי לידה"/>
+  </concept>
+  <concept>
+    <code value="30"/>
+    <display value="תאונת דרכים"/>
+  </concept>
+  <concept>
+    <code value="31"/>
+    <display value="תאונת דרכים חוזר"/>
+  </concept>
+  <concept>
+    <code value="32"/>
+    <display value="תאונת דרכים-עבודה"/>
+  </concept>
+  <concept>
+    <code value="33"/>
+    <display value="תאונת דרכים-עבודה חוזר"/>
+  </concept>
+  <concept>
+    <code value="34"/>
+    <display value="חשד לאירוע מוחי"/>
+  </concept>
+  <concept>
+    <code value="35"/>
+    <display value="תאונת אופניים חשמליים"/>
+  </concept>
+  <concept>
+    <code value="36"/>
+    <display value="תאונת קורקינט חשמלי"/>
+  </concept>
+  <concept>
+    <code value="40"/>
+    <display value="תאונת עבודה"/>
+  </concept>
+  <concept>
+    <code value="41"/>
+    <display value="תאונת עבודה חוזר"/>
+  </concept>
+  <concept>
+    <code value="42"/>
+    <display value="חשיפת עובד בריאות"/>
+  </concept>
+  <concept>
+    <code value="43"/>
+    <display value="כשירות למעצר"/>
+  </concept>
+  <concept>
+    <code value="44"/>
+    <display value="טיפול בעציר"/>
+  </concept>
+  <concept>
+    <code value="45"/>
+    <display value="לקיחת דם לרמת אלכוהול"/>
+  </concept>
+  <concept>
+    <code value="46"/>
+    <display value="סיכון תוקפני"/>
+  </concept>
+  <concept>
+    <code value="47"/>
+    <display value="חזרה ממוסד רפואי"/>
+  </concept>
+  <concept>
+    <code value="48"/>
+    <display value="הוראת בית משפט"/>
+  </concept>
+  <concept>
+    <code value="49"/>
+    <display value="טיפול TCE (נזע חשמלי)"/>
+  </concept>
+  <concept>
+    <code value="50"/>
+    <display value="פעולת איבה"/>
+  </concept>
+  <concept>
+    <code value="51"/>
+    <display value="פעולת איבה חוזר"/>
+  </concept>
+  <concept>
+    <code value="52"/>
+    <display value="פיגוע חבלני"/>
+  </concept>
+  <concept>
+    <code value="53"/>
+    <display value="פיגוע המוני"/>
+  </concept>
+  <concept>
+    <code value="54"/>
+    <display value="פיגוע מלחמה"/>
+  </concept>
+  <concept>
+    <code value="55"/>
+    <display value="פיגוע כימי"/>
+  </concept>
+  <concept>
+    <code value="56"/>
+    <display value="פיגוע ביולוגי"/>
+  </concept>
+  <concept>
+    <code value="57"/>
+    <display value="פיגוע קרינה"/>
+  </concept>
+  <concept>
+    <code value="58"/>
+    <display value="הפרות סדר"/>
+  </concept>
+  <concept>
+    <code value="59"/>
+    <display value="אסון רב נפגעים"/>
+  </concept>
+  <concept>
+    <code value="60"/>
+    <display value="פגיעה מכוונת"/>
+  </concept>
+  <concept>
+    <code value="61"/>
+    <display value="אלימות במשפחה"/>
+  </concept>
+  <concept>
+    <code value="62"/>
+    <display value="תקיפה מינית"/>
+  </concept>
+  <concept>
+    <code value="63"/>
+    <display value="תקיפה, קטטה"/>
+  </concept>
+  <concept>
+    <code value="64"/>
+    <display value="ניסיון התאבדות"/>
+  </concept>
+  <concept>
+    <code value="65"/>
+    <display value="פצע ירי"/>
+  </concept>
+  <concept>
+    <code value="66"/>
+    <display value="דקירת סכין"/>
+  </concept>
+  <concept>
+    <code value="67"/>
+    <display value="סיכון אובדני"/>
+  </concept>
+  <concept>
+    <code value="68"/>
+    <display value="פגיעה עצמית מכוונת ללא כוונת התאבדות"/>
+  </concept>
+  <concept>
+    <code value="69"/>
+    <display value="פגיעה מכוונת אחרת"/>
+  </concept>
+  <concept>
+    <code value="70"/>
+    <display value="פגיעה לא מכוונת"/>
+  </concept>
+  <concept>
+    <code value="71"/>
+    <display value="הרעלה"/>
+  </concept>
+  <concept>
+    <code value="72"/>
+    <display value="כוויה"/>
+  </concept>
+  <concept>
+    <code value="73"/>
+    <display value="נפילה, חבלה, חתך"/>
+  </concept>
+  <concept>
+    <code value="74"/>
+    <display value="חדירת גוף זר (פרט לעין)"/>
+  </concept>
+  <concept>
+    <code value="75"/>
+    <display value="מכת חום, חשמל"/>
+  </concept>
+  <concept>
+    <code value="76"/>
+    <display value="טביעה"/>
+  </concept>
+  <concept>
+    <code value="77"/>
+    <display value="שריפה"/>
+  </concept>
+  <concept>
+    <code value="78"/>
+    <display value="שאיפה"/>
+  </concept>
+  <concept>
+    <code value="79"/>
+    <display value="חבלה אחרת"/>
+  </concept>
+  <concept>
+    <code value="80"/>
+    <display value="פגיעה אחרת"/>
+  </concept>
+  <concept>
+    <code value="81"/>
+    <display value="פגיעת בעלי-חיים"/>
+  </concept>
+  <concept>
+    <code value="82"/>
+    <display value="תאונת ספורט"/>
+  </concept>
+  <concept>
+    <code value="83"/>
+    <display value="תאונת בית ספר"/>
+  </concept>
+  <concept>
+    <code value="84"/>
+    <display value="תאונת גן"/>
+  </concept>
+  <concept>
+    <code value="85"/>
+    <display value="גוף זר בעין"/>
+  </concept>
+  <concept>
+    <code value="86"/>
+    <display value="שבר, תפירה, פריקה"/>
+  </concept>
+  <concept>
+    <code value="87"/>
+    <display value="תאונת אופניים"/>
+  </concept>
+  <concept>
+    <code value="89"/>
+    <display value="תאונה אחרת"/>
+  </concept>
+  <concept>
+    <code value="90"/>
+    <display value="תלונות נפשיות"/>
+  </concept>
+  <concept>
+    <code value="91"/>
+    <display value="קביעת מוות"/>
+  </concept>
+  <concept>
+    <code value="92"/>
+    <display value="החמרה קלינית"/>
+  </concept>
+  <concept>
+    <code value="93"/>
+    <display value="איזון תרופתי"/>
+  </concept>
+  <concept>
+    <code value="94"/>
+    <display value="פסיכוסוציאלי"/>
+  </concept>
+  <concept>
+    <code value="96"/>
+    <display value="הסבה"/>
+  </concept>
+  <concept>
+    <code value="97"/>
+    <display value="חוות דעת משפטית"/>
+  </concept>
+  <concept>
+    <code value="98"/>
+    <display value="התקבל מת"/>
+  </concept>
+  <concept>
+    <code value="99"/>
+    <display value="לא ידוע"/>
+  </concept>
+  <concept>
+    <code value="4A"/>
+    <display value="תאונת עבודה-דקירה ממחט"/>
+  </concept>
+</CodeSystem>

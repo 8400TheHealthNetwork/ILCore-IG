@@ -1,0 +1,227 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://fhir.health.gov.il/ConceptMap/ILCoreReligions> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ILCoreReligions"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Mapping from <a href=\"CodeSystem-il-core-religion-code.html\">http://fhir.health.gov.il/cs/il-core-religion-code</a> to <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ReligiousAffiliation.html\">http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation</a></p><p>DRAFT. Published on 2023-11-30 by Israel Core Team (Israel Core Team: <a href=\"mailto:ido.levin@moh.gov.il\">ido.levin@moh.gov.il</a>, Kippi Bordowitz: <a href=\"mailto:ido.levin@moh.gov.il\">ido.levin@moh.gov.il</a>). </p><div><p>Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation</p>\n</div><br/><p><b>Group 1</b>Mapping from <a href=\"CodeSystem-il-core-religion-code.html\">IL Core relirion code</a> to <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ReligiousAffiliation.html\">Religious Affiliation</a></p><table class=\"grid\"><tr><td colspan=\"2\"><b>Source Concept Details</b></td><td><b>Relationship</b></td><td colspan=\"2\"><b>Target Concept Details</b></td><td><b>Comment</b></td><td colspan=\"2\"><b>Properties</b></td></tr><tr><td colspan=\"2\"><b>Codes</b> from <a href=\"CodeSystem-il-core-religion-code.html\" title=\"http://fhir.health.gov.il/cs/il-core-religion-code\">IL Core relirion code</a></td><td/><td colspan=\"2\"><b>Codes</b> from <a href=\"http://terminology.hl7.org/5.3.0/CodeSystem-v3-ReligiousAffiliation.html\" title=\"http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation\">Religious Affiliation</a></td><td/></tr><tr><td style=\"border-right-width: 0px\">1</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1008</td><td style=\"border-left-width: 0px\">Babi &amp; Baha'I faiths</td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">2</td><td style=\"border-left-width: 0px\">שומרוני</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">10</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1026</td><td style=\"border-left-width: 0px\">Judaism</td><td/></tr><tr><td style=\"border-right-width: 0px\">20</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1049</td><td style=\"border-left-width: 0px\">Sunni (Islam)</td><td/></tr><tr><td style=\"border-right-width: 0px\">21</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1045</td><td style=\"border-left-width: 0px\">Shiite (Islam)</td><td/></tr><tr><td style=\"border-right-width: 0px\">22</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1013</td><td style=\"border-left-width: 0px\">Christian (non-Catholic, non-specific)</td><td/></tr><tr><td style=\"border-right-width: 0px\">40</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1036</td><td style=\"border-left-width: 0px\">Orthodox</td><td/></tr><tr><td style=\"border-right-width: 0px\">41</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1034</td><td style=\"border-left-width: 0px\">non-Roman Catholic</td><td/></tr><tr><td style=\"border-right-width: 0px\">42</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1077</td><td style=\"border-left-width: 0px\">Protestant</td><td/></tr><tr><td style=\"border-right-width: 0px\">45</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1005</td><td style=\"border-left-width: 0px\">Anglican</td><td/></tr><tr><td style=\"border-right-width: 0px\">46</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1041</td><td style=\"border-left-width: 0px\">Roman Catholic Church</td><td/></tr><tr><td style=\"border-right-width: 0px\">53</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\"/><td style=\"border-left-width: 0px\"></td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">54</td><td style=\"border-left-width: 0px\">נוצרי ארמני</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">57</td><td style=\"border-left-width: 0px\">נוצרי קופטי</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1009</td><td style=\"border-left-width: 0px\">Baptist</td><td>Coptic Christian</td></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">60</td><td style=\"border-left-width: 0px\">דרוזי</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr><tr><td style=\"border-right-width: 0px\">70</td><td style=\"border-left-width: 0px\">ללא דת</td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1059</td><td style=\"border-left-width: 0px\">Zen Buddhism</td><td>No Religious Affiliation</td></tr><tr><td style=\"border-right-width: 0px\">80</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1020</td><td style=\"border-left-width: 0px\">Hinduism</td><td/></tr><tr><td style=\"border-right-width: 0px\">81</td><td style=\"border-left-width: 0px\"></td><td><a href=\"http://hl7.org/fhir/R4/codesystem-concept-map-equivalence.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td style=\"border-right-width: 0px\">1047</td><td style=\"border-left-width: 0px\">Sikism</td><td/></tr><tr><td style=\"border-right-width: 0px; border-bottom-style: none\">90</td><td style=\"border-left-width: 0px\">קראי</td><td colspan=\"4\" style=\"background-color: #efefef\">(not mapped)</td></tr></table></div>"
+  ] ; # 
+  fhir:url [ fhir:v "http://hl7.org/fhir/ConceptMap/102"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.13.2"] ; # 
+  fhir:name [ fhir:v "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"] ; # 
+  fhir:title [ fhir:v "IL Core Religions"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v "false"^^xsd:boolean] ; # 
+  fhir:date [ fhir:v "2023-11-30"^^xsd:date] ; # 
+  fhir:publisher [ fhir:v "Israel Core Team"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Israel Core Team" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "Kippi Bordowitz" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "ido.levin@moh.gov.il" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"] ; # 
+  fhir:source [
+     fhir:v "http://fhir.health.gov.il/cs/il-core-religion-code"^^xsd:anyURI ;
+     fhir:link <http://fhir.health.gov.il/cs/il-core-religion-code>
+  ] ; # 
+  fhir:target [
+     fhir:v "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"^^xsd:anyURI ;
+     fhir:link <http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [ fhir:v "http://fhir.health.gov.il/cs/il-core-religion-code"^^xsd:anyURI ] ;
+     fhir:target [ fhir:v "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation"^^xsd:anyURI ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "1" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1008" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "2" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "10" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1026" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "20" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1049" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "21" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1045" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "22" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1013" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "40" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1036" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "41" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1034" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "42" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1077" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "45" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1005" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "46" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1041" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "53" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "54" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "57" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1009" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "Coptic Christian" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "58" ]
+     ] [
+       fhir:code [ fhir:v "60" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "70" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1059" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ] ;
+         fhir:comment [ fhir:v "No Religious Affiliation" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "80" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1020" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "81" ] ;
+       fhir:_target ( [
+         fhir:modifierExtension ( [
+           fhir:url [ fhir:v "http://hl7.org/fhir/1.0/StructureDefinition/extension-ConceptMap.element.target.equivalence"^^xsd:anyURI ] ;
+           fhir:value [ fhir:v "equivalent" ]
+         ] ) ;
+         fhir:code [ fhir:v "1047" ] ;
+         fhir:equivalence [ fhir:v "equivalent" ]
+       ] )
+     ] [
+       fhir:code [ fhir:v "82" ]
+     ] [
+       fhir:code [ fhir:v "90" ] ;
+       fhir:target ( [
+         fhir:equivalence [ fhir:v "unmatched" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

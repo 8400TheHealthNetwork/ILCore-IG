@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="il-core-allergy-intolerance-code"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p>This value set includes codes based on the following rules:</p><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-icd10.html"><code>http://hl7.org/fhir/sid/icd-10</code></a></li><li>Include all codes defined in <a href="http://terminology.hl7.org/5.3.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a></li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  418038007 (Propensity to adverse reactions to substance)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  716186003 (No known allergy (situation))</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  416098002 (Drug allergy)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  414285001 (Food allergy)</li><li>Include codes from <a href="http://www.snomed.org/"><code>http://snomed.info/sct</code></a> where concept  is-a  426232007 (Environmental allergy)</li><li>Import all the codes that are contained in <a href="ValueSet-icd9-cm-diagnoses.html">Icd9 Cm diagnoses</a></li><li>Import all the codes that are contained in <a href="ValueSet-icd9il-diagnoses.html">ICD9 IL Diagnoses</a></li><li>Import all the codes that are contained in <a href="ValueSet-il-core-substance.html">IL Core Substance Codes</a></li></ul></div>
+  </text>
+  <url value="http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code"/>
+  <version value="0.13.2"/>
+  <name value="ILCoreAllergyIntoleranceCode"/>
+  <title value="IL Core Allergy Intolerance Code"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2023-12-23T19:20:26+02:00"/>
+  <publisher value="Israel Core Team"/>
+  <contact>
+    <name value="Israel Core Team"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <contact>
+    <name value="Kippi Bordowitz"/>
+    <telecom>
+      <system value="email"/>
+      <value value="ido.levin@moh.gov.il"/>
+    </telecom>
+  </contact>
+  <description value="A list of codes for Allergy Intolerance for the IL Core"/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10"/>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="418038007"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="716186003"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="416098002"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="414285001"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://snomed.info/sct"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="426232007"/>
+      </filter>
+    </include>
+    <include>
+      <valueSet value="http://fhir.health.gov.il/ValueSet/icd9-cm-diagnoses"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.health.gov.il/ValueSet/icd9il-diagnoses"/>
+    </include>
+    <include>
+      <valueSet value="http://fhir.health.gov.il/ValueSet/il-core-substance"/>
+    </include>
+  </compose>
+</ValueSet>

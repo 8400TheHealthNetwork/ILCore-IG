@@ -1,0 +1,41 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "icd9il-diagnoses",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><ul><li>Include codes from <a href=\"CodeSystem-icd9il.html\"><code>http://fhir.health.gov.il/cs/icd9il</code></a> where type  =  diagnosis</li></ul></div>"
+  },
+  "url" : "http://fhir.health.gov.il/ValueSet/icd9il-diagnoses",
+  "version" : "0.13.2",
+  "name" : "ICD9ILDiagnoses",
+  "title" : "ICD9 IL Diagnoses",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2023-12-23T19:10:55+02:00",
+  "publisher" : "Israel Core Team",
+  "contact" : [{
+    "name" : "Israel Core Team",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  },
+  {
+    "name" : "Kippi Bordowitz",
+    "telecom" : [{
+      "system" : "email",
+      "value" : "ido.levin@moh.gov.il"
+    }]
+  }],
+  "description" : "codes of diagnoses from ICD9-IL",
+  "compose" : {
+    "include" : [{
+      "system" : "http://fhir.health.gov.il/cs/icd9il",
+      "filter" : [{
+        "property" : "type",
+        "op" : "=",
+        "value" : "diagnosis"
+      }]
+    }]
+  }
+}

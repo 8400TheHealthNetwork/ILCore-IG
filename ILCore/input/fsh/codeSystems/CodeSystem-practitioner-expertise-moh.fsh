@@ -13,122 +13,377 @@ Description: "קוד מומחיות לעוסק בבריאות לפי רישוי 
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-01"
 
-* #-999 "לא ידוע" "ערך ברירת מחדל במקרה שערך המומחיות לא קיים מאחר הגיע ריק"
+// add a column to the codesystem, called "profession"
+* ^property.code = #profession
+* ^property.uri = $practitioner-profession-moh
+* ^property.type = #Coding
+
+* #-999 "לא ידוע" "לא ידוע"
   * ^property.code = #status
-  * ^property[0].valueCode = #deprecated
-* #0 "ללא התמחות" "ערך ברירת מחדל כאשר ידוע כי לאיש המקצוע אין מומחיות מיוחדת במקצוע שלו"
-* #1 "רפואה פנימית" "מומחיות ברפואה פנימית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #2 "קרדיולוגיה" "מומחיות בקרדיולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #3 "המטולוגיה" "מומחיות בהמטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #4 "אלרגולוגיה ואימונולוגיה קלינית" "מומחיות באלרגולוגיה ואימונולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)" 
-* #5 "מחלות ריאה" "מומחיות במחלות ריאה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #6 "גסטרואנטרולוגיה" "מומחיות בגסטרואנטרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #7 "אנדוקרינולוגיה" "מומחיות באנדוקרינולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #8 "נפרולוגיה" "מומחיות בנפרולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #9 "רפואת ילדים" "מומחיות ברפואת ילדים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #10 "נוירולוגיה" "מומחיות בנוירולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #11 "פסיכיאטריה" "מומחיות בפסיכיאטריה שייכת לתחום בריאות הנפשב במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #12 "כירורגיה כללית" "מומחיות בכירורגיה כללית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #13 "נוירוכירורגיה" "מומחיות בנוירוכירורגיה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #14 "כירורגיה של בית החזה" "מומחיות בכירורגיה של בית החזה שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #15 "כירורגיה אורתופדית" "מומחיות בכירורגיה אורתופדית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #16 "כירורגיה פלסטית" "מומחיות בכירורגיה פלסטית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #17 "כירורגיה אורולוגית" "מומחיות בכירורגיה אורולוגית שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #18 "דרמטולוגיה-מחלות עור ומין" "מומחיות בדרמטולוגיה-מחלות עור ומין שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #19 "מחלות אף אוזן וגרון" "מומחיות במחלות אף אוזן וגרון שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #20 "מחלות עיניים" "מומחיות במחלות עיניים שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #21 "הרדמה" "מומחיות בהרדמה שייכת למקצוע הרפואה ולמקצוע רפואת שיניים (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #22 "יילוד וגינקולוגיה" "מומחיות ביילוד וגינקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #23 "רדיולוגיה אבחנתית" "מומחיות ברדיולוגיה אבחנתית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #24 "אונקולוגיה" "מומחיות באונקולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #25 "רפואת המשפחה" "מומחיות ברפואת המשפחה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #26 "בריאות הציבור" "מומחיות בבריאות הציבור שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #27 "רפואה פיסיקלית ושיקום" "מומחיות ברפואה פיסיקלית ושיקום שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #28 "מיקרוביולוגיה קלינית" "מומחיות במיקרוביולוגיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #29 "כימיה קלינית" "מומחיות בכימיה קלינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #30 "אנטומיה פתולוגית" "מומחיות באנטומיה פתולוגית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #31 "רפואה גרעינית" "מומחיות ברפואה גרעינית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #32 "גריאטריה" "מומחיות בגריאטריה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #33 "רפואה משפטית" "מומחיות ברפואה משפטית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #34 "פסיכיאטריה של הילד והמתבגר" "מומחיות בפסיכיאטריה של הילד והמתבגר שייכת לתחום בריאות הנפש במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #35 "מנהל רפואי" "מומחיות במנהל רפואי שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #36 "גנטיקה רפואית" "מומחיות בגנטיקה רפואית שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #37 "ניאונטולוגיה" "מומחיות בניאונטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #38 "כירורגית ילדים" "מומחיות בכירורגית ילדים שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #39 "כירורגיית פה ולסתות" "מומחיות בכירורגיית פה ולסתות שייכת למקצוע רפואת השיניים (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #40 "פדודונטיה (רפואת שיניים לילדים)" "מומחיות בפדודונטיה (רפואת שיניים לילדים) שייכת למקצוע תרפואת השיניים"
-* #41 "אורתודונטיה" "מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים"
-* #42 "פריודונטיה" "מומחיות בפריודונטיה שייכת למקצוע רפואת השיניים"
-* #43 "אנדודונטיה" "מומחיות באנדודונטיה שייכת למקצוע רפואת השיניים"
-* #44 "רפואת שיניים ציבורית" "מומחיות ברפואת שיניים ציבורית שייכת למקצוע רפואת השיניים"
-* #45 "רפואת הפה" "מומחיות ברפואת הפה שייכת למקצוע רפואת השיניים"
-* #46 "פתולוגיה אורלית" "מומחיות באורתודונטיה שייכת למקצוע רפואת השיניים"
-* #47 "שיקום פרוסתודונטי(שיקום הפה)" "מומחיות בשיקום פרוסתודונטי(שיקום הפה) שייכת למקצוע רפואת השיניים"
-* #48 "ראומטולוגיה" "מומחיות בראומטולוגיה שייכת למקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #49 "כירורגית חזה ולב" "מומחיות בכירורגית חזה ולב שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #51 "כירורגית כלי דם" "מומחיות בכירורגית כלי דם שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #52 "כירורגיה של היד" "מומחיתו בכירורגיה של היד שייכת לתחום הכירורגיה במקצוע הרפואה (אך יכולה להיות בשימוש למקצועות אחרים)"
-* #53 "פסיכולוגיה חברתית-תעסוקתית-ארגונית" "מומחיות בפסיכולוגיה חברתית-תעסוקתית-ארגונית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #54 "פסיכולוגיה חינוכית" "מומחיות בפסיכולוגיה חינוכית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #55 "פסיכולוגיה קלינית" "מומחיות בפסיכולוגיה קלינית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #56 "פסיכולוגיה קלינית באבחון" "מומחיות בפסיכולוגיה קלינית באבחון שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #57 "פסיכולוגיה קלינית בטיפול" "מומחיות בפסיכולוגיה קלינית בטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #58 "פסיכולוגיה שיקומית" "מומחיות בפסיכולוגיה שיקומית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #59 "רפואה תעסוקתית שייכת למקצוע הרפואה" "מומחיות ברפואה תעסוקתית"
-* #60 "פסיכולוגיה התפתחותית" "פסיכולוגיה התפתחותית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #61 "פסיכולוגיה קלינית באבחון ובטיפול" "פסיכולוגיה קלינית באבחון ובטיפול שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #63 "מקצועות מעבדה קליניים" "מומחיות במקצועות מעבדה קליניים שייכת למקצוע הרפואה"
-* #64 "מחלות זיהומיות" "מומחיות במחלות זיהומיות שייכת למקצוע הרפואה"
-* #65 "טיפול נמרץ כללי" "מומחיות בטיפול נמרץ כללי  שייכת למקצוע הרפואה"
-* #66 "נוירולוגיית ילדים" "מומחיות בנוירולוגיית ילדים שייכת למקצוע הרפואה"
-* #67 "גאסטרואנטרולוגיה ילדים" "מומחיות בגאסטרואנטרולוגיה ילדים שייכת למקצוע הרפואה"
-* #68 "מחלות ריאה ילדים" "מומחיות במחלות ריאה ילדים שייכת למקצוע הרפואה"
-* #69 "הימטואונקולוגיה ילדים" "מומחיות בהימטואונקולוגיה ילדים שייכת למקצוע הרפואה"
-* #70 "קרדיולוגיה ילדים" "מומחיות בקרדיולוגיה ילדים שייכת למקצוע הרפואה"
-* #71 "אימונולוגיה קלינית ילדים" "מומחיות באימונולוגיה קלינית ילדים שייכת למקצוע הרפואה"
-* #72 "אלרגולוגיה ילדים" "מומחיות באלרגולוגיה ילדים שייכת למקצוע הרפואה"
-* #73 "נפרולוגיה ילדים" "מומחיות בנפרולוגיה ילדים שייכת למקצוע הרפואה"
-* #74 "אנדוקרינולוגיה ילדים" "מומחיות באנדוקרינולוגיה ילדים שייכת למקצוע הרפואה"
-* #75 "איבחון או טיפול רפואי" "מומחיות באיבחון או טיפול רפואי  שייכת למקצוע הרפואה וכמו כן למקצוע רפואת השיניים"
-* #76 "איבחון או טיפול פסיכולוגי" "מומחיות באיבחון או טיפול פסיכולוגי שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #77 "מחקר מדעי בהיפנוזה" "מומחיות במחקר מדעי בהיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג"
-* #78 "הוראה מדעית בתחום ההיפנוזה" "מומחיות בהוראה מדעית בתחום ההיפנוזה שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג"
-* #79 "רענון זכרון במהלך חקירה משטרתית/בטחונית" "מומחיות ברענון זכרון במהלך חקירה משטרתית/בטחונית  שייכת למקצוע הרפואה למקצוע רפואת השיניים ולמקצוע הפסיכולוג"
-* #80 "טיפול נמרץ ילדים" "מומחיות בטיפול נמרץ ילדים שייכת למקצוע הרפואה"
-* #81 "פרמקולוגיה קלינית" "מומחיות בפרמקולוגיה קלינית שייכת למקצוע הרפואה"
-* #82 "רפואה דחופה" "מומחיות ברפואה דחופה שייכת למקצוע הרפואה"
-* #83 "פסיכולוגיה רפואית" "מומחיות בפסיכולוגיה רפואית שייכת לתחום בריאות הנפש במקצוע הפסיכולוג"
-* #84 "מחלות א.א.ג. וכירורגיית ראש-צוואר" "מומחיות במחלות א.א.ג. וכירורגיית ראש-צוואר  שייכת למקצוע הרפואה"
-* #85 "כירורגית לב" "מומחיות בכירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה"
-* #86 "שיקום הפה ושיקום פנים ולסתות" "מומחיות בשיקום הפה ושיקום פנים ולסתות שייכת למקצוע הרפואה"
-* #87 "ציטוגנטיקה קלינית" "מומחיות בציטוגנטיקה קלינית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי"
-* #88 "גנטיקה קלינית מוליקולרית/ביוכימית" "גנטיקה קלינית מוליקולרית/ביוכימית שייכת למקצוע הגנטיקה קלינית- יעוץ גנטי"
-* #89 "ייעוץ גנטי" "מומחיות בייעוץ גנטי שייכך למקצוע הגנטיקה קלינית- יעוץ גנטי"
-* #90 "נוירולוגית ילדים והתפתחות הילד" "מומחיות בנוירולוגית ילדים והתפתחות הילד שייכת למקצוע הרפואה"
-* #91 "טיפול תומך" "מומחיות בטיפול תומך שייכת לתחום הסיעוד במקצוע אח/ות מוסמכ/ת"
-* #92 "אונקולוגיה - מסלול אונקולוגיה רפואית" "מומחיות באונקולוגיה - מסלול אונקולוגיה רפואית שייכת למקצוע הרפואה"
-* #93 "אונקולוגיה - מסלול רדיותרפיה" "מומחיות באונקולוגיה - מסלול רדיותרפיה שייכת למקצוע הרפואה"
-* #94 "טיפול נמרץ קרדיולוגי" "מומחיות בטיפול נמרץ קרדיולוגי שייכת למקצוע הרפואה"
-* #95 "כירורגית בית החזה - מסלול כירורגית חזה כללית" "מומחיות בכירורגית בית החזה - מסלול כירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה"
-* #96 "כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית" "מומחיות בכירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית שייכת לתחום הכירורגיה במקצוע הרפואה"
-* #97 "כירורגית בית החזה - מסלול כירורגית לב" "מומחיות בכירורגית בית החזה - מסלול כירורגית לב שייכת לתחום הכירורגיה במקצוע הרפואה"
-* #98 "רפואה לשיכוך כאב" "מומחיות ברפואה לשיכוך כאב שייכת למקצוע הרפואה"
-* #99 "רפואה דחופה - מסלול מבוגרים" "מומחיות ברפואה דחופה - מסלול מבוגרים שייכת למקצוע הרפואה"
-* #100 "רפואה דחופה - מסלול ילדים" "מומחיות ברפואה דחופה - מסלול ילדים שייכת למקצוע הרפואה"
-* #101 "CBT פסיכותרפיה" "מומחיות בCBT פסיכותרפיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #102 "סוכרת" "מומחיות בסוכרת שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #103 "גריאטריה" "מומחיות בגריאטריה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #104 "רפואה פליאטיבית" "מומחיות ברפואה פליאטיבית שייכת למקצוע הרפואה"
-* #105 "בריאות הציבור מסלול אפידמיולוגיה" "מומחיות בבריאות הציבור מסלול אפידמיולוגיה שייכת למקצוע הרפואה"
-* #106 "ביוכימיה קלינית" "מומחיות בביוכימיה קלינית שייכת למקצוע הרפואה"
-* #107 "מחלות זיהומיות ילדים" "מומחיות במחלות זיהומיות ילדים שייכת למקצוע הרפואה"
-* #108 "פגים" "מומחיות בפגים שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #109 "כירורגיה" "מומחיות בכירורגיה שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #110 "בריאות הציבור במסלול שירותים קהילתיים" "מומחיות בבריאות הציבור במסלול שירותים קהילתיים שייכת למקצוע הרפואה"
-* #112 "כאב" "מומחיות בכאב שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #113 "שיקום" "מומחיות בשיקום שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #114 "מדיניות ומינהל בסיעוד" "מומחיות במדיניות ומינהל בסיעוד שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #115 "רפואה ראשונית" "מומחיות ברפואה ראשונית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
-* #116 "נוירופסיכאטריה" "מומחיות בנוירופסיכאטריה שייכת למקצוע הרפואה"
-* #117 "ראומטולוגיה מסלול ילדים" "מומחיות בראומטולוגיה מסלול ילדים שייכת למקצוע הרפואה"
-* #150 "פנימית" "מומחיות בפנימית שייכת לתחום הסיעוד למקצוע אח/ות מוסמכ/ת"
+  * ^property.valueCode = #deprecated
+* #0 "ללא התמחות" "ללא התמחות"
+  * ^property.code = #status
+  * ^property.valueCode = #deprecated
+
+* #1 "רפואה פנימית" "רפואה פנימית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #2 "קרדיולוגיה" "קרדיולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #3 "המטולוגיה" "המטולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #4 "אלרגולוגיה ואימונולוגיה קלינית" "אלרגולוגיה ואימונולוגיה קלינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #5 "מחלות ריאה" "מחלות ריאה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #6 "גסטרואנטרולוגיה" "גסטרואנטרולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #7 "אנדוקרינולוגיה" "אנדוקרינולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #8 "נפרולוגיה" "נפרולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #9 "רפואת ילדים" "רפואת ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #10 "נוירולוגיה" "נוירולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #11 "פסיכיאטריה" "פסיכיאטריה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #12 "כירורגיה כללית" "כירורגיה כללית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #13 "נוירוכירורגיה" "נוירוכירורגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #14 "כירורגיה של בית החזה" "כירורגיה של בית החזה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #15 "כירורגיה אורתופדית" "כירורגיה אורתופדית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #16 "כירורגיה פלסטית" "כירורגיה פלסטית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #17 "כירורגיה אורולוגית" "כירורגיה אורולוגית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #18 "דרמטולוגיה-מחלות עור ומין" "דרמטולוגיה-מחלות עור ומין"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #19 "מחלות אף אוזן וגרון" "מחלות אף אוזן וגרון"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #20 "מחלות עיניים" "מחלות עיניים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #21 "הרדמה" "הרדמה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#1 "רפואה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+// יש פה בעיה. הקוד מופיע פעמיים. פעם אחת "רפואה", פעם שניה "רפואת שיניים". מה עושים
+* #22 "יילוד וגינקולוגיה" "יילוד וגינקולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #23 "רדיולוגיה אבחנתית" "רדיולוגיה אבחנתית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #24 "אונקולוגיה" "אונקולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #25 "רפואת המשפחה" "רפואת המשפחה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #26 "בריאות הציבור" "בריאות הציבור"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #27 "רפואה פיסיקלית ושיקום" "רפואה פיסיקלית ושיקום"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #28 "מיקרוביולוגיה קלינית" "מיקרוביולוגיה קלינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #29 "כימיה קלינית" "כימיה קלינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #30 "אנטומיה פתולוגית" "אנטומיה פתולוגית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #31 "רפואה גרעינית" "רפואה גרעינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #32 "גריאטריה" "גריאטריה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #33 "רפואה משפטית" "רפואה משפטית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #34 "פסיכיאטריה של הילד והמתבגר" "פסיכיאטריה של הילד והמתבגר"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #35 "מנהל רפואי" "מנהל רפואי"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #36 "גנטיקה רפואית" "גנטיקה רפואית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #37 "ניאונטולוגיה" "ניאונטולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #38 "כירורגית ילדים" "כירורגית ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #39 "כירורגיית פה ולסתות" "כירורגיית פה ולסתות"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #40 "פדודונטיה (רפואת שיניים לילדים)" "פדודונטיה (רפואת שיניים לילדים)"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #41 "אורתודונטיה" "אורתודונטיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #42 "פריודונטיה" "פריודונטיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #43 "אנדודונטיה" "אנדודונטיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #44 "רפואת שיניים ציבורית" "רפואת שיניים ציבורית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #45 "רפואת הפה" "רפואת הפה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #46 "פתולוגיה אורלית" "פתולוגיה אורלית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #47 "שיקום פרוסתודונטי(שיקום הפה)" "שיקום פרוסתודונטי(שיקום הפה)"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #48 "ראומטולוגיה" "ראומטולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #49 "כירורגית חזה ולב" "כירורגית חזה ולב"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #51 "כירורגית כלי דם" "כירורגית כלי דם"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #52 "כירורגיה של היד" "כירורגיה של היד"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #53 "פסיכולוגיה חברתית-תעסוקתית-ארגונית" "פסיכולוגיה חברתית-תעסוקתית-ארגונית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #54 "פסיכולוגיה חינוכית" "פסיכולוגיה חינוכית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #55 "פסיכולוגיה קלינית" "פסיכולוגיה קלינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #56 "פסיכולוגיה קלינית באבחון" "פסיכולוגיה קלינית באבחון"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #57 "פסיכולוגיה קלינית בטיפול" "פסיכולוגיה קלינית בטיפול"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #58 "פסיכולוגיה שיקומית" "פסיכולוגיה שיקומית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #59 "רפואה תעסוקתית" "רפואה תעסוקתית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #60 "פסיכולוגיה התפתחותית" "פסיכולוגיה התפתחותית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #61 "פסיכולוגיה קלינית באבחון ובטיפול" "פסיכולוגיה קלינית באבחון ובטיפול"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #63 "מקצועות מעבדה קליניים" "מקצועות מעבדה קליניים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #64 "מחלות זיהומיות" "מחלות זיהומיות"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #65 "טיפול נמרץ כללי" "טיפול נמרץ כללי"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #66 "נוירולוגיית ילדים" "נוירולוגיית ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #67 "גאסטרואנטרולוגיה ילדים" "גאסטרואנטרולוגיה ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #68 "מחלות ריאה ילדים" "מחלות ריאה ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #69 "הימטואונקולוגיה ילדים" "הימטואונקולוגיה ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #70 "קרדיולוגיה ילדים" "קרדיולוגיה ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #71 "אימונולוגיה קלינית ילדים" "אימונולוגיה קלינית ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #72 "אלרגולוגיה ילדים" "אלרגולוגיה ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #73 "נפרולוגיה ילדים" "נפרולוגיה ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #74 "אנדוקרינולוגיה ילדים" "אנדוקרינולוגיה ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #75 "איבחון או טיפול רפואי" "איבחון או טיפול רפואי"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#1 "רפואה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #76 "איבחון או טיפול פסיכולוגי" "איבחון או טיפול פסיכולוגי"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #77 "מחקר מדעי בהיפנוזה" "מחקר מדעי בהיפנוזה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#1 "רפואה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #78 "הוראה מדעית בתחום ההיפנוזה" "הוראה מדעית בתחום ההיפנוזה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#1 "רפואה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #79 "רענון זכרון במהלך חקירה משטרתית/בטחונית" "רענון זכרון במהלך חקירה משטרתית/בטחונית"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#1 "רפואה"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+  * ^property[+].code = #profession
+  * ^property[=].valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #80 "טיפול נמרץ ילדים" "טיפול נמרץ ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #81 "פרמקולוגיה קלינית" "פרמקולוגיה קלינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #82 "רפואה דחופה" "רפואה דחופה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה" 
+* #83 "פסיכולוגיה רפואית" "פסיכולוגיה רפואית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#27 "פסיכולוג"
+* #84 "מחלות א.א.ג. וכירורגיית ראש-צוואר" "מחלות א.א.ג. וכירורגיית ראש-צוואר"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #85 "כירורגית לב" "כירורגית לב"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #86 "שיקום הפה ושיקום פנים ולסתות" "שיקום הפה ושיקום פנים ולסתות"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#2 "רפואת שיניים"
+* #87 "ציטוגנטיקה קלינית" "ציטוגנטיקה קלינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#30 "גנטיקה קלינית- יעוץ גנטי"
+* #88 "גנטיקה קלינית מוליקולרית/ביוכימית" "גנטיקה קלינית מוליקולרית/ביוכימית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#30 "גנטיקה קלינית- יעוץ גנטי"
+* #89 "ייעוץ גנטי" "ייעוץ גנטי"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#30 "גנטיקה קלינית- יעוץ גנטי"
+* #90 "נוירולוגית ילדים והתפתחות הילד" "נוירולוגית ילדים והתפתחות הילד"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #91 "טיפול תומך" "טיפול תומך"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #92 "אונקולוגיה - מסלול אונקולוגיה רפואית" "אונקולוגיה - מסלול אונקולוגיה רפואית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #93 "אונקולוגיה - מסלול רדיותרפיה" "אונקולוגיה - מסלול רדיותרפיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #94 "טיפול נמרץ קרדיולוגי" "טיפול נמרץ קרדיולוגי"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #95 "כירורגית בית החזה - מסלול כירורגית חזה כללית" "כירורגית בית החזה - מסלול כירורגית חזה כללית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #96 "כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית" "כירורגית בית החזה - מסלול כירורגית לב וכירורגית חזה כללית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #97 "כירורגית בית החזה - מסלול כירורגית לב" "כירורגית בית החזה - מסלול כירורגית לב"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #98 "רפואה לשיכוך כאב" "רפואה לשיכוך כאב"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #99 "רפואה דחופה - מסלול מבוגרים" "רפואה דחופה - מסלול מבוגרים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #100 "רפואה דחופה - מסלול ילדים" "רפואה דחופה - מסלול ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #101 "CBT פסיכותרפיה" "CBT פסיכותרפיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #102 "סוכרת" "סוכרת"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #103 "גריאטריה" "גריאטריה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #104 "רפואה פליאטיבית" "רפואה פליאטיבית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #105 "בריאות הציבור מסלול אפידמיולוגיה" "בריאות הציבור מסלול אפידמיולוגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #106 "ביוכימיה קלינית" "ביוכימיה קלינית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #107 "מחלות זיהומיות ילדים" "מחלות זיהומיות ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #108 "פגים" "פגים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #109 "כירורגיה" "כירורגיה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #110 "בריאות הציבור במסלול שירותים קהילתיים" "בריאות הציבור במסלול שירותים קהילתיים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #112 "כאב" "כאב"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #113 "שיקום" "שיקום"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #114 "מדיניות ומינהל בסיעוד" "מדיניות ומינהל בסיעוד"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #115 "רפואה ראשונית" "רפואה ראשונית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"
+* #116 "נוירופסיכאטריה" "נוירופסיכאטריה"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #117 "ראומטולוגיה מסלול ילדים" "ראומטולוגיה מסלול ילדים"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#1 "רפואה"
+* #150 "פנימית" "פנימית"
+  * ^property.code = #profession
+  * ^property.valueCoding = $practitioner-profession-moh#101 "אח/ות מוסמכ/ת"

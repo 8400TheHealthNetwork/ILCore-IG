@@ -1,6 +1,10 @@
 name: Deploy to AWS S3
 on:
   workflow_dispatch:
+    inputs:
+      run_id:
+        description: 'ID of the run workflow'
+        required: true
 
 jobs:
   deploy:
@@ -23,7 +27,8 @@ jobs:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.2
         with:
-          run-id: ${{ github.event.workflow_run.id }}
+          github-token: ${{ secrets.GH_PAT }}
+          run-id: ${{ github.event.inputs.id }}
 
       - name: Extract Files
         run: tar -xvf ILCore.tar

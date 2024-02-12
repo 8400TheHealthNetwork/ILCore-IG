@@ -31,4 +31,4 @@ jobs:
         run: tar -xvf FHIRILCoreTest/ILCore.tar
         
       - name: Deploy static site to S3 bucket
-        run: aws s3 sync ./FHIRILCoreTest/ILCore/output s3://igpublisher-static-dev --delete
+        run: aws s3 sync ./ILCore/output s3://igpublisher-static-dev --delete

@@ -1,5 +1,6 @@
 name: Deploy to AWS S3
 on:
+  workflow_dispatch:
   workflow_run:
     workflows: ["Integration Pipeline"]
     types:
@@ -8,7 +9,7 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    if: ${{ github.event.run.conclusion == 'success' }}
     steps:
       - name: Checkout
         uses: actions/checkout@v1
@@ -20,8 +21,14 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
 
+      - name: Get triggering Pipeline run ID
+        id: get_pipeline_run_id
+        run: echo "Pipeline Run ID:${{ github.event.workflow_run.id }}"
+
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.2
+        with:
+          run-id: ${{ github.event.workflow_run.id }}
 
       - name: Extract Files
         run: tar -xvf ILCore.tar

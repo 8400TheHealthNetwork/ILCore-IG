@@ -1,0 +1,38 @@
+name: Validation Pipeline
+
+on:
+  pull_request:
+    branches: [ "dev" ]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v2
+
+    - name: NPM Install fsh-sushi
+      run: |
+        npm install -g fsh-sushi
+        
+    - name: Setup Ruby
+      uses: actions/setup-ruby@v1
+      with:
+        runy-version: 3.1.3
+
+    - name: Install Jekyll and dependencies
+      run: |
+        gem install jekyll bundler
+
+    - name: Download Publisher
+      run: |
+        mkdir ./ILCore/input-cache/
+        curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./ILCore/input-cache/publisher.jar"
+
+    - name: Build Site
+      run: |
+        chmod +x ./ILCore/_genonce.sh
+        cd ILCore
+        ./_genonce.sh

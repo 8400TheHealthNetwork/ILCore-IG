@@ -27,7 +27,7 @@ jobs:
       - name: Download a Build Artifact
         uses: actions/download-artifact@v4.1.2
         with:
-          github-token: ${{ secrets.GH_PAT }}
+          github-token: ${{ secrets.GITHUB_TOKEN }}
           run-id: ${{ github.event.inputs.id }}
 
       - name: Extract Files

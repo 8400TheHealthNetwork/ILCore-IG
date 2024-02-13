@@ -19,8 +19,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 * basedOn only Reference(CarePlan or ILCoreServiceRequest or ILCoreMedicationRequest)
 * replaces only Reference(ILCoreServiceRequest)
 * category 1..*
-* category.coding
-* category.coding from $vs-il-core-service-category (extensible)
+* category from $vs-il-core-service-category (extensible)
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
@@ -31,7 +30,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
   * system = $sct
   * code 1..1
   * display 1..1
-* category[il-core] from $vs-il-core-service-category (required) // 26/11/23 this needs fixing. probably change the binding to the category elemet
+* category[il-core] from $vs-il-core-service-category (required)
 * code 1..1
 * code from $vs-il-core-procedure-code (extensible)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreLocation or ILCoreDevice)

@@ -3,6 +3,7 @@
 // IL-Core profiles
 Alias: $ILAddress =                     http://fhir.health.gov.il/StructureDefinition/il-core-address
 Alias: $ILAllergyIntolerance =          http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance
+Alias: $ILBP =                          http://fhir.health.gov.il/StructureDefinition/il-core-bp
 Alias: $ILCareTeam =                    http://fhir.health.gov.il/StructureDefinition/il-core-care-team
 Alias: $ILClaim =                       http://fhir.health.gov.il/StructureDefinition/il-core-claim
 Alias: $ILCondition =                   http://fhir.health.gov.il/StructureDefinition/il-core-condition
@@ -25,6 +26,7 @@ Alias: $ILLocation =                    http://fhir.health.gov.il/StructureDefin
 Alias: $ILMedia =                       http://fhir.health.gov.il/StructureDefinition/il-core-media
 Alias: $ILMedicationAdministration =    http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration
 Alias: $ILMedication =                  http://fhir.health.gov.il/StructureDefinition/il-core-medication
+Alias: $ILMedicationDispense =          http://fhir.health.gov.il/StructureDefinition/il-core-medication-dispense
 Alias: $ILMedicationRequest =           http://fhir.health.gov.il/StructureDefinition/il-core-medication-request
 Alias: $ILMedicationStatement =         http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement
 Alias: $ILObservation =                 http://fhir.health.gov.il/StructureDefinition/il-core-observation
@@ -41,6 +43,7 @@ Alias: $ILRelatedPerson =               http://fhir.health.gov.il/StructureDefin
 Alias: $ILServiceRequest =              http://fhir.health.gov.il/StructureDefinition/il-core-service-request
 Alias: $ILSubstance =                   http://fhir.health.gov.il/StructureDefinition/il-core-service-substance
 Alias: $ILSpecimen =                    http://fhir.health.gov.il/StructureDefinition/il-core-specimen
+Alias: $ILVitalSigns =                  http://fhir.health.gov.il/StructureDefinition/il-core-vital-signs
  
 // IDs & licenses
 Alias: $il-id =                         http://fhir.health.gov.il/identifier/il-national-id
@@ -81,6 +84,9 @@ Alias: $ext-statistical-area =          http://fhir.health.gov.il/StructureDefin
 Alias: $ext-qualification-practice =    http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice
 Alias: $ext-movement-sequence-number =  http://fhir.health.gov.il/StructureDefinition/ext-movement-number
 Alias: $ext-diagnostic-report-note =    http://fhir.health.gov.il/StructureDefinition/ext-diagnostic-report-note
+Alias: $ext-processing-location =       http://fhir.health.gov.il/StructureDefinition/ext-processing-location
+Alias: $ext-processing-practitioner =   http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner
+Alias: $ext-specimen-collector-reference = http://fhir.health.gov.il/StructureDefinition/ext-specimen-collector-reference
 
 // Extensions - external
 Alias: $ext-birth-place =               http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -158,12 +164,15 @@ Alias: $ucum =                          http://unitsofmeasure.org
 Alias: $yarpa-medication-code =         http://yarpa.co.il/catalog
 Alias: $pharmasoft-medication-code =    http://pharma-soft.co.il/catalog
 Alias: $moh-medication-code =           http://israeldrugs.health.gov.il
+Alias: $obs-cat =                       http://terminology.hl7.org/CodeSystem/observation-category
 // Alias: $moh-admit-source =              http://fhir.health.gov.il/ValueSet/moh-admit-source
 Alias: $country-codes  =                urn:iso:std:iso:3166
 // Alias: $urn =                           urn:ietf:rfc:3986  // created a new CS in IL-CORE section
 
 
 // ValueSets - ILcore
+Alias: $vs-bp-components =              http://fhir.health.gov.il/ValueSet/bp-components
+Alias: $vs-bp-unit =                    http://fhir.health.gov.il/ValueSet/bp-unit
 Alias: $vs-hmo =                        http://fhir.health.gov.il/ValueSet/israel-hmo
 Alias: $vs-city-code =                  http://fhir.health.gov.il/ValueSet/city-symbol
 Alias: $vs-tofes17-error-codes =         http://fhir.health.gov.il/ValueSet/tofes17-error-codes
@@ -203,6 +212,7 @@ Alias: $vs-il-core-medication-substance = http://fhir.health.gov.il/ValueSet/il-
 Alias: $vs-il-core-medication-request-category = http://fhir.health.gov.il/ValueSet/il-core-medication-request-category
 Alias: $vs-il-core-medication-statement-category = http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category
 Alias: $vs-il-core-medication-administration-category = http://fhir.health.gov.il/ValueSet/il-core-medication-administration-category
+Alias: $vs-il-core-medication-dispense-category = http://fhir.health.gov.il/ValueSet/il-core-medication-dospense-category
 Alias: $vs-il-core-medication-statement-code = http://fhir.health.gov.il/ValueSet/il-core-medication-statement-code
 Alias: $vs-il-core-medication-course-of-therapy-type = http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type
 Alias: $vs-il-core-manifestation =      http://fhir.health.gov.il/ValueSet/il-core-manifestation
@@ -214,6 +224,7 @@ Alias: $vs-il-core-religion-code =      http://fhir.health.gov.il/ValueSet/il-re
 Alias: $vs-il-core-substance =          http://fhir.health.gov.il/ValueSet/il-core-substance
 Alias: $vs-il-core-service-category =   http://fhir.health.gov.il/ValueSet/il-core-service-category
 Alias: $vs-il-core-service-type =       http://fhir.health.gov.il/ValueSet/il-core-service-type
+Alias: $vs-il-core-specimen-type =      http://fhir.health.gov.il/ValueSet/il-core-specimen-type
 Alias: $vs-il-core-procedure-code =     http://fhir.health.gov.il/ValueSet/il-core-procedure-code
 Alias: $vs-il-core-procedure-reason =   http://fhir.health.gov.il/ValueSet/il-core-procedure-reason
 Alias: $vs-il-core-route-code =         http://fhir.health.gov.il/ValueSet/il-core-route-code
@@ -248,6 +259,12 @@ Alias: $bodySite =                      http://hl7.org/fhir/ValueSet/body-site
 Alias: $vs-jurisdiction =               http://fhir.health.gov.il/ValueSet/il-core-jurisdiction  // this is a test!
 Alias: $language =                      http://hl7.org/fhir/ValueSet/languages
 Alias: $religion =                      http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
+Alias: $vital-signs-units =             http://hl7.org/fhir/ValueSet/ucum-vitals-common
+Alias: $vitalsigns =                    http://hl7.org/fhir/ValueSet/observation-vitalsignresult
+
+
+// ConceptMaps
+Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
 
 // TEMP ///////////////////
 Alias: $us-core-patient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient

@@ -1,7 +1,7 @@
 ValueSet: VaccineProductCode
 Id: vaccine-product-code
 Title: "Vaccine Product Codes"
-Description: "A list of codes for vaccine products from atc, YARPA and cvx codeSystems"
+Description: "A list of codes for vaccine products from ATC and cvx codeSystems"
 * ^url = $vs-vaccine-product-code
 * ^status = #draft
 * ^version = "0.13.0"

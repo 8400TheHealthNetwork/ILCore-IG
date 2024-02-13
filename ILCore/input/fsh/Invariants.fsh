@@ -106,11 +106,30 @@ Description: "dataAbsentReason - if an IL-Core 'not-performed-reason' code is su
 Expression: "coding.where(system='http://fhir.health.gov.il/cs/il-core-not-performed-reason').exists() implies coding.where(system='http://terminology.hl7.org/CodeSystem/data-absent-reason' and code='not-performed').exists()"
 Severity: #error
 
+Invariant: il-medicationdispense-whenhandedover
+Description: "whenHandedOver SHALL be present if the status is 'completed'"
+Expression: "status='completed' implies whenHandedOver.exists()"
+Severity: #error
+
 Invariant: il-obs-lab-value
 Description: "If value is empty, there SHOULD be references in hasMember"
 Expression: "value.empty() implies hasMember.exists()"
 Severity: #warning
 
+Invariant: il-vs1
+Description: "if Observation.effective[x] is dateTime and has a value then that value shall be precise to the day"
+Expression: "($this as dateTime).toString().length() >= 8"
+Severity: #error
+
+Invariant: il-vs2 
+Description: "If there is no component or hasMember element then either a value[x] or a data absent reason must be present."
+Expression: "(component.empty() and hasMember.empty()) implies (dataAbsentReason.exists() or value.exists())"
+Severity: #error
+
+Invariant: il-vs3
+Description: "If there is no a value a data absent reason must be present"
+Expression: "value.exists() or dataAbsentReason.exists()"
+Severity: #error
 
 // TEMP ////////////////////////
 Invariant: us-core-6

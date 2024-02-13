@@ -76,12 +76,12 @@ menu:
   קישורים נוספים:
     FHIR Spec: new-tab {{site.data.fhir.path}}index.html
     ILCore Community : new-tab https://en.fhir-il-community.org/fhir-israel-core
-  גרסאות : changes.html
+  הדרכות : 
+    מודול התרופות ב FHIR : medication-module.html
   הורדות : downloads.html
+  גרסאות : changes.html
   דוגמאות: examples.html
   משאבי FHIR: 
     פרופילים והרחבות : profiles-and-extensions.html
     טרמינולוגיה: terminology.html
-  הדרכה : 
-    מודול התרופות ב FHIR : medication-module.html
   בית: index.html

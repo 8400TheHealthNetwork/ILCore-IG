@@ -132,8 +132,6 @@ Check each slice for more specific details.
 * qualification.code from $vs-pract-certificate-type (extensible) // TODO - is this necessary? unclear = 13/12/21
 * qualification ^slicing.discriminator[0].type = #pattern
 * qualification ^slicing.discriminator[0].path = "code"
-* qualification ^slicing.discriminator[1].type = #value
-* qualification ^slicing.discriminator[1].path = "identifier.system"
 * qualification ^slicing.rules = #open
 * qualification contains
    moh-temp-practitioner-license 0..* and
@@ -149,17 +147,6 @@ Check each slice for more specific details.
 * qualification[moh-temp-practitioner-license] ^definition = """Temporary practitioner license issued by Israeli Ministry of Health \n 
 <mark>Note:</mark> identifier (מספר רישיון זמני למקצועות הבריאות) is <b>mandatory</b> and SHOULD include the profession-code, a dash (-) and a sequence number. I.e., \<profession-code\>-\<profession-certificate-number\> where profession-code is a value of <a href="https://simplifier.net/ilcore/practitioner-profession-moh-duplicate-2">PractitionerProfessionMoH</a>"""
 * qualification[moh-temp-practitioner-license].code = $pract-certificate-type-moh#1
-* qualification[moh-temp-practitioner-license].code.coding 1..*
-* qualification[moh-temp-practitioner-license].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[moh-temp-practitioner-license].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[moh-temp-practitioner-license].code.coding ^slicing.rules = #open
-* qualification[moh-temp-practitioner-license].code.coding contains default-slice 1..1
-* qualification[moh-temp-practitioner-license].code.coding[default-slice] = $pract-certificate-type-moh#1
-* qualification[moh-temp-practitioner-license].code.coding[default-slice].system 1..1
-* qualification[moh-temp-practitioner-license].code.coding[default-slice].system = $pract-certificate-type-moh (exactly)
-* qualification[moh-temp-practitioner-license].code.coding[default-slice].code 1..1
-* qualification[moh-temp-practitioner-license].code.coding[default-slice].code = #1 (exactly)
-* qualification[moh-temp-practitioner-license].code.coding[default-slice].display = "רשיון זמני" (exactly)
 * qualification[moh-temp-practitioner-license].identifier 1..*
 * qualification[moh-temp-practitioner-license].identifier.value obeys identifier-dash
 * qualification[moh-temp-practitioner-license].identifier.system 1..1
@@ -183,17 +170,6 @@ Check each slice for more specific details.
 * qualification[moh-practitioner-license] ^definition = """Permanent practitioner license issued by Israeli Ministry of Health \n 
 <mark>Note:</mark> identifier (מספר רישיון קבוע למקצועות הבריאות) is <b>mandatory</b> and SHOULD include the profession-code, a dash (-) and a sequence number. I.e., \<profession-code\>-\<profession-certificate-number\> where profession-code is a value of <a href="https://simplifier.net/ilcore/practitioner-profession-moh-duplicate-2">PractitionerProfessionMoH</a>"""
 * qualification[moh-practitioner-license].code = $pract-certificate-type-moh#2
-* qualification[moh-practitioner-license].code.coding 1..*
-* qualification[moh-practitioner-license].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[moh-practitioner-license].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[moh-practitioner-license].code.coding ^slicing.rules = #open
-* qualification[moh-practitioner-license].code.coding contains default-slice 1..1
-* qualification[moh-practitioner-license].code.coding[default-slice] = $pract-certificate-type-moh#2
-* qualification[moh-practitioner-license].code.coding[default-slice].system 1..1
-* qualification[moh-practitioner-license].code.coding[default-slice].system = $pract-certificate-type-moh (exactly)
-* qualification[moh-practitioner-license].code.coding[default-slice].code 1..1
-* qualification[moh-practitioner-license].code.coding[default-slice].code = #2 (exactly)
-* qualification[moh-practitioner-license].code.coding[default-slice].display = "רשיון קבוע" (exactly)
 * qualification[moh-practitioner-license].identifier 1..*
 * qualification[moh-practitioner-license].identifier.value obeys identifier-dash
 * qualification[moh-practitioner-license].identifier.system 1..1
@@ -218,17 +194,6 @@ Check each slice for more specific details.
 <mark>Note:</mark> <b>Practitioner:</b> identifier (מספר תעודת מומחה למקצועות הבריאות) is not mandatory and if exists, SHOULD be a sequence number only. I.e, \<expertise-certificate-number\> \n
 <b>Nurse:</b> identifier (מספר תעודת מומחה למקצועות הסיעוד) is <b>not mandatory</b> and if exists, SHOULD include the expertise-code, a dash (-) and a sequence number. I.e, \<expertise-code\>-\<expertise-certificate-number\> where expertise-code is a value of <a href="https://simplifier.net/ilcore/practitioner-expertise-moh-duplicate-2">PractitionerExpertiseMoH</a>"""
 * qualification[moh-expertise].code = $pract-certificate-type-moh#5
-* qualification[moh-expertise].code.coding 1..*
-* qualification[moh-expertise].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[moh-expertise].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[moh-expertise].code.coding ^slicing.rules = #open
-* qualification[moh-expertise].code.coding contains default-slice 1..1
-* qualification[moh-expertise].code.coding[default-slice] = $pract-certificate-type-moh#5
-* qualification[moh-expertise].code.coding[default-slice].system 1..1
-* qualification[moh-expertise].code.coding[default-slice].system = $pract-certificate-type-moh (exactly)
-* qualification[moh-expertise].code.coding[default-slice].code 1..1
-* qualification[moh-expertise].code.coding[default-slice].code = #5 (exactly)
-* qualification[moh-expertise].code.coding[default-slice].display = "תעודת מומחה" (exactly)
 * qualification[moh-expertise].identifier 0..*
 * qualification[moh-expertise].identifier.system 1..1
 * qualification[moh-expertise].identifier.value 1..1
@@ -274,17 +239,6 @@ Check each slice for more specific details.
 * qualification[moh-instructor] ^definition = """Practitioner instructor certificate issued by Israeli Ministry of Health.\n 
 <mark>Note:</mark> identifier (מספר תעודת מדריך) is <b>not mandatory</b> and if exists, SHOULD be a sequence number. I.e, <expertise-code>-<instructor-certificate-number>"""
 * qualification[moh-instructor].code = $pract-certificate-type-moh#13
-* qualification[moh-instructor].code.coding 1..*
-* qualification[moh-instructor].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[moh-instructor].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[moh-instructor].code.coding ^slicing.rules = #open
-* qualification[moh-instructor].code.coding contains default-slice 1..1
-* qualification[moh-instructor].code.coding[default-slice] = $pract-certificate-type-moh#13
-* qualification[moh-instructor].code.coding[default-slice].system 1..1
-* qualification[moh-instructor].code.coding[default-slice].system = $pract-certificate-type-moh (exactly)
-* qualification[moh-instructor].code.coding[default-slice].code 1..1
-* qualification[moh-instructor].code.coding[default-slice].code = #13 (exactly)
-* qualification[moh-instructor].code.coding[default-slice].display = "תעודת מדריך" (exactly)
 * qualification[moh-instructor].identifier 0..*
 * qualification[moh-instructor].identifier.system 1..1
 * qualification[moh-instructor].identifier.system = $practitioner-instructor (exactly)
@@ -308,17 +262,6 @@ Check each slice for more specific details.
 * qualification[moh-nurse-temp-permit] ^definition = """The slice is used for temporary licenses (temporary permit to practice nursing) for nurses only.\n 
 <mark>Note:</mark> identifier  (מספר רישיון זמני למקצועות הסיעוד) is mandatory and SHOULD be a sequence number only. I.e., \<temporary-permit-certificate-number\>"""
 * qualification[moh-nurse-temp-permit].code = $pract-certificate-type-moh#102
-* qualification[moh-nurse-temp-permit].code.coding 1..*
-* qualification[moh-nurse-temp-permit].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[moh-nurse-temp-permit].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[moh-nurse-temp-permit].code.coding ^slicing.rules = #open
-* qualification[moh-nurse-temp-permit].code.coding contains default-slice 1..1
-* qualification[moh-nurse-temp-permit].code.coding[default-slice] = $pract-certificate-type-moh#102
-* qualification[moh-nurse-temp-permit].code.coding[default-slice].system 1..1
-* qualification[moh-nurse-temp-permit].code.coding[default-slice].system = $pract-certificate-type-moh (exactly)
-* qualification[moh-nurse-temp-permit].code.coding[default-slice].code 1..1
-* qualification[moh-nurse-temp-permit].code.coding[default-slice].code = #102 (exactly)
-* qualification[moh-nurse-temp-permit].code.coding[default-slice].display = "היתר זמני" (exactly)
 * qualification[moh-nurse-temp-permit].identifier 1..*
 * qualification[moh-nurse-temp-permit].identifier.system 1..1
 * qualification[moh-nurse-temp-permit].identifier.system = $nurse-license-moh (exactly)
@@ -342,17 +285,6 @@ Check each slice for more specific details.
 * qualification[moh-nurse-registration-certificate] ^definition = """The slice is used for permanent licenses (permanent registration certificate to practice nursing) <b>for nurses only</b>.\n
 <mark>Note:</mark> identifier (מספר רישיון קבוע למקצועות הסיעוד) is <b>mandatory</b> and SHOULD be a sequence number only. I.e., \<permanent-registration-certificate-number\> """
 * qualification[moh-nurse-registration-certificate].code = $pract-certificate-type-moh#26
-* qualification[moh-nurse-registration-certificate].code.coding 1..*
-* qualification[moh-nurse-registration-certificate].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[moh-nurse-registration-certificate].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[moh-nurse-registration-certificate].code.coding ^slicing.rules = #open
-* qualification[moh-nurse-registration-certificate].code.coding contains default-slice 1..1
-* qualification[moh-nurse-registration-certificate].code.coding[default-slice] = $pract-certificate-type-moh#26
-* qualification[moh-nurse-registration-certificate].code.coding[default-slice].system 1..1
-* qualification[moh-nurse-registration-certificate].code.coding[default-slice].system = $pract-certificate-type-moh (exactly)
-* qualification[moh-nurse-registration-certificate].code.coding[default-slice].code 1..1
-* qualification[moh-nurse-registration-certificate].code.coding[default-slice].code = #26 (exactly)
-* qualification[moh-nurse-registration-certificate].code.coding[default-slice].display = "תעודת רישום" (exactly)
 * qualification[moh-nurse-registration-certificate].identifier 1..*
 * qualification[moh-nurse-registration-certificate].identifier.system 1..1
 * qualification[moh-nurse-registration-certificate].identifier.system = $nurse-license-moh (exactly)
@@ -376,17 +308,6 @@ Check each slice for more specific details.
 * qualification[moh-nurse-advanced-course] ^definition = """The slice is used for advanced course certifications (by healthcare specialty) for nurses only.\n
 <mark>Note:</mark> identifier (מספר תעודת קורס על בסיסי למקצועות הסיעוד) is <b>not mandatory</b> and if exists, SHOULD include the advanced-course-code, a dash (-) and permanent-registration-certificate-number (nurse license-number as the moh-nurse-registration-certificate identifier) <advanced-course-code>-<permanent-registration-certificate-number> where advanced-course-code is a value from <a href="https://simplifier.net/ilcore/practitioner-advanced-course-moh-duplicate-2">PractitionerAdvancedCourseMoH</a>. It means the identifier for different advanced course certificates for the same nurse will not be unique, but the practice-code will show the difference between them."""
 * qualification[moh-nurse-advanced-course].code = $pract-certificate-type-moh#110
-* qualification[moh-nurse-advanced-course].code.coding 1..*
-* qualification[moh-nurse-advanced-course].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[moh-nurse-advanced-course].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[moh-nurse-advanced-course].code.coding ^slicing.rules = #open
-* qualification[moh-nurse-advanced-course].code.coding contains default-slice 1..1
-* qualification[moh-nurse-advanced-course].code.coding[default-slice] = $pract-certificate-type-moh#110
-* qualification[moh-nurse-advanced-course].code.coding[default-slice].system 1..1
-* qualification[moh-nurse-advanced-course].code.coding[default-slice].system = $pract-certificate-type-moh (exactly)
-* qualification[moh-nurse-advanced-course].code.coding[default-slice].code 1..1
-* qualification[moh-nurse-advanced-course].code.coding[default-slice].code = #110 (exactly)
-* qualification[moh-nurse-advanced-course].code.coding[default-slice].display = "תעודת רישום קורס ע ב" (exactly)
 * qualification[moh-nurse-advanced-course].identifier 0..*
 * qualification[moh-nurse-advanced-course].identifier.system 1..1
 * qualification[moh-nurse-advanced-course].identifier.system = $nurse-advanced-course (exactly)
@@ -407,17 +328,6 @@ Check each slice for more specific details.
 * qualification[molsa-practitioner-sw-license].code = $pract-certificate-type-molsa#SW
 * qualification[molsa-practitioner-sw-license] ^short = "רישיון עבודה סוציאלית"
 * qualification[molsa-practitioner-sw-license] ^definition = "Social-worker license issued by Israeli Ministry of Labor, Social Affairs and Social Services"
-* qualification[molsa-practitioner-sw-license].code.coding 1..*
-* qualification[molsa-practitioner-sw-license].code.coding ^slicing.discriminator[0].type = #pattern
-* qualification[molsa-practitioner-sw-license].code.coding ^slicing.discriminator[0].path = "$this"
-* qualification[molsa-practitioner-sw-license].code.coding ^slicing.rules = #open
-* qualification[molsa-practitioner-sw-license].code.coding contains default-slice 1..1
-* qualification[molsa-practitioner-sw-license].code.coding[default-slice] = $pract-certificate-type-molsa#SW
-* qualification[molsa-practitioner-sw-license].code.coding[default-slice].system 1..1
-* qualification[molsa-practitioner-sw-license].code.coding[default-slice].system = $pract-certificate-type-molsa (exactly)
-* qualification[molsa-practitioner-sw-license].code.coding[default-slice].code 1..1
-* qualification[molsa-practitioner-sw-license].code.coding[default-slice].code = #SW (exactly)
-* qualification[molsa-practitioner-sw-license].code.coding[default-slice].display = "רישיון עבודה סוציאלית" (exactly)
 * qualification[molsa-practitioner-sw-license].identifier 1..*
 * qualification[molsa-practitioner-sw-license].identifier.system 1..1
 * qualification[molsa-practitioner-sw-license].identifier.system = $practitioner-license-molsa (exactly)

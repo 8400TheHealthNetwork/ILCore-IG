@@ -17,8 +17,8 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * . ^isModifier = false
 
 * status and category and code and subject and value[x] MS
-* basedOn only Reference(CarePlan or DeviceRequest or ImmunizationRecommendation or ILCoreMedicationRequest or NutritionOrder or ILCoreServiceRequest)
-* partOf only Reference(MedicationAdministration or MedicationDispense or ILCoreProcedure or ILCoreImmunization or ILCoreImagingStudy)
+* basedOn only Reference(CarePlan or DeviceRequest or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or NutritionOrder or ILCoreServiceRequest)
+* partOf only Reference(ILCoreMedicationAdministration or ILCoreMedicationDispense or ILCoreProcedure or ILCoreImmunization or ILCoreImagingStudy or ILCoreMedicationStatement)
 * code from $vs-il-core-observation-code (preferred)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreDevice or ILCoreLocation) 
 * encounter only Reference(ILCoreEncounter)

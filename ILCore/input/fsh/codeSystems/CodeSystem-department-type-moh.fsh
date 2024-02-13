@@ -14,6 +14,8 @@ Description: "Israel ministry of health coding system for department types"
 * ^extension[0].valueDate = "2023-01"
 
 * #10000 "אשפוז - פנימית" "אשפוז - פנימית"
+  * ^property.code =  #status
+  * ^property.valueCode =  #deprecated
 * #10010 "אשפוז - פנימית" "אשפוז - פנימית"
 * #10011 "אשפוז - פנימית א" "אשפוז - פנימית א"
 * #10012 "אשפוז - פנימית ב" "אשפוז - פנימית ב"

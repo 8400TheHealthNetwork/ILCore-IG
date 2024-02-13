@@ -35,6 +35,7 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * identifier[moh-inst-symbol] ^short = "MoH institute sympbol number"
 * identifier[moh-inst-symbol] ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - http://institutions.health.gov.il/Institutions"
 * identifier[moh-inst-symbol] ^mustSupport = true
+* identifier[moh-inst-symbol].system ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - http://institutions.health.gov.il/Institutions"
 * identifier[moh-inst-symbol].system = $moh-inst-symbol (exactly)
 * identifier[moh-inst-symbol].value ^short = "An MoH institute license number"
 
@@ -43,6 +44,7 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * identifier[legal-entity] ^short = "Israeli legal entity identifier (Hebrew -  ח.פ., מספר עמותה וכו)"
 * identifier[legal-entity] ^definition = "Unique identifier (9 digit unchangeable number) issued by Israeli legal authorities for Leagl entities of any organization, such as goverment institutes, ottoman assoc., non-profit organizations, private companies"
 * identifier[legal-entity] ^mustSupport = true
+* identifier[legal-entity].system ^definition = "Unique identifier (9 digit unchangeable number) issued by Israeli legal authorities for Leagl entities of any organization, such as goverment institutes, ottoman assoc., non-profit organizations, private companies"
 * identifier[legal-entity].system = $legal-entity (exactly)
 * identifier[legal-entity].value obeys nine-digits-chk
 * identifier[legal-entity].value ^short = "Israeli legal entity Identifier"
@@ -52,17 +54,19 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * identifier[moe-inst] ^short = "MoE institute symbol"
 * identifier[moe-inst] ^definition = "Institute symbol as issued by Israeli Ministry of Education (MoE). MoE portal - https://apps.education.gov.il/imsnet/itur.aspx"
 * identifier[moe-inst] ^mustSupport = false
+* identifier[moe-inst].system ^definition = "Institute symbol as issued by Israeli Ministry of Education (MoE). MoE portal - https://apps.education.gov.il/imsnet/itur.aspx"
 * identifier[moe-inst].system = $moe-inst (exactly)
 * identifier[moe-inst].value ^short = "An MoE institute symbol"
 
 * identifier[moh-hospital-department].system 1..1 MS
 * identifier[moh-hospital-department].value obeys il-organization-hosp-dept
 * identifier[moh-hospital-department].value 1..1 MS
-* identifier[moh-hospital-department] ^short = "MoE hospital department"
+* identifier[moh-hospital-department] ^short = "MoH hospital department"
 * identifier[moh-hospital-department] ^definition = "An institute (hospital) department identifier consisting of five alphanumeric cahracters, a hyphen (\"-\") and five alphanumeric cahracters once again"
 * identifier[moh-hospital-department] ^mustSupport = false
+* identifier[moh-hospital-department].system ^definition = "An institute (hospital) department identifier consisting of five alphanumeric cahracters, a hyphen (\"-\") and five alphanumeric cahracters once again"
 * identifier[moh-hospital-department].system = $moh-hosp-department (exactly)
-* identifier[moh-hospital-department].value ^short = "An MoE hospital depratment symbol"
+* identifier[moh-hospital-department].value ^short = "An MoH hospital depratment symbol"
 
 //active
 * active 0..1 MS

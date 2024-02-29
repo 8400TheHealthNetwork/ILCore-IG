@@ -1,0 +1,4 @@
+# Ignore all .git folders inside all directories
+**/.git
+.github
+README.md

@@ -21,7 +21,8 @@ RUN mkdir ./ILCore/input-cache/ && \
     curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./ILCore/input-cache/publisher.jar"
 
 RUN chmod +x ./ILCore/_genonce.sh && \
-    ./ILCore/_genonce.sh
+    cd ILCore && \
+    ./_genonce.sh
 
 RUN java -jar ./ILCore/input-cache/publisher.jar -go-publish -no-sushi -source ./ILCore -web ./webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history -templates ./webroot/templates
 

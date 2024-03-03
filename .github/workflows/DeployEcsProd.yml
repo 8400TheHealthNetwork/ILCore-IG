@@ -38,7 +38,7 @@ jobs:
         
     - name: Install jekyll & jre
       run: |
-        # apt-get update && \
+        sudo apt-get update && \
         sudo apt-get install -y curl gnupg ruby-full build-essential && \
         sudo gem install jekyll bundler && \
         sudo apt install default-jre -y

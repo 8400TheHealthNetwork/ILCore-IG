@@ -24,17 +24,30 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v3
 
-    - name: clone repos ig-history & ig-registry
-      run: |
-        git clone https://github.com/HL7/fhir-ig-history-template.git ig-history
-        git clone https://github.com/FHIR/ig-registry.git ig-registry
-
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v1
       with:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
+
+    - name: clone repos ig-history & ig-registry
+      run: |
+        git clone https://github.com/HL7/fhir-ig-history-template.git ig-history
+        git clone https://github.com/FHIR/ig-registry.git ig-registry
+        
+    - name: Install jekyll & jre
+      run: |
+        apt-get update && \
+        apt-get install -y curl gnupg ruby-full build-essential && \
+        gem install jekyll bundler && \
+        apt install default-jre -y
+
+    - name: Install sushi
+      run: |
+        apt-get install npm -y && \
+        apt-get install -y nodejs && \
+        npm install -g fsh-sushi -y
 
     - name: Login to Amazon ECR
       id: login-ecr

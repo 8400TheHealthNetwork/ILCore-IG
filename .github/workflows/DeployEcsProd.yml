@@ -8,7 +8,7 @@ env:
   ECR_REPOSITORY: igpublisher-backend-prod
   ECS_SERVICE: igpublisher-backend-prod
   ECS_CLUSTER: igpublisher
-  ECS_TASK_DEFINITION: igpublisher-backend-prod
+  ECS_TASK_DEFINITION: taskdef.json
   CONTAINER_NAME: igpublisher-backend-prod
 
 permissions:

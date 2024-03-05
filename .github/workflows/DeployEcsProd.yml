@@ -9,8 +9,7 @@ env:
   ECS_SERVICE: igpublisher-backend-prod
   ECS_CLUSTER: igpublisher
   ECS_TASK_DEFINITION: task-definition.json
-  CONTAINER_NAME: igpublisher-backend-prod
-
+  CONTAINER_NAME: main
 permissions:
   contents: read
 

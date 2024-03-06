@@ -1,7 +1,11 @@
 name: Deploy to Amazon ECS Production
-
+    
 on:
   workflow_dispatch:
+    inputs:
+      version:
+        description: 'latest version number'
+        required: true
 
 env:
   AWS_REGION: il-central-1
@@ -52,6 +56,11 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
+    - name: Create version folder
+      run: |
+        echo "Creating folder ${{ github.event.inputs.version }}"
+        mkdir ./webroot/${{ github.event.inputs.version }}
+        
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
       env:

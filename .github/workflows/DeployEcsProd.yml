@@ -105,4 +105,4 @@ jobs:
       run: |
         docker run -d --name backup igpublisher
         docker cp backup:/var/www/html /tmp/S3
-        aws s3 sync /tmp/S3 s3://igpublisher-static-prod --size-only
+        aws s3 sync /tmp/S3 s3://igpublisher-static-prod

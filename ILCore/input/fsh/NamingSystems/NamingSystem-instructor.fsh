@@ -9,7 +9,7 @@ Usage: #definition
 * publisher = "Israeli Ministry of Health"
 * responsible = "Israeli MoH"
 * type = $id-type#AC "Accreditation/Certification Identifier"
-* type.text = "Practitioner-instructor expertise accreditation number" //Is this correct?
+* type.text = "Practitioner-instructor expertise accreditation number"
 * description = "Identifies practitioner instructor according to Israeli MoH"
 * jurisdiction[0] = urn:iso:std:iso:3166#IL
 * usage = """SHOULD include a sequence number. I.e, \<expertise-certificate-number\>"""

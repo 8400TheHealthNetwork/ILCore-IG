@@ -48,13 +48,15 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
    il-id 0..1 and
    pna-id 0..1 and
    ppn 0..* and
+//    idf-sn 0..1 and
+   prisoner-id 0..1 and
    enc 0..*
 //    ppn-no-system 0..* 
 
-* identifier[il-id].value 1..1 MS
 * identifier[il-id] ^short = "Israeli National Identifier"
 * identifier[il-id] ^definition = "Israeli ID number (9 digit unchangeable number, including leading zeros and includes a control digit), including temporarily identification numbers assigned by Israeli National Insurance"
 * identifier[il-id] ^mustSupport = true
+* identifier[il-id].value 1..1 MS
 * identifier[il-id].value obeys il-id-chk
 * identifier[il-id].value ^short = "An Israeli ID number"
 * identifier[il-id].system 1..1 MS
@@ -64,10 +66,10 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * identifier[il-id].value ^example.label = "Valid Example"
 * identifier[il-id].assigner only Reference(ILCoreOrganization)
 
-* identifier[pna-id].value 1..1 MS
 * identifier[pna-id] ^short = "Palestinian National Identifier"
 * identifier[pna-id] ^definition = "Palestinian ID number"
 * identifier[pna-id] ^mustSupport = false
+* identifier[pna-id].value 1..1 MS
 * identifier[pna-id].value ^short = "A Palestininan ID number"
 * identifier[pna-id].system 1..1 MS
 * identifier[pna-id].system = $pna-id (exactly)
@@ -75,19 +77,44 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * identifier[pna-id].value ^example.valueString = "000000018"
 * identifier[pna-id].value ^example.label = "Valid Example"
 
-* identifier[ppn].system 1..1 MS
-* identifier[ppn].value 1..1 MS
 * identifier[ppn] ^short = "Passport Number"
 * identifier[ppn] ^definition = "Passport number" 
 * identifier[ppn] ^mustSupport = false
+* identifier[ppn].system 1..1 MS
+* identifier[ppn].value 1..1 MS
 * identifier[ppn].type = $id-type#PPN
 * identifier[ppn].value ^short = "Passport Number"
 * identifier[ppn].system from $vs-pp-uri (required)
 
-* identifier[enc].value 1..1 MS
+//THE FOLLOWING IS COMMENTED OUT UNTIL AN IDF SLICE IS DECIDED UPON - 04-MAR-2024 - KIPPI
+// * identifier[idf-sn] ^short = "IDF Service Number"
+// * identifier[idf-sn] ^definition = "Israel Defence forces Sevice number (6-8 digits number). A unique identifier for any soldier currently serving or having served in the IDF"
+// * identifier[idf-sn] ^mustSupport = true
+// * identifier[idf-sn].value 1..1 MS
+// * identifier[idf-sn].value obeys idf-num
+// * identifier[idf-sn].value ^short = "IDF service number"
+// * identifier[idf-sn].system 1..1 MS
+// * identifier[idf-sn].system = $idf-sn (exactly)
+// * identifier[idf-sn].value ^example.valueString = "1234567"
+// * identifier[idf-sn].value ^example.label = "Valid Example"
+// * identifier[idf-sn].assigner only Reference(ILCoreOrganization)
+
+* identifier[prisoner-id].value 1..1 MS
+* identifier[prisoner-id] ^short = "Prisoner Number"
+* identifier[prisoner-id] ^definition = "Israel Prison Service prisoner number (5-6 digits number). A unique identifier for any prisoner currently serving a prison sentence"
+* identifier[prisoner-id] ^mustSupport = true
+* identifier[prisoner-id].value obeys il-prison-num
+* identifier[prisoner-id].value ^short = "Prisoner Number"
+* identifier[prisoner-id].system 1..1 MS
+* identifier[prisoner-id].system = $prisoner-id (exactly)
+* identifier[prisoner-id].value ^example.valueString = "123456"
+* identifier[prisoner-id].value ^example.label = "Valid Example"
+* identifier[prisoner-id].assigner only Reference(ILCoreOrganization)
+
 * identifier[enc] ^short = "Person's Identifier - MoH encrypted"
 * identifier[enc] ^definition = "The person’s identifier after applying MoH’s standard primary encryption algorithm"
 * identifier[enc] ^mustSupport = false
+* identifier[enc].value 1..1 MS
 * identifier[enc].value ^short = "An encrypted identifier"
 * identifier[enc].system 1..1 MS
 * identifier[enc].system = $enc (exactly)

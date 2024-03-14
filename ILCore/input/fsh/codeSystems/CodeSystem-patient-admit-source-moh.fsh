@@ -1,7 +1,8 @@
 CodeSystem: PatientAdmitSourceMoH
 Id: patient-admit-source-moh
 Title: "Patient Admit Source MoH"
-Description: "Moh Codes for Patient Admit Source"
+Description: "Moh Codes for Patient Admit Source 
+ **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 
 * ^status = #draft
 * ^url = $patient-admit-source-moh
@@ -9,7 +10,7 @@ Description: "Moh Codes for Patient Admit Source"
 * ^valueSet = $vs-patient-admit-source-moh
 * ^version = "0.13.0"
 * ^caseSensitive = false
-* ^experimental = false
+* ^experimental = true
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-08"
 

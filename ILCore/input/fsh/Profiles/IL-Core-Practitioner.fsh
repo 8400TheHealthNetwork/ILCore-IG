@@ -30,7 +30,9 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
    molsa-sw-lic 0..1 and
    il-id 0..1 and
    pna-id 0..1 and
-   ppn 0..*
+   ppn 0..* 
+   // and
+   // idf-sn 0..1
 
 * identifier.assigner only Reference(ILCoreOrganization)
 * identifier[prac-lic] ^short = "Israeli Ministry of Health practitioner license"
@@ -72,10 +74,10 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[molsa-sw-lic].value ^example.label = "valid Israeli SW Licence example"
 * identifier[molsa-sw-lic].assigner only Reference(ILCoreOrganization)
 
-* identifier[il-id].value 1..1 MS
 * identifier[il-id] ^short = "Israeli National Identifier"
 * identifier[il-id] ^definition = "Israeli ID number (9 digit unchangeable number, including leading zeros and includes a control digit), including temporarily identification numbers assigned by Israeli National Insurance"
 * identifier[il-id] ^mustSupport = true
+* identifier[il-id].value 1..1 MS
 * identifier[il-id].value obeys il-id-chk
 * identifier[il-id].value ^short = "An Israeli ID number"
 * identifier[il-id].system 1..1 MS
@@ -84,10 +86,10 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[il-id] ^example.label = "Valid Israli ID number example"
 * identifier[il-id].assigner only Reference(ILCoreOrganization)
 
-* identifier[pna-id].value 1..1 MS
 * identifier[pna-id] ^short = "Palestinian National Identifier"
 * identifier[pna-id] ^definition = "Palestinian ID number"
 * identifier[pna-id] ^mustSupport = false
+* identifier[pna-id].value 1..1 MS
 * identifier[pna-id].value ^short = "A Palestininan ID number"
 * identifier[pna-id].system 1..1 MS
 * identifier[pna-id].system = $pna-id (exactly)
@@ -104,6 +106,18 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[ppn].value ^short = "Passport Number"
 * identifier[ppn].system from $vs-pp-uri (required)
 * identifier[ppn].assigner only Reference(ILCoreOrganization)
+
+// * identifier[idf-sn] ^short = "IDF Service Number"
+// * identifier[idf-sn] ^definition = "Israel Defence forces Sevice number (6-8 digits number). A unique identifier for any soldier currently serving or having served in the IDF"
+// * identifier[idf-sn] ^mustSupport = true
+// * identifier[idf-sn].value 1..1 MS
+// * identifier[idf-sn].value obeys idf-num
+// * identifier[idf-sn].value ^short = "IDF service number"
+// * identifier[idf-sn].system 1..1 MS
+// * identifier[idf-sn].system = $idf-sn (exactly)
+// * identifier[idf-sn].value ^example.valueString = "1234567"
+// * identifier[idf-sn].value ^example.label = "Valid Example"
+// * identifier[idf-sn].assigner only Reference(ILCoreOrganization)
 // * identifier[ppn].system ^example.valueCode = #http://hl7.org/fhir/sid/passport-USA
 // * identifier[ppn].system ^example.label = "General"
 

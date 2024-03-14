@@ -1,14 +1,15 @@
 CodeSystem: PatientVisitReasonMoH
 Id: patient-visit-reason-moh
 Title: "Patient Visit Reason MoH"
-Description: "Moh Codes for Patient Visit Reason"
+Description: "Moh Codes for Patient Visit Reason 
+ **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 
 * ^status = #draft
 * ^url = $patient-visit-reason-moh
 * ^content = #example
 * ^version = "0.13.0"
 * ^caseSensitive = false
-* ^experimental = false
+* ^experimental = true
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-08"
 

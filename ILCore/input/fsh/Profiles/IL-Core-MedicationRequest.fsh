@@ -45,6 +45,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationR
 * reportedReference only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson or ILCoreOrganization)
 * medication[x] 1..1
 * medicationCodeableConcept from $vs-il-core-medication-code (extensible)
+* medicationCodeableConcept.extension contains $ext-medication-dose-form named medication-form 0..1
 * medicationReference only Reference(ILCoreMedication)
 * subject only Reference(ILCorePatient or ILCoreGroup) 
 * encounter only Reference(ILCoreEncounter)

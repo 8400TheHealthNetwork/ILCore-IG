@@ -16,6 +16,7 @@ Description: "Israel Core proposed constraints and extensions on the Medication 
 * . ^definition = "Definitions for the profile-Medication resource profile."
 * . ^isModifier = false
 
+* extension contains $ext-narcotic-medication named narcotic 0..1
 * identifier.assigner only Reference(ILCoreOrganization)
 * code 1..1 MS
 * code from $vs-il-core-medication-code (extensible)

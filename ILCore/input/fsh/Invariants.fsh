@@ -23,13 +23,13 @@ Invariant: nine-digits-chk
 Description: "All legal entities must have a 9 digit identifier"
 Severity: #error
 Expression: 
-"matches('[0-9]{9}')"
+"matches('^\\d{9}$')"
 
 Invariant: il-id-chk
 Description: "Israeli ID must be 9-digits with a correct check-digit at the end."
 Severity: #error
 Expression: 
-"matches('[0-9]{9}') and
+"matches('^\\d{9}$') and
 substring(8,1).toInteger()=
 (10-((substring(0,1).toInteger() +
 substring(1,1).toInteger()*2 mod 10 +
@@ -130,6 +130,18 @@ Invariant: il-vs3
 Description: "If there is no a value a data absent reason must be present"
 Expression: "value.exists() or dataAbsentReason.exists()"
 Severity: #error
+
+Invariant: il-prison-num
+Description: "up to 8 digits prisoner number, allowing for hebrew characters"
+Severity: #error
+Expression: 
+"matches('^[a-zA-Z0-9_אבגדהוזחטי כלמנסעפצקרתשךףץ]{0,8}$')"
+
+Invariant: idf-num
+Description: "7 or 8 digit prisoner number"
+Severity: #error
+Expression: 
+"matches('^\\d{7,8}$')"
 
 // TEMP ////////////////////////
 Invariant: us-core-6

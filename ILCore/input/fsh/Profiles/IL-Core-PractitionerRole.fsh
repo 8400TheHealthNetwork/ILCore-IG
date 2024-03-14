@@ -25,5 +25,6 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * telecom.value 1..1 MS
 
 //location 
-* location only Reference(ILCoreLocation)  // how do we add cardinality?
+* location only Reference(ILCoreLocation)
+* location 1..1
 

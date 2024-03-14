@@ -33,9 +33,9 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * identifier[moh-inst-symbol].system 1..1 MS
 * identifier[moh-inst-symbol].value 1..1 MS
 * identifier[moh-inst-symbol] ^short = "MoH institute sympbol number"
-* identifier[moh-inst-symbol] ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - http://institutions.health.gov.il/Institutions"
+* identifier[moh-inst-symbol] ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - https://institutions.health.gov.il/Institutions"
 * identifier[moh-inst-symbol] ^mustSupport = true
-* identifier[moh-inst-symbol].system ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - http://institutions.health.gov.il/Institutions"
+* identifier[moh-inst-symbol].system ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - https://institutions.health.gov.il/Institutions"
 * identifier[moh-inst-symbol].system = $moh-inst-symbol (exactly)
 * identifier[moh-inst-symbol].value ^short = "An MoH institute license number"
 

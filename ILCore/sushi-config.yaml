@@ -14,12 +14,12 @@ status: draft
 jurisdiction: urn:iso:std:iso:3166#IL "Israel" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher: 
   name: Israel Core Team
-  email: ido.levin@moh.gov.il
+  email: tal.primak@moh.gov.il 
 contact:
-  - name: Kippi Bordowitz
+  - name: Tal Primak
     telecom:
       - system: email
-        value: ido.levin@moh.gov.il
+        value: tal.primak@moh.gov.il 
 description: Implementation guide for Israel Core FHIR
 license: CC0-1.0
 fhirVersion: 4.0.1
@@ -50,7 +50,8 @@ parameters:
     - http://yarpa.co.il/catalog
 
 copyrightYear: 2020+
-releaseLabel: ci-build
+#releaseLabel: ci-build
+releaseLabel: STU1
 dependencies:
   hl7.fhir.us.core:
     uri: http://hl7.org/fhir/us/core/ImplementationGuide/ig

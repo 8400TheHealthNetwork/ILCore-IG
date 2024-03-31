@@ -63,7 +63,7 @@ jobs:
 
     - name: Download older versions
       run: |
-        aws s3 sync s3://igpublisher-static-prod ./webroot/core --region eu-west-1
+        aws s3 sync s3://igpublisher-static-prod ./webroot/core --region eu-west-1 
         
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
@@ -110,4 +110,4 @@ jobs:
         docker run -d --name backup igpublisher
         docker cp backup:/var/www/html /tmp/S3
         find /tmp/S3 -maxdepth 1 -type f -delete
-        aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region eu-west-1
+        aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region eu-west-1 --exclude "*" --include "*/[0-9]*/*"

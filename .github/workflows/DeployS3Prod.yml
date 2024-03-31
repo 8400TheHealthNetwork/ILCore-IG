@@ -1,4 +1,4 @@
-name: Deploy to AWS S3 
+name: Deploy to AWS S3 Production
 on:
   workflow_dispatch:
 

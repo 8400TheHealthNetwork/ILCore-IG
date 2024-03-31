@@ -26,7 +26,7 @@ COPY . .
 
 RUN java -jar ./ILCore/input-cache/publisher.jar -go-publish -no-sushi -source ./ILCore -web ./webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history -templates ./webroot/templates
 
-Run sed -i 's/fhir.health.gov.il/igpublisher-backend-demo-lb-45293365.il-central-1.elb.amazonaws.com/g' ./webroot/core/StructureDefinition/il-core-patient/index.php
+Run sed -i 's/fhir.health.gov.il/igpublisher-backend-prod-lb-1854925777.il-central-1.elb.amazonaws.com/g' ./webroot/core/StructureDefinition/il-core-patient/index.php
 
 # Stage for Nginx
 FROM php:7.4-apache

@@ -56,7 +56,7 @@ jobs:
       run: |
         aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
         mv ./webroot/html ./webroot/core
-        latest=cat ./webroot/package-registry.json | jq '.packages[].latest.version'
+        latest=$(jq -r '.packages[].latest.version' ./webroot/package-registry.json)
         echo "Creating latest version folder $latest"
         mkdir ./webroot/$latest
         

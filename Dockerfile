@@ -43,7 +43,7 @@ RUN docker-php-ext-install mysqli pdo_mysql
 
 # Copy built Jekyll site from previous stage
 COPY --from=java /app/webroot/core /var/www/html
-COPY --from=java /app/webroot/*.json /tmp/S3
+COPY --from=java /app/webroot/*.json /var/www
 
 # Define environment variables
 ENV APACHE_DOCUMENT_ROOT /var/www/html

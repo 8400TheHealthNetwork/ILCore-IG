@@ -63,7 +63,7 @@ jobs:
 
     - name: Download older versions
       run: |
-        aws s3 sync s3://igpublisher-static-prod ./webroot/core --region eu-west-1 
+        aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1 
         
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
@@ -103,11 +103,11 @@ jobs:
         task-definition: ${{ steps.task-def.outputs.task-definition }}
         service: ${{ env.ECS_SERVICE }}
         cluster: ${{ env.ECS_CLUSTER }}
-        wait-for-service-stability: true
+        wait-for-service-stability: false
 
     - name: Copy version to S3
       run: |
         docker run -d --name backup igpublisher
-        docker cp backup:/var/www/html /tmp/S3
-        find /tmp/S3 -maxdepth 1 -type f -delete
+        docker cp backup:/var/www/html /tmp/S3/core
+        docker cp backup:/tmp/S3 /tmp/S3/
         aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region eu-west-1

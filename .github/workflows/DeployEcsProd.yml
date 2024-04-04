@@ -2,10 +2,6 @@ name: Deploy to Amazon ECS Production
     
 on:
   workflow_dispatch:
-    inputs:
-      version:
-        description: 'latest version number'
-        required: true
 
 env:
   AWS_REGION: il-central-1
@@ -56,14 +52,13 @@ jobs:
       id: login-ecr
       uses: aws-actions/amazon-ecr-login@v1
 
-    - name: Create version folder
-      run: |
-        echo "Creating folder ${{ github.event.inputs.version }}"
-        mkdir ./webroot/${{ github.event.inputs.version }}
-
     - name: Download older versions
       run: |
-        aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1 
+        aws s3 sync s3://igpublisher-static-prod ./webroot --region il-central-1
+        mv ./webroot/html ./webroot/core
+        $latest=$(cat package-registry.json | jq '.packages[].latest.version')
+        echo "Creating latest version folder $latest"
+        mkdir ./webroot/$latest
         
     - name: Build, tag, and push image to Amazon ECR
       id: build-image
@@ -109,4 +104,5 @@ jobs:
       run: |
         docker run -d --name backup igpublisher
         docker cp backup:/var/www /tmp/S3
-        aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region eu-west-1
+        find /tmp/S3 -maxdepth 1 -type f -delete
+        aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region il-central-1

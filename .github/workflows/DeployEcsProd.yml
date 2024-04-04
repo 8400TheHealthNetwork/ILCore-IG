@@ -55,10 +55,14 @@ jobs:
     - name: Download older versions
       run: |
         aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
-        mv ./webroot/html ./webroot/core
-        latest=$(jq -r '.packages[].latest.version' ./webroot/package-registry.json)
-        echo "Creating latest version folder $latest"
-        mkdir ./webroot/$latest
+        if [ -d "./webroot/html" ]; then
+          mv ./webroot/html ./webroot/core
+          latest=$(jq -r '.packages[].latest.version' ./webroot/package-registry.json)
+          echo "Creating latest version folder $latest"
+          mkdir ./webroot/$latest
+        else
+          echo "First Version"
+        fi
         
     - name: Build, tag, and push image to Amazon ECR
       id: build-image

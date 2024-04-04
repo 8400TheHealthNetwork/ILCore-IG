@@ -108,6 +108,5 @@ jobs:
     - name: Copy version to S3
       run: |
         docker run -d --name backup igpublisher
-        docker cp backup:/var/www/html /tmp/S3/core
-        docker cp backup:/tmp/S3 /tmp/S3/
+        docker cp backup:/var/www /tmp/S3
         aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region eu-west-1

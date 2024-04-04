@@ -7,7 +7,7 @@
 id: health.gov.il.fhir.core
 packageId: health.gov.il.fhir.core
 canonical: http://fhir.health.gov.il
-version: 0.13.2
+version: 0.14.2
 name: ILCoreImplementationGuide
 title: IL Core Implementation Guide
 status: draft

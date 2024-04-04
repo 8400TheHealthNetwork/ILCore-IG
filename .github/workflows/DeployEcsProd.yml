@@ -54,7 +54,7 @@ jobs:
 
     - name: Download older versions
       run: |
-        aws s3 sync s3://igpublisher-static-prod ./webroot --region il-central-1
+        aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
         mv ./webroot/html ./webroot/core
         $latest=$(cat package-registry.json | jq '.packages[].latest.version')
         echo "Creating latest version folder $latest"
@@ -105,4 +105,4 @@ jobs:
         docker run -d --name backup igpublisher
         docker cp backup:/var/www /tmp/S3
         find /tmp/S3 -maxdepth 1 -type f -delete
-        aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region il-central-1
+        aws s3 sync /tmp/S3 s3://igpublisher-static-prod --region eu-west-1

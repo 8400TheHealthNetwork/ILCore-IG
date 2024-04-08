@@ -5,16 +5,21 @@ Title: "ILCore ImmunizationReactionObservation Profile"
 Description: "Israel Core proposed constraints and extensions on the ImmunizationReactionObservation Resource"
 
 * ^url = $ILImmunizationReactionObs
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2022-05-16"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore ImmunizationReactionObservation Profile"
-* . ^definition = "Definitions for the profile-ImmunizationReactionObservation resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the ImmunizationReactionObservation resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * partOf only Reference(ILCoreImmunization) 
 * code.coding 1..1

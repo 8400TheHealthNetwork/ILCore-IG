@@ -6,15 +6,20 @@ Title: "ILCore Dosage Profile"
 Description: "Adds several Israel-specific extensions and constraints to the Dosage datatype"
 
 * ^url = $ILDosage
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2023-03-06"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * ^contact[0].telecom[0].use = #work
 * ^jurisdiction[0] = urn:iso:std:iso:3166#IL
 * ^copyright = "Israeli Ministry of Health" 
+* . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
 
 * text MS
 * additionalInstruction ^binding.strength = #extensible

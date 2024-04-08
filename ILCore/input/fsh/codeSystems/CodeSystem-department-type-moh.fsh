@@ -4,7 +4,7 @@ Title: "Department Type MoH"
 Description: "Israel ministry of health coding system for department types"
 * ^status = #draft
 * ^url = $department-type-moh
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^content = #complete
 * ^valueSet = $vs-department-type-moh
 * ^caseSensitive = false

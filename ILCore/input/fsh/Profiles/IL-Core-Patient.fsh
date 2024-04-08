@@ -6,16 +6,21 @@ Title: "ILCore Patient Profile"
 Description: "Israel Core Proposed constraints and extensions on the Patient Resource."
 
 * ^url = $ILPatient
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-01-30"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore Patient profile"
 * . ^definition = "The Patient Profile is based upon the core FHIR Patient Resource"
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * extension contains
     ext-il-hmo named hmo 0..1 and
@@ -149,3 +154,11 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * generalPractitioner only Reference(ILCoreOrganization or ILCorePractitioner or ILCorePractitionerRole)
 * managingOrganization only Reference(ILCoreOrganization)
 * link.other only Reference(ILCorePatient or ILCoreRelatedPerson)
+
+* contact ^slicing.discriminator.type = #pattern
+* contact ^slicing.discriminator.path = "relationship"
+* contact ^slicing.rules = #open
+* contact contains Parent 0..*
+* contact[Parent].relationship.coding ^patternCoding = http://terminology.hl7.org/CodeSystem/v2-0131#PAR
+// * contact[Child].relationship.coding ^patternCoding = {system: "http://terminology.hl7.org/CodeSystem/v2-0131", code: "CHD"}
+

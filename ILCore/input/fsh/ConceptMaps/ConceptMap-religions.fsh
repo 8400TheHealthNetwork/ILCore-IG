@@ -4,14 +4,14 @@ Usage: #definition
 Title: "IL Core Religions"
 Description: "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"
 * url = $concept-religion
-* version = "0.13.0"
+* version = "0.14.0"
 * name = "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"
 * status = #draft
 * experimental = false
 * date = "2023-11-30"
 * publisher = "Israeli Ministry of Health"
 * contact[0].telecom.system = #email
-* contact[=].telecom.value = "ido.levin@moh.gov.il" 
+* contact[=].telecom.value = "tal.primak@moh.gov.il" 
 * sourceCanonical = $il-core-religion-code
 * targetCanonical = $religion
 * group.source = $il-core-religion-code

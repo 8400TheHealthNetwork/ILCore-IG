@@ -5,16 +5,21 @@ Title: "ILCore MedicationDispense Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationDispense Resource"
 
 * ^url = $ILMedicationDispense
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2023-05-18"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore MedicationDispense Profile"
-* . ^definition = "Definitions for the profile-MedicationDispense resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the MedicationDispense resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * obeys il-medicationdispense-whenhandedover
 * status and medication[x] and subject and performer and performer.actor and authorizingPrescription and type and quantity and whenHandedOver and dosageInstruction MS

@@ -8,7 +8,7 @@ Description: "MoH Codes for Patient Mode of Arrival
 * ^url = $patient-mode-of-arrival-moh
 * ^content = #example
 * ^valueSet = $vs-patient-mode-of-arrival-moh
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^caseSensitive = false
 * ^experimental = true
 

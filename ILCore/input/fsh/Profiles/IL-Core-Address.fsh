@@ -6,16 +6,21 @@ Title: "ILCore Address Profile"
 Description: "Adds several Israel-specific extensions and constraints, plus geocode extension to the Address datatype"
 
 * ^url = $ILAddress
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-02-25"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * ^contact[0].telecom[0].use = #work
 * ^jurisdiction[0] = urn:iso:std:iso:3166#IL
 * ^copyright = "Israeli Ministry of Health" 
-// * . obeys mikud-chk
+* . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * extension contains
     $geolocation named geolocation 0..1 and

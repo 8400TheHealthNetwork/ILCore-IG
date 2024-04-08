@@ -5,16 +5,21 @@ Title: "ILCore Specimen Profile"
 Description: "Israel Core proposed constraints and extensions on the Specimen Resource"
 
 * ^url = $ILSpecimen
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2023-12-13"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore Specimen Profile"
-* . ^definition = "Definitions for the profile-Specimen resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the Specimen resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 
 * extension contains 
     $ext-processing-location named processing-location 0..* and
@@ -22,7 +27,7 @@ Description: "Israel Core proposed constraints and extensions on the Specimen Re
 * type MS 
 * type 1..1
 * type from $vs-il-core-specimen-type (extensible)
-* subject only Reference(ILCorePatient or ILCoreGroup or ILCoreDevice or Substance or ILCoreLocation)
+* subject only Reference(ILCorePatient or ILCoreGroup or ILCoreDevice or ILCoreSubstance or ILCoreLocation)
 // the following lines make Patient MS and the rest not. Not clear if 27-28 are enough or all lines to 36 are required
 * subject ^type.targetProfile[0].extension.url = "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support"
 * subject ^type.targetProfile[=].extension.valueBoolean = true

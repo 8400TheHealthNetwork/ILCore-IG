@@ -5,16 +5,21 @@ Title: "ILCore FamilyMemberHistory Profile"
 Description: "Israel Core proposed constraints and extensions on theILCoreFamilyMemberHistory Resource"
 
 * ^url = $ILFamilyMemberHistory
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-05-02"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore FamilyMemberHistory Profile"
-* . ^definition = "Definitions for the profile-FamilyMemberHistory resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the FamilyMemberHistory resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 
 * patient only Reference(ILCorePatient)
-* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreAllergyIntolerance or ILCoreQuestionnaireResponse or ILCoreDiagnosticReport or DocumentReference)
+* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreAllergyIntolerance or ILCoreQuestionnaireResponse or ILCoreDiagnosticReport or ILCoreDocumentReference)

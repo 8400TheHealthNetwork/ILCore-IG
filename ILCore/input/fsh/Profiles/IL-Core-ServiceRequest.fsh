@@ -5,15 +5,20 @@ Title: "ILCore ServiceRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the ServiceRequest Resource"
 
 * ^url = $ILServiceRequest
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-05-02"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * . ^short = "ILCore ServiceRequest Profile"
-* . ^definition = "Definitions for the profile-ServiceRequest resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the ServiceRequest resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * status and intent and category and code and subject and occurrence[x] and occurrenceDateTime and occurrencePeriod and authoredOn and requester and reasonCode MS
 * basedOn only Reference(CarePlan or ILCoreServiceRequest or ILCoreMedicationRequest)
@@ -39,8 +44,8 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 * occurrenceDateTime.extension[relative-date] ^short = "Extension: Relative Date Criteria"
 * occurrenceDateTime.extension[relative-date] ^definition = "Specifies that a date is relative to some event. The event happens [Duration] after [Event]."
 * requester only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCorePatient or ILCoreRelatedPerson or ILCoreDevice)
-* performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or CareTeam or HealthcareService or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)
+* performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam or HealthcareService or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)
 * locationReference only Reference(ILCoreLocation)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
-* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport or DocumentReference)
+* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport or ILCoreDocumentReference)
 * specimen only Reference(ILCoreSpecimen)

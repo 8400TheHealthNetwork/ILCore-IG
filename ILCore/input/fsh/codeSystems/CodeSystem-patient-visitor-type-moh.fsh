@@ -8,7 +8,7 @@ Description: "MoH Codes for visitor type (סוג מבקר/סוג כניסה)
 * ^url = $patient-visitor-type-moh
 * ^content = #example
 * ^valueSet = $vs-patient-visitor-type-moh
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^caseSensitive = false
 * ^experimental = true
 

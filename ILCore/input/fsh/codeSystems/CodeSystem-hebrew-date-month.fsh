@@ -6,7 +6,7 @@ Description: "Codes for Hebrew date months"
 * ^url = $hebrew-date-month
 * ^content = #complete
 * ^valueSet = $vs-hebrew-date-month
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^caseSensitive = false
 * ^experimental = false
 

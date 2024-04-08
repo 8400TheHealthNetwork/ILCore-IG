@@ -29,6 +29,7 @@ Alias: $ILMedication =                  http://fhir.health.gov.il/StructureDefin
 Alias: $ILMedicationDispense =          http://fhir.health.gov.il/StructureDefinition/il-core-medication-dispense
 Alias: $ILMedicationRequest =           http://fhir.health.gov.il/StructureDefinition/il-core-medication-request
 Alias: $ILMedicationStatement =         http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement
+Alias: $ILMolecularSequence =           http://fhir.health.gov.il/StructureDefinition/il-core-molecular-sequence
 Alias: $ILObservation =                 http://fhir.health.gov.il/StructureDefinition/il-core-observation
 Alias: $ILObservationLab =              http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab
 Alias: $ILOrganization =                http://fhir.health.gov.il/StructureDefinition/il-core-organization

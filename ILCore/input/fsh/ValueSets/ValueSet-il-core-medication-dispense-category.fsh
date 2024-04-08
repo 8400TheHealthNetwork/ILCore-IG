@@ -5,7 +5,7 @@ Description: "Codes for Medication dispense Category"
 
 * ^url = $vs-il-core-medication-dispense-category
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = false
 
 * $il-core-medication-category#inpatient "Inpatient"

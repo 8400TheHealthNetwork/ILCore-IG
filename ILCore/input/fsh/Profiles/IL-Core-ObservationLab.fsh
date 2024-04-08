@@ -4,15 +4,20 @@ Id: il-core-observation-lab
 Title: "ILCore Observation Lab Profile"
 Description: "Israel Core proposed constraints and extensions on the ILCoreObservation Resource for laboratory observations"
 * ^url = $ILObservationLab
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2023-11-08"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * . ^short = "ILCore Observation Lab Profile"
-* . ^definition = "Definitions for the profile ILCoreObservationLabcd resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the profile ILCoreObservationLabcd resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 * . ^comment = "Note that The value[x] types might become more restrictive in the future"
 * dataAbsentReason and performer and specimen and effectiveDateTime and valueQuantity and valueCodeableConcept and valueString and interpretation MS
 * category 1..*

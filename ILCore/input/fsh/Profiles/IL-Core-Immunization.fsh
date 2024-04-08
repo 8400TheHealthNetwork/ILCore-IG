@@ -7,16 +7,21 @@ Title: "ILCore Immunization Profile"
 Description: "Israel Core proposed constraints and extensions on the Immunization Resource"
 
 * ^url = $ILImmunization
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2022-05-16"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore Immunization Profile"
-* . ^definition = "Definitions for the profile-Immunization resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the Immunization resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 * . obeys il-immunization-lot-number
 * status 1..1 MS
 * statusReason MS

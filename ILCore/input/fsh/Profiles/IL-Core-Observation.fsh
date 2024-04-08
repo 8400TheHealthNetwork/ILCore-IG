@@ -5,16 +5,21 @@ Title: "ILCore Observation Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource"
 
 * ^url = $ILObservation
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-05-02"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore Observation Profile"
-* . ^definition = "Definitions for the profile-Observation resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the Observation resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * status and category and code and subject and value[x] MS
 * basedOn only Reference(CarePlan or DeviceRequest or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or NutritionOrder or ILCoreServiceRequest)
@@ -22,7 +27,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * code from $vs-il-core-observation-code (preferred)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreDevice or ILCoreLocation) 
 * encounter only Reference(ILCoreEncounter)
-* performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or CareTeam or ILCorePatient or ILCoreRelatedPerson)
+* performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam or ILCorePatient or ILCoreRelatedPerson)
 * valueQuantity obeys il-obs-ucum
 * valueCodeableConcept from $vs-il-core-observation-value (preferred)
 * valueCodeableConcept obeys il-obs-value-cc

@@ -4,7 +4,7 @@ Title: "IL Core procedure Codes"
 Description: "A list of codes for procedures for the IL Core"
 * ^url = $vs-il-core-procedure-code
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = false
 
 * include codes from valueset $vs-icd9-cm-procedures

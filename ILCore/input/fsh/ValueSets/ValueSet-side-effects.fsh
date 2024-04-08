@@ -4,7 +4,7 @@ Title: "Immunization side-effect codes"
 Description: "Codes from SNOMED CT detailing possible immunization-side-effects for ILCoreImmunizationReactionObservation profile"
 * ^url = $vs-immunization-side-effects
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = false
 
 // * ^comment = "This is an initial set and will be revised in the future"

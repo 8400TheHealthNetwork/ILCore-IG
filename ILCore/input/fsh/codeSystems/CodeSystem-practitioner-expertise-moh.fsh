@@ -4,7 +4,7 @@ Title: "קוד מומחיות לעוסק בבריאות"
 Description: "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות"
 
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^url = $practitioner-expertise-moh
 * ^content = #complete
 * ^valueSet = $vs-practitioner-expertise

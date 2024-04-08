@@ -15,7 +15,7 @@ publisher:
   name: Israel Core Team
   email: tal.primak@moh.gov.il
 contact:
-  - name: Kippi Bordowitz
+  - name: Tal Primak
     telecom:
       - system: email
         value: tal.primak@moh.gov.il

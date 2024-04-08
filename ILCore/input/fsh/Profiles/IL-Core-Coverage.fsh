@@ -7,16 +7,21 @@ Title: "ILCore Coverage Profile"
 Description: "Israel Core proposed constraints and extensions on the Coverage Resource"
 
 * ^url = $ILCoverage
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2023-08-31"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore Coverage Profile"
-* . ^definition = "Definitions for the profile-Coverage resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the Coverage resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 
 * policyHolder only Reference(ILCorePatient or ILCoreRelatedPerson or ILCoreOrganization)
 * subscriber only Reference(ILCorePatient or ILCoreRelatedPerson)

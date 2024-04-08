@@ -3,7 +3,7 @@ Id: il-core-medication-course-of-therapy-type
 Title: "Codes for Medication Course of therpy types"
 Description: "A list of codes for Medication Course of therpy types"
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^url = $il-core-medication-course-of-therapy-type
 * ^content = #complete
 * ^caseSensitive = false

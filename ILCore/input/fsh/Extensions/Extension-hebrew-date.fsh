@@ -4,7 +4,8 @@ Title: "Ext: Hebrew Date"
 Description: "Extension: Allows the use of Hebrew dates"
 
 * ^url = $ext-hebrew-date
-* ^version = "0.13.0"
+* ^version = "0.14.0"
+* insert CurrentDate
 * ^status = #draft
 * ^context[0].type = #element
 * ^context[0].expression = "date"

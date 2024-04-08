@@ -5,16 +5,21 @@ Title: "ILCore PlanDefinition Profile"
 Description: "Israel Core proposed constraints and extensions on the PlanDefinition Resource"
 
 * ^url = $ILPlanDefinition
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2022-07-13"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore PlanDefinition Profile"
-* . ^definition = "Definitions for the profile-PlanDefinition resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the PlanDefinition resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 
 * subjectReference only Reference(ILCoreGroup)
-* action.definitionCanonical only Canonical(ActivityDefinition or ILCorePlanDefinition or Questionnaire)
+* action.definitionCanonical only Canonical(ActivityDefinition or ILCorePlanDefinition or ILCoreQuestionnaire)

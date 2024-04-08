@@ -5,15 +5,19 @@ Title: "ILCore Vital Signs Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in querying and retrieving Vital Signs information."
 
 * ^url = $ILVitalSigns
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2024-01-11"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
-
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * . ^short = "ILCore Vital Signs Profile"
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 * obeys il-vs2
 * category ^slicing.discriminator[0].type = #value
 * category ^slicing.discriminator[0].path = "coding.code"
@@ -35,7 +39,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * value[x] only Quantity or CodeableConcept or string
   * ^short = "Vital Signs value are recorded using the Quantity data type."
   * ^definition = "Vital Signs value are recorded using the Quantity data type. For supporting observations such as Cuff size could use other datatypes such as CodeableConcept, as well as String."
-* valueQuantity from $vital-signs-units (extensible)
+* valueQuantity from $vital-signs-units (required)
   * ^definition = "Vital Signs values are recorded with UCUM"
   * ^short = "Vital Signs values are recorded with UCUM"
 * dataAbsentReason MS
@@ -53,7 +57,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * code MS
   * value[x] only Quantity or CodeableConcept or string
     * ^condition = "il-vs3"
-  * valueQuantity from $vs-bp-unit
+  * valueQuantity from $vs-bp-unit (extensible)
     * ^definition = "Blood pressuer values are recorded with UCUM"
     * ^short = "BP values are recorded with UCUM"
   * dataAbsentReason ^condition = "il-vs3"

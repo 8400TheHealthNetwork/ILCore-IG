@@ -7,7 +7,7 @@ Description: "MoH Codes for visitor type (סוג מבקר/סוג כניסה)
 // * ^language = #he-IL
 * ^url = $vs-patient-visitor-type-moh
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = true
 
 * include codes from system $patient-visitor-type-moh

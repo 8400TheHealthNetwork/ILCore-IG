@@ -5,22 +5,26 @@ Title: "ILCore DiagnosticReport Profile"
 Description: "Israel Core proposed constraints and extensions on the DiagnosticReport Resource"
 
 * ^url = $ILDiagnosticReport
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-05-02"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
-
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * . ^short = "ILCore DiagnosticReport Profile"
-* . ^definition = "Definitions for the profile-DiagnosticReport resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the DiagnosticReport resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
 
-* basedOn only Reference(CarePlan or ImmunizationRecommendation or ILCoreMedicationRequest or NutritionOrder or ILCoreServiceRequest)
+
+* basedOn only Reference(CarePlan or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or NutritionOrder or ILCoreServiceRequest)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreDevice or ILCoreLocation)
 * encounter only Reference(ILCoreEncounter)
 * performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or CareTeam)
-* resultsInterpreter only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or CareTeam)
+* resultsInterpreter only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
 * specimen only Reference(ILCoreSpecimen)
 * result only Reference(ILCoreObservation)
 * imagingStudy only Reference(ILCoreImagingStudy)

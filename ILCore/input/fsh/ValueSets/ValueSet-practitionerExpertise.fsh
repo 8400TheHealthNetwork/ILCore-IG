@@ -5,7 +5,7 @@ Description: "קוד מומחיות לעוסק בבריאות לפי רישוי 
 
 * ^url = $vs-practitioner-expertise
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = false
 
 * include codes from system $practitioner-expertise-moh

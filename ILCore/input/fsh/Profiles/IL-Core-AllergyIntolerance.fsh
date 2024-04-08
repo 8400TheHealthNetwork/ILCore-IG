@@ -5,16 +5,20 @@ Title: "ILCore AllergyIntolerance Profile"
 Description: "Israel Core proposed constraints and extensions on the AllergyIntolerance Resource"
 
 * ^url = $ILAllergyIntolerance
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2022-08-15"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
-
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * . ^short = "ILCore AllergyIntolerance Profile"
-* . ^definition = "Definitions for the profile-AllergyIntolerance resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the AllergyIntolerance resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * extension contains
     $ext-allergy-intolerance-end named AllergyIntoleranceEnd 0..1

@@ -5,15 +5,18 @@ Title: "ILCore Blood Pressure Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurments."
 
 * ^url = $ILBP
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2023-12-18"
-* ^date = "2024-01-11"
+* insert CurrentDate
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
-
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * . ^short = "ILCore Blood Pressure Profile"
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 * code ^definition = "Code specifying blood pressure measurement type"
   * coding = $loinc#85354-9
 * component ^slicing.discriminator[0].type = #value
@@ -38,6 +41,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * code 1..1
   * code = #8480-6
 * component[SystolicBP].value[x] only Quantity
+* component[SystolicBP].valueCodeableConcept 0..0
 * component[SystolicBP].valueQuantity
   * value and unit and system and code MS
   * system = $ucum (exactly)
@@ -55,8 +59,9 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * system = $loinc
   * code MS
   * code 1..1
-  * code = #8480-6
+  * code = #8462-4 
 * component[DiastolicBP].value[x] only Quantity
+* component[DiastolicBP].valueCodeableConcept 0..0
 * component[DiastolicBP].valueQuantity
   * value and unit and system and code MS
   * system = $ucum (exactly)

@@ -7,16 +7,21 @@ Title: "ILCore Procedure Profile"
 Description: "Israel Core proposed constraints and extensions on the Procedure Resource"
 
 * ^url = $ILProcedure
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-05-02"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore Procedure Profile"
-* . ^definition = "Definitions for the profile-Procedure resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the Procedure resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * status MS
 * code 1..1 MS
@@ -25,7 +30,7 @@ Description: "Israel Core proposed constraints and extensions on the Procedure R
 * code ^example.valueCodeableConcept = $sct#71388002 "Procedure (procedure)"
 * code ^example.label = "Valid Example"
 * basedOn only Reference(CarePlan or ILCoreServiceRequest)
-* partOf only Reference(ILCoreProcedure or ILCoreObservation or MedicationAdministration)
+* partOf only Reference(ILCoreProcedure or ILCoreObservation or ILCoreMedicationAdministration)
 * subject MS
 * subject only Reference(ILCorePatient or ILCoreGroup)
 * encounter only Reference(ILCoreEncounter)
@@ -39,15 +44,15 @@ Description: "Israel Core proposed constraints and extensions on the Procedure R
 * performer.actor only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCorePatient or ILCoreRelatedPerson or ILCoreDevice)
 * performer.onBehalfOf only Reference(ILCoreOrganization)
 * location only Reference(ILCoreLocation)
-* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreProcedure or ILCoreDiagnosticReport or DocumentReference)
+* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreProcedure or ILCoreDiagnosticReport or ILCoreDocumentReference)
 * reasonCode from $vs-il-core-procedure-reason
 * bodySite from $sct-body-strct (extensible)
 * bodySite ^example.valueCodeableConcept = $sct#344001 "Ankle"
 * bodySite ^example.label = "Valid Example"
-* report only Reference(ILCoreDiagnosticReport or DocumentReference or Composition)
+* report only Reference(ILCoreDiagnosticReport or ILCoreDocumentReference or Composition)
 * complicationDetail only Reference(ILCoreCondition)
 * complication from $vs-il-core-condition-code (extensible)
 * complication ^example.valueCodeableConcept = $sct#131148009 "Bleeding (finding)"
 * complication ^example.label = "Valid Example"
 * focalDevice.manipulated only Reference(ILCoreDevice)
-* usedReference only Reference(ILCoreDevice or ILCoreMedication or Substance)
+* usedReference only Reference(ILCoreDevice or ILCoreMedication or ILCoreSubstance)

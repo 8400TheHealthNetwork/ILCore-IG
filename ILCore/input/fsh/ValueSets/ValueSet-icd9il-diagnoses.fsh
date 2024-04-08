@@ -6,7 +6,7 @@ Description: "codes of diagnoses from ICD9-IL"
 
 * ^url = $vs-icd9-il-diagnoses
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = false
 
 * include codes from system $icd9-il where type = "diagnosis"

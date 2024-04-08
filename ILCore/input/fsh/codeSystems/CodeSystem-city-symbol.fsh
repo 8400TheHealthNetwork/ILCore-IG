@@ -6,7 +6,7 @@ Description: "Codes for cities in Israel"
 * ^url = $city-code
 * ^content = #complete
 * ^valueSet = $vs-city-code
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^caseSensitive = false
 * ^experimental = false
 * ^extension[0].url = $effective

@@ -3,7 +3,7 @@ Id: il-core-religion-code
 Title: "IL Core relirion code"
 Description: "Codes for religions, an addendum to the HL7 religions CodeSystem"
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^url = $il-core-religion-code
 * ^content = #complete
 * ^caseSensitive = false

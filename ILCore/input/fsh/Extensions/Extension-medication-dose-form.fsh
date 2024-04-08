@@ -4,7 +4,8 @@ Title: "Ext: Medication Dose Form"
 Description: "Extension: A coded representation of the type of dose form"
 
 * ^url = $ext-medication-dose-form
-* ^version = "0.13.0"
+* ^version = "0.14.0"
+* insert CurrentDate
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "MedicationRequest.medication[x]"

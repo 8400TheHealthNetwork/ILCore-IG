@@ -5,16 +5,21 @@ Title: "ILCore ImagingStudy Profile"
 Description: "Israel Core proposed constraints and extensions on the ImagingStudy Resource"
 
 * ^url = $ILImagingStudy
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2021-05-02"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "Israel Core ImagingStudy Profile"
-* . ^definition = "Definitions for the profile-ImagingStudy resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the ImagingStudy resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #draft
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 0
+
 
 * subject only Reference(ILCorePatient or ILCoreDevice or ILCoreGroup)
 * encounter only Reference(ILCoreEncounter)
@@ -23,6 +28,6 @@ Description: "Israel Core proposed constraints and extensions on the ImagingStud
 * interpreter only Reference(ILCorePractitioner or ILCorePractitionerRole)
 * procedureReference only Reference(ILCoreProcedure)
 * location only Reference(ILCoreLocation)
-* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreMedia or ILCoreDiagnosticReport or DocumentReference)
+* reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreMedia or ILCoreDiagnosticReport or ILCoreDocumentReference)
 * series.specimen only Reference(ILCoreSpecimen)
-* series.performer.actor only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or CareTeam or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)
+* series.performer.actor only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)

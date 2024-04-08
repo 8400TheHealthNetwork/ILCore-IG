@@ -4,7 +4,7 @@ Title: "Practitioner Certificate Types"
 Description: "A list of codes for certificate types for all medical practitioners"
 * ^url = $vs-pract-certificate-type
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = false
 
 // codes from certificate type MoLSA

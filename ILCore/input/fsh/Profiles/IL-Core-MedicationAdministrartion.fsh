@@ -5,16 +5,21 @@ Title: "ILCore MedicationAdministration Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationAdministration Resource"
 
 * ^url = $ILMedicationAdministration
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^status = #draft
-* ^date = "2023-05-18"
+* insert CurrentDate
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "ido.levin@moh.gov.il"
+* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore MedicationAdministration Profile"
-* . ^definition = "Definitions for the profile-MedicationAdministration resource profile."
+* . ^definition = "Israel Core proposed constraints and extensions on the MedicationAdministration resource profile."
 * . ^isModifier = false
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
+* ^extension[=].valueCode = #trial-use
+* ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
+* ^extension[=].valueInteger = 1
+
 
 * status and medication[x] and effective[x] and subject and dosage.text and dosage.dose MS
 * extension contains 

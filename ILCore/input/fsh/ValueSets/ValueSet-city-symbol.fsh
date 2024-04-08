@@ -5,7 +5,7 @@ Description: "City classification according to the Israeli Postal Company city-s
 
 * ^url = $vs-city-code
 * ^status = #draft
-* ^version = "0.13.0"
+* ^version = "0.14.0"
 * ^experimental = false
 
 * include codes from system $city-code

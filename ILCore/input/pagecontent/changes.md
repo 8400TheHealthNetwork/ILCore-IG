@@ -1,6 +1,66 @@
-### Current Release - 0.13.2
+### Current Release - 0.14.0
+- Publication date: 10.04.2024
+- Based on FHIR version: 4.0.1
+
+To help implementers, only the more significant changes are listed here.
+
+#### Changes in this version
+- Added the following resources:
+	- StructureDefinition:
+		- il-core-questionnaireResponse 
+		- il-core-medicationDispense 
+		- il-core-specimen 
+		- il-core-vital-signs 
+		- il-core-molecular-sequence (no changes, only changed references to ILCore Resources)
+		- ext-medication-dose-form
+		- ext-encounter-visitor-type
+		- ext-encounter-paying-entity
+
+	- CodeSystem:
+		- patient-admit-source-moh
+		- patient-mode-of-arrival-moh
+		- patient-release-type-moh
+		- patient-visitor-type-moh
+		- patient-visit-reason-moh
+		
+	- ValueSet:
+		- bp-components
+		- bp-unit
+		- il-core-medication-dose-form
+		- patient-admit-source-moh
+		- patient-mode-of-arrival-moh
+		- patient-release-type-moh
+		- patient-visitor-type-moh
+		- patient-visit-reason-moh
+
+	- NamingSystem:
+		- idf-service-number
+		- il-prisoner-number
+		
+
+- Modified the following resources:
+	- StructureDefinition:
+		- All StructureDefinitions: 
+			- added 2 HL7 extensions:
+				- fmm
+				- standard-status
+		- il-core-practitioner:
+			- major changes to qualification slices
+			- added slices to identifier
+		- il-core-medication-dispense:
+			- added max-binding to quantity
+		- il-core-patient:
+			- added slices to identifier
+		- il-core-encounter:
+			- major overhaul
+		- StructureDefinition-il-core-organization:
+			- added slices
+
+- Updated references in several profiles. should not affect any current projects. Please notify us if something stops working!
+
+
+### Release - 0.13.2
 - Publication date: 2024
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -11,7 +71,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.13.1
 - Publication date: 2024
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -24,7 +83,6 @@ To help implementers, only the more significant changes are listed here.
 
 ###  Release - 0.13.0
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -51,7 +109,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.12.0
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -144,7 +201,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.12.0-snapshots
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -154,7 +210,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.11.1
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -173,7 +228,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.11.0
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -227,7 +281,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.10.1
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -243,7 +296,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.10.1-snapshots
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -254,7 +306,6 @@ Add Snapshot
 
 ### Release - 0.10.0
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -346,7 +397,6 @@ To help implementers, only the more significant changes are listed here.
         -	Folded into ValueSet practitioner-certificate-type
 ### Release - 0.9.0
 - Publication date: 2023
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -384,7 +434,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.8.1
 - Publication date: 2022
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -403,7 +452,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.8.0
 - Publication date: 2022
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -442,7 +490,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.7.0
 - Publication date: 2022
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -481,7 +528,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.6.0
 - Publication date: 2022
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -510,7 +556,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.5.0
 - Publication date: 2022
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -556,7 +601,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.4.0
 - Publication date: 2022
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -606,7 +650,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.3.0
 - Publication date: 2021
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -648,7 +691,6 @@ To help implementers, only the more significant changes are listed here.
 
 ### Release - 0.2.0
 - Publication date: 2021
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -692,7 +734,6 @@ The following resources (id) have been added:
 
 ### Release - 0.1.1
 - Publication date: 2021
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
@@ -705,7 +746,6 @@ Fixed file path for the entire package
 
 ### Release 0.1.0
 - Publication date: 2021
-- Publication status: Trial Use
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.

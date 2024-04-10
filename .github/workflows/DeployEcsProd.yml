@@ -60,6 +60,7 @@ jobs:
           latest=$(jq -r '.packages[].latest.version' ./webroot/package-registry.json)
           echo "Creating latest version folder $latest"
           mkdir ./webroot/$latest
+          mkdir ./webroot/0.14.0
         else
           echo "First Version"
         fi

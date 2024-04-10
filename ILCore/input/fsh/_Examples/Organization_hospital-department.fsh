@@ -1,7 +1,7 @@
 Instance:   organization-hospital-department
 InstanceOf: ILCoreOrganization
 
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">מחלקת אשפוז - פנימיתטרית</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">מחלקת אשפוז - פנימית</div>"
 * text.status = #generated
 * identifier[moh-hospital-department].value = "12345-abc12"
 * identifier.use = #official

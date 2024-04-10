@@ -6,7 +6,7 @@ InstanceOf: ILCoreOrganization
 * identifier[moh-hospital-department].value = "12345-abc12"
 * identifier.use = #official
 * active = true
-* name = "מחלקת אשפוז - פנימיתטרית"
+* name = "מחלקת אשפוז - פנימית"
 
 //telecom
 * telecom.system = #phone

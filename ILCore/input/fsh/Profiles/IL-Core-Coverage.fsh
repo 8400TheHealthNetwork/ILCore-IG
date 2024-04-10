@@ -33,6 +33,7 @@ Description: "Israel Core proposed constraints and extensions on the Coverage Re
 * class ^slicing.ordered = false
 * class ^slicing.description = "הסדרת סלייס לטובת ביטוי של פוליסת ביטוח ספציפית, לדוגמה \"כללית פלטינום\" או \"הפניקס חברה לביטוח - קו ראשון\""
 * class contains plan 0..1
+* class[plan] ^definition = "סלייס לטובת ביטוי של פוליסת ביטוח ספציפית, לדוגמה: 'כללית פלטינום' או 'הפניקס חברה לביטוח - קו ראשון'"
 * class[plan].type.coding.system 1..1
 * class[plan].type.coding.system = $plan
 * class[plan].type.coding.code 1..1

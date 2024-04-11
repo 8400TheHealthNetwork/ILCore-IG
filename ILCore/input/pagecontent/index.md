@@ -31,22 +31,20 @@ https://confluence.hl7.org/display/FMG/Clarification+to+the+Term+Must+Support)
 
 
 הערכים לכל מאפיין במשאב הישראלי ייקבעו לפני הקריטריונים הבאים:
-
 #### standards-status
 
 |   קריטריון  |  standards-status |
 | --- | --- |
 |   לפני מפגש תיקוף עם הצוות המוביל | draft |
 |   לאחר מפגש תיקוף עם הצוות המוביל | Trial-Use | 
-| נורמטיבי – "יציב": טרם נקבע הקריטריון | Normal 
+| נורמטיבי – "יציב": טרם נקבע הקריטריון | Normal |
 
 #### FMM
-|   הסבר  |  Maturity-level (FMM) |
+
+|   קריטריון  |  Maturity Level (FMM) |
 | --- | --- |
-| בתהליכי עבודה |  0  |
-| הועלה לייצור    |  1 |
-| יקבעו בעתיד | 2-6   |
+| בתהליכי עבודה |  \[0]  |
+| הועלה לייצור    |  \[1] |
+| יקבעו בעתיד | \[2-6]   |
 
- </div>
-
-{% include markdown-link-references.md %}
+</div>

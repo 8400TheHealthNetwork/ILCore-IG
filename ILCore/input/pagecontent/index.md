@@ -23,18 +23,29 @@ https://confluence.hl7.org/display/FMG/Clarification+to+the+Term+Must+Support)
 
 * [ההגדרת MS בפרופילי US Core](https://build.fhir.org/ig/HL7/US-Core/must-support.html#must-support-elements)
 
-### Maturity Level (FMM) & standards-status 
-לכל resource מסוג StructureDefinition יתווספו 2 הרחבות של HL7:
-1. [Maturity Level](https://hl7.org/fhir/R4/extension-structuredefinition-fmm-definitions.html#extension.fmm) – רמת הבשלות של המשאב. מספר בין 0 ל 6. ניתן לקרוא על המשמעות [בדף של HL7](https://hl7.org/fhir/R4/versions.html#maturity).
-2. [standards-status](https://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html) – הסטטוס "ה-FHIRי" של המשאב (draft ,trial-use וכו'). ניתן לקרוא על המשמעות [בדף של HL7](https://hl7.org/fhir/R4/versions.html#std-process).
 
-הערכים לכל מאפיין במשאב הישראלי ייקבעו לפי הלוגיקה הבאה:
+### standards-status & Maturity Level (FMM)
+לכל resource מסוג structureDefinition יתווספו 2 הרחבות HL7:
+1. [standards-status](https://hl7.org/fhir/R4/extension-structuredefinition-standards-status.html) – הסטטוס "ה FHIRי" של המשאב (draft , trial-use וכו'). ניתן לקרוא על המשמעות [בדף של HL7.](https://hl7.org/fhir/R4/versions.html#std-process)
+2. [Maturity Level](https://hl7.org/fhir/R4/extension-structuredefinition-fmm-definitions.html#extension.fmm) – רמת הבשלות של המשאב. מספר בין 0 ל 6. ניתן לקרוא על המשמעות [בדף של HL7.](https://hl7.org/fhir/R4/versions.html#maturity)
 
-|   הסבר  | standards-status | Maturity-level (FMM) |
-| --- | --- | --- |
-|   המשאב עדיין בשלב עבודה לפני הערות הקהילה ומפגש התיקוף של הצוות המוביל| draft | 0   |
-|   המשאב בשלב של לאחר הערות הקהילה ותיקוף הצוות המוביל| Trial-Use | 1   |
-| יקבע בהמשך | Normal | 2   |
+
+הערכים לכל מאפיין במשאב הישראלי ייקבעו לפני הקריטריונים הבאים:
+
+#### standards-status
+
+|   קריטריון  |  standards-status |
+| --- | --- |
+|   לפני מפגש תיקוף עם הצוות המוביל | draft |
+|   לאחר מפגש תיקוף עם הצוות המוביל | Trial-Use | 
+| נורמטיבי – "יציב": טרם נקבע הקריטריון | Normal 
+
+#### FMM
+|   הסבר  |  Maturity-level (FMM) |
+| --- | --- |
+| בתהליכי עבודה |  0  |
+| הועלה לייצור    |  1 |
+| יקבעו בעתיד | 2-6   |
 
  </div>
 

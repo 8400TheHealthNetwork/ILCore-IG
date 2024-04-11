@@ -7,7 +7,7 @@
 id: il.core.fhir.r4
 packageId: il.core.fhir.r4
 canonical: http://fhir.health.gov.il
-version: 0.17.0
+version: 0.14.0
 name: ILCoreImplementationGuide
 title: IL Core Implementation Guide
 status: draft
@@ -77,7 +77,7 @@ menu:
   קישורים נוספים:
     FHIR Spec: new-tab {{site.data.fhir.path}}index.html
     ILCore Community : new-tab https://en.fhir-il-community.org/fhir-israel-core
-  הדרכות : 
+  מידע נוסף : 
     מודול התרופות ב FHIR : medication-module.html
   הורדות : downloads.html
   גרסאות : changes.html

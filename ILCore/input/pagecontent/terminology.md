@@ -30,4 +30,5 @@ See the [FHIR terminology section]({{site.data.fhir.path}}terminologies-systems.
 
 See the [FHIR terminology section]({{site.data.fhir.path}}terminologies-conceptmaps.html) for a complete discussion on concept maps and a list of concept map names used in FHIR.  Most concept maps relevant to this guide are defined in the base FHIR specification. The following concept maps are unique to this guide and not listed in the base FHIR specification.
 
+{% include res-list-generator.md type="ConceptMap" %}
 

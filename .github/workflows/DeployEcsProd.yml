@@ -57,10 +57,10 @@ jobs:
         aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
         if [ -d "./webroot/html" ]; then
           mv ./webroot/html ./webroot/core
-          latest=$(jq -r '.packages[].latest.version' ./webroot/package-registry.json)
-          echo "Creating latest version folder $latest"
-          mkdir ./webroot/$latest
-          mkdir ./webroot/0.14.0
+          versions=$(jq -r '.list[] | select( .version != "current" ) | .version' ./webroot/core/package-list.json)
+          for version in $versions; do
+            mkdir "./webroot/$version"
+            echo "Folder 'webroot/$version' created."
         else
           echo "First Version"
         fi

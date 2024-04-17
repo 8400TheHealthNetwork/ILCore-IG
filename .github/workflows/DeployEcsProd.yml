@@ -61,6 +61,7 @@ jobs:
           for version in $versions; do
             mkdir "./webroot/$version"
             echo "Folder 'webroot/$version' created."
+          done
         else
           echo "First Version"
         fi

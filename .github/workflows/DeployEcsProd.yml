@@ -16,7 +16,7 @@ permissions:
 jobs:
   deploy:
     name: Deploy
-    runs-on: ubuntu-20.04
+    runs-on: ubuntu-latest
     environment: production
 
     steps:
@@ -37,7 +37,8 @@ jobs:
         
     - name: Install jekyll & jre
       run: |
-        sudo apt-get update --allow-releaseinfo-change && \
+        sudo rm /etc/apt/sources.list.d/microsoft-prod.list && \
+        sudo apt-get update && \
         sudo apt-get install -y curl gnupg ruby-full build-essential && \
         sudo gem install jekyll bundler && \
         sudo apt install default-jre -y

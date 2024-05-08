@@ -5,7 +5,7 @@ Description: "קודי שגיאה לתהליכים הקשורים לטופס 17"
 
 * ^url = $vs-tofes17-reject-codes
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 * ^publisher = "Israeli Ministry of Health, Digital Health Unit"
 * ^contact[0].telecom[0].system = #email

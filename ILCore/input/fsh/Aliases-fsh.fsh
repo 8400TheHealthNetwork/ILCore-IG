@@ -42,7 +42,7 @@ Alias: $ILQuestionnaireResponse =       http://fhir.health.gov.il/StructureDefin
 Alias: $ILQuestionnaire =               http://fhir.health.gov.il/StructureDefinition/il-core-questionnaire
 Alias: $ILRelatedPerson =               http://fhir.health.gov.il/StructureDefinition/il-core-related-person
 Alias: $ILServiceRequest =              http://fhir.health.gov.il/StructureDefinition/il-core-service-request
-Alias: $ILSubstance =                   http://fhir.health.gov.il/StructureDefinition/il-core-service-substance
+Alias: $ILSubstance =                   http://fhir.health.gov.il/StructureDefinition/il-core-substance
 Alias: $ILSpecimen =                    http://fhir.health.gov.il/StructureDefinition/il-core-specimen
 Alias: $ILVitalSigns =                  http://fhir.health.gov.il/StructureDefinition/il-core-vital-signs
  

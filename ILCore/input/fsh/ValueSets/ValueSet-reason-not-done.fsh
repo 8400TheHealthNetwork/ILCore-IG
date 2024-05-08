@@ -4,7 +4,7 @@ Title: "statusReason codes for Immunization profile"
 Description: "Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode"
 * ^url = $vs-reason-not-done
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * $sct#281399006 "Did not attend"

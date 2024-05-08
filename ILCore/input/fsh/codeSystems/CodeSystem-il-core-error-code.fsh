@@ -3,7 +3,7 @@ Id: il-core-error-code
 Title: "IL Core Error code"
 Description: "A list of error codes for ILCore profiles"
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^url = $il-core-error-code
 * ^content = #complete
 * ^caseSensitive = false

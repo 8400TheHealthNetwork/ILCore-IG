@@ -4,7 +4,7 @@ Title: "Icd9 Cm diagnoses"
 Description: "All Diagnosis codes from ICD9-CM codesystem"
 * ^url = $vs-icd9-cm-diagnoses
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * $icd9-cm#001.0 "Cholera due to vibrio cholerae"

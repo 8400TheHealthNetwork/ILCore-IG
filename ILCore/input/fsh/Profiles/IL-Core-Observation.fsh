@@ -5,7 +5,7 @@ Title: "ILCore Observation Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource"
 
 * ^url = $ILObservation
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

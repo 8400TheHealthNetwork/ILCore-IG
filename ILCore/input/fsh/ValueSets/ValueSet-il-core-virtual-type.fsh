@@ -4,7 +4,7 @@ Title: "IL Core Virtual encounter Type Codes"
 Description: "A list of type codes for Virtual Encounters for the IL Core"
 * ^url = $vs-il-core-virtual-type
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * include codes from system $sct where concept descendent-of #185316007 " Indirect encounter (procedure)"

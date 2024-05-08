@@ -5,7 +5,7 @@ Description: "Codes for Medication statement Category"
 
 * ^url = $vs-il-core-medication-statement-category
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * $il-core-medication-category#inpatient "Inpatient"

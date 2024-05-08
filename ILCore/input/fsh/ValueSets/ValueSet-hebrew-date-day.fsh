@@ -5,7 +5,7 @@ Description: "Codes for Hebrew date days"
 
 * ^url = $vs-hebrew-date-day
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * include codes from system $hebrew-date-day

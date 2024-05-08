@@ -5,7 +5,7 @@ Title: "ILCore FamilyMemberHistory Profile"
 Description: "Israel Core proposed constraints and extensions on theILCoreFamilyMemberHistory Resource"
 
 * ^url = $ILFamilyMemberHistory
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

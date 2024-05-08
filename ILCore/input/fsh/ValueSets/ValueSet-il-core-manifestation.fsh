@@ -4,7 +4,7 @@ Title: "IL Core Condition Codes"
 Description: "A list of codes for intolerance manifestation for the IL Core"
 * ^url = $vs-il-core-manifestation
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #404684003 "Clinical finding (finding)"

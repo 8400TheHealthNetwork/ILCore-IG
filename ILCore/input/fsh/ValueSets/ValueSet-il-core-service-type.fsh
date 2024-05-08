@@ -4,7 +4,7 @@ Title: "IL Core Service type"
 Description: "A list of codes for Service types for the IL Core"
 * ^url = $vs-il-core-service-type
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #224891009 "Healthcare services (qualifier value)"

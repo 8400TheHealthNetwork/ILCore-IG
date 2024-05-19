@@ -98,4 +98,4 @@ jobs:
           REMOTE_USER: ec2-user
           REMOTE_HOST: ${{ env.PUBLIC_DNS }}
           TARGET: /var/www/html
-          SOURCE: ./webroot/core
+          SOURCE: ./webroot/core/*

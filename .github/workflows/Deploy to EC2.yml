@@ -43,9 +43,9 @@ jobs:
       run: |
         aws ec2 wait instance-running --instance-ids ${{ env.INSTANCE_ID }}
 
-    - name: Wait for SSM agent to be ready
-      run: |
-        aws ssm wait instance-information --filters "Key=InstanceIds,Values=${{ env.INSTANCE_ID }}"
+#    - name: Wait for SSM agent to be ready
+#      run: |
+#        aws ssm wait instance-information --filters "Key=InstanceIds,Values=${{ env.INSTANCE_ID }}"
 
     - name: Get new EC2 instance private DNS
       run: |

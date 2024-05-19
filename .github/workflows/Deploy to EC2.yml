@@ -43,9 +43,10 @@ jobs:
       run: |
         aws ec2 wait instance-running --instance-ids ${{ env.INSTANCE_ID }}
 
-#    - name: Wait for SSM agent to be ready
-#      run: |
-#        aws ssm wait instance-information --filters "Key=InstanceIds,Values=${{ env.INSTANCE_ID }}"
+    - name: Get new EC2 instance public DNS
+      run: |
+        PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
+        echo "PUBLIC_DNS=$PUBLIC_DNS" >> $GITHUB_ENV
 
     - name: Get new EC2 instance private DNS
       run: |
@@ -94,7 +95,7 @@ jobs:
       uses: easingthemes/ssh-deploy@v2.1.5
       env:
           SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-          SSH_USER: ec2-user
-          SSH_HOST: ${{ env.PRIVATE_DNS }}
+          REMOTE_USER: ec2-user
+          REMOTE_HOST: ${{ env.PUBLIC_DNS }}
           TARGET: /var/www/html
           SOURCE: ./webroot/core

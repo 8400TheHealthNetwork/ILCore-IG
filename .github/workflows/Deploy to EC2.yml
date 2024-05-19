@@ -34,7 +34,7 @@ jobs:
     - name: Launch new EC2 instance from template
       id: launch_ec2
       run: |
-        INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=MyTemplate \
+        INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=IGPublisher \
                     --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=NewInstance}]' \
                     --query 'Instances[0].InstanceId' --output text)
         echo "INSTANCE_ID=$INSTANCE_ID" >> $GITHUB_ENV

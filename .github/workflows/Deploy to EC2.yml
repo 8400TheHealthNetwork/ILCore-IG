@@ -23,13 +23,34 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
-    - name: free disk space
+#    - name: free disk space
+#      run: |
+#        sudo swapoff -a
+#        sudo rm -f /swapfile
+#        sudo apt clean
+#        docker rmi $(docker image ls -aq)
+#        df -h
+
+    - name: Launch new EC2 instance from template
+      id: launch_ec2
       run: |
-        sudo swapoff -a
-        sudo rm -f /swapfile
-        sudo apt clean
-        docker rmi $(docker image ls -aq)
-        df -h
+        INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=MyTemplate \
+                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=NewInstance}]' \
+                    --query 'Instances[0].InstanceId' --output text)
+        echo "INSTANCE_ID=$INSTANCE_ID" >> $GITHUB_ENV
+
+    - name: Wait for new EC2 instance to be running
+      run: |
+        aws ec2 wait instance-running --instance-ids ${{ env.INSTANCE_ID }}
+
+    - name: Wait for SSM agent to be ready
+      run: |
+        aws ssm wait instance-information --filters "Key=InstanceIds,Values=${{ env.INSTANCE_ID }}"
+
+    - name: Get new EC2 instance private DNS
+      run: |
+        PRIVATE_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PrivateDnsName' --output text)
+        echo "PRIVATE_DNS=$PRIVATE_DNS" >> $GITHUB_ENV
 
     - name: clone repos ig-history & ig-registry
       run: |
@@ -68,3 +89,12 @@ jobs:
     - name: Publish Version
       run: |
         java -jar ./ILCore/input-cache/publisher.jar -go-publish -no-sushi -source ./ILCore -web ./webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history -templates ./webroot/templates
+
+    - name: Deploy application to new EC2 instance using SSH
+      uses: easingthemes/ssh-deploy@v2.1.5
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          SSH_USER: ec2-user
+          SSH_HOST: ${{ env.PRIVATE_DNS }}
+          TARGET: /var/www/html
+          SOURCE: ./webroot/core

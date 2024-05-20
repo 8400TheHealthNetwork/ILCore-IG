@@ -108,3 +108,16 @@ jobs:
             whoami
             ls -al /var/www/html
             echo $RSYNC_STDOUT
+            
+    - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
+      run: |
+        OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
+                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
+                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
+                --output text)
+          if [ -n "$OLD_INSTANCE_IDS" ]; then
+            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
+            echo "Terminating old instances: $OLD_INSTANCE_IDS"
+          else
+            echo "No old running instances found with the specified tag."
+          כן

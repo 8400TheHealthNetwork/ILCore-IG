@@ -28,7 +28,7 @@ jobs:
       run: |
         VERSION=$(cat webroot/package-registry.json | jq -r '.packages[0].latest.version')
         INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=IGPublisher \
-                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=IGPublisher-$VERSION}]' \
+                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=IGPublisher-'$VERSION'}]' \
                     --query 'Instances[0].InstanceId' --output text)
         echo "INSTANCE_ID=$INSTANCE_ID" >> $GITHUB_ENV
 

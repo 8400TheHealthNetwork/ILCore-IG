@@ -1,4 +1,4 @@
-name: Deploy to Amazon ECS Production - EC2
+name: Test SSH
     
 on:
   workflow_dispatch:

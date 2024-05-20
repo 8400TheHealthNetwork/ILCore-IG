@@ -100,7 +100,8 @@ jobs:
           TARGET: /var/www/html
           SOURCE: ./webroot/core/*
           SCRIPT_BEFORE: |
-            sudo chown ec2-user:ec2-user /var/www/html
+            sudo chown -R ec2-user:ec2-user /var/www/html
+            sudo chmod -R 755 /var/www/html
             whoami
             ls -al /var/www
           SCRIPT_AFTER: |

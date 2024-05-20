@@ -132,4 +132,4 @@ jobs:
             
     - name: Copy version to S3
       run: |
-        aws s3 sync ./webroot/* s3://igpublisher-static-prod --region eu-west-1
+        aws s3 sync ./webroot s3://igpublisher-static-prod --region eu-west-1

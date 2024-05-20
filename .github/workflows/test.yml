@@ -22,20 +22,13 @@ jobs:
         aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
-
-#    - name: free disk space
-#      run: |
-#        sudo swapoff -a
-#        sudo rm -f /swapfile
-#        sudo apt clean
-#        docker rmi $(docker image ls -aq)
-#        df -h
-
+        
     - name: Launch new EC2 instance from template
       id: launch_ec2
       run: |
+        VERSION=$(cat webroot/package-registry.json | jq -r '.packages[0].latest.version')
         INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=IGPublisher \
-                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=NewInstance}]' \
+                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=IGPublisher-$VERSION}]' \
                     --query 'Instances[0].InstanceId' --output text)
         echo "INSTANCE_ID=$INSTANCE_ID" >> $GITHUB_ENV
 
@@ -48,10 +41,23 @@ jobs:
         PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
         echo "PUBLIC_DNS=$PUBLIC_DNS" >> $GITHUB_ENV
 
-    - name: Get new EC2 instance private DNS
-      run: |
-        PRIVATE_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PrivateDnsName' --output text)
-        echo "PRIVATE_DNS=$PRIVATE_DNS" >> $GITHUB_ENV
+    - name: Deploy application to new EC2 instance using SSH
+      uses: easingthemes/ssh-deploy@main
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_USER: ec2-user
+          REMOTE_HOST: ${{ env.PUBLIC_DNS }}
+          TARGET: /var/www/html
+          SOURCE: ./webroot/*
+          SCRIPT_BEFORE: |
+            sudo chown -R ec2-user:ec2-user /var/www/html
+            sudo chmod -R 755 /var/www/html
+            whoami
+            ls -al /var/www
+          SCRIPT_AFTER: |
+            whoami
+            ls -al /var/www/html
+            echo $RSYNC_STDOUT
 
     - name: clone repos ig-history & ig-registry
       run: |
@@ -108,7 +114,7 @@ jobs:
             whoami
             ls -al /var/www/html
             echo $RSYNC_STDOUT
-
+            
     - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
       run: |
         OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
@@ -120,4 +126,4 @@ jobs:
             echo "Terminating old instances: $OLD_INSTANCE_IDS"
           else
             echo "No old running instances found with the specified tag."
-          fi
+          כן

@@ -84,8 +84,7 @@ jobs:
     - name: Download older versions
       run: |
         aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
-        if [ -d "./webroot/html" ]; then
-          mv ./webroot/html ./webroot/core
+        if [ -d "./webroot/core" ]; then
           versions=$(jq -r '.list[] | select( .version != "current" ) | .version' ./webroot/core/package-list.json)
           for version in $versions; do
             mkdir "./webroot/$version"

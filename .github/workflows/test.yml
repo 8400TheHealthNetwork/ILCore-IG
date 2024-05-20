@@ -26,7 +26,7 @@ jobs:
     - name: Launch new EC2 instance from template
       id: launch_ec2
       run: |
-        VERSION=$(cat webroot/package-registry.json | jq -r '.packages[0].latest.version')
+        VERSION=$(cat ILCore/publication-request.json| jq -r .version)
         INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=IGPublisher \
                     --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=IGPublisher-'$VERSION'}]' \
                     --query 'Instances[0].InstanceId' --output text)

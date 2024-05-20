@@ -23,19 +23,20 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
-#    - name: free disk space
-#      run: |
-#        sudo swapoff -a
-#        sudo rm -f /swapfile
-#        sudo apt clean
-#        docker rmi $(docker image ls -aq)
-#        df -h
+    - name: free disk space
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker rmi $(docker image ls -aq)
+        df -h
 
     - name: Launch new EC2 instance from template
       id: launch_ec2
       run: |
+        VERSION=$(cat ILCore/publication-request.json| jq -r .version)
         INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=IGPublisher \
-                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=NewInstance}]' \
+                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=IGPublisher-'$VERSION'}]' \
                     --query 'Instances[0].InstanceId' --output text)
         echo "INSTANCE_ID=$INSTANCE_ID" >> $GITHUB_ENV
 
@@ -43,15 +44,23 @@ jobs:
       run: |
         aws ec2 wait instance-running --instance-ids ${{ env.INSTANCE_ID }}
 
+    - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
+      run: |
+        OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
+                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
+                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
+                --output text)
+          if [ -n "$OLD_INSTANCE_IDS" ]; then
+            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
+            echo "Terminating old instances: $OLD_INSTANCE_IDS"
+          else
+            echo "No old running instances found with the specified tag."
+          fi
+
     - name: Get new EC2 instance public DNS
       run: |
         PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
         echo "PUBLIC_DNS=$PUBLIC_DNS" >> $GITHUB_ENV
-
-    - name: Get new EC2 instance private DNS
-      run: |
-        PRIVATE_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PrivateDnsName' --output text)
-        echo "PRIVATE_DNS=$PRIVATE_DNS" >> $GITHUB_ENV
 
     - name: clone repos ig-history & ig-registry
       run: |
@@ -71,8 +80,22 @@ jobs:
         sudo apt-get install npm -y && \
         sudo apt-get install -y nodejs && \
         sudo npm install -g fsh-sushi -y
+
+    - name: Download older versions
+      run: |
+        aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
+        if [ -d "./webroot/html" ]; then
+          mv ./webroot/html ./webroot/core
+          versions=$(jq -r '.list[] | select( .version != "current" ) | .version' ./webroot/core/package-list.json)
+          for version in $versions; do
+            mkdir "./webroot/$version"
+            echo "Folder 'webroot/$version' created."
+          done
+        else
+          echo "First Version"
+        fi
         
-    - name: Build, tag, and push image to Amazon ECR
+    - name: Run Genonce.sh
       id: build-image
       env:
         ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
@@ -100,24 +123,13 @@ jobs:
           TARGET: /var/www/html
           SOURCE: ./webroot/core/*
           SCRIPT_BEFORE: |
-            sudo chown -R ec2-user:ec2-user /var/www/html
-            sudo chmod -R 755 /var/www/html
             whoami
             ls -al /var/www
           SCRIPT_AFTER: |
             whoami
             ls -al /var/www/html
             echo $RSYNC_STDOUT
-
-    - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
+            
+    - name: Copy version to S3
       run: |
-        OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
-                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
-                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
-                --output text)
-          if [ -n "$OLD_INSTANCE_IDS" ]; then
-            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
-            echo "Terminating old instances: $OLD_INSTANCE_IDS"
-          else
-            echo "No old running instances found with the specified tag."
-          fi
+        aws s3 sync ./webroot/* s3://igpublisher-static-prod --region eu-west-1

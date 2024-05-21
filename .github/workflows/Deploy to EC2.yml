@@ -110,6 +110,7 @@ jobs:
           SCRIPT_AFTER: |
             whoami
             ls -al /var/www/html
+            df -h
             echo $RSYNC_STDOUT
             
     - name: Copy version to S3

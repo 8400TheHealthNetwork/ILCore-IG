@@ -21,7 +21,7 @@ Description: "Israel Core proposed constraints and extensions on the Media Resou
 * ^extension[=].valueInteger = 0
 
 
-* basedOn only Reference(ILCoreServiceRequest or CarePlan)
+* basedOn only Reference(ILCoreServiceRequest or ILCoreCarePlan)
 * subject only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreGroup or ILCoreDevice or ILCoreSpecimen or ILCoreLocation) 
 * encounter only Reference(ILCoreEncounter)
 * operator only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)

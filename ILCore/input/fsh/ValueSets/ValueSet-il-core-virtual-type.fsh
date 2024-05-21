@@ -7,7 +7,7 @@ Description: "A list of type codes for Virtual Encounters for the IL Core"
 * ^version = "0.14.2"
 * ^experimental = false
 
-* include codes from system $sct where concept descendent-of #185316007 " Indirect encounter (procedure)"
+* include codes from system $sct where concept is-a #185316007 "Indirect encounter (procedure)"
 // * $sct#1258986006 "Face-to-face encounter (procedure)"
 // * $sct#185317003 "Telephone encounter (procedure)"
 // * $sct#308720009 "Letter encounter (procedure)"

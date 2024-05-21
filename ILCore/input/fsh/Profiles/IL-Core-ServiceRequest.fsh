@@ -21,7 +21,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 
 
 * status and intent and category and code and subject and occurrence[x] and occurrenceDateTime and occurrencePeriod and authoredOn and requester and reasonCode MS
-* basedOn only Reference(CarePlan or ILCoreServiceRequest or ILCoreMedicationRequest)
+* basedOn only Reference(ILCoreCarePlan or ILCoreServiceRequest or ILCoreMedicationRequest)
 * replaces only Reference(ILCoreServiceRequest)
 * category 1..*
 * category from $vs-il-core-service-category (extensible)

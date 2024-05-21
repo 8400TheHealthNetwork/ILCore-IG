@@ -1,10 +1,10 @@
-Profile: ILCorePlanDefinition
-Parent: PlanDefinition
-Id: il-core-plan-definition
-Title: "ILCore PlanDefinition Profile"
-Description: "Israel Core proposed constraints and extensions on the PlanDefinition Resource"
+Profile: ILCoreMeasure
+Parent: Measure
+Id: il-core-measure
+Title: "ILCore Measure Profile"
+Description: "Israel Core proposed constraints and extensions on the Measure Resource"
 
-* ^url = $ILPlanDefinition
+* ^url = $ILMeasure
 * ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
@@ -12,8 +12,8 @@ Description: "Israel Core proposed constraints and extensions on the PlanDefinit
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
-* . ^short = "ILCore PlanDefinition Profile"
-* . ^definition = "Israel Core proposed constraints and extensions on the PlanDefinition resource profile."
+* . ^short = "ILCore Measure Profile"
+* . ^definition = "Israel Core proposed constraints and extensions on the Measure resource profile."
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #draft
@@ -22,4 +22,4 @@ Description: "Israel Core proposed constraints and extensions on the PlanDefinit
 
 
 * subjectReference only Reference(ILCoreGroup)
-* action.definitionCanonical only Canonical(ILCoreActivityDefinition or ILCorePlanDefinition or ILCoreQuestionnaire)
+* library only Canonical(ILCoreLibrary)

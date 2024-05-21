@@ -50,7 +50,6 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * ^short = "Often just a dateTime for Vital Signs"
 * hasMember only Reference(ILCoreVitalSigns)
   * ^definition = "Used when reporting vital signs panel components"
-* derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreVitalSigns or MolecularSequence)
 * component obeys il-vs3
 * component MS
   * code from $vs-bp-components (extensible)

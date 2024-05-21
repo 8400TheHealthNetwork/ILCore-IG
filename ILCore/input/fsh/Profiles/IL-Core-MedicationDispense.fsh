@@ -35,7 +35,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationD
 * medication[x] from $vs-il-core-medication-code
 * medicationReference only Reference(ILCoreMedication)
 * subject only Reference(ILCorePatient or ILCoreGroup) 
-* context only Reference(ILCoreEncounter or EpisodeOfCare)
+* context only Reference(ILCoreEncounter or ILCoreEpisodeOfCare)
 * performer.actor only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization
                                 or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)
 * location only Reference(ILCoreLocation)

@@ -29,7 +29,7 @@ Description: "Israel Core proposed constraints and extensions on the Procedure R
 * code obeys il-procedure-sct
 * code ^example.valueCodeableConcept = $sct#71388002 "Procedure (procedure)"
 * code ^example.label = "Valid Example"
-* basedOn only Reference(CarePlan or ILCoreServiceRequest)
+* basedOn only Reference(ILCoreCarePlan or ILCoreServiceRequest)
 * partOf only Reference(ILCoreProcedure or ILCoreObservation or ILCoreMedicationAdministration)
 * subject MS
 * subject only Reference(ILCorePatient or ILCoreGroup)

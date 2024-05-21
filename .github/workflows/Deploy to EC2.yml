@@ -1,4 +1,4 @@
-name: Deploy to Amazon ECS Production - EC2
+name: Deploy to AWS - EC2
     
 on:
   workflow_dispatch:

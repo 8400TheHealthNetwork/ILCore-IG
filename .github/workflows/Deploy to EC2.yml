@@ -44,19 +44,6 @@ jobs:
       run: |
         aws ec2 wait instance-running --instance-ids ${{ env.INSTANCE_ID }}
 
-    - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
-      run: |
-        OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
-                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
-                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
-                --output text)
-          if [ -n "$OLD_INSTANCE_IDS" ]; then
-            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
-            echo "Terminating old instances: $OLD_INSTANCE_IDS"
-          else
-            echo "No old running instances found with the specified tag."
-          fi
-
     - name: Get new EC2 instance public DNS
       run: |
         PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
@@ -95,10 +82,6 @@ jobs:
         fi
         
     - name: Run Genonce.sh
-      id: build-image
-      env:
-        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
-        IMAGE_TAG: ${{ github.sha }}
       run: |
         # download publisher
         mkdir ./ILCore/input-cache/ && \
@@ -132,3 +115,29 @@ jobs:
     - name: Copy version to S3
       run: |
         aws s3 sync ./webroot s3://igpublisher-static-prod --region eu-west-1
+        
+    - name: Get Target Group ARN
+      id: get_target_group_arn
+      run: |
+        TARGET_GROUP_NAME="igpublisher-prod-tg"
+        TARGET_GROUP_ARN=$(aws elbv2 describe-target-groups --names $TARGET_GROUP_NAME --query "TargetGroups[0].TargetGroupArn" --output text)
+        echo "TARGET_GROUP_ARN=${TARGET_GROUP_ARN}" >> $GITHUB_ENV
+
+    - name: Register EC2 Instance to Target Group
+      run: |
+        aws elbv2 register-targets --target-group-arn ${{ env.TARGET_GROUP_ARN }} --targets Id=${{ env.INSTANCE_ID }}
+
+    - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
+      if: always()
+      run: |
+        OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
+                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
+                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
+                --output text)
+          if [ -n "$OLD_INSTANCE_IDS" ]; then
+            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
+            echo "Terminating old instances: $OLD_INSTANCE_IDS"
+          else
+            echo "No old running instances found with the specified tag."
+          fi
+

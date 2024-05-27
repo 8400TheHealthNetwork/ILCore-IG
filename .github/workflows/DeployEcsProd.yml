@@ -30,6 +30,14 @@ jobs:
         aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
         aws-region: ${{ env.AWS_REGION }}
 
+    - name: free disk space
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker rmi $(docker image ls -aq)
+        df -h
+
     - name: clone repos ig-history & ig-registry
       run: |
         git clone https://github.com/HL7/fhir-ig-history-template.git ig-history
@@ -37,6 +45,7 @@ jobs:
         
     - name: Install jekyll & jre
       run: |
+        sudo rm /etc/apt/sources.list.d/microsoft-prod.list && \
         sudo apt-get update && \
         sudo apt-get install -y curl gnupg ruby-full build-essential && \
         sudo gem install jekyll bundler && \
@@ -57,9 +66,11 @@ jobs:
         aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
         if [ -d "./webroot/html" ]; then
           mv ./webroot/html ./webroot/core
-          latest=$(jq -r '.packages[].latest.version' ./webroot/package-registry.json)
-          echo "Creating latest version folder $latest"
-          mkdir ./webroot/$latest
+          versions=$(jq -r '.list[] | select( .version != "current" ) | .version' ./webroot/core/package-list.json)
+          for version in $versions; do
+            mkdir "./webroot/$version"
+            echo "Folder 'webroot/$version' created."
+          done
         else
           echo "First Version"
         fi

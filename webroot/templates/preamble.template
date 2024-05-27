@@ -2,15 +2,6 @@
  <div id="segment-header" class="segment">  <!-- segment-header -->
   <div class="container">  <!-- container -->
 
-    <div id="project-nav">
-      <a id="kl-logo" no-external="true" href="http://kl.dk">
-        <img height="71" alt="KL" src="assets/images/KL_logo.png"/>
-      </a>
-    </div>
-    <div id="family-nav">
-      <a id="fhir-logo" no-external="true" href="http://kl.dk"><img height="50" style="margin-top: 15px;" alt="Kommunernes Landsforening" src="assets/images/KL-fhir-logo.png"/> </a>
-        </a>
-    </div>    
     
    <div id="ig-status" style="font-size:24px;padding-top: 20px;">
 <b id="ig-title">[%title%]</b>

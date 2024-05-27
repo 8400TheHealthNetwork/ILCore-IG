@@ -1,0 +1,125 @@
+name: Test SSH
+    
+on:
+  workflow_dispatch:
+
+env:
+  AWS_REGION: il-central-1
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
+        
+    - name: Launch new EC2 instance from template
+      id: launch_ec2
+      run: |
+        VERSION=$(cat ILCore/publication-request.json| jq -r .version)
+        INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=IGPublisher \
+                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=IGPublisher-'$VERSION'}]' \
+                    --query 'Instances[0].InstanceId' --output text)
+        echo "INSTANCE_ID=$INSTANCE_ID" >> $GITHUB_ENV
+
+    - name: Wait for new EC2 instance to be running
+      run: |
+        aws ec2 wait instance-running --instance-ids ${{ env.INSTANCE_ID }}
+
+    - name: Get new EC2 instance public DNS
+      run: |
+        PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
+        echo "PUBLIC_DNS=$PUBLIC_DNS" >> $GITHUB_ENV
+
+    - name: Deploy application to new EC2 instance using SSH
+      uses: easingthemes/ssh-deploy@main
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_USER: ec2-user
+          REMOTE_HOST: ${{ env.PUBLIC_DNS }}
+          TARGET: /var/www/html
+          SOURCE: ./webroot/*
+          SCRIPT_BEFORE: |
+            whoami
+            ls -al /var/www
+          SCRIPT_AFTER: |
+            whoami
+            ls -al /var/www/html
+            echo $RSYNC_STDOUT
+
+    - name: clone repos ig-history & ig-registry
+      run: |
+        git clone https://github.com/HL7/fhir-ig-history-template.git ig-history
+        git clone https://github.com/FHIR/ig-registry.git ig-registry
+        
+    - name: Install jekyll & jre
+      run: |
+        sudo rm /etc/apt/sources.list.d/microsoft-prod.list && \
+        sudo apt-get update && \
+        sudo apt-get install -y curl gnupg ruby-full build-essential && \
+        sudo gem install jekyll bundler && \
+        sudo apt install default-jre -y
+
+    - name: Install sushi
+      run: |
+        sudo apt-get install npm -y && \
+        sudo apt-get install -y nodejs && \
+        sudo npm install -g fsh-sushi -y
+        
+    - name: Build, tag, and push image to Amazon ECR
+      id: build-image
+      env:
+        ECR_REGISTRY: ${{ steps.login-ecr.outputs.registry }}
+        IMAGE_TAG: ${{ github.sha }}
+      run: |
+        # download publisher
+        mkdir ./ILCore/input-cache/ && \
+        curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./ILCore/input-cache/publisher.jar"
+        
+        # run genonce.sh
+        chmod +x ./ILCore/_genonce.sh && \
+        cd ILCore && \
+        ./_genonce.sh
+
+    - name: Publish Version
+      run: |
+        java -jar ./ILCore/input-cache/publisher.jar -go-publish -no-sushi -source ./ILCore -web ./webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history -templates ./webroot/templates
+
+    - name: Deploy application to new EC2 instance using SSH
+      uses: easingthemes/ssh-deploy@main
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_USER: ec2-user
+          REMOTE_HOST: ${{ env.PUBLIC_DNS }}
+          TARGET: /var/www/html
+          SOURCE: ./webroot/core/*
+          SCRIPT_BEFORE: |
+            whoami
+            ls -al /var/www
+          SCRIPT_AFTER: |
+            whoami
+            ls -al /var/www/html
+            echo $RSYNC_STDOUT
+            
+    - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
+      run: |
+        OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
+                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
+                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
+                --output text)
+          if [ -n "$OLD_INSTANCE_IDS" ]; then
+            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
+            echo "Terminating old instances: $OLD_INSTANCE_IDS"
+          else
+            echo "No old running instances found with the specified tag."
+          כן

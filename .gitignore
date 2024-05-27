@@ -9,6 +9,8 @@ ILCore/output
 *.db
 full-ig.zip
 .index.json
-Webroot/ig-build-zips
 ig-history
 ig-registry
+Webroot/core
+Webroot/0.*
+Webroot/ig-build-zips

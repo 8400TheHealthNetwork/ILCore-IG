@@ -1,7 +1,7 @@
 {
-  "package-id" : "health.gov.il.fhir.core",
-  "version" : "0.15.0",
-  "path" : "http://fhir.health.gov.il/0.15.0",
+  "package-id" : "il.core.fhir.r4",
+  "version" : "0.12.0",
+  "path" : "http://fhir.health.gov.il/0.12.0",
   "mode" : "milestone",
   "status" : "draft",
   "sequence" : "draft-1",

@@ -1,10 +1,10 @@
 Extension: ReactionDuration
 Id: ext-reaction-duration
-Title: "Reaction Duration"
+Title: "Ext: Reaction Duration"
 Description: "Extension: Reaction Duration"
 
 * ^url = $ext-reaction-duration
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

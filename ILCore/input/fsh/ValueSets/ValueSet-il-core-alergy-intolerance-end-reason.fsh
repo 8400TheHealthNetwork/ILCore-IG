@@ -4,7 +4,7 @@ Title: "IL Core Condition End Reason"
 Description: "A list of codes for End Reasons of Allergy Intolerance for the IL Core"
 * ^url = $vs-il-core-allergy-intolerance-end-reason
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 

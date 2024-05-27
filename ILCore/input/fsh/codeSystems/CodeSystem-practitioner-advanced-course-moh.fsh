@@ -6,7 +6,7 @@ Description: "Codes for practitioner advanced courses according to Israeli MoH"
 
 * ^status = #draft
 * ^url = $practitioner-advanced-course-moh
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false

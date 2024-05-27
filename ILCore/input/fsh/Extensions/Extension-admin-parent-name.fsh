@@ -3,7 +3,7 @@ Id: ext-administrative-parent-name
 Title: "Ext: Administrative Parent Name"
 Description: "Extension: The name of a person’s parent, recorded for administrative purposes as part of the person’s demographics (e.g to help with identification). This SHOULD NOT be confused with a parent whose details are recorded for contact purposes (Patient.contact) or as a family member (RelatedPerson). Most systems will use the “father’s name” field as the source of data for this extension. NOTE: This extension replaces the old ParentName extension and is the PREFFERED extension. Note: there SHOULD be only one parent marked as 'official'"
 * ^url = $ext-admin-parent-name
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * insert CurrentDate
 * ^status = #draft
 * ^context[0].type = #element

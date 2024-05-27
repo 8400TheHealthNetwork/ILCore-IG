@@ -5,7 +5,7 @@ Title: "ILCore MedicationRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationRequest Resource"
 
 * ^url = $ILMedicationRequest 
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -68,9 +68,9 @@ Description: "Israel Core proposed constraints and extensions on the MedicationR
 * reasonReference.extension contains $ext-procedure-reference named procedureReference 0..*
 * reasonReference.extension[procedureReference] ^short = "Ext: ILCore Procedure Reference"
 * reasonReference.extension[procedureReference] ^definition = "Extension: Procedure Reference"
-* basedOn only Reference(CarePlan or ILCoreMedicationRequest or ILCoreServiceRequest or ILCoreImmunizationRecommendation)
+* basedOn only Reference(ILCoreCarePlan or ILCoreMedicationRequest or ILCoreServiceRequest or ILCoreImmunizationRecommendation)
 * courseOfTherapyType from $vs-il-core-medication-course-of-therapy-type (extensible)
-// * insurance only (ILCoreClaimResponse or ILCoreCoverage) // none of these exist yet - march-08-23
+// * insurance only (ILCoreILCoreClaimResponse or ILCoreCoverage) // none of these exist yet - march-08-23
 * dosageInstruction only ILCoreDosage
 
 

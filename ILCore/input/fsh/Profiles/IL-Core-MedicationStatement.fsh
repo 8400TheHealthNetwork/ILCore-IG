@@ -5,7 +5,7 @@ Title: "ILCore MedicationStatement Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationStatement Resource"
 
 * ^url = $ILMedicationStatement
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -26,7 +26,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
     $ext-medication-course-of-therapy-type named courseOfTherapyType 0..1
 * extension[courseOfTherapyType] ^short = "Ext: Medication Course-Of-Therapy Type"
 * extension[courseOfTherapyType] ^definition = "Extension: A coded representation of the type of course-of-therapy"
-* basedOn only Reference(CarePlan or ILCoreMedicationRequest or ILCoreServiceRequest)
+* basedOn only Reference(ILCoreCarePlan or ILCoreMedicationRequest or ILCoreServiceRequest)
 * partOf only Reference(ILCoreMedicationAdministration or MedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation)
 * category from $vs-il-core-medication-statement-category (extensible)
 * medication[x] 1..1

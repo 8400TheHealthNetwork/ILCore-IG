@@ -4,7 +4,7 @@ Title: "Immunization Observation Body Site list"
 Description: "All codes from SNOMED CT describing body sites for Immunization Observation"
 * ^url = $vs-immun-body-site
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * $sct#279549004 "Nasal cavity structure"

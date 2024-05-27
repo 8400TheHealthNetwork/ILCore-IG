@@ -4,7 +4,7 @@ Title: "IL Core Units Of Measure Codes"
 Description: "A list of codes for Units Of Measure for the IL Core. <mark>Note:</mark> UCUM code SHALL be used, unless one cannot be found, in which case a SNOMED-CT code SHALL be used"
 * ^url = $vs-il-core-units-of-measure
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * include codes from system UCUM

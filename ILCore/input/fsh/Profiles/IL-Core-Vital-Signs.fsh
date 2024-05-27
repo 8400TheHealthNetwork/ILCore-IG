@@ -5,7 +5,7 @@ Title: "ILCore Vital Signs Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in querying and retrieving Vital Signs information."
 
 * ^url = $ILVitalSigns
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -50,7 +50,6 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * ^short = "Often just a dateTime for Vital Signs"
 * hasMember only Reference(ILCoreVitalSigns)
   * ^definition = "Used when reporting vital signs panel components"
-* derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreVitalSigns or MolecularSequence)
 * component obeys il-vs3
 * component MS
   * code from $vs-bp-components (extensible)

@@ -5,7 +5,7 @@ Title: "ILCore PlanDefinition Profile"
 Description: "Israel Core proposed constraints and extensions on the PlanDefinition Resource"
 
 * ^url = $ILPlanDefinition
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -22,4 +22,4 @@ Description: "Israel Core proposed constraints and extensions on the PlanDefinit
 
 
 * subjectReference only Reference(ILCoreGroup)
-* action.definitionCanonical only Canonical(ActivityDefinition or ILCorePlanDefinition or ILCoreQuestionnaire)
+* action.definitionCanonical only Canonical(ILCoreActivityDefinition or ILCorePlanDefinition or ILCoreQuestionnaire)

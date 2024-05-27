@@ -5,7 +5,7 @@ Title: "ILCore Encounter Profile"
 Description: "Israel Core proposed constraints and extensions on the Encounter Resource"
 
 * ^url = $ILEncounter
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -20,26 +20,30 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 
-
 * extension contains
-    $modeOfArrival named mode-of-arrival 0..1 and
-    $ext-encounter-paying-entity named paying-entity 0..1
+    $modeOfArrival named modeOfArrival 0..1 and
+    $ext-encounter-paying-entity named paying-entity 0..* and
+    $ext-movement-sequence-number named movement-number 0..1
+* extension[modeOfArrival].value[x] only Coding
 * extension[modeOfArrival].valueCoding from $vs-patient-mode-of-arrival-moh (example)
 * extension[paying-entity] ^short = "Extension: Encounter Paying Entity"
 * extension[paying-entity] ^definition = "Paying Entity for the Encounter"
+* extension[movement-number] ^short = "Ext: Movement Sequence-Number"
+* extension[movement-number] ^definition = "Extension: Movement Sequence-Number"
 
 //Must Support + definitions
 * identifier and status and class and subject and period and serviceProvider MS
-* identifier ^definition = "Must support - <b>recieving system SHOULD store the value</b>"
-* status ^definition = "Must support - <b>recieving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
-* class ^definition = "Must support - <b>recieving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
-* subject ^definition = "Must support - <b>recieving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
-* period ^definition = "Must support - <b>recieving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
-* serviceProvider ^definition = "Must support - <b>recieving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
+* identifier ^definition = "Must support - <b>receiving system SHOULD store the value</b>"
+* status ^definition = "Must support - <b>receiving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
+* class ^definition = "Must support - <b>receiving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
+* subject ^definition = "Must support - <b>receiving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
+* period ^definition = "Must support - <b>receiving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
+* serviceProvider ^definition = "Must support - <b>receiving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
 
 
 * class from $vs-il-core-encounter-class (extensible)
 * classHistory.class from $vs-il-core-encounter-class (extensible)
+* type ^definition = "Specific type of encounter that is orthogonal to class and serviceType (e.g. e-mail consultation)" 
 * type ^slicing.discriminator.type = #pattern
 * type ^slicing.discriminator.path = "$this"
 * type ^slicing.rules = #open
@@ -61,7 +65,7 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * participant contains 
     primary-performer 0..* MS
 * participant[primary-performer]
-  * ^definition = "Must support - <b>receiving system either SHALL store the value or SHALL be able to translate it into internal state and SHALL be able to recover it when required to send data</b>"
+  * ^definition = "Must support - <b>receiving system SHALL either store the value as-is or SHALL be able to translate it into internal state and SHALL be able to reconstruct the value when requested to retrieve data</b>"
   * type MS
   * type 1..1
   * period MS
@@ -81,9 +85,6 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * hospitalization.origin only Reference(ILCoreLocation or ILCoreOrganization)
 * hospitalization.admitSource from $vs-patient-admit-source-moh (preferred)
 * hospitalization.destination only Reference(ILCoreLocation or ILCoreOrganization)
-* hospitalization.extension contains $ext-movement-sequence-number named movement-number 0..1
-* hospitalization.extension[movement-number] ^short = "Ext: Movement Sequence-Number"
-* hospitalization.extension[movement-number] ^definition = "Extension: Movement Sequence-Number"
 * hospitalization.dischargeDisposition from $vs-patient-release-type-moh (example)
 * location.location only Reference(ILCoreLocation)
 * serviceProvider only Reference(ILCoreOrganization)

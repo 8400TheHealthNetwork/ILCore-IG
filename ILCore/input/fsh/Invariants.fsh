@@ -141,7 +141,7 @@ Invariant: idf-num
 Description: "7 or 8 digit prisoner number"
 Severity: #error
 Expression: 
-"matches('^\\d{7,8}$')"
+"matches('^[0-9]{7,8}$')"
 
 // TEMP ////////////////////////
 Invariant: us-core-6

@@ -4,7 +4,7 @@ Title: "ICD9IL: Adendum to ICD9 according to codes by Israeli MoH"
 Description: "Strings for procedures and diagnoses, added to ICD9"
 
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^url = $icd9-il
 * ^content = #complete
 * ^caseSensitive = false

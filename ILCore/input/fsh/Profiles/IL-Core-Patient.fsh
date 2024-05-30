@@ -6,7 +6,7 @@ Title: "ILCore Patient Profile"
 Description: "Israel Core Proposed constraints and extensions on the Patient Resource."
 
 * ^url = $ILPatient
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -55,7 +55,8 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
    ppn 0..* and
 //    idf-sn 0..1 and
    prisoner-id 0..1 and
-   enc 0..*
+   enc 0..* and
+   visa-num 0..*
 //    ppn-no-system 0..* 
 
 * identifier[il-id] ^short = "Israeli National Identifier"
@@ -127,6 +128,17 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * identifier[enc].value ^example.valueString = "000000018"
 * identifier[enc].value ^example.label = "Valid Example"
 * identifier[enc].assigner only Reference(ILCoreOrganization)
+
+* identifier[visa-num] ^short = "Israeli Temporary Visa number"
+* identifier[visa-num] ^definition = "Israeli Temporary Visa number"
+* identifier[visa-num] ^mustSupport = true
+* identifier[visa-num].value 1..1 MS
+* identifier[visa-num].value ^short = "An Israeli Visa Number"
+* identifier[visa-num].system 1..1 MS
+* identifier[visa-num].system = $visa-num (exactly)
+* identifier[visa-num].value ^example.valueString = "000000018"
+* identifier[visa-num].value ^example.label = "Valid Example"
+* identifier[visa-num].assigner only Reference(ILCoreOrganization)
 
 //address 
 * address only ILCoreAddress

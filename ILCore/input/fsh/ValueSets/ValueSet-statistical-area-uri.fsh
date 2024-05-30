@@ -5,7 +5,7 @@ Description: "URI's of statistical area identifiers. NOTE: When using CBS-statis
 
 * ^url = $vs-statistical-area-uri
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * $urn#http://fhir.health.gov.il/identifier/cbs-statistical-area "Israeli CBS statistical area code"

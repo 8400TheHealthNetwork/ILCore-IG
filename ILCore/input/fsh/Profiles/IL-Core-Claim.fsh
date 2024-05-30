@@ -5,7 +5,7 @@ Title: "ILCore Claim Profile"
 Description: "Israel Core proposed constraints and extensions on the Claim Resource"
 
 * ^url = $ILClaim
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -26,8 +26,8 @@ Description: "Israel Core proposed constraints and extensions on the Claim Resou
 * insurer only Reference(ILCoreOrganization)
 * provider only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization)
 * related.claim only Reference(ILCoreClaim)
-* prescription only Reference(DeviceRequest or ILCoreMedicationRequest or VisionPrescription)
-* originalPrescription only Reference(DeviceRequest or ILCoreMedicationRequest or VisionPrescription)
+* prescription only Reference(ILCoreDeviceRequest or ILCoreMedicationRequest or VisionPrescription)
+* originalPrescription only Reference(ILCoreDeviceRequest or ILCoreMedicationRequest or VisionPrescription)
 * payee.party only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCorePatient or ILCoreRelatedPerson)
 * referral only Reference(ILCoreServiceRequest)
 * facility only Reference(ILCoreLocation)

@@ -5,7 +5,7 @@ Title: "ILCore Specimen Profile"
 Description: "Israel Core proposed constraints and extensions on the Specimen Resource"
 
 * ^url = $ILSpecimen
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -16,9 +16,9 @@ Description: "Israel Core proposed constraints and extensions on the Specimen Re
 * . ^definition = "Israel Core proposed constraints and extensions on the Specimen resource profile."
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #draft
+* ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 0
+* ^extension[=].valueInteger = 1
 
 
 * extension contains 

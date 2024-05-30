@@ -23,13 +23,13 @@ Invariant: nine-digits-chk
 Description: "All legal entities must have a 9 digit identifier"
 Severity: #error
 Expression: 
-"matches('^\\d{9}$')"
+"matches('[0-9]{9}')"
 
 Invariant: il-id-chk
 Description: "Israeli ID must be 9-digits with a correct check-digit at the end."
 Severity: #error
 Expression: 
-"matches('^\\d{9}$') and
+"matches('[0-9]{9}$') and
 substring(8,1).toInteger()=
 (10-((substring(0,1).toInteger() +
 substring(1,1).toInteger()*2 mod 10 +
@@ -141,7 +141,7 @@ Invariant: idf-num
 Description: "7 or 8 digit prisoner number"
 Severity: #error
 Expression: 
-"matches('^\\d{7,8}$')"
+"matches('^[0-9]{7,8}$')"
 
 // TEMP ////////////////////////
 Invariant: us-core-6

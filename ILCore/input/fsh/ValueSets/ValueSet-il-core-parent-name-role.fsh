@@ -7,7 +7,7 @@ Description: "This set of codes is used to mark a parent name as a father or mot
 * ^language = #en-US
 * ^url = $vs-il-core-parent-name-role
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * $v3-RoleCode#FTH "father"

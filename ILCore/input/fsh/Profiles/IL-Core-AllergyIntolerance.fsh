@@ -5,7 +5,7 @@ Title: "ILCore AllergyIntolerance Profile"
 Description: "Israel Core proposed constraints and extensions on the AllergyIntolerance Resource"
 
 * ^url = $ILAllergyIntolerance
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

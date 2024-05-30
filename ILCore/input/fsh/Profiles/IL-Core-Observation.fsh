@@ -5,7 +5,7 @@ Title: "ILCore Observation Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource"
 
 * ^url = $ILObservation
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -22,7 +22,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 
 
 * status and category and code and subject and value[x] MS
-* basedOn only Reference(CarePlan or DeviceRequest or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or NutritionOrder or ILCoreServiceRequest)
+* basedOn only Reference(ILCoreCarePlan or ILCoreDeviceRequest or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or ILCoreNutritionOrder or ILCoreServiceRequest)
 * partOf only Reference(ILCoreMedicationAdministration or ILCoreMedicationDispense or ILCoreProcedure or ILCoreImmunization or ILCoreImagingStudy or ILCoreMedicationStatement)
 * code from $vs-il-core-observation-code (preferred)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreDevice or ILCoreLocation) 
@@ -40,7 +40,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * referenceRange.age.low from $age-units
 * referenceRange.age.high from $age-units
 * hasMember only Reference(ILCoreObservation or ILCoreQuestionnaireResponse or MolecularSequence)
-* derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreObservation or MolecularSequence)
+* derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreObservation or ILCoreMolecularSequence)
 * dataAbsentReason.coding ^slicing.discriminator.type = #value
 * dataAbsentReason.coding ^slicing.discriminator.path = "system"
 * dataAbsentReason.coding ^slicing.rules = #open

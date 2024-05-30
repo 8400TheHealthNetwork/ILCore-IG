@@ -5,7 +5,7 @@ Title: "ILCore PractitionerRole Profile"
 Description: "Israel Core proposed constraints and extensions on the PractitionerRole Resource"
 
 * ^url = $ILPractitionerRole
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -16,9 +16,9 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * . ^definition = "Israel Core proposed constraints and extensions on the practitionerrole resource profile."
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #trial-use
+* ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 1
+* ^extension[=].valueInteger = 0
 
 
 * practitioner only Reference(ILCorePractitioner)
@@ -31,5 +31,5 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 
 //location 
 * location only Reference(ILCoreLocation)
-* location 1..1
+
 

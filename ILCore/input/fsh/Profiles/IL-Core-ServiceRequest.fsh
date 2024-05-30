@@ -5,7 +5,7 @@ Title: "ILCore ServiceRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the ServiceRequest Resource"
 
 * ^url = $ILServiceRequest
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -21,7 +21,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 
 
 * status and intent and category and code and subject and occurrence[x] and occurrenceDateTime and occurrencePeriod and authoredOn and requester and reasonCode MS
-* basedOn only Reference(CarePlan or ILCoreServiceRequest or ILCoreMedicationRequest)
+* basedOn only Reference(ILCoreCarePlan or ILCoreServiceRequest or ILCoreMedicationRequest)
 * replaces only Reference(ILCoreServiceRequest)
 * category 1..*
 * category from $vs-il-core-service-category (extensible)

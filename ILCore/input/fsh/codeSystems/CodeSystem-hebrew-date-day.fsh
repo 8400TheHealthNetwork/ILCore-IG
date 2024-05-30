@@ -8,7 +8,7 @@ Description: "Codes for Hebrew date days"
 * ^url = $hebrew-date-day
 * ^content = #complete
 * ^valueSet = $vs-hebrew-date-day
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^caseSensitive = false
 * ^experimental = false
 

@@ -4,7 +4,7 @@ Title: "Vaccine Codes"
 Description: "A list of SNOMED codes for vaccines"
 * ^url = $vs-vaccine-code
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #787859002

@@ -5,7 +5,7 @@ Title: "ILCore Location Profile"
 Description: "Israel Core proposed constraints and extensions on the Location Resource"
 
 * ^url = $ILLocation
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

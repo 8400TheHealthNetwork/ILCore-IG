@@ -5,7 +5,7 @@ Description: "SNOMED based value set of recommended types of organizations and o
 
 * ^url = $vs-organization-type
 * ^status = #draft
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #285201006 "Hospital environment (environment)"

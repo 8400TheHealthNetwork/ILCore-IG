@@ -5,7 +5,7 @@ Title: "ILCore DocumentReference Profile"
 Description: "Israel Core proposed constraints and extensions on the DocumentReference Resource"
 
 * ^url = $ILDocumentReference
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -24,5 +24,5 @@ Description: "Israel Core proposed constraints and extensions on the DocumentRef
 * author only Reference(ILCoreDevice or ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson or ILCoreOrganization)
 * authenticator only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization)
 * relatesTo.target only Reference(ILCoreDocumentReference)
-* context.encounter only Reference(ILCoreEncounter or EpisodeOfCare)
+* context.encounter only Reference(ILCoreEncounter or ILCoreEpisodeOfCare)
 * context.sourcePatientInfo only Reference(ILCorePatient)

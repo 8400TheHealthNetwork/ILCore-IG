@@ -5,7 +5,7 @@ Title: "ILCore DiagnosticReport Profile"
 Description: "Israel Core proposed constraints and extensions on the DiagnosticReport Resource"
 
 * ^url = $ILDiagnosticReport
-* ^version = "0.14.0"
+* ^version = "0.14.2"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -20,10 +20,10 @@ Description: "Israel Core proposed constraints and extensions on the DiagnosticR
 * ^extension[=].valueInteger = 0
 
 
-* basedOn only Reference(CarePlan or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or NutritionOrder or ILCoreServiceRequest)
+* basedOn only Reference(ILCoreCarePlan or ILCoreImmunizationRecommendation or ILCoreMedicationRequest or ILCoreNutritionOrder or ILCoreServiceRequest)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreDevice or ILCoreLocation)
 * encounter only Reference(ILCoreEncounter)
-* performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or CareTeam)
+* performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
 * resultsInterpreter only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam)
 * specimen only Reference(ILCoreSpecimen)
 * result only Reference(ILCoreObservation)

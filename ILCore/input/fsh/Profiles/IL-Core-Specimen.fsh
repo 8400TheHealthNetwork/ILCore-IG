@@ -16,9 +16,9 @@ Description: "Israel Core proposed constraints and extensions on the Specimen Re
 * . ^definition = "Israel Core proposed constraints and extensions on the Specimen resource profile."
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #draft
+* ^extension[=].valueCode = #trail-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 0
+* ^extension[=].valueInteger = 1
 
 
 * extension contains 

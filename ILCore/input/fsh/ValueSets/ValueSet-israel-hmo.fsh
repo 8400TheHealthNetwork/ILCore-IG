@@ -26,9 +26,9 @@ Description: "A code classifying Health Management Organizations"
 * $payer#104 ^designation.value = "מאוחדת"
 * $payer#401 "צה\"ל"
 * $payer#402 "משרד הבטחון"
-* $payer#104 ^designation.language = #he
-* $payer#104 ^designation.use = $sct#900000000000013009 "Synonym"
-* $payer#104 ^designation.value = "משהב\"ט"
+* $payer#402 ^designation.language = #he
+* $payer#402 ^designation.use = $sct#900000000000013009 "Synonym"
+* $payer#402 ^designation.value = "משהב\"ט"
 * $payer#480 "רשות פלסטינאית"
 * $payer#480 ^designation.language = #he
 * $payer#480 ^designation.use = $sct#900000000000013009 "Synonym"

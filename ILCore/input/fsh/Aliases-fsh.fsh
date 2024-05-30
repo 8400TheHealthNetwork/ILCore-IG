@@ -67,6 +67,7 @@ Alias: $ILVitalSigns =                  http://fhir.health.gov.il/StructureDefin
  
 // IDs & licenses
 Alias: $il-id =                         http://fhir.health.gov.il/identifier/il-national-id
+Alias: $visa-num =                      http://fhir.health.gov.il/identifier/il-visa-num
 Alias: $pna-id =                        http://fhir.health.gov.il/identifier/pna-national-id
 Alias: $idf-sn =                        http://fhir.health.gov.il/identifier/idf-service-number
 Alias: $prisoner-id =                   http://fhir.health.gov.il/identifier/il-prisoner-number

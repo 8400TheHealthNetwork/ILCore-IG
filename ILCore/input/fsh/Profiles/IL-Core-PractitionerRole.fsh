@@ -31,5 +31,5 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 
 //location 
 * location only Reference(ILCoreLocation)
-* location 1..1
+
 

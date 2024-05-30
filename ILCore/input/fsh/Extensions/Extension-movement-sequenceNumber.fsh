@@ -9,5 +9,5 @@ Description: "Extension: Movement Sequence-Number"
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "Encounter.hospitalization"
-* value[x] only positiveInt
-* valuePositiveInt 1..1
+* value[x] only string
+* valueString 1..1

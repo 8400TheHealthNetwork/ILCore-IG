@@ -16,9 +16,9 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * . ^definition = "Israel Core proposed constraints and extensions on the practitionerrole resource profile."
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
-* ^extension[=].valueCode = #trial-use
+* ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 1
+* ^extension[=].valueInteger = 0
 
 
 * practitioner only Reference(ILCorePractitioner)

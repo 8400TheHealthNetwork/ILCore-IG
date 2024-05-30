@@ -8,7 +8,7 @@ Description: "Codes for medications according to ILCore catalogue"
 * ^version = "0.14.2"
 * ^experimental = false
 
-* include codes from system $moh-medication-code
+// * include codes from system $moh-medication-code
 * include codes from system $sct
 * include codes from system $atc
 * include codes from system http://www.nlm.nih.gov/research/umls/rxnorm

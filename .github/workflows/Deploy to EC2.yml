@@ -140,6 +140,8 @@ jobs:
                 --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
                 --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
                 --output text)
+        SNAPSHOT_ID=$(aws ec2 create-snapshot --volume-id $VOLUME_ID --description "Snapshot before terminating instance $INSTANCE_ID" --query 'SnapshotId' --output text)
+          echo "Created snapshot $SNAPSHOT_ID for volume $VOLUME_ID"
           if [ -n "$OLD_INSTANCE_IDS" ]; then
             aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
             echo "Terminating old instances: $OLD_INSTANCE_IDS"

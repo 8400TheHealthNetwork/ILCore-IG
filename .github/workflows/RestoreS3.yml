@@ -1,0 +1,115 @@
+name: Restore from S3 - EC2
+    
+on:
+  workflow_dispatch:
+
+env:
+  AWS_REGION: il-central-1
+
+jobs:
+  deploy:
+    name: Deploy
+    runs-on: ubuntu-latest
+    environment: production
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v3
+
+    - name: Configure AWS credentials
+      uses: aws-actions/configure-aws-credentials@v1
+      with:
+        aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+        aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+        aws-region: ${{ env.AWS_REGION }}
+
+    - name: free disk space
+      run: |
+        sudo swapoff -a
+        sudo rm -f /swapfile
+        sudo apt clean
+        docker rmi $(docker image ls -aq)
+        df -h
+
+    - name: Launch new EC2 instance from template
+      id: launch_ec2
+      run: |
+        VERSION=$(cat ILCore/publication-request.json| jq -r .version)
+        INSTANCE_ID=$(aws ec2 run-instances --launch-template LaunchTemplateName=IGPublisher \
+                    --tag-specifications 'ResourceType=instance,Tags=[{Key=proj,Value=IGPublisher-Prod},{Key=Name,Value=IGPublisher-'$VERSION'}]' \
+                    --query 'Instances[0].InstanceId' --output text)
+        echo "INSTANCE_ID=$INSTANCE_ID" >> $GITHUB_ENV
+
+    - name: Wait for new EC2 instance to be running
+      run: |
+        aws ec2 wait instance-running --instance-ids ${{ env.INSTANCE_ID }}
+
+    - name: Get new EC2 instance public DNS
+      run: |
+        PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
+        echo "PUBLIC_DNS=$PUBLIC_DNS" >> $GITHUB_ENV
+
+    - name: Install sushi
+      run: |
+        sudo apt-get install npm -y && \
+        sudo apt-get install -y nodejs && \
+        sudo npm install -g fsh-sushi -y
+
+    - name: Download older versions
+      run: |
+        aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1
+        if [ -d "./webroot/core" ]; then
+          versions=$(jq -r '.list[] | select( .version != "current" ) | .version' ./webroot/core/package-list.json)
+          for version in $versions; do
+            mkdir "./webroot/$version"
+            echo "Folder 'webroot/$version' created."
+          done
+        else
+          echo "S3 is Empty"
+          exit 1
+        fi
+
+    - name: Deploy application to new EC2 instance using SSH
+      uses: easingthemes/ssh-deploy@main
+      env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+          REMOTE_USER: ec2-user
+          REMOTE_HOST: ${{ env.PUBLIC_DNS }}
+          TARGET: /var/www/html
+          SOURCE: ./webroot/core/*
+          SCRIPT_BEFORE: |
+            whoami
+            ls -al /var/www
+            df -h
+          SCRIPT_AFTER: |
+            whoami
+            ls -al /var/www/html
+            df -h
+            echo $RSYNC_STDOUT
+            
+    - name: Get Target Group ARN
+      id: get_target_group_arn
+      run: |
+        TARGET_GROUP_NAME="igpublisher-prod-tg"
+        TARGET_GROUP_ARN=$(aws elbv2 describe-target-groups --names $TARGET_GROUP_NAME --query "TargetGroups[0].TargetGroupArn" --output text)
+        echo "TARGET_GROUP_ARN=${TARGET_GROUP_ARN}" >> $GITHUB_ENV
+
+    - name: Register EC2 Instance to Target Group
+      run: |
+        aws elbv2 register-targets --target-group-arn ${{ env.TARGET_GROUP_ARN }} --targets Id=${{ env.INSTANCE_ID }}
+
+    - name: Terminate old EC2 instances with tag proj=IGPublisher-Prod
+      if: always()
+      run: |
+        OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
+                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
+                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
+                --output text)
+        SNAPSHOT_ID=$(aws ec2 create-snapshot --volume-id $VOLUME_ID --description "Snapshot before terminating instance $INSTANCE_ID" --query 'SnapshotId' --output text)
+          echo "Created snapshot $SNAPSHOT_ID for volume $VOLUME_ID"
+          if [ -n "$OLD_INSTANCE_IDS" ]; then
+            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
+            echo "Terminating old instances: $OLD_INSTANCE_IDS"
+          else
+            echo "No old running instances found with the specified tag."
+          fi

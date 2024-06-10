@@ -102,14 +102,24 @@ jobs:
       if: always()
       run: |
         OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
-                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
-                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
-                --output text)
-        SNAPSHOT_ID=$(aws ec2 create-snapshot --volume-id $VOLUME_ID --description "Snapshot before terminating instance $INSTANCE_ID" --query 'SnapshotId' --output text)
-          echo "Created snapshot $SNAPSHOT_ID for volume $VOLUME_ID"
-          if [ -n "$OLD_INSTANCE_IDS" ]; then
-            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
-            echo "Terminating old instances: $OLD_INSTANCE_IDS"
-          else
-            echo "No old running instances found with the specified tag."
-          fi
+            --filters "Name=tag:proj,Values=${{ env.PROJECT }}-Prod" "Name=instance-state-name,Values=running" \
+            --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
+            --output text)
+    
+        if [ -n "$OLD_INSTANCE_IDS" ]; then
+          for INSTANCE_ID in $OLD_INSTANCE_IDS; do
+            VOLUME_ID=$(aws ec2 describe-volumes \
+            --filters "Name=attachment.instance-id,Values=$INSTANCE_ID" \
+            --query 'Volumes[*].VolumeId' \
+            --output text)
+        
+          SNAPSHOT_ID=$(aws ec2 create-snapshot --volume-id $VOLUME_ID --description "Snapshot before terminating instance $INSTANCE_ID" --query 'SnapshotId' --output text)
+          echo "Created snapshot $SNAPSHOT_ID for volume $VOLUME_ID of instance $INSTANCE_ID"
+
+          # Now terminate the instance after creating snapshots
+          aws ec2 terminate-instances --instance-ids $INSTANCE_ID
+          echo "Terminating instance: $INSTANCE_ID"
+          done
+        else
+          echo "No old running instances found with the specified tag."
+        fi

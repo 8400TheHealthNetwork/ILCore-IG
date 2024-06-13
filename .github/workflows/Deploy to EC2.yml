@@ -5,6 +5,7 @@ on:
 
 env:
   AWS_REGION: il-central-1
+  PROJECT: IGPublisher
 
 jobs:
   deploy:

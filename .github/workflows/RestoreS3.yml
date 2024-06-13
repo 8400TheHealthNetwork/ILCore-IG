@@ -1,7 +1,9 @@
 name: Restore from S3 - EC2
-    
+
 on:
-  workflow_dispatch:
+  pull_request:
+    branches:
+      - none
 
 env:
   AWS_REGION: il-central-1

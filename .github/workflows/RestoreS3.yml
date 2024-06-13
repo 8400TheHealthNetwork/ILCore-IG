@@ -4,6 +4,7 @@ on:
   pull_request:
     branches:
       - none
+  workflow_dispatch:
 
 env:
   AWS_REGION: il-central-1

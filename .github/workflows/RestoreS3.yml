@@ -1,10 +1,11 @@
-name: Deploy to AWS - EC2
+name: Restore from S3 - EC2
     
 on:
   workflow_dispatch:
 
 env:
   AWS_REGION: il-central-1
+  PROJECT: IGPublisher
 
 jobs:
   deploy:
@@ -49,19 +50,6 @@ jobs:
         PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
         echo "PUBLIC_DNS=$PUBLIC_DNS" >> $GITHUB_ENV
 
-    - name: clone repos ig-history & ig-registry
-      run: |
-        git clone https://github.com/HL7/fhir-ig-history-template.git ig-history
-        git clone https://github.com/FHIR/ig-registry.git ig-registry
-        
-    - name: Install jekyll & jre
-      run: |
-        sudo rm /etc/apt/sources.list.d/microsoft-prod.list && \
-        sudo apt-get update && \
-        sudo apt-get install -y curl gnupg ruby-full build-essential && \
-        sudo gem install jekyll bundler && \
-        sudo apt install default-jre -y
-
     - name: Install sushi
       run: |
         sudo apt-get install npm -y && \
@@ -78,28 +66,10 @@ jobs:
             echo "Folder 'webroot/$version' created."
           done
         else
-          echo "First Version"
+          echo "S3 is Empty"
+          exit 1
         fi
-        
-    - name: Run Genonce.sh
-      run: |
-        # download publisher
-        mkdir ./ILCore/input-cache/ && \
-        curl -L https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar -o "./ILCore/input-cache/publisher.jar"
-        
-        # run genonce.sh
-        chmod +x ./ILCore/_genonce.sh && \
-        cd ILCore && \
-        ./_genonce.sh
 
-    - name: Publish Version
-      run: |
-        java -jar ./ILCore/input-cache/publisher.jar -go-publish -no-sushi -source ./ILCore -web ./webroot -registry ./ig-registry/fhir-ig-list.json -history ./ig-history -templates ./webroot/templates
-
-    - name: Fix redirect to ALB
-      run: |
-        sed -i 's/fhir.health.gov.il/igpublisher-prod-lb-1107628827.il-central-1.elb.amazonaws.com/g' ./webroot/core/StructureDefinition/il-core-patient/index.php
-        
     - name: Deploy application to new EC2 instance using SSH
       uses: easingthemes/ssh-deploy@main
       env:
@@ -118,10 +88,6 @@ jobs:
             df -h
             echo $RSYNC_STDOUT
             
-    - name: Copy version to S3
-      run: |
-        aws s3 sync ./webroot s3://igpublisher-static-prod --region eu-west-1
-        
     - name: Get Target Group ARN
       id: get_target_group_arn
       run: |
@@ -137,15 +103,24 @@ jobs:
       if: always()
       run: |
         OLD_INSTANCE_IDS=$(aws ec2 describe-instances \
-                --filters "Name=tag:proj,Values=IGPublisher-Prod" "Name=instance-state-name,Values=running" \
-                --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
-                --output text)
-        SNAPSHOT_ID=$(aws ec2 create-snapshot --volume-id $VOLUME_ID --description "Snapshot before terminating instance $INSTANCE_ID" --query 'SnapshotId' --output text)
-          echo "Created snapshot $SNAPSHOT_ID for volume $VOLUME_ID"
-          if [ -n "$OLD_INSTANCE_IDS" ]; then
-            aws ec2 terminate-instances --instance-ids $OLD_INSTANCE_IDS
-            echo "Terminating old instances: $OLD_INSTANCE_IDS"
-          else
-            echo "No old running instances found with the specified tag."
-          fi
+            --filters "Name=tag:proj,Values=${{ env.PROJECT }}-Prod" "Name=instance-state-name,Values=running" \
+            --query 'Reservations[*].Instances[?InstanceId!=`${{ env.INSTANCE_ID }}`].[InstanceId]' \
+            --output text)
+    
+        if [ -n "$OLD_INSTANCE_IDS" ]; then
+          for INSTANCE_ID in $OLD_INSTANCE_IDS; do
+            VOLUME_ID=$(aws ec2 describe-volumes \
+            --filters "Name=attachment.instance-id,Values=$INSTANCE_ID" \
+            --query 'Volumes[*].VolumeId' \
+            --output text)
+        
+            SNAPSHOT_ID=$(aws ec2 create-snapshot --volume-id $VOLUME_ID --description "Snapshot before terminating instance $INSTANCE_ID" --query 'SnapshotId' --output text)
+            echo "Created snapshot $SNAPSHOT_ID for volume $VOLUME_ID of instance $INSTANCE_ID"
 
+            # Now terminate the instance after creating snapshots
+            aws ec2 terminate-instances --instance-ids $INSTANCE_ID
+            echo "Terminating instance: $INSTANCE_ID"
+          done
+        else
+          echo "No old running instances found with the specified tag."
+        fi

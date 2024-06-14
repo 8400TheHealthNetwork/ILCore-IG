@@ -52,13 +52,7 @@ jobs:
       run: |
         PUBLIC_DNS=$(aws ec2 describe-instances --instance-ids ${{ env.INSTANCE_ID }} --query 'Reservations[0].Instances[0].PublicDnsName' --output text)
         echo "PUBLIC_DNS=$PUBLIC_DNS" >> $GITHUB_ENV
-
-    - name: Install sushi
-      run: |
-        sudo apt-get install npm -y && \
-        sudo apt-get install -y nodejs && \
-        sudo npm install -g fsh-sushi -y
-
+        
     - name: Download older versions
       run: |
         aws s3 sync s3://igpublisher-static-prod ./webroot --region eu-west-1

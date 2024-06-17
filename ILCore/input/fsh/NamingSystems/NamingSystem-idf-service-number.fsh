@@ -2,7 +2,7 @@ Instance: idf-service-number
 InstanceOf: NamingSystem
 Usage: #definition
 
-* name = "IDF Service Nuber"
+* name = "IDF Service Number"
 * status = #active
 * kind = #identifier
 * date = "2024-02-22"

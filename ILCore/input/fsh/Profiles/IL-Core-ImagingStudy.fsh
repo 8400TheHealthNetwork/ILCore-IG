@@ -38,7 +38,7 @@ Description: "Israel Core proposed constraints and extensions on the ImagingStud
 * referrer only Reference(ILCorePractitioner or ILCorePractitionerRole)
 * interpreter only Reference(ILCorePractitioner or ILCorePractitionerRole)
 * procedureCode from http://loinc.org/vs/loinc-rsna-radiology-playbook (extensible)
-* procedureCode ^comment = "Accessing this valueset requires Loinc userName and password. Thus, it is presented [here](https://simplifier.net/israelcoreinprogress/loinc-rsna-radiology-playbook) only for convenience"
+* procedureCode ^comment = "Accessing this valueset requires Loinc userName and password. Thus, it is presented here. The original value-set cn be found [here](http://loinc.org/vs/loinc-rsna-radiology-playbook) only for convenience"
 * procedureReference only Reference(ILCoreProcedure)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
 * location only Reference(ILCoreLocation)

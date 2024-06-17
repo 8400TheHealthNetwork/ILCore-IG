@@ -26,9 +26,9 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * code ^binding.strength = #preferred
 
 //telecom
-* telecom 0..* MS
-* telecom.system 1..1 MS
-* telecom.value 1..1 MS
+* telecom 0..*
+* telecom.system 1..1
+* telecom.value 1..1
 
 //location 
 * location only Reference(ILCoreLocation)

@@ -1,10 +1,10 @@
-CodeSystem: ILCoreCoveragePremiumType
+CodeSystem: ILCorePremiumType
 Id: il-core-premium-type
-Title: "IL Core Coverage Premium Type codes"
+Title: "IL Core Premium Type codes"
 Description: "Codes for Types of premium payment methods"
 * ^status = #draft
 * ^version = "0.14.2"
-* ^url = $coverage-premium-type
+* ^url = $premium-type
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false

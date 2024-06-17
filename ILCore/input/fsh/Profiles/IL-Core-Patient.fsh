@@ -56,7 +56,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 //    idf-sn 0..1 and
    prisoner-id 0..1 and
    enc 0..* and
-   visa-num 0..*
+   entry-permit 0..*
 //    ppn-no-system 0..* 
 
 * identifier[il-id] ^short = "Israeli National Identifier"
@@ -129,16 +129,15 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * identifier[enc].value ^example.label = "Valid Example"
 * identifier[enc].assigner only Reference(ILCoreOrganization)
 
-* identifier[visa-num] ^short = "Israeli Temporary Visa number"
-* identifier[visa-num] ^definition = "Israeli Temporary Visa number"
-* identifier[visa-num] ^mustSupport = true
-* identifier[visa-num].value 1..1 MS
-* identifier[visa-num].value ^short = "An Israeli Visa Number"
-* identifier[visa-num].system 1..1 MS
-* identifier[visa-num].system = $visa-num (exactly)
-* identifier[visa-num].value ^example.valueString = "000000018"
-* identifier[visa-num].value ^example.label = "Valid Example"
-* identifier[visa-num].assigner only Reference(ILCoreOrganization)
+* identifier[entry-permit] ^short = "Israeli Temporary entry permit"
+* identifier[entry-permit] ^definition = "Israeli Temporary entry permit number. For cases in which the State of Israel has issued such a document and this is the main form of identifiaction"
+* identifier[entry-permit] ^mustSupport = true
+* identifier[entry-permit].value 1..1 MS
+* identifier[entry-permit].value ^short = "An Israeli Visa Number"
+* identifier[entry-permit].system = $entry-permit (exactly)
+* identifier[entry-permit].value ^example.valueString = "000000018"
+* identifier[entry-permit].value ^example.label = "Valid Example"
+* identifier[entry-permit].assigner only Reference(ILCoreOrganization)
 
 //address 
 * address only ILCoreAddress

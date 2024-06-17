@@ -12,4 +12,4 @@ Description: "Codes for expressing general high level coverage types unique to t
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-08"
 
-* #OBL "Obligation"
+* #OBL "Obligation" "התחייבות / טופס 17"

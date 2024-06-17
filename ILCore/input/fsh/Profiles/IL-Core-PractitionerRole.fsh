@@ -20,9 +20,10 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
 
-
+* active and period and practitioner and organization MS
 * practitioner only Reference(ILCorePractitioner)
 * organization only Reference(ILCoreOrganization)
+* code ^binding.strength = #preferred
 
 //telecom
 * telecom 0..* MS

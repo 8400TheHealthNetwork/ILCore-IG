@@ -36,10 +36,10 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * component[SystolicBP].code.coding[SBPCode]
   * system MS
   * system 1..1
-  * system = $loinc
+  * system = $loinc (exactly)
   * code MS
   * code 1..1
-  * code = #8480-6
+  * code = #8480-6 (exactly)
 * component[SystolicBP].value[x] only Quantity
 * component[SystolicBP].valueCodeableConcept 0..0
 * component[SystolicBP].valueQuantity
@@ -56,10 +56,10 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * component[DiastolicBP].code.coding[DBPCode]
   * system MS
   * system 1..1
-  * system = $loinc
+  * system = $loinc (exactly)
   * code MS
   * code 1..1
-  * code = #8462-4 
+  * code = #8462-4 (exactly) 
 * component[DiastolicBP].value[x] only Quantity
 * component[DiastolicBP].valueCodeableConcept 0..0
 * component[DiastolicBP].valueQuantity

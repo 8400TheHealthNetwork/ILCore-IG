@@ -61,5 +61,6 @@ Description: "Israel Core proposed constraints and extensions on the Observation
     * ^short = "BP values are recorded with UCUM"
   * dataAbsentReason ^condition = "il-vs3"
   * dataAbsentReason MS
+* derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreVitalSigns or ILCoreMolecularSequence)
 
 

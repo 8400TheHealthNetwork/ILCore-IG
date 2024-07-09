@@ -8,7 +8,7 @@ Description: "Codes for practitioner-education-types according to Israeli MoH"
 * ^status = #draft
 * ^url = $practitioner-education-type
 * ^content = #complete
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^caseSensitive = false
 * ^experimental = false
 * ^extension[0].url = $effective

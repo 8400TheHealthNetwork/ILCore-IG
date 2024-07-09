@@ -5,7 +5,7 @@ Title: "ILCore Specimen Profile"
 Description: "Israel Core proposed constraints and extensions on the Specimen Resource"
 
 * ^url = $ILSpecimen
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -42,7 +42,7 @@ Description: "Israel Core proposed constraints and extensions on the Specimen Re
 * parent only Reference(ILCoreSpecimen)
 * request only Reference(ILCoreServiceRequest)
 * collection.collector only Reference(ILCorePractitioner or ILCorePractitionerRole)
-* collection.collector.extension contains $ext-specimen-collector-reference named specimen-collector 0..1
+* collection.collector.extension contains $ext-specimen-collector-reference named other-collector 0..1 // add remark! Kippi 09/07/24 - explain that allows other types of collectors
 * collection.bodySite ^binding.strength = #extensible
 * processing.additive only Reference(ILCoreSubstance)
 * container.additiveReference only Reference(ILCoreSubstance)

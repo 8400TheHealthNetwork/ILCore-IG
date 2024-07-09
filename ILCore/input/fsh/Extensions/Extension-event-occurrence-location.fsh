@@ -4,7 +4,7 @@ Title: "Ext: Event Occurrence Location"
 Description: "Extension: Location in which an event occurred"
 
 * ^url = $ext-event-occurrence-location
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

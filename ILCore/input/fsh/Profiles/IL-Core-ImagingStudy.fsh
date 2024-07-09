@@ -5,7 +5,7 @@ Title: "ILCore ImagingStudy Profile"
 Description: "Israel Core proposed constraints and extensions on the ImagingStudy Resource"
 
 * ^url = $ILImagingStudy
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -21,7 +21,7 @@ Description: "Israel Core proposed constraints and extensions on the ImagingStud
 * ^extension[=].valueInteger = 0
 
 * status and modality and subject and encounter and procedureCode 
-                and series.id and series.modality and series.instance.id and series.instance.sopClass MS
+                and series.uid and series.modality and series.instance.uid and series.instance.sopClass MS
 * extension contains $ext-accession-number named accession-num 0..1
 * extension[accession-num].url = $ext-accession-number (exactly)
 * extension[accession-num] MS

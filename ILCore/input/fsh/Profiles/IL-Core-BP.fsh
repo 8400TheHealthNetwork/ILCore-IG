@@ -5,7 +5,7 @@ Title: "ILCore Blood Pressure Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurments."
 
 * ^url = $ILBP
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^contact[0].telecom[0].system = #email
@@ -27,9 +27,9 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * component ^slicing.ordered = false
 * component contains SystolicBP 1..1 and DiastolicBP 1..1
 * component[SystolicBP].code.coding ^slicing.discriminator[0].type = #value
-* component[SystolicBP].code.coding ^slicing.discriminator[0].path = "coding.system"
+* component[SystolicBP].code.coding ^slicing.discriminator[0].path = "system"
 * component[SystolicBP].code.coding ^slicing.discriminator[1].type = #value
-* component[SystolicBP].code.coding ^slicing.discriminator[1].path = "coding.code"
+* component[SystolicBP].code.coding ^slicing.discriminator[1].path = "code"
 * component[SystolicBP].code.coding ^slicing.rules = #open
 * component[SystolicBP].code.coding ^slicing.ordered = false
 * component[SystolicBP].code.coding contains SBPCode 1..1
@@ -44,12 +44,16 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * component[SystolicBP].valueCodeableConcept 0..0
 * component[SystolicBP].valueQuantity
   * value and unit and system and code MS
+  * value 1..1 
+  * unit 1..1
+  * system1..1
+  * code 1..1
   * system = $ucum (exactly)
   * code = #mm[Hg] (exactly)
 * component[DiastolicBP].code.coding ^slicing.discriminator[0].type = #value
-* component[DiastolicBP].code.coding ^slicing.discriminator[0].path = "coding.system"
+* component[DiastolicBP].code.coding ^slicing.discriminator[0].path = "system"
 * component[DiastolicBP].code.coding ^slicing.discriminator[1].type = #value
-* component[DiastolicBP].code.coding ^slicing.discriminator[1].path = "coding.code"
+* component[DiastolicBP].code.coding ^slicing.discriminator[1].path = "code"
 * component[DiastolicBP].code.coding ^slicing.rules = #open
 * component[DiastolicBP].code.coding ^slicing.ordered = false
 * component[DiastolicBP].code.coding contains DBPCode 1..1
@@ -64,5 +68,9 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * component[DiastolicBP].valueCodeableConcept 0..0
 * component[DiastolicBP].valueQuantity
   * value and unit and system and code MS
+  * value 1..1 
+  * unit 1..1
+  * system1..1
+  * code 1..1
   * system = $ucum (exactly)
   * code = #mm[Hg] (exactly)

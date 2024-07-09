@@ -5,7 +5,7 @@ Description: "Codes for Hebrew date months"
 
 * ^url = $vs-hebrew-date-month
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * include codes from system $hebrew-date-month

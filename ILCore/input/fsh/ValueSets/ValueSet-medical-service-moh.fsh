@@ -5,7 +5,7 @@ Description: "קוד שירותים רפואיים , כולל שירותים ב�
 
 * ^status = #draft
 * ^url = $vs-medical-service-moh
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * include codes from system $medical-service-code-moh

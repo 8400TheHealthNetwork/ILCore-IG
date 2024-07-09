@@ -3,7 +3,7 @@ Id: il-core-coverage-class
 Title: "IL Core Coverage Class codes"
 Description: "Codes for Coverage classes"
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^url = $il-core-coverage-class
 * ^content = #complete
 * ^caseSensitive = false

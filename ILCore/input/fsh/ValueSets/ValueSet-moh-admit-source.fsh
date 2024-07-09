@@ -5,7 +5,7 @@ Description: "Codes for admit source according to MoH catalogue"
 
 * ^url = $vs-moh-admit-source
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * include codes from system $patient-admit-source-moh

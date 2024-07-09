@@ -6,7 +6,7 @@ Description: "Codes for for URNs of different kinds, instead of using urn:ietf:r
 * ^status = #draft
 * ^url = $urn
 * ^content = #complete
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^caseSensitive = false
 * ^experimental = false
 

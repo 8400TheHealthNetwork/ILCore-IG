@@ -5,7 +5,7 @@ Description: "Codes for countries according to ISO 3166"
 
 * ^url = $vs-jurisdiction
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * include codes from system $country-codes

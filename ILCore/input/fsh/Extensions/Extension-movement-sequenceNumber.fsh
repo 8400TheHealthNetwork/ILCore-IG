@@ -4,7 +4,7 @@ Title: "Ext: Movement Sequence-Number"
 Description: "Extension: Movement Sequence-Number"
 
 * ^url = $ext-movement-sequence-number
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

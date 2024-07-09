@@ -4,7 +4,7 @@ Title: "Ext: ILCore Procedure Reference"
 Description: "Extension: Procedure Reference"
 
 * ^url = $ext-procedure-reference
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

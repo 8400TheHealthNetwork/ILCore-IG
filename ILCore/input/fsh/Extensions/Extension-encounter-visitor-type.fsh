@@ -2,9 +2,9 @@ Extension: EncounterVisitorType
 Id: ext-encounter-visitor-type
 Title: "Ext: Encounter Visitor Type"
 Description: "Classification of the visitor type (סוג מבקר/סוג כניסה) for the Encounter"
-Context: Encounter
+Context: Encounter.subject
 * ^url = $ext-encounter-visitor-type
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

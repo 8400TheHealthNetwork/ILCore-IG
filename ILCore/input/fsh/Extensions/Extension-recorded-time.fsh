@@ -4,7 +4,7 @@ Title: "Ext: ILCore Recorded Time"
 Description: "Extension: The time in which the medication order / administration / dispense was recorded"
 
 * ^url = $ext-recorded-time
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context[0].type = #element

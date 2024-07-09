@@ -5,7 +5,7 @@ Description: "קוד קורס על בסיסי לעוסק בסיעוד לפי ר�
 
 * ^url = $vs-practitioner-advanced-course
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * include codes from system $practitioner-advanced-course-moh

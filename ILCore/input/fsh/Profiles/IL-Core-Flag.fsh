@@ -6,7 +6,7 @@ Title: "ILCore Flag Profile"
 Description: "Adds Isareli constraints to the Flag datatype"
 
 * ^url = $ILFlag
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

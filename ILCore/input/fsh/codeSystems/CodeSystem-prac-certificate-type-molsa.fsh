@@ -3,7 +3,7 @@ Id: practitioner-certificate-type-molsa
 Title: "MoLSA Certificate Types"
 Description: "A list of codes for certificate types according to Israeli MoLSA"
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^url = $pract-certificate-type-molsa
 * ^content = #complete
 * ^caseSensitive = false

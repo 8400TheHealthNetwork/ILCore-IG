@@ -6,7 +6,7 @@ Title: "ILCore ActivityDefinition Profile"
 Description: "Adds several Israel-specific extensions and constraints, plus geocode extension to the ActivityDefinition datatype"
 
 * ^url = $ILActivityDefinition
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

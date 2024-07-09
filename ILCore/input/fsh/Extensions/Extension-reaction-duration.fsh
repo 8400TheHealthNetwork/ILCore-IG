@@ -4,7 +4,7 @@ Title: "Ext: Reaction Duration"
 Description: "Extension: Reaction Duration"
 
 * ^url = $ext-reaction-duration
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

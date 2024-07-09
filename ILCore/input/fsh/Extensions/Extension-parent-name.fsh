@@ -4,7 +4,7 @@ Title: "Ext: Name of parent"
 Description: "Extension: The name of a parent. NOTE: This extension is now DEPRECATED (ststus: retired) and has been replaced with AdminParentName"
 
 * ^url = $ext-parent-name
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #retired
 * value[x] only string

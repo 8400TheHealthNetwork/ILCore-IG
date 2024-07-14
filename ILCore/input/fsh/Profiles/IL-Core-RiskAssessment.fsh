@@ -1,6 +1,6 @@
 Profile: ILCoreRiskAssessment
 Parent: RiskAssessment
-Id: il-core-risk-assesment
+Id: il-core-risk-assessment
 Title: "ILCore RiskAssessment Profile"
 Description: "Israel Core proposed constraints and extensions on the RiskAssessment Resource"
 

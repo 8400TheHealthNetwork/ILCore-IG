@@ -4,7 +4,7 @@ Title: "סוג מוסד לפי רישוי משרד הבריאות"
 Description: "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"
 * ^url = $vs-institution-type-moh
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * include codes from system $institution-type-moh

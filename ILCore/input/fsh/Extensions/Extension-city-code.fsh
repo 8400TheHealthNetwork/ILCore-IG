@@ -4,7 +4,7 @@ Title: "Ext: City Code"
 Description: "A coded representation of the city, town or settlement"
 
 * ^url = $ext-ct
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

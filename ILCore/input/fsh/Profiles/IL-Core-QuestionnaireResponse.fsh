@@ -5,7 +5,7 @@ Title: "ILCore QuestionnaireResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the QuestionnaireResponse Resource"
 
 * ^url = $ILQuestionnaireResponse
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -27,3 +27,10 @@ Description: "Israel Core proposed constraints and extensions on the Questionnai
 * author only Reference(ILCoreDevice or ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson or ILCoreOrganization)
 * source only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson)
 * questionnaire only Canonical(ILCoreQuestionnaire)
+
+
+
+
+
+
+

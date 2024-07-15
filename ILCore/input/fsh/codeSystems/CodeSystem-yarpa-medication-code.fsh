@@ -9,6 +9,6 @@ Description: "Codes for medications according to 'Yarpa' catalogue"
 * ^content = #complete
 * ^content = #not-present
 // * ^valueSet = $vs-yarpa-medication-code
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^caseSensitive = false
 * ^experimental = false

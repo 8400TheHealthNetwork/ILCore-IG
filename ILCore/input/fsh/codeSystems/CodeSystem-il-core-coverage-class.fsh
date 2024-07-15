@@ -3,12 +3,12 @@ Id: il-core-coverage-class
 Title: "IL Core Coverage Class codes"
 Description: "Codes for Coverage classes"
 * ^status = #draft
-* ^version = "0.14.2"
-* ^url = $coverage-class
+* ^version = "0.15.1"
+* ^url = $il-core-coverage-class
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false
-* ^valueSet = $vs-coverage-class
+* ^valueSet = $vs-il-core-coverage-class
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-08"
 

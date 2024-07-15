@@ -1,11 +1,11 @@
 Profile: ILCoreRiskAssessment
 Parent: RiskAssessment
-Id: il-core-risk-assesment
+Id: il-core-risk-assessment
 Title: "ILCore RiskAssessment Profile"
 Description: "Israel Core proposed constraints and extensions on the RiskAssessment Resource"
 
 * ^url = $ILRiskAssessment
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

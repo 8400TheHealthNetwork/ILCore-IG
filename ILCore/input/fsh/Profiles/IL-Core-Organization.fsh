@@ -6,7 +6,7 @@ Title: "ILCore Organization Profile"
 Description: "Israel Core proposed constraints and extensions on the Organization Resource"
 
 * ^url = $ILOrganization
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

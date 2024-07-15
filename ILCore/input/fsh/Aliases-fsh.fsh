@@ -57,7 +57,7 @@ Alias: $ILQuestionnaireResponse =       http://fhir.health.gov.il/StructureDefin
 Alias: $ILQuestionnaire =               http://fhir.health.gov.il/StructureDefinition/il-core-questionnaire
 Alias: $ILRelatedPerson =               http://fhir.health.gov.il/StructureDefinition/il-core-related-person
 Alias: $ILResearchStudy =               http://fhir.health.gov.il/StructureDefinition/il-core-research-study
-Alias: $ILResearchSubject =              http://fhir.health.gov.il/StructureDefinition/il-core-research-subject
+Alias: $ILResearchSubject =             http://fhir.health.gov.il/StructureDefinition/il-core-research-subject
 Alias: $ILRiskAssessment =              http://fhir.health.gov.il/StructureDefinition/il-core-risk-assesment
 Alias: $ILServiceRequest =              http://fhir.health.gov.il/StructureDefinition/il-core-service-request
 Alias: $ILSubstance =                   http://fhir.health.gov.il/StructureDefinition/il-core-substance
@@ -67,7 +67,7 @@ Alias: $ILVitalSigns =                  http://fhir.health.gov.il/StructureDefin
  
 // IDs & licenses
 Alias: $il-id =                         http://fhir.health.gov.il/identifier/il-national-id
-Alias: $visa-num =                      http://fhir.health.gov.il/identifier/il-visa-num
+Alias: $entry-permit =                  http://fhir.health.gov.il/identifier/il-entry-permit
 Alias: $pna-id =                        http://fhir.health.gov.il/identifier/pna-national-id
 Alias: $idf-sn =                        http://fhir.health.gov.il/identifier/idf-service-number
 Alias: $prisoner-id =                   http://fhir.health.gov.il/identifier/il-prisoner-number
@@ -90,6 +90,7 @@ Alias: $stat-area-id =                  http://fhir.health.gov.il/identifier/cbs
 // Extensions - ILCore
 Alias: $ext-ct =                        http://fhir.health.gov.il/StructureDefinition/ext-city-code
 Alias: $ext-hmo =                       http://fhir.health.gov.il/StructureDefinition/ext-il-hmo
+Alias: $ext-accession-number =          http://fhir.health.gov.il/StructureDefinition/ext-accession-number
 Alias: $ext-parent-name =               http://fhir.health.gov.il/StructureDefinition/ext-parent-name
 Alias: $ext-procedure-reference =       http://fhir.health.gov.il/StructureDefinition/ext-procedure-reference
 Alias: $ext-medication-course-of-therapy-type =  http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type
@@ -139,9 +140,9 @@ Alias: $payer =                         http://fhir.health.gov.il/cs/paying-enti
 Alias: $pp-uri =                        http://fhir.health.gov.il/cs/passport-uri
 Alias: $hebrew-date-day =               http://fhir.health.gov.il/cs/hebrew-date-day
 Alias: $hebrew-date-month =             http://fhir.health.gov.il/cs/hebrew-date-month
-Alias: $coverage-class =                http://fhir.health.gov.il/cs/il-core-coverage-class
+Alias: $il-core-coverage-class =        http://fhir.health.gov.il/cs/il-core-coverage-class
 Alias: $coverage-type =                 http://fhir.health.gov.il/cs/il-core-coverage-type
-Alias: $coverage-premium-type =         http://fhir.health.gov.il/cs/il-core-coverage-premium-type
+Alias: $premium-type =                  http://fhir.health.gov.il/cs/il-core-premium-type
 Alias: $practitioner-profession-moh =   http://fhir.health.gov.il/cs/practitioner-profession-moh
 Alias: $practitioner-profession-molsa = http://fhir.health.gov.il/cs/practitioner-profession-molsa
 Alias: $department-type-moh =           http://fhir.health.gov.il/cs/department-type-moh
@@ -184,6 +185,8 @@ Alias: $v3-ActEncounterCode =           http://terminology.hl7.org/ValueSet/v3-A
 Alias: $condition-clinical =            http://terminology.hl7.org/CodeSystem/condition-clinical
 Alias: $condition-ver-status =          http://terminology.hl7.org/CodeSystem/condition-ver-status
 Alias: $condition-category =            http://terminology.hl7.org/CodeSystem/condition-category
+Alias: $hl7-coverage-class =            http://terminology.hl7.org/CodeSystem/coverage-class
+Alias: $obs-cat =                       http://terminology.hl7.org/CodeSystem/observation-category
 Alias: $age-units =                     http://hl7.org/fhir/ValueSet/age-units
 Alias: $moh-qualification =             http://qualification.health.gov.il
 Alias: $icd9-cm =                       http://hl7.org/fhir/sid/icd-9-cm
@@ -193,7 +196,6 @@ Alias: $ucum =                          http://unitsofmeasure.org
 Alias: $yarpa-medication-code =         http://yarpa.co.il/catalog
 Alias: $pharmasoft-medication-code =    http://pharma-soft.co.il/catalog
 Alias: $moh-medication-code =           http://israeldrugs.health.gov.il
-Alias: $obs-cat =                       http://terminology.hl7.org/CodeSystem/observation-category
 // Alias: $moh-admit-source =              http://fhir.health.gov.il/ValueSet/moh-admit-source
 Alias: $country-codes  =                urn:iso:std:iso:3166
 // Alias: $urn =                           urn:ietf:rfc:3986  // created a new CS in IL-CORE section
@@ -222,7 +224,7 @@ Alias: $vs-medical-service-moh =        http://fhir.health.gov.il/ValueSet/medic
 Alias: $vs-medication-course-of-therapy-type = http://fhir.health.gov.il/ValueSet/medication-course-of-therapy-type
 Alias: $vs-statistical-area-uri =       http://fhir.health.gov.il/ValueSet/statistical-area-uri
 Alias: $vs-patient-relationship-type =  http://fhir.health.gov.il/ValueSet/patient-relationship-type
-Alias: $vs-coverage-class =             http://fhir.health.gov.il/ValueSet/il-core-coverage-class
+Alias: $vs-il-core-coverage-class =     http://fhir.health.gov.il/ValueSet/il-core-coverage-class
 Alias: $vs-coverage-type =              http://fhir.health.gov.il/ValueSet/il-core-coverage-type
 Alias: $vs-coverage-premium-type =      http://fhir.health.gov.il/ValueSet/il-core-premium-type
 Alias: $vs-il-core-allergy-intolerance-code = http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code
@@ -281,9 +283,9 @@ Alias: $vs-not-performed-reason =       http://fhir.health.gov.il/ValueSet/il-co
 Alias: $vs-patient-visit-reason-moh =   http://fhir.health.gov.il/ValueSet/patient-visit-reason-moh
 Alias: $vs-patient-admit-source-moh =   http://fhir.health.gov.il/ValueSet/patient-admit-source-moh
 Alias: $vs-patient-release-type-moh =   http://fhir.health.gov.il/ValueSet/patient-release-type-moh
-Alias: $vs-patient-mode-of-arrival-moh =   http://fhir.health.gov.il/ValueSet/patient-mode-of-arrival-moh
+Alias: $vs-patient-mode-of-arrival-moh = http://fhir.health.gov.il/ValueSet/patient-mode-of-arrival-moh
 Alias: $vs-patient-visitor-type-moh =   http://fhir.health.gov.il/ValueSet/patient-visitor-type-moh
-Alias: $vs-encounter-paying-entity-moh =   http://fhir.health.gov.il/ValueSet/encounter-paying-entity-moh
+Alias: $vs-encounter-paying-entity-moh = http://fhir.health.gov.il/ValueSet/encounter-paying-entity-moh
 
 
 // ValueSets - external
@@ -294,17 +296,11 @@ Alias: $language =                      http://hl7.org/fhir/ValueSet/languages
 Alias: $religion =                      http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation
 Alias: $vital-signs-units =             http://hl7.org/fhir/ValueSet/ucum-vitals-common
 Alias: $vitalsigns =                    http://hl7.org/fhir/ValueSet/observation-vitalsignresult
+Alias: $hl7-vs-coverage-class =         http://hl7.org/fhir/ValueSet/coverage-class
+
+
 
 
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
 
-// TEMP ///////////////////
-Alias: $us-core-patient = http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient
-Alias: $us-core-practitioner = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner
-Alias: $us-core-organization = http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization
-Alias: $us-core-practitionerrole = http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitionerrole
-Alias: $us-core-relatedperson = http://hl7.org/fhir/us/core/StructureDefinition/us-core-relatedperson
-Alias: $us-core-encounter = http://hl7.org/fhir/us/core/StructureDefinition/us-core-encounter
-Alias: $us-core-documentreference-type = http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-type
-Alias: $us-core-documentreference-category = http://hl7.org/fhir/us/core/ValueSet/us-core-documentreference-category

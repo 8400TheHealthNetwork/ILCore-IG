@@ -5,7 +5,7 @@ Title: "ILCore Encounter Profile"
 Description: "Israel Core proposed constraints and extensions on the Encounter Resource"
 
 * ^url = $ILEncounter
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"
@@ -79,7 +79,7 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * reasonCode ^slicing.discriminator.path = "$this"
 * reasonCode ^slicing.rules = #open
 * reasonCode contains moh-reason-code 0..*
-* reasonCode[moh-reason-code] from $vs-patient-visit-reason-moh (preferred)
+* reasonCode[moh-reason-code] from $vs-patient-visit-reason-moh (required)
 * reasonReference only Reference(ILCoreCondition or ILCoreProcedure or ILCoreObservation or ImmunizationRecommendation)
 * diagnosis.condition only Reference(ILCoreCondition or ILCoreProcedure)
 * hospitalization.origin only Reference(ILCoreLocation or ILCoreOrganization)

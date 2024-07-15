@@ -5,7 +5,7 @@ Title: "ILCore Condition Profile"
 Description: "Israel Core proposed constraints and extensions on the Condition Resource"
 
 * ^url = $ILCondition
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

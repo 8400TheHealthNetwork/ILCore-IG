@@ -6,7 +6,7 @@ Title: "ILCore Address Profile"
 Description: "Adds several Israel-specific extensions and constraints, plus geocode extension to the Address datatype"
 
 * ^url = $ILAddress
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^status = #draft
 * insert CurrentDate
 * ^publisher = "Israel Core Team"

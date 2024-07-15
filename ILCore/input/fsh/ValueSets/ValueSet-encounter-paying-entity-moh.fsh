@@ -7,7 +7,7 @@ Description: "MoH Codes for the Paying Entity for the Encounter
 // * ^language = #he-IL
 * ^url = $vs-encounter-paying-entity-moh
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = true
 
 * include codes from system $payer

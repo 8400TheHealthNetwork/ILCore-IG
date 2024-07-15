@@ -4,7 +4,7 @@ Title: "IL Core Route Code"
 Description: "A list of codes for Route for the IL Core"
 * ^url = $vs-il-core-route-code
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #284009009 "Route of administration value"

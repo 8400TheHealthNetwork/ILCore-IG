@@ -4,7 +4,7 @@ Title: "Ext: IL Core Processing Location"
 Description: "Extension: IL Core Processing Location"
 
 * ^url = $ext-processing-location
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element

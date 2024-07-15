@@ -4,7 +4,7 @@ Title: "Passport URIs"
 Description: "A country specific URI for passport numbers"
 * ^url = $vs-pp-uri
 * ^status = #draft
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * ^experimental = false
 
 * $urn#http://hl7.org/fhir/sid/passport-AFG "Afghanistan"

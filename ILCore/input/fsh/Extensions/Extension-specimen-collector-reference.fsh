@@ -4,10 +4,10 @@ Title: "Ext: ILCore Specimen Collector Reference"
 Description: "Extension: Specimen Collector Reference"
 
 * ^url = $ext-specimen-collector-reference
-* ^version = "0.14.2"
+* ^version = "0.15.1"
 * insert CurrentDate
 * ^status = #draft
 * ^context.type = #element
-* ^context.expression = "Specimen"
+* ^context.expression = "Specimen.collection.collector"
 
 * value[x] only Reference(ILCorePatient or ILCoreRelatedPerson)

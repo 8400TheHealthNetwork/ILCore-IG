@@ -6,7 +6,7 @@ Description: "codes of procedures from ICD9-IL"
 
 * ^url = $vs-icd9-il-procedures
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $icd9-il where type = "procedure"

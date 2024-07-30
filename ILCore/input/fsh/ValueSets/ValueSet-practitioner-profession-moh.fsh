@@ -5,7 +5,7 @@ Description: "קוד מקצוע לעוסק בבריאות לפי רישוי מש
 
 * ^url = $vs-practitioner-profession-moh
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $practitioner-profession-moh

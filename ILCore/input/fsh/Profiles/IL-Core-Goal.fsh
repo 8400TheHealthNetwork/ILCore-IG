@@ -5,9 +5,9 @@ Title: "ILCore Goal Profile"
 Description: "Israel Core proposed constraints and extensions on the Goal Resource"
 
 * ^url = $ILGoal
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
+
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"

@@ -3,7 +3,7 @@ Id: il-core-not-performed-reason
 Title: "IL Core Not Perfomed Reasons"
 Description: "A list of codes for reasons an observation was not made"
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^url = $not-performed-reason
 * ^content = #complete
 * ^caseSensitive = false

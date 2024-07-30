@@ -4,9 +4,9 @@ Id: il-core-observation-lab
 Title: "ILCore Observation Lab Profile"
 Description: "Israel Core proposed constraints and extensions on the ILCoreObservation Resource for laboratory observations"
 * ^url = $ILObservationLab
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
+
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"

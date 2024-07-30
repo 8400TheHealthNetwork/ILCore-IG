@@ -6,9 +6,9 @@ Title: "ILCore Dosage Profile"
 Description: "Adds several Israel-specific extensions and constraints to the Dosage datatype"
 
 * ^url = $ILDosage
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
+
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"

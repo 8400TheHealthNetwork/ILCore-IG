@@ -5,7 +5,7 @@ Description: "A code classifying Health Management Organizations"
 
 * ^url = $vs-hmo
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $payer#101 "קופת חולים כללית"

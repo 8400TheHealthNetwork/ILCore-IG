@@ -4,8 +4,8 @@ Title: "Ext: Accession Numner"
 Description: "Extension: Statistical Area. The Accession Number of the ImagingStudy"
 * ^language = #en-US
 * ^url = $ext-accession-number
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context[0].type = #element
 * ^context[0].expression = "ImagingStudy" 

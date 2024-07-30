@@ -4,8 +4,8 @@ Title: "Ext: IL Core Processing Practitioner"
 Description: "Extension: IL Core Processing Practitioner"
 
 * ^url = $ext-processing-practitioner
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "Specimen"

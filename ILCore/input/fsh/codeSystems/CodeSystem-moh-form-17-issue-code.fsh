@@ -5,7 +5,7 @@ Description: "קודי שגיאה \\ סירוב לתהליכים הקשורים 
 * ^status = #draft
 * ^url = $moh-tofes17-issue-code
 * ^content = #not-present
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false
 * ^publisher = "Israeli Ministry of Health, Digital Health Unit"

@@ -4,7 +4,7 @@ Title: "Payer (Paying Entity / גורם משלם)"
 Description: "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system"
 
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^url = $payer
 * ^content = #complete
 * ^caseSensitive = false

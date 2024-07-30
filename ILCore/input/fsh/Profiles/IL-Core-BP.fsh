@@ -5,9 +5,9 @@ Title: "ILCore Blood Pressure Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurments."
 
 * ^url = $ILBP
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
+
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 * . ^short = "ILCore Blood Pressure Profile"

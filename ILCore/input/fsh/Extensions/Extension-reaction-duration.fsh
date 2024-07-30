@@ -4,8 +4,8 @@ Title: "Ext: Reaction Duration"
 Description: "Extension: Reaction Duration"
 
 * ^url = $ext-reaction-duration
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "AllergyIntolerance.reaction"

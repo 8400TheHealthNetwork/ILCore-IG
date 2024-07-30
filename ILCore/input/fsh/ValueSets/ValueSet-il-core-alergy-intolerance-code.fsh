@@ -4,7 +4,7 @@ Title: "IL Core Allergy Intolerance Code"
 Description: "A list of codes for Allergy Intolerance for the IL Core"
 * ^url = $vs-il-core-allergy-intolerance-code
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system http://hl7.org/fhir/sid/icd-10

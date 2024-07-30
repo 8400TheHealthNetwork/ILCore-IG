@@ -4,8 +4,8 @@ Title: "Ext: ILCore Specimen Collector Reference"
 Description: "Extension: Specimen Collector Reference"
 
 * ^url = $ext-specimen-collector-reference
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "Specimen.collection.collector"

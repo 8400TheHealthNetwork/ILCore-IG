@@ -4,8 +4,8 @@ Title: "Ext: ILCore Procedure Reference"
 Description: "Extension: Procedure Reference"
 
 * ^url = $ext-procedure-reference
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "MedicationRequest.reasonRefference"

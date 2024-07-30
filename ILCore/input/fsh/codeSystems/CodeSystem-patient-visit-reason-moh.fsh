@@ -7,7 +7,7 @@ Description: "Moh Codes for Patient Visit Reason
 * ^status = #draft
 * ^url = $patient-visit-reason-moh
 * ^content = #example
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = true
 * ^extension[0].url = $effective

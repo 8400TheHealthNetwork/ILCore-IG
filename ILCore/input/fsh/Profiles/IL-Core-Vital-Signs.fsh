@@ -5,9 +5,9 @@ Title: "ILCore Vital Signs Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in querying and retrieving Vital Signs information."
 
 * ^url = $ILVitalSigns
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
+
 * ^publisher = "Israel Core Team"
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
@@ -19,6 +19,8 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * ^extension[=].valueInteger = 0
 
 * obeys il-vs2
+* extension contains $body-position named body-position 0..1
+* extension[body-position].valueCodeableConcept from $vs-il-core-body-position (example)
 * category ^slicing.discriminator[0].type = #value
 * category ^slicing.discriminator[0].path = "coding.code"
 * category ^slicing.discriminator[1].type = #value

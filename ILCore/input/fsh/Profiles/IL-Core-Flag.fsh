@@ -9,9 +9,7 @@ Description: "Adds Isareli constraints to the Flag datatype"
 * insert ConformanceMetadata
 * ^status = #draft
 
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
 * ^contact[0].telecom[0].use = #work
 * ^jurisdiction[0] = urn:iso:std:iso:3166#IL
 * ^copyright = "Israeli Ministry of Health" 

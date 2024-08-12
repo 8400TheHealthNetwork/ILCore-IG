@@ -8,9 +8,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 * insert ConformanceMetadata
 * ^status = #draft
 
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
 * . ^short = "ILCore ServiceRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ServiceRequest resource profile."
 * . ^isModifier = false

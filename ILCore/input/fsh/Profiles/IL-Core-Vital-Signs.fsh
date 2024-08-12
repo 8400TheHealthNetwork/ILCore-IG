@@ -8,9 +8,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * insert ConformanceMetadata
 * ^status = #draft
 
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
 * . ^short = "ILCore Vital Signs Profile"
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"

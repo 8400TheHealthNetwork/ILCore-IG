@@ -8,9 +8,7 @@ Description: "Israel Core proposed constraints and extensions on the DiagnosticR
 * insert ConformanceMetadata
 * ^status = #draft
 
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
 * . ^short = "ILCore DiagnosticReport Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the DiagnosticReport resource profile."
 * . ^isModifier = false

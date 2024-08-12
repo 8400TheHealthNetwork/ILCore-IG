@@ -9,9 +9,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * insert ConformanceMetadata
 * ^status = #draft
 
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
 
 * . ^short = "ILCore Patient profile"
 * . ^definition = "The Patient Profile is based upon the core FHIR Patient Resource"
@@ -170,7 +168,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * contact ^slicing.discriminator.path = "relationship"
 * contact ^slicing.rules = #open
 * contact contains Parent 0..*
-* contact[Parent].relationship ^patternCoding = https://terminology.hl7.org/6.0.2/CodeSystem-v3-RoleCode.html#PARNT
+* contact[Parent].relationship ^patternCoding = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
 // * contact[Parent].relationship ^patternCoding = http://terminology.hl7.org/CodeSystem/v2-0131#PAR  //OLD and incorrect. awaiting Daniel's reply
 // * contact[Child].relationship.coding ^patternCoding = {system: "http://terminology.hl7.org/CodeSystem/v2-0131", code: "CHD"}
 

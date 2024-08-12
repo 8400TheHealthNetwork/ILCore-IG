@@ -8,9 +8,7 @@ Description: "Israel Core proposed constraints and extensions on the Library Res
 * insert ConformanceMetadata
 * ^status = #draft
 
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
 * . ^short = "Israel Core Library Profile"
 * . ^definition = "The Library Profile is based upon the core FHIR Library Resource"
 * . ^isModifier = false

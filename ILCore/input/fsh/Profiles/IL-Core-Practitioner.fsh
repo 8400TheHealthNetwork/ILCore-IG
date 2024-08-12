@@ -9,9 +9,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * insert ConformanceMetadata
 * ^status = #draft
 
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
 
 * . ^short = "ILCore Practitioner Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the practitioner resource profile."

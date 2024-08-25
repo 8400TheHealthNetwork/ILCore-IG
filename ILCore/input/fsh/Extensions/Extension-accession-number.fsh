@@ -12,4 +12,4 @@ Description: "Extension: Statistical Area. The Accession Number of the ImagingSt
 
 * value[x] only Identifier
 * valueIdentifier.type 1..1
-* valueIdentifier.type = $id-type#ASCN
+* valueIdentifier.type = $id-type#ACSN

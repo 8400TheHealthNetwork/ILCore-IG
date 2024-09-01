@@ -6,12 +6,10 @@ Title: "ILCore Organization Profile"
 Description: "Israel Core proposed constraints and extensions on the Organization Resource"
 
 * ^url = $ILOrganization
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore Organization Profile"
 * . ^definition = "The Organization Profile is based upon the core FHIR Organization Resource"
@@ -33,7 +31,8 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
    moh-inst-symbol 0..1 and
    legal-entity 0..1 and
    moe-inst 0..1 and
-   moh-hospital-department 0..1
+   moh-hospital-department 0..1 and
+   paying-entity-moh 0..1
 
 * identifier[moh-inst-symbol].system 1..1 MS
 * identifier[moh-inst-symbol].value 1..1 MS
@@ -72,6 +71,14 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * identifier[moh-hospital-department].system ^definition = "An institute (hospital) department identifier consisting of five alphanumeric cahracters, a hyphen (\"-\") and five alphanumeric cahracters once again"
 * identifier[moh-hospital-department].system = $moh-hosp-department (exactly)
 * identifier[moh-hospital-department].value ^short = "An MoH hospital depratment symbol"
+
+* identifier[paying-entity-moh] MS
+* identifier[paying-entity-moh].system 1..1 MS
+* identifier[paying-entity-moh].value from http://fhir.health.gov.il/ValueSet/organization-paying-entity-moh-identifier (required)
+* identifier[paying-entity-moh] ^short = "MoH Paying Entity Identifier"
+* identifier[paying-entity-moh] ^definition = "paying entity codes that may be used as organization and organization units identifier"
+* identifier[paying-entity-moh].system ^definition = "An institute (hospital) department identifier consisting of five alphanumeric cahracters, a hyphen (\"-\") and five alphanumeric cahracters once again"
+* identifier[paying-entity-moh].system = $payer (exactly)
 
 //active
 * active 0..1 MS

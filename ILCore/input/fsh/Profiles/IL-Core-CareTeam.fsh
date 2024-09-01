@@ -5,12 +5,10 @@ Title: "ILCore CareTeam Profile"
 Description: "Israel Core proposed constraints and extensions on the CareTeam Resource"
 
 * ^url = $ILCareTeam
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore CareTeam Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the CareTeam resource profile."

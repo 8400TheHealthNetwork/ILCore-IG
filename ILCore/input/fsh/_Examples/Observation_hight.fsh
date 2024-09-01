@@ -22,4 +22,5 @@ Description: "Observation - hight measurement"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #cm
 * performer.reference = "Practitioner/practitioner-nurse"
+* effectiveDateTime = "2022-12-10"
 

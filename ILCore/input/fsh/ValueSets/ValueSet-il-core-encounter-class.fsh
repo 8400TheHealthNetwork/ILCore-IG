@@ -4,7 +4,7 @@ Title: "IL Core Encounter Class Codes"
 Description: "A list of class codes for Encounters for the IL Core"
 * ^url = $vs-il-core-encounter-class
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $il-core-encounter-class

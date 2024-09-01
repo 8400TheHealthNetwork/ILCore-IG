@@ -5,12 +5,10 @@ Title: "ILCore ClaimResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the ClaimResponse Resource"
 
 * ^url = $ILClaimResponse
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore ClaimResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ClaimResponse resource profile."

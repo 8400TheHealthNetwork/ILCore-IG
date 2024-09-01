@@ -4,7 +4,7 @@ Title: "IL Core Observation Lab Code"
 Description: "A list of lab-code codes for lab observations for the IL Core"
 * ^url = $vs-il-core-observation-lab-code
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $loinc where CLASSTYPE = "1"

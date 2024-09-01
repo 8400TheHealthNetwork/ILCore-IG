@@ -5,7 +5,7 @@ Description: "Codes for medications according to MoH catalogue"
 
 * ^url = $vs-moh-medication-code
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $moh-medication-code

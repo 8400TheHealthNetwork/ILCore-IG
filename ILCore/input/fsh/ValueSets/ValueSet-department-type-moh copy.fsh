@@ -5,7 +5,7 @@ Description: "Israel ministry of health coding system for department types"
 
 * ^status = #draft
 * ^url = $vs-department-type-moh
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $department-type-moh

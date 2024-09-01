@@ -4,9 +4,9 @@ Title: "CodeSyestem for URNs"
 Description: "Codes for for URNs of different kinds, instead of using urn:ietf:rfc:3986 and urn:iso:std:iso:3166 as CodeSystem identifiers"
 
 * ^status = #draft
-* ^url = $urn
+// * ^url = $urn
 * ^content = #complete
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false
 

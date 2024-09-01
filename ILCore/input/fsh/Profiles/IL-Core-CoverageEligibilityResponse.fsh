@@ -5,12 +5,10 @@ Title: "ILCore CoverageEligibilityResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the CoverageEligibilityResponse Resource"
 
 * ^url = $ILCoverageEligibilityResponse
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore CoverageEligibilityResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the CoverageEligibilityResponse resource profile."

@@ -4,8 +4,8 @@ Title: "Ext: ILCore Narcotic Medication"
 Description: "Extension: Noting if a medication is narcotic or not"
 
 * ^url = $ext-narcotic-medication
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context[0].type = #element
 * ^context[0].expression = "MedicationRequest"

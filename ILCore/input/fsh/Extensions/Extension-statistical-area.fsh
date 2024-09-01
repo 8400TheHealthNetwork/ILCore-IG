@@ -4,8 +4,8 @@ Title: "Ext: Statistical Area"
 Description: "Extension: Statistical Area. A concatination of the city symbol + 4-digit statistical area code in settelment. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -> 3000113"
 * ^language = #en-US
 * ^url = $ext-statistical-area
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context[0].type = #element
 * ^context[0].expression = "Address" 

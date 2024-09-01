@@ -21,7 +21,7 @@ Usage: #example
 * gender = #female
 * birthDate = "1980-06-22"
 
-* qualification[+].identifier[0].system = $practitioner-certificate
+* qualification[+].identifier[0].system = $practitioner-license-moh
 * qualification[=].identifier[0].value = "27-1234"
 * qualification[=].code = $pract-certificate-type-moh#2 "רשיון קבוע"
 * qualification[=].extension[0].url = $ext-qualification-practice

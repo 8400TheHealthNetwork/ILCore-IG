@@ -5,12 +5,10 @@ Title: "ILCore QuestionnaireResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the QuestionnaireResponse Resource"
 
 * ^url = $ILQuestionnaireResponse
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore QuestionnaireResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the QuestionnaireResponse resource profile."

@@ -20,7 +20,7 @@ Usage: #example
 * telecom[1].value = "DG@example.com"
 * gender = #female
 * birthDate = "1979-04-30"
-* qualification[+].identifier[0].system = $practitioner-certificate
+* qualification[+].identifier[0].system = $practitioner-license-moh
 * qualification[=].identifier[0].value = "1-22947"
 * qualification[=].identifier[0].period.start = "2012-09-06"
 * qualification[=].code = $pract-certificate-type-moh#2 "רשיון קבוע"

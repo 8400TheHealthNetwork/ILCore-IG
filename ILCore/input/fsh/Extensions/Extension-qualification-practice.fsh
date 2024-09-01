@@ -4,10 +4,10 @@ Title: "Ext: Qualification Practice"
 Description: "Extension: Qualification Practice"
 
 * ^url = $ext-qualification-practice
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context[0].type = #element
-* ^context[0].expression = "Practitioner.Element"
+* ^context[0].expression = "Practitioner.qualification"
 
 * value[x] only CodeableConcept

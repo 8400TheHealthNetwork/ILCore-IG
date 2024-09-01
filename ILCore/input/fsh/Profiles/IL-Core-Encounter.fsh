@@ -5,12 +5,10 @@ Title: "ILCore Encounter Profile"
 Description: "Israel Core proposed constraints and extensions on the Encounter Resource"
 
 * ^url = $ILEncounter
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore Encounter Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Encounter resource profile."
@@ -45,13 +43,14 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * classHistory.class from $vs-il-core-encounter-class (extensible)
 * type ^definition = "Specific type of encounter that is orthogonal to class and serviceType (e.g. e-mail consultation)" 
 * type ^slicing.discriminator.type = #pattern
-* type ^slicing.discriminator.path = "$this"
+* type ^slicing.discriminator.path = "coding"
+// * type ^slicing.discriminator.path = "$this"
 * type ^slicing.rules = #open
 * type contains 
     virtual-encounters 0..* and
     doctor-to-doctor-consultation 0..*
-* type[doctor-to-doctor-consultation] from $vs-il-core-doctor-to-doctor (required)
-* type[virtual-encounters] from $vs-il-core-virtual-type (required)
+* type[doctor-to-doctor-consultation].coding from $vs-il-core-doctor-to-doctor (required)
+* type[virtual-encounters].coding from $vs-il-core-virtual-type (required)
 * serviceType from $vs-il-core-service-type (extensible)
 * subject 1..1
 * subject only Reference(ILCorePatient or ILCoreGroup)
@@ -59,7 +58,8 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * subject.extension[visitor-type] ^short = "Extension: Israeli CORE Encounter Visitor Type"
 * subject.extension[visitor-type] ^definition = "Classification of the visitor type (סוג מבקר/סוג כניסה) for the Encounter"
 * basedOn only Reference(ILCoreServiceRequest)
-* participant ^slicing.discriminator.type = #value
+// * participant ^slicing.discriminator.type = #value
+* participant ^slicing.discriminator.type = #pattern
 * participant ^slicing.discriminator.path = "type"
 * participant ^slicing.rules = #open
 * participant contains 
@@ -72,8 +72,10 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
   * period 0..1
   * individual MS
   * individual 1..1
-  * type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" (exactly)
-  * type.coding.code = #PPRF (exactly)
+  * type ^patternCodeableConcept.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" 
+  * type ^patternCodeableConcept.coding.code = #PPRF 
+//   * type.coding.system = "http://terminology.hl7.org/CodeSystem/v3-ParticipationType" (exactly)
+//   * type.coding.code = #PPRF (exactly)
 * participant.individual only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson)
 * reasonCode ^slicing.discriminator.type = #pattern
 * reasonCode ^slicing.discriminator.path = "$this"

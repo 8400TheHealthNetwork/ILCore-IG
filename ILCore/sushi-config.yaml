@@ -7,14 +7,14 @@
 id: il.core.fhir.r4
 packageId: il.core.fhir.r4
 canonical: http://fhir.health.gov.il
-version: 0.14.2
+version: 0.15.1
 name: ILCoreImplementationGuide
 title: IL Core Implementation Guide
 status: draft
 jurisdiction: urn:iso:std:iso:3166#IL "Israel" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 publisher: 
   name: Israel Core Team
-  email: tal.primak@moh.gov.il 
+  url: https://www.fhir-il-community.org/fhir-israel-core 
 contact:
   - name: Tal Primak
     telecom:
@@ -53,9 +53,8 @@ copyrightYear: 2020+
 #releaseLabel: ci-build
 releaseLabel: draft
 dependencies:
-  hl7.fhir.us.core:
-    uri: http://hl7.org/fhir/us/core/ImplementationGuide/ig
-    version: 4.1.0
+  hl7.fhir.r4.core: 4.0.1
+  hl7.fhir.us.core: 7.0.0
 
 # added for testing purposes. Hopefully will stay on later too // Kippi 19/01/2023
 pages:

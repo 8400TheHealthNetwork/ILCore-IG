@@ -4,12 +4,10 @@ Id: il-core-observation-lab
 Title: "ILCore Observation Lab Profile"
 Description: "Israel Core proposed constraints and extensions on the ILCoreObservation Resource for laboratory observations"
 * ^url = $ILObservationLab
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 * . ^short = "ILCore Observation Lab Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the profile ILCoreObservationLabcd resource profile."
 * . ^isModifier = false
@@ -45,5 +43,5 @@ Description: "Israel Core proposed constraints and extensions on the ILCoreObser
 * performer[organization] only Reference(ILCoreOrganization)
 * value[x] only Quantity or CodeableConcept or string or boolean or integer or Range or Ratio   //Might become more restrictive
 * valueCodeableConcept ^binding.strength = #required
-* valueQuantity from $ucum (extensible)
+* valueQuantity from $vs-ucum (extensible)
 * component.valueCodeableConcept ^binding.strength = #required

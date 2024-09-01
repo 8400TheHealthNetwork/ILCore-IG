@@ -7,12 +7,10 @@ Title: "ILCore Immunization Profile"
 Description: "Israel Core proposed constraints and extensions on the Immunization Resource"
 
 * ^url = $ILImmunization
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore Immunization Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Immunization resource profile."

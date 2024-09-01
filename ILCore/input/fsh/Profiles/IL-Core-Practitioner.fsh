@@ -6,12 +6,10 @@ Title: "ILCore Practitioner Profile"
 Description: "Israel Core proposed constraints and extensions on the Practitioner Resource"
 
 * ^url = $ILPractitioner
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore Practitioner Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the practitioner resource profile."
@@ -136,15 +134,12 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * insert HumanNameLanguage  // RuleSet that handles language extension and slices. -> see RuleSets/HumanNameLanguage // Kippi B. May-11 2023
 
 
-// * qualification.extension contains
-//    $ext-qualification-practice named practice 1..1  // ask DORIT if the cardinality SHOULD change 13/12/21
-
 * qualification ^definition = """The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner. For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.\n
 <mark>Note:</mark> \n
 <b><u>Certificates of all professions except nursing</b></u>\n
 • For temporary license (slice: [moh-temp-practitioner-license]): code = 1; SHALL have identifier, consisting of profession code, a hyphen (\"-\"), followed by a number. Example - 1-1111;\n 
 • For permanent license (slice: [moh-practitioner-license]): code = 2; SHALL have identifier, consisting of profession code, a hyphen (\"-\"), followed by a number. Example - 1-1111;\n 
-• For certificate of expretise (slice: [moh-expretise]): code = 5; SHOULD (if available, not mandatory) have identifier, consisting of a number. Example - 12345;\n 
+• For certificate of expertise (slice: [moh-expertise]): code = 5; SHOULD (if available, not mandatory) have identifier, consisting of a number. Example - 12345;\n 
 • For instructor certificate (slice: [moh-instructor]): code = 13; SHOULD (if available, not mandatory) have identifier, consisting of a number. Example - 12345;\n 
 Check each slice for more specific details.
 """

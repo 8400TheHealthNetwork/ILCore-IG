@@ -4,7 +4,7 @@ Title: "קוד מקצוע לעוסק בבריאות"
 Description: "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות"
 
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^url = $practitioner-profession-moh
 * ^content = #complete
 * ^valueSet = $vs-practitioner-profession-moh
@@ -12,6 +12,12 @@ Description: "קוד מקצוע לעוסק בבריאות לפי רישוי מש
 * ^experimental = false
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-01"
+
+// declaration of "status" property
+* ^property[0].code = #status
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
+* ^property[=].description = "A property that indicates the status of the concept. One of active, experimental, deprecated, retired"
+* ^property[=].type = #code
 
 * ^count = 57
 * #-888 "לא ידוע" "ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL"

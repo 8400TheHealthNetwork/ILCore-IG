@@ -31,7 +31,7 @@ Usage: #example
 * qualification[=].identifier[0].period.start = "2021-05-05"
 * qualification[=].code = $pract-certificate-type-moh#5 "תעודת מומחה"
 * qualification[=].extension[0].url = $ext-qualification-practice
-* qualification[=].extension[0].valueCodeableConcept = $practitioner-expertise#108 "פגים"
+* qualification[=].extension[0].valueCodeableConcept = $practitioner-expertise-moh#108 "פגים"
 
 * qualification[+].identifier[0].system = $nurse-advanced-course
 * qualification[=].identifier[0].value = "65-207927"

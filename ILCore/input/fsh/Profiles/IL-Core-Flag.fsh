@@ -6,12 +6,10 @@ Title: "ILCore Flag Profile"
 Description: "Adds Isareli constraints to the Flag datatype"
 
 * ^url = $ILFlag
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 * ^contact[0].telecom[0].use = #work
 * ^jurisdiction[0] = urn:iso:std:iso:3166#IL
 * ^copyright = "Israeli Ministry of Health" 

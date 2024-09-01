@@ -1,0 +1,38 @@
+{
+  "name": "il-core-ig",
+  "version": "0.15.2",
+  "description": "Israel Division of Governmental Hospitals Profiles",
+  "type": "module",
+  "scripts": {
+    "ruleset": "node updateRuleSet.js",
+    "manifest": "node createManifest.js",
+    "sushi": "npm run ruleset && sushi build -s && npm run manifest",
+    "sushi:diff": "sushi build --out differentials",
+    "check:java": "node installJava.js",
+    "check:validator": "node downloadValidator.js",
+    "prepare:validation": "npm run check:java && npm run check:validator",
+    "validate:ig": "npm run sushi:diff && node validateIg.js",
+    "validate:ex": "node validateExamples.js",
+    "test": "npm run sushi && npm run prepare:validation && npm run validate:ig && npm run validate:ex"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/8400TheHealthNetwork/ILCore-IG.git"
+  },
+  "author": "Division of Governmental Hospitals Israel",
+  "bugs": {
+    "url": "https://github.com/8400TheHealthNetwork/ILCore-IG/issues"
+  },
+  "homepage": "https://github.com/8400TheHealthNetwork/ILCore-IG#readme",
+  "dependencies": {
+    "adm-zip": "^0.5.14",
+    "axios": "^1.7.2",
+    "execa": "^9.3.0",
+    "fs-extra": "^11.2.0",
+    "js-yaml": "^4.1.0",
+    "jsonata": "^2.0.5",
+    "path": "^0.12.7",
+    "sushi": "^3.0.0",
+    "tar": "^7.4.0"
+  }
+}

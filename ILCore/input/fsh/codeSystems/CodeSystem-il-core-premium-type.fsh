@@ -3,7 +3,7 @@ Id: il-core-premium-type
 Title: "IL Core Premium Type codes"
 Description: "Codes for Types of premium payment methods"
 * ^status = #draft
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^url = $premium-type
 * ^content = #complete
 * ^caseSensitive = false

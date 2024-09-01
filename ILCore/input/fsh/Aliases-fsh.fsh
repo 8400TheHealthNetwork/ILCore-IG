@@ -130,6 +130,7 @@ Alias: $effective =                     http://hl7.org/fhir/StructureDefinition/
 Alias: $ext-language =                  http://hl7.org/fhir/StructureDefinition/language
 Alias: $maxValueSet =                   http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet
 Alias: $modeOfArrival =                 http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
+Alias: $body-position =                 http://hl7.org/fhir/StructureDefinition/observation-bodyPosition
 
 // Codesystems - ILCore
 Alias: $icd9-il =                       http://fhir.health.gov.il/cs/icd9il
@@ -200,7 +201,6 @@ Alias: $moh-medication-code =           http://israeldrugs.health.gov.il
 Alias: $country-codes  =                urn:iso:std:iso:3166
 // Alias: $urn =                           urn:ietf:rfc:3986  // created a new CS in IL-CORE section
 
-
 // ValueSets - ILcore
 Alias: $vs-bp-components =              http://fhir.health.gov.il/ValueSet/bp-components
 Alias: $vs-bp-unit =                    http://fhir.health.gov.il/ValueSet/bp-unit
@@ -229,6 +229,7 @@ Alias: $vs-coverage-type =              http://fhir.health.gov.il/ValueSet/il-co
 Alias: $vs-coverage-premium-type =      http://fhir.health.gov.il/ValueSet/il-core-premium-type
 Alias: $vs-il-core-allergy-intolerance-code = http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-code
 Alias: $vs-il-core-allergy-intolerance-end-reason = http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-end-reason
+Alias: $vs-il-core-body-position =      http://fhir.health.gov.il/ValueSet/il-core-body-position
 Alias: $vs-il-core-condition-code =     http://fhir.health.gov.il/ValueSet/il-core-condition-code
 Alias: $vs-il-core-doctor-to-doctor =   http://fhir.health.gov.il/ValueSet/il-core-doctor-to-doctor
 Alias: $vs-il-core-encounter-class =    http://fhir.health.gov.il/ValueSet/il-core-encounter-class
@@ -297,6 +298,7 @@ Alias: $religion =                      http://terminology.hl7.org/CodeSystem/v3
 Alias: $vital-signs-units =             http://hl7.org/fhir/ValueSet/ucum-vitals-common
 Alias: $vitalsigns =                    http://hl7.org/fhir/ValueSet/observation-vitalsignresult
 Alias: $hl7-vs-coverage-class =         http://hl7.org/fhir/ValueSet/coverage-class
+Alias: $vs-ucum =                       http://hl7.org/fhir/ValueSet/ucum-units
 
 
 

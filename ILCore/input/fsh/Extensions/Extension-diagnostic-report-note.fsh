@@ -4,8 +4,8 @@ Title: "Ext: DiagnosticReport Note"
 Description: "Extension: DiagnosticReport Note annotation, to mimic v5 DiagnosticReport.note element"
 
 * ^url = $ext-diagnostic-report-note
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "DiagnosticReport"

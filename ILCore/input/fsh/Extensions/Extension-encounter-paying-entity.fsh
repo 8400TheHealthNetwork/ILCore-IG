@@ -4,8 +4,8 @@ Title: "Ext: Encounter Paying Entity"
 Description: "Paying Entity for the Encounter"
 Context: Encounter
 * ^url = $ext-encounter-paying-entity
-* ^version = "0.15.1"
-* insert CurrentDate
+* insert ConformanceMetadata
+
 * ^status = #draft
 * ^context.type = #element
 * ^context.expression = "Encounter"

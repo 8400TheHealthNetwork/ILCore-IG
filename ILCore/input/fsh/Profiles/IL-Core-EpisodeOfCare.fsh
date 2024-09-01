@@ -5,12 +5,10 @@ Title: "ILCore EpisodeOfCare Profile"
 Description: "Israel Core proposed constraints and extensions on the EpisodeOfCare Resource"
 
 * ^url = $ILEpisodeOfCare
-* ^version = "0.15.1"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore EpisodeOfCare Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the EpisodeOfCare resource profile."

@@ -7,14 +7,11 @@ Title: "ILCore Procedure Profile"
 Description: "Israel Core proposed constraints and extensions on the Procedure Resource"
 
 * ^url = $ILProcedure
-* insert ConformanceMetadata
-* ^status = #draft
-
-
-
 * . ^short = "ILCore Procedure Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Procedure resource profile."
 * . ^isModifier = false
+* insert ConformanceMetadata
+* ^status = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"

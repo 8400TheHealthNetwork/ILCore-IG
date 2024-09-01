@@ -8,7 +8,7 @@ Description: "Codes for expressing general high level coverage types unique to t
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false
-* ^valueSet = $vs-coverage-type
+// * ^valueSet = $vs-coverage-type
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-08"
 

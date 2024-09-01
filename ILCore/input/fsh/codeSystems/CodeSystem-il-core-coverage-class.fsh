@@ -8,7 +8,7 @@ Description: "Codes for Coverage classes"
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false
-* ^valueSet = $vs-il-core-coverage-class
+// * ^valueSet = $vs-il-core-coverage-class
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-08"
 

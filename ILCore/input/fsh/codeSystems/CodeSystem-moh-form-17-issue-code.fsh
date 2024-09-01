@@ -4,7 +4,6 @@ Title: "Moh Form-17 Issue Code"
 Description: "קודי שגיאה \\ סירוב לתהליכים הקשורים לטופס 17"
 * ^status = #draft
 * ^url = $moh-tofes17-issue-code
-* ^content = #not-present
 * insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false

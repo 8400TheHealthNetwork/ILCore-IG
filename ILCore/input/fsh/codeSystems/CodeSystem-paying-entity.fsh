@@ -11,6 +11,11 @@ Description: "Codes for different paying entities in Israel; including HMOs, IDF
 * ^experimental = false
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-01"
+// declaration of "status" property
+* ^property[0].code = #status
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
+* ^property[=].description = "A property that indicates the status of the concept. One of active, experimental, deprecated, retired"
+* ^property[=].type = #code
 
 * #-888
 "לא רלוונטי"

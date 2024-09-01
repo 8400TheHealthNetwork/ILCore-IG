@@ -5,7 +5,7 @@ Usage: #example
 *  identifier[uid].system  = "urn:dicom:uid"
 *  identifier[uid].value = "1234"
 // *  extension[accession-num].valueIdentifier = 9876
-*  extension[accession-num].valueIdentifier.type = $id-type#ASCN "Accession ID"
+*  extension[accession-num].valueIdentifier.type = $id-type#ACSN "Accession ID"
 *  modality.system = "https://dicom.nema.org" 
 *  modality.code = #MG
 *  modality.display = "Mammography"
@@ -17,7 +17,7 @@ Usage: #example
 *  interpreter.reference = "Practitioner/practitioner-md"
 *  numberOfSeries = 1
 *  numberOfInstances = 4
-*  procedureCode.coding[0].system = "http://loinc.org/vs/loinc-rsna-radiology-playbook"
+*  procedureCode.coding[0].system = "http://loinc.org"
 *  procedureCode.coding[0].code = #39152-4
 *  procedureCode.coding[0].display = "FFD mammogram Breast Diagnostic"
 *  location.reference = "Location/location-hospital-unit"
@@ -38,7 +38,8 @@ Usage: #example
 *  series.performer.actor.reference = "Practitioner/practitioner-md"
 *  series.instance[0].uid = "1.2.840.118719.2.55.3.283116435.20230215159800.5"
 *  series.instance[0].sopClass.system = "urn:ietf:rfc:3986"
-*  series.instance[0].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2
+// *  series.instance[0].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2
+*  series.instance[0].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2  // show Erez this missing prefix (urn:oid)
 *  series.instance[0].sopClass.display = "Digital Mammography X-Ray Image Storage - For Presentation"
 *  series.instance[0].number = 1
 *  series.instance[1].uid = "1.2.840.118719.2.55.3.283116435.20230215159800.6"

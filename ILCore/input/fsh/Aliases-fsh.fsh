@@ -298,6 +298,7 @@ Alias: $religion =                      http://terminology.hl7.org/CodeSystem/v3
 Alias: $vital-signs-units =             http://hl7.org/fhir/ValueSet/ucum-vitals-common
 Alias: $vitalsigns =                    http://hl7.org/fhir/ValueSet/observation-vitalsignresult
 Alias: $hl7-vs-coverage-class =         http://hl7.org/fhir/ValueSet/coverage-class
+Alias: $vs-ucum =                       http://hl7.org/fhir/ValueSet/ucum-units
 
 
 

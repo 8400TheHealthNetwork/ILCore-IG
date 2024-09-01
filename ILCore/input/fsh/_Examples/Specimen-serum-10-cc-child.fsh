@@ -14,13 +14,13 @@ Usage: #example
 *  receivedTime = "2020-06-12T13:30:00+02:00"
 *  parent.reference = "Specimen/speciment-parent"
 *  parent.type = #Specimen 
-*  request.reference = "Request/987"
-*  request.type = #Request 
+*  request.reference = "ServiceRequest/987"
+*  request.type = #ServiceRequest 
 *  collection.collector.reference = "Practitioner/Nurse"
 *  collection.collector.type = #Practitioner  
 *  collection.collectedDateTime = "2020-06-12T08:05:00+02:00"
-*  collection.collector.extension[other-collector].valueReference.reference = "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
-*  collection.collector.extension[other-collector].valueReference.type = #Practitioner  
+*  collection.collector.extension[other-collector].valueReference.reference = "RelatedPerson/example-related-person"
+*  collection.collector.extension[other-collector].valueReference.type = #RelatedPerson  
 *  collection.quantity.value = 10
 *  collection.quantity.unit = "mL"
 *  collection.quantity.system = $ucum

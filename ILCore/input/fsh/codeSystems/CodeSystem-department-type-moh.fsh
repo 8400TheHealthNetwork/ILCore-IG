@@ -12,6 +12,11 @@ Description: "Israel ministry of health coding system for department types"
 * ^count = 1791
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-01"
+// declaration of "status" property
+* ^property[0].code = #status
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
+* ^property[=].description = "A property that indicates the status of the concept. One of active, experimental, deprecated, retired"
+* ^property[=].type = #code
 
 * #10000 "אשפוז - פנימית" "אשפוז - פנימית"
   * ^property.code =  #status

@@ -43,5 +43,5 @@ Description: "Israel Core proposed constraints and extensions on the ILCoreObser
 * performer[organization] only Reference(ILCoreOrganization)
 * value[x] only Quantity or CodeableConcept or string or boolean or integer or Range or Ratio   //Might become more restrictive
 * valueCodeableConcept ^binding.strength = #required
-* valueQuantity from $ucum (extensible)
+* valueQuantity from $vs-ucum (extensible)
 * component.valueCodeableConcept ^binding.strength = #required

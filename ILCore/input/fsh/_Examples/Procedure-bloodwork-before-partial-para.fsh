@@ -8,7 +8,7 @@ InstanceOf: ILCoreProcedure
 * code.coding.code = #396550006
 * code.coding.display = "Blood test (procedure)"
 * performedDateTime = "2020-02-07"
-* performedDateTime.extension[+].url = "http://hl7.org/fhir/StructureDefinition/relative-date"
+* performedDateTime.extension[+].url = $relative-date
 * performedDateTime.extension[=].extension[+].url = "event"
 * performedDateTime.extension[=].extension[=].valueReference.reference = "Procedure/partial-parotidectomy"
 * performedDateTime.extension[=].extension[+].url = "relationship"

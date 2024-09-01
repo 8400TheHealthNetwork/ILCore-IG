@@ -8,6 +8,6 @@ Description: "Extension: Qualification Practice"
 
 * ^status = #draft
 * ^context[0].type = #element
-* ^context[0].expression = "Practitioner.Element"
+* ^context[0].expression = "Practitioner.qualification"
 
 * value[x] only CodeableConcept

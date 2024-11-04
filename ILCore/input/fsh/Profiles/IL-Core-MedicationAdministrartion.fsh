@@ -35,7 +35,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationA
 * context only Reference(ILCoreEncounter or EpisodeOfCare)
 * performer.actor only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson or ILCoreDevice)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport)
-// * reasonReference.extension contains $ext-procedure-reference named procedureReference 0..*
+// * reasonReference.extension contains $ext-med-req-procedure-reference named procedureReference 0..*
 // * reasonReference.extension ^short = "Ext: ILCore Procedure Reference"
 // * reasonReference.extension ^definition = "Extension: ILCore Procedure Reference"
 // * reasonCode from $vs-il-core-procedure-reason (extensible)  // shouldn't this be here? EREZ???

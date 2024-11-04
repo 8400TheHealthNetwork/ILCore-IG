@@ -92,7 +92,6 @@ Alias: $ext-ct =                        http://fhir.health.gov.il/StructureDefin
 Alias: $ext-hmo =                       http://fhir.health.gov.il/StructureDefinition/ext-il-hmo
 Alias: $ext-accession-number =          http://fhir.health.gov.il/StructureDefinition/ext-accession-number
 Alias: $ext-parent-name =               http://fhir.health.gov.il/StructureDefinition/ext-parent-name
-Alias: $ext-procedure-reference =       http://fhir.health.gov.il/StructureDefinition/ext-procedure-reference
 Alias: $ext-medication-course-of-therapy-type =  http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type
 Alias: $ext-medication-dose-form =  http://fhir.health.gov.il/StructureDefinition/ext-medication-dose-form
 Alias: $ext-narcotic-medication =       http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication
@@ -114,6 +113,7 @@ Alias: $ext-processing-practitioner =   http://fhir.health.gov.il/StructureDefin
 Alias: $ext-specimen-collector-reference = http://fhir.health.gov.il/StructureDefinition/ext-specimen-collector-reference
 Alias: $ext-encounter-visitor-type =    http://fhir.health.gov.il/StructureDefinition/ext-encounter-visitor-type
 Alias: $ext-encounter-paying-entity =   http://fhir.health.gov.il/StructureDefinition/ext-encounter-paying-entity
+Alias: $ext-med-req-procedure-reference = http://fhir.health.gov.il/StructureDefinition/ext-medication-request-procedure-reason-reference
 
 // Extensions - external
 Alias: $ext-birth-place =               http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -156,7 +156,7 @@ Alias: $pract-certificate-type-moh =    http://fhir.health.gov.il/cs/practitione
 Alias: $pract-certificate-type-molsa =  http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa
 Alias: $medical-service-code-moh =      http://fhir.health.gov.il/cs/medical-service-moh
 Alias: $medication-course-of-therapy-type = http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type
-Alias: $il-core-medication-category =   http://fhir.health.gov.il/cs/il-core-medicationrequest-category
+Alias: $il-core-medication-request-category =   http://fhir.health.gov.il/cs/il-core-medication-request-category
 Alias: $il-core-error-code =            http://fhir.health.gov.il/cs/il-core-error-code
 Alias: $il-core-religion-code =         http://fhir.health.gov.il/cs/il-core-religion-code
 Alias: $il-core-medication-course-of-therapy-type = http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type

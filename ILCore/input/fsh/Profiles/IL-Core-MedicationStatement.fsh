@@ -31,6 +31,6 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * context only Reference(ILCoreEncounter or EpisodeOfCare) 
 * informationSource only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson or ILCoreOrganization)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
-// * reasonReference.extension contains $ext-procedure-reference named procedureReference 0..*
+// * reasonReference.extension contains $ext-med-req-procedure-reference named procedureReference 0..*
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport)
 * dosage only ILCoreDosage

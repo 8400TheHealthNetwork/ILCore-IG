@@ -6,7 +6,7 @@ Description: "MedicationAdministration - morphine during hospitalization"
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exmple of a MedicationAdministration - morphine administered during hospitalization. Completed inpatient administration of 15mg of oral morphine every 4 hours as needed by a practitioner to a patient due to a procedure.</div>"
 * text.status = #generated
 * status  = #completed
-* category.coding[0] = $il-core-medication-category#inpatient "Inpatient"
+* category.coding[0] = $il-core-medication-request-category#inpatient "Inpatient"
 // * category.coding[0].code = inpatient
 // * category.coding[0].display = Inpatient
 * medicationCodeableConcept.coding[0] = $sct#373529000 "Morphine (substance)"
@@ -37,7 +37,7 @@ Description: "MedicationAdministration - morphine during hospitalization"
 * dosage.rateRatio.numerator.system = $sct
 * extension[narcotic].url = "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication"
 * extension[narcotic].valueBoolean = true
-* extension[recorded].url = "http://fhir.health.gov.il/StructureDefinition/ext-recorded-time"
+* extension[recorded].url = "http://fhir.health.gov.il/StructureDefinition/ext-medication-recorded-time"
 * extension[recorded].valueDateTime = "2022-10-11"
 
 

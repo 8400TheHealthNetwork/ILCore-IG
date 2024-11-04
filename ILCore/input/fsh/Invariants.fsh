@@ -55,10 +55,19 @@ Expression: "primarySource=true implies lotNumber.exists()"
 Severity: #error
 
 Invariant: il-location-mode
-Description: "If Location.mode = 'instance', Location.position or Location.address SHALL have a value"
+Description: "If Location.mode = 'instance', Location.position or Location.address or Location.partOf SHALL have a value"
 // Expression: "mode=kind or address.exists() or position.exists()"
 Expression: "mode='instance' implies address.exists() or position.exists()"
 Severity: #error
+* requirements = "נועד להבטיח שכאשר מייצגים מיקום ספציפי, למופע המתואר תהיה כתובת (או הגדרת מיקום גיאוגרפי). אחרת, הציפיה היא שליחידה אליו המיקום משתייך תהיה כתובת משלה. אילוץ זה עובד בהשלמה עם il-location-address"
+
+Invariant: il-location-address
+Description: "If Location.partOf is empty, Location.address OR Location.position SHALL have a value"
+// Expression: "mode=kind or address.exists() or position.exists()"
+Expression: "partOf.empty() implies address.exists() or position.exists()"
+Severity: #error
+* requirements = "נועד להבטיח שמיקום שנמצא בראש היררכיית המיקומים (לדוגמה - בית חולים) תהיה בעלת כתובת או מיקום. אילוץ מזה משלים את il-location-mode"
+
 
 Invariant: il-organization-identifier
 Description: "If not sub-organization (i.e - partOf), there SHALL be an identifier"
@@ -102,7 +111,7 @@ Expression: "coding.where(system='http://snomed.info/sct' and code.exists()).exi
 Severity: #warning
 
 Invariant: il-obs-not-performed
-Description: "dataAbsentReason - if an IL-Core 'not-performed-reason' code is supplied, 'not performed' code MUST be supplied as well"
+Description: "dataAbsentReason - if an IL-Core 'not-performed-reason' code is supplied, the HL7 code (http://terminology.hl7.org/CodeSystem/data-absent-reason) 'not performed' MUST be supplied as well"
 Expression: "coding.where(system='http://fhir.health.gov.il/cs/il-core-not-performed-reason').exists() implies coding.where(system='http://terminology.hl7.org/CodeSystem/data-absent-reason' and code='not-performed').exists()"
 Severity: #error
 

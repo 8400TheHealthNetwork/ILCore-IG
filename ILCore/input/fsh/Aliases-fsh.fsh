@@ -58,7 +58,7 @@ Alias: $ILQuestionnaire =               http://fhir.health.gov.il/StructureDefin
 Alias: $ILRelatedPerson =               http://fhir.health.gov.il/StructureDefinition/il-core-related-person
 Alias: $ILResearchStudy =               http://fhir.health.gov.il/StructureDefinition/il-core-research-study
 Alias: $ILResearchSubject =             http://fhir.health.gov.il/StructureDefinition/il-core-research-subject
-Alias: $ILRiskAssessment =              http://fhir.health.gov.il/StructureDefinition/il-core-risk-assesment
+Alias: $ILRiskAssessment =              http://fhir.health.gov.il/StructureDefinition/il-core-risk-assessment
 Alias: $ILServiceRequest =              http://fhir.health.gov.il/StructureDefinition/il-core-service-request
 Alias: $ILSubstance =                   http://fhir.health.gov.il/StructureDefinition/il-core-substance
 Alias: $ILSpecimen =                    http://fhir.health.gov.il/StructureDefinition/il-core-specimen
@@ -168,6 +168,7 @@ Alias: $patient-release-type-moh =      http://fhir.health.gov.il/cs/patient-rel
 Alias: $moh-tofes17-issue-code =        http://fhir.health.gov.il/cs/moh-tofes17-issue-code
 Alias: $patient-mode-of-arrival-moh =   http://fhir.health.gov.il/cs/patient-mode-of-arrival-moh
 Alias: $patient-visitor-type-moh =      http://fhir.health.gov.il/cs/patient-visitor-type-moh
+Alias: $info-baskets =                  http://fhir.health.gov.il/cs/hdp-information-buckets
 // Alias: $urn =                           http://fhir.health.gov.il/cs/il-core-urn
 
 // Codesystems - external

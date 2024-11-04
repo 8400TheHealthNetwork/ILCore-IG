@@ -1,4 +1,4 @@
-Instance: il-core-speciment-processing-location
+Instance: il-core-specimen-processing-location
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "http://fhir.health.gov.il/SearchParameter/il-core-processing-location"

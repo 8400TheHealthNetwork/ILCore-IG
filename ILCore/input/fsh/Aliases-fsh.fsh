@@ -207,6 +207,7 @@ Alias: $vs-bp-components =              http://fhir.health.gov.il/ValueSet/bp-co
 Alias: $vs-bp-unit =                    http://fhir.health.gov.il/ValueSet/bp-unit
 Alias: $vs-hmo =                        http://fhir.health.gov.il/ValueSet/israel-hmo
 Alias: $vs-city-code =                  http://fhir.health.gov.il/ValueSet/city-symbol
+Alias: $vs-diagnostic-conclusion-code =  http://fhir.health.gov.il/ValueSet/diagnostic-conclusion-code
 Alias: $vs-tofes17-error-codes =         http://fhir.health.gov.il/ValueSet/tofes17-error-codes
 Alias: $vs-tofes17-reject-codes =        http://fhir.health.gov.il/ValueSet/tofes17-reject-codes
 Alias: $vs-pp-uri =                     http://fhir.health.gov.il/ValueSet/passport-uri

@@ -15,7 +15,7 @@ Usage: #definition
 * code = #hmo
 * base = #Patient
 * type = #token
-* expression = "Patient.extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-il-hmo').value"
+* expression = "Patient.extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-il-hmo').value.coding.value"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

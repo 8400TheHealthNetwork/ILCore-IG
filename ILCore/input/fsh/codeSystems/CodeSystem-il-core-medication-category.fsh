@@ -1,10 +1,10 @@
-CodeSystem: ILCoreMedicationCategory
-Id: il-core-medication-category
+CodeSystem: ILCoreMedicationRequestCategory
+Id: il-core-medication-request-category
 Title: "Codes for MedicationRequest categories"
 Description: "A list of codes for MedicationRequest categories"
 * ^status = #draft
 * insert ConformanceMetadata
-* ^url = $il-core-medication-category
+* ^url = $il-core-medication-request-category
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false

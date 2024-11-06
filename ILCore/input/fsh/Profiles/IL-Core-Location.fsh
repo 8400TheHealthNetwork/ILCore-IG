@@ -18,7 +18,7 @@ Description: "Israel Core proposed constraints and extensions on the Location Re
 * ^extension[=].valueInteger = 1
 
 * . obeys il-location-mode
-
+* . obeys il-location-address
 * status 0..1 MS
 * name 1..1 MS
 * telecom.system 1..1 MS

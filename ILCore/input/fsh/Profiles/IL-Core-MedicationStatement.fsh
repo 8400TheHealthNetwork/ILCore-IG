@@ -8,8 +8,6 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * insert ConformanceMetadata
 * ^status = #draft
 
-
-
 * . ^short = "ILCore MedicationStatement Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationStatement resource profile."
 * . ^isModifier = false
@@ -17,7 +15,6 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
-
 
 * status and medication[x] and subject and dateAsserted and dosage MS
 * extension contains 
@@ -34,6 +31,6 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * context only Reference(ILCoreEncounter or EpisodeOfCare) 
 * informationSource only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson or ILCoreOrganization)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
-// * reasonReference.extension contains $ext-procedure-reference named procedureReference 0..*
+// * reasonReference.extension contains $ext-med-req-procedure-reference named procedureReference 0..*
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport)
 * dosage only ILCoreDosage

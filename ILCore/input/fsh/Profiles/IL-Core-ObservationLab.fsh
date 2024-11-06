@@ -19,14 +19,15 @@ Description: "Israel Core proposed constraints and extensions on the ILCoreObser
 * . ^comment = "Note that The value[x] types might become more restrictive in the future"
 * dataAbsentReason and performer and specimen and effectiveDateTime and valueQuantity and valueCodeableConcept and valueString and interpretation MS
 * category 1..*
-* category ^slicing.discriminator.type = #value
-* category ^slicing.discriminator.path = "$this"
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "coding"
 * category ^slicing.rules = #open
 * category contains 
     il-core 1..1
-* category[il-core].coding = $sct#108252007 "Laboratory procedure (procedure)"
+* category[il-core].coding.system = $sct (exactly) 
+* category[il-core].coding.code = #108252007 (exactly) 
 * code.coding 1..*
-* code from $vs-il-core-observation-lab-code (extensible)
+* code.coding from $vs-il-core-observation-lab-code (extensible)
 * subject 1..1
 * performer 1..*
 * performer ^slicing.discriminator.type = #type

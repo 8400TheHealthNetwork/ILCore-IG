@@ -8,7 +8,7 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 * text.status = #generated
 * status = #completed
 * intent = #order
-* category[0].coding[0] = $il-core-medication-category#community-hmo "Community Care/HMO"
+* category[0].coding[0] = $il-core-medication-request-category#community-hmo "Community Care/HMO"
 * medicationCodeableConcept.coding[0] = $sct#22165008 "Metamizole sodium (substance)"
 * subject.reference = "Patient/1"
 * subject.type = "Patient"

@@ -20,7 +20,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationR
 
 
 * extension contains
-   ext-recorded-time named recorded 0..1 and
+   ext-medication-recorded-time named recorded 0..1 and
    ext-narcotic-medication named narcotic 0..1  
 * extension[recorded] ^short = "Ext: Recorded Time"
 * extension[recorded] ^definition = "Extension: The time in which an event was recorded"
@@ -42,7 +42,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationR
 * category contains il-core 0..*
 // * category[il-core] from $vs-il-core-medication-request-category (required)
 * category[il-core] from $vs-il-core-medication-request-category (required)
-* category[il-core].coding.system = $il-core-medication-category (exactly)
+* category[il-core].coding.system = $il-core-medication-request-category (exactly)
 * category[il-core].coding.system 1..1
 * category[il-core].coding.code 1..1
 * reportedReference only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson or ILCoreOrganization)
@@ -63,7 +63,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationR
 * recorder only Reference(ILCorePractitioner or ILCorePractitionerRole)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation)
-* reasonReference.extension contains $ext-procedure-reference named procedureReference 0..*
+* reasonReference.extension contains $ext-med-req-procedure-reference named procedureReference 0..*
 * reasonReference.extension[procedureReference] ^short = "Ext: ILCore Procedure Reference"
 * reasonReference.extension[procedureReference] ^definition = "Extension: Procedure Reference"
 * basedOn only Reference(ILCoreCarePlan or ILCoreMedicationRequest or ILCoreServiceRequest or ILCoreImmunizationRecommendation)

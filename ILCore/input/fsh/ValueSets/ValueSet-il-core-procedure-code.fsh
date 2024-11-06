@@ -13,6 +13,8 @@ Description: "A list of codes for procedures for the IL Core"
 * include codes from system SNOMED_CT where concept is-a #129125009 "Procedure with explicit context (situation)"
 * include codes from system $medical-service-code-moh
 * include codes from system $loinc
+* include codes from valueset $vs-il-core-observation-lab-code
+
 // * include codes from system http://ada.org/cdt  // CDT  -- might be added in the future
 
 // * include codes from system http://www.ama-assn.org/go/cpt  // CPT - For now we decided to take it out

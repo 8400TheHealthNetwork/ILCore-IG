@@ -51,3 +51,4 @@ Description: "Israel Core proposed constraints and extensions on the DiagnosticR
 * conclusionCode from http://hl7.org/fhir/ValueSet/clinical-findings  (preferred)
 * category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (preferred)
 * code from http://hl7.org/fhir/ValueSet/report-codes (preferred)
+* conclusionCode from $vs-diagnostic-conclusion-code (preferred)

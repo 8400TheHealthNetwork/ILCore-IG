@@ -3,7 +3,7 @@ InstanceOf: ILCoreVitalSigns
 Usage: #example
 Title: "Observation - hight measurement"
 Description: "Observation - hight measurement"
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of Hight - 1.72 Meters</div>"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of cuff measurement - 34.2 cm</div>"
 * text.status = #generated
 * status = #final
 * category[VSCat] = $obs-cat#vital-signs "Vital Signs"

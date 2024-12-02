@@ -1,6 +1,6 @@
 {
   "name": "il-core-ig",
-  "version": "0.15.2",
+  "version": "0.16.1",
   "description": "Israel Division of Governmental Hospitals Profiles",
   "type": "module",
   "scripts": {

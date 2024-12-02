@@ -7,7 +7,6 @@ Description: "Israel Core proposed constraints and extensions on the ILCoreObser
 * insert ConformanceMetadata
 * ^status = #draft
 
-
 * . ^short = "ILCore Observation Lab Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the profile ILCoreObservationLabcd resource profile."
 * . ^isModifier = false

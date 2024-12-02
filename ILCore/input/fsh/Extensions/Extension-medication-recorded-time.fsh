@@ -1,4 +1,4 @@
-Extension: ILCoreRecordedTime
+Extension: ILCoreMedicationRecordedTime
 Id: ext-medication-recorded-time
 Title: "Ext: ILCore Medication Recorded Time"
 Description: "Extension: The time in which the medication order / administration / dispense was first captured"

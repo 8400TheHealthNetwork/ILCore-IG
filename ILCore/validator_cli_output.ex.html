@@ -1,0 +1,1243 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+  <title>Validation Results</title>
+  <link href="http://hl7.org/fhir/fhir.css" rel="stylesheet"/>
+  <style>
+    span.flip  { background-color: #4CAF50; color: white; border: solid 1px #a6d8a8; padding: 2px }
+  </style>
+  <script>
+    function flip(id) {
+      var span = document.getElementById('s'+id);
+      var div = document.getElementById(id);
+      if (document.getElementById('s'+id).innerHTML == 'Show Reasoning') {
+        div.style.display = 'block';
+        span.innerHTML = 'Hide Reasoning';
+      } else {
+        div.style.display = 'none';
+        span.innerHTML = 'Show Reasoning';
+      }
+    }
+  </script>
+</head>
+<body style="margin: 20px; background-color: #ffffff">
+ <h1>Validation Results</h1>
+ <p>39 errors, 40 warnings, 135 hints. Generated 2 Dec 2024, 19:11:30 by Validator Version 6.3.20 (Git# 1800948c7a1a). Built 2024-08-13T17:31:58.143Z (111 days old) (13194ms)</p>
+ <table class="grid">
+   <tr>
+     <td><b>Filename</b></td><td><b>Errors</b></td><td><b>Warnings</b></td><td><b>Hints</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;1"><b>C:\FHIR\ILCore-IG\ILCore\examples\ActivityDefinition-administer-zika-virus-exposure-assessment.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;2"><b>C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-aspirin-intolerance.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;3"><b>C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-cat-dander-allergy.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;4"><b>C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-latex-allergy.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;5"><b>C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-no-known-allergy.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;6"><b>C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-penut-allergy-resolved.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;7"><b>C:\FHIR\ILCore-IG\ILCore\examples\Condition-condition-burnt-ear.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;8"><b>C:\FHIR\ILCore-IG\ILCore\examples\Condition-condition-type-1-diabetes.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;9"><b>C:\FHIR\ILCore-IG\ILCore\examples\DiagnosticReport-diagnostic-lab-report.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;10"><b>C:\FHIR\ILCore-IG\ILCore\examples\Encounter-breast-screaning.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;11"><b>C:\FHIR\ILCore-IG\ILCore\examples\Encounter-community-consultation.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;12"><b>C:\FHIR\ILCore-IG\ILCore\examples\Encounter-home-visit.json</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;13"><b>C:\FHIR\ILCore-IG\ILCore\examples\ImagingStudy-mammography.json</b></a></td><td><b>0</b></td><td><b>9</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;14"><b>C:\FHIR\ILCore-IG\ILCore\examples\Immunization-Immunization-with-product-code.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;15"><b>C:\FHIR\ILCore-IG\ILCore\examples\Immunization-Immunization-with-vaccine-code.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;16"><b>C:\FHIR\ILCore-IG\ILCore\examples\Library-zika-virus-intervention-logic.json</b></a></td><td><b>23</b></td><td><b>2</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;17"><b>C:\FHIR\ILCore-IG\ILCore\examples\Location-location-general-kind-hospital-ward.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;18"><b>C:\FHIR\ILCore-IG\ILCore\examples\Location-location-hospital-unit.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;19"><b>C:\FHIR\ILCore-IG\ILCore\examples\Medication-paracetamol.json</b></a></td><td><b>0</b></td><td><b>3</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;20"><b>C:\FHIR\ILCore-IG\ILCore\examples\MedicationAdministration-morphine-hospitalization.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;21"><b>C:\FHIR\ILCore-IG\ILCore\examples\MedicationDispense-medication-dispense.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;22"><b>C:\FHIR\ILCore-IG\ILCore\examples\MedicationRequest-metamizole-for-gangreenous-tonsolitis.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;23"><b>C:\FHIR\ILCore-IG\ILCore\examples\MedicationStatement-MedicationStatement-Fluoxetine-20-mg.json</b></a></td><td><b>0</b></td><td><b>2</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;24"><b>C:\FHIR\ILCore-IG\ILCore\examples\Observation-ExampleObservationLab.json</b></a></td><td><b>12</b></td><td><b>4</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;25"><b>C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-hight.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;26"><b>C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-not-performed.json</b></a></td><td><b>0</b></td><td><b>5</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;27"><b>C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-VS-cuff-size.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;28"><b>C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-hospital-department.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;29"><b>C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-ministry-of-health.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;30"><b>C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-part-of-ministry-of-health.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;31"><b>C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-school-moe.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;32"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-immigrant.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;33"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-redacted.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;34"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-with-statistical-area.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;35"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-with-two-identifiers.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;36"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-father-name.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;37"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-hebrew-date.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>6</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;38"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-israeli-id.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;39"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-multiple-birth.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;40"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-palestinian-id-and-parent-name.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>1</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;41"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-passport-identification-unknown-country.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;42"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-passport-identification.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>3</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;43"><b>C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-two-addresses.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>7</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;44"><b>C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-anesthesiologist-with-expertise.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>6</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;45"><b>C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-md.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>4</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;46"><b>C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse-no-expertise-with-advanced-courses.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>10</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;47"><b>C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse-with-expertise-and-advanced-courses.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>10</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;48"><b>C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>8</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;49"><b>C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-psychologist.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>6</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;50"><b>C:\FHIR\ILCore-IG\ILCore\examples\PractitionerRole-practitionerRole-gp.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;51"><b>C:\FHIR\ILCore-IG\ILCore\examples\Procedure-partial-parotidectomy.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><a href="#;52"><b>C:\FHIR\ILCore-IG\ILCore\examples\Procedure-procedure-bloodwork-before-partial-parotidectomy.json</b></a></td><td><b>4</b></td><td><b>0</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;53"><b>C:\FHIR\ILCore-IG\ILCore\examples\RelatedPerson-example-related-person.json</b></a></td><td><b>0</b></td><td><b>1</b></td><td><b>2</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;54"><b>C:\FHIR\ILCore-IG\ILCore\examples\Specimen-speciment-child.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+   <tr style="background-color: #EFFFEF">
+     <td><a href="#;55"><b>C:\FHIR\ILCore-IG\ILCore\examples\Specimen-speciment-parent.json</b></a></td><td><b>0</b></td><td><b>0</b></td><td><b>0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l1"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\ActivityDefinition-administer-zika-virus-exposure-assessment.json">C:\FHIR\ILCore-IG\ILCore\examples\ActivityDefinition-administer-zika-virus-exposure-assessment.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ActivityDefinition.relatedArtifact[1].resource (l41/c85)</b></td><td><b>information</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/Questionnaire/zika-virus-exposure-assessment' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ActivityDefinition.library[0] (l45/c70)</b></td><td><b>information</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://fhir.health.gov.il/Library/zika-virus-intervention-logic' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>ActivityDefinition.code.coding[0].system (l48/c4)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/questionnaires' could not be found, so the code cannot be validated</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l2"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-aspirin-intolerance.json">C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-aspirin-intolerance.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l3"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-cat-dander-allergy.json">C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-cat-dander-allergy.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>AllergyIntolerance.code.coding[0].code (l34/c4)</b></td><td><b>information</b></td><td title="null"><b>The code '232346004' is valid but is not active</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l4"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-latex-allergy.json">C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-latex-allergy.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l5"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-no-known-allergy.json">C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-no-known-allergy.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l6"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-penut-allergy-resolved.json">C:\FHIR\ILCore-IG\ILCore\examples\AllergyIntolerance-allergyIntolerance-penut-allergy-resolved.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l7"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Condition-condition-burnt-ear.json">C:\FHIR\ILCore-IG\ILCore\examples\Condition-condition-burnt-ear.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l8"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Condition-condition-type-1-diabetes.json">C:\FHIR\ILCore-IG\ILCore\examples\Condition-condition-type-1-diabetes.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Condition (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l9"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\DiagnosticReport-diagnostic-lab-report.json">C:\FHIR\ILCore-IG\ILCore\examples\DiagnosticReport-diagnostic-lab-report.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>DiagnosticReport.code.coding[0].display (l21/c4)</b></td><td><b>information</b></td><td title="null"><b>There are no valid display names found for the code http://loinc.org#57698-3 for language(s) 'english'. The display is 'Lipid panel with direct LDL - Serum or Plasma' the default language display</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>DiagnosticReport (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l10"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Encounter-breast-screaning.json">C:\FHIR\ILCore-IG\ILCore\examples\Encounter-breast-screaning.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Encounter.type[0] (l26/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-encounter|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm9" class="flip" onclick="flip('m9')">Show Reasoning</span><div id="m9" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-encounter|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Encounter.type[0]: discriminator = true and (coding memberOf 'http://fhir.health.gov.il/ValueSet/il-core-virtual-type')</li>, <li>Encounter.type[0]: discriminator = true and (coding memberOf 'http://fhir.health.gov.il/ValueSet/il-core-doctor-to-doctor')</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l11"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Encounter-community-consultation.json">C:\FHIR\ILCore-IG\ILCore\examples\Encounter-community-consultation.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Encounter.class (l20/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_13"><b>The Coding provided (http://fhir.health.gov.il/cs/il-core-encounter-class#COMMUNITY-OR-HMO) was not found in the value set 'ActEncounterCode' (http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable).  (error message = None of the provided codes ['http://fhir.health.gov.il/cs/il-core-encounter-class#COMMUNITY-OR-HMO: 'Community Care/HMO setting''] are in the value set 'http://terminology.hl7.org/ValueSet/v3-ActEncounterCode|3.0.0')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Encounter.type[0] (l26/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-encounter|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm11" class="flip" onclick="flip('m11')">Show Reasoning</span><div id="m11" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-encounter|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Encounter.type[0]: discriminator = true and (coding memberOf 'http://fhir.health.gov.il/ValueSet/il-core-virtual-type')</li>, <li>Encounter.type[0]: discriminator = true and (coding memberOf 'http://fhir.health.gov.il/ValueSet/il-core-doctor-to-doctor')</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l12"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Encounter-home-visit.json">C:\FHIR\ILCore-IG\ILCore\examples\Encounter-home-visit.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Encounter.hospitalization.admitSource.coding[0].system (l35/c6)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/patient-admit-source-moh' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Encounter.hospitalization.admitSource (l35/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Admit source' (http://hl7.org/fhir/ValueSet/encounter-admit-source|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/patient-admit-source-moh#11)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Encounter.serviceType (l25/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'IL Core Service type' (http://fhir.health.gov.il/ValueSet/il-core-service-type|0.16.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#439708006)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Encounter.hospitalization.admitSource (l35/c6)</b></td><td><b>warning</b></td><td title="null"><b>Unable to check whether the code is in the value set 'http://fhir.health.gov.il/ValueSet/patient-admit-source-moh|0.16.0' because the code system http://fhir.health.gov.il/cs/patient-admit-source-moh was not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Encounter.hospitalization.admitSource (l35/c6)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/patient-admit-source-moh' could not be found, so the code cannot be validated; Unable to check whether the code is in the value set 'http://fhir.health.gov.il/ValueSet/patient-admit-source-moh|0.16.0' because the code system http://fhir.health.gov.il/cs/patient-admit-source-moh was not found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l13"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\ImagingStudy-mammography.json">C:\FHIR\ILCore-IG\ILCore\examples\ImagingStudy-mammography.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.modality[0] (l33/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_Confirm_5"><b>The code provided (https://dicom.nema.org#MG) is not in the value set 'AcquisitionModality' (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html|2024.2.20240331), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.procedureCode[0] (l62/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.procedureCode[0].coding[0].display (l62/c6)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'FFD mammogram Breast Diagnostic' for http://loinc.org#39152-4. Valid display is one of 0 choices: 'FFD mammogram Breast Diagnostic' (en-US), 'FFD mammogram Breast Diagnostic' (en-US), 'FFDM Brst Dx' (en-US), 'Vistas de diagnóstico:Seno :Punto temporal:Tipo:Documento:MG.FFD' (es-MX) or 'Brst FFD Mamm Dx' (pt-BR) (for the language(s) 'english')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.series[0].modality (l95/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Confirm_5"><b>The code provided (https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html#MG) is not in the value set 'AcquisitionModality' (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html|2024.2.20240331), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.series[0].instance[0].sopClass (l117/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.series[0].instance[1].sopClass (l126/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.series[0].instance[2].sopClass (l135/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy.series[0].instance[3].sopClass (l144/c12)</b></td><td><b>warning</b></td><td title="Terminology_TX_ValueSet_NotFound"><b>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>ImagingStudy (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l14"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Immunization-Immunization-with-product-code.json">C:\FHIR\ILCore-IG\ILCore\examples\Immunization-Immunization-with-product-code.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l15"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Immunization-Immunization-with-vaccine-code.json">C:\FHIR\ILCore-IG\ILCore\examples\Immunization-Immunization-with-vaccine-code.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l16"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Library-zika-virus-intervention-logic.json">C:\FHIR\ILCore-IG\ILCore\examples\Library-zika-virus-intervention-logic.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Library.type.coding[0] (l30/c4)</b></td><td><b>warning</b></td><td title="null"><b>Coding has no system. A code with no system has no defined meaning, and it cannot be validated. A system should be provided</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Library.type (l30/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'LibraryType' (http://hl7.org/fhir/ValueSet/library-type|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = null#logic-library)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Library.relatedArtifact[0].resource (l76/c74)</b></td><td><b>information</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://example.org/fhir/Library/fhir-model-definition' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Library.relatedArtifact[1].resource (l80/c68)</b></td><td><b>information</b></td><td title="TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"><b>Canonical URL 'http://hl7.org/fhir/ValueSet/zika-affected-area' does not resolve</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.version (l26/c21)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.title (l27/c43)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.status (l28/c21)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.experimental (l29/c23)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.date (l37/c23)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.description (l38/c76)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.useContext[0] (l40/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.useContext[1] (l52/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.topic[0] (l69/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.relatedArtifact[0] (l74/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.relatedArtifact[1] (l78/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.parameter[0] (l84/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.parameter[1] (l89/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.dataRequirement[0] (l96/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.dataRequirement[1] (l105/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.dataRequirement[2] (l114/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.content[0] (l125/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>AllergyIntolerance.code: minimum required = 1, but only found 0 (from http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library (l1/c2)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>AllergyIntolerance.patient: minimum required = 1, but only found 0 (from http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.type (l1/c2)</b></td><td><b>error</b></td><td title="Extension_PROF_Type"><b>The Profile 'http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance|0.16.0' definition allows for the type code but found type CodeableConcept</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.type (l30/c4)</b></td><td><b>error</b></td><td title="Terminology_TX_Code_ValueSet_MISSING"><b>No code provided, and a code is required from the value set</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library.type.coding[0] (l32/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_NotAllowed"><b>This element is not allowed by the profile http://hl7.org/fhir/StructureDefinition/code|4.0.1</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Library (l1/c2)</b></td><td><b>error</b></td><td title="http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance#ait-1"><b>Constraint failed: ait-1: 'AllergyIntolerance.clinicalStatus SHALL be present if verificationStatus is not entered-in-error.'</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l17"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Location-location-general-kind-hospital-ward.json">C:\FHIR\ILCore-IG\ILCore\examples\Location-location-general-kind-hospital-ward.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Location.address.extension[0] (l35/c8)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-address|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm53" class="flip" onclick="flip('m53')">Show Reasoning</span><div id="m53" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-address|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Location.address.extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/geolocation' in url)</li>, <li>Location.address.extension[0]: discriminator = true and ('http://fhir.health.gov.il/StructureDefinition/ext-statistical-area' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Location.address.extension[0] (l35/c8)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-location|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm54" class="flip" onclick="flip('m54')">Show Reasoning</span><div id="m54" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-location|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Location.address.extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/geolocation' in url)</li>, <li>Location.address.extension[0]: discriminator = true and ('http://fhir.health.gov.il/StructureDefinition/ext-statistical-area' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l18"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Location-location-hospital-unit.json">C:\FHIR\ILCore-IG\ILCore\examples\Location-location-hospital-unit.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Location.address.city.extension[0].value.ofType(CodeableConcept) (l44/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Location (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l19"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Medication-paracetamol.json">C:\FHIR\ILCore-IG\ILCore\examples\Medication-paracetamol.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Medication.code.coding[0].system (l13/c4)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'http://israeldrugs.health.gov.il' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code.coding[0] (l13/c4)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://israeldrugs.health.gov.il' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.code (l13/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILCore Medication Code' (http://fhir.health.gov.il/ValueSet/il-core-medication-code|0.16.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://israeldrugs.health.gov.il#020162053400, http://www.whocc.no/atc#N02BE01)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Medication.form (l32/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'SNOMED CT Form Codes' (http://hl7.org/fhir/ValueSet/medication-form-codes|4.0.1), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://snomed.info/sct#421026006)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Medication.ingredient[0].item.ofType(CodeableConcept) (l43/c8)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-medication|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm61" class="flip" onclick="flip('m61')">Show Reasoning</span><div id="m61" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-medication|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Medication.ingredient[0].item.ofType(CodeableConcept): discriminator = true and ($this is Reference)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l20"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\MedicationAdministration-morphine-hospitalization.json">C:\FHIR\ILCore-IG\ILCore\examples\MedicationAdministration-morphine-hospitalization.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationAdministration.category (l24/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication administration  category  codes' (http://hl7.org/fhir/ValueSet/medication-admin-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#inpatient)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationAdministration.dosage.method (l74/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'SNOMED CT Administration Method Codes' (http://hl7.org/fhir/ValueSet/administration-method-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#738995006)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l21"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\MedicationDispense-medication-dispense.json">C:\FHIR\ILCore-IG\ILCore\examples\MedicationDispense-medication-dispense.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationDispense.category (l16/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication dispense  category  codes' (http://hl7.org/fhir/ValueSet/medicationdispense-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-hmo)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationDispense (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l22"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\MedicationRequest-metamizole-for-gangreenous-tonsolitis.json">C:\FHIR\ILCore-IG\ILCore\examples\MedicationRequest-metamizole-for-gangreenous-tonsolitis.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.category[0] (l16/c6)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/il-core-medication-request-category|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.courseOfTherapyType (l71/c4)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.supportingInformation[0] (l52/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-medication-request|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm68" class="flip" onclick="flip('m68')">Show Reasoning</span><div id="m68" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-medication-request|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>MedicationRequest.supportingInformation[0]: discriminator = true and $this.resolve().conformsTo('http://hl7.org/fhir/StructureDefinition/bodyweight')</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationRequest.dosageInstruction[0].method (l92/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'SNOMED CT Administration Method Codes' (http://hl7.org/fhir/ValueSet/administration-method-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#738995006)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l23"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\MedicationStatement-MedicationStatement-Fluoxetine-20-mg.json">C:\FHIR\ILCore-IG\ILCore\examples\MedicationStatement-MedicationStatement-Fluoxetine-20-mg.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationStatement.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy|1.0.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationStatement.category.coding[0].system (l28/c4)</b></td><td><b>information</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationStatement.category (l28/c4)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Medication usage category codes' (http://hl7.org/fhir/ValueSet/medication-statement-category|4.0.1), and a coding is recommended to come from this value set (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category.coding[0] (l28/c4)</b></td><td><b>warning</b></td><td title="null"><b>A definition for CodeSystem 'http://fhir.health.gov.il/cs/medication-category' could not be found, so the code cannot be validated</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>MedicationStatement.category (l28/c4)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'ILCore Medication statement Category' (http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category|0.16.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/medication-category#community-other)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>MedicationStatement.dosage[0].method (l76/c8)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'SNOMED CT Administration Method Codes' (http://hl7.org/fhir/ValueSet/administration-method-codes|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#738995006)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l24"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Observation-ExampleObservationLab.json">C:\FHIR\ILCore-IG\ILCore\examples\Observation-ExampleObservationLab.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.category[0] (l10/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.code.coding[0].display (l31/c4)</b></td><td><b>information</b></td><td title="null"><b>There are no valid display names found for the code http://loinc.org#718-7 for language(s) 'english'. The display is 'Hemoglobin [Mass/volume] in Blood' the default language display</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[0] (l21/c6)</b></td><td><b>error</b></td><td title="Reference_REF_WrongTarget"><b>The type 'ILCorePractitioner' is not a valid Target for this element (must be one of [CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[0] (l21/c6)</b></td><td><b>error</b></td><td title="Reference_REF_BadTargetType"><b>Invalid Resource target type. Found ILCorePractitioner, but expected one of (Practitioner)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.performer[0].type (l22/c35)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_17"><b>The value provided ('ILCorePractitioner') was not found in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable)  (error message = The System URI could not be determined for the code 'ILCorePractitioner' in the ValueSet 'http://hl7.org/fhir/ValueSet/resource-types|4.0.1'; None of the provided codes ['#ILCorePractitioner'] are in the value set 'http://hl7.org/fhir/ValueSet/resource-types|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[1] (l25/c6)</b></td><td><b>error</b></td><td title="Reference_REF_WrongTarget"><b>The type 'ILCoreOrganization' is not a valid Target for this element (must be one of [CanonicalType[http://hl7.org/fhir/StructureDefinition/Practitioner], CanonicalType[http://hl7.org/fhir/StructureDefinition/PractitionerRole], CanonicalType[http://hl7.org/fhir/StructureDefinition/Organization], CanonicalType[http://hl7.org/fhir/StructureDefinition/CareTeam], CanonicalType[http://hl7.org/fhir/StructureDefinition/Patient], CanonicalType[http://hl7.org/fhir/StructureDefinition/RelatedPerson]])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[1] (l25/c6)</b></td><td><b>error</b></td><td title="Reference_REF_BadTargetType"><b>Invalid Resource target type. Found ILCoreOrganization, but expected one of (Organization)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.performer[1].type (l26/c35)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_17"><b>The value provided ('ILCoreOrganization') was not found in the value set 'ResourceType' (http://hl7.org/fhir/ValueSet/resource-types|4.0.1), and a code should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable)  (error message = The System URI could not be determined for the code 'ILCoreOrganization' in the ValueSet 'http://hl7.org/fhir/ValueSet/resource-types|4.0.1'; None of the provided codes ['#ILCoreOrganization'] are in the value set 'http://hl7.org/fhir/ValueSet/resource-types|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.category[0] (l10/c6)</b></td><td><b>error</b></td><td title="SLICING_CANNOT_BE_EVALUATED"><b>Slicing cannot be evaluated: Could not match any discriminators ([coding]) for slice Observation.category:il-core in profile http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab|0.16.0 - None of the 1 discriminators [coding] have fixed value, binding or existence assertions</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[0] (l21/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab|0.16.0, Element matches more than one slice - practitioner, organization</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[1] (l25/c6)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_MatchMultiple"><b>Profile http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab|0.16.0, Element matches more than one slice - practitioner, organization</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation (l1/c2)</b></td><td><b>information</b></td><td title="Validation_VAL_Profile_NoCheckMin"><b>Observation.category:il-core: Found 0 matches, but unable to check minimum required (Observation.category) due to lack of slicing validation (from http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab|0.16.0)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.code.coding[0] (l33/c8)</b></td><td><b>warning</b></td><td title="Terminology_TX_Confirm_5"><b>The code provided (http://loinc.org#718-7) is not in the value set 'IL Core Observation Lab Code' (http://fhir.health.gov.il/ValueSet/il-core-observation-lab-code|0.16.0), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[0] (l21/c6)</b></td><td><b>error</b></td><td title="Reference_REF_WrongTarget"><b>The type 'ILCorePractitioner' is not a valid Target for this element (must be one of [CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-practitioner]])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[0] (l21/c6)</b></td><td><b>error</b></td><td title="Reference_REF_WrongTarget"><b>The type 'ILCorePractitioner' is not a valid Target for this element (must be one of [CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-practitioner], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-organization], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-care-team], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-patient], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-related-person]])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[1] (l25/c6)</b></td><td><b>error</b></td><td title="Reference_REF_WrongTarget"><b>The type 'ILCoreOrganization' is not a valid Target for this element (must be one of [CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-practitioner]])</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[1].type (l26/c35)</b></td><td><b>error</b></td><td title="_DT_Fixed_Wrong"><b>Value is 'ILCoreOrganization' but must be 'ILCorePractitioner'</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Observation.performer[1] (l25/c6)</b></td><td><b>error</b></td><td title="Reference_REF_WrongTarget"><b>The type 'ILCoreOrganization' is not a valid Target for this element (must be one of [CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-practitioner], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-organization], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-care-team], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-patient], CanonicalType[http://fhir.health.gov.il/StructureDefinition/il-core-related-person]])</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l25"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-hight.json">C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-hight.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.code.coding[0].display (l25/c4)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Body height' for http://loinc.org#8302-2. Valid display is one of 0 choices: 'Body height' (en-US), 'Body height' (en-US), 'Body height' (en-US), 'Peso corporal: Paciente:Punto temporal:Len:Cuantitativo:' (es-MX), 'altura corporal:longitud:punto en el tiempo:^paciente:cuantitativo:' (es-AR), 'Bdy height' (pt-BR), 'Körpergröße' (de-DE), 'Taille du patient [Longueur] Patient ; Numérique' (fr-FR), 'Lichaamslengte [afmeting]' (nl-NL) or 'Körpergröße' (de-AT) (for the language(s) 'english')</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_OBS"><b>Validate Observation against the Body height profile (http://hl7.org/fhir/StructureDefinition/bodyheight) which is required by the FHIR specification because the LOINC code 8302-2 was found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l26"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-not-performed.json">C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-not-performed.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.code.coding[0].display (l9/c4)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Acyclovir [Susceptibility]' for http://loinc.org#1-8. Valid display is one of 0 choices: 'Acyclovir [Susceptibility]' (en-US), 'Acyclovir [Susceptibility]' (en-US), 'Acyclovir Susc Islt' (en-US), 'Susceptibility to Acyclovir' (en-US), 'Aciclovir: Aislado : Punto temporal: Susceptibilidad (microorganismos): Ordinal Cuantitativo:' (es-MX), 'aciclovir:susceptibilidad:punto en el tiempo:cepa clínica:ordinal o cuantitativo:' (es-AR), 'Acyclovir Susc Islt' (pt-BR), 'Aciclovir [Sensibilité] Isolat ; Alphanumérique' (fr-FR), 'Acyclovir [gevoeligheid] in isolaat' (nl-NL) or 'Aciclovir' (de-AT) (for the language(s) 'english')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.dataAbsentReason (l19/c4)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/il-core-not-performed-reason|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_subject"><b>Best Practice Recommendation: In general, all observations should have a subject</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_a_performer"><b>Best Practice Recommendation: In general, all observations should have a performer</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation (l1/c2)</b></td><td><b>warning</b></td><td title="All_observations_should_have_an_effectiveDateTime_or_an_effectivePeriod"><b>Best Practice Recommendation: In general, all observations should have an effective[x] ()</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Observation.dataAbsentReason.coding[1] (l26/c8)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-observation|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm103" class="flip" onclick="flip('m103')">Show Reasoning</span><div id="m103" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-observation|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Observation.dataAbsentReason.coding[1]: discriminator = true and system.where(value = 'http://fhir.health.gov.il/cs/il-core-not-performed-reason').exists()</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l27"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-VS-cuff-size.json">C:\FHIR\ILCore-IG\ILCore\examples\Observation-observation-VS-cuff-size.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Observation.code.coding[0].display (l25/c4)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Head Occipital-frontal circumference' for http://loinc.org#9843-4. Valid display is one of 0 choices: 'Head Occipital-frontal circumference' (en-US), 'Head Occipital-frontal circumference' (en-US), 'Head Circumf OFC' (en-US), 'Circunferencia occipital-frontal:Cabeza :Punto temporal:Len:Cuantitativo:' (es-MX), 'perímetro.frontoccipital:longitud:punto en el tiempo:cabeza:cuantitativo:' (es-AR), 'Head Circumf OCF' (pt-BR), 'Kopfumfang okzipital-frontal' (de-DE) or 'Fronto-occipitale omtrek [afmeting] in hoofd' (nl-NL) (for the language(s) 'english')</b></td>
+   </tr>
+   <tr style="background-color: #d6feff">
+     <td><b>Observation (l1/c2)</b></td><td><b>Process Info</b></td><td title="VALIDATION_VAL_PROFILE_SIGNPOST_OBS"><b>Validate Observation against the Head circumference profile (http://hl7.org/fhir/StructureDefinition/headcircum) which is required by the FHIR specification because the LOINC code 9843-4 was found</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l28"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-hospital-department.json">C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-hospital-department.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.type[0] (l72/c6)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/department-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.address[0].city.extension[0].value.ofType(CodeableConcept) (l43/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[0] (l72/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Organization Type' (http://fhir.health.gov.il/ValueSet/organization-type|0.16.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/department-type-moh#10000)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l29"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-ministry-of-health.json">C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-ministry-of-health.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.type[0] (l72/c6)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/institution-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.address[0].city.extension[0].value.ofType(CodeableConcept) (l43/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Organization.type[0] (l72/c6)</b></td><td><b>warning</b></td><td title="Terminology_TX_NoValid_2_CC"><b>None of the codings provided are in the value set 'Organization Type' (http://fhir.health.gov.il/ValueSet/organization-type|0.16.0), and a coding should come from this value set unless it has no suitable code (note that the validator cannot judge what is suitable) (codes = http://fhir.health.gov.il/cs/institution-type-moh#76)</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l30"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-part-of-ministry-of-health.json">C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-part-of-ministry-of-health.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.address[0].city.extension[0].value.ofType(CodeableConcept) (l36/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l31"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-school-moe.json">C:\FHIR\ILCore-IG\ILCore\examples\Organization-organization-school-moe.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Organization.address[0].city.extension[0].value.ofType(CodeableConcept) (l43/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l32"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-immigrant.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-immigrant.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>Patient.extension[1].extension[3].value.ofType(CodeableConcept).coding[0].display (l52/c12)</b></td><td><b>warning</b></td><td title="null"><b>Wrong Display Name 'Naturalized citizen' for http://loinc.org#LA29155-1. Valid display is one of 0 choices: 'Naturalized citizen' (en-US) (for the language(s) 'english')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l71/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l131/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l69/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm118" class="flip" onclick="flip('m118')">Show Reasoning</span><div id="m118" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l33"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-redacted.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-redacted.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l19/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[1].value.ofType(code) (l40/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.contact[0] (l64/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm121" class="flip" onclick="flip('m121')">Show Reasoning</span><div id="m121" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.contact[0]: discriminator = true and relationship.coding.where((system = 'http://terminology.hl7.org/CodeSystem/v3-RoleCode') and (code = 'PRN')).exists()</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[1] (l38/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm122" class="flip" onclick="flip('m122')">Show Reasoning</span><div id="m122" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[1]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l34"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-with-statistical-area.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-with-statistical-area.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l28/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l99/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l26/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm126" class="flip" onclick="flip('m126')">Show Reasoning</span><div id="m126" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l35"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-with-two-identifiers.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-israeli-with-two-identifiers.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l28/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l99/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l26/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm130" class="flip" onclick="flip('m130')">Show Reasoning</span><div id="m130" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l36"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-father-name.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-father-name.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[1].value.ofType(CodeableConcept) (l25/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l41/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l105/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l39/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm134" class="flip" onclick="flip('m134')">Show Reasoning</span><div id="m134" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l37"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-hebrew-date.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-hebrew-date.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l28/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.birthDate.extension[0].extension[1].value.ofType(CodeableConcept) (l143/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/hebrew-date-day|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.birthDate.extension[0].extension[2].value.ofType(CodeableConcept) (l155/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/hebrew-date-month|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l92/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l26/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm140" class="flip" onclick="flip('m140')">Show Reasoning</span><div id="m140" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l38"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-israeli-id.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-israeli-id.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l28/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l92/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l26/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm144" class="flip" onclick="flip('m144')">Show Reasoning</span><div id="m144" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l39"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-multiple-birth.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-multiple-birth.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l28/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l92/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l26/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm148" class="flip" onclick="flip('m148')">Show Reasoning</span><div id="m148" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l40"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-palestinian-id-and-parent-name.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-palestinian-id-and-parent-name.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l12/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm149" class="flip" onclick="flip('m149')">Show Reasoning</span><div id="m149" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l41"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-passport-identification-unknown-country.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-passport-identification-unknown-country.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l33/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l115/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.identifier[0] (l10/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm152" class="flip" onclick="flip('m152')">Show Reasoning</span><div id="m152" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/il-national-id' in system)</li>, <li>Patient.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/pna-national-id' in system)</li>, <li>Patient.identifier[0]: discriminator = true and (system memberOf 'http://fhir.health.gov.il/ValueSet/passport-uri')</li>, <li>Patient.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/il-prisoner-number' in system)</li>, <li>Patient.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/encrypted-id-primary-moh' in system)</li>, <li>Patient.identifier[0]: discriminator = true and ('http://fhir.health.gov.il/identifier/il-entry-permit' in system)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l47/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm153" class="flip" onclick="flip('m153')">Show Reasoning</span><div id="m153" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l42"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-passport-identification.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-passport-identification.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l94/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l26/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm156" class="flip" onclick="flip('m156')">Show Reasoning</span><div id="m156" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l43"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-two-addresses.json">C:\FHIR\ILCore-IG\ILCore\examples\Patient-patient-with-two-addresses.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.extension[0].value.ofType(CodeableConcept) (l12/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/paying-entity-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0].value.ofType(code) (l28/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.birthDate.extension[0].extension[1].value.ofType(CodeableConcept) (l173/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/hebrew-date-day|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.birthDate.extension[0].extension[2].value.ofType(CodeableConcept) (l185/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/hebrew-date-month|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[0].city.extension[0].value.ofType(CodeableConcept) (l100/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.address[1].city.extension[0].value.ofType(CodeableConcept) (l125/c14)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/city-symbol|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Patient.name[0].extension[0] (l26/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm163" class="flip" onclick="flip('m163')">Show Reasoning</span><div id="m163" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Patient.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l44"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-anesthesiologist-with-expertise.json">C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-anesthesiologist-with-expertise.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l20/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].extension[0].value.ofType(CodeableConcept) (l74/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-profession-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].code (l62/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].extension[0].value.ofType(CodeableConcept) (l105/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-expertise-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].code (l93/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l18/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm169" class="flip" onclick="flip('m169')">Show Reasoning</span><div id="m169" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l45"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-md.json">C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-md.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l20/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].extension[0].value.ofType(CodeableConcept) (l74/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-profession-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].code (l62/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l18/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm173" class="flip" onclick="flip('m173')">Show Reasoning</span><div id="m173" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l46"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse-no-expertise-with-advanced-courses.json">C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse-no-expertise-with-advanced-courses.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l23/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].extension[0].value.ofType(CodeableConcept) (l73/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-profession-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].code (l61/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].extension[0].value.ofType(CodeableConcept) (l104/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-advanced-course-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].code (l92/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[2].extension[0].value.ofType(CodeableConcept) (l135/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-advanced-course-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[2].code (l123/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[3].extension[0].value.ofType(CodeableConcept) (l166/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-advanced-course-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[3].code (l154/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l21/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm183" class="flip" onclick="flip('m183')">Show Reasoning</span><div id="m183" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l47"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse-with-expertise-and-advanced-courses.json">C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse-with-expertise-and-advanced-courses.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l23/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].extension[0].value.ofType(CodeableConcept) (l73/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-profession-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].code (l61/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].extension[0].value.ofType(CodeableConcept) (l107/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-expertise-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].code (l95/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[2].extension[0].value.ofType(CodeableConcept) (l141/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-advanced-course-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[2].code (l129/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[3].extension[0].value.ofType(CodeableConcept) (l175/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-advanced-course-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[3].code (l163/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l21/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm193" class="flip" onclick="flip('m193')">Show Reasoning</span><div id="m193" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l48"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse.json">C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-nurse.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l23/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].extension[0].value.ofType(CodeableConcept) (l73/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-profession-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].code (l61/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].extension[0].value.ofType(CodeableConcept) (l104/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-expertise-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].code (l92/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[2].extension[0].value.ofType(CodeableConcept) (l135/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-advanced-course-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[2].code (l123/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l21/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm201" class="flip" onclick="flip('m201')">Show Reasoning</span><div id="m201" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l49"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-psychologist.json">C:\FHIR\ILCore-IG\ILCore\examples\Practitioner-practitioner-psychologist.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0].value.ofType(code) (l20/c28)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_18"><b>The value provided ('he') was not found in the value set 'Common Languages' (http://hl7.org/fhir/ValueSet/languages|4.0.1), and a code is recommended to come from this value set (error message = The System URI could not be determined for the code 'he' in the ValueSet 'http://hl7.org/fhir/ValueSet/languages|4.0.1'; None of the provided codes ['#he'] are in the value set 'http://hl7.org/fhir/ValueSet/languages|4.0.1')</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].extension[0].value.ofType(CodeableConcept) (l71/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-profession-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[0].code (l59/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].extension[0].value.ofType(CodeableConcept) (l102/c12)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-expertise-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.qualification[1].code (l90/c8)</b></td><td><b>information</b></td><td title="MSG_DRAFT"><b>Reference to draft CodeSystem http://fhir.health.gov.il/cs/practitioner-certificate-type-moh|0.16.0</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Practitioner.name[0].extension[0] (l18/c10)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm207" class="flip" onclick="flip('m207')">Show Reasoning</span><div id="m207" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-practitioner|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Practitioner.name[0].extension[0]: discriminator = true and ('http://hl7.org/fhir/StructureDefinition/data-absent-reason' in url)</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l50"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\PractitionerRole-practitionerRole-gp.json">C:\FHIR\ILCore-IG\ILCore\examples\PractitionerRole-practitionerRole-gp.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l51"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Procedure-partial-parotidectomy.json">C:\FHIR\ILCore-IG\ILCore\examples\Procedure-partial-parotidectomy.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l52"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Procedure-procedure-bloodwork-before-partial-parotidectomy.json">C:\FHIR\ILCore-IG\ILCore\examples\Procedure-procedure-bloodwork-before-partial-parotidectomy.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Procedure.performed.ofType(dateTime).extension[0] (l26/c8)</b></td><td><b>information</b></td><td title="MSG_DEPENDS_ON_DEPRECATED"><b>The extension http://hl7.org/fhir/StructureDefinition/relative-date|5.2.0-ballot is deprecated</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>Procedure.performed.ofType(dateTime).extension[0].extension[0] (l29/c12)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://hl7.org/fhir/StructureDefinition/relative-date|5.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm209" class="flip" onclick="flip('m209')">Show Reasoning</span><div id="m209" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://hl7.org/fhir/StructureDefinition/relative-date|5.2.0-ballot (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>Procedure.performed.ofType(dateTime).extension[0].extension[0]: discriminator = true and ('targetReference' in url)</li>, <li>Procedure.performed.ofType(dateTime).extension[0].extension[0]: discriminator = true and ('targetCode' in url)</li>, <li>Procedure.performed.ofType(dateTime).extension[0].extension[0]: discriminator = true and ('targetPath' in url)</li>, <li>Procedure.performed.ofType(dateTime).extension[0].extension[0]: discriminator = true and ('relationship' in url)</li>, <li>Procedure.performed.ofType(dateTime).extension[0].extension[0]: discriminator = true and ('offset' in url)</li></ul></div></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.performed.ofType(dateTime).extension[0] (l26/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum"><b>Extension.extension: minimum required = 4, but only found 3 (from http://hl7.org/fhir/StructureDefinition/relative-date|5.2.0-ballot)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.performed.ofType(dateTime).extension[0] (l26/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Extension.extension:targetReference': minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/relative-date|5.2.0-ballot)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.performed.ofType(dateTime).extension[0] (l26/c8)</b></td><td><b>error</b></td><td title="Validation_VAL_Profile_Minimum_SLICE"><b>Slice 'Extension.extension:targetCode': minimum required = 1, but only found 0 (from http://hl7.org/fhir/StructureDefinition/relative-date|5.2.0-ballot)</b></td>
+   </tr>
+   <tr style="background-color: #ffcccc">
+     <td><b>Procedure.performed.ofType(dateTime).extension[0].extension[0][url='event'] (l29/c12)</b></td><td><b>error</b></td><td title="Extension_EXT_SubExtension_Invalid"><b>Sub-extension url 'event' is not defined by the Extension http://hl7.org/fhir/StructureDefinition/relative-date|5.2.0-ballot</b></td>
+   </tr>
+</table>
+<hr/>
+<a name="l53"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\RelatedPerson-example-related-person.json">C:\FHIR\ILCore-IG\ILCore\examples\RelatedPerson-example-related-person.json</a></h2>
+ <table class="grid">
+   <tr>
+     <td><b>Path</b></td><td><b>Severity</b></td><td><b>Message</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>RelatedPerson.relationship[0] (l31/c6)</b></td><td><b>information</b></td><td title="Terminology_TX_NoValid_3_CC"><b>None of the codings provided are in the value set 'Patient relationship type' (http://hl7.org/fhir/ValueSet/relatedperson-relationshiptype|4.0.1), and a coding is recommended to come from this value set (codes = http://terminology.hl7.org/CodeSystem/v3-RoleCode#GUARD)</b></td>
+   </tr>
+   <tr style="background-color: #ffebcc">
+     <td><b>RelatedPerson (l1/c2)</b></td><td><b>warning</b></td><td title="null"><b>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</b></td>
+   </tr>
+   <tr style="background-color: #ffffe6">
+     <td><b>RelatedPerson.name[0] (l42/c6)</b></td><td><b>Slicing Information</b></td><td><b>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-related-person|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)</b> <span id="sm216" class="flip" onclick="flip('m216')">Show Reasoning</span><div id="m216" style="display: none"><p>&nbsp;</p>This element does not match any known slice Defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-related-person|0.16.0 (this may not be a problem, but you should check that it's not intended to match a slice)<ul><li>RelatedPerson.name[0]: discriminator = true and ('he' in extension('http://hl7.org/fhir/StructureDefinition/language').value.ofType(code))</li>, <li>RelatedPerson.name[0]: discriminator = true and ('en' in extension('http://hl7.org/fhir/StructureDefinition/language').value.ofType(code))</li>, <li>RelatedPerson.name[0]: discriminator = true and ('ar' in extension('http://hl7.org/fhir/StructureDefinition/language').value.ofType(code))</li></ul></div></td>
+   </tr>
+</table>
+<hr/>
+<a name="l54"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Specimen-speciment-child.json">C:\FHIR\ILCore-IG\ILCore\examples\Specimen-speciment-child.json</a></h2>
+<p>No Issues detected</p>
+<hr/>
+<a name="l55"> </a>
+<h2><a href="file:C:\FHIR\ILCore-IG\ILCore\examples\Specimen-speciment-parent.json">C:\FHIR\ILCore-IG\ILCore\examples\Specimen-speciment-parent.json</a></h2>
+<p>No Issues detected</p>

@@ -1,0 +1,50 @@
+{
+  "resourceType": "Observation",
+  "id": "ExampleObservationLab",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "108252007",
+          "display": "Laboratory procedure"
+        }
+      ]
+    }
+  ],
+  "performer": [
+    {
+      "type": "ILCorePractitioner",
+      "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+    },
+    {
+      "type": "ILCoreOrganization",
+      "reference": "Organization/organization-hospital-department"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "718-7",
+        "display": "Hemoglobin [Mass/volume] in Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli-redacted"
+  },
+  "effectiveDateTime": "2024-11-27T10:30:00Z",
+  "valueQuantity": {
+    "value": 13.5,
+    "unit": "g/dL",
+    "system": "http://unitsofmeasure.org",
+    "code": "g/dL"
+  }
+}

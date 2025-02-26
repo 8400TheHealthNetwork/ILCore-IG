@@ -4,8 +4,7 @@ Id: il-core-service-request-lab
 Title: "ILCore ServiceRequest Lab Profile"
 Description: "Israel Core proposed constraints and extensions on the ILCoreServiceRequest Resource for laboratory observations"
 * insert ConformanceMetadata
-* ^status = #draft
-
+* ^status = #active
 * . ^short = "ILCore ServiceRequest Lab Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the profile ILCoreServiceRequestLabcd resource profile."
 * . ^isModifier = false

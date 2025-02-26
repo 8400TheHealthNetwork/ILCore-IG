@@ -6,7 +6,7 @@ Description: "This set of codes is used to mark a parent name as a father or mot
 
 * ^language = #en-US
 * ^url = $vs-il-core-parent-name-role
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

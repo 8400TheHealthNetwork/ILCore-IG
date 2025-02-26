@@ -8,10 +8,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 
 * ^url = $ILImmunization
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Immunization Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Immunization resource profile."
 * . ^isModifier = false

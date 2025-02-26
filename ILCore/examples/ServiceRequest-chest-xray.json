@@ -1,0 +1,58 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "chest-xray",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-service-request"
+    ]
+  },
+  "status": "active",
+  "intent": "order",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "363679005",
+          "system": "http://snomed.info/sct",
+          "display": "Imaging (procedure)"
+        }
+      ],
+      "text": "Imaging Order"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "30746-2",
+        "system": "http://loinc.org",
+        "display": "Portable XR Chest Views"
+      }
+    ],
+    "text": "Portable XR Chest Views"
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli",
+    "display": "Amy Shaw"
+  },
+  "encounter": {
+    "reference": "Encounter/home-visit"
+  },
+  "occurrenceDateTime": "2024-10-13",
+  "authoredOn": "2024-10-13T10:59:38-08:00",
+  "requester": {
+    "reference": "Practitioner/md"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "version": "http://snomed.info/sct/731000124108",
+          "code": "386663009",
+          "system": "http://snomed.info/sct",
+          "display": "Bicycle accident (event)"
+        }
+      ],
+      "text": "Bicycle accident"
+    }
+  ]
+}

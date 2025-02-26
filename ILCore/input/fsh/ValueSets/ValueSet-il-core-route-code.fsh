@@ -3,7 +3,7 @@ Id: il-core-route-code
 Title: "IL Core Route Code"
 Description: "A list of codes for Route for the IL Core"
 * ^url = $vs-il-core-route-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

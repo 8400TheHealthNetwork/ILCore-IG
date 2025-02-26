@@ -2,7 +2,7 @@ CodeSystem: ILCoreMedicationRequestCategory
 Id: il-core-medication-request-category
 Title: "Codes for MedicationRequest categories"
 Description: "A list of codes for MedicationRequest categories"
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^url = $il-core-medication-request-category
 * ^content = #complete

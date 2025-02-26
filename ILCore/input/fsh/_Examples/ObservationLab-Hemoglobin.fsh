@@ -1,4 +1,4 @@
-Instance: observation-lab-hemoglobin
+Instance: hemoglobin-lab-test
 InstanceOf: ILCoreObservationLab
 Title: "Example Observation Lab"
 Description: "An example instance of an IL-Core Observation Lab - hemoglobin"
@@ -13,7 +13,7 @@ Usage: #example
 * code.coding[0].display = "Hemoglobin [Mass/volume] in Blood"
 * subject = Reference(Patient/patient-israeli-redacted)
 * performer[practitioner] = Reference(Practitioner/practitioner-nurse-no-expertise-with-advanced-courses)
-* performer[organization] = Reference(Organization/organization-hospital-department)
+* performer[organization] = Reference(Organization/hospital-department)
 * effectiveDateTime = "2024-11-27T10:30:00Z"
 * valueQuantity = 13.5 'g/dL' "g/dL"
 

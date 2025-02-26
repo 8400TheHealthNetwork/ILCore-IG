@@ -6,7 +6,7 @@ Description: "Extension: DiagnosticReport Note annotation, to mimic v5 Diagnosti
 * ^url = $ext-diagnostic-report-note
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "DiagnosticReport"
 * value[x] only Annotation

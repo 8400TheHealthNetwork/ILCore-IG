@@ -6,7 +6,7 @@ Description: "MoH Codes for the Paying Entity for the Encounter
  **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 // * ^language = #he-IL
 * ^url = $vs-encounter-paying-entity-moh
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = true
 

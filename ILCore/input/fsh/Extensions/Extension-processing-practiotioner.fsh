@@ -6,7 +6,7 @@ Description: "Extension: IL Core Processing Practitioner"
 * ^url = $ext-processing-practitioner
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Specimen"
 

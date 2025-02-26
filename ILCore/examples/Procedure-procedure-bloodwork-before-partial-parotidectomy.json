@@ -21,35 +21,42 @@
     ]
   },
   "performedDateTime": "2020-02-07",
-  "_performedDateTime": {
-    "extension": [
-      {
-        "url": "http://hl7.org/fhir/StructureDefinition/relative-date",
-        "extension": [
-          {
-            "url": "event",
-            "valueReference": {
-              "reference": "Procedure/partial-parotidectomy"
-            }
-          },
-          {
-            "url": "relationship",
-            "valueCode": "before-start"
-          },
-          {
-            "url": "offset",
-            "valueDuration": {
-              "value": 24,
-              "code": "h",
-              "system": "http://unitsofmeasure.org",
-              "unit": "hour"
-            }
-          }
-        ]
-      }
-    ]
-  },
   "subject": {
     "reference": "Patient/patient-with-israeli-id"
-  }
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+      }
+    }
+  ],
+  "location": {
+    "reference": "Location/hospital-unit"
+  },
+  "encounter": {
+    "reference": "Encounter/breast-screaning"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "71388002",
+          "system": "http://snomed.info/sct",
+          "display": "Procedure (procedure)"
+        }
+      ]
+    }
+  ],
+  "bodySite": [
+    {
+      "coding": [
+        {
+          "code": "442083009",
+          "system": "http://snomed.info/sct",
+          "display": "Anatomical or acquired body site (body structure)"
+        }
+      ]
+    }
+  ]
 }

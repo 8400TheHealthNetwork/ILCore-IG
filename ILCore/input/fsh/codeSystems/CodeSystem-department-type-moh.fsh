@@ -2,7 +2,7 @@ CodeSystem: DepartmentTypeMoH
 Id: department-type-moh
 Title: "Department Type MoH"
 Description: "Israel ministry of health coding system for department types"
-* ^status = #draft
+* ^status = #active
 * ^url = $department-type-moh
 * insert ConformanceMetadata
 * ^content = #complete

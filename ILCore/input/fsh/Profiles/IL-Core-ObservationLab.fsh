@@ -5,8 +5,7 @@ Title: "ILCore Observation Lab Profile"
 Description: "Israel Core proposed constraints and extensions on the ILCoreObservation Resource for laboratory observations"
 * ^url = $ILObservationLab
 * insert ConformanceMetadata
-* ^status = #draft
-
+* ^status = #active
 * . ^short = "ILCore Observation Lab Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the profile ILCoreObservationLabcd resource profile."
 * . ^isModifier = false
@@ -23,8 +22,13 @@ Description: "Israel Core proposed constraints and extensions on the ILCoreObser
 * category ^slicing.rules = #open
 * category contains 
     il-core 1..1
-* category[il-core].coding.system = $sct (exactly) 
-* category[il-core].coding.code = #108252007 (exactly) 
+* category[il-core].coding 1..1
+* category[il-core].coding.system 1..1
+* category[il-core] ^patternCoding.system = $sct 
+* category[il-core].coding.code 1..1
+* category[il-core] ^patternCoding.code = #108252007 
+* category[il-core].coding.display 1..1
+// * category[il-core].coding.display = "Laboratory procedure" (exactly) 
 * code.coding 1..*
 * code.coding from $vs-il-core-observation-lab-code (extensible)
 * subject 1..1

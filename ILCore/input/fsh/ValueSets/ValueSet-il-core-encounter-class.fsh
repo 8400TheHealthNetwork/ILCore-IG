@@ -3,7 +3,7 @@ Id: il-core-encounter-class
 Title: "IL Core Encounter Class Codes"
 Description: "A list of class codes for Encounters for the IL Core"
 * ^url = $vs-il-core-encounter-class
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

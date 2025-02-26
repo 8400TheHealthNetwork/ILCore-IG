@@ -3,7 +3,7 @@ Id: icd9il
 Title: "ICD9IL: Adendum to ICD9 according to codes by Israeli MoH"
 Description: "Strings for procedures and diagnoses, added to ICD9"
 
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^url = $icd9-il
 * ^content = #complete

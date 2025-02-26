@@ -46,6 +46,8 @@ Usage: #example
 * address.extension[geolocation].extension[latitude].valueDecimal = 670131.38
 * address.extension[statArea].valueIdentifier.system = "http://fhir.health.gov.il/identifier/cbs-statistical-area"
 * address.extension[statArea].valueIdentifier.value = "50000935"
-
+* contact[parent].relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
+* contact[parent].telecom.value = "0525555555"
+* contact[parent].telecom.system = http://hl7.org/fhir/contact-point-system#phone "Phone"
 * deceasedBoolean = false
  

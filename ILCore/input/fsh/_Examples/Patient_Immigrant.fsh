@@ -13,6 +13,8 @@ Usage: #example
 * extension[immigration].extension[date].valueDate = "1982-06-30"
 * extension[immigration].extension[status].valueCodeableConcept = $loinc#LA29155-1
 * extension[immigration].extension[status].valueCodeableConcept.coding.display = "Naturalized citizen"
+* extension[birthPlace].valueAddress.line = "New york City, NY, USA"
+* extension[birthSex].valueCode = #M
 * active = true
 * name.family = "לוי"
 * name.given = "הרצל"
@@ -52,5 +54,5 @@ Usage: #example
   * display = "Arabic"
 
 * deceasedBoolean = false
-
+* contact[parent].relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
     

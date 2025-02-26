@@ -1,0 +1,18 @@
+{
+  "resourceType": "AppointmentResponse",
+  "id": "general",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-appointment-response"
+    ]
+  },
+  "appointment": {
+    "reference": "Appointment/gp-appointment-hl7",
+    "display": "Brian MRI results discussion"
+  },
+  "actor": {
+    "reference": "Patient/entry-permit",
+    "display": "Peter James Chalmers"
+  },
+  "participantStatus": "accepted"
+}

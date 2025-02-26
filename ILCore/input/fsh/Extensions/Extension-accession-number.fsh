@@ -6,7 +6,7 @@ Description: "Extension: Accession Number. The Accession Number of the ImagingSt
 * ^url = $ext-accession-number
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "ImagingStudy" 
 

@@ -2,7 +2,7 @@ CodeSystem: InstitutionTypeMoH
 Id: institution-type-moh
 Title: "סוג מוסד לפי רישוי משרד הבריאות"
 Description: "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"
-* ^status = #draft
+* ^status = #active
 * ^url = $institution-type-moh
 * insert ConformanceMetadata
 * ^content = #complete

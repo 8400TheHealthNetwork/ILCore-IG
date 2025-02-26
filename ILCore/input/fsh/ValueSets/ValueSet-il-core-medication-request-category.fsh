@@ -4,7 +4,7 @@ Title: "ILCore Medication Request Category"
 Description: "Codes for Medication Request Category"
 
 * ^url = $vs-il-core-medication-request-category
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

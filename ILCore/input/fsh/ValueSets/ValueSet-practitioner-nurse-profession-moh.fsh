@@ -4,7 +4,7 @@ Title: "קוד מקצוע לעוסק בסיעוד"
 Description: "קוד מקצוע לעוסק בסיעוד לפי רישוי משרד הבריאות"
 
 * ^url = $vs-practitioner-nurse-profession
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

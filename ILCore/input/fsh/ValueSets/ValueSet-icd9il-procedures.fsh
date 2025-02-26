@@ -5,7 +5,7 @@ Title: "ICD9 IL Procedures"
 Description: "codes of procedures from ICD9-IL"
 
 * ^url = $vs-icd9-il-procedures
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

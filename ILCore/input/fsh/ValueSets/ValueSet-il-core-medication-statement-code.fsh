@@ -4,7 +4,7 @@ Title: "ILCore Medication statement Code"
 Description: "Codes for Medication statement Code"
 
 * ^url = $vs-il-core-medication-statement-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

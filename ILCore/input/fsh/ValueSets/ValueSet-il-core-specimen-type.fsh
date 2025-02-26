@@ -3,7 +3,7 @@ Id: il-core-specimen-type
 Title: "IL Core Specimen type"
 Description: "A list of codes for Specimen types for the IL Core"
 * ^url = $vs-il-core-specimen-type
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

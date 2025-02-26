@@ -3,7 +3,7 @@ Id: vaccine-product-code
 Title: "Vaccine Product Codes"
 Description: "A list of codes for vaccine products from ATC and cvx codeSystems"
 * ^url = $vs-vaccine-product-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

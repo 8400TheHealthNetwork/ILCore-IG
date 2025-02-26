@@ -6,7 +6,7 @@ Description: "Extension: The time in which the medication order / administration
 * ^url = $ext-recorded-time
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "MedicationRequest"
 * ^context[1].type = #element

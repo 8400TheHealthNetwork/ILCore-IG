@@ -7,9 +7,6 @@ Description: "Israel Core proposed constraints and extensions on the ResearchStu
 * ^url = $ILResearchStudy
 * insert ConformanceMetadata
 * ^status = #draft
-
-
-
 * . ^short = "ILCoreResearchStudy Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ResearchStudy resource profile."
 * . ^isModifier = false

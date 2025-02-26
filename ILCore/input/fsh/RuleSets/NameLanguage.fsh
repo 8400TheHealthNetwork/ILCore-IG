@@ -1,7 +1,7 @@
 RuleSet: HumanNameLanguage
 * name.extension contains $data-absent-reason named dataAbsentReason 0..1
 * name ^slicing.discriminator.type = #value
-* name ^slicing.discriminator.path = "extension('http://hl7.org/fhir/StructureDefinition/language').value.ofType(code)"
+* name ^slicing.discriminator.path = "extension('http://hl7.org/fhir/StructureDefinition/language').value"
 * name ^slicing.rules = #open
 * name contains 
     Hebrew 0..* and

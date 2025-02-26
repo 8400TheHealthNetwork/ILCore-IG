@@ -7,17 +7,14 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 
 * ^url = $ILPatient
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Patient profile"
 * . ^definition = "The Patient Profile is based upon the core FHIR Patient Resource"
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
-* ^extension[=].valueInteger = 1
+* ^extension[=].valueInteger = 2
 
 
 * extension contains
@@ -167,8 +164,8 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * contact ^slicing.discriminator.type = #pattern
 * contact ^slicing.discriminator.path = "relationship"
 * contact ^slicing.rules = #open
-* contact contains Parent 0..*
-* contact[Parent].relationship ^patternCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
+* contact contains parent 0..*
+* contact[parent].relationship ^patternCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
 // * contact[Parent].relationship ^patternCoding = http://terminology.hl7.org/CodeSystem/v2-0131#PAR  //OLD and incorrect. awaiting Daniel's reply
 // * contact[Child].relationship.coding ^patternCoding = {system: "http://terminology.hl7.org/CodeSystem/v2-0131", code: "CHD"}
 

@@ -6,7 +6,7 @@ Description: "A set of codes that can be used to indicate the relationship betwe
 
 * ^language = #en-US
 * ^url = $vs-patient-relationship-type
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

@@ -6,7 +6,7 @@ Context: Encounter.subject
 * ^url = $ext-encounter-visitor-type
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Encounter.subject"
 * value[x] 1..

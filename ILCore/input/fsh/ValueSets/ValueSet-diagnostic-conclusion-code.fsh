@@ -3,7 +3,7 @@ Id: diagnostic-conclusion-code
 Title: "Diagnostic Conclusion Codes"
 Description: "A list of codes for Diagnostic Conclusion for the IL Core"
 * ^url = $vs-diagnostic-conclusion-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

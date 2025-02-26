@@ -4,7 +4,7 @@ Title: "קוד קורס על בסיסי לעוסק בסיעוד"
 Description: "קוד קורס על בסיסי לעוסק בסיעוד לפי רישוי משרד הבריאות"
 
 * ^url = $vs-practitioner-advanced-course
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

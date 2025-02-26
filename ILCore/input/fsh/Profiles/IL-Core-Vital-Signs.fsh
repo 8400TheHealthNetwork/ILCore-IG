@@ -6,9 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 
 * ^url = $ILVitalSigns
 * insert ConformanceMetadata
-* ^status = #draft
-
-
+* ^status = #active
 * . ^short = "ILCore Vital Signs Profile"
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"

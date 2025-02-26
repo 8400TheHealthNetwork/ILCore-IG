@@ -2,7 +2,7 @@ CodeSystem: MohTofes17IssueCode
 Id: moh-tofes17-issue-code
 Title: "Moh Form-17 Issue Code"
 Description: "קודי שגיאה \\ סירוב לתהליכים הקשורים לטופס 17"
-* ^status = #draft
+* ^status = #active
 * ^url = $moh-tofes17-issue-code
 * insert ConformanceMetadata
 * ^caseSensitive = false

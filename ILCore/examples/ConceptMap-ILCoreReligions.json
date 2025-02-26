@@ -1,0 +1,222 @@
+{
+  "resourceType": "ConceptMap",
+  "id": "ILCoreReligions",
+  "url": "http://fhir.health.gov.il/ConceptMap/il-core-religions",
+  "title": "IL Core Religions",
+  "description": "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation",
+  "version": "0.15.1",
+  "name": "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation",
+  "status": "draft",
+  "experimental": false,
+  "date": "2023-11-30",
+  "publisher": "Israeli Ministry of Health",
+  "contact": [
+    {
+      "telecom": [
+        {
+          "system": "email",
+          "value": "tal.primak@moh.gov.il"
+        }
+      ]
+    }
+  ],
+  "sourceCanonical": "http://fhir.health.gov.il/cs/il-core-religion-code",
+  "targetCanonical": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+  "group": [
+    {
+      "source": "http://fhir.health.gov.il/cs/il-core-religion-code",
+      "target": "http://terminology.hl7.org/CodeSystem/v3-ReligiousAffiliation",
+      "element": [
+        {
+          "code": "1",
+          "target": [
+            {
+              "code": "1008",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "2",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Samaritan"
+            }
+          ]
+        },
+        {
+          "code": "10",
+          "target": [
+            {
+              "code": "1026",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "20",
+          "target": [
+            {
+              "code": "1023",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "21",
+          "target": [
+            {
+              "code": "1049",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "22",
+          "target": [
+            {
+              "code": "1045",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "40",
+          "target": [
+            {
+              "code": "1013",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "41",
+          "target": [
+            {
+              "code": "1036",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "42",
+          "target": [
+            {
+              "code": "1034",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "45",
+          "target": [
+            {
+              "code": "1077",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "46",
+          "target": [
+            {
+              "code": "1005",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "53",
+          "target": [
+            {
+              "code": "1041",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "54",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Armenian Christian"
+            }
+          ]
+        },
+        {
+          "code": "57",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Coptic Christian"
+            }
+          ]
+        },
+        {
+          "code": "58",
+          "target": [
+            {
+              "code": "1009",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "60",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Druze"
+            }
+          ]
+        },
+        {
+          "code": "70",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "No Religious Affiliation"
+            }
+          ]
+        },
+        {
+          "code": "80",
+          "target": [
+            {
+              "code": "1059",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "81",
+          "target": [
+            {
+              "code": "1020",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "82",
+          "target": [
+            {
+              "code": "1047",
+              "equivalence": "equivalent"
+            }
+          ]
+        },
+        {
+          "code": "90",
+          "target": [
+            {
+              "equivalence": "unmatched",
+              "comment": "Karaite"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

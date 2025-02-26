@@ -4,7 +4,7 @@ Title: "ILCore Medication administration Category"
 Description: "Codes for Medication administration Category"
 
 * ^url = $vs-il-core-medication-administration-category
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

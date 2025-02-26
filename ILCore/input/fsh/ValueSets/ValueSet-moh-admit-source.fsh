@@ -4,7 +4,7 @@ Title: "MoH Admit Source Codes"
 Description: "Codes for admit source according to MoH catalogue"
 
 * ^url = $vs-moh-admit-source
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

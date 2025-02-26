@@ -3,7 +3,7 @@ Id: il-core-procedure-reason
 Title: "IL Core procedure Reason"
 Description: "A list of codes for procedure reasons for the IL Core"
 * ^url = $vs-il-core-procedure-reason
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

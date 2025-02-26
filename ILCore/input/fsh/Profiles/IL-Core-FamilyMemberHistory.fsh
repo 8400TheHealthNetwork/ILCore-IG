@@ -8,8 +8,6 @@ Description: "Israel Core proposed constraints and extensions on theILCoreFamily
 * insert ConformanceMetadata
 * ^status = #draft
 
-
-
 * . ^short = "ILCore FamilyMemberHistory Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the FamilyMemberHistory resource profile."
 * . ^isModifier = false
@@ -17,7 +15,6 @@ Description: "Israel Core proposed constraints and extensions on theILCoreFamily
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
-
 
 * patient only Reference(ILCorePatient)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreAllergyIntolerance or ILCoreQuestionnaireResponse or ILCoreDiagnosticReport or ILCoreDocumentReference)

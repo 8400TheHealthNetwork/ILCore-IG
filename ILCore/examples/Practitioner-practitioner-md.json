@@ -10,6 +10,22 @@
     {
       "system": "http://practitioners.health.gov.il/Practitioners",
       "value": "1-22947"
+    },
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018"
+    },
+    {
+      "type": {
+        "coding": [
+          {
+            "code": "PPN",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203"
+          }
+        ]
+      },
+      "system": "http://hl7.org/fhir/sid/passport-USA",
+      "value": "8876543"
     }
   ],
   "name": [

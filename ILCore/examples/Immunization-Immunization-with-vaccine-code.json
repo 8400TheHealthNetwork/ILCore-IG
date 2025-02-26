@@ -1,6 +1,6 @@
 {
   "resourceType": "Immunization",
-  "id": "Immunization-with-vaccine-code",
+  "id": "immunization-with-vaccine-code",
   "meta": {
     "profile": [
       "http://fhir.health.gov.il/StructureDefinition/il-core-immunization"

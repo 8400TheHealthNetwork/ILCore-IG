@@ -7,10 +7,7 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 
 * ^url = $ILOrganization
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Organization Profile"
 * . ^definition = "The Organization Profile is based upon the core FHIR Organization Resource"
 * . ^isModifier = false

@@ -2,7 +2,7 @@ CodeSystem: CitySymbol
 Id: city-symbol
 Title: "City Symbol (סמל ישוב)"
 Description: "Codes for cities in Israel"
-* ^status = #draft
+* ^status = #active
 * ^url = $city-code
 * ^content = #complete
 * ^valueSet = $vs-city-code

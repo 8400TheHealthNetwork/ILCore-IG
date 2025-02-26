@@ -1,0 +1,54 @@
+{
+  "resourceType": "Consent",
+  "id": "consent-example-basic",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-consent"
+    ]
+  },
+  "status": "active",
+  "scope": {
+    "coding": [
+      {
+        "code": "patient-privacy",
+        "system": "http://terminology.hl7.org/CodeSystem/consentscope"
+      }
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "59284-0",
+          "system": "http://loinc.org"
+        }
+      ]
+    }
+  ],
+  "patient": {
+    "reference": "Patient/patient-israeli"
+  },
+  "dateTime": "2016-05-11",
+  "organization": [
+    {
+      "reference": "Organization/ministry-of-health"
+    }
+  ],
+  "sourceAttachment": {
+    "title": "The terms of the consent in lawyer speak."
+  },
+  "policyRule": {
+    "coding": [
+      {
+        "code": "OPTIN",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode"
+      }
+    ]
+  },
+  "provision": {
+    "period": {
+      "start": "1964-01-01",
+      "end": "2016-01-01"
+    }
+  }
+}

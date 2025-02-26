@@ -5,7 +5,7 @@ Title: "Ministry of Health practitioner-education-type codes"
 Description: "Codes for practitioner-education-types according to Israeli MoH"
 
 
-* ^status = #draft
+* ^status = #active
 * ^url = $practitioner-education-type
 * ^content = #complete
 * insert ConformanceMetadata

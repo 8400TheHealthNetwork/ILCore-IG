@@ -8,8 +8,6 @@ Description: "Israel Core proposed constraints and extensions on the MeasureRepo
 * insert ConformanceMetadata
 * ^status = #draft
 
-
-
 * . ^short = "ILCore MeasureReport Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MeasureReport resource profile."
 * . ^isModifier = false

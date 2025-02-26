@@ -3,7 +3,7 @@ Id: il-core-service-type
 Title: "IL Core Service type"
 Description: "A list of codes for Service types for the IL Core"
 * ^url = $vs-il-core-service-type
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

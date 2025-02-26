@@ -13,6 +13,12 @@
       "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
     ]
   },
+  "identifier": [
+    {
+      "system": "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh",
+      "value": "ghblsdmdma"
+    }
+  ],
   "extension": [
     {
       "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
@@ -79,12 +85,6 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with missing</div>",
     "status": "generated"
   },
-  "identifier": [
-    {
-      "system": "http://fhir.health.gov.il/identifier/il-national-id",
-      "value": "000000018"
-    }
-  ],
   "active": true,
   "gender": "unknown",
   "_gender": {

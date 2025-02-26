@@ -6,7 +6,7 @@ Description: "Extension: IL Core Processing Location"
 * ^url = $ext-processing-location
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Specimen"
 

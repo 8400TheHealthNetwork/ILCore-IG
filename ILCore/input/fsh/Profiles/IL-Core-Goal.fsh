@@ -8,8 +8,6 @@ Description: "Israel Core proposed constraints and extensions on the Goal Resour
 * insert ConformanceMetadata
 * ^status = #draft
 
-
-
 * . ^short = "ILCore Goal Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Goal resource profile."
 * . ^isModifier = false

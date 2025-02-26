@@ -40,12 +40,12 @@
   "issued": "2024-11-05T15:00:00Z",
   "performer": [
     {
-      "reference": "Organization/organization-ministry-of-health",
+      "reference": "Organization/ministry-of-health",
       "display": "Acme Laboratory Services"
     },
     {
       "reference": "Practitioner/practitioner-md",
-      "display": "דר&#39; גרינפלד דיאנה"
+      "display": "דר גרינפלד דיאנה"
     }
   ],
   "result": [

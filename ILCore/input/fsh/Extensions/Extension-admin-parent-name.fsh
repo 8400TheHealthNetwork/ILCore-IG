@@ -5,7 +5,7 @@ Description: "Extension: The name of a person’s parent, recorded for administr
 * ^url = $ext-admin-parent-name
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 * ^context[+].type = #element

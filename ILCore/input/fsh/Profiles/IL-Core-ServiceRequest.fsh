@@ -6,9 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 
 * ^url = $ILServiceRequest
 * insert ConformanceMetadata
-* ^status = #draft
-
-
+* ^status = #active
 * . ^short = "ILCore ServiceRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ServiceRequest resource profile."
 * . ^isModifier = false

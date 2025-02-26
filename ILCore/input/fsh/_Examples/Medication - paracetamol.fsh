@@ -7,7 +7,7 @@ Description: "Paracetamol"
 * text.status = #generated
 * code.coding[0] = $moh-medication-code#020162053400 "אקמול"
 * code.coding[1] = $atc#N02BE01 "paracetamol"
-* manufacturer.reference = "Organization/organization-ministry-of-health"
+* manufacturer.reference = "Organization/ministry-of-health"
 * manufacturer.type = "Organization"
 * manufacturer.display = "TEVA PHARMACEUTICAL INDUSTRIES LTD, ISRAEL"
 * form.coding = $sct#421026006 "Oral tablet"

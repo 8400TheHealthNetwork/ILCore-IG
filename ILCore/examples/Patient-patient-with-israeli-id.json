@@ -18,6 +18,23 @@
           }
         ]
       }
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name",
+      "extension": [
+        {
+          "url": "given",
+          "valueString": "אברהם"
+        },
+        {
+          "url": "role",
+          "valueCode": "FTH"
+        },
+        {
+          "url": "official",
+          "valueBoolean": true
+        }
+      ]
     }
   ],
   "name": [

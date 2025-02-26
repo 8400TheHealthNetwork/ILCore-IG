@@ -6,7 +6,7 @@ Description: "Extension: MedicationRequest Procedure Reason Reference. A referen
 * ^url = $ext-med-req-procedure-reference
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "MedicationRequest.reasonRefference"
 

@@ -1,0 +1,63 @@
+{
+  "resourceType": "Library",
+  "id": "exclusive-breastfeeding-cds-logic",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-library"
+    ]
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "value": "Exclusive_Breastfeeding_CDS_Logic"
+    }
+  ],
+  "version": "1.0.0",
+  "title": "Exclusive Breastfeeding CDS Logic",
+  "status": "active",
+  "experimental": true,
+  "type": {
+    "coding": [
+      {
+        "code": "logic-library"
+      }
+    ]
+  },
+  "date": "2016-03-08",
+  "description": "Decision support logic for improving outcomes for exclusive breastmilk feeding of newborns",
+  "topic": [
+    {
+      "text": "Exclusive Breastfeeding"
+    }
+  ],
+  "subjectReference": {
+    "reference": "Group/101"
+  },
+  "relatedArtifact": [
+    {
+      "type": "depends-on",
+      "resource": "Library/library-quick-model-definition"
+    },
+    {
+      "type": "derived-from",
+      "resource": "Measure/measure-exclusive-breastfeeding"
+    }
+  ],
+  "dataRequirement": [
+    {
+      "type": "Condition",
+      "codeFilter": [
+        {
+          "path": "code",
+          "valueSet": "urn:oid:2.16.840.1.113883.3.117.1.7.1.25"
+        }
+      ]
+    }
+  ],
+  "content": [
+    {
+      "contentType": "text/cql",
+      "url": "http://cqlrepository.org/CMS9v4_CDS.cql"
+    }
+  ]
+}

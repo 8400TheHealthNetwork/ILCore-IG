@@ -33,12 +33,12 @@
     ]
   },
   "subject": {
-    "reference": "Patient/1",
+    "reference": "Patient/patient-immigrant",
     "type": "Patient",
     "display": "Ben Binyamini"
   },
   "encounter": {
-    "reference": "Encounter/123",
+    "reference": "Encounter/community-consultation",
     "type": "Encounter",
     "display": "GP HMO visit"
   },
@@ -51,11 +51,11 @@
   "supportingInformation": [
     {
       "type": "Observation",
-      "reference": "Observation/1"
+      "reference": "Observation/hight-measurement"
     }
   ],
   "recorder": {
-    "reference": "Practitioner/10"
+    "reference": "Practitioner/practitioner-md"
   },
   "reasonCode": [
     {

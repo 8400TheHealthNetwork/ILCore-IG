@@ -6,7 +6,7 @@ Description: "Extension: Noting if a medication is narcotic or not"
 * ^url = $ext-narcotic-medication
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "MedicationRequest"
 * ^context[1].type = #element

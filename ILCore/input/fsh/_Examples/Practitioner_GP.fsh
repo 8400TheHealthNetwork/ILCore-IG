@@ -7,6 +7,10 @@ Usage: #example
 
 * identifier[prac-lic].system = $practitioner-license-moh
 * identifier[prac-lic].value = "1-22947"
+* identifier[il-id].value = "000000018"
+* identifier[ppn].type = $id-type#PPN
+* identifier[ppn].system = $urn#http://hl7.org/fhir/sid/passport-USA "United States"
+* identifier[ppn].value = "8876543"
 * active = true
 * name.prefix = "דר'"
 * name.family = "גרינפלד"

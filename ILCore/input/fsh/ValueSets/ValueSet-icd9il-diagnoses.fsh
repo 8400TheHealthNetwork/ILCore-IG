@@ -5,7 +5,7 @@ Title: "ICD9 IL Diagnoses"
 Description: "codes of diagnoses from ICD9-IL"
 
 * ^url = $vs-icd9-il-diagnoses
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

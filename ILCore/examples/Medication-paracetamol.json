@@ -25,7 +25,7 @@
     ]
   },
   "manufacturer": {
-    "reference": "Organization/organization-ministry-of-health",
+    "reference": "Organization/ministry-of-health",
     "type": "Organization",
     "display": "TEVA PHARMACEUTICAL INDUSTRIES LTD, ISRAEL"
   },

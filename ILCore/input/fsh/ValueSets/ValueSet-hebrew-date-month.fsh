@@ -4,7 +4,7 @@ Title: "Hebrew Date Month"
 Description: "Codes for Hebrew date months"
 
 * ^url = $vs-hebrew-date-month
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

@@ -5,8 +5,8 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with missing</div>"
 * text.status = #generated
 
-* identifier[0].system = $il-id
-* identifier[0].value = "000000018"
+* identifier[enc].system = $enc
+* identifier[enc].value = "ghblsdmdma"
 * extension[hmo].valueCodeableConcept = $payer#104 "קופת חולים מאוחדת"
 * extension[hmo].valueCodeableConcept.text = "קופת חולים מאוחדת"
 * active = true

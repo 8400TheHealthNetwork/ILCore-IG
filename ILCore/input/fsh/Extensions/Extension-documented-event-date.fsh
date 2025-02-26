@@ -6,7 +6,7 @@ Description: "Extension: The date of the event this DocumentReference describes"
 * ^url = $ext-documented-event-date
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "DocumentReference"
 

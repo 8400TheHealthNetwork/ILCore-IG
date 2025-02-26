@@ -8,8 +8,6 @@ Description: "Israel Core proposed constraints and extensions on the HealthcareS
 * insert ConformanceMetadata
 * ^status = #draft
 
-
-
 * . ^short = "Israel Core HealthcareService Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the HealthcareService resource profile."
 * . ^isModifier = false

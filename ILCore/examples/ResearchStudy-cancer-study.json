@@ -1,0 +1,26 @@
+{
+  "resourceType": "ResearchStudy",
+  "id": "cancer-study",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-research-study"
+    ]
+  },
+  "status": "completed",
+  "protocol": [
+    {
+      "reference": "PlanDefinition/chemotherapy"
+    }
+  ],
+  "enrollment": [
+    {
+      "reference": "Group/101"
+    }
+  ],
+  "sponsor": {
+    "reference": "Organization/ministry-of-health"
+  },
+  "principalInvestigator": {
+    "reference": "Practitioner/anesthesiologist-with-expertise"
+  }
+}

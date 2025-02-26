@@ -8,7 +8,7 @@ Id: medical-service-moh
 Title: "קוד מוצר או שירות על פי משרד הבריאות"
 Description: "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש \n Codes for medical services. Note that while this code system closely resembles CPT and includes a large number of CPT codes, there are some additional codes that are not covered by CPT and, more importantly, some cases where CPT codes are remapped and have different semantic meanings (e.g., code #28899 has two different meanings in CPT and in MoH codesytem). Therefore, despite apparent resemblance, this code system MUST NOT be treated as CPT."
 
-* ^status = #draft
+* ^status = #active
 * ^url = $medical-service-code-moh
 * insert ConformanceMetadata
 * ^content = #complete

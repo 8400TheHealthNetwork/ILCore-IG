@@ -18,7 +18,7 @@ Usage: #example
 * participant.type.coding[0].code = #PPRF
 * participant.type.coding[0].display = "primary performer"
 * participant.individual.reference = "Practitioner/practitioner-md"
-* diagnosis[0].condition.reference = "Condition/condition-type-1-diabetes"
+* diagnosis[0].condition.reference = "Condition/type-1-diabetes"
 * diagnosis[0].use.coding.system = "http://terminology.hl7.org/CodeSystem/diagnosis-role"
 * diagnosis[0].use.coding.code = #AD
 * diagnosis[0].use.coding.display = "Admission diagnosis"

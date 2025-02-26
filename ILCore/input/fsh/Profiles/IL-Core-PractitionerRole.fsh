@@ -6,10 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 
 * ^url = $ILPractitionerRole
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore PractitionerRole Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the practitionerrole resource profile."
 * . ^isModifier = false

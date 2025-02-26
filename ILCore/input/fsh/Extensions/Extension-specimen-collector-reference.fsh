@@ -6,7 +6,7 @@ Description: "Extension: Specimen Collector Reference"
 * ^url = $ext-specimen-collector-reference
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Specimen.collection.collector"
 

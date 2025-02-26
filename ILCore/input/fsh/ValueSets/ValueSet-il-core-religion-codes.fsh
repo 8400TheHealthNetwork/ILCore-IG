@@ -3,7 +3,7 @@ Id: il-core-religion-code
 Title: "IL Core Religion Code"
 Description: "A list of codes for Religion for the IL Core"
 * ^url = $vs-il-core-religion-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

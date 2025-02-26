@@ -6,10 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Coverage Re
 
 * ^url = $ILCoverage
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Coverage Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Coverage resource profile."
 * . ^isModifier = false

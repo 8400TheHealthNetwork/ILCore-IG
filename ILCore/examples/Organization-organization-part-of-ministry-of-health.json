@@ -62,6 +62,17 @@
     }
   ],
   "partOf": {
-    "reference": "Organization/organization-ministry-of-health"
-  }
+    "reference": "Organization/ministry-of-health"
+  },
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "6030B",
+          "system": "http://fhir.health.gov.il/cs/department-type-moh",
+          "display": "מעבדות - נוירוגנ. טרשת-מחקר"
+        }
+      ]
+    }
+  ]
 }

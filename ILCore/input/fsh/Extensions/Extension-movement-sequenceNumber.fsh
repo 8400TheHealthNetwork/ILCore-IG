@@ -6,7 +6,7 @@ Description: "Extension: Movement Sequence-Number. For the representation of a p
 * ^url = $ext-movement-sequence-number
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Encounter"
 * value[x] only string

@@ -3,7 +3,7 @@ Id: paying-entity-moh
 Title: "Payer (Paying Entity / גורם משלם)"
 Description: "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system"
 
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^url = $payer
 * ^content = #complete

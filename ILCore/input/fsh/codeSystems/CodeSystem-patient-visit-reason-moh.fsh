@@ -4,7 +4,7 @@ Title: "Patient Visit Reason MoH"
 Description: "Moh Codes for Patient Visit Reason 
  **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 
-* ^status = #draft
+* ^status = #active
 * ^url = $patient-visit-reason-moh
 * ^content = #example
 * insert ConformanceMetadata

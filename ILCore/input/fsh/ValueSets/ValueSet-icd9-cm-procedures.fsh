@@ -3,7 +3,7 @@ Id: icd9-cm-procedures
 Title: "Icd9 Cm Procedures"
 Description: "All Procedure codes from ICD9-CM codesystem"
 * ^url = $vs-icd9-cm-procedures
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

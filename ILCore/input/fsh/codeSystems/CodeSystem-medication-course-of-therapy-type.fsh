@@ -2,7 +2,7 @@ CodeSystem: ILCoreMedicationCourseOfTherapyType
 Id: il-core-medication-course-of-therapy-type
 Title: "Codes for Medication Course of therpy types"
 Description: "A list of codes for Medication Course of therpy types"
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^url = $il-core-medication-course-of-therapy-type
 * ^content = #complete

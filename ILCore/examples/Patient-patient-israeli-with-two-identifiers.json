@@ -112,6 +112,26 @@
       "country": "IL"
     }
   ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "PRN",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+            }
+          ]
+        }
+      ],
+      "telecom": [
+        {
+          "value": "0525555555",
+          "system": "phone"
+        }
+      ]
+    }
+  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with two identifiers</div>",
     "status": "generated"

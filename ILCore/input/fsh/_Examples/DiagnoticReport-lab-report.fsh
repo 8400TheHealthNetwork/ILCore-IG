@@ -11,7 +11,7 @@ Usage: #example
 * encounter = Reference(Encounter/breast-screaning) "Encounter with Dr. Smith"
 * effectiveDateTime = "2024-11-05T14:30:00Z"
 * issued = "2024-11-05T15:00:00Z"
-* performer[0] = Reference(Organization/organization-ministry-of-health) "Acme Laboratory Services"
+* performer[0] = Reference(Organization/ministry-of-health) "Acme Laboratory Services"
 * performer[+] = Reference(Practitioner/practitioner-md) "דר גרינפלד דיאנה"
 * result[0] = Reference(Observation/obs1) "Cholesterol Total"
 * result[+] = Reference(Observation/obs2) "HDL Cholesterol"

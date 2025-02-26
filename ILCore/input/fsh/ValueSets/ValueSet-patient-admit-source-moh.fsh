@@ -6,7 +6,7 @@ Description: "Moh Codes for Patient Admit Source
  **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 // * ^language = #he-IL
 * ^url = $vs-patient-admit-source-moh
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = true
 

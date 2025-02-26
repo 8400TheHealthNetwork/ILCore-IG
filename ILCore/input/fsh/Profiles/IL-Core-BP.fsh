@@ -6,7 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 
 * ^url = $ILBP
 * insert ConformanceMetadata
-* ^status = #draft
+* ^status = #active
 
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
@@ -20,9 +20,9 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * code ^definition = "Code specifying blood pressure measurement type"
   * coding = $loinc#85354-9
 * component ^slicing.discriminator[0].type = #value
-* component ^slicing.discriminator[0].path = "coding.system"
+* component ^slicing.discriminator[0].path = "code.coding.system"
 * component ^slicing.discriminator[1].type = #value
-* component ^slicing.discriminator[1].path = "coding.code"
+* component ^slicing.discriminator[1].path = "code.coding.code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false
 * component contains SystolicBP 1..1 and DiastolicBP 1..1

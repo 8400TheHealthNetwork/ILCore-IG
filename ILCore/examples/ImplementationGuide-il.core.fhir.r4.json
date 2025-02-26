@@ -1,0 +1,2625 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "il.core.fhir.r4",
+  "url": "http://fhir.health.gov.il/ImplementationGuide/il.core.fhir.r4",
+  "version": "0.16.0",
+  "name": "ILCoreImplementationGuide",
+  "title": "IL Core Implementation Guide",
+  "status": "draft",
+  "publisher": "Israel Core Team",
+  "contact": [
+    {
+      "name": "Israel Core Team",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.fhir-il-community.org/fhir-israel-core"
+        }
+      ]
+    },
+    {
+      "name": "Tal Primak",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "tal.primak@moh.gov.il"
+        }
+      ]
+    }
+  ],
+  "description": "Implementation guide for Israel Core FHIR",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "IL",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Israel"
+        }
+      ]
+    }
+  ],
+  "packageId": "il.core.fhir.r4",
+  "license": "CC0-1.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "hl7.fhir.r4.core",
+      "version": "4.0.1",
+      "uri": "http://hl7.org/fhir",
+      "id": "hl7_fhir_r4_core"
+    },
+    {
+      "packageId": "hl7.fhir.us.core",
+      "version": "7.0.0",
+      "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
+      "id": "hl7_fhir_us_core"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Group/101"
+        },
+        "name": "101",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-group"
+      },
+      {
+        "reference": {
+          "reference": "EpisodeOfCare/2014"
+        },
+        "name": "2014",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-episode-of-care"
+      },
+      {
+        "reference": {
+          "reference": "Communication/alert"
+        },
+        "name": "alert",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-communication"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance-aspirin-intolerance"
+        },
+        "name": "AllergyIntollerance: aspirin-intolerance",
+        "description": "An example of ILCoreAllergyIntolerance of a aspirin intolerance",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance-cat-dander-allergy"
+        },
+        "name": "AllergyIntollerance: cat-dander-allergy",
+        "description": "An example of ILCoreAllergyIntolerance of a cat-dander allergy",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance-latex-allergy"
+        },
+        "name": "AllergyIntollerance: latex-allergy",
+        "description": "An example of ILCoreAllergyIntolerance of a latex allergy",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance-no-known-allergy"
+        },
+        "name": "AllergyIntollerance: no-known-allergy",
+        "description": "An example of ILCoreAllergyIntolerance a person with no known allergies",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance-penut-allergy-resolved"
+        },
+        "name": "AllergyIntollerance: penut-allergy",
+        "description": "An example of ILCoreAllergyIntolerance of a penut allergy",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/anesthesiologist-with-expertise"
+        },
+        "name": "anesthesiologist-with-expertise",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bp-components"
+        },
+        "name": "Blood Pressure component codes",
+        "description": "A list of codes for components in the blood presssure observations reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/bp-unit"
+        },
+        "name": "Blood Pressure Unit code",
+        "description": "A single unit code for blood presssure observations reporting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/blood-pressure"
+        },
+        "name": "blood-pressure",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-bp"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/breast-screaning"
+        },
+        "name": "breast-screaning",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-encounter"
+      },
+      {
+        "reference": {
+          "reference": "RiskAssessment/breastcancer-risk"
+        },
+        "name": "breastcancer-risk",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Condition/burnt-ear"
+        },
+        "name": "burnt-ear",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-condition"
+      },
+      {
+        "reference": {
+          "reference": "ResearchSubject/cancer-patient"
+        },
+        "name": "cancer-patient",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-research-subject"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/cancer-study"
+        },
+        "name": "cancer-study",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-research-study"
+      },
+      {
+        "reference": {
+          "reference": "NutritionOrder/cardiac-diet"
+        },
+        "name": "cardiac-diet",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-nutrition-order"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/cbs-statistical-area"
+        },
+        "name": "cbs-statistical-area",
+        "description": "Identifies statistical sub-divisions of cities in Israel as defined by CBS.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/chest-xray"
+        },
+        "name": "chest-xray",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-service-request"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/city-symbol"
+        },
+        "name": "City Symbol (סמל ישוב)",
+        "description": "City classification according to the Israeli Postal Company city-symbol coding system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/city-symbol"
+        },
+        "name": "City Symbol (סמל ישוב)",
+        "description": "Codes for cities in Israel",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-medication-course-of-therapy-type"
+        },
+        "name": "Codes for Medication Course of therpy types",
+        "description": "A list of codes for Medication Course of therpy types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-medication-request-category"
+        },
+        "name": "Codes for MedicationRequest categories",
+        "description": "A list of codes for MedicationRequest categories",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-urn"
+        },
+        "name": "CodeSyestem for URNs",
+        "description": "Codes for for URNs of different kinds, instead of using urn:ietf:rfc:3986 and urn:iso:std:iso:3166 as CodeSystem identifiers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Encounter/community-consultation"
+        },
+        "name": "community-consultation",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-encounter"
+      },
+      {
+        "reference": {
+          "reference": "Consent/consent-example-basic"
+        },
+        "name": "consent-example-basic",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-consent"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-jurisdiction"
+        },
+        "name": "Country Codes",
+        "description": "Codes for countries according to ISO 3166",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "DeviceDefinition/definition-example"
+        },
+        "name": "definition-example",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-device-definition"
+      },
+      {
+        "reference": {
+          "reference": "Claim/dental-claim"
+        },
+        "name": "dental-claim",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-claim"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/department-type-moh"
+        },
+        "name": "Department Type MoH",
+        "description": "Israel ministry of health coding system for department types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/department-type-moh"
+        },
+        "name": "Department Type MoH",
+        "description": "Israel ministry of health coding system for department types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/diagnostic-conclusion-code"
+        },
+        "name": "Diagnostic Conclusion Codes",
+        "description": "A list of codes for Diagnostic Conclusion for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "DiagnosticReport/diagnostic-lab-report"
+        },
+        "name": "diagnostic-lab-report",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-diagnostic-report"
+      },
+      {
+        "reference": {
+          "reference": "Substance/dust"
+        },
+        "name": "dust",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/passport-enc-uri"
+        },
+        "name": "Encoded Passport URIs",
+        "description": "An encoded country specific URI for passport numbers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/passport-enc-uri"
+        },
+        "name": "Encoded Passport URIs",
+        "description": "An encoded country specific URI for passport numbers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/encounter-paying-entity-moh"
+        },
+        "name": "Encounter Paying Entity MoH",
+        "description": "MoH Codes for the Paying Entity for the Encounter \r\n **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/entry-permit"
+        },
+        "name": "entry-permit",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "CareTeam/example"
+        },
+        "name": "example",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-care-team"
+      },
+      {
+        "reference": {
+          "reference": "MedicationDispense/medication-dispense"
+        },
+        "name": "Example ILCore MedicationDispense",
+        "description": "An example instance of the ILCore MedicationDispense profile.",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-medication-dispense"
+      },
+      {
+        "reference": {
+          "reference": "RelatedPerson/example-related-person"
+        },
+        "name": "Example ILCore RelatedPerson",
+        "description": "An example instance of the ILCore RelatedPerson profile.",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-related-person"
+      },
+      {
+        "reference": {
+          "reference": "Observation/hemoglobin-lab-test"
+        },
+        "name": "Example Observation Lab",
+        "description": "An example instance of an IL-Core Observation Lab - hemoglobin",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab"
+      },
+      {
+        "reference": {
+          "reference": "Device/example-device"
+        },
+        "name": "example-device",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-device"
+      },
+      {
+        "reference": {
+          "reference": "Library/exclusive-breastfeeding-cds-logic"
+        },
+        "name": "Exclusive Breastfeeding CDS Logic",
+        "description": "Decision support logic for improving outcomes for exclusive breastmilk feeding of newborns",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-library"
+      },
+      {
+        "reference": {
+          "reference": "Measure/exclusive-breastfeeding"
+        },
+        "name": "Exclusive Breastfeeding Measure",
+        "description": "Exclusive breastfeeding measure of outcomes for exclusive breastmilk feeding of newborns.",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-measure"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-accession-number"
+        },
+        "name": "Ext: Accession Number",
+        "description": "Extension: Accession Number. The Accession Number of the ImagingStudy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-administrative-parent-name"
+        },
+        "name": "Ext: Administrative Parent Name",
+        "description": "Extension: The name of a person’s parent, recorded for administrative purposes as part of the person’s demographics (e.g to help with identification). This SHOULD NOT be confused with a parent whose details are recorded for contact purposes (Patient.contact) or as a family member (RelatedPerson). Most systems will use the “father’s name” field as the source of data for this extension. NOTE: This extension replaces the old ParentName extension and is the PREFFERED extension. Note: there SHOULD be only one parent marked as 'official'",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-allergy-intolerance-end"
+        },
+        "name": "Ext: Allergy Intolerance End",
+        "description": "Supports the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-city-code"
+        },
+        "name": "Ext: City Code",
+        "description": "A coded representation of the city, town or settlement",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-diagnostic-report-note"
+        },
+        "name": "Ext: DiagnosticReport Note",
+        "description": "Extension: DiagnosticReport Note annotation, to mimic v5 DiagnosticReport.note element",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-encounter-paying-entity"
+        },
+        "name": "Ext: Encounter Paying Entity",
+        "description": "Paying Entity for the Encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-encounter-visitor-type"
+        },
+        "name": "Ext: Encounter Visitor Type",
+        "description": "Classification of the visitor type (סוג מבקר/סוג כניסה) for the Encounter",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-event-occurrence-location"
+        },
+        "name": "Ext: Event Occurrence Location",
+        "description": "Extension: Location in which an event occurred",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-hebrew-date"
+        },
+        "name": "Ext: Hebrew Date",
+        "description": "Extension: Allows the use of Hebrew dates",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-processing-location"
+        },
+        "name": "Ext: IL Core Processing Location",
+        "description": "Extension: IL Core Processing Location",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-processing-practitioner"
+        },
+        "name": "Ext: IL Core Processing Practitioner",
+        "description": "Extension: IL Core Processing Practitioner",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-documented-event-date"
+        },
+        "name": "Ext: ILCore Documented Event Date",
+        "description": "Extension: The date of the event this DocumentReference describes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-medication-recorded-time"
+        },
+        "name": "Ext: ILCore Medication Recorded Time",
+        "description": "Extension: The time in which the medication order / administration / dispense was first captured",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-medication-request-procedure-reason-reference"
+        },
+        "name": "Ext: ILCore MedicationRequest Procedure Reason Reference",
+        "description": "Extension: MedicationRequest Procedure Reason Reference. A reference to procedure resource to be used in MedicationRequest.ReasonReference in case the reason for requesting the medication is a procedure",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-narcotic-medication"
+        },
+        "name": "Ext: ILCore Narcotic Medication",
+        "description": "Extension: Noting if a medication is narcotic or not",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-specimen-collector-reference"
+        },
+        "name": "Ext: ILCore Specimen Collector Reference",
+        "description": "Extension: Specimen Collector Reference",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-il-hmo"
+        },
+        "name": "Ext: Israel Health Management Organization (קופת חולים)",
+        "description": "Extension: Israel Health Management Organizations (קופות חולים)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-medication-course-of-therapy-type"
+        },
+        "name": "Ext: Medication Course-Of-Therapy Type",
+        "description": "Extension: A coded representation of the type of course-of-therapy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-medication-dose-form"
+        },
+        "name": "Ext: Medication Dose Form",
+        "description": "Extension: A coded representation of the type of dose form",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-movement-sequence-number"
+        },
+        "name": "Ext: Movement Sequence-Number",
+        "description": "Extension: Movement Sequence-Number. For the representation of a patient's movement number between hospital departments during a hospitalization",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-parent-name"
+        },
+        "name": "Ext: Name of parent",
+        "description": "Extension: The name of a parent. NOTE: This extension is now DEPRECATED (ststus: retired) and has been replaced with AdminParentName",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-patient-immigration"
+        },
+        "name": "Ext: Patient Immigration",
+        "description": "Extension: Immigration information for patient - for the purpose of this extension - immigration is an international movement of a person to a destination country in order to settle as permanent resident",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-qualification-practice"
+        },
+        "name": "Ext: Qualification Practice",
+        "description": "Extension: Qualification Practice",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-reaction-duration"
+        },
+        "name": "Ext: Reaction Duration",
+        "description": "Extension: Reaction Duration",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-statistical-area"
+        },
+        "name": "Ext: Statistical Area",
+        "description": "Extension: Statistical Area. A concatination of the city symbol + 4-digit statistical area code in settelment. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -> 3000113",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CommunicationRequest/fm-solicit"
+        },
+        "name": "fm-solicit",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-communication-request"
+      },
+      {
+        "reference": {
+          "reference": "PlanDefinition/chemotherapy"
+        },
+        "name": "Gemcitabine/CARBOplatin",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-plan-definition"
+      },
+      {
+        "reference": {
+          "reference": "AppointmentResponse/general"
+        },
+        "name": "general",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-appointment-response"
+      },
+      {
+        "reference": {
+          "reference": "Appointment/gp-appointment-hl7"
+        },
+        "name": "gp-appointment-hl7",
+        "description": "Discussion on the results of your recent MRI",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/hebrew-date-day"
+        },
+        "name": "Hebrew Date Day",
+        "description": "Codes for Hebrew date days",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/hebrew-date-day"
+        },
+        "name": "Hebrew Date Day",
+        "description": "Codes for Hebrew date days",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/hebrew-date-month"
+        },
+        "name": "Hebrew Date Month",
+        "description": "Codes for Hebrew date months",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/hebrew-date-month"
+        },
+        "name": "Hebrew Date Month",
+        "description": "Codes for Hebrew date months",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ServiceRequest/hemoglobin-assay"
+        },
+        "name": "hemoglobin-assay",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-service-request-lab"
+      },
+      {
+        "reference": {
+          "reference": "ImmunizationRecommendation/hep-a-recommendation"
+        },
+        "name": "hep-a-recommendation",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-immunization-recommendation"
+      },
+      {
+        "reference": {
+          "reference": "MeasureReport/hiv-indicators"
+        },
+        "name": "hiv-indicators",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-measure-report"
+      },
+      {
+        "reference": {
+          "reference": "Encounter/home-visit"
+        },
+        "name": "home-visit",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-encounter"
+      },
+      {
+        "reference": {
+          "reference": "Organization/hospital-department"
+        },
+        "name": "hospital-department",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+      },
+      {
+        "reference": {
+          "reference": "Location/hospital-unit"
+        },
+        "name": "hospital-unit",
+        "description": "Second floor of the old south wing",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-location"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/icd9-cm-diagnoses"
+        },
+        "name": "Icd9 Cm diagnoses",
+        "description": "All Diagnosis codes from ICD9-CM codesystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/icd9-cm-procedures"
+        },
+        "name": "Icd9 Cm Procedures",
+        "description": "All Procedure codes from ICD9-CM codesystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/icd9il-diagnoses"
+        },
+        "name": "ICD9 IL Diagnoses",
+        "description": "codes of diagnoses from ICD9-IL",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/icd9il-procedures"
+        },
+        "name": "ICD9 IL Procedures",
+        "description": "codes of procedures from ICD9-IL",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/icd9il"
+        },
+        "name": "ICD9IL: Adendum to ICD9 according to codes by Israeli MoH",
+        "description": "Strings for procedures and diagnoses, added to ICD9",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/idf-service-number"
+        },
+        "name": "idf-service-number",
+        "description": "Israel Defence forces Sevice number. A unique identifier for any soldier currently serving or having served in the IDF",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-allergy-intolerance-code"
+        },
+        "name": "IL Core Allergy Intolerance Code",
+        "description": "A list of codes for Allergy Intolerance for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-appointment-response"
+        },
+        "name": "IL Core Appointment Response",
+        "description": "Israel Core Proposed constraints or extensions on the AppointmentResponse Resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-body-position"
+        },
+        "name": "IL Core Body Position",
+        "description": "The position of the body when the observation was made, e.g. standing, sitting",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-condition-category"
+        },
+        "name": "IL Core Condition Category Codes",
+        "description": "A list of category codes for conditions for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-condition-code"
+        },
+        "name": "IL Core Condition Code",
+        "description": "A list of codes for conditions for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-manifestation"
+        },
+        "name": "IL Core Condition Codes",
+        "description": "A list of codes for intolerance manifestation for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-allergy-intolerance-end-reason"
+        },
+        "name": "IL Core Condition End Reason",
+        "description": "A list of codes for End Reasons of Allergy Intolerance for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-coverage-class"
+        },
+        "name": "IL Core Coverage Class codes",
+        "description": "Codes for Coverage classes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-coverage-class"
+        },
+        "name": "IL Core Coverage Class codes",
+        "description": "Codes for Coverage classes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-coverage-type"
+        },
+        "name": "IL Core Coverage Type codes",
+        "description": "Codes for expressing general heigh level coverage types unique to Israel health system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-coverage-type"
+        },
+        "name": "IL Core Coverage Type codes",
+        "description": "Codes for expressing general high level coverage types unique to the Israeli health system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-doctor-to-doctor"
+        },
+        "name": "IL Core Doctor To Doctor Codes",
+        "description": "Codes for Doctor To Doctor encounter for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-encounter-class"
+        },
+        "name": "IL Core Encounter Class Codes",
+        "description": "A list of class codes for Encounters for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-encounter-class"
+        },
+        "name": "IL Core Encounter Class codes",
+        "description": "A list of codes for class types of encounters",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-error-code"
+        },
+        "name": "IL Core Error code",
+        "description": "A list of error codes for ILCore profiles",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-dose-form"
+        },
+        "name": "IL Core Medication Dose Form",
+        "description": "A list of codes medication dose forms",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-not-performed-reason"
+        },
+        "name": "IL Core Not Perfomed Reasons",
+        "description": "A list of codes for reasons an observation was not made",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-observation-code"
+        },
+        "name": "IL Core Observation Codes",
+        "description": "A list of code codes for observations for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-observation-lab-code"
+        },
+        "name": "IL Core Observation Lab Code",
+        "description": "A list of lab-code codes for lab observations for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-observation-value"
+        },
+        "name": "IL Core Observation Value Codes",
+        "description": "A list of value codes for observations for the IL Core \n\nNote: The entire LOINC code system is included in this ValueSet although it should only include LOINC Answers - LOINC codes that start with 'LA'. Since there is no computable way to define a ValueSet according to the code's prefix, we rely on an invariant to enforce this rule.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-relationship-type"
+        },
+        "name": "IL Core Patient Relationship Type codes",
+        "description": "A set of codes that can be used to indicate the relationship between a Patient and a Related Person.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-premium-type"
+        },
+        "name": "IL Core Premium Type codes",
+        "description": "Codes for Types of premium payment methods",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-premium-type"
+        },
+        "name": "IL Core Premium Type codes",
+        "description": "Codes for Types of premium payment methods",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-procedure-code"
+        },
+        "name": "IL Core procedure Codes",
+        "description": "A list of codes for procedures for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-not-performed-reason"
+        },
+        "name": "IL Core procedure Reason",
+        "description": "A list of codes for procedure reasons for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-procedure-reason"
+        },
+        "name": "IL Core procedure Reason",
+        "description": "A list of codes for procedure reasons for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-religion-code"
+        },
+        "name": "IL Core Religion Code",
+        "description": "A list of codes for Religion for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ConceptMap/ILCoreReligions"
+        },
+        "name": "IL Core Religions",
+        "description": "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-religion-code"
+        },
+        "name": "IL Core relirion code",
+        "description": "Codes for religions, an addendum to the HL7 religions CodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-route-code"
+        },
+        "name": "IL Core Route Code",
+        "description": "A list of codes for Route for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-service-type"
+        },
+        "name": "IL Core Service type",
+        "description": "A list of codes for Service types for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-service-category"
+        },
+        "name": "IL Core ServiceCategory",
+        "description": "A list of codes for Service Category for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-specimen-type"
+        },
+        "name": "IL Core Specimen type",
+        "description": "A list of codes for Specimen types for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-substance"
+        },
+        "name": "IL Core Substance Codes",
+        "description": "A list of codes for Substances for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-common-units-of-measure"
+        },
+        "name": "IL Core Units Of Measure Codes",
+        "description": "A list of codes for Units Of Measure for the IL Core. <mark>Note:</mark> UCUM code SHALL be used, unless one cannot be found, in which case a SNOMED-CT code SHALL be used",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-units-of-measure"
+        },
+        "name": "IL Core Units Of Measure Codes",
+        "description": "A list of codes for Units Of Measure for the IL Core. <mark>Note:</mark> UCUM code SHALL be used, unless one cannot be found, in which case a SNOMED-CT code SHALL be used",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-virtual-type"
+        },
+        "name": "IL Core Virtual encounter Type Codes",
+        "description": "A list of type codes for Virtual Encounters for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-city-code"
+        },
+        "name": "il-core-city-code",
+        "description": "Returns resources (e.g. Patient, Organization) where the CityCode extension within an address matches the specified code.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-encounter-paying-entity"
+        },
+        "name": "il-core-encounter-paying-entity",
+        "description": "Returns Encounter instances where the Paying Entity extension matches the specified code.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-encounter-visitor-type"
+        },
+        "name": "il-core-encounter-visitor-type",
+        "description": "Returns Encounter instances where the ILCore Encounter Visitor Type extension has a specified CodeableConcept value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-imagingstudy-accession-number"
+        },
+        "name": "il-core-imagingstudy-accession-number",
+        "description": "Returns ImagingStudy instances with an Accession Number extension matching the specified identifier.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-medication-course-of-therapy-type"
+        },
+        "name": "il-core-medication-course-of-therapy-type",
+        "description": "Returns MedicationStatement instances where the ILCore Medication Course-Of-Therapy Type extension has a specified CodeableConcept value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-movement-sequence-number"
+        },
+        "name": "il-core-movement-sequence-number",
+        "description": "Returns Encounter instances where the ILCore Movement Sequence-Number extension has a specified string value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-narcotic-medication"
+        },
+        "name": "il-core-narcotic-medication",
+        "description": "Returns MedicationRequest, MedicationAdministration, or MedicationDispense instances where the ILCore Narcotic Medication extension has a specified boolean value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-parent-name-given"
+        },
+        "name": "il-core-parent-name-given",
+        "description": "Returns resources (e.g. Patient, Practitioner, RelatedPerson) where the AdminParentName extension’s given name matches the specified value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-patient-hmo"
+        },
+        "name": "il-core-patient-hmo",
+        "description": "Returns patients with an HMO extension matching the specified code.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-qualification-practice"
+        },
+        "name": "il-core-qualification-practice",
+        "description": "Returns Practitioner.qualification instances where the ILCore Qualification Practice extension has a specified CodeableConcept value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-reaction-duration"
+        },
+        "name": "il-core-reaction-duration",
+        "description": "Returns AllergyIntolerance.reaction instances where the ILCore Reaction Duration extension has a specified Duration value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-recorded-time"
+        },
+        "name": "il-core-recorded-time",
+        "description": "Returns MedicationRequest, MedicationAdministration, or MedicationDispense instances where the ILCore Recorded Time extension has a specified dateTime value.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-specimen-processing-location"
+        },
+        "name": "il-core-specimen-processing-location",
+        "description": "Returns Specimen instances where the Processing Location extension has a specified reference.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-specimen-processing-practitioner"
+        },
+        "name": "il-core-specimen-processing-practitioner",
+        "description": "Returns Specimen instances where the Processing Practitioner extension has a specified reference to ILCorePractitioner or ILCorePractitionerRole.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/il-core-statistical-area"
+        },
+        "name": "il-core-statistical-area",
+        "description": "Returns instances containing an Address with the ILCore Statistical Area extension, specified as an Identifier value. This can be used to search across multiple profiles that contain the Address datatype.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/il-national-id"
+        },
+        "name": "il-national-id",
+        "description": "Israeli Identifier number issued for all citizens and permanent residents. A nine-digit number including a check-digit",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/il-prisoner-number"
+        },
+        "name": "il-prisoner-number",
+        "description": "Israel Prison Service prisoner number. A unique identifier for any prisoner currently serving a prison sentence",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-activity-definition"
+        },
+        "name": "ILCore ActivityDefinition Profile",
+        "description": "Adds several Israel-specific extensions and constraints, plus geocode extension to the ActivityDefinition datatype",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-address"
+        },
+        "name": "ILCore Address Profile",
+        "description": "Adds several Israel-specific extensions and constraints, plus geocode extension to the Address datatype",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-allergy-intolerance"
+        },
+        "name": "ILCore AllergyIntolerance Profile",
+        "description": "Israel Core proposed constraints and extensions on the AllergyIntolerance Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-bp"
+        },
+        "name": "ILCore Blood Pressure Profile",
+        "description": "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurments.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-care-plan"
+        },
+        "name": "ILCore CarePlan Profile",
+        "description": "Israel Core proposed constraints and extensions on the CarePlan Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-care-team"
+        },
+        "name": "ILCore CareTeam Profile",
+        "description": "Israel Core proposed constraints and extensions on the CareTeam Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-claim"
+        },
+        "name": "ILCore Claim Profile",
+        "description": "Israel Core proposed constraints and extensions on the Claim Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-claim-response"
+        },
+        "name": "ILCore ClaimResponse Profile",
+        "description": "Israel Core proposed constraints and extensions on the ClaimResponse Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-communication"
+        },
+        "name": "ILCore Communication Profile",
+        "description": "Israel Core proposed constraints and extensions on the Communication Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-communication-request"
+        },
+        "name": "ILCore CommunicationRequest Profile",
+        "description": "Israel Core proposed constraints and extensions on the CommunicationRequest Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-condition"
+        },
+        "name": "ILCore Condition Profile",
+        "description": "Israel Core proposed constraints and extensions on the Condition Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-consent"
+        },
+        "name": "ILCore Consent Profile",
+        "description": "Israel Core proposed constraints and extensions on the Consent Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-coverage"
+        },
+        "name": "ILCore Coverage Profile",
+        "description": "Israel Core proposed constraints and extensions on the Coverage Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-coverage-eligibility-request"
+        },
+        "name": "ILCore CoverageEligibilityRequest Profile",
+        "description": "Israel Core proposed constraints and extensions on the CoverageEligibilityRequest Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-coverage-eligibility-response"
+        },
+        "name": "ILCore CoverageEligibilityResponse Profile",
+        "description": "Israel Core proposed constraints and extensions on the CoverageEligibilityResponse Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-device"
+        },
+        "name": "ILCore Device Profile",
+        "description": "Israel Core proposed constraints and extensions on the Device Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-device-definition"
+        },
+        "name": "ILCore DeviceDefinition Profile",
+        "description": "Israel Core proposed constraints and extensions on the DeviceDefinition Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-device-request"
+        },
+        "name": "ILCore DeviceRequest Profile",
+        "description": "Israel Core proposed constraints and extensions on the DeviceRequest Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-diagnostic-report"
+        },
+        "name": "ILCore DiagnosticReport Profile",
+        "description": "Israel Core proposed constraints and extensions on the DiagnosticReport Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-document-reference"
+        },
+        "name": "ILCore DocumentReference Profile",
+        "description": "Israel Core proposed constraints and extensions on the DocumentReference Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-dosage"
+        },
+        "name": "ILCore Dosage Profile",
+        "description": "Adds several Israel-specific extensions and constraints to the Dosage datatype",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-encounter"
+        },
+        "name": "ILCore Encounter Profile",
+        "description": "Israel Core proposed constraints and extensions on the Encounter Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-episode-of-care"
+        },
+        "name": "ILCore EpisodeOfCare Profile",
+        "description": "Israel Core proposed constraints and extensions on the EpisodeOfCare Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-family-member-history"
+        },
+        "name": "ILCore FamilyMemberHistory Profile",
+        "description": "Israel Core proposed constraints and extensions on theILCoreFamilyMemberHistory Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-flag"
+        },
+        "name": "ILCore Flag Profile",
+        "description": "Adds Isareli constraints to the Flag datatype",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-goal"
+        },
+        "name": "ILCore Goal Profile",
+        "description": "Israel Core proposed constraints and extensions on the Goal Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-group"
+        },
+        "name": "ILCore Group Profile",
+        "description": "Israel Core proposed constraints and extensions on the Group Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-healthcare-service"
+        },
+        "name": "ILCore HealthcareService Profile",
+        "description": "Israel Core proposed constraints and extensions on the HealthcareService Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-imaging-study"
+        },
+        "name": "ILCore ImagingStudy Profile",
+        "description": "Israel Core proposed constraints and extensions on the ImagingStudy Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-immunization"
+        },
+        "name": "ILCore Immunization Profile",
+        "description": "Israel Core proposed constraints and extensions on the Immunization Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-immunization-reaction-observation"
+        },
+        "name": "ILCore ImmunizationReactionObservation Profile",
+        "description": "Israel Core proposed constraints and extensions on the ImmunizationReactionObservation Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-immunization-recommendation"
+        },
+        "name": "ILCore ImmunizationRecommendation Profile",
+        "description": "Israel Core proposed constraints and extensions on the ImmunizationRecommendation Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-library"
+        },
+        "name": "ILCore Library Profile",
+        "description": "Israel Core proposed constraints and extensions on the Library Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-location"
+        },
+        "name": "ILCore Location Profile",
+        "description": "Israel Core proposed constraints and extensions on the Location Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-measure"
+        },
+        "name": "ILCore Measure Profile",
+        "description": "Israel Core proposed constraints and extensions on the Measure Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-measure-report"
+        },
+        "name": "ILCore MeasureReport Profile",
+        "description": "Israel Core proposed constraints and extensions on the MeasureReport Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-media"
+        },
+        "name": "ILCore Media Profile",
+        "description": "Israel Core proposed constraints and extensions on the Media Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-administration-category"
+        },
+        "name": "ILCore Medication administration Category",
+        "description": "Codes for Medication administration Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-code"
+        },
+        "name": "ILCore Medication Code",
+        "description": "Codes for medications according to ILCore catalogue",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-course-of-therapy-type"
+        },
+        "name": "ILCore Medication Course Of Therapy type",
+        "description": "Codes for Medication Course Of Therapy",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-dispense-category"
+        },
+        "name": "ILCore Medication dispense Category",
+        "description": "Codes for Medication dispense Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-medication"
+        },
+        "name": "ILCore Medication Profile",
+        "description": "Israel Core proposed constraints and extensions on the Medication Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-request-category"
+        },
+        "name": "ILCore Medication Request Category",
+        "description": "Codes for Medication Request Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-statement-category"
+        },
+        "name": "ILCore Medication statement Category",
+        "description": "Codes for Medication statement Category",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-statement-code"
+        },
+        "name": "ILCore Medication statement Code",
+        "description": "Codes for Medication statement Code",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-medication-administration"
+        },
+        "name": "ILCore MedicationAdministration Profile",
+        "description": "Israel Core proposed constraints and extensions on the MedicationAdministration Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-medication-dispense"
+        },
+        "name": "ILCore MedicationDispense Profile",
+        "description": "Israel Core proposed constraints and extensions on the MedicationDispense Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-medication-request"
+        },
+        "name": "ILCore MedicationRequest Profile",
+        "description": "Israel Core proposed constraints and extensions on the MedicationRequest Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-medication-statement"
+        },
+        "name": "ILCore MedicationStatement Profile",
+        "description": "Israel Core proposed constraints and extensions on the MedicationStatement Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-nutrition-order"
+        },
+        "name": "ILCore Molecular Sequence",
+        "description": "Israel Core proposed constraints and extensions on the NutritionOrder Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-molecular-sequence"
+        },
+        "name": "ILCore Molecular Sequence Profile",
+        "description": "Israel Core proposed constraints and extensions on the MolecularSequence Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-observation-lab"
+        },
+        "name": "ILCore Observation Lab Profile",
+        "description": "Israel Core proposed constraints and extensions on the ILCoreObservation Resource for laboratory observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-observation"
+        },
+        "name": "ILCore Observation Profile",
+        "description": "Israel Core proposed constraints and extensions on the Observation Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-organization"
+        },
+        "name": "ILCore Organization Profile",
+        "description": "Israel Core proposed constraints and extensions on the Organization Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-patient"
+        },
+        "name": "ILCore Patient Profile",
+        "description": "Israel Core Proposed constraints and extensions on the Patient Resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-plan-definition"
+        },
+        "name": "ILCore PlanDefinition Profile",
+        "description": "Israel Core proposed constraints and extensions on the PlanDefinition Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-practitioner"
+        },
+        "name": "ILCore Practitioner Profile",
+        "description": "Israel Core proposed constraints and extensions on the Practitioner Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-practitioner-role"
+        },
+        "name": "ILCore PractitionerRole Profile",
+        "description": "Israel Core proposed constraints and extensions on the PractitionerRole Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-procedure"
+        },
+        "name": "ILCore Procedure Profile",
+        "description": "Israel Core proposed constraints and extensions on the Procedure Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-questionnaire"
+        },
+        "name": "ILCore Questionnaire Profile",
+        "description": "Israel Core proposed constraints and extensions on the Questionnaire Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-questionnaire-response"
+        },
+        "name": "ILCore QuestionnaireResponse Profile",
+        "description": "Israel Core proposed constraints and extensions on the QuestionnaireResponse Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-related-person"
+        },
+        "name": "ILCore RelatedPerson Profile",
+        "description": "Israel Core proposed constraints and extensions on the RelatedPerson Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-research-study"
+        },
+        "name": "ILCore ResearchStudy Profile",
+        "description": "Israel Core proposed constraints and extensions on the ResearchStudy Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-research-subject"
+        },
+        "name": "ILCore ResearchSubject Profile",
+        "description": "Israel Core proposed constraints and extensions on the ResearchSubject Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-risk-assessment"
+        },
+        "name": "ILCore RiskAssessment Profile",
+        "description": "Israel Core proposed constraints and extensions on the RiskAssessment Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-service-request-lab"
+        },
+        "name": "ILCore ServiceRequest Lab Profile",
+        "description": "Israel Core proposed constraints and extensions on the ILCoreServiceRequest Resource for laboratory observations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-service-request"
+        },
+        "name": "ILCore ServiceRequest Profile",
+        "description": "Israel Core proposed constraints and extensions on the ServiceRequest Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-specimen"
+        },
+        "name": "ILCore Specimen Profile",
+        "description": "Israel Core proposed constraints and extensions on the Specimen Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-substance"
+        },
+        "name": "ILCore Substance Profile",
+        "description": "Israel Core proposed constraints and extensions on the Substance Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-task"
+        },
+        "name": "ILCore Task Profile",
+        "description": "Israel Core proposed constraints and extensions on the SuTaskstance Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-vital-signs"
+        },
+        "name": "ILCore Vital Signs Profile",
+        "description": "Israel Core proposed constraints and extensions on the Observation Resource for use in querying and retrieving Vital Signs information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-imaging-procedure-code"
+        },
+        "name": "ImagingProcedureCode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/immunization-body-site"
+        },
+        "name": "Immunization Observation Body Site list",
+        "description": "All codes from SNOMED CT describing body sites for Immunization Observation",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/immunization-side-effect"
+        },
+        "name": "Immunization side-effect codes",
+        "description": "Codes from SNOMED CT detailing possible immunization-side-effects for ILCoreImmunizationReactionObservation profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Immunization/Immunization-with-product-code"
+        },
+        "name": "Immunization-with-product-code",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-immunization"
+      },
+      {
+        "reference": {
+          "reference": "Immunization/immunization-with-vaccine-code"
+        },
+        "name": "immunization-with-vaccine-code",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-immunization"
+      },
+      {
+        "reference": {
+          "reference": "DeviceRequest/insulinpump"
+        },
+        "name": "insulinpump",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-device-request"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/israel-hmo"
+        },
+        "name": "Israeli Health Management Organization (קופת חולים)",
+        "description": "A code classifying Health Management Organizations",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/statistical-area-uri"
+        },
+        "name": "Israeli statistical area (אג\"ס) URI",
+        "description": "URI's of statistical area identifiers. NOTE: When using CBS-statistical area numbers, use as directed in the statistical-area NamingSystem - i.e.,: 4-digit citiy code + 3-digit statistical area code. See [here](https://simplifier.net/ilcore/cbs-statistical-area)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/legal-entity"
+        },
+        "name": "legal-entity",
+        "description": "Israeli legal entity number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Location/location-general-kind-hospital-ward"
+        },
+        "name": "location-general-kind-hospital-ward",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-location"
+      },
+      {
+        "reference": {
+          "reference": "ImagingStudy/mammography"
+        },
+        "name": "mammography",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-imaging-study"
+      },
+      {
+        "reference": {
+          "reference": "Medication/paracetamol"
+        },
+        "name": "medication-paracetamol",
+        "description": "Paracetamol",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-medication"
+      },
+      {
+        "reference": {
+          "reference": "MedicationAdministration/morphine-hospitalization"
+        },
+        "name": "MedicationAdministration-morphine-hospitalization",
+        "description": "MedicationAdministration - morphine during hospitalization",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration"
+      },
+      {
+        "reference": {
+          "reference": "MedicationRequest/metamizole-for-gangreenous-tonsolitis"
+        },
+        "name": "medicationRequest-metamizole-for-gangreenous-tonsolitis",
+        "description": "MedicationRequest for Metamizole sodium, for a case of Gangrenous tonsillitis",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-medication-request"
+      },
+      {
+        "reference": {
+          "reference": "MedicationStatement/MedicationStatement-Fluoxetine-20-mg"
+        },
+        "name": "MedicationStatement-morphine-hospitalization",
+        "description": "MedicationStatement - morphine during hospitalization",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-medication-statement"
+      },
+      {
+        "reference": {
+          "reference": "Organization/meir-hospital"
+        },
+        "name": "meir-hospital",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitioner-advanced-course-moh"
+        },
+        "name": "Ministry of Health practitioner advanced courses codes",
+        "description": "Codes for practitioner advanced courses according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitioner-education-type-moh"
+        },
+        "name": "Ministry of Health practitioner-education-type codes",
+        "description": "Codes for practitioner-education-types according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/ministry-of-health"
+        },
+        "name": "ministry-of-health",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/moh-admit-source"
+        },
+        "name": "MoH Admit Source Codes",
+        "description": "Codes for admit source according to MoH catalogue",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitioner-certificate-type-moh"
+        },
+        "name": "MoH Certificate Types",
+        "description": "A list of codes for certificate types according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/moh-tofes17-issue-code"
+        },
+        "name": "Moh Form-17 Issue Code",
+        "description": "קודי שגיאה \\ סירוב לתהליכים הקשורים לטופס 17",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/moh-medication-code"
+        },
+        "name": "MoH Medication Code",
+        "description": "Codes for medications according to MoH catalogue",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitioner-certificate-type-molsa"
+        },
+        "name": "MoLSA Certificate Types",
+        "description": "A list of codes for certificate types according to Israeli MoLSA",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "FamilyMemberHistory/mother"
+        },
+        "name": "mother",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-family-member-history"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nurse-advanced-course"
+        },
+        "name": "nurse-advanced-course",
+        "description": "Identifies RN advanced course according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nurse-expertise"
+        },
+        "name": "nurse-expertise",
+        "description": "Identifies RN expertise according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/nurse-registration"
+        },
+        "name": "nurse-registration",
+        "description": "Identifies Registered Nurses according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/head-circumference"
+        },
+        "name": "Observation - head circumference",
+        "description": "Observation - head circumference",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-vital-signs"
+      },
+      {
+        "reference": {
+          "reference": "Observation/hight-measurement"
+        },
+        "name": "Observation - hight measurement",
+        "description": "Observation - hight measurement",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-observation"
+      },
+      {
+        "reference": {
+          "reference": "Observation/observation-not-performed"
+        },
+        "name": "Observation that hasn't been performed, with data absent reason",
+        "description": "testing",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-observation"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/organization-paying-entity-moh-identifier"
+        },
+        "name": "Organization Paying Entity MoH Identifier",
+        "description": "This value set defines the paying entity codes (see the code system http://fhir.health.gov.il/cs/paying-entity-moh) that may be used as organization and organization units identifier.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/organization-type"
+        },
+        "name": "Organization Type",
+        "description": "SNOMED based value set of recommended types of organizations and organization units",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-part-of-ministry-of-health"
+        },
+        "name": "organization-part-of-ministry-of-health",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+      },
+      {
+        "reference": {
+          "reference": "Organization/organization-school-moe"
+        },
+        "name": "organization-school-moe",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/partial-parotidectomy"
+        },
+        "name": "partial-parotidectomy",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-procedure"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/passport-uri"
+        },
+        "name": "Passport URIs",
+        "description": "A country specific URI for passport numbers",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-admit-source-moh"
+        },
+        "name": "Patient Admit Source MoH",
+        "description": "Moh Codes for Patient Admit Source \r\n **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/patient-admit-source-moh"
+        },
+        "name": "Patient Admit Source MoH",
+        "description": "Moh Codes for Patient Admit Source \r\n **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-mode-of-arrival-moh"
+        },
+        "name": "Patient Mode of Arrival MoH",
+        "description": "Moh Codes for Patient Mode of Arrival \r\n **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/patient-mode-of-arrival-moh"
+        },
+        "name": "Patient Mode of Arrival MoH",
+        "description": "MoH Codes for Patient Mode of Arrival \r\n **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-release-type-moh"
+        },
+        "name": "Patient Realease Type MoH",
+        "description": "Moh Codes for Patient Realease Type \r\n **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/patient-release-type-moh"
+        },
+        "name": "Patient Realease Type MoH",
+        "description": "Moh Codes for Patient Realease Type \r\n **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-visit-reason-moh"
+        },
+        "name": "Patient Visit Reason MoH",
+        "description": "Moh Codes for Patient Visit Reason \r\n **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/patient-visit-reason-moh"
+        },
+        "name": "Patient Visit Reason MoH",
+        "description": "Moh Codes for Patient Visit Reason \r\n **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/patient-visitor-type-moh"
+        },
+        "name": "Patient Visitor Type MoH",
+        "description": "MoH Codes for visitor type (סוג מבקר/סוג כניסה) \r\n **Note that this value-set is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/patient-visitor-type-moh"
+        },
+        "name": "Patient Visitor Type MoH",
+        "description": "MoH Codes for visitor type (סוג מבקר/סוג כניסה) \r\n **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-immigrant"
+        },
+        "name": "patient-immigrant",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-israeli-redacted"
+        },
+        "name": "patient-israeli-redacted",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-israeli-with-statistical-area"
+        },
+        "name": "patient-israeli-with-statistical-area",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-israeli-with-two-identifiers"
+        },
+        "name": "patient-israeli-with-two-identifiers",
+        "description": "Israeli Patient with two identifiers",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-with-hebrew-date"
+        },
+        "name": "patient-with-hebrew-date",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-with-israeli-id"
+        },
+        "name": "patient-with-israeli-id",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-with-multiple-birth"
+        },
+        "name": "patient-with-multiple-birth",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-with-palestinian-id-and-parent-name"
+        },
+        "name": "patient-with-palestinian-id-and-parent-name",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-with-passport-identification"
+        },
+        "name": "patient-with-passport-identification",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-with-passport-identification-unknown-country"
+        },
+        "name": "patient-with-passport-identification-unknown-country",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "Patient/patient-with-two-addresses"
+        },
+        "name": "patient-with-two-addresses",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/paying-entity-moh"
+        },
+        "name": "Payer (Paying Entity / גורם משלם)",
+        "description": "Codes for different paying entities in Israel; including HMOs, IDF, MoD, PLA, Prison system",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/pna-national-id"
+        },
+        "name": "pna-national-id",
+        "description": "Palestinian Identifier number. A nine-digit number",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/practitioner-certificate-type"
+        },
+        "name": "Practitioner Certificate Types",
+        "description": "A list of codes for certificate types for all medical practitioners",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/practitioner-expertise"
+        },
+        "name": "practitioner-expertise",
+        "description": "Identifies practitioner expertise according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/practitioner-instructor"
+        },
+        "name": "practitioner-instructor",
+        "description": "Identifies practitioner instructor according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/practitioner-license"
+        },
+        "name": "practitioner-license",
+        "description": "Identifies Licensed medical proffesionals according to Israeli MoH",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-md"
+        },
+        "name": "practitioner-md",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-nurse"
+        },
+        "name": "practitioner-nurse",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+        },
+        "name": "practitioner-nurse-no-expertise-with-advanced-courses",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-nurse-with-expertise-and-advanced-courses"
+        },
+        "name": "practitioner-nurse-with-expertise-and-advanced-courses",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "Practitioner/practitioner-psychologist"
+        },
+        "name": "practitioner-psychologist",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner"
+      },
+      {
+        "reference": {
+          "reference": "PractitionerRole/practitionerRole-gp"
+        },
+        "name": "practitionerRole-gp",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-practitioner-role"
+      },
+      {
+        "reference": {
+          "reference": "ClaimResponse/primary-coverage"
+        },
+        "name": "primary-coverage",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-claim-response"
+      },
+      {
+        "reference": {
+          "reference": "Procedure/procedure-bloodwork-before-partial-parotidectomy"
+        },
+        "name": "procedure-bloodwork-before-partial-parotidectomy",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-procedure"
+      },
+      {
+        "reference": {
+          "reference": "HealthcareService/ptsd-counselling"
+        },
+        "name": "ptsd-counselling",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-healthcare-service"
+      },
+      {
+        "reference": {
+          "reference": "Task/refill"
+        },
+        "name": "refill",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-task"
+      },
+      {
+        "reference": {
+          "reference": "Flag/safety-dog"
+        },
+        "name": "safety-dog",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-flag"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/serum-specimen-from-patient-child"
+        },
+        "name": "serum-specimen-from-patient-child",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-specimen"
+      },
+      {
+        "reference": {
+          "reference": "Specimen/serum-specimen-from-patient-parent"
+        },
+        "name": "serum-specimen-from-patient-parent",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-specimen"
+      },
+      {
+        "reference": {
+          "reference": "MolecularSequence/simple-sequence"
+        },
+        "name": "simple-sequence",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-molecular-sequence"
+      },
+      {
+        "reference": {
+          "reference": "NamingSystem/social-worker"
+        },
+        "name": "social-worker",
+        "description": "Identifies Licensed social worker practitioners according to Israeli MoLSA",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/standard-sop-class"
+        },
+        "name": "Standard SOP Class",
+        "description": "Standard SOP Class",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/reason-not-done"
+        },
+        "name": "statusReason codes for Immunization profile",
+        "description": "Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/target-disease"
+        },
+        "name": "Target Disease Codes",
+        "description": "SNOMED based valueset of all Disease caused by microorganism or bacterial toxin",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-parent-name-role"
+        },
+        "name": "The role of the parent (father/mother) whose name is recorded",
+        "description": "This set of codes is used to mark a parent name as a father or mother’s name. Should only be used by systems that explicitly differentiate between the two.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tofes17-error-codes"
+        },
+        "name": "Tofes17 Error Codes",
+        "description": "קודי שגיאה לתהליכים הקשורים לטופס 17",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/tofes17-reject-codes"
+        },
+        "name": "Tofes17 Reject Codes",
+        "description": "קודי שגיאה לתהליכים הקשורים לטופס 17",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Condition/type-1-diabetes"
+        },
+        "name": "type-1-diabetes",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-condition"
+      },
+      {
+        "reference": {
+          "reference": "Media/ultrasound"
+        },
+        "name": "ultrasound",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-media"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vaccine-code"
+        },
+        "name": "Vaccine Codes",
+        "description": "A list of SNOMED codes for vaccines",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vaccine-product-code"
+        },
+        "name": "Vaccine Product Codes",
+        "description": "A list of codes for vaccine products from ATC and cvx codeSystems",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Goal/weight-loss"
+        },
+        "name": "weight-loss",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-goal"
+      },
+      {
+        "reference": {
+          "reference": "CarePlan/weight-loss-careplan"
+        },
+        "name": "weight-loss-careplan",
+        "description": "Manage obesity and weight loss",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-care-plan"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/yarpa-medication-code"
+        },
+        "name": "Yarpa Medication Code",
+        "description": "Codes for medications according to 'Yarpa' catalogue",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/yarpa-medication-code"
+        },
+        "name": "Yarpa Medication Codes",
+        "description": "Codes for medications according to 'Yarpa' catalogue",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/institution-type-moh"
+        },
+        "name": "סוג מוסד לפי רישוי משרד הבריאות",
+        "description": "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/institution-type-moh"
+        },
+        "name": "סוג מוסד לפי רישוי משרד הבריאות",
+        "description": "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/practitioner-education-moh"
+        },
+        "name": "קוד השכלה לעוסק בבריאות",
+        "description": "קוד השכלה לעוסק בבריאות לפי רישוי משרד הבריאות",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/practitioner-expertise-moh"
+        },
+        "name": "קוד מומחיות לעוסק בבריאות",
+        "description": "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitioner-expertise-moh"
+        },
+        "name": "קוד מומחיות לעוסק בבריאות",
+        "description": "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/medical-service-moh"
+        },
+        "name": "קוד מוצר או שירות",
+        "description": "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/medical-service-moh"
+        },
+        "name": "קוד מוצר או שירות על פי משרד הבריאות",
+        "description": "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש \n Codes for medical services. Note that while this code system closely resembles CPT and includes a large number of CPT codes, there are some additional codes that are not covered by CPT and, more importantly, some cases where CPT codes are remapped and have different semantic meanings (e.g., code #28899 has two different meanings in CPT and in MoH codesytem). Therefore, despite apparent resemblance, this code system MUST NOT be treated as CPT.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/practitioner-profession-moh"
+        },
+        "name": "קוד מקצוע לעוסק בבריאות",
+        "description": "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות. שימו לב: מקצועות הסיעוד הוחרגו מרשימה זו ונמצאים ברשימה נפרדת",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/practitioner-profession-moh"
+        },
+        "name": "קוד מקצוע לעוסק בבריאות",
+        "description": "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/practitioner-nurse-profession-moh"
+        },
+        "name": "קוד מקצוע לעוסק בסיעוד",
+        "description": "קוד מקצוע לעוסק בסיעוד לפי רישוי משרד הבריאות",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/practitioner-advanced-course-moh"
+        },
+        "name": "קוד קורס על בסיסי לעוסק בסיעוד",
+        "description": "קוד קורס על בסיסי לעוסק בסיעוד לפי רישוי משרד הבריאות",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "על המדריך",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "medication-module.html",
+          "title": "FHIR מודול התרופות ב",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles-and-extensions.html",
+          "title": "Profiles and Extensions",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "terminology.html",
+          "title": "Terminology",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Examples",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "גרסאות",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2020+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "draft"
+      },
+      {
+        "code": "apply-publisher",
+        "value": "true"
+      },
+      {
+        "code": "apply-contact",
+        "value": "true"
+      },
+      {
+        "code": "show-inherited-invariants",
+        "value": "false"
+      },
+      {
+        "code": "logging",
+        "value": "progress"
+      }
+    ]
+  }
+}

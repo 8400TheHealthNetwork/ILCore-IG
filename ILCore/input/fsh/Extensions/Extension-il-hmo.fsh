@@ -6,7 +6,7 @@ Description: "Extension: Israel Health Management Organizations (קופות חו
 * ^url = $ext-hmo
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 

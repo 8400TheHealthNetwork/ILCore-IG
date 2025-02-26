@@ -2,7 +2,7 @@ ValueSet: ILCoreCoverageClass
 Id: il-core-coverage-class
 Title: "IL Core Coverage Class codes"
 Description: "Codes for Coverage classes"
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 * ^url = $vs-il-core-coverage-class

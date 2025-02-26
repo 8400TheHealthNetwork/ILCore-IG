@@ -6,9 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the DiagnosticR
 
 * ^url = $ILDiagnosticReport
 * insert ConformanceMetadata
-* ^status = #draft
-
-
+* ^status = #active
 * . ^short = "ILCore DiagnosticReport Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the DiagnosticReport resource profile."
 * . ^isModifier = false

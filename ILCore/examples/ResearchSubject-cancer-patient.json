@@ -1,0 +1,28 @@
+{
+  "resourceType": "ResearchSubject",
+  "id": "cancer-patient",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-research-subject"
+    ]
+  },
+  "identifier": [
+    {
+      "type": {
+        "text": "Subject id"
+      },
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018"
+    }
+  ],
+  "status": "candidate",
+  "study": {
+    "reference": "ResearchStudy/cancer-study"
+  },
+  "individual": {
+    "reference": "Patient/patient-israeli"
+  },
+  "consent": {
+    "reference": "Consent/consent-example-basic"
+  }
+}

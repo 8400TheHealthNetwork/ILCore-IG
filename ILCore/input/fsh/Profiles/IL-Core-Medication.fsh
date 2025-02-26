@@ -6,10 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Medication 
 
 * ^url = $ILMedication
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Medication Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Medication resource profile."
 * . ^isModifier = false

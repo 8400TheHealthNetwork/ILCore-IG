@@ -1,4 +1,4 @@
-Instance:   organization-hospital-department
+Instance:   hospital-department
 InstanceOf: ILCoreOrganization
 
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">מחלקת אשפוז - פנימית</div>"

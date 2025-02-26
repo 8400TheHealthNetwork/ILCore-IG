@@ -24,5 +24,6 @@ InstanceOf: ILCoreOrganization
 * address.line.extension[houseNumber].valueString = "39"
 * address.postalCode = "9446724"  
 * address.country = "IL"
-* partOf.reference = "Organization/organization-ministry-of-health"
+* partOf.reference = "Organization/ministry-of-health"
+* type[moh-department-type] =  $department-type-moh#6030B "מעבדות - נוירוגנ. טרשת-מחקר"
  

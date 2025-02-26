@@ -3,7 +3,7 @@ Id: passport-uri
 Title: "Passport URIs"
 Description: "A country specific URI for passport numbers"
 * ^url = $vs-pp-uri
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

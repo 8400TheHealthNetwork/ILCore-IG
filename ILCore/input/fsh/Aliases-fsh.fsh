@@ -168,7 +168,8 @@ Alias: $patient-release-type-moh =      http://fhir.health.gov.il/cs/patient-rel
 Alias: $moh-tofes17-issue-code =        http://fhir.health.gov.il/cs/moh-tofes17-issue-code
 Alias: $patient-mode-of-arrival-moh =   http://fhir.health.gov.il/cs/patient-mode-of-arrival-moh
 Alias: $patient-visitor-type-moh =      http://fhir.health.gov.il/cs/patient-visitor-type-moh
-Alias: $info-baskets =                  http://fhir.health.gov.il/cs/hdp-information-buckets
+Alias: $info-buckets =                  http://fhir.health.gov.il/cs/hdp-information-buckets
+Alias: $pp-enc-uri =                    http://fhir.health.gov.il/cs/passport-enc-uri
 // Alias: $urn =                           http://fhir.health.gov.il/cs/il-core-urn
 
 // Codesystems - external
@@ -211,6 +212,7 @@ Alias: $vs-diagnostic-conclusion-code =  http://fhir.health.gov.il/ValueSet/diag
 Alias: $vs-tofes17-error-codes =         http://fhir.health.gov.il/ValueSet/tofes17-error-codes
 Alias: $vs-tofes17-reject-codes =        http://fhir.health.gov.il/ValueSet/tofes17-reject-codes
 Alias: $vs-pp-uri =                     http://fhir.health.gov.il/ValueSet/passport-uri
+Alias: $vs-pp-enc-uri =                   http://fhir.health.gov.il/ValueSet/passport-enc-uri
 Alias: $vs-practitioner-profession-moh =  http://fhir.health.gov.il/ValueSet/practitioner-profession-moh
 Alias: $vs-practitioner-profession-molsa = http://fhir.health.gov.il/ValueSet/practitioner-profession-molsa
 Alias: $vs-practitioner-advanced-course = http://fhir.health.gov.il/ValueSet/practitioner-advanced-course-moh

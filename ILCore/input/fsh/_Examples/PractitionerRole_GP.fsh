@@ -13,7 +13,7 @@ Usage: #example
 // * name.text = "דר' גרינפלד דיאנה"
 * active = true
 * practitioner.reference = "Practitioner/practitioner-md"
-* location.reference = "Location/location-hospital-unit"
+* location.reference = "Location/hospital-unit"
 * telecom[0].system = #phone
 * telecom[0].value = "04-6421420"
 * telecom[0].use = #work

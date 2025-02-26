@@ -1,10 +1,12 @@
-Instance: observation-hight
+Instance: hight-measurement
 InstanceOf: ILCoreObservation
 Usage: #example
 Title: "Observation - hight measurement"
 Description: "Observation - hight measurement"
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of Hight - 1.72 Meters</div>"
 * text.status = #generated
+* encounter = Reference(Encounter/home-visit)
+* extension[bodyPosition].valueCodeableConcept = $sct#429130005 "Found standing (finding)"
 * status = #final
 * category = $obs-cat#vital-signs "Vital Signs"
 * code = $loinc#8302-2 "Body height"
@@ -23,4 +25,5 @@ Description: "Observation - hight measurement"
 * referenceRange.high.code = #cm
 * performer.reference = "Practitioner/practitioner-nurse"
 * effectiveDateTime = "2022-12-10"
+* method = $sct#41751005 "Anatomic measurement (procedure)"
 

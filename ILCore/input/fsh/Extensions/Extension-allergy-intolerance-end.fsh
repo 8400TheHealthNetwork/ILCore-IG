@@ -6,7 +6,7 @@ Description: "Supports the date when the allergy or intolerance was no longer va
 
 * ^language = #en-US
 * ^url = $ext-allergy-intolerance-end
-* ^status = #draft
+* ^status = #active
 * ^purpose = "This extension extends the AllergyIntolerance resource to support the exchange of information describing the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid, which is currently not supported by the FHIR standard."
 * ^context.type = #element
 * ^context.expression = "AllergyIntolerance"

@@ -1,0 +1,168 @@
+{
+  "resourceType": "ClaimResponse",
+  "id": "primary-coverage",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-claim-response"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://www.BenefitsInc.com/fhir/remittance",
+      "value": "R3500"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "code": "oral",
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+      }
+    ]
+  },
+  "subType": {
+    "coding": [
+      {
+        "code": "emergency",
+        "system": "http://terminology.hl7.org/CodeSystem/ex-claimsubtype"
+      }
+    ]
+  },
+  "use": "claim",
+  "patient": {
+    "reference": "Patient/patient-israeli"
+  },
+  "created": "2014-08-16",
+  "insurer": {
+    "identifier": {
+      "system": "http://www.jurisdiction.org/insurers",
+      "value": "555123"
+    }
+  },
+  "requestor": {
+    "reference": "Organization/ministry-of-health"
+  },
+  "outcome": "complete",
+  "disposition": "Claim settled as per contract.",
+  "payeeType": {
+    "coding": [
+      {
+        "code": "provider",
+        "system": "http://terminology.hl7.org/CodeSystem/payeetype"
+      }
+    ]
+  },
+  "item": [
+    {
+      "itemSequence": 1,
+      "adjudication": [
+        {
+          "category": {
+            "coding": [
+              {
+                "code": "eligible"
+              }
+            ]
+          },
+          "amount": {
+            "value": 135.57,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "code": "copay"
+              }
+            ]
+          },
+          "amount": {
+            "value": 10,
+            "currency": "USD"
+          }
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "code": "eligpercent"
+              }
+            ]
+          },
+          "value": 80
+        },
+        {
+          "category": {
+            "coding": [
+              {
+                "code": "benefit"
+              }
+            ]
+          },
+          "reason": {
+            "coding": [
+              {
+                "code": "ar002",
+                "system": "http://terminology.hl7.org/CodeSystem/adjudication-reason",
+                "display": "Plan Limit Reached"
+              }
+            ]
+          },
+          "amount": {
+            "value": 90.47,
+            "currency": "USD"
+          }
+        }
+      ]
+    }
+  ],
+  "total": [
+    {
+      "category": {
+        "coding": [
+          {
+            "code": "submitted"
+          }
+        ]
+      },
+      "amount": {
+        "value": 135.57,
+        "currency": "USD"
+      }
+    },
+    {
+      "category": {
+        "coding": [
+          {
+            "code": "benefit"
+          }
+        ]
+      },
+      "amount": {
+        "value": 90.47,
+        "currency": "USD"
+      }
+    }
+  ],
+  "payment": {
+    "type": {
+      "coding": [
+        {
+          "code": "complete",
+          "system": "http://terminology.hl7.org/CodeSystem/ex-paymenttype"
+        }
+      ]
+    },
+    "date": "2014-08-31",
+    "amount": {
+      "value": 100.47,
+      "currency": "USD"
+    },
+    "identifier": {
+      "system": "http://www.BenefitsInc.com/fhir/paymentidentifier",
+      "value": "201408-2-1569478"
+    }
+  }
+}

@@ -3,7 +3,7 @@ Id: il-core-medication-dose-form
 Title: "IL Core Medication Dose Form"
 Description: "A list of codes medication dose forms"
 * ^url = $vs-il-core-medication-dose-form
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

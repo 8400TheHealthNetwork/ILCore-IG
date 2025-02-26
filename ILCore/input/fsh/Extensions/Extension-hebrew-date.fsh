@@ -6,7 +6,7 @@ Description: "Extension: Allows the use of Hebrew dates"
 * ^url = $ext-hebrew-date
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "date"
 * ^context[1].type = #element

@@ -6,9 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Condition R
 
 * ^url = $ILCondition
 * insert ConformanceMetadata
-* ^status = #draft
-
-
+* ^status = #active
 
 * . ^short = "ILCore Condition Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Condition resource profile."

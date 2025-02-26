@@ -1,0 +1,219 @@
+{
+  "resourceType": "HealthcareService",
+  "id": "ptsd-counselling",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-healthcare-service"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Location",
+      "id": "Negev",
+      "description": "Greater Negev area",
+      "mode": "instance",
+      "physicalType": {
+        "coding": [
+          {
+            "code": "area",
+            "display": "Area"
+          }
+        ]
+      }
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://mockup.org/shared-ids",
+      "value": "HS-12"
+    }
+  ],
+  "active": true,
+  "providedBy": {
+    "reference": "Organization/hospital-unit"
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "103693007",
+          "system": "http://snomed.info/sct",
+          "display": "Diagnostic procedure (procedure)"
+        }
+      ],
+      "text": "Counselling"
+    }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "394913002",
+          "system": "http://snomed.info/sct",
+          "display": "Psychotherapy"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "394587001",
+          "system": "http://snomed.info/sct",
+          "display": "Psychiatry"
+        }
+      ]
+    }
+  ],
+  "specialty": [
+    {
+      "coding": [
+        {
+          "code": "47505003",
+          "system": "http://snomed.info/sct",
+          "display": "Posttraumatic stress disorder"
+        }
+      ]
+    }
+  ],
+  "name": "Consulting psychologists and/or psychology services",
+  "comment": "Providing Specialist psychology services to the greater Den Burg area, many years of experience dealing with PTSD issues",
+  "extraDetails": "Several assessments are required for these specialist services, and the waiting times can be greater than 3 months at times. Existing patients are prioritized when requesting appointments on the schedule.",
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "(555) silent",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "directaddress@example.com",
+      "use": "work"
+    }
+  ],
+  "coverageArea": [
+    {
+      "reference": "#Negev",
+      "display": "Greater Negev area"
+    }
+  ],
+  "serviceProvisionCode": [
+    {
+      "coding": [
+        {
+          "code": "cost",
+          "system": "http://terminology.hl7.org/CodeSystem/service-provision-conditions",
+          "display": "Fees apply"
+        }
+      ]
+    }
+  ],
+  "eligibility": [
+    {
+      "code": {
+        "coding": [
+          {
+            "display": "DVA Required"
+          }
+        ]
+      },
+      "comment": "Evidence of application for DVA status may be sufficient for commencing assessment"
+    }
+  ],
+  "program": [
+    {
+      "text": "PTSD outreach"
+    }
+  ],
+  "characteristic": [
+    {
+      "coding": [
+        {
+          "display": "Wheelchair access"
+        }
+      ]
+    }
+  ],
+  "referralMethod": [
+    {
+      "coding": [
+        {
+          "code": "phone",
+          "display": "Phone"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "fax",
+          "display": "Fax"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "elec",
+          "display": "Secure Messaging"
+        }
+      ]
+    },
+    {
+      "coding": [
+        {
+          "code": "semail",
+          "display": "Secure Email"
+        }
+      ]
+    }
+  ],
+  "appointmentRequired": false,
+  "availableTime": [
+    {
+      "daysOfWeek": [
+        "wed"
+      ],
+      "allDay": true
+    },
+    {
+      "daysOfWeek": [
+        "mon",
+        "tue",
+        "thu",
+        "fri"
+      ],
+      "availableStartTime": "08:30:00",
+      "availableEndTime": "05:30:00"
+    },
+    {
+      "daysOfWeek": [
+        "sat",
+        "fri"
+      ],
+      "availableStartTime": "09:30:00",
+      "availableEndTime": "04:30:00"
+    }
+  ],
+  "notAvailable": [
+    {
+      "description": "Christmas/Boxing Day",
+      "during": {
+        "start": "2015-12-25",
+        "end": "2015-12-26"
+      }
+    },
+    {
+      "description": "New Years Day",
+      "during": {
+        "start": "2016-01-01",
+        "end": "2016-01-01"
+      }
+    }
+  ],
+  "availabilityExceptions": "Reduced capacity is available during the Christmas period",
+  "endpoint": [
+    {
+      "reference": "Endpoint/example"
+    }
+  ]
+}

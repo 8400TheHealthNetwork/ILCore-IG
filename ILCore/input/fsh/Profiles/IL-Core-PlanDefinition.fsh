@@ -7,9 +7,6 @@ Description: "Israel Core proposed constraints and extensions on the PlanDefinit
 * ^url = $ILPlanDefinition
 * insert ConformanceMetadata
 * ^status = #draft
-
-
-
 * . ^short = "ILCore PlanDefinition Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the PlanDefinition resource profile."
 * . ^isModifier = false
@@ -17,7 +14,6 @@ Description: "Israel Core proposed constraints and extensions on the PlanDefinit
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
-
 
 * subjectReference only Reference(ILCoreGroup)
 * action.definitionCanonical only Canonical(ILCoreActivityDefinition or ILCorePlanDefinition or ILCoreQuestionnaire)

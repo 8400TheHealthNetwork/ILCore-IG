@@ -3,7 +3,7 @@ Id: bp-components
 Title: "Blood Pressure component codes"
 Description: "A list of codes for components in the blood presssure observations reporting"
 * ^url = $vs-bp-components
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

@@ -20,7 +20,7 @@ Usage: #example
 *  procedureCode.coding[0].system = "http://loinc.org"
 *  procedureCode.coding[0].code = #39152-4
 *  procedureCode.coding[0].display = "FFD mammogram Breast Diagnostic"
-*  location.reference = "Location/location-hospital-unit"
+*  location.reference = "Location/hospital-unit"
 *  reasonCode.coding[0].system = $sct
 *  reasonCode.coding[0].code = #89164003
 *  reasonCode.coding[0].display = "Breast lump"

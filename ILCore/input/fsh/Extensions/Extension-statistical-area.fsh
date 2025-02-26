@@ -6,7 +6,7 @@ Description: "Extension: Statistical Area. A concatination of the city symbol + 
 * ^url = $ext-statistical-area
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Address" 
 

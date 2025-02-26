@@ -3,7 +3,7 @@ Id: il-core-service-category
 Title: "IL Core ServiceCategory"
 Description: "A list of codes for Service Category for the IL Core"
 * ^url = $vs-il-core-service-category
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

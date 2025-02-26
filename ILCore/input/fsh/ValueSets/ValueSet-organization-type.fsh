@@ -4,7 +4,7 @@ Title: "Organization Type"
 Description: "SNOMED based value set of recommended types of organizations and organization units"
 
 * ^url = $vs-organization-type
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

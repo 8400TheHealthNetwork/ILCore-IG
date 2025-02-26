@@ -70,7 +70,7 @@
     }
   ],
   "location": {
-    "reference": "Location/location-hospital-unit"
+    "reference": "Location/hospital-unit"
   },
   "reasonCode": [
     {

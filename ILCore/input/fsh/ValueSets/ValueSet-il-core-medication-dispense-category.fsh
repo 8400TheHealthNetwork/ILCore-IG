@@ -4,7 +4,7 @@ Title: "ILCore Medication dispense Category"
 Description: "Codes for Medication dispense Category"
 
 * ^url = $vs-il-core-medication-dispense-category
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

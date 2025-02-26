@@ -1,0 +1,35 @@
+{
+  "resourceType": "Task",
+  "id": "refill",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-task"
+    ]
+  },
+  "status": "draft",
+  "intent": "order",
+  "code": {
+    "text": "Refill Request"
+  },
+  "focus": {
+    "reference": "MedicationRequest/metamizole-for-gangreenous-tonsolitis"
+  },
+  "for": {
+    "reference": "Patient/patient-israeli"
+  },
+  "authoredOn": "2016-03-10T22:39:32-04:00",
+  "lastModified": "2016-03-10T22:39:32-04:00",
+  "requester": {
+    "reference": "Patient/patient-israeli"
+  },
+  "owner": {
+    "reference": "Practitioner/md"
+  },
+  "restriction": {
+    "recipient": [
+      {
+        "reference": "Patient/patient-israeli"
+      }
+    ]
+  }
+}

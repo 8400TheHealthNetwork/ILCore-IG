@@ -73,7 +73,7 @@
   "relatedArtifact": [
     {
       "type": "depends-on",
-      "resource": "http://example.org/fhir/Library/fhir-model-definition"
+      "resource": "http://mockup.org/fhir/Library/fhir-model-definition"
     },
     {
       "type": "depends-on",

@@ -3,7 +3,7 @@ Id: reason-not-done
 Title: "statusReason codes for Immunization profile"
 Description: "Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode"
 * ^url = $vs-reason-not-done
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

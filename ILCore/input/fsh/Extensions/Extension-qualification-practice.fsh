@@ -6,7 +6,7 @@ Description: "Extension: Qualification Practice"
 * ^url = $ext-qualification-practice
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Practitioner.qualification"
 

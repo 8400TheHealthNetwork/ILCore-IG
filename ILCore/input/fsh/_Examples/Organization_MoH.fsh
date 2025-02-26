@@ -1,4 +1,4 @@
-Instance:   organization-ministry-of-health
+Instance:   ministry-of-health
 InstanceOf: ILCoreOrganization
 
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">משרד הבריאות</div>"
@@ -27,5 +27,5 @@ InstanceOf: ILCoreOrganization
 * address.postalCode = "9446724"  
 * address.country = "IL"
 
-* type = $institution-type-moh#76 "משרדי ממשלה"
+* type[moh-institute-type] = $institution-type-moh#76 "משרדי ממשלה"
  

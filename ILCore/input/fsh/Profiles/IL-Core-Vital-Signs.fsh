@@ -50,7 +50,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * ^definition = "Used when reporting vital signs panel components"
 * component obeys il-vs3
 * component MS
-  * code from $vs-bp-components (extensible)
+  // * code from $vs-bp-components (extensible)
   * code MS
   * value[x] only Quantity or CodeableConcept or string
     * ^condition = "il-vs3"

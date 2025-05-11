@@ -15,7 +15,7 @@ Usage: #definition
 * code = #accession-number
 * base = #ImagingStudy
 * type = #token
-* expression = "ImagingStudy.extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-accession-number').value"
+* expression = "ImagingStudy.extension('http://fhir.health.gov.il/StructureDefinition/ext-accession-number').value"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

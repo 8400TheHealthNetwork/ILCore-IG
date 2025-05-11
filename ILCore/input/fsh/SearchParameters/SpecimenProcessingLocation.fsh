@@ -15,7 +15,7 @@ Usage: #definition
 * code = #processing-location
 * base[0] = #Specimen
 * type = #reference
-* expression = "extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-processing-location').value"
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-processing-location').value"
 * xpathUsage = #normal
 * target[0] = #Location
 * multipleOr = true

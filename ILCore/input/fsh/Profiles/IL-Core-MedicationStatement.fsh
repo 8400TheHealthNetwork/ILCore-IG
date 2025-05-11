@@ -21,7 +21,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * extension[courseOfTherapyType] ^short = "Ext: Medication Course-Of-Therapy Type"
 * extension[courseOfTherapyType] ^definition = "Extension: A coded representation of the type of course-of-therapy"
 * basedOn only Reference(ILCoreCarePlan or ILCoreMedicationRequest or ILCoreServiceRequest)
-* partOf only Reference(ILCoreMedicationAdministration or MedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation)
+* partOf only Reference(ILCoreMedicationAdministration or ILCoreMedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation)
 * category from $vs-il-core-medication-statement-category (extensible)
 * medication[x] 1..1
 * medicationCodeableConcept from $vs-il-core-medication-statement-code (extensible)

@@ -15,7 +15,8 @@ Usage: #definition
 * code = #movement-sequence-number
 * base = #Encounter
 * type = #string
-* expression = "extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-movement-sequence-number').valueString"
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-movement-sequence-number').value as String"
+// * expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-movement-sequence-number').valueString"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

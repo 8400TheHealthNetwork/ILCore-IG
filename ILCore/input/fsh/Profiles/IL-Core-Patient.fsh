@@ -48,10 +48,10 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
    il-id 0..1 and
    pna-id 0..1 and
    ppn 0..* and
-//    idf-sn 0..1 and
    prisoner-id 0..1 and
    enc 0..* and
    entry-permit 0..*
+//    idf-sn 0..1 and
 //    ppn-no-system 0..* 
 
 * identifier[il-id] ^short = "Israeli National Identifier"
@@ -150,6 +150,8 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * insert HumanNameLanguage  // RuleSet that handles language extension and slices. -> see RuleSets/HumanNameLanguage // Kippi B. May-11 2023
 
 //telecom
+* telecom.extension contains $contact-point-purpose named purpose 0..1
+* telecom.extension[purpose].valueCodeableConcept from $vs-il-core-contact-point-purpose (extensible)
 * telecom.system 1..1 MS
 * telecom.value 1..1 MS
 * telecom.use 0..1 MS
@@ -165,6 +167,8 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * contact ^slicing.discriminator.path = "relationship"
 * contact ^slicing.rules = #open
 * contact contains parent 0..*
+* contact.extension contains $contact-point-purpose named purpose 0..1
+* contact.extension[purpose].valueCodeableConcept from $vs-il-core-contact-point-purpose (extensible)
 * contact[parent].relationship ^patternCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
 // * contact[Parent].relationship ^patternCoding = http://terminology.hl7.org/CodeSystem/v2-0131#PAR  //OLD and incorrect. awaiting Daniel's reply
 // * contact[Child].relationship.coding ^patternCoding = {system: "http://terminology.hl7.org/CodeSystem/v2-0131", code: "CHD"}

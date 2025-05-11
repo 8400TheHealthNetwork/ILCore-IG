@@ -15,7 +15,8 @@ Usage: #definition
 * code = #course-of-therapy-type
 * base = #MedicationStatement
 * type = #token
-* expression = "extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type').valueCodeableConcept"
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type').value as CodeableConcept"
+// * expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type').valueCodeableConcept"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

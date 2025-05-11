@@ -10,4 +10,4 @@ Description: "Extension: Specimen Collector Reference"
 * ^context.type = #element
 * ^context.expression = "Specimen.collection.collector"
 
-* value[x] only Reference(ILCorePatient or ILCoreRelatedPerson)
+* value[x] only Reference(ILCorePatient or ILCoreRelatedPerson or ILCorePractitioner or ILCorePractitionerRole)

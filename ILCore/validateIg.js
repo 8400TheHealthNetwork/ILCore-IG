@@ -34,7 +34,8 @@ const runValidate = async () => {
     deleteIgResource();
     if (java && jar) {
         // const command = `"${java}" -Dfile.encoding=UTF-8 -jar "${jar}" "${diffFolder}" -version ${getFhirVersion()} -jurisdiction global -ig "${igFolder}" ${getDependencies(sushiConfig)} -output ${outputPathJson} -html-output ${outputPathHtml}`;
-        const command = `"${java}" -Dfile.encoding=UTF-8 -jar "${jar}" "${diffFolder}" -version 4.0.1 -jurisdiction global -ig "${igFolder}" ${getDependencies(sushiConfig)} -output ${outputPathJson} -html-output ${outputPathHtml}`;
+        // const command = `"${java}" -Dfile.encoding=UTF-8 -jar "${jar}" "${diffFolder}" -version 4.0.1 -jurisdiction global -ig "${igFolder}" ${getDependencies(sushiConfig)} -output ${outputPathJson} -html-output ${outputPathHtml}`;
+        const command = `"${java}" -Dfile.encoding=UTF-8 -jar "${jar}" "${diffFolder}" -version 4.0.1 -ig "${igFolder}" ${getDependencies(sushiConfig)} -output ${outputPathJson} -html-output ${outputPathHtml}`;
         const subprocess = execa(command);
         subprocess.stdout.pipe(process.stdout);
         await subprocess;

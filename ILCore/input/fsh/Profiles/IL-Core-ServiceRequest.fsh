@@ -28,7 +28,6 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
     il-core 0..*
 * category[il-core] from $vs-il-core-service-category (required)
 * category[il-core].coding
-  // * system = $sct (exactly)
   * system 1..1
   * code 1..1
   * display 1..1

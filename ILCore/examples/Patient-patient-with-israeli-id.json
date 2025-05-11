@@ -52,6 +52,31 @@
       "text": "תמר כהן"
     }
   ],
+  "telecom": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-purpose",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "OTP",
+                "system": "http://fhir.health.gov.il/cs/il-core-contact-point-purpose",
+                "display": "OTP"
+              }
+            ]
+          }
+        }
+      ],
+      "system": "phone",
+      "value": "052467911",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "Israel@example.com"
+    }
+  ],
   "address": [
     {
       "line": [
@@ -133,17 +158,6 @@
     }
   ],
   "active": true,
-  "telecom": [
-    {
-      "system": "phone",
-      "value": "052467911",
-      "use": "home"
-    },
-    {
-      "system": "email",
-      "value": "Israel@example.com"
-    }
-  ],
   "gender": "female",
   "birthDate": "2003-04-17",
   "deceasedBoolean": false

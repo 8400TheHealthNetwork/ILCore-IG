@@ -15,7 +15,7 @@ Usage: #definition
 * code = #paying-entity
 * base = #Encounter
 * type = #token
-* expression = "Encounter.extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-encounter-paying-entity').value.coding"
+* expression = "Encounter.extension('http://fhir.health.gov.il/StructureDefinition/ext-encounter-paying-entity').value.coding"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

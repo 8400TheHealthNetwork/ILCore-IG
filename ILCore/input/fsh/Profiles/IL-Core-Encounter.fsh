@@ -40,14 +40,13 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * classHistory.class from $vs-il-core-encounter-class (extensible)
 * type ^definition = "Specific type of encounter that is orthogonal to class and serviceType (e.g. e-mail consultation)" 
 * type ^slicing.discriminator.type = #pattern
-* type ^slicing.discriminator.path = "coding"
-// * type ^slicing.discriminator.path = "$this"
+* type ^slicing.discriminator.path = "$this"
 * type ^slicing.rules = #open
 * type contains 
     virtual-encounters 0..* and
     doctor-to-doctor-consultation 0..*
-* type[doctor-to-doctor-consultation].coding from $vs-il-core-doctor-to-doctor (required)
-* type[virtual-encounters].coding from $vs-il-core-virtual-type (required)
+* type[doctor-to-doctor-consultation] from $vs-il-core-doctor-to-doctor (required)
+* type[virtual-encounters] from $vs-il-core-virtual-type (required)
 * serviceType from $vs-il-core-service-type (extensible)
 * subject 1..1
 * subject only Reference(ILCorePatient or ILCoreGroup)

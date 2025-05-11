@@ -22,6 +22,7 @@ Usage: #example
 * telecom[0].use = #home
 * telecom[1].system = #email
 * telecom[1].value = "Israel@example.com"
+* telecom.extension[purpose].valueCodeableConcept = $il-core-contact-point-purpose#OTP "OTP"
 * gender = #female
 * birthDate = "2003-04-17"
 * address.use = #home

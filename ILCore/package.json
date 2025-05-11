@@ -1,7 +1,7 @@
 {
   "name": "il-core-ig",
-  "version": "0.16.1",
-  "description": "Israel Division of Governmental Hospitals Profiles",
+  "version": "0.17.1",
+  "description": "Israel Core FHIR Profiles",
   "type": "module",
   "scripts": {
     "ruleset": "node updateRuleSet.js",

@@ -17,7 +17,7 @@ Usage: #definition
 * base[+] = #MedicationAdministration
 * base[+] = #MedicationDispense
 * type = #token
-* expression = "extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication').value"
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication').value"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

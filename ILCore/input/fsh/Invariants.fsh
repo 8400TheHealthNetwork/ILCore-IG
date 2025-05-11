@@ -82,12 +82,12 @@ Severity: #error
 
 // Invariant: il-patient-name
 // Description: "Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present."
-// Expression: "(name.family.exists() or name.given.exists()) xor extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
+// Expression: "(name.family.exists() or name.given.exists()) xor extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
 // Severity: #error
 
 Invariant: il-patient-name
 Description: "Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present."
-Expression: "(family.exists() or given.exists()) xor name.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
+Expression: "(family.exists() or given.exists()) xor name.extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
 Severity: #error
 
 Invariant: identifier-dash

@@ -29,6 +29,6 @@ Usage: #example
 *  container.specimenQuantity.unit = "mL" 
 *  container.specimenQuantity.code = #ml
 *  container.specimenQuantity.system = $ucum
-*  extension[processing-location].valueReference.reference = "Location/hospital-unit"
-*  extension[processing-practitioner].valueReference.reference = "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+*  processing.extension[processing-location].valueReference.reference = "Location/hospital-unit"
+*  processing.extension[processing-practitioner].valueReference.reference = "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
 

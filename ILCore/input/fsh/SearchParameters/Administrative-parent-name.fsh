@@ -18,7 +18,7 @@ Usage: #definition
 * base[+] = #RelatedPerson
 * base[+] = #Person
 * type = #string
-* expression = "extension.where(url='http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name').extension.where(url='given').value"
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name').extension('given').value"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

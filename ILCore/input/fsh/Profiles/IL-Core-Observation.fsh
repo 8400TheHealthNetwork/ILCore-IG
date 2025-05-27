@@ -42,7 +42,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * dataAbsentReason.coding contains 
     not-performed-reason 0..1
 // * dataAbsentReason.coding[not-performed-reason] from $vs-not-performed-reason (required)
-* dataAbsentReason.coding[not-performed-reason].system = $not-performed-reason
+* dataAbsentReason.coding[not-performed-reason].system = $not-performed-reason (exactly)
 * dataAbsentReason.coding[not-performed-reason].system 1..1
 * dataAbsentReason.coding[not-performed-reason].code 1..1
 * dataAbsentReason obeys il-obs-not-performed

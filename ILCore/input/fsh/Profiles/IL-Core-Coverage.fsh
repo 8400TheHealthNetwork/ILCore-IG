@@ -30,7 +30,7 @@ Description: "Israel Core proposed constraints and extensions on the Coverage Re
 * class contains insurance-policy 0..1
 * class[insurance-policy] ^definition = "סלייס לטובת ביטוי של פוליסת ביטוח ספציפית, לדוגמה: 'כללית פלטינום' או 'הפניקס חברה לביטוח - קו ראשון'"
 * class[insurance-policy].type.coding.system 1..1
-* class[insurance-policy].type.coding.system = $hl7-coverage-class
+* class[insurance-policy].type.coding.system = $hl7-coverage-class (exactly)
 * class[insurance-policy].type.coding.code 1..1
 * class[insurance-policy].type.coding.code = #plan (exactly)
 * class[insurance-policy].value ^definition = "מזהה עבור הפוליסה. אלמנט זה יוסב בגרסה 5 ל identifier"

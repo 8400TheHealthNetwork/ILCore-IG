@@ -10,6 +10,16 @@
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Breast Scraening</div>",
     "status": "generated"
   },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival",
+      "valueCoding": {
+        "code": "C",
+        "system": "http://terminology.hl7.org/CodeSystem/v2-0430",
+        "display": "Car"
+      }
+    }
+  ],
   "identifier": [
     {
       "system": "http://fhir.hospital-emr.co.il/identifier/entity-id/encounter",

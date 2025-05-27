@@ -1,7 +1,7 @@
-Instance: il-core-movement-sequence-number
+Instance: il-core-movement-number
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://fhir.health.gov.il/SearchParameter/il-core-movement-sequence-number"
+* url = "http://fhir.health.gov.il/SearchParameter/il-core-movement-number"
 * version = "1.0.0"
 * name = "ILCoreMovementSequenceNumber"
 * status = #active
@@ -12,10 +12,10 @@ Usage: #definition
 * contact.telecom.value = "tal.primak@moh.gov.il"
 * description = "Returns Encounter instances where the ILCore Movement Sequence-Number extension has a specified string value."
 * jurisdiction = urn:iso:std:iso:3166#IL
-* code = #movement-sequence-number
+* code = #movement-number
 * base = #Encounter
 * type = #string
-* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-movement-sequence-number').value as String"
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-movement-number').value as String"
 // * expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-movement-sequence-number').valueString"
 * xpathUsage = #normal
 * multipleOr = true

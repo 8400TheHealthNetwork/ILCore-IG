@@ -4,7 +4,7 @@ Title: "Example ILCore MedicationDispense"
 Description: "An example instance of the ILCore MedicationDispense profile."
 
 * status = #completed
-* category = $il-core-medication-category#community-hmo "Community Care/HMO"
+* category = $il-core-medication-request-category#community-hmo "Community Care/HMO"
 * medicationReference = Reference(paracetamol)
 * subject = Reference(patient-israeli-with-statistical-area)
 * performer.actor = Reference(practitioner-md)

@@ -3,7 +3,7 @@ Id: immunization-side-effect
 Title: "Immunization side-effect codes"
 Description: "Codes from SNOMED CT detailing possible immunization-side-effects for ILCoreImmunizationReactionObservation profile"
 * ^url = $vs-immunization-side-effects
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

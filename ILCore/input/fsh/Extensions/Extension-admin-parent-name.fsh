@@ -5,7 +5,7 @@ Description: "Extension: The name of a person’s parent, recorded for administr
 * ^url = $ext-admin-parent-name
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 * ^context[+].type = #element
@@ -44,3 +44,29 @@ Description: "Extension: The name of a person’s parent, recorded for administr
 * extension[official].value[x] only boolean
 * extension[official].valueBoolean ^example.valueBoolean = true
 * extension[official].valueBoolean ^example.label = "Valid Example"
+
+// Profile: FatherName
+// Parent: AdminParentName
+// Id: ext-father-name
+// Title: "Father Name"
+// Description: "Profile on ILCore extension Administrative-parent-name for father name"
+// * extension[role] 1..1
+// * extension[role].valueCode 1..1
+// * extension[role].valueCode = #FTH (exactly)
+
+// Profile: MotherName
+// Parent: AdminParentName
+// Id: ext-mother-name
+// Title: "Mother Name"
+// Description: "Profile on ILCore extension Administrative-parent-name for mother name"
+// * extension[role] 1..1
+// * extension[role].valueCode 1..1
+// * extension[role].valueCode = #MTH (exactly)
+
+// Profile: HearingLossDisability
+// Id: ext-hearing-loss
+// Parent: http://hl7.org/fhir/StructureDefinition/patient-disability
+
+// * valueCodeableConcept 1..1
+// * valueCodeableConcept.coding 1..*
+// * valueCodeableConcept.coding = $sct#15188001 "Hearing loss (disorder)" (exactly)

@@ -4,7 +4,7 @@ Title: "MoH Medication Code"
 Description: "Codes for medications according to MoH catalogue"
 
 * ^url = $vs-moh-medication-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

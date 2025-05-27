@@ -3,7 +3,7 @@ Id: il-core-virtual-type
 Title: "IL Core Virtual encounter Type Codes"
 Description: "A list of type codes for Virtual Encounters for the IL Core"
 * ^url = $vs-il-core-virtual-type
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

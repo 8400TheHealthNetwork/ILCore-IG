@@ -6,10 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the RelatedPers
 
 * ^url = $ILRelatedPerson
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCoreRelatedPerson Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the RelatedPerson resource profile."
 * . ^isModifier = false

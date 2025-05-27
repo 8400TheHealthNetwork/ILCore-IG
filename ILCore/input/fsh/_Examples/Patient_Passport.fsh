@@ -5,11 +5,13 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with foreign passport</div>"
 * text.status = #generated
 // * identifier[0].type = $id-type#MR // this is for testing purposes. expected: Fail. 
-* identifier[0].type = $id-type#PPN
-* identifier[0].system = $urn#http://hl7.org/fhir/sid/passport-USA "United States"
+* identifier[ppn].type = $id-type#PPN
+* identifier[ppn].system = $urn#http://hl7.org/fhir/sid/passport-USA "United States"
 // * identifier[0].system = "http://hl7.org/fhir/sid/passport-GBR"
-* identifier[0].value = "8876543"
+* identifier[ppn].value = "8876543"
 * extension[hmo].valueCodeableConcept = $payer#101 "קופת חולים כללית"
+* extension[birthPlace].valueAddress.line = "New york City, NY, USA"
+* extension[birthSex].valueCode = #M
 * active = true
 * name.family = "Smith"
 * name.given[0] = "David" 

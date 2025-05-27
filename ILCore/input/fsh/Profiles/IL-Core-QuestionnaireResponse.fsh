@@ -6,10 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Questionnai
 
 * ^url = $ILQuestionnaireResponse
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore QuestionnaireResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the QuestionnaireResponse resource profile."
 * . ^isModifier = false

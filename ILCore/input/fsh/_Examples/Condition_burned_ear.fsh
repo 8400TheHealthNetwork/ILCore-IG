@@ -1,4 +1,4 @@
-Instance: condition-burnt-ear
+Instance: burnt-ear
 InstanceOf: ILCoreCondition
 Usage: #example
 * clinicalStatus = $condition-clinical#active

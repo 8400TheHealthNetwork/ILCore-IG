@@ -3,7 +3,7 @@ Id: icd9-cm-diagnoses
 Title: "Icd9 Cm diagnoses"
 Description: "All Diagnosis codes from ICD9-CM codesystem"
 * ^url = $vs-icd9-cm-diagnoses
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

@@ -3,7 +3,7 @@ Id: il-core-substance
 Title: "IL Core Substance Codes"
 Description: "A list of codes for Substances for the IL Core"
 * ^url = $vs-il-core-substance
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

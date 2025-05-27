@@ -2,7 +2,7 @@ CodeSystem: ILCoreEncounterClass
 Id: il-core-encounter-class
 Title: "IL Core Encounter Class codes"
 Description: "A list of codes for class types of encounters"
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^url = $il-core-encounter-class
 * ^content = #complete

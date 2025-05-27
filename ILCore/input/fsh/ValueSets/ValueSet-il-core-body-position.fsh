@@ -3,7 +3,7 @@ Id: il-core-body-position
 Title: "IL Core Body Position"
 Description: "The position of the body when the observation was made, e.g. standing, sitting"
 * ^url = $vs-il-core-body-position
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

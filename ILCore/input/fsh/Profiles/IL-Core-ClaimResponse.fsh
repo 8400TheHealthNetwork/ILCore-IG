@@ -6,9 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the ClaimRespon
 
 * ^url = $ILClaimResponse
 * insert ConformanceMetadata
-* ^status = #draft
-
-
+* ^status = #active
 
 * . ^short = "ILCore ClaimResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ClaimResponse resource profile."

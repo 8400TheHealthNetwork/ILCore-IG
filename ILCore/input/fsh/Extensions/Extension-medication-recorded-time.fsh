@@ -1,12 +1,12 @@
-Extension: ILCoreRecordedTime
-Id: ext-recorded-time
-Title: "Ext: ILCore Recorded Time"
-Description: "Extension: The time in which the medication order / administration / dispense was recorded"
+Extension: ILCoreMedicationRecordedTime
+Id: ext-medication-recorded-time
+Title: "Ext: ILCore Medication Recorded Time"
+Description: "Extension: The time in which the medication order / administration / dispense was first captured"
 
 * ^url = $ext-recorded-time
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "MedicationRequest"
 * ^context[1].type = #element

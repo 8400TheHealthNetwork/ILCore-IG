@@ -7,10 +7,7 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 
 * ^url = $ILOrganization
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Organization Profile"
 * . ^definition = "The Organization Profile is based upon the core FHIR Organization Resource"
 * . ^isModifier = false
@@ -36,7 +33,7 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 
 * identifier[moh-inst-symbol].system 1..1 MS
 * identifier[moh-inst-symbol].value 1..1 MS
-* identifier[moh-inst-symbol] ^short = "MoH institute sympbol number"
+* identifier[moh-inst-symbol] ^short = "MoH institute symbol number"
 * identifier[moh-inst-symbol] ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - https://institutions.health.gov.il/Institutions"
 * identifier[moh-inst-symbol] ^mustSupport = true
 * identifier[moh-inst-symbol].system ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - https://institutions.health.gov.il/Institutions"

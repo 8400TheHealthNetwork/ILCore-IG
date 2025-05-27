@@ -4,7 +4,7 @@ Title: "קוד השכלה לעוסק בבריאות"
 Description: "קוד השכלה לעוסק בבריאות לפי רישוי משרד הבריאות"
 
 * ^url = $vs-practitioner-education
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

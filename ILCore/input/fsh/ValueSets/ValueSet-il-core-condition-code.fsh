@@ -3,7 +3,7 @@ Id: il-core-condition-code
 Title: "IL Core Condition Code"
 Description: "A list of codes for conditions for the IL Core"
 * ^url = $vs-il-core-condition-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

@@ -7,10 +7,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 
 * ^url = $ILPractitioner
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Practitioner Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the practitioner resource profile."
 * . ^isModifier = false
@@ -21,7 +18,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 
 
 * identifier ^min = 1
-* identifier.system 1..1 MS
+* identifier.system 0..1 MS
 * identifier.value 1..1 MS
 * identifier.value ^short = "The value that is unique within the system."
 * identifier ^slicing.discriminator[0].type = #value
@@ -33,7 +30,9 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
    molsa-sw-lic 0..1 and
    il-id 0..1 and
    pna-id 0..1 and
-   ppn 0..* 
+   ppn 0..* and
+   enc-il-id 0..1 and
+   enc-ppn 0..*
    // and
    // idf-sn 0..1
 
@@ -109,6 +108,24 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[ppn].value ^short = "Passport Number"
 * identifier[ppn].system from $vs-pp-uri (required)
 * identifier[ppn].assigner only Reference(ILCoreOrganization)
+
+* identifier[enc-il-id] ^short = "National Identifier - MoH encrypted"
+* identifier[enc-il-id] ^definition = "The person's national identifier after applying MoH's standard primary encryption algorithm"
+* identifier[enc-il-id] ^mustSupport = true
+* identifier[enc-il-id].value 1..1 MS
+* identifier[enc-il-id].value ^short = "The encrypted identifier value"
+* identifier[enc-il-id].system 1..1 MS
+* identifier[enc-il-id].system = "http://fhir.health.gov.il/identifier/encrypted-id-primary-moh" (exactly)
+
+* identifier[enc-ppn] ^short = "Passport number - MoH encrypted"
+* identifier[enc-ppn] ^definition = "The person's passport number after applying MoH's standard primary encryption algorithm"
+* identifier[enc-ppn] ^mustSupport = true
+* identifier[enc-ppn].value 1..1 MS
+* identifier[enc-ppn].value ^short = "The encrypted identifier value"
+* identifier[enc-ppn].system 1..1 MS
+* identifier[enc-ppn].system ^short = "Country specific URI"
+* identifier[enc-ppn].system ^definition = "The URI for encrypted passport numbers issued by a specific country"
+* identifier[enc-ppn].system from $vs-pp-enc-uri (required)
 
 // * identifier[idf-sn] ^short = "IDF Service Number"
 // * identifier[idf-sn] ^definition = "Israel Defence forces Sevice number (6-8 digits number). A unique identifier for any soldier currently serving or having served in the IDF"

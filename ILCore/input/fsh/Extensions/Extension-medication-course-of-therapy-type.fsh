@@ -6,7 +6,7 @@ Description: "Extension: A coded representation of the type of course-of-therapy
 * ^url = $ext-medication-course-of-therapy-type
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "MedicationStatement"
 * value[x] only CodeableConcept

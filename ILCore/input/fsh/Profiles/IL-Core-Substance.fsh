@@ -6,10 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Substance R
 
 * ^url = $ILSubstance
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore Substance Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Substance resource profile."
 * . ^isModifier = false

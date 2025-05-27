@@ -3,7 +3,7 @@ Id: immunization-body-site
 Title: "Immunization Observation Body Site list"
 Description: "All codes from SNOMED CT describing body sites for Immunization Observation"
 * ^url = $vs-immun-body-site
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

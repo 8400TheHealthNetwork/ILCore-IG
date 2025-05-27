@@ -3,7 +3,7 @@ Id: target-disease
 Title: "Target Disease Codes"
 Description: "SNOMED based valueset of all Disease caused by microorganism or bacterial toxin"
 * ^url = $vs-target-disease
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

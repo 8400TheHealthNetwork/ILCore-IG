@@ -6,10 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 
 * ^url = $ILMedicationStatement
 * insert ConformanceMetadata
-* ^status = #draft
-
-
-
+* ^status = #active
 * . ^short = "ILCore MedicationStatement Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationStatement resource profile."
 * . ^isModifier = false
@@ -18,14 +15,13 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 
-
 * status and medication[x] and subject and dateAsserted and dosage MS
 * extension contains 
     $ext-medication-course-of-therapy-type named courseOfTherapyType 0..1
 * extension[courseOfTherapyType] ^short = "Ext: Medication Course-Of-Therapy Type"
 * extension[courseOfTherapyType] ^definition = "Extension: A coded representation of the type of course-of-therapy"
 * basedOn only Reference(ILCoreCarePlan or ILCoreMedicationRequest or ILCoreServiceRequest)
-* partOf only Reference(ILCoreMedicationAdministration or MedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation)
+* partOf only Reference(ILCoreMedicationAdministration or ILCoreMedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation)
 * category from $vs-il-core-medication-statement-category (extensible)
 * medication[x] 1..1
 * medicationCodeableConcept from $vs-il-core-medication-statement-code (extensible)
@@ -34,6 +30,6 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * context only Reference(ILCoreEncounter or EpisodeOfCare) 
 * informationSource only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson or ILCoreOrganization)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
-// * reasonReference.extension contains $ext-procedure-reference named procedureReference 0..*
+// * reasonReference.extension contains $ext-med-req-procedure-reference named procedureReference 0..*
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport)
 * dosage only ILCoreDosage

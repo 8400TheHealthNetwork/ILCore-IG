@@ -19,3 +19,4 @@ Webroot/0.*
 Webroot/ig-build-zips
 validator.cli
 Files to add later on
+ILCore/validator_cli.jar

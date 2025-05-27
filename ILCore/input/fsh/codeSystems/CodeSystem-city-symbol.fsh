@@ -2,7 +2,7 @@ CodeSystem: CitySymbol
 Id: city-symbol
 Title: "City Symbol (סמל ישוב)"
 Description: "Codes for cities in Israel"
-* ^status = #draft
+* ^status = #active
 * ^url = $city-code
 * ^content = #complete
 * ^valueSet = $vs-city-code
@@ -1808,3 +1808,10 @@ Description: "Codes for cities in Israel"
 * #5436 "פאת שדה" "PE'AT SADE"			
   * ^property.code =  #status
   * ^property.valueCode =  #deprecated
+* #3815 "תל ציון" "TEL TSIYON"
+* #3861 "עשהאל" "ASA'EL"
+* #3862 "גבעות הרואה" "GIV'OT HARO'E"
+* #3864 "בית חגלה" "BET HOGLA"
+* #3865 "משמר יהודה" "MISHMAR YEHUDA"
+* #3868 "שחרית" "SHAHARIT"
+* #3869 "אביגיל" "AVIGAYIL"

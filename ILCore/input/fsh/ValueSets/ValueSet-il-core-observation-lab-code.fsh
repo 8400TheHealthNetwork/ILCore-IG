@@ -3,7 +3,7 @@ Id: il-core-observation-lab-code
 Title: "IL Core Observation Lab Code"
 Description: "A list of lab-code codes for lab observations for the IL Core"
 * ^url = $vs-il-core-observation-lab-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

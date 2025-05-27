@@ -1,0 +1,92 @@
+{
+  "resourceType": "ImmunizationRecommendation",
+  "id": "hep-a-recommendation",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-immunization-recommendation"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:1.3.6.1.4.1.21367.2005.3.7.1235"
+    }
+  ],
+  "patient": {
+    "reference": "Patient/patient-israeli"
+  },
+  "date": "2015-02-09T11:04:15.817-05:00",
+  "authority": {
+    "reference": "Organization/hospital-unit"
+  },
+  "recommendation": [
+    {
+      "vaccineCode": [
+        {
+          "coding": [
+            {
+              "code": "14745005",
+              "system": "http://snomed.info/sct",
+              "display": "Hepatitis A vaccine"
+            }
+          ]
+        }
+      ],
+      "forecastStatus": {
+        "text": "Not Complete"
+      },
+      "dateCriterion": [
+        {
+          "code": {
+            "coding": [
+              {
+                "code": "earliest",
+                "system": "http://mockup.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
+                "display": "Earliest Date"
+              }
+            ]
+          },
+          "value": "2015-12-01T00:00:00-05:00"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "code": "recommended",
+                "system": "http://mockup.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
+                "display": "Recommended"
+              }
+            ]
+          },
+          "value": "2015-12-01T00:00:00-05:00"
+        },
+        {
+          "code": {
+            "coding": [
+              {
+                "code": "overdue",
+                "system": "http://mockup.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
+                "display": "Past Due Date"
+              }
+            ]
+          },
+          "value": "2016-12-28T00:00:00-05:00"
+        }
+      ],
+      "description": "First sequence in protocol",
+      "series": "Vaccination Series 1",
+      "doseNumberPositiveInt": 1,
+      "seriesDosesPositiveInt": 3,
+      "supportingImmunization": [
+        {
+          "reference": "Immunization/immunization-with-vaccine-code"
+        }
+      ],
+      "supportingPatientInformation": [
+        {
+          "reference": "Observation/height-measurement"
+        }
+      ]
+    }
+  ]
+}

@@ -7,7 +7,7 @@ Description: "Extension: Immigration information for patient - for the purpose o
 * ^url = $ext-patient-immigration
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 * . ^comment = "In case of an Aliyah (A jew immigrating to Israel), the destination should be 'IL' (Israel)"

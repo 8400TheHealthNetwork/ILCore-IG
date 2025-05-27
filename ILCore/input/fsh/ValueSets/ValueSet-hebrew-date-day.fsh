@@ -4,7 +4,7 @@ Title: "Hebrew Date Day"
 Description: "Codes for Hebrew date days"
 
 * ^url = $vs-hebrew-date-day
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

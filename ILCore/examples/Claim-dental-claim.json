@@ -1,0 +1,114 @@
+{
+  "resourceType": "Claim",
+  "id": "dental-claim",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-claim"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://happyvalley.com/claim",
+      "value": "12345"
+    }
+  ],
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "code": "oral",
+        "system": "http://terminology.hl7.org/CodeSystem/claim-type"
+      }
+    ]
+  },
+  "use": "claim",
+  "originalPrescription": {
+    "reference": "ILCoreMedicationRequest/metamizole-for-gangreenous-tonsolitis"
+  },
+  "patient": {
+    "reference": "Patient/ptient-israeli"
+  },
+  "created": "2014-08-16",
+  "insurer": {
+    "reference": "Organization/ministry-of-health"
+  },
+  "provider": {
+    "reference": "Organization/meir-hospital"
+  },
+  "payee": {
+    "party": {
+      "reference": "Organization/meir-hospital"
+    },
+    "type": {
+      "coding": [
+        {
+          "code": "provider"
+        }
+      ]
+    }
+  },
+  "priority": {
+    "coding": [
+      {
+        "code": "normal"
+      }
+    ]
+  },
+  "careTeam": [
+    {
+      "sequence": 1,
+      "provider": {
+        "reference": "Practitioner/md"
+      }
+    }
+  ],
+  "diagnosis": [
+    {
+      "sequence": 1,
+      "diagnosisCodeableConcept": {
+        "coding": [
+          {
+            "code": "123456"
+          }
+        ]
+      }
+    }
+  ],
+  "insurance": [
+    {
+      "sequence": 1,
+      "focal": true,
+      "identifier": {
+        "system": "http://happyvalley.com/claim",
+        "value": "12345"
+      },
+      "coverage": {
+        "reference": "Coverage/9876B1"
+      }
+    }
+  ],
+  "item": [
+    {
+      "sequence": 1,
+      "careTeamSequence": [
+        1
+      ],
+      "productOrService": {
+        "coding": [
+          {
+            "code": "1200"
+          }
+        ]
+      },
+      "servicedDate": "2014-08-16",
+      "unitPrice": {
+        "value": 135.57,
+        "currency": "USD"
+      },
+      "net": {
+        "value": 135.57,
+        "currency": "USD"
+      }
+    }
+  ]
+}

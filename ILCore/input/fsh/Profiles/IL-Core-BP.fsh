@@ -6,7 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 
 * ^url = $ILBP
 * insert ConformanceMetadata
-* ^status = #draft
+* ^status = #active
 
 * ^contact[0].telecom[0].system = #email
 * ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
@@ -17,12 +17,22 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
 
-* code ^definition = "Code specifying blood pressure measurement type"
-  * coding = $loinc#85354-9
+* code.coding ^definition = "Code specifying blood pressure measurement type"
+* code.coding ^slicing.discriminator.type = #value
+* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.rules = #open
+* code.coding contains ilcore 1..1
+* code.coding[ilcore].system = $loinc (exactly)
+* code.coding[ilcore].code = #85354-9 (exactly)
+* code.coding[ilcore].display = "Blood pressure panel with all children optional" (exactly)
+* value[x] 0..0
+* value[x] ^comment = "Should be filled in the 'component' elements"
+* referenceRange 0..0
+* referenceRange  ^comment = "Should be filled in the 'component' elements"
 * component ^slicing.discriminator[0].type = #value
-* component ^slicing.discriminator[0].path = "coding.system"
+* component ^slicing.discriminator[0].path = "code.coding.system"
 * component ^slicing.discriminator[1].type = #value
-* component ^slicing.discriminator[1].path = "coding.code"
+* component ^slicing.discriminator[1].path = "code.coding.code"
 * component ^slicing.rules = #open
 * component ^slicing.ordered = false
 * component contains SystolicBP 1..1 and DiastolicBP 1..1

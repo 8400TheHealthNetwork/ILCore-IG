@@ -2,7 +2,7 @@ CodeSystem: HebrewDateMonth
 Id: hebrew-date-month
 Title: "Hebrew Date Month"
 Description: "Codes for Hebrew date months"
-* ^status = #draft
+* ^status = #active
 * ^url = $hebrew-date-month
 * ^content = #complete
 * ^valueSet = $vs-hebrew-date-month

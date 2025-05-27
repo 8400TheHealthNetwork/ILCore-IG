@@ -1,0 +1,57 @@
+{
+  "resourceType": "ServiceRequest",
+  "id": "hemoglobin-assay",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-service-request-lab"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "108252007",
+          "display": "Laboratory procedure (procedure)"
+        }
+      ]
+    }
+  ],
+  "status": "active",
+  "intent": "order",
+  "code": {
+    "coding": [
+      {
+        "code": "718-7",
+        "system": "http://loinc.org",
+        "display": "Hemoglobin [Mass/volume] in Blood"
+      }
+    ],
+    "text": "Hemoglobin [Mass/volume] in Blood"
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli",
+    "display": "Amy Shaw"
+  },
+  "encounter": {
+    "reference": "Encounter/home-visit"
+  },
+  "occurrenceDateTime": "2024-10-13",
+  "authoredOn": "2024-10-13T10:59:38-08:00",
+  "requester": {
+    "reference": "Practitioner/md"
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "version": "http://snomed.info/sct/731000124108",
+          "code": "386663009",
+          "system": "http://snomed.info/sct",
+          "display": "Bicycle accident (event)"
+        }
+      ],
+      "text": "Bicycle accident"
+    }
+  ]
+}

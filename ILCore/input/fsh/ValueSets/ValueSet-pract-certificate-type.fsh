@@ -3,7 +3,7 @@ Id: practitioner-certificate-type
 Title: "Practitioner Certificate Types"
 Description: "A list of codes for certificate types for all medical practitioners"
 * ^url = $vs-pract-certificate-type
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

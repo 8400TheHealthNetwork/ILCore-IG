@@ -4,7 +4,8 @@ InstanceOf: ILCoreEncounter
 Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Breast Scraening</div>"
 * text.status = #generated
-
+* extension[0].url = $modeOfArrival
+* extension[0].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0430#C "Car"
 * identifier[0].system = "http://fhir.hospital-emr.co.il/identifier/entity-id/encounter"
 * identifier[0].value = "123241"
 * status = #in-progress
@@ -18,7 +19,7 @@ Usage: #example
 * participant.type.coding[0].code = #PPRF
 * participant.type.coding[0].display = "primary performer"
 * participant.individual.reference = "Practitioner/practitioner-md"
-* diagnosis[0].condition.reference = "Condition/condition-type-1-diabetes"
+* diagnosis[0].condition.reference = "Condition/type-1-diabetes"
 * diagnosis[0].use.coding.system = "http://terminology.hl7.org/CodeSystem/diagnosis-role"
 * diagnosis[0].use.coding.code = #AD
 * diagnosis[0].use.coding.display = "Admission diagnosis"

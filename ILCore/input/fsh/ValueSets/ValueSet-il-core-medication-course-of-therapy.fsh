@@ -6,7 +6,7 @@ Title: "ILCore Medication Course Of Therapy type"
 Description: "Codes for Medication Course Of Therapy"
 
 * ^url = $vs-il-core-medication-course-of-therapy-type
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

@@ -3,7 +3,7 @@ Id: il-core-urn
 Title: "CodeSyestem for URNs"
 Description: "Codes for for URNs of different kinds, instead of using urn:ietf:rfc:3986 and urn:iso:std:iso:3166 as CodeSystem identifiers"
 
-* ^status = #draft
+* ^status = #active
 // * ^url = $urn
 * ^content = #complete
 * insert ConformanceMetadata

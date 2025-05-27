@@ -4,7 +4,7 @@ Title: "Yarpa Medication Code"
 Description: "Codes for medications according to 'Yarpa' catalogue"
 
 * ^url = $vs-yarpa-medication-code
-* ^status = #draft
+* ^status = #active
 * ^version = "0.13.0"
 * ^experimental = false
 

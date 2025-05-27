@@ -7,9 +7,7 @@ Description: "Adds several Israel-specific extensions and constraints to the Dos
 
 * ^url = $ILDosage
 * insert ConformanceMetadata
-* ^status = #draft
-
-
+* ^status = #active
 * ^contact[0].telecom[0].use = #work
 * ^jurisdiction[0] = urn:iso:std:iso:3166#IL
 * ^copyright = "Israeli Ministry of Health" 

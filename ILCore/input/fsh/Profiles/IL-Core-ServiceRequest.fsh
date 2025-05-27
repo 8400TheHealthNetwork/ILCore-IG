@@ -6,9 +6,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 
 * ^url = $ILServiceRequest
 * insert ConformanceMetadata
-* ^status = #draft
-
-
+* ^status = #active
 * . ^short = "ILCore ServiceRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ServiceRequest resource profile."
 * . ^isModifier = false
@@ -28,12 +26,11 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 * category ^slicing.rules = #open
 * category contains 
     il-core 0..*
+* category[il-core] from $vs-il-core-service-category (required)
 * category[il-core].coding
   * system 1..1
-  * system = $sct
   * code 1..1
   * display 1..1
-* category[il-core] from $vs-il-core-service-category (required)
 * code 1..1
 * code from $vs-il-core-procedure-code (extensible)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreLocation or ILCoreDevice)

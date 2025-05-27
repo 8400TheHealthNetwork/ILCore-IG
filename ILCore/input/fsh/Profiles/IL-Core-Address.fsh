@@ -7,7 +7,7 @@ Description: "Adds several Israel-specific extensions and constraints, plus geoc
 
 * ^url = $ILAddress
 * insert ConformanceMetadata
-* ^status = #draft
+* ^status = #active
 
 
 * ^contact[0].telecom[0].use = #work

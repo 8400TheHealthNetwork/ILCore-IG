@@ -1,4 +1,4 @@
-Instance:   speciment-child
+Instance:   serum-specimen-from-patient-child
 InstanceOf: ILCoreSpecimen
 Usage: #example
 
@@ -43,8 +43,8 @@ Usage: #example
 *  condition.coding[0].system = "http://terminology.hl7.org/CodeSystem/v2-0493"
 *  condition.coding[0].code = #COOL
 *  condition.coding[0].display = "Cool"
-*  extension[processing-location].valueReference.reference = "Location/location-hospital-unit"
-*  extension[processing-location].valueReference.type = #Location 
-*  extension[processing-practitioner].valueReference.reference = "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
-*  extension[processing-practitioner].valueReference.type = #Practitioner
+*  processing.extension[processing-location].valueReference.reference = "Location/hospital-unit"
+*  processing.extension[processing-location].valueReference.type = #Location 
+*  processing.extension[processing-practitioner].valueReference.reference = "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+*  processing.extension[processing-practitioner].valueReference.type = #Practitioner
 

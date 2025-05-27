@@ -1,10 +1,11 @@
-Instance: observation-VS-cuff-size
+Instance: head-circumference
 InstanceOf: ILCoreVitalSigns
 Usage: #example
-Title: "Observation - hight measurement"
-Description: "Observation - hight measurement"
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of Hight - 1.72 Meters</div>"
+Title: "Observation - head circumference"
+Description: "Observation - head circumference"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of head circumference - 34.2 cm</div>"
 * text.status = #generated
+* extension[bodyPosition].valueCodeableConcept = $sct#33586001 "Sitting position (finding)"
 * status = #final
 * category[VSCat] = $obs-cat#vital-signs "Vital Signs"
 * code = $loinc#9843-4 "Head Occipital-frontal circumference"
@@ -23,4 +24,6 @@ Description: "Observation - hight measurement"
 * referenceRange.high.code = #cm
 * performer.reference = "Practitioner/practitioner-nurse"
 * effectiveDateTime = "2021-02-20"
+* encounter = Reference(Encounter/home-visit)
+* method = $sct#41751005 "Anatomic measurement (procedure)"
 

@@ -8,12 +8,12 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 * text.status = #generated
 * status = #completed
 * intent = #order
-* category[0].coding[0] = $il-core-medication-category#community-hmo "Community Care/HMO"
+* category[0].coding[0] = $il-core-medication-request-category#community-hmo "Community Care/HMO"
 * medicationCodeableConcept.coding[0] = $sct#22165008 "Metamizole sodium (substance)"
-* subject.reference = "Patient/1"
+* subject.reference = "Patient/patient-immigrant"
 * subject.type = "Patient"
 * subject.display = "Ben Binyamini"
-* encounter.reference = "Encounter/123"
+* encounter.reference = "Encounter/community-consultation"
 * encounter.type = "Encounter" 
 * encounter.display = "GP HMO visit"
 * authoredOn = "2022-12-10"
@@ -21,8 +21,8 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 * requester.type = "Practitioner" 
 * requester.display = "Dr. Moshe Ben Haim"
 * supportingInformation[bodyWeight].type = "Observation"  
-* supportingInformation[bodyWeight].reference = "Observation/1"
-* recorder.reference = "Practitioner/10"
+* supportingInformation[bodyWeight].reference = "Observation/hight-measurement"
+* recorder.reference = "Practitioner/practitioner-md"
 // * recorder.type = GP // can't be right
 * reasonCode.coding = $sct#652005 "Gangrenous tonsillitis"
 * courseOfTherapyType.coding = $HL7medreqCOT#acute "Short course (acute) therapy"

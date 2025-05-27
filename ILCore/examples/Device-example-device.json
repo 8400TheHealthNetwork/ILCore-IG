@@ -1,0 +1,27 @@
+{
+  "resourceType": "Device",
+  "id": "example-device",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-device"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://goodcare.org/devices/id",
+      "value": "345675"
+    }
+  ],
+  "definition": {
+    "reference": "DeviceDefinition/definition-example"
+  },
+  "patient": {
+    "reference": "Patient/patient-israeli"
+  },
+  "owner": {
+    "reference": "Organization/hospital-department"
+  },
+  "location": {
+    "reference": "Location/hospital-unit"
+  }
+}

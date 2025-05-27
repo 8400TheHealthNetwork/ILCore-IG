@@ -7,9 +7,6 @@ Description: "Israel Core proposed constraints and extensions on the Media Resou
 * ^url = $ILMedia
 * insert ConformanceMetadata
 * ^status = #draft
-
-
-
 * . ^short = "ILCore Media Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Media resource profile."
 * . ^isModifier = false
@@ -17,7 +14,6 @@ Description: "Israel Core proposed constraints and extensions on the Media Resou
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
-
 
 * basedOn only Reference(ILCoreServiceRequest or ILCoreCarePlan)
 * subject only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreGroup or ILCoreDevice or ILCoreSpecimen or ILCoreLocation) 

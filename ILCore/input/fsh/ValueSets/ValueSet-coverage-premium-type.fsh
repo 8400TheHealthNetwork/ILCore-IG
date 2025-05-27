@@ -2,7 +2,7 @@ ValueSet: ILCorePremiumType
 Id: il-core-premium-type
 Title: "IL Core Premium Type codes"
 Description: "Codes for Types of premium payment methods"
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 * ^url = $vs-coverage-premium-type

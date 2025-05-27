@@ -6,7 +6,7 @@ Description: "A coded representation of the city, town or settlement"
 * ^url = $ext-ct
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "Address.city"
 * value[x] only CodeableConcept

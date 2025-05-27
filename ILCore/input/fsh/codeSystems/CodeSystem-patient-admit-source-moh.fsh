@@ -4,7 +4,7 @@ Title: "Patient Admit Source MoH"
 Description: "Moh Codes for Patient Admit Source 
  **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 
-* ^status = #draft
+* ^status = #active
 * ^url = $patient-admit-source-moh
 * ^content = #example
 * ^valueSet = $vs-patient-admit-source-moh

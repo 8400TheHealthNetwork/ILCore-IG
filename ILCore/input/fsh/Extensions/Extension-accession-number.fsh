@@ -1,12 +1,12 @@
 Extension: AccessionNumber
 Id: ext-accession-number
-Title: "Ext: Accession Numner"
-Description: "Extension: Statistical Area. The Accession Number of the ImagingStudy"
+Title: "Ext: Accession Number"
+Description: "Extension: Accession Number. The Accession Number of the ImagingStudy"
 * ^language = #en-US
 * ^url = $ext-accession-number
 * insert ConformanceMetadata
 
-* ^status = #draft
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "ImagingStudy" 
 

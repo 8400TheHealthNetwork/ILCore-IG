@@ -3,7 +3,7 @@ Id: il-core-allergy-intolerance-code
 Title: "IL Core Allergy Intolerance Code"
 Description: "A list of codes for Allergy Intolerance for the IL Core"
 * ^url = $vs-il-core-allergy-intolerance-code
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 

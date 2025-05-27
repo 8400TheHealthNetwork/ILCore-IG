@@ -4,7 +4,7 @@ Title: "Tofes17 Reject Codes"
 Description: "קודי שגיאה לתהליכים הקשורים לטופס 17"
 
 * ^url = $vs-tofes17-reject-codes
-* ^status = #draft
+* ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
 * ^publisher = "Israeli Ministry of Health, Digital Health Unit"

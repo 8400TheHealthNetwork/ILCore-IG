@@ -26,3 +26,5 @@ Usage: #definition
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false
+
+// Verifid! // Kippi - 13/05/25

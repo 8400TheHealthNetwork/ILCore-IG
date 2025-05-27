@@ -18,7 +18,7 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * extension contains
     $modeOfArrival named modeOfArrival 0..1 and
     $ext-encounter-paying-entity named paying-entity 0..* and
-    $ext-movement-sequence-number named movement-number 0..1
+    $ext-movement-number named movement-number 0..1
 * extension[modeOfArrival].value[x] only Coding
 * extension[modeOfArrival].valueCoding from $vs-patient-mode-of-arrival-moh (example)
 * extension[paying-entity] ^short = "Extension: Encounter Paying Entity"

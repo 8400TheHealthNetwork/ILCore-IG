@@ -4,7 +4,8 @@ InstanceOf: ILCoreEncounter
 Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Breast Scraening</div>"
 * text.status = #generated
-
+* extension[0].url = $modeOfArrival
+* extension[0].valueCoding = http://terminology.hl7.org/CodeSystem/v2-0430#C "Car"
 * identifier[0].system = "http://fhir.hospital-emr.co.il/identifier/entity-id/encounter"
 * identifier[0].value = "123241"
 * status = #in-progress

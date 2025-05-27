@@ -5,6 +5,10 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Community Consultation</div>"
 * text.status = #generated
 
+* extension[paying-entity].url = $ext-encounter-paying-entity
+* extension[paying-entity].valueCodeableConcept = $payer#101 "קופת חולים כללית"
+* extension[movement-number].url = $ext-movement-number
+* extension[movement-number].valueString = "12345"
 * identifier[0].system = "http://fhir.community-emr.co.il/identifier/entity-id/encounter"
 * identifier[0].value = "234234234"
 * status = #in-progress

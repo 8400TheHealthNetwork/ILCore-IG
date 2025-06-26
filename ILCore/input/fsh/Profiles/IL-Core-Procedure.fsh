@@ -10,7 +10,7 @@ Description: "Israel Core proposed constraints and extensions on the Procedure R
 * . ^short = "ILCore Procedure Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Procedure resource profile."
 * . ^isModifier = false
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use

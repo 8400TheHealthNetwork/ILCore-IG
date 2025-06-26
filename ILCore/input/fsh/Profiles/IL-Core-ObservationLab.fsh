@@ -4,7 +4,7 @@ Id: il-core-observation-lab
 Title: "ILCore Observation Lab Profile"
 Description: "Israel Core proposed constraints and extensions on the ILCoreObservation Resource for laboratory observations"
 * ^url = $ILObservationLab
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Observation Lab Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the profile ILCoreObservationLabcd resource profile."

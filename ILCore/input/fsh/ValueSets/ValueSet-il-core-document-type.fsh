@@ -3,7 +3,7 @@ Id: il-core-document-type
 Title: "IL Core Document Type codes"
 Description: "Codes for Document Types"
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 * ^url = $vs-il-core-document-type
 * include codes from valueset http://hl7.org/fhir/ValueSet/c80-doc-typecodes

@@ -6,7 +6,7 @@ Title: "ILCore ActivityDefinition Profile"
 Description: "Adds several Israel-specific extensions and constraints, plus geocode extension to the ActivityDefinition datatype"
 
 * ^url = $ILActivityDefinition
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

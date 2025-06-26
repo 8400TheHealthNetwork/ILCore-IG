@@ -5,7 +5,7 @@ Title: "ILCore Condition Profile"
 Description: "Israel Core proposed constraints and extensions on the Condition Resource"
 
 * ^url = $ILCondition
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 
 * . ^short = "ILCore Condition Profile"

@@ -5,7 +5,7 @@ Title: "ILCore Media Profile"
 Description: "Israel Core proposed constraints and extensions on the Media Resource"
 
 * ^url = $ILMedia
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 * . ^short = "ILCore Media Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Media resource profile."

@@ -7,7 +7,7 @@ Description: "Moh Codes for Patient Visit Reason
 // * ^language = #he-IL
 * ^url = $vs-patient-visit-reason-moh
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = true
 
 * include codes from system $patient-visit-reason-moh

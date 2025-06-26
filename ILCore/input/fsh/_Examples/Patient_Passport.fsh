@@ -11,6 +11,7 @@ Usage: #example
 * identifier[ppn].value = "8876543"
 * extension[hmo].valueCodeableConcept = $payer#101 "קופת חולים כללית"
 * extension[birthPlace].valueAddress.line = "New york City, NY, USA"
+* extension[birthPlace].valueAddress.country = #USA
 * extension[birthSex].valueCode = #M
 * active = true
 * name.family = "Smith"

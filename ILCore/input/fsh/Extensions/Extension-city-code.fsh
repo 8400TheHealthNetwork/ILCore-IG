@@ -4,7 +4,7 @@ Title: "Ext: City Code"
 Description: "A coded representation of the city, town or settlement"
 
 * ^url = $ext-ct
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context.type = #element

@@ -6,7 +6,7 @@ Title: "ILCore Flag Profile"
 Description: "Adds Isareli constraints to the Flag datatype"
 
 * ^url = $ILFlag
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

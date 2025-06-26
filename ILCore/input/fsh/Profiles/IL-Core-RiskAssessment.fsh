@@ -5,7 +5,7 @@ Title: "ILCore RiskAssessment Profile"
 Description: "Israel Core proposed constraints and extensions on the RiskAssessment Resource"
 
 * ^url = $ILRiskAssessment
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

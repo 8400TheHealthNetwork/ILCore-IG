@@ -5,7 +5,7 @@ Title: "ILCore Observation Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource"
 
 * ^url = $ILObservation
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Observation Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Observation resource profile."

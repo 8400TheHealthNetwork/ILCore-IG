@@ -5,7 +5,7 @@ Description: "קוד מקצוע לעוסק בסיעוד לפי רישוי משר
 
 * ^url = $vs-practitioner-nurse-profession
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * $practitioner-profession-moh#101 "אח/ות מוסמכ/ת" 

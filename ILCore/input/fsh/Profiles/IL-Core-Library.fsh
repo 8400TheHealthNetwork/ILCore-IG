@@ -5,7 +5,7 @@ Title: "ILCore Library Profile"
 Description: "Israel Core proposed constraints and extensions on the Library Resource"
 
 * ^url = $ILLibrary
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

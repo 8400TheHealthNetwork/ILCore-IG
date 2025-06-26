@@ -4,7 +4,7 @@ Title: "קוד מקצוע לעוסק בבריאות"
 Description: "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות"
 
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^url = $practitioner-profession-moh
 * ^content = #complete
 * ^valueSet = $vs-practitioner-profession-moh

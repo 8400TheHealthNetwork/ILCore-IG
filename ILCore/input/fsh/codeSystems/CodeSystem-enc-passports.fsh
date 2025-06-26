@@ -6,7 +6,7 @@ Description: "An encoded country specific URI for passport numbers"
 * ^status = #active
 * ^content = #complete
 * ^valueSet = $vs-pp-enc-uri
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false
 * ^extension[0].url = $effective

@@ -4,7 +4,7 @@ Title: "Ext: Encounter Visitor Type"
 Description: "Classification of the visitor type (סוג מבקר/סוג כניסה) for the Encounter"
 Context: Encounter.subject
 * ^url = $ext-encounter-visitor-type
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context.type = #element

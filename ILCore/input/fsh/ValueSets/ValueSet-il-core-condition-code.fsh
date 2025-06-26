@@ -4,7 +4,7 @@ Title: "IL Core Condition Code"
 Description: "A list of codes for conditions for the IL Core"
 * ^url = $vs-il-core-condition-code
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $sct where concept descendent-of #404684003 "Clinical finding (finding)"

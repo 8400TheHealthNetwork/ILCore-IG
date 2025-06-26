@@ -6,7 +6,7 @@ Title: "ILCore Organization Profile"
 Description: "Israel Core proposed constraints and extensions on the Organization Resource"
 
 * ^url = $ILOrganization
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Organization Profile"
 * . ^definition = "The Organization Profile is based upon the core FHIR Organization Resource"

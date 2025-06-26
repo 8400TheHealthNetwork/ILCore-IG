@@ -4,7 +4,7 @@ Title: "IL Core Substance Codes"
 Description: "A list of codes for Substances for the IL Core"
 * ^url = $vs-il-core-substance
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #105590001 "Substance (substance)"

@@ -5,7 +5,7 @@ Title: "ILCore DiagnosticReport Profile"
 Description: "Israel Core proposed constraints and extensions on the DiagnosticReport Resource"
 
 * ^url = $ILDiagnosticReport
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore DiagnosticReport Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the DiagnosticReport resource profile."

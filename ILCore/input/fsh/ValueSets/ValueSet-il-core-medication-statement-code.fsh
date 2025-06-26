@@ -5,7 +5,7 @@ Description: "Codes for Medication statement Code"
 
 * ^url = $vs-il-core-medication-statement-code
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from valueset $vs-il-core-medication-code

@@ -5,7 +5,7 @@ Description: "Codes for countries according to ISO 3166"
 
 * ^url = $vs-jurisdiction
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $country-codes

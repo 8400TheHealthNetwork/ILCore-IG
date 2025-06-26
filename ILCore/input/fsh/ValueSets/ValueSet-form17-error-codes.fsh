@@ -5,7 +5,7 @@ Description: "קודי שגיאה לתהליכים הקשורים לטופס 17"
 
 * ^url = $vs-tofes17-error-codes
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 * ^publisher = "Israeli Ministry of Health, Digital Health Unit"
 * ^contact[0].telecom[0].system = #email

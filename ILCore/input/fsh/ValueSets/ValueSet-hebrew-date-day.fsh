@@ -5,7 +5,7 @@ Description: "Codes for Hebrew date days"
 
 * ^url = $vs-hebrew-date-day
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $hebrew-date-day

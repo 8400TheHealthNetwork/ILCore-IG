@@ -4,7 +4,7 @@ Title: "Ext: Event Occurrence Location"
 Description: "Extension: Location in which an event occurred"
 
 * ^url = $ext-event-occurrence-location
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context.type = #element

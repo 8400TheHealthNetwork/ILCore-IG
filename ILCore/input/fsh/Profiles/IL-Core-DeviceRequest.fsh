@@ -5,11 +5,8 @@ Title: "ILCore DeviceRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the DeviceRequest Resource"
 
 * ^url = $ILDeviceRequest
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
-
-
-
 * . ^short = "ILCore DeviceRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the DeviceRequest resource profile."
 * . ^isModifier = false
@@ -19,10 +16,11 @@ Description: "Israel Core proposed constraints and extensions on the DeviceReque
 * ^extension[=].valueInteger = 0
 
 * instantiatesCanonical only Canonical(ILCorePlanDefinition or ILCoreActivityDefinition)
+* codeCodeableConcept from https://hl7.org/fhir/R4/valueset-device-kind.html (preferred)
 * codeReference only Reference(ILCoreDevice)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreLocation or ILCoreDevice)
 * encounter only Reference(ILCoreEncounter)
-* requester only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreDevice)
+* requester only Reference(ILCoreDevice or ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization)
 * performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam or ILCoreHealthcareService or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport or ILCoreDocumentReference)
 * insurance only Reference(ILCoreCoverage or ILCoreClaimResponse)

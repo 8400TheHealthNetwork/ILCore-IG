@@ -5,7 +5,7 @@ Title: "ILCore Encounter Profile"
 Description: "Israel Core proposed constraints and extensions on the Encounter Resource"
 
 * ^url = $ILEncounter
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Encounter Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Encounter resource profile."

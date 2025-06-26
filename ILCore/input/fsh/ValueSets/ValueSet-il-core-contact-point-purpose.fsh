@@ -5,7 +5,7 @@ Description: "Codes for ontac Point Purpose"
 
 * ^url = $vs-il-core-contact-point-purpose
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $il-core-contact-point-purpose

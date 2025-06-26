@@ -4,7 +4,7 @@ Title: "Ext: IL Core Processing Location"
 Description: "Extension: IL Core Processing Location"
 
 * ^url = $ext-processing-location
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context.type = #element

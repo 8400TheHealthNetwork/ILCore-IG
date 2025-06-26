@@ -5,7 +5,7 @@ Title: "ILCore Molecular Sequence Profile"
 Description: "Israel Core proposed constraints and extensions on the MolecularSequence Resource"
 
 * ^url = $ILMolecularSequence
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

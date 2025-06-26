@@ -4,7 +4,7 @@ Title: "IL Core procedure Codes"
 Description: "A list of codes for procedures for the IL Core"
 * ^url = $vs-il-core-procedure-code
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from valueset $vs-icd9-cm-procedures

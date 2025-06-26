@@ -5,7 +5,7 @@ Title: "ILCore Measure Profile"
 Description: "Israel Core proposed constraints and extensions on the Measure Resource"
 
 * ^url = $ILMeasure
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

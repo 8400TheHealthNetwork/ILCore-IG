@@ -76,6 +76,7 @@ Alias: $legal-entity =                  http://fhir.health.gov.il/identifier/leg
 Alias: $moh-inst-symbol =               http://institutions.health.gov.il/Institutions
 Alias: $moh-hosp-department =           http://fhir.health.gov.il/identifier/moh-hospital-department
 Alias: $enc =                           http://fhir.health.gov.il/identifier/encrypted-id-primary-moh
+Alias: $enc-pna =                       http://fhir.health.gov.il/identifier/encrypted-pna-id-primary-moh
 Alias: $moe-inst =                      http://fhir.health.gov.il/identifier/moe-institute-symbol
 Alias: $practitioner-license-moh =      http://practitioners.health.gov.il/Practitioners
 Alias: $practitioner-certificate =      http://practitioners.health.gov.il/practitioner-certificate 
@@ -90,6 +91,7 @@ Alias: $stat-area-id =                  http://fhir.health.gov.il/identifier/cbs
 // Extensions - ILCore
 Alias: $ext-ct =                        http://fhir.health.gov.il/StructureDefinition/ext-city-code
 Alias: $ext-hmo =                       http://fhir.health.gov.il/StructureDefinition/ext-il-hmo
+Alias: $ext-device-dispense-when-handed-over = http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over
 Alias: $ext-accession-number =          http://fhir.health.gov.il/StructureDefinition/ext-accession-number
 Alias: $ext-parent-name =               http://fhir.health.gov.il/StructureDefinition/ext-parent-name
 Alias: $ext-medication-course-of-therapy-type =  http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type
@@ -114,6 +116,7 @@ Alias: $ext-specimen-collector-reference = http://fhir.health.gov.il/StructureDe
 Alias: $ext-encounter-visitor-type =    http://fhir.health.gov.il/StructureDefinition/ext-encounter-visitor-type
 Alias: $ext-encounter-paying-entity =   http://fhir.health.gov.il/StructureDefinition/ext-encounter-paying-entity
 Alias: $ext-med-req-procedure-reference = http://fhir.health.gov.il/StructureDefinition/ext-medication-request-procedure-reason-reference
+Alias: $ext-patient-birth-place =       http://fhir.health.gov.il/StructureDefinition/il-core-patient-birth-place
 
 // Extensions - external
 Alias: $ext-birth-place =               http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -255,6 +258,7 @@ Alias: $vs-il-core-medication-request-category = http://fhir.health.gov.il/Value
 Alias: $vs-il-core-medication-statement-category = http://fhir.health.gov.il/ValueSet/il-core-medication-statement-category
 Alias: $vs-il-core-medication-dispense-category = http://fhir.health.gov.il/ValueSet/il-core-medication-dospense-category
 Alias: $vs-il-core-medication-statement-code = http://fhir.health.gov.il/ValueSet/il-core-medication-statement-code
+Alias: $vs-il-core-medication-administration-code = http://fhir.health.gov.il/ValueSet/il-core-medication-administration-code
 Alias: $vs-il-core-medication-course-of-therapy-type = http://fhir.health.gov.il/ValueSet/il-core-medication-course-of-therapy-type
 Alias: $vs-il-core-manifestation =      http://fhir.health.gov.il/ValueSet/il-core-manifestation
 Alias: $vs-il-core-medication-code =    http://fhir.health.gov.il/ValueSet/il-core-medication-code
@@ -295,7 +299,7 @@ Alias: $vs-patient-release-type-moh =   http://fhir.health.gov.il/ValueSet/patie
 Alias: $vs-patient-mode-of-arrival-moh = http://fhir.health.gov.il/ValueSet/patient-mode-of-arrival-moh
 Alias: $vs-patient-visitor-type-moh =   http://fhir.health.gov.il/ValueSet/patient-visitor-type-moh
 Alias: $vs-encounter-paying-entity-moh = http://fhir.health.gov.il/ValueSet/encounter-paying-entity-moh
-
+Alias: $vs-il-core-extended-country-codes = http://fhir.health.gov.il/ValueSet/il-core-extended-country-codes
 
 // ValueSets - external
 Alias: $bodySite =                      http://hl7.org/fhir/ValueSet/body-site

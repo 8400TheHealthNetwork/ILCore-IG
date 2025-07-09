@@ -1,4 +1,4 @@
-Instance:   Immunization-with-product-code
+Instance:   immunization-with-product-code
 InstanceOf: ILCoreImmunization
 
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immunization with a Product code and SNOMED code</div>"

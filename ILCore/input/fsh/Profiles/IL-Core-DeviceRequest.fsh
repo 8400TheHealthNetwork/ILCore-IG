@@ -16,7 +16,7 @@ Description: "Israel Core proposed constraints and extensions on the DeviceReque
 * ^extension[=].valueInteger = 0
 
 * instantiatesCanonical only Canonical(ILCorePlanDefinition or ILCoreActivityDefinition)
-* codeCodeableConcept from https://hl7.org/fhir/R4/valueset-device-kind.html (preferred)
+* code[x] from $vs-il-core-device-type (preferred)
 * codeReference only Reference(ILCoreDevice)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreLocation or ILCoreDevice)
 * encounter only Reference(ILCoreEncounter)

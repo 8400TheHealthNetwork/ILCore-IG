@@ -1,6 +1,6 @@
 Profile: ILCoreSupplyDelivery
 Parent: SupplyDelivery
-Id: ilcore-supply-delivery
+Id: il-core-supply-delivery
 Title: "ILCore SupplyDelivery Profile"
 Description: "Israel Core Proposed constraints and extensions on the SupplyDelivery Resource."
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"

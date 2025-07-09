@@ -20,4 +20,4 @@ Description: "Israel Core proposed constraints and extensions on the Device Reso
 * owner only Reference(ILCoreOrganization)
 * location only Reference(ILCoreLocation)
 * parent only Reference(ILCoreDevice)
-* type from https://hl7.org/fhir/R4/valueset-device-type.html (preferred)
+* type from $vs-il-core-device-type (preferred)

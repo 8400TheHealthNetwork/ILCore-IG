@@ -4,7 +4,7 @@ Title: "Moh Form-17 Issue Code"
 Description: "קודי שגיאה \\ סירוב לתהליכים הקשורים לטופס 17"
 * ^status = #active
 * ^url = $moh-tofes17-issue-code
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false
 * ^publisher = "Israeli Ministry of Health, Digital Health Unit"

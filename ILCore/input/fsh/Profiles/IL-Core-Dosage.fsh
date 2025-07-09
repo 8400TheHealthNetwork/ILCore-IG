@@ -6,7 +6,7 @@ Title: "ILCore Dosage Profile"
 Description: "Adds several Israel-specific extensions and constraints to the Dosage datatype"
 
 * ^url = $ILDosage
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * ^contact[0].telecom[0].use = #work
 * ^jurisdiction[0] = urn:iso:std:iso:3166#IL
@@ -22,7 +22,7 @@ Description: "Adds several Israel-specific extensions and constraints to the Dos
 * asNeededCodeableConcept ^binding.strength = #extensible
 * site ^binding.strength = #extensible
 * route ^binding.strength = #extensible
-* method ^binding.strength = #preferred
+* method from $vs-il-core-medication-administration-code (preferred)
 * doseAndRate.type ^binding.strength = #extensible
 * doseAndRate.dose[x] from $vs-il-core-common-units-of-measure (extensible)
 * doseAndRate.dose[x] ^binding.extension.url = $maxValueSet

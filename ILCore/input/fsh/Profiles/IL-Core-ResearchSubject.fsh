@@ -5,7 +5,7 @@ Title: "ILCore ResearchSubject Profile"
 Description: "Israel Core proposed constraints and extensions on the ResearchSubject Resource"
 
 * ^url = $ILResearchSubject
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 * . ^short = "ILCoreResearchSubject Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ResearchSubject resource profile."

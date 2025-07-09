@@ -5,7 +5,7 @@ Title: "ILCore ImagingStudy Profile"
 Description: "Israel Core proposed constraints and extensions on the ImagingStudy Resource"
 
 * ^url = $ILImagingStudy
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

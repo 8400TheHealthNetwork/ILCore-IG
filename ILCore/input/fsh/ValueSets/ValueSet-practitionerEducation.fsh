@@ -5,7 +5,7 @@ Description: "קוד השכלה לעוסק בבריאות לפי רישוי מש
 
 * ^url = $vs-practitioner-education
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $practitioner-education

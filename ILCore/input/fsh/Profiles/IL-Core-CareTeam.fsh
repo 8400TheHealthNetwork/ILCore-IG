@@ -5,7 +5,7 @@ Title: "ILCore CareTeam Profile"
 Description: "Israel Core proposed constraints and extensions on the CareTeam Resource"
 
 * ^url = $ILCareTeam
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

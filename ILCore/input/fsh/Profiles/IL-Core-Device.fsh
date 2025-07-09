@@ -5,11 +5,8 @@ Title: "ILCore Device Profile"
 Description: "Israel Core proposed constraints and extensions on the Device Resource"
 
 * ^url = $ILDevice
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
-
-
-
 * . ^short = "ILCore Device Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Device resource profile."
 * . ^isModifier = false
@@ -18,10 +15,9 @@ Description: "Israel Core proposed constraints and extensions on the Device Reso
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
 
-
 * definition only Reference(ILCoreDeviceDefinition)
 * patient only Reference(ILCorePatient) 
 * owner only Reference(ILCoreOrganization)
 * location only Reference(ILCoreLocation)
 * parent only Reference(ILCoreDevice)
-
+* type from $vs-il-core-device-type (preferred)

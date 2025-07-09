@@ -5,7 +5,7 @@ Title: "ILCore Goal Profile"
 Description: "Israel Core proposed constraints and extensions on the Goal Resource"
 
 * ^url = $ILGoal
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 * . ^short = "ILCore Goal Profile"

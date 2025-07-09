@@ -5,7 +5,7 @@ Title: "ILCore CoverageEligibilityRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the CoverageEligibilityRequest Resource"
 
 * ^url = $ILCoverageEligibilityRequest
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

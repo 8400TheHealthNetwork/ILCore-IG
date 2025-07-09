@@ -5,7 +5,7 @@ Title: "ILCore MedicationRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationRequest Resource"
 
 * ^url = $ILMedicationRequest 
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore MedicationRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationRequest resource profile."

@@ -5,7 +5,7 @@ Description: "Codes for medications according to ILCore catalogue"
 
 * ^url = $vs-il-core-medication-code
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 // * include codes from system $moh-medication-code

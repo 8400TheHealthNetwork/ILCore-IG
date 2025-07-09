@@ -5,7 +5,7 @@ Title: "ILCore MedicationAdministration Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationAdministration Resource"
 
 * ^url = $ILMedicationAdministration
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore MedicationAdministration Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationAdministration resource profile."
@@ -40,7 +40,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationA
 * device only Reference(ILCoreDevice)
 * dosage.site ^binding.strength = #extensible
 * dosage.route ^binding.strength = #extensible
-* dosage.method ^binding.strength = #preferred
+* dosage.method from $vs-il-core-medication-administration-code (preferred)
 * dosage.dose from $vs-il-core-common-units-of-measure (extensible)
 * dosage.dose ^binding.extension.url = $maxValueSet
 * dosage.dose ^binding.extension.valueCanonical = $vs-il-core-units-of-measure

@@ -4,7 +4,7 @@ Title: "Ext: Movement Sequence-Number"
 Description: "Extension: Movement Sequence-Number. For the representation of a patient's movement number between hospital departments during a hospitalization"
 
 * ^url = $ext-movement-number
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context.type = #element

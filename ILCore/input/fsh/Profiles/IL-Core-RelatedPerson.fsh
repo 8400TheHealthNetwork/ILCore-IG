@@ -5,7 +5,7 @@ Title: "ILCore RelatedPerson Profile"
 Description: "Israel Core proposed constraints and extensions on the RelatedPerson Resource"
 
 * ^url = $ILRelatedPerson
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCoreRelatedPerson Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the RelatedPerson resource profile."
@@ -27,7 +27,8 @@ Description: "Israel Core proposed constraints and extensions on the RelatedPers
    il-id 0..1 and
    pna-id 0..1 and
    ppn 0..* and
-   enc 0..*
+   enc-il-id 0..* and
+   enc-pna-id 0..1
    
 * identifier.assigner only Reference(ILCoreOrganization)
 * identifier[il-id].value 1..1 MS
@@ -53,6 +54,17 @@ Description: "Israel Core proposed constraints and extensions on the RelatedPers
 * identifier[pna-id].value ^example.label = "Valid Example"
 * identifier[pna-id].assigner only Reference(ILCoreOrganization)
 
+* identifier[enc-pna-id] ^short = "Palestinian ID number"
+* identifier[enc-pna-id] ^definition = "Ecoded Palestinian National Identifier"
+* identifier[enc-pna-id] ^mustSupport = false
+* identifier[enc-pna-id].value 1..1 MS
+* identifier[enc-pna-id].value ^short = "A Palestininan ID number"
+* identifier[enc-pna-id].system 1..1 MS
+* identifier[enc-pna-id].system = $pna-id (exactly)
+* identifier[enc-pna-id] ^example.valueString = "000000018"
+* identifier[enc-pna-id] ^example.label = "Valid Example"
+* identifier[enc-pna-id].assigner only Reference(ILCoreOrganization)
+
 * identifier[ppn].system 1..1 MS
 * identifier[ppn].value 1..1 MS
 * identifier[ppn] ^short = "Passport Number"
@@ -65,16 +77,16 @@ Description: "Israel Core proposed constraints and extensions on the RelatedPers
 // * identifier[ppn].system ^example.valueCode = #http://hl7.org/fhir/sid/passport-USA
 // * identifier[ppn].system ^example.label = "Valid Example"
 
-* identifier[enc].value 1..1 MS
-* identifier[enc] ^short = "Person's Identifier - MoH encrypted"
-* identifier[enc] ^definition = "The person’s identifier after applying MoH’s standard primary encryption algorithm"
-* identifier[enc] ^mustSupport = false
-* identifier[enc].value ^short = "An encrypted identifier"
-* identifier[enc].system 1..1 MS
-* identifier[enc].system = $enc (exactly)
-* identifier[enc].value ^example.valueString = "000000018"
-* identifier[enc].value ^example.label = "Valid Example"
-* identifier[enc].assigner only Reference(ILCoreOrganization)
+* identifier[enc-il-id].value 1..1 MS
+* identifier[enc-il-id] ^short = "Person's Identifier - MoH encrypted"
+* identifier[enc-il-id] ^definition = "The person’s identifier after applying MoH’s standard primary encryption algorithm"
+* identifier[enc-il-id] ^mustSupport = false
+* identifier[enc-il-id].value ^short = "An encrypted identifier"
+* identifier[enc-il-id].system 1..1 MS
+* identifier[enc-il-id].system = $enc (exactly)
+* identifier[enc-il-id].value ^example.valueString = "000000018"
+* identifier[enc-il-id].value ^example.label = "Valid Example"
+* identifier[enc-il-id].assigner only Reference(ILCoreOrganization)
 
 * extension contains
     $ext-admin-parent-name named parentName 0..* 

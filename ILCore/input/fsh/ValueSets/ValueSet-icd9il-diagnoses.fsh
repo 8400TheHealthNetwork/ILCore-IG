@@ -6,7 +6,7 @@ Description: "codes of diagnoses from ICD9-IL"
 
 * ^url = $vs-icd9-il-diagnoses
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $icd9-il where type = "diagnosis"

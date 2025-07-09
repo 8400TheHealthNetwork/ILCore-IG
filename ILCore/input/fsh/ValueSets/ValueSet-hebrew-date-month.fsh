@@ -5,7 +5,7 @@ Description: "Codes for Hebrew date months"
 
 * ^url = $vs-hebrew-date-month
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $hebrew-date-month

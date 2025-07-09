@@ -6,7 +6,7 @@ Title: "ILCore Practitioner Profile"
 Description: "Israel Core proposed constraints and extensions on the Practitioner Resource"
 
 * ^url = $ILPractitioner
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Practitioner Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the practitioner resource profile."
@@ -30,6 +30,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
    molsa-sw-lic 0..1 and
    il-id 0..1 and
    pna-id 0..1 and
+   enc-pna-id 0..1 and
    ppn 0..* and
    enc-il-id 0..1 and
    enc-ppn 0..*
@@ -98,6 +99,17 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[pna-id] ^example.valueString = "000000018"
 * identifier[pna-id] ^example.label = "Valid Example"
 * identifier[pna-id].assigner only Reference(ILCoreOrganization)
+
+* identifier[enc-pna-id] ^short = "Palestinian ID number"
+* identifier[enc-pna-id] ^definition = "Ecoded Palestinian National Identifier"
+* identifier[enc-pna-id] ^mustSupport = false
+* identifier[enc-pna-id].value 1..1 MS
+* identifier[enc-pna-id].value ^short = "A Palestininan ID number"
+* identifier[enc-pna-id].system 1..1 MS
+* identifier[enc-pna-id].system = $pna-id (exactly)
+* identifier[enc-pna-id] ^example.valueString = "000000018"
+* identifier[enc-pna-id] ^example.label = "Valid Example"
+* identifier[enc-pna-id].assigner only Reference(ILCoreOrganization)
 
 * identifier[ppn].system 1..1 MS
 * identifier[ppn].value 1..1 MS

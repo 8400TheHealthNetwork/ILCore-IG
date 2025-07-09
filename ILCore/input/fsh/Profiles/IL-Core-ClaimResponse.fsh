@@ -5,7 +5,7 @@ Title: "ILCore ClaimResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the ClaimResponse Resource"
 
 * ^url = $ILClaimResponse
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 
 * . ^short = "ILCore ClaimResponse Profile"

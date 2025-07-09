@@ -5,7 +5,7 @@ Title: "ILCore AllergyIntolerance Profile"
 Description: "Israel Core proposed constraints and extensions on the AllergyIntolerance Resource"
 
 * ^url = $ILAllergyIntolerance
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 
 

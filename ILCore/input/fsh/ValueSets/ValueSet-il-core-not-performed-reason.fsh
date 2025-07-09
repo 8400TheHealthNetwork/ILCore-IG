@@ -4,7 +4,7 @@ Title: "IL Core procedure Reason"
 Description: "A list of codes for procedure reasons for the IL Core"
 * ^url = $vs-not-performed-reason
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $not-performed-reason

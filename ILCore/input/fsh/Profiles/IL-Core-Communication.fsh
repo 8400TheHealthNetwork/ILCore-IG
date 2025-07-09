@@ -5,7 +5,7 @@ Title: "ILCore Communication Profile"
 Description: "Israel Core proposed constraints and extensions on the Communication Resource"
 
 * ^url = $ILCommunication
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

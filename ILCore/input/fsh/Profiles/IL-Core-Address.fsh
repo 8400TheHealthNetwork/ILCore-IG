@@ -6,7 +6,7 @@ Title: "ILCore Address Profile"
 Description: "Adds several Israel-specific extensions and constraints, plus geocode extension to the Address datatype"
 
 * ^url = $ILAddress
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 
 

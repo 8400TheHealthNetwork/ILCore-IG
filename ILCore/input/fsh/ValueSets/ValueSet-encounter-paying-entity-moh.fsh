@@ -7,7 +7,7 @@ Description: "MoH Codes for the Paying Entity for the Encounter
 // * ^language = #he-IL
 * ^url = $vs-encounter-paying-entity-moh
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = true
 
 * include codes from system $payer

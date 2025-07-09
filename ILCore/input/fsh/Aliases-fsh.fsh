@@ -135,6 +135,7 @@ Alias: $maxValueSet =                   http://hl7.org/fhir/StructureDefinition/
 Alias: $modeOfArrival =                 http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 Alias: $body-position =                 http://hl7.org/fhir/StructureDefinition/observation-bodyPosition
 Alias: $contact-point-purpose =         http://hl7.org/fhir/StructureDefinition/contactpoint-purpose
+Alias: $alternate-reference =           http://hl7.org/fhir/StructureDefinition/alternate-reference
 
 // Codesystems - ILCore
 Alias: $icd9-il =                       http://fhir.health.gov.il/cs/icd9il
@@ -241,6 +242,7 @@ Alias: $vs-il-core-allergy-intolerance-code = http://fhir.health.gov.il/ValueSet
 Alias: $vs-il-core-allergy-intolerance-end-reason = http://fhir.health.gov.il/ValueSet/il-core-allergy-intolerance-end-reason
 Alias: $vs-il-core-body-position =      http://fhir.health.gov.il/ValueSet/il-core-body-position
 Alias: $vs-il-core-condition-code =     http://fhir.health.gov.il/ValueSet/il-core-condition-code
+Alias: $vs-il-core-device-type =        http://fhir.health.gov.il/ValueSet/il-core-device-type
 Alias: $vs-il-core-document-type =      http://fhir.health.gov.il/ValueSet/il-core-document-type
 Alias: $vs-il-core-doctor-to-doctor =   http://fhir.health.gov.il/ValueSet/il-core-doctor-to-doctor
 Alias: $vs-il-core-encounter-class =    http://fhir.health.gov.il/ValueSet/il-core-encounter-class
@@ -311,7 +313,7 @@ Alias: $vital-signs-units =             http://hl7.org/fhir/ValueSet/ucum-vitals
 Alias: $vitalsigns =                    http://hl7.org/fhir/ValueSet/observation-vitalsignresult
 Alias: $hl7-vs-coverage-class =         http://hl7.org/fhir/ValueSet/coverage-class
 Alias: $vs-ucum =                       http://hl7.org/fhir/ValueSet/ucum-units
-
+Alias: $vs-device-type-hl7 =            http://hl7.org/fhir/ValueSet/device-type
 
 
 

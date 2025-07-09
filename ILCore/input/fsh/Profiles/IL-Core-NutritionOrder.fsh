@@ -5,7 +5,7 @@ Title: "ILCore Molecular Sequence"
 Description: "Israel Core proposed constraints and extensions on the NutritionOrder Resource"
 
 * ^url = $ILNutritionOrder
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

@@ -5,7 +5,7 @@ Title: "ILCore Task Profile"
 Description: "Israel Core proposed constraints and extensions on the SuTaskstance Resource"
 
 * ^url = $ILTask
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #draft
 
 

@@ -4,7 +4,7 @@ Title: "Blood Pressure component codes"
 Description: "A list of codes for components in the blood presssure observations reporting"
 * ^url = $vs-bp-components
 * ^status = #active
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^experimental = false
 
 * $loinc#8480-6 "Systolic blood pressure"

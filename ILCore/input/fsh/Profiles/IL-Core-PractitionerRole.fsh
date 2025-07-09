@@ -5,7 +5,7 @@ Title: "ILCore PractitionerRole Profile"
 Description: "Israel Core proposed constraints and extensions on the PractitionerRole Resource"
 
 * ^url = $ILPractitionerRole
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore PractitionerRole Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the practitionerrole resource profile."

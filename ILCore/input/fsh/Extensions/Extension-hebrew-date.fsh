@@ -4,7 +4,7 @@ Title: "Ext: Hebrew Date"
 Description: "Extension: Allows the use of Hebrew dates"
 
 * ^url = $ext-hebrew-date
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context[0].type = #element

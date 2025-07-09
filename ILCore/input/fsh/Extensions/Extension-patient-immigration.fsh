@@ -5,7 +5,7 @@ Title: "Ext: Patient Immigration"
 Description: "Extension: Immigration information for patient - for the purpose of this extension - immigration is an international movement of a person to a destination country in order to settle as permanent resident"
 
 * ^url = $ext-patient-immigration
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context[0].type = #element

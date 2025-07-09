@@ -4,7 +4,7 @@ Title: "Ext: Israel Health Management Organization (קופת חולים)"
 Description: "Extension: Israel Health Management Organizations (קופות חולים)"
 
 * ^url = $ext-hmo
-* insert ConformanceMetadata
+// * insert ConformanceMetadata
 
 * ^status = #active
 * ^context[0].type = #element

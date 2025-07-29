@@ -138,6 +138,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[enc-ppn].system ^short = "Country specific URI"
 * identifier[enc-ppn].system ^definition = "The URI for encrypted passport numbers issued by a specific country"
 * identifier[enc-ppn].system from $vs-pp-enc-uri (required)
+* identifier[enc-ppn].type = $id-type#PPN
 
 // * identifier[idf-sn] ^short = "IDF Service Number"
 // * identifier[idf-sn] ^definition = "Israel Defence forces Sevice number (6-8 digits number). A unique identifier for any soldier currently serving or having served in the IDF"

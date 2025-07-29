@@ -24,3 +24,4 @@ Description: "Israel Core proposed constraints and extensions on the DeviceReque
 * performer only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization or ILCoreCareTeam or ILCoreHealthcareService or ILCorePatient or ILCoreDevice or ILCoreRelatedPerson)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport or ILCoreDocumentReference)
 * insurance only Reference(ILCoreCoverage or ILCoreClaimResponse)
+* reasonCode from $vs-il-core-procedure-reason (extensible)

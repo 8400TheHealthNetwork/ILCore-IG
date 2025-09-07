@@ -3,7 +3,7 @@ Id: il-core-coverage-class
 Title: "IL Core Coverage Class codes"
 Description: "Codes for Coverage classes"
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $il-core-coverage-class
 * ^content = #complete
 * ^caseSensitive = false

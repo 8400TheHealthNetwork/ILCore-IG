@@ -3,7 +3,7 @@ Id: il-core-contact-point-purpose
 Title: "Il Core Contact Point Purpose"
 Description: "Codes fro ContacPoint purpose"
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $il-core-contact-point-purpose
 * ^content = #complete
 * ^caseSensitive = false

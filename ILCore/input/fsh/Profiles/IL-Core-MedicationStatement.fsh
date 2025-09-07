@@ -5,7 +5,7 @@ Title: "ILCore MedicationStatement Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationStatement Resource"
 
 * ^url = $ILMedicationStatement
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore MedicationStatement Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationStatement resource profile."
@@ -27,7 +27,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * medicationCodeableConcept from $vs-il-core-medication-statement-code (extensible)
 * medicationReference only Reference(ILCoreMedication)
 * subject only Reference(ILCorePatient or ILCoreGroup) 
-* context only Reference(ILCoreEncounter or EpisodeOfCare) 
+* context only Reference(ILCoreEncounter or ILCoreEpisodeOfCare) 
 * informationSource only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson or ILCoreOrganization)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
 // * reasonReference.extension contains $ext-med-req-procedure-reference named procedureReference 0..*

@@ -14,7 +14,7 @@ Description: "Israel Core Proposed constraints and extensions on the ILCoreSuppl
 * basedOn.extension contains $alternate-reference named alternate-reference 0..*
 * basedOn.extension[alternate-reference].url = $alternate-reference (exactly)
 * basedOn.extension[alternate-reference].valueReference only Reference(ILCoreDeviceRequest)
-* type.coding.system = "http://hl7.org/fhir/ValueSet/supplydelivery-type" (exactly)
+* type.coding.system = "hhttp://terminology.hl7.org/CodeSystem/supply-item-type" (exactly)
 * type.coding.code = #device
 * suppliedItem.item[x] from $vs-il-core-device-type (extensible)
 * suppliedItem.itemReference only Reference(ILCoreDevice)

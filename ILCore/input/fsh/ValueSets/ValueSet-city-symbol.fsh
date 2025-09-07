@@ -5,7 +5,7 @@ Description: "City classification according to the Israeli Postal Company city-s
 
 * ^url = $vs-city-code
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $city-code

@@ -5,7 +5,7 @@ Title: "ILCore Questionnaire Profile"
 Description: "Israel Core proposed constraints and extensions on the Questionnaire Resource"
 
 * ^url = $ILQuestionnaire
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 

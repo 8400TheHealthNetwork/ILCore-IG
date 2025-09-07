@@ -4,7 +4,7 @@ Title: "סוג מוסד לפי רישוי משרד הבריאות"
 Description: "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"
 * ^status = #active
 * ^url = $institution-type-moh
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^content = #complete
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2025-04"

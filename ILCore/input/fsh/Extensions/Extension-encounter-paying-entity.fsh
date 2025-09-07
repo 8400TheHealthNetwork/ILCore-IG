@@ -4,7 +4,7 @@ Title: "Ext: Encounter Paying Entity"
 Description: "Paying Entity for the Encounter"
 Context: Encounter
 * ^url = $ext-encounter-paying-entity
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 
 * ^status = #active
 * ^context.type = #element

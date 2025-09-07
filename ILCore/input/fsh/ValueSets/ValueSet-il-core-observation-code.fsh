@@ -4,7 +4,7 @@ Title: "IL Core Observation Codes"
 Description: """A list of code codes for observations for the IL Core"""
 * ^url = $vs-il-core-observation-code
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $loinc

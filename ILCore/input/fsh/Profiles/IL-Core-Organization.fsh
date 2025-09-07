@@ -6,7 +6,7 @@ Title: "ILCore Organization Profile"
 Description: "Israel Core proposed constraints and extensions on the Organization Resource"
 
 * ^url = $ILOrganization
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Organization Profile"
 * . ^definition = "The Organization Profile is based upon the core FHIR Organization Resource"
@@ -81,19 +81,23 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * active 0..1 MS
 
 //type
-* type from $vs-organization-type (extensible)
+* type from $vs-organization-type (example)
 * type ^slicing.discriminator[0].type = #value
 * type ^slicing.discriminator[0].path = "$this"
 * type ^slicing.rules = #open
 * type contains 
       moh-institute-type 0..1 and
-      moh-department-type 0..1
+      moh-department-type 0..1 and
+      il-community-unit-type 0..1
 * type[moh-institute-type] from $vs-institution-type-moh (required)
 * type[moh-institute-type] ^example.valueCodeableConcept = $institution-type-moh#76 "משרדי ממשלה"
 * type[moh-institute-type] ^example.label = "Valid Example"
 * type[moh-department-type] from $vs-department-type-moh (required)
 * type[moh-department-type] ^example.valueCodeableConcept = $department-type-moh#10000 "אשפוז - פנימית"
 * type[moh-department-type] ^example.label = "Valid Example"
+* type[il-community-unit-type] from $vs-il-core-community-unit-type (required)
+* type[il-community-unit-type] ^example.valueCodeableConcept = $il-core-community-unit-type#101 "מעבדה"
+* type[il-community-unit-type] ^example.label = "Valid Example"
 
 //name
 * name 1..1 MS

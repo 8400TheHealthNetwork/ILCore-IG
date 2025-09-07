@@ -4,7 +4,7 @@ Title: "IL Core ServiceCategory"
 Description: "A list of codes for Service Category for the IL Core"
 * ^url = $vs-il-core-service-category
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $sct#103693007 "Diagnostic procedure (procedure)"

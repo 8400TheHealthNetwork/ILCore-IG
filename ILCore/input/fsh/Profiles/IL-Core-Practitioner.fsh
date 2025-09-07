@@ -6,7 +6,7 @@ Title: "ILCore Practitioner Profile"
 Description: "Israel Core proposed constraints and extensions on the Practitioner Resource"
 
 * ^url = $ILPractitioner
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Practitioner Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the practitioner resource profile."
@@ -101,12 +101,12 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[pna-id].assigner only Reference(ILCoreOrganization)
 
 * identifier[enc-pna-id] ^short = "Palestinian ID number"
-* identifier[enc-pna-id] ^definition = "Ecoded Palestinian National Identifier"
+* identifier[enc-pna-id] ^definition = "Ecoded Palestinian National Identifier, using Israeli MoH's standard primary encryption algorithm"
 * identifier[enc-pna-id] ^mustSupport = false
 * identifier[enc-pna-id].value 1..1 MS
 * identifier[enc-pna-id].value ^short = "A Palestininan ID number"
 * identifier[enc-pna-id].system 1..1 MS
-* identifier[enc-pna-id].system = $pna-id (exactly)
+* identifier[enc-pna-id].system = $enc-pna-id (exactly)
 * identifier[enc-pna-id] ^example.valueString = "000000018"
 * identifier[enc-pna-id] ^example.label = "Valid Example"
 * identifier[enc-pna-id].assigner only Reference(ILCoreOrganization)
@@ -154,7 +154,6 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 // * identifier[ppn].system ^example.valueCode = #http://hl7.org/fhir/sid/passport-USA
 // * identifier[ppn].system ^example.label = "General"
 
-
 //address 
 * address only ILCoreAddress 
 
@@ -162,7 +161,6 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * name 1..* MS
 * name.family 1..1 MS 
 * insert HumanNameLanguage  // RuleSet that handles language extension and slices. -> see RuleSets/HumanNameLanguage // Kippi B. May-11 2023
-
 
 * qualification ^definition = """The official certifications, training, and licenses that authorize or otherwise pertain to the provision of care by the practitioner. For example, a medical license issued by a medical board authorizing the practitioner to practice medicine within a certian locality.\n
 <mark>Note:</mark> \n
@@ -287,9 +285,9 @@ Check each slice for more specific details.
 * qualification[moh-instructor].identifier.system 1..1
 * qualification[moh-instructor].identifier.system = $practitioner-instructor (exactly)
 * qualification[moh-instructor].identifier.system ^short = "Israeli MoH expertise certificate URI"
-* qualification[moh-instructor].identifier ^example.valueString = "108-12345"
+* qualification[moh-instructor].identifier ^example.valueString = "10812345"
 * qualification[moh-instructor].identifier ^example.label = "Valid MOH expertise certification number"
-* qualification[moh-instructor].identifier.value ^example.valueString = "108-12345"
+* qualification[moh-instructor].identifier.value ^example.valueString = "10812345"
 * qualification[moh-instructor].identifier.value ^example.label = "Valid MOH expertise certification number"
 * qualification[moh-instructor].identifier.value 1..1
 * qualification[moh-instructor].identifier.value obeys identifier-digits
@@ -299,8 +297,6 @@ Check each slice for more specific details.
    $ext-qualification-practice named practice 1..1
 * qualification[moh-instructor].extension[practice].value[x] only CodeableConcept
 * qualification[moh-instructor].extension[practice].valueCodeableConcept from $vs-practitioner-expertise
-* qualification[moh-instructor].extension[practice] ^example.valueCodeableConcept = $practitioner-expertise#1 "רפואה פנימית"
-* qualification[moh-instructor].extension[practice] ^example.label = "Valid Example"
 
 * qualification[moh-nurse-temp-permit] ^short = "היתר זמני"
 * qualification[moh-nurse-temp-permit] ^definition = """The slice is used for temporary licenses (temporary permit to practice nursing) for nurses only.\n 

@@ -5,6 +5,6 @@ Description: "Codes for medications according to 'Yarpa' catalogue"
 * ^status = #draft
 * ^url = $yarpa-medication-code
 * ^content = #not-present
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false

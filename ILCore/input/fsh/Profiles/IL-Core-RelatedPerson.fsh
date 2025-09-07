@@ -5,7 +5,7 @@ Title: "ILCore RelatedPerson Profile"
 Description: "Israel Core proposed constraints and extensions on the RelatedPerson Resource"
 
 * ^url = $ILRelatedPerson
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCoreRelatedPerson Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the RelatedPerson resource profile."
@@ -60,7 +60,7 @@ Description: "Israel Core proposed constraints and extensions on the RelatedPers
 * identifier[enc-pna-id].value 1..1 MS
 * identifier[enc-pna-id].value ^short = "A Palestininan ID number"
 * identifier[enc-pna-id].system 1..1 MS
-* identifier[enc-pna-id].system = $pna-id (exactly)
+* identifier[enc-pna-id].system = $enc-pna-id (exactly)
 * identifier[enc-pna-id] ^example.valueString = "000000018"
 * identifier[enc-pna-id] ^example.label = "Valid Example"
 * identifier[enc-pna-id].assigner only Reference(ILCoreOrganization)

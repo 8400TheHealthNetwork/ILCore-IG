@@ -5,7 +5,7 @@ Title: "ILCore Location Profile"
 Description: "Israel Core proposed constraints and extensions on the Location Resource"
 
 * ^url = $ILLocation
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 

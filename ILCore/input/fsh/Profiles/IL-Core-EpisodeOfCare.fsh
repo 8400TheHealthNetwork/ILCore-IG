@@ -5,7 +5,7 @@ Title: "ILCore EpisodeOfCare Profile"
 Description: "Israel Core proposed constraints and extensions on the EpisodeOfCare Resource"
 
 * ^url = $ILEpisodeOfCare
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 

@@ -7,7 +7,7 @@ Description: "A set of codes that can be used to indicate the relationship betwe
 * ^language = #en-US
 * ^url = $vs-patient-relationship-type
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $v2-0131

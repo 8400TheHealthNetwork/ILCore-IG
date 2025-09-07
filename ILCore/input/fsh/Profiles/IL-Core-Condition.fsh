@@ -5,7 +5,7 @@ Title: "ILCore Condition Profile"
 Description: "Israel Core proposed constraints and extensions on the Condition Resource"
 
 * ^url = $ILCondition
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 
 * . ^short = "ILCore Condition Profile"
@@ -24,7 +24,7 @@ Description: "Israel Core proposed constraints and extensions on the Condition R
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
 * category contains ilcore 1..*
-* category[ilcore] from $vs-il-core-condition-category (extensible)
+* category[ilcore] from $vs-il-core-condition-category (required)
 * category[ilcore] ^example.valueCodeableConcept = $condition-category#encounter-diagnosis "Encounter Diagnosis"
 * category[ilcore] ^example.label = "Valid Example"
 * code 1..1 MS

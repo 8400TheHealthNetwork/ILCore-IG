@@ -5,7 +5,7 @@ Title: "ILCore QuestionnaireResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the QuestionnaireResponse Resource"
 
 * ^url = $ILQuestionnaireResponse
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore QuestionnaireResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the QuestionnaireResponse resource profile."

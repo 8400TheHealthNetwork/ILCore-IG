@@ -4,7 +4,7 @@ Title: "Ext: Reaction Duration"
 Description: "Extension: Reaction Duration"
 
 * ^url = $ext-reaction-duration
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 
 * ^status = #active
 * ^context.type = #element

@@ -5,7 +5,7 @@ Title: "ILCore ServiceRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the ServiceRequest Resource"
 
 * ^url = $ILServiceRequest
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore ServiceRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ServiceRequest resource profile."

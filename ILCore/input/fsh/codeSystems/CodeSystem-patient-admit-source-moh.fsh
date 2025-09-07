@@ -8,7 +8,7 @@ Description: "Moh Codes for Patient Admit Source
 * ^url = $patient-admit-source-moh
 * ^content = #example
 * ^valueSet = $vs-patient-admit-source-moh
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = true
 * ^extension[0].url = $effective

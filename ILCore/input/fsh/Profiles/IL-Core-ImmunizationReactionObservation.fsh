@@ -5,7 +5,7 @@ Title: "ILCore ImmunizationReactionObservation Profile"
 Description: "Israel Core proposed constraints and extensions on the ImmunizationReactionObservation Resource"
 
 * ^url = $ILImmunizationReactionObs
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 
@@ -29,5 +29,5 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * subject only Reference(ILCorePatient)
 * value[x] 1..1
 * value[x] only CodeableConcept
-* valueCodeableConcept from $vs-immunization-side-effects (extensible)  // doesn't exist yet
+* valueCodeableConcept from $vs-immunization-side-effects (extensible)
 * bodySite from $bodySite (preferred)

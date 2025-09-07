@@ -5,7 +5,7 @@ Title: "ILCore FamilyMemberHistory Profile"
 Description: "Israel Core proposed constraints and extensions on theILCoreFamilyMemberHistory Resource"
 
 * ^url = $ILFamilyMemberHistory
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 * . ^short = "ILCore FamilyMemberHistory Profile"

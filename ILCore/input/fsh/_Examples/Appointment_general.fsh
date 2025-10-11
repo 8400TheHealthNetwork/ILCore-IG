@@ -24,3 +24,9 @@ Usage: #example
 * participant[+].actor = Reference(Location/hospital-unit) 
 * participant[=].required = #required
 * participant[=].status = #accepted
+
+//  תוספות חדשות
+* identifier.system = "http://hospital.smarthealth.org/appointments"
+* identifier.value = "appt-98765"
+* supportingInformation.reference = "DocumentReference/appointment-doc"
+* slot.reference = "Slot/slot-1234"

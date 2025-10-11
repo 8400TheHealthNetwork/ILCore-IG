@@ -31,3 +31,21 @@ Usage: #example
 * item.unitPrice.currency = #USD
 * item.net.value = 135.57
 * item.net.currency = #USD
+
+////////////////////////////////////////////////////////
+// תוספות לפי הכללים
+////////////////////////////////////////////////////////
+
+// פרטי סוג האבחנה (מפרט האם מדובר בבעיה ראשונית / תומכת)
+* diagnosis.type = http://terminology.hl7.org/CodeSystem/ex-diagnosistype#principal "Principal Diagnosis"
+
+// הפניה לרופא שהגיש את הבקשה
+* careTeam.responsible = true
+
+// תוספת אלמנט מורכב: supportingInfo
+* supportingInfo[0].sequence = 1
+* supportingInfo[=].category.coding.system = "http://terminology.hl7.org/CodeSystem/claiminformationcategory"
+* supportingInfo[=].category.coding.code = #info
+* supportingInfo[=].category.coding.display = "Information"
+* supportingInfo[=].valueReference = Reference(Condition/obesity)
+* supportingInfo[=].timingDate = "2014-08-15"

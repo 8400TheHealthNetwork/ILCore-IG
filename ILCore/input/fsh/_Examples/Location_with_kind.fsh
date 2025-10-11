@@ -14,5 +14,7 @@ Usage: #example
 * mode = #kind
 * address.extension[0].url = $data-absent-reason
 * address.extension[0].valueCode = #unknown "Unknown"
-
- 
+//תוספת
+* type.coding[+].system = $sct
+* type.coding[=].code = #309904001
+* type.coding[=].display = "Medical ward"

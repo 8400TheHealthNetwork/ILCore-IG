@@ -52,6 +52,17 @@ Usage: #example
 * availabilityExceptions = "Reduced capacity is available during the Christmas period"
 * endpoint = Reference(Endpoint/example)
 
+// הרחבות מוצעות
+* communication = urn:ietf:bcp:47#he "Hebrew"
+
+* availabilityExceptions = "המערך לא פעיל במהלך החגים היהודיים העיקריים"
+* extraDetails = " מומלץ לפנות לפחות חודש מראש."
+
+* eligibility.code.coding.system = "http://terminology.hl7.org/CodeSystem/eligibility-requirement"
+* eligibility.code.coding.code = #dva
+* eligibility.code.coding.display = "DVA Required"
+
+
 Instance: Negev
 InstanceOf: ILCoreLocation
 Usage: #inline
@@ -61,3 +72,4 @@ Usage: #inline
 * name = "נגב רבתי"
 * position.longitude = 30.3000
 * position.latitude = 34.5500
+

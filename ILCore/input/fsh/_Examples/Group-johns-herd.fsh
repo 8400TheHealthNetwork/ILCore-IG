@@ -16,3 +16,9 @@ Usage: #example
 * characteristic[+].code.text = "owner"
 * characteristic[=].valueCodeableConcept.text = "John Smith"
 * characteristic[=].exclude = false
+
+* managingEntity = Reference(Organization/horses-care-clinic) "Horse Care Clinic"
+* member[0].entity.display = "Mare A"
+* member[0].period.start = "2023-01-01"
+* member[+].entity.display = "Stallion B"
+

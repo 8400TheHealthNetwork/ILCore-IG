@@ -12,3 +12,16 @@ InstanceOf: ILCoreImmunization
 * primarySource = true
 * lotNumber = "54321"
 * site = $sct#368208006 "Left upper arm structure (body structure)"
+// תוספות מוצעות
+* performer.actor = Reference(Practitioner/practitioner-md) "Dr. Dana Mor"
+* note.text = "Routine school-based immunization program"
+* doseQuantity.value = 0.5
+* doseQuantity.unit = "mL"
+* route = $sct#78421000 "Intramuscular route (qualifier value)"
+* education[0].documentType = "patient-information-leaflet"
+* education[=].publicationDate = "2020-01-15"
+* education[=].presentationDate = "2020-02-07"
+* protocolApplied.series = "Mumps Series"
+* protocolApplied.authority.display = "Ministry of Health"
+* protocolApplied.doseNumberPositiveInt = 1
+* protocolApplied.seriesDosesPositiveInt = 2

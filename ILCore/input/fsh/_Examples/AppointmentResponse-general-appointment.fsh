@@ -1,6 +1,11 @@
 Instance: general
 InstanceOf: ILCoreAppointmentResponse
 Usage: #example
-* appointment = Reference(Appointment/gp-appointment-hl7) "Brian MRI results discussion"
-* actor = Reference(Patient/entry-permit) "Peter James Chalmers"
+
+* appointment.reference = "Appointment/gp-appointment-hl7"
+* appointment.display = "Brian MRI results discussion"
+
+* actor.reference = "Patient/entry-permit"
+* actor.display = "Peter James Chalmers"
+
 * participantStatus = #accepted

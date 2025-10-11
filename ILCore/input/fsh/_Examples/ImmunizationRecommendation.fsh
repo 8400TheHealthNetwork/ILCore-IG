@@ -21,3 +21,9 @@ Usage: #example
 * recommendation.seriesDosesPositiveInt = 3
 * recommendation.supportingImmunization = Reference(Immunization/immunization-with-vaccine-code)
 * recommendation.supportingPatientInformation = Reference(Observation/height-measurement)
+// תוספות מוצעות
+* recommendation.forecastStatus.coding.system = "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status"
+* recommendation.forecastStatus.coding.code = #notComplete
+* recommendation.forecastStatus.coding.display = "Not Complete"
+* recommendation.targetDisease = $sct#40468003 "Viral hepatitis, type A"
+

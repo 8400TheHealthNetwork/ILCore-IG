@@ -37,4 +37,18 @@ Usage: #example
 * position.longitude = 32.232325
 * position.latitude = 34.253251
 
- 
+//תוספות
+* alias = "מחלקת פנימית א'"
+* physicalType.coding.system = "http://terminology.hl7.org/CodeSystem/location-physical-type"
+* physicalType.coding.code = #wa
+* physicalType.coding.display = "Ward"
+* mode = #instance
+* operationalStatus.system = "http://terminology.hl7.org/CodeSystem/v2-0116"
+* operationalStatus.code = #O
+* operationalStatus.display = "Operating"
+
+* type.coding.display = "Hospital Unit"
+* managingOrganization.display = "Ministry of Health"
+
+* partOf.reference = "Location/rambam-campus"
+* partOf.display = "מרכז רפואי רמב\"ם"

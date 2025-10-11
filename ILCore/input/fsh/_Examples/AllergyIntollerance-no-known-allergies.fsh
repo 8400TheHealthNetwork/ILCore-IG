@@ -1,15 +1,18 @@
 Instance: allergyIntolerance-no-known-allergy
 InstanceOf: ILCoreAllergyIntolerance
 Usage: #example
-Title: "AllergyIntollerance: no-known-allergy"
-Description: "An example of ILCoreAllergyIntolerance a person with no known allergies"
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No Known Allergies</div>"
+Title: "AllergyIntolerance: no-known-allergy"
+Description: "An example of ILCoreAllergyIntolerance for a person with no known allergies"
+
 * text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">No Known Allergies</div>"
 
 * patient.reference = "Patient/patient-israeli-with-two-identifiers"
 * clinicalStatus = $clinicalStatus#active
 * verificationStatus = $verificationStatus#confirmed
 * code = $sct#716186003 "No known allergy"
+* recorder.reference = "Practitioner/practitioner-example"
+* note.text = "Patient reports no known allergies as of last intake visit."
 
 
 // * category = #biologic

@@ -1,3 +1,6 @@
+Alias: $messagetypes = http://acme.org/messagetypes
+Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
+
 Instance: fm-solicit
 InstanceOf: ILCoreCommunicationRequest
 Usage: #example
@@ -10,9 +13,9 @@ Usage: #example
 * replaces.display = "prior CommunicationRequest"
 * groupIdentifier.value = "12345"
 * status = #active
-* category = http://acme.org/messagetypes#SolicitedAttachmentRequest
+* category = $messagetypes#SolicitedAttachmentRequest
 * priority = #routine
-* medium = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode#WRITTEN "written"
+* medium = $v3-ParticipationMode#WRITTEN "written"
 * medium.text = "written"
 * encounter = Reference(Encounter/breast-screaning)
 * payload.contentString = "Please provide the accident report and any associated pictures to support your Claim# DEF5647."
@@ -21,6 +24,11 @@ Usage: #example
 * requester = Reference(requester)
 * recipient = Reference(provider)
 * sender = Reference(payor)
+
+// תוספות
+* reasonCode.text = "Insurance claim missing documentation"
+* note.text = "Urgent request for documentation to avoid delay in claim processing."
+* about.display = "Claim DEF5647"
 
 Instance: provider
 InstanceOf: ILCoreOrganization

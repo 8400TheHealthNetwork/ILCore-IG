@@ -13,3 +13,17 @@ Usage: #example
 * basis = Reference(Observation/hemoglobin-lab-test)
 * prediction.outcome.text = "Unknown risk of developing breast cancer"
 * note.text = "This risk assessment is based on BRCA1 and BRCA2 genetic mutation test"
+
+//תוספות 
+
+// דירוג הסתברות (אם קיים)
+* prediction.probabilityDecimal = 0.45
+* prediction.rationale = "Positive family history and BRCA1 mutation carrier"
+
+// תאריך ביצוע ההערכה
+* occurrenceDateTime = "2024-12-01"
+
+// הערכת רגישות/השפעה (Qualitative Risk)
+* prediction.qualitativeRisk = $sct#263502005 "High risk"
+
+

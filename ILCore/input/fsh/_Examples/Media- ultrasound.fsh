@@ -29,3 +29,8 @@ Usage: #example
 * width = 640
 * content.contentType = #application/dicom
 * content.url = "http://imaging.acme.com/wado/server?requestType=WADO&contentType=application%2Fdicom&studyUid=1.2.840.113619.2.21.848.34082.0.538976288.3&seriesUid=1.2.840.113619.2.21.3408.700.0.757923840.3.0&objectUid=1.2.840.11361907579238403408700.3.1.04.19970327150033"
+//תוספות
+* createdDateTime = "2024-01-03T13:45:00+03:00"
+* bodySite = $sct#76752008 "Abdomen"
+* reasonCode.coding[0] = $sct#2254007 "Abdominal pain"
+* note.text = "Reviewed by AI module and flagged for secondary opinion"

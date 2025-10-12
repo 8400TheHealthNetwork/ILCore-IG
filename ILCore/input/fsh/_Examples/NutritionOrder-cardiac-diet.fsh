@@ -27,3 +27,5 @@ Usage: #example
 * oralDiet.nutrient[+].modifier = $sct#33463005 "Fluid"
 * oralDiet.nutrient[=].amount = 1500 'mL' "milliliter"
 * oralDiet.instruction = "Starting on 2/10 breakfast, maximum 400 ml fluids per meal"
+//תוספות
+* note.text = "הדיאטה ניתנה בהתאם להנחיות קרדיולוג עקב בצקת חריפה."

@@ -19,7 +19,7 @@ Usage: #example
 * name.extension[language].valueCode = #he
 * telecom[0].system = #phone
 * telecom[0].value = "052467911"
-* telecom[0].use = #home
+* telecom[0].use = #mobile
 * telecom[1].system = #email
 * telecom[1].value = "Israel@example.com"
 * gender = #male

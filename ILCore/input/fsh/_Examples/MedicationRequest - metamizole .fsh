@@ -40,5 +40,13 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 // * dispenseRequest.numberOfRepeatsAllowed = 3  // this is wrong
 * substitution.allowedBoolean = true
 
+//תוספות
 
-
+* dispenseRequest.validityPeriod.start = "2022-05-10"
+* dispenseRequest.validityPeriod.end = "2022-12-24"
+* dispenseRequest.quantity.value = 30
+* dispenseRequest.quantity.unit = "drop"
+* dispenseRequest.expectedSupplyDuration.value = 14
+* dispenseRequest.expectedSupplyDuration.unit = "day"
+* extension[narcotic].valueBoolean = false
+* extension[recorded].valueDateTime = "2022-10-11"

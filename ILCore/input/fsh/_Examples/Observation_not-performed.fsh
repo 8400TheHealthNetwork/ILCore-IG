@@ -7,3 +7,8 @@ Description: "testing"
 * status = #unknown
 * dataAbsentReason.coding[+] = $not-performed-reason#not-performed-medical-reason "not performed medical reason"
 * dataAbsentReason.coding[+] = $dar#not-performed "Not Performed"
+//תוצאות 
+* note.text = "בדיקה לא בוצעה עקב מצב קליני לא יציב"
+* performer.reference = "Practitioner/practitioner-md"
+* encounter = Reference(Encounter/emergency-room-visit)
+* subject = Reference(Patient/patient-israeli)

@@ -28,4 +28,6 @@ InstanceOf: ILCoreOrganization
 * address.country = "IL"
 
 * type = $department-type-moh#10000 "אשפוז - פנימית"
+
+* partOf.reference = "Organization/agaf-pnimi"
  

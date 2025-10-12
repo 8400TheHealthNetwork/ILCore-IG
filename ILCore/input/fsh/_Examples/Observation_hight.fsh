@@ -1,9 +1,9 @@
-Instance: hight-measurement
+Instance: height-measurement
 InstanceOf: ILCoreObservation
 Usage: #example
-Title: "Observation - hight measurement"
-Description: "Observation - hight measurement"
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of Hight - 1.72 Meters</div>"
+Title: "Observation - height measurement"
+Description: "Observation - height measurement"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Observation of height - 1.72 Meters</div>"
 * text.status = #generated
 * encounter = Reference(Encounter/home-visit)
 * extension[bodyPosition].valueCodeableConcept = $sct#429130005 "Found standing (finding)"
@@ -27,3 +27,8 @@ Description: "Observation - hight measurement"
 * effectiveDateTime = "2022-12-10"
 * method = $sct#41751005 "Anatomic measurement (procedure)"
 
+//תוספות
+* identifier.system = "http://hospital.herzfeld.org/observation-ids"
+* identifier.value = "height-20221210-001"
+* bodySite = $sct#38266002 "Entire body as a whole"
+* note.text = "נמדד באמצעות סרט מדידה בקיר המרפאה, תוצאה דווחה על ידי האחות"

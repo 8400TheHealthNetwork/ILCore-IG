@@ -3,7 +3,7 @@ Id: il-core-error-code
 Title: "IL Core Error code"
 Description: "A list of error codes for ILCore profiles"
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $il-core-error-code
 * ^content = #complete
 * ^caseSensitive = false

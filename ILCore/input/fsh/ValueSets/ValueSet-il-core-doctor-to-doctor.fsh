@@ -4,7 +4,7 @@ Title: "IL Core Doctor To Doctor Codes"
 Description: "Codes for Doctor To Doctor encounter for the IL Core"
 * ^url = $vs-il-core-doctor-to-doctor
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $sct#1268903003 "Consultation by multidisciplinary team (procedure)"

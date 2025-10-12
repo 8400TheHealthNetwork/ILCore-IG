@@ -2,10 +2,10 @@ Profile: ILCoreBP
 Parent: ILCoreVitalSigns
 Id: il-core-bp
 Title: "ILCore Blood Pressure Profile"
-Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurments."
+Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurements."
 
 * ^url = $ILBP
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 
 * ^contact[0].telecom[0].system = #email
@@ -18,8 +18,10 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * ^extension[=].valueInteger = 0
 
 * code.coding ^definition = "Code specifying blood pressure measurement type"
-* code.coding ^slicing.discriminator.type = #value
-* code.coding ^slicing.discriminator.path = "system"
+* code.coding ^slicing.discriminator[0].type = #value
+* code.coding ^slicing.discriminator[0].path = "system"
+* code.coding ^slicing.discriminator[1].type = #value
+* code.coding ^slicing.discriminator[1].path = "code"
 * code.coding ^slicing.rules = #open
 * code.coding contains ilcore 1..1
 * code.coding[ilcore].system = $loinc (exactly)
@@ -56,7 +58,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * value and unit and system and code MS
   * value 1..1 
   * unit 1..1
-  * system1..1
+  * system 1..1
   * code 1..1
   * system = $ucum (exactly)
   * code = #mm[Hg] (exactly)
@@ -80,7 +82,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * value and unit and system and code MS
   * value 1..1 
   * unit 1..1
-  * system1..1
+  * system 1..1
   * code 1..1
   * system = $ucum (exactly)
   * code = #mm[Hg] (exactly)

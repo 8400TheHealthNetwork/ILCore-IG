@@ -4,7 +4,7 @@ Title: "Vaccine Product Codes"
 Description: "A list of codes for vaccine products from ATC and cvx codeSystems"
 * ^url = $vs-vaccine-product-code
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $cvx

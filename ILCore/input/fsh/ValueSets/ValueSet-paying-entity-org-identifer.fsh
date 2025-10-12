@@ -3,7 +3,7 @@ Id: organization-paying-entity-moh-identifier
 Title: "Organization Paying Entity MoH Identifier"
 Description: "This value set defines the paying entity codes (see the code system http://fhir.health.gov.il/cs/paying-entity-moh) that may be used as organization and organization units identifier."
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $payer#101 "קופת חולים כללית"

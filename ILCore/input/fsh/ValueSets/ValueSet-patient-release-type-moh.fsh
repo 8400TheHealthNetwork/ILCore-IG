@@ -7,7 +7,7 @@ Description: "Moh Codes for Patient Realease Type
 // * ^language = #he-IL
 * ^url = $vs-patient-release-type-moh
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = true
 
 * include codes from system $patient-release-type-moh

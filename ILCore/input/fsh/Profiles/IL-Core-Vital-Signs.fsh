@@ -5,7 +5,7 @@ Title: "ILCore Vital Signs Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in querying and retrieving Vital Signs information."
 
 * ^url = $ILVitalSigns
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Vital Signs Profile"
 * . ^isModifier = false

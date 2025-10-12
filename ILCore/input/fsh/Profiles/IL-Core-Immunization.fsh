@@ -7,7 +7,7 @@ Title: "ILCore Immunization Profile"
 Description: "Israel Core proposed constraints and extensions on the Immunization Resource"
 
 * ^url = $ILImmunization
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Immunization Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Immunization resource profile."
@@ -24,7 +24,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * statusReason ^example.valueCodeableConcept = $sct#310376006 "Immunization consent not given"
 * statusReason ^example.label = "Valid Example"
 * vaccineCode 1..1 MS
-* vaccineCode.coding ^slicing.discriminator[0].type = #value
+* vaccineCode.coding ^slicing.discriminator[0].type = #pattern
 // * vaccineCode.coding ^slicing.discriminator[0].path = "$this"
 * vaccineCode.coding ^slicing.discriminator[0].path = "$this"
 * vaccineCode.coding ^slicing.rules = #open

@@ -7,7 +7,7 @@ Description: "Codes for Medication Course Of Therapy"
 
 * ^url = $vs-il-core-medication-course-of-therapy-type
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $hl7-medication-course-of-therapy#continuous "Continuous long term therapy"

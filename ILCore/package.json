@@ -1,6 +1,6 @@
 {
   "name": "il-core-ig",
-  "version": "0.17.1",
+  "version": "0.18.0",
   "description": "Israel Core FHIR Profiles",
   "type": "module",
   "scripts": {

@@ -6,7 +6,7 @@ Description: "Codes for for URNs of different kinds, instead of using urn:ietf:r
 * ^status = #active
 // * ^url = $urn
 * ^content = #complete
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false
 

@@ -3,7 +3,7 @@ Id: practitioner-certificate-type-moh
 Title: "MoH Certificate Types"
 Description: "A list of codes for certificate types according to Israeli MoH"
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $pract-certificate-type-moh
 * ^content = #complete
 * ^caseSensitive = false

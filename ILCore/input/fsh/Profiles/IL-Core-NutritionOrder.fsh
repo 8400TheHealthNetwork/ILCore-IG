@@ -1,15 +1,15 @@
 Profile: ILCoreNutritionOrder
 Parent: NutritionOrder
 Id: il-core-nutrition-order
-Title: "ILCore Molecular Sequence"
+Title: "ILCore NutritionOrder"
 Description: "Israel Core proposed constraints and extensions on the NutritionOrder Resource"
 
 * ^url = $ILNutritionOrder
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 
-* . ^short = "ILCore CareTeam Profile"
+* . ^short = "ILCore NutritionOrder Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ILCore NutritionOrder resource profile."
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"

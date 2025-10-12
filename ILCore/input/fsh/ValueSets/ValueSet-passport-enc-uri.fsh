@@ -4,7 +4,7 @@ Title: "Encoded Passport URIs"
 Description: "An encoded country specific URI for passport numbers"
 * ^url = $vs-pp-enc-uri
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 * include codes from system $pp-enc-uri
 // * $pp-enc-uri#http://fhir.health.gov.il/identifier/encrypted-passport-AFG

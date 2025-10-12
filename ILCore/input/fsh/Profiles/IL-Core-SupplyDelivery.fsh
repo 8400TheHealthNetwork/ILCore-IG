@@ -7,7 +7,7 @@ Description: "Israel Core Proposed constraints and extensions on the SupplyDeliv
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
-
+* insert ConformanceMetadata
 * patient only Reference(ILCorePatient)
 * suppliedItem.itemReference only Reference(ILCoreMedication or ILCoreSubstance or ILCoreDevice)
 * supplier only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization)

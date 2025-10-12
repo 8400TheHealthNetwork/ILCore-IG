@@ -6,5 +6,6 @@ Description: "This extension documents the time of a device dispense."
 * ^url = $ext-device-dispense-when-handed-over
 * ^status = #active
 * ^context[0].type = #element
-* ^context[0].expression = "SupplyDelivery"
+// * ^context[0].expression = "SupplyDelivery"
+* ^context[0].expression = "ILCoreDeviceDispense"
 * value[x] only dateTime

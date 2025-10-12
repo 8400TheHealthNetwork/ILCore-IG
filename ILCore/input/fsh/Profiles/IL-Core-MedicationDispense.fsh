@@ -5,7 +5,7 @@ Title: "ILCore MedicationDispense Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationDispense Resource"
 
 * ^url = $ILMedicationDispense
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore MedicationDispense Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationDispense resource profile."
@@ -25,7 +25,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationD
 * extension contains 
     $ext-recorded-time named recorded 0..1
 * extension[recorded] ^short = "Ext: Recorded Time"
-* extension[recorded] ^definition = "Extension: The time in whitch an event was recorded"
+* extension[recorded] ^definition = "Extension: The time in which an event was recorded"
 * partOf only Reference(ILCoreProcedure)
 * category from $vs-il-core-medication-dispense-category (extensible)
 * medication[x] from $vs-il-core-medication-code

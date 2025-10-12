@@ -5,7 +5,7 @@ Title: "ILCore CarePlan Profile"
 Description: "Israel Core proposed constraints and extensions on the CarePlan Resource"
 
 * ^url = $ILCarePlan
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 

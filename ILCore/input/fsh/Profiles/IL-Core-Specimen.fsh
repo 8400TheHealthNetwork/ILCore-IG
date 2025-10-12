@@ -5,7 +5,7 @@ Title: "ILCore Specimen Profile"
 Description: "Israel Core proposed constraints and extensions on the Specimen Resource"
 
 * ^url = $ILSpecimen
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Specimen Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Specimen resource profile."

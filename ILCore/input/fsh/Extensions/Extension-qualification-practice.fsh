@@ -4,7 +4,7 @@ Title: "Ext: Qualification Practice"
 Description: "Extension: Qualification Practice"
 
 * ^url = $ext-qualification-practice
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 
 * ^status = #active
 * ^context[0].type = #element

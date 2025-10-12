@@ -2,7 +2,7 @@ Extension: AllergyIntoleranceEnd
 Id: ext-allergy-intolerance-end
 Title: "Ext: Allergy Intolerance End"
 Description: "Supports the date when the allergy or intolerance was no longer valid, and/or, the reason why the allergy or intolerance is no longer valid."
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 
 * ^language = #en-US
 * ^url = $ext-allergy-intolerance-end

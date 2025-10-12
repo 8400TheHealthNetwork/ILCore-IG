@@ -36,5 +36,6 @@ Usage: #example
 * managingOrganization.reference = "Organization/ministry-of-health"  // temp for validations
 * position.longitude = 32.232325
 * position.latitude = 34.253251
+* mode = #instance
 
  

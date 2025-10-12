@@ -6,7 +6,7 @@ Title: "ILCore Patient Profile"
 Description: "Israel Core Proposed constraints and extensions on the Patient Resource."
 
 * ^url = $ILPatient
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Patient profile"
 * . ^definition = "The Patient Profile is based upon the core FHIR Patient Resource"
@@ -127,9 +127,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * identifier[enc-pna-id].value 1..1 MS
 * identifier[enc-pna-id].value ^short = "A Palestininan ID number"
 * identifier[enc-pna-id].system 1..1 MS
-* identifier[enc-pna-id].system = $pna-id (exactly)
-* identifier[enc-pna-id] ^example.valueString = "000000018"
-* identifier[enc-pna-id] ^example.label = "Valid Example"
+* identifier[enc-pna-id].system = $enc-pna-id (exactly)
 * identifier[enc-pna-id].assigner only Reference(ILCoreOrganization)
 
 //THE FOLLOWING IS COMMENTED OUT UNTIL AN IDF SLICE IS DECIDED UPON - 04-MAR-2024 - KIPPI
@@ -181,6 +179,5 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * contact.extension contains $contact-point-purpose named purpose 0..1
 * contact.extension[purpose].valueCodeableConcept from $vs-il-core-contact-point-purpose (extensible)
 * contact[parent].relationship ^patternCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
-// * contact[Parent].relationship ^patternCoding = http://terminology.hl7.org/CodeSystem/v2-0131#PAR  //OLD and incorrect. awaiting Daniel's reply
 // * contact[Child].relationship.coding ^patternCoding = {system: "http://terminology.hl7.org/CodeSystem/v2-0131", code: "CHD"}
 

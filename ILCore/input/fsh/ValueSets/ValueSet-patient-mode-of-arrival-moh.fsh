@@ -7,7 +7,7 @@ Description: "Moh Codes for Patient Mode of Arrival
 // * ^language = #he-IL
 * ^url = $vs-patient-mode-of-arrival-moh
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = true
 
 * include codes from system $patient-mode-of-arrival-moh

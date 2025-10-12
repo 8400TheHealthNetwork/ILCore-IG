@@ -5,7 +5,7 @@ Title: "ILCore Group Profile"
 Description: "Israel Core proposed constraints and extensions on the Group Resource"
 
 * ^url = $ILGroup
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 

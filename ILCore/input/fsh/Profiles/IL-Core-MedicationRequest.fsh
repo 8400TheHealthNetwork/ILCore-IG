@@ -5,7 +5,7 @@ Title: "ILCore MedicationRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationRequest Resource"
 
 * ^url = $ILMedicationRequest 
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore MedicationRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationRequest resource profile."
@@ -18,7 +18,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationR
 
 * extension contains
    ext-medication-recorded-time named recorded 0..1 and
-   ext-narcotic-medication named narcotic 0..1  
+   $ext-narcotic-medication named narcotic 0..1  
 * extension[recorded] ^short = "Ext: Recorded Time"
 * extension[recorded] ^definition = "Extension: The time in which an event was recorded"
 * extension[narcotic] ^short = "Ext: Narcotic Medication"

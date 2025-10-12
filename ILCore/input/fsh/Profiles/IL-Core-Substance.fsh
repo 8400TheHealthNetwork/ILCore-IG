@@ -5,7 +5,7 @@ Title: "ILCore Substance Profile"
 Description: "Israel Core proposed constraints and extensions on the Substance Resource"
 
 * ^url = $ILSubstance
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Substance Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Substance resource profile."

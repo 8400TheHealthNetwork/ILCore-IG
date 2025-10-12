@@ -5,7 +5,7 @@ Title: "ILCore PlanDefinition Profile"
 Description: "Israel Core proposed constraints and extensions on the PlanDefinition Resource"
 
 * ^url = $ILPlanDefinition
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 * . ^short = "ILCore PlanDefinition Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the PlanDefinition resource profile."

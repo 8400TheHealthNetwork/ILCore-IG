@@ -4,7 +4,7 @@ Title: "Icd9 Cm Procedures"
 Description: "All Procedure codes from ICD9-CM codesystem"
 * ^url = $vs-icd9-cm-procedures
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $icd9-cm#00.01 "Therapeutic ultrasound of vessels of head and neck"

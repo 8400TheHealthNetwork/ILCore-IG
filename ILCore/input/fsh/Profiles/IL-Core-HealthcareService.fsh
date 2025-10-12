@@ -5,7 +5,7 @@ Title: "ILCore HealthcareService Profile"
 Description: "Israel Core proposed constraints and extensions on the HealthcareService Resource"
 
 * ^url = $ILHealthcareService
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 * . ^short = "Israel Core HealthcareService Profile"

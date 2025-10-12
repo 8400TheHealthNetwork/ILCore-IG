@@ -5,7 +5,7 @@ Title: "ILCore Observation Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource"
 
 * ^url = $ILObservation
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Observation Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Observation resource profile."
@@ -32,8 +32,10 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * device only Reference(ILCoreDevice or DeviceMetric)
 * referenceRange.low obeys il-obs-ucum
 * referenceRange.high obeys il-obs-ucum
-* referenceRange.age.low from $age-units
-* referenceRange.age.high from $age-units
+* referenceRange.age.low.system = $ucum (exactly)
+* referenceRange.age.low.code from $age-units (required)
+* referenceRange.age.high.system = $ucum (exactly)
+* referenceRange.age.high.code from $age-units (required)
 * hasMember only Reference(ILCoreObservation or ILCoreQuestionnaireResponse or MolecularSequence)
 * derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreObservation or ILCoreMolecularSequence)
 * dataAbsentReason.coding ^slicing.discriminator.type = #value

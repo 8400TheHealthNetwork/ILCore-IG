@@ -3,7 +3,7 @@ Id: il-core-medication-request-category
 Title: "Codes for MedicationRequest categories"
 Description: "A list of codes for MedicationRequest categories"
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $il-core-medication-request-category
 * ^content = #complete
 * ^caseSensitive = false

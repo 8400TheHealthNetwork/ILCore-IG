@@ -5,7 +5,7 @@ Title: "ILCore Coverage Profile"
 Description: "Israel Core proposed constraints and extensions on the Coverage Resource"
 
 * ^url = $ILCoverage
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore Coverage Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Coverage resource profile."
@@ -35,8 +35,4 @@ Description: "Israel Core proposed constraints and extensions on the Coverage Re
 * class[insurance-policy].type.coding.code = #plan (exactly)
 * class[insurance-policy].value ^definition = "מזהה עבור הפוליסה. אלמנט זה יוסב בגרסה 5 ל identifier"
 * class[insurance-policy].name ^definition = "שם הפוליסה"
-
-
-
- 
 

@@ -4,7 +4,7 @@ Title: "Department Type MoH"
 Description: "Israel ministry of health coding system for department types"
 * ^status = #active
 * ^url = $department-type-moh
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^content = #complete
 * ^valueSet = $vs-department-type-moh
 * ^caseSensitive = false

@@ -5,7 +5,7 @@ Title: "ILCore Device Profile"
 Description: "Israel Core proposed constraints and extensions on the Device Resource"
 
 * ^url = $ILDevice
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 * . ^short = "ILCore Device Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Device resource profile."

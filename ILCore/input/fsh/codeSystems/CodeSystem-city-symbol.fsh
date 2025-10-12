@@ -6,7 +6,7 @@ Description: "Codes for cities in Israel"
 * ^url = $city-code
 * ^content = #complete
 * ^valueSet = $vs-city-code
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false
 * ^extension[0].url = $effective
@@ -1506,7 +1506,14 @@ Description: "Codes for cities in Israel"
 * #9500 "קרית ביאליק" "QIRYAT BIALIK"			
 * #9600 "קרית ים" "QIRYAT YAM"			
 * #9700 "הוד השרון" "HOD HASHARON"			
-* #9800 "בנימינה-גבעת עדה" "BINYAMINA-GIV'AT ADA"			
+* #9800 "בנימינה-גבעת עדה" "BINYAMINA-GIV'AT ADA"	
+* #3815 "תל ציון" "TEL TSIYON"
+* #3861 "עשהאל" "ASA'EL"
+* #3862 "גבעות הרואה" "GIV'OT HARO'E"
+* #3864 "בית חגלה" "BET HOGLA"
+* #3865 "משמר יהודה" "MISHMAR YEHUDA"
+* #3868 "שחרית" "SHAHARIT"
+* #3869 "אביגיל" "AVIGAYIL"		
 * #9999 "ישוב לא ידוע" "UNKNOWN"			
 * #5 "יזרעם" "NULL"			
   * ^property.code =  #status
@@ -1808,10 +1815,4 @@ Description: "Codes for cities in Israel"
 * #5436 "פאת שדה" "PE'AT SADE"			
   * ^property.code =  #status
   * ^property.valueCode =  #deprecated
-* #3815 "תל ציון" "TEL TSIYON"
-* #3861 "עשהאל" "ASA'EL"
-* #3862 "גבעות הרואה" "GIV'OT HARO'E"
-* #3864 "בית חגלה" "BET HOGLA"
-* #3865 "משמר יהודה" "MISHMAR YEHUDA"
-* #3868 "שחרית" "SHAHARIT"
-* #3869 "אביגיל" "AVIGAYIL"
+

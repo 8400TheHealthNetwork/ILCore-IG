@@ -4,7 +4,7 @@ Title: "קוד מקצוע לעוסק בבריאות"
 Description: "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות"
 
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $practitioner-profession-moh
 * ^content = #complete
 * ^valueSet = $vs-practitioner-profession-moh
@@ -19,7 +19,7 @@ Description: "קוד מקצוע לעוסק בבריאות לפי רישוי מש
 * ^property[=].description = "A property that indicates the status of the concept. One of active, experimental, deprecated, retired"
 * ^property[=].type = #code
 
-* ^count = 57
+* ^count = 61
 * #-888 "לא ידוע" "ערך ברירת מחדל במקרה שהמידע שמגיע הוא NULL"
 * #-888 ^property.code = #status
 * #-888 ^property.valueCode = #deprecated
@@ -50,10 +50,10 @@ Description: "קוד מקצוע לעוסק בבריאות לפי רישוי מש
 * #8 "אופטומטריה" "מקצוע האופטומטריה ללא מומחיות או התמחות"
 * #8 ^property.code = #status
 * #8 ^property.valueCode = #active
-* #9 "אורטופטיסט" "מקצוע האורטופטיסט שייך לתחום הפר\"א ללא מומחיות או התמחות"
+* #9 "אורטופטיקה" "מקצוע האורטופטיסט שייך לתחום הפר\"א ללא מומחיות או התמחות"
 * #9 ^property.code = #status
 * #9 ^property.valueCode = #active
-* #10 "פיזיותרפיה" "מקצוע הפיזיותרפיה שייך לתחום הפר\"א ללא מומחיות או התמחות"
+* #10 "פיזיותרפיסט" "מקצוע הפיזיותרפיה שייך לתחום הפר\"א ללא מומחיות או התמחות"
 * #10 ^property.code = #status
 * #10 ^property.valueCode = #active
 * #11 "דיאטן תזונאי" "מקצוע הדיאטן תזונאי שייך לתחום הפר\"א ללא מומחיות או התמחות"
@@ -95,7 +95,7 @@ Description: "קוד מקצוע לעוסק בבריאות לפי רישוי מש
 * #23 "כירופודיסטים" "מקצוע הכירופודיסטים שייך לתחום הפר\"א ללא מומחיות או התמחות"
 * #23 ^property.code = #status
 * #23 ^property.valueCode = #active
-* #24 "פודיאטריסטים" "מקצוע הפודיאטריסטים שייך לתחום הפר\"א ללא מומחיות או התמחות"
+* #24 "פודיאטר" "מקצוע הפודיאטריסטים שייך לתחום הפר\"א ללא מומחיות או התמחות"
 * #24 ^property.code = #status
 * #24 ^property.valueCode = #active
 * #25 "סייעת" "מקצוע הסייעת שייך לתחום השיניים ללא מומחיות או התמחות"
@@ -158,6 +158,18 @@ Description: "קוד מקצוע לעוסק בבריאות לפי רישוי מש
 * #45 "עבודה סוציאלית" 
 * #45 ^property.code = #status
 * #45 ^property.valueCode = #active
+* #46 "דימותן רפואי"
+* #46 ^property.code = #status
+* #46 ^property.valueCode = #active
+* #47 "עמית רופא"
+* #47 ^property.code = #status
+* #47 ^property.valueCode = #active
+* #48 "פודולוגיה"
+* #48 ^property.code = #status
+* #48 ^property.valueCode = #active
+* #50 "מקצועות המים"
+* #50 ^property.code = #status
+* #50 ^property.valueCode = #active
 * #97 "אחר" "אחר"
 * #97 ^property.code = #status
 * #97 ^property.valueCode = #active

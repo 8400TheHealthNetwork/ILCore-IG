@@ -3,7 +3,7 @@ Id: il-core-encounter-class
 Title: "IL Core Encounter Class codes"
 Description: "A list of codes for class types of encounters"
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $il-core-encounter-class
 * ^content = #complete
 * ^caseSensitive = false

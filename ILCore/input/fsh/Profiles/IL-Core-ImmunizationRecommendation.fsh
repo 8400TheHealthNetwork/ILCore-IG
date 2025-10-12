@@ -5,7 +5,7 @@ Title: "ILCore ImmunizationRecommendation Profile"
 Description: "Israel Core proposed constraints and extensions on the ImmunizationRecommendation Resource"
 
 * ^url = $ILImmunizationRecommendation
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 * . ^short = "ILCore ImmunizationRecommendation Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ImmunizationRecommendation resource profile."

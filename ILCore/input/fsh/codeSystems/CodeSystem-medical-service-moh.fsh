@@ -10,7 +10,7 @@ Description: "קוד שירותים רפואיים , כולל שירותים ב�
 
 * ^status = #active
 * ^url = $medical-service-code-moh
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^content = #complete
 * ^valueSet = $vs-medical-service-moh
 * ^caseSensitive = false

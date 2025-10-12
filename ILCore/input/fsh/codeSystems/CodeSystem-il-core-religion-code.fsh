@@ -3,7 +3,7 @@ Id: il-core-religion-code
 Title: "IL Core relirion code"
 Description: "Codes for religions, an addendum to the HL7 religions CodeSystem"
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^url = $il-core-religion-code
 * ^content = #complete
 * ^caseSensitive = false

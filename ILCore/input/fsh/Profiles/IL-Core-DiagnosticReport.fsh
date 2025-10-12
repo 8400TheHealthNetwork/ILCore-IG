@@ -5,7 +5,7 @@ Title: "ILCore DiagnosticReport Profile"
 Description: "Israel Core proposed constraints and extensions on the DiagnosticReport Resource"
 
 * ^url = $ILDiagnosticReport
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #active
 * . ^short = "ILCore DiagnosticReport Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the DiagnosticReport resource profile."
@@ -46,7 +46,6 @@ Description: "Israel Core proposed constraints and extensions on the DiagnosticR
 * result only Reference(ILCoreObservation)
 * imagingStudy only Reference(ILCoreImagingStudy)
 * media.link only Reference(ILCoreMedia)
-* conclusionCode from http://hl7.org/fhir/ValueSet/clinical-findings  (preferred)
 * category from http://hl7.org/fhir/ValueSet/diagnostic-service-sections (preferred)
 * code from http://hl7.org/fhir/ValueSet/report-codes (preferred)
 * conclusionCode from $vs-diagnostic-conclusion-code (preferred)

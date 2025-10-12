@@ -4,7 +4,7 @@ Title: "Ext: Accession Number"
 Description: "Extension: Accession Number. The Accession Number of the ImagingStudy"
 * ^language = #en-US
 * ^url = $ext-accession-number
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 
 * ^status = #active
 * ^context[0].type = #element

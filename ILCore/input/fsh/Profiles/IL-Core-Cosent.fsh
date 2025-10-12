@@ -5,7 +5,7 @@ Title: "ILCore Consent Profile"
 Description: "Israel Core proposed constraints and extensions on the Consent Resource"
 
 * ^url = $ILConsent
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 

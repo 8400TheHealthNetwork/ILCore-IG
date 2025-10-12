@@ -5,7 +5,7 @@ Title: "ILCore ImagingStudy Profile"
 Description: "Israel Core proposed constraints and extensions on the ImagingStudy Resource"
 
 * ^url = $ILImagingStudy
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^status = #draft
 
 
@@ -28,7 +28,7 @@ Description: "Israel Core proposed constraints and extensions on the ImagingStud
 * identifier ^slicing.discriminator.path = "system"
 * identifier ^slicing.rules = #open
 * identifier contains uid 1..1
-* identifier[uid].system = "urn:dicom:uid"
+* identifier[uid].system = "urn:dicom:uid" (exactly)
 * identifier[uid] MS
 * subject only Reference(ILCorePatient or ILCoreDevice or ILCoreGroup)
 * encounter only Reference(ILCoreEncounter)

@@ -4,7 +4,7 @@ Title: "Diagnostic Conclusion Codes"
 Description: "A list of codes for Diagnostic Conclusion for the IL Core"
 * ^url = $vs-diagnostic-conclusion-code
 * ^status = #active
-// * insert ConformanceMetadata
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $sct where concept descendent-of #404684003 "Clinical finding (finding)"

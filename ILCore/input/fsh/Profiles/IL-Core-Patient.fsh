@@ -53,7 +53,8 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
    prisoner-id 0..1 and
    enc-il-id 0..* and
    entry-permit 0..* and
-   enc-pna-id 0..1
+   enc-pna-id 0..1 and
+   ppn-no-country 0..*
 //    idf-sn 0..1 and
 //    ppn-no-system 0..* 
 
@@ -129,6 +130,18 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * identifier[enc-pna-id].system 1..1 MS
 * identifier[enc-pna-id].system = $enc-pna-id (exactly)
 * identifier[enc-pna-id].assigner only Reference(ILCoreOrganization)
+
+* identifier[ppn-no-country] ^short = "Passport Number - no country"
+* identifier[ppn-no-country] ^definition = "Passport number without a system indicating the issuing country. A passport number SHOULD  be accompanied by a system indicating the issuing country. This slice is defined only for legacy reasons to allow historical incomplete data to be represented in a uniform way"
+* identifier[ppn-no-country] ^mustSupport = false
+* identifier[ppn-no-country] obeys passport-country-required
+* identifier[ppn-no-country].system 1..1
+* identifier[ppn-no-country].system.extension contains $data-absent-reason named data-absent-reason 1..1
+* identifier[ppn-no-country].system.extension[data-absent-reason].url = $data-absent-reason (exactly)
+* identifier[ppn-no-country].value 1..1 MS
+* identifier[ppn-no-country].type 1..1
+* identifier[ppn-no-country].type = $id-type#PPN
+* identifier[ppn-no-country].assigner only Reference(ILCoreOrganization)
 
 //THE FOLLOWING IS COMMENTED OUT UNTIL AN IDF SLICE IS DECIDED UPON - 04-MAR-2024 - KIPPI
 // * identifier[idf-sn] ^short = "IDF Service Number"

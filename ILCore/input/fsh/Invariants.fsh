@@ -156,6 +156,10 @@ Severity: #error
 Expression: "url.exists() or data.exists()"
 XPath: "f:url or f:content"
 
+Invariant: passport-country-required
+Description: "A passport number SHOULD be accompanied by a system indicating the issuing country."
+Severity: #warning
+Expression: "system.exists() and system.hasValue()"
 
 //  Invariant: ppn-uri
 // Description: "Must be 'http://hl7.org/fhir/sid/passport-[XXX]' [XXX] is a 3-letter country code defined by ISO 3166. See [Using ISO 3166 Codes with FHIR](iso3166.html)"

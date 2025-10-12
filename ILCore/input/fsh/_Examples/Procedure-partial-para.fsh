@@ -15,3 +15,6 @@ InstanceOf: ILCoreProcedure
 * reasonCode = $sct#71388002 "Procedure (procedure)"
 * bodySite = $sct#442083009 "Anatomical or acquired body site (body structure)"
 * complication = $sct#49755003 "Morphologically abnormal structure (morphologic abnormality)"
+//תוספות
+* category = $sct#387713003 "Surgical procedure (procedure)"
+* complication = $sct#70380006 "Facial nerve injury"

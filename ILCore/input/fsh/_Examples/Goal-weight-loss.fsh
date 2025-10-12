@@ -23,3 +23,8 @@ Usage: #example
 * expressedBy = Reference(Patient/patient-immigrant) "Peter James Chalmers"
 * addresses.display = "obesity condition"
 * outcomeReference = Reference(Observation/hight-measurement) 
+
+//תוספות
+* achievementStatus = http://terminology.hl7.org/CodeSystem/goal-achievement#improving "Improving"
+* note.text = "Goal was discussed with the care team and agreed upon with the patient."
+* addresses[+] = Reference(Condition/obesity-condition) "Obesity"

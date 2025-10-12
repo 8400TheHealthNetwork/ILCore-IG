@@ -22,3 +22,16 @@ Usage: #example
 * sender = Reference(Device/example-device)
 * payload[0].contentString = "Patient 1 has a very high serum potassium value (7.2 mmol/L on 2014-Dec-12 at 5:55 pm)"
 * payload[+].contentReference.display = "Serum Potassium Observation"
+
+/////////////////////////////////////////////////////
+// תוספות לפי הכללים - שמירה על התחביר המקורי
+/////////////////////////////////////////////////////
+
+// תוספת הערה
+* note.text = "Urgent alert – requires immediate physician review."
+
+// תוספת reasonCode (סיבת שליחה)
+* reasonCode.text = "Critical lab value notification"
+
+// תוספת priority
+* priority = #urgent

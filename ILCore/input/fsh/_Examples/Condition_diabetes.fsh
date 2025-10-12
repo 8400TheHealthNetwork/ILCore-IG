@@ -1,4 +1,3 @@
-
 // Instance of the ILCoreCondition resource, representing a diagnosis of type 1 diabetes
 Instance: type-1-diabetes
 InstanceOf: ILCoreCondition
@@ -18,4 +17,8 @@ Usage: #example
 * bodySite[0].text = "Pancreas"
 * subject.reference = "Patient/patient-with-israeli-id"
 * onsetDateTime = "2012-05-24"
-* stage.assessment.reference = "hemoglobin-lab-test"
+* stage.assessment.reference = "Observation/hemoglobin-lab-test"
+
+// תוספות מותרות
+* recordedDate = "2012-05-25"
+* note.text = "Diagnosis based on elevated fasting glucose and HbA1c lab results."

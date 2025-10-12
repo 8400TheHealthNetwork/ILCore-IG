@@ -19,7 +19,7 @@ Usage: #example
 // * request = Reference(http://www.BenefitsInc.com/fhir/oralhealthclaim/15476332402)
 * outcome = #complete
 * disposition = "Claim settled as per contract."
-* payeeType = http://terminology.hl7.org/CodeSystem/payeetype#provider
+* payeeType = $payeetype#provider
 * item.itemSequence = 1
 * item.adjudication[0].category.coding.code = #eligible
 * item.adjudication[=].amount.value = 135.57
@@ -45,3 +45,15 @@ Usage: #example
 * payment.amount.currency = #USD
 * payment.identifier.system = "http://www.BenefitsInc.com/fhir/paymentidentifier"
 * payment.identifier.value = "201408-2-1569478"
+
+////////////////////////////////////////////////////////
+// תוספות לפי הכללים
+////////////////////////////////////////////////////////
+
+// התאמת סכום עקב הסכם
+* payment.adjustment.value = -5.00
+* payment.adjustment.currency = #USD
+* payment.adjustmentReason = $adjudication-reason#ar005 "Contractual adjustment"
+
+// הפניה לקליים המקורי (חיזוק ההקשר)
+* request.reference = "Claim/dental-claim"

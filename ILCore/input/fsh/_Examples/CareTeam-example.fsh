@@ -16,6 +16,16 @@ Usage: #example
 * participant[=].onBehalfOf = Reference(Organization/meir-hospital)
 * participant[=].period.end = "2013-01-01"
 * managingOrganization = Reference(Organization/meir-hospital)
+////////////////////////////////////////////////////////
+// תוספות לפי הכללים
+////////////////////////////////////////////////////////
+
+// תאריך התחלה של הצוות
+* period.start = "2012-11-01"
+
+// הערת הסבר
+* note.text = "Care team formed upon hospital admission for nutrition consultation and follow-up."
+
 
 Instance: pr1
 InstanceOf: ILCorePractitioner
@@ -24,3 +34,4 @@ Usage: #inline
 * name.given = "Dorothy"
 * identifier[prac-lic].system = $practitioner-license-moh
 * identifier[prac-lic].value = "1-1234"
+

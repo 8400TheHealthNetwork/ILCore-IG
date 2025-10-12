@@ -20,3 +20,4 @@ Description: "An example instance of the ILCore RelatedPerson profile."
 * address[0].state = "CA"
 * address[0].postalCode = "90210"
 * address[0].country = "USA"
+* gender = #male

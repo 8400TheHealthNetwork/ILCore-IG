@@ -26,3 +26,6 @@ Usage: #example
 * careManager = Reference(Practitioner/md) 
 * team = Reference(CareTeam/example) "example care team"
 // * account = Reference(Account/example) "example account"
+
+// תוספות חדשות לפי בקשתך:
+* account = Reference(Account/example-account) "example account"

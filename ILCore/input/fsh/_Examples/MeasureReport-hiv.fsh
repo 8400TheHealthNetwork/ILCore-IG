@@ -8,7 +8,7 @@ Usage: #example
 * period.start = "2018-01-01"
 * period.end = "2018-01-31"
 * subject = Reference(Patient/patient-israeli)
-* reporter = Reference(practitioner/md)
+//* reporter = Reference(practitioner/md)
 * group[0].code.coding.code = #QRPH_ADX_ART1_N
 * group[=].measureScore.value = 0
 * group[=].stratifier.code.coding.code = #AGE_GROUP:SEX
@@ -63,3 +63,6 @@ Usage: #example
 * group[=].stratifier.stratum[=].component[+].code.coding.code = #SEX
 * group[=].stratifier.stratum[=].component[=].value.coding.code = #F
 * group[=].stratifier.stratum[=].measureScore.value = 0
+
+//תוספות
+* date = "2018-02-05"

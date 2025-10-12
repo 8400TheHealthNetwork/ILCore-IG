@@ -17,3 +17,13 @@ Usage: #example
 * component[DiastolicBP].code = $loinc#8462-4 "Diastolic blood pressure"
 * component[DiastolicBP].code.text = "Diastolic blood pressure"
 * component[DiastolicBP].valueQuantity = 44 'mm[Hg]' "mmHg"
+
+////////////////////////////////////////////////////////
+// תוספות חדשות בהתאם לכללים:
+////////////////////////////////////////////////////////
+
+* issued = "1999-07-02T10:15:00+03:00"
+* note.text = "Home blood pressure reading taken during routine visit"
+
+// Extension קיימת בפרופיל – אין צורך ב-url
+* extension[body-position].valueCodeableConcept = $sct#33586001 "Sitting position (finding)"

@@ -13,7 +13,7 @@ Usage: #example
 // * name.text = "דר' גרינפלד דיאנה"
 * active = true
 * practitioner.reference = "Practitioner/practitioner-md"
-* location.reference = "Location/hospital-unit"
+* location.reference = "Location/clinic-clalit"
 * telecom[0].system = #phone
 * telecom[0].value = "04-6421420"
 * telecom[0].use = #work
@@ -21,5 +21,7 @@ Usage: #example
 * telecom[1].value = "DG@example.com"
 * availableTime.availableStartTime = "09:00:00"
 * availableTime.availableEndTime = "17:00:00"
-
-
+* code = http://terminology.hl7.org/CodeSystem/practitioner-role#doctor "Doctor"
+* specialty = $sct#394814009 "General practice"
+* organization.reference = "Organization/clinic-tveria"
+* period.start = "2020-06-01"

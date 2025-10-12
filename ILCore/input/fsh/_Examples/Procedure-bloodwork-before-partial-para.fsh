@@ -23,3 +23,9 @@ InstanceOf: ILCoreProcedure
 // * performedDateTime.extension[=].extension[=].valueCode = #before-start
 // * performedDateTime.extension[=].extension[+].url = "offset"
 // * performedDateTime.extension[=].extension[=].valueDuration = 24 'h' "hour"
+
+//,uxpu,
+* category = $sct#103693007 "Diagnostic procedure (procedure)"
+* note.text = "Blood test performed 24 hours before partial parotidectomy procedure"
+
+

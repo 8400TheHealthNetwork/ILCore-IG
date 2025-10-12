@@ -77,3 +77,9 @@ Usage: #example
 * group[=].population[+].code.coding.code = #numerator
 * group[=].population[=].criteria.language = #text/cql
 * group[=].population[=].criteria.expression = "Numerator2"
+
+//תוספות
+* rateAggregation = "Proportion of exclusively breastfed newborns among total live births"
+* supplementalData[0].criteria.language = #text/cql
+* supplementalData[=].criteria.expression = "PatientAge"
+* supplementalData[=].code.coding.code = #age

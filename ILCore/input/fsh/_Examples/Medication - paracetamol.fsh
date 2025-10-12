@@ -20,6 +20,10 @@ Description: "Paracetamol"
 * ingredient.strength.denominator.value = 1
 * ingredient.strength.denominator.system = $sct
 * ingredient.strength.denominator.code = #428673006
+//תוספות
+* manufacturer.display = "TEVA" //  שם היצרן 
+* batch.lotNumber = "123456789"
+* batch.expirationDate = "2025-12-31"
 
 
 

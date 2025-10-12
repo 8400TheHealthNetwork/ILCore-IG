@@ -13,3 +13,7 @@ Usage: #example
 * subject.reference = "Patient/patient-with-israeli-id"
 * onsetDateTime = "2012-05-24"
 
+// תוספות מותרות
+* recordedDate = "2012-05-25"
+* asserter.reference = "Practitioner/md"
+* note.text = "Patient burned ear while using hairdryer. Treated with topical ointment. Follow-up recommended."

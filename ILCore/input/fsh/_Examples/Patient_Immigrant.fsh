@@ -20,13 +20,14 @@ Usage: #example
 * name.family = "לוי"
 * name.given = "הרצל"
 * name.text = "הרצל לוי"
+* name.given[+] = "Herzl"
 * name.extension[language].valueCode = #he
 * telecom[0].system = #phone
-* telecom[0].value = "052467911"
+* telecom[0].value = "0524679111"
 * telecom[0].use = #home
 * telecom[1].system = #email
 * telecom[1].value = "Israel@example.com"
-* gender = #female
+* gender = #male
 * birthDate = "1951-04-17"
 * address.use = #home
 * address.type = #physical

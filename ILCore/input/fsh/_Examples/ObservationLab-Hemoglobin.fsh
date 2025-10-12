@@ -17,3 +17,19 @@ Usage: #example
 * effectiveDateTime = "2024-11-27T10:30:00Z"
 * valueQuantity = 13.5 'g/dL' "g/dL"
 
+//תוצאות 
+* identifier.system = "http://labs.clalit.org.il/tests"
+* identifier.value = "HEMOGLOBIN-20241127-001"
+* referenceRange.low.value = 12.0
+* referenceRange.low.unit = "g/dL"
+* referenceRange.low.system = $ucum
+* referenceRange.low.code = #g/dL
+* referenceRange.high.value = 16.0
+* referenceRange.high.unit = "g/dL"
+* referenceRange.high.system = $ucum
+* referenceRange.high.code = #g/dL
+* method = $sct#104154007 "Hemoglobin measurement, automated (procedure)"
+* bodySite = $sct#122869004 "Venous blood specimen (specimen)"
+* interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
+
+

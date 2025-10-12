@@ -1,5 +1,5 @@
-ValueSet: ILCoreSubstance
-Id: il-core-substance
+ValueSet: ILCoreSubstanceCodes
+Id: il-core-substance-codes
 Title: "IL Core Substance Codes"
 Description: "A list of codes for Substances for the IL Core"
 * ^url = $vs-il-core-substance

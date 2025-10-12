@@ -33,6 +33,12 @@ Usage: #example
 * activity.detail.location.display = "Patient's home"
 * activity.detail.performer = Reference(Patient/patient-immigrant)
 * subject = Reference(Patient/patient-immigrant) 
+////////////////////////////////////////////////////////
+// תוספות לפי כללים (ללא שינוי בקיים)
+////////////////////////////////////////////////////////
+
+* period.start = "2016-02-01"
+* note.text = "Patient motivated to lose 10kg within 6 months. Monitoring daily progress."
 
 Instance: p1
 InstanceOf: Condition
@@ -41,3 +47,4 @@ Usage: #inline
 * verificationStatus = $condition-ver-status#confirmed
 * code.text = "Obesity"
 * subject = Reference(Patient/patient-immigrant)
+

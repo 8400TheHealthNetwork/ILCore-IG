@@ -12,7 +12,6 @@ Description: "MedicationStatement - morphine during hospitalization"
 * medicationCodeableConcept.coding[0] = $sct#372767007 "Fluoxetine (substance)"
 * informationSource.reference = "Practitioner/1"
 * informationSource.type = "Practitioner" 
-* effectivePeriod.start = "2022-07-25"
 * dateAsserted = "2022-07-30"
 * subject.reference = "Patient/patient-with-israeli-id"
 * subject.type = "Patient"
@@ -31,12 +30,9 @@ Description: "MedicationStatement - morphine during hospitalization"
 * dosage[0].doseAndRate.doseQuantity.unit = "mg"
 * dosage[0].doseAndRate.doseQuantity.code = #mg
 * dosage[0].doseAndRate.doseQuantity.system = $ucum
-* dosage[0].doseAndRate.rateRatio.numerator.value = 15
-* dosage[0].doseAndRate.rateRatio.numerator.unit = "mg"
-* dosage[0].doseAndRate.rateRatio.numerator.system = $ucum
-* dosage[0].doseAndRate.rateRatio.denominator.value = 4
-* dosage[0].doseAndRate.rateRatio.denominator.unit = "hour"
-* dosage[0].doseAndRate.rateRatio.numerator.system = $sct
+* dosage[0].timing.repeat.frequency = 1
+* dosage[0].timing.repeat.period = 1
+* dosage[0].timing.repeat.periodUnit = #d
 * dosage[0].timing.repeat.when = #MORN
 * extension[courseOfTherapyType].url = "http://fhir.health.gov.il/StructureDefinition/ext-medication-course-of-therapy-type"
 * extension[courseOfTherapyType].valueCodeableConcept.coding[0].system = "http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy"

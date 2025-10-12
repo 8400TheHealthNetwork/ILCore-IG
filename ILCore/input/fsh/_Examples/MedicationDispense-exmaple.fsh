@@ -25,3 +25,18 @@ Description: "An example instance of the ILCore MedicationDispense profile."
 * dosageInstruction[0].doseAndRate[0].doseQuantity.system = $sct
 * dosageInstruction[0].doseAndRate[0].doseQuantity.code = #428673006
 * extension[recorded].valueDateTime = "2024-05-21T14:00:00Z"
+//תוספות 
+// תיעוד המקום שבו בוצעה המסירה – בית מרקחת פיזי
+* location.display = "בית מרקחת כללית - סניף גדרה"
+
+// תיעוד ההקשר – ביקור רופא במרפאה (אם רלוונטי למרשם שהוביל למסירה)
+* context = Reference(Encounter/community-clinic-visit)
+
+
+// תיעוד יעד המסירה – לא חובה, אך ייתכן רלוונטי למשלוחים
+* destination.display = "מסירה ידנית למטופל בבית המרקחת"
+
+// הוספת פתק של הרוקח
+* note[0].text = "הרוקחת הסבירה למטופל על תופעות לוואי אפשריות וביקשה להימנע מאלכוהול"
+
+

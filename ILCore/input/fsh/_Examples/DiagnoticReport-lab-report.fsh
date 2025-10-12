@@ -16,3 +16,17 @@ Usage: #example
 * result[0] = Reference(Observation/obs1) "Cholesterol Total"
 * result[+] = Reference(Observation/obs2) "HDL Cholesterol"
 * result[+] = Reference(Observation/obs3) "LDL Cholesterol"
+
+////////////////////////////////////////////////////////
+// תוספות לפי כללים
+////////////////////////////////////////////////////////
+
+// סיכום מילולי של הדוח
+* conclusion = "Overall lipid panel within normal range."
+
+// קידוד רפואי לסיכום
+* conclusionCode = $sct#166643006 "Normal lipid panel"
+
+// קובץ מצורף של הדוח בפורמט PDF
+* presentedForm.contentType = #application/pdf
+* presentedForm.url = "http://example.org/report123.pdf"

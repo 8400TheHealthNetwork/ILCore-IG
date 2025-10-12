@@ -20,8 +20,6 @@ Description: "An example of ILCoreAllergyIntolerance of a penut allergy"
 * extension[AllergyIntoleranceEnd].extension[endDate].valueDateTime = "2020-01-01"
 * extension[AllergyIntoleranceEnd].extension[reasonEnded].valueCodeableConcept = $sct#63098009 "Clinical immunologist (occupation)"
 
-
-
-
-
-
+* onsetDateTime = "2018-06-10"
+* recorder.reference = "Practitioner/practitioner-il-family-md"
+* note.text = "Patient previously had severe allergic reaction to peanuts, but tolerance developed after immunotherapy."

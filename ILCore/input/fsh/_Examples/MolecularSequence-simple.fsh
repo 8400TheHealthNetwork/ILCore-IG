@@ -18,3 +18,10 @@ Usage: #example
 * repository.url = "http://grch37.rest.ensembl.org/ga4gh/variants/3:rs1333049?content-type=application/json"
 * repository.name = "GA4GH API"
 * repository.variantsetId = "3:rs1333049"
+//תוספות
+* coordinateSystem = 1
+* identifier.system = "http://fhir.health.gov.il/identifier/sequence"
+* identifier.value = "rs1333049"
+* referenceSeq.genomeBuild = "GRCh37"
+* performer.reference = "Practitioner/practitioner-md"
+* performer.display = "Dr. Moshe Ben Haim"

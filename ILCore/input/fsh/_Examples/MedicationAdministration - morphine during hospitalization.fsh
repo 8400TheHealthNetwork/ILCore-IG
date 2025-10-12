@@ -35,10 +35,18 @@ Description: "MedicationAdministration - morphine during hospitalization"
 * dosage.rateRatio.denominator.value = 4
 * dosage.rateRatio.denominator.unit = "hour"
 * dosage.rateRatio.numerator.system = $sct
-* extension[narcotic].url = "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication"
 * extension[narcotic].valueBoolean = true
-* extension[recorded].url = "http://fhir.health.gov.il/StructureDefinition/ext-medication-recorded-time"
 * extension[recorded].valueDateTime = "2022-10-11"
+
+//תוספות
+
+// תיעוד סיבת המתן – לדוגמה: ניתוח או כאב אקוטי
+* reasonCode[0].coding[0] = $sct#18286008 "Postoperative pain"
+* reasonCode[0].text = "Postoperative pain due to procedure"
+
+// תיעוד הוספת הערה או אינדיקציה קלינית ע"י הרופא
+* note[0].text = "Patient requested analgesia and responded well"
+
 
 
 

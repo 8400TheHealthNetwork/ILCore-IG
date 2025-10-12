@@ -57,3 +57,7 @@ Usage: #example
 *  series.instance[3].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2
 *  series.instance[3].sopClass.display = "Digital Mammography X-Ray Image Storage - For Presentation"
 *  series.instance[3].number = 4
+// תוספות מוצעות
+* description = "Routine diagnostic mammography exam following reported breast lump"
+* note.text = "Patient reported slight discomfort during compression"
+

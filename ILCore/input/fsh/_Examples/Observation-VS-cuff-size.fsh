@@ -26,4 +26,8 @@ Description: "Observation - head circumference"
 * effectiveDateTime = "2021-02-20"
 * encounter = Reference(Encounter/home-visit)
 * method = $sct#41751005 "Anatomic measurement (procedure)"
+//תוצאות 
+* identifier.system = "http://ehr.health.gov.il/vitals/head-circ"
+* identifier.value = "HC-20210220-001"
+* bodySite = $sct#38266002 "Head structure (body structure)"
 

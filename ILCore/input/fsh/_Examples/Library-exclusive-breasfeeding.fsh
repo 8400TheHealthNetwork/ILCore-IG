@@ -21,3 +21,21 @@ Usage: #example
 * dataRequirement.codeFilter.valueSet = "urn:oid:2.16.840.1.113883.3.117.1.7.1.25"
 * content.contentType = #text/cql
 * content.url = "http://cqlrepository.org/CMS9v4_CDS.cql"
+
+// תוספות מוצעות
+* jurisdiction.coding.system = "urn:iso:std:iso:3166"
+* jurisdiction.coding.code = #IL
+* jurisdiction.coding.display = "Israel"
+* useContext[+].code = http://terminology.hl7.org/CodeSystem/usage-context-type#age
+* useContext[=].valueRange.low.value = 0
+* useContext[=].valueRange.low.unit = "months"
+* useContext[=].valueRange.low.system = "http://unitsofmeasure.org"
+* useContext[=].valueRange.low.code = #mo
+* useContext[=].valueRange.high.value = 6
+* useContext[=].valueRange.high.unit = "months"
+* useContext[=].valueRange.high.system = "http://unitsofmeasure.org"
+* useContext[=].valueRange.high.code = #mo
+* approvalDate = "2016-01-01"
+* lastReviewDate = "2016-12-31"
+* publisher = "Israeli Ministry of Health"
+* content.title = "CQL Logic for Exclusive Breastfeeding"

@@ -11,3 +11,7 @@ Usage: #example
 * period.start = "2015-01-17"
 * period.end = "2016-12-01"
 * author = Reference(Practitioner/practitioner-nurse) "Nancy Nurse"
+
+// תוספות מוצעות בהתאם ל־ILCoreFlag
+
+* identifier.system = "http://hospital.org/flag-id" // מערכת מזוהה אחידה לדוגמה

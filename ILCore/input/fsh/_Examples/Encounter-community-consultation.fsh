@@ -1,4 +1,3 @@
-
 Instance: community-consultation
 InstanceOf: ILCoreEncounter
 Usage: #example
@@ -23,3 +22,17 @@ Usage: #example
 * serviceProvider.identifier.system = $legal-entity
 * serviceProvider.identifier.value = "589902279"
 * serviceProvider.display = "מכבי שירותי בריאות"
+
+
+// --- תוספות מוצעות לפי הפרופיל ---
+
+* period.start = "2024-10-01T09:00:00+02:00"
+* period.end = "2024-10-01T09:45:00+02:00"
+
+* location[0].location.reference = "Location/clinic-23"
+* location[0].status = #completed
+
+* reasonCode[0] = $sct#413839001 "Psychiatric consultation"
+
+* extension[modeOfArrival].valueCoding = #W "Walk-in"
+

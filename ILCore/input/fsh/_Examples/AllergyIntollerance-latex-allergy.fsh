@@ -19,3 +19,6 @@ Description: "An example of ILCoreAllergyIntolerance of a latex allergy"
 * reaction.severity = #mild
 * reaction.exposureRoute = $sct#6064005 "Topical route (qualifier value)"
 
+* onsetDateTime = "2021-05-10"
+* recorder.reference = "Practitioner/practitioner-il-md"
+* note.text = "Mild skin rash and itching after using latex gloves."

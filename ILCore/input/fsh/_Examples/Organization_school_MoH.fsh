@@ -26,4 +26,5 @@ InstanceOf: ILCoreOrganization
 * address.line.extension[houseNumber].valueString = "43"
 * address.postalCode = "4410601"  
 * address.country = "IL"
- 
+//תוספות
+* type[moh-institute-type] = $institution-type-moh#77 "בית ספר"

@@ -6,7 +6,6 @@ Description: "Example of a device dispense record for a digital blood pressure m
 
 * status = #completed
 * basedOn = Reference(DeviceRequest/device-request-bp-monitor)
-* type.coding.system = "http://hl7.org/fhir/ValueSet/supplydelivery-type"
 * type.coding.code = #device
 * type.coding.display = "Device"
 

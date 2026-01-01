@@ -14,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Coverage Re
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * identifier MS
 * type from $vs-coverage-type (preferred)

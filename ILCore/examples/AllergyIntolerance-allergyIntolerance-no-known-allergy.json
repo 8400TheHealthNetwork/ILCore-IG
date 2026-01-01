@@ -7,8 +7,8 @@
     ]
   },
   "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No Known Allergies</div>",
-    "status": "generated"
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">No Known Allergies</div>"
   },
   "patient": {
     "reference": "Patient/patient-israeli-with-two-identifiers"
@@ -37,5 +37,13 @@
         "display": "No known allergy"
       }
     ]
-  }
+  },
+  "recorder": {
+    "reference": "Practitioner/practitioner-example"
+  },
+  "note": [
+    {
+      "text": "Patient reports no known allergies as of last intake visit."
+    }
+  ]
 }

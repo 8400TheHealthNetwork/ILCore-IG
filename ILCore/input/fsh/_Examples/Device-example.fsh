@@ -11,7 +11,7 @@ Usage: #example
 
 // תוספות מוצעות (ניתנות להסרה או התאמה)
 * status = #active
-* type = $sct#86184003 "Infusion pump"
+* type = $sct#430033006 "Infusion pump (physical object)"
 * manufacturer = "Medtronic"
 * manufactureDate = "2022-03-15"
 * expirationDate = "2027-03-15"

@@ -14,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * status and intent and category and code and subject and occurrence[x] and occurrenceDateTime and occurrencePeriod and authoredOn and requester and reasonCode MS

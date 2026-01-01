@@ -15,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * identifier ^min = 1
@@ -32,7 +33,6 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
    pna-id 0..1 and
    enc-pna-id 0..1 and
    ppn 0..* and
-   ppn-no-country 0..* and
    enc-il-id 0..1 and
    enc-ppn 0..*
    // and
@@ -122,18 +122,6 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * identifier[ppn].value ^short = "Passport Number"
 * identifier[ppn].system from $vs-pp-uri (required)
 * identifier[ppn].assigner only Reference(ILCoreOrganization)
-
-* identifier[ppn-no-country] ^short = "Passport Number - no country"
-* identifier[ppn-no-country] ^definition = "Passport number without a system indicating the issuing country. A passport number SHOULD  be accompanied by a system indicating the issuing country. This slice is defined only for legacy reasons to allow historical incomplete data to be represented in a uniform way"
-* identifier[ppn-no-country] ^mustSupport = false
-* identifier[ppn-no-country] obeys passport-country-required
-* identifier[ppn-no-country].system 1..1
-* identifier[ppn-no-country].system.extension contains $data-absent-reason named data-absent-reason 1..1
-* identifier[ppn-no-country].system.extension[data-absent-reason].url = $data-absent-reason (exactly)
-* identifier[ppn-no-country].value 1..1 MS
-* identifier[ppn-no-country].type 1..1
-* identifier[ppn-no-country].type = $id-type#PPN
-* identifier[ppn-no-country].assigner only Reference(ILCoreOrganization)
 
 * identifier[enc-il-id] ^short = "National Identifier - MoH encrypted"
 * identifier[enc-il-id] ^definition = "The person's national identifier after applying MoH's standard primary encryption algorithm"

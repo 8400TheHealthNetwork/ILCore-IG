@@ -59,7 +59,8 @@
       "sequence": 1,
       "provider": {
         "reference": "Practitioner/md"
-      }
+      },
+      "responsible": true
     }
   ],
   "diagnosis": [
@@ -71,7 +72,18 @@
             "code": "123456"
           }
         ]
-      }
+      },
+      "type": [
+        {
+          "coding": [
+            {
+              "code": "principal",
+              "system": "http://terminology.hl7.org/CodeSystem/ex-diagnosistype",
+              "display": "Principal Diagnosis"
+            }
+          ]
+        }
+      ]
     }
   ],
   "insurance": [
@@ -109,6 +121,24 @@
         "value": 135.57,
         "currency": "USD"
       }
+    }
+  ],
+  "supportingInfo": [
+    {
+      "sequence": 1,
+      "category": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/claiminformationcategory",
+            "code": "info",
+            "display": "Information"
+          }
+        ]
+      },
+      "valueReference": {
+        "reference": "Condition/obesity"
+      },
+      "timingDate": "2014-08-15"
     }
   ]
 }

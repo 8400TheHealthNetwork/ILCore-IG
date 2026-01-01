@@ -86,9 +86,15 @@
     {
       "assessment": [
         {
-          "reference": "hemoglobin-lab-test"
+          "reference": "Observation/hemoglobin-lab-test"
         }
       ]
+    }
+  ],
+  "recordedDate": "2012-05-25",
+  "note": [
+    {
+      "text": "Diagnosis based on elevated fasting glucose and HbA1c lab results."
     }
   ]
 }

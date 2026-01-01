@@ -37,6 +37,17 @@
     {
       "outcome": {
         "text": "Unknown risk of developing breast cancer"
+      },
+      "probabilityDecimal": 0.45,
+      "rationale": "Positive family history and BRCA1 mutation carrier",
+      "qualitativeRisk": {
+        "coding": [
+          {
+            "code": "723509005",
+            "system": "http://snomed.info/sct",
+            "display": "High risk"
+          }
+        ]
       }
     }
   ],
@@ -44,5 +55,6 @@
     {
       "text": "This risk assessment is based on BRCA1 and BRCA2 genetic mutation test"
     }
-  ]
+  ],
+  "occurrenceDateTime": "2024-12-01"
 }

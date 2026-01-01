@@ -17,6 +17,7 @@ Description: "Israel Core proposed constraints and extensions on the SuTaskstanc
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * partOf only Reference(ILCoreTask)
 * requester only Reference(ILCoreDevice or ILCoreOrganization or ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson)

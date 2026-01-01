@@ -68,7 +68,8 @@
       "coding": [
         {
           "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
-          "code": "HU"
+          "code": "HU",
+          "display": "Hospital Unit"
         }
       ]
     }
@@ -87,10 +88,33 @@
     }
   ],
   "managingOrganization": {
-    "reference": "Organization/ministry-of-health"
+    "reference": "Organization/ministry-of-health",
+    "display": "Ministry of Health"
   },
   "position": {
     "longitude": 32.232325,
     "latitude": 34.253251
+  },
+  "mode": "instance",
+  "alias": [
+    "מחלקת פנימית א'"
+  ],
+  "physicalType": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/location-physical-type",
+        "code": "wa",
+        "display": "Ward"
+      }
+    ]
+  },
+  "operationalStatus": {
+    "system": "http://terminology.hl7.org/CodeSystem/v2-0116",
+    "code": "O",
+    "display": "Occupied"
+  },
+  "partOf": {
+    "reference": "Location/rambam-campus",
+    "display": "מרכז רפואי רמב\"ם"
   }
 }

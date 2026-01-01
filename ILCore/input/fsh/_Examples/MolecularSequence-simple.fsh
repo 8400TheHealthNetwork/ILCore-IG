@@ -10,6 +10,7 @@ Usage: #example
 * referenceSeq.strand = #watson
 * referenceSeq.windowStart = 22125500
 * referenceSeq.windowEnd = 22125510
+// * referenceSeq.genomeBuild = "GRCh37"
 * variant.start = 22125503
 * variant.end = 22125504
 * variant.observedAllele = "C"
@@ -22,6 +23,5 @@ Usage: #example
 * coordinateSystem = 1
 * identifier.system = "http://fhir.health.gov.il/identifier/sequence"
 * identifier.value = "rs1333049"
-* referenceSeq.genomeBuild = "GRCh37"
 * performer.reference = "Practitioner/practitioner-md"
 * performer.display = "Dr. Moshe Ben Haim"

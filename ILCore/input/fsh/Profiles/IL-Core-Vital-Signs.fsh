@@ -13,6 +13,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * obeys il-vs2
 * extension contains $body-position named body-position 0..1

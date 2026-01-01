@@ -6,7 +6,33 @@
       "http://fhir.health.gov.il/StructureDefinition/il-core-research-study"
     ]
   },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">מחקר אונקולוגי הכולל טיפול כימותרפי</div>"
+  },
   "status": "completed",
+  "title": "טיפול כימותרפי מבוקר לסרטן מסוג X",
+  "description": "מחקר קליני שבחן את השפעת הטיפול הכימותרפי מסוג ABC בקרב חולי סרטן מסוג X בגילאי 18–75, כולל תופעות לוואי ויעילות הטיפול.",
+  "phase": {
+    "coding": [
+      {
+        "system": "http://terminology.hl7.org/CodeSystem/research-study-phase",
+        "code": "phase-3",
+        "display": "Phase 3"
+      }
+    ]
+  },
+  "focus": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "363346000",
+          "display": "Malignant neoplastic disease (disorder)"
+        }
+      ]
+    }
+  ],
   "protocol": [
     {
       "reference": "PlanDefinition/chemotherapy"
@@ -22,5 +48,36 @@
   },
   "principalInvestigator": {
     "reference": "Practitioner/anesthesiologist-with-expertise"
-  }
+  },
+  "site": [
+    {
+      "reference": "Location/hospital-unit"
+    }
+  ],
+  "period": {
+    "start": "2019-01-01",
+    "end": "2022-12-31"
+  },
+  "keyword": [
+    {
+      "text": "כימותרפיה"
+    },
+    {
+      "text": "סרטן"
+    },
+    {
+      "text": "טיפול ממוקד"
+    }
+  ],
+  "condition": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "126788000",
+          "display": "Neoplasm of parotid gland"
+        }
+      ]
+    }
+  ]
 }

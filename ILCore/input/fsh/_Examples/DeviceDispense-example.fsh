@@ -6,6 +6,7 @@ Description: "Example of a device dispense record for a digital blood pressure m
 
 * status = #completed
 * basedOn = Reference(DeviceRequest/device-request-bp-monitor)
+* type.coding.system = "http://terminology.hl7.org/CodeSystem/supply-item-type"
 * type.coding.code = #device
 * type.coding.display = "Device"
 
@@ -17,7 +18,7 @@ Description: "Example of a device dispense record for a digital blood pressure m
 
 * suppliedItem.quantity.value = 1
 * suppliedItem.quantity.unit = "unit"
-* suppliedItem.quantity.system = "http://unitsofmeasure.org"
+* suppliedItem.quantity.system = $ucum
 * suppliedItem.quantity.code = #1
 
 * suppliedItem.itemReference = Reference(Device/device-bp-monitor)

@@ -1,20 +1,21 @@
-Instance: definition-example
+Instance: definition-glucose-meter
 InstanceOf: ILCoreDeviceDefinition
 Usage: #example
 
-* identifier.value = "0"
+* identifier.system = "http://goodcare.org/devices/id"
+* identifier.value = "345675"
 * manufacturerReference = Reference(Organization/ministry-of-health)
 * owner = Reference(Organization/hospital-department)
 
 // תוספות:
 * deviceName[0].name = "Example Glucose Meter"
-* deviceName[0].type = #registered-name
+* deviceName[0].type = #manufacturer-name
 
-* type = $sct#86184003 "Glucose meter"
+* type = $sct#337414009 "Blood glucose meter (physical object)"
 * modelNumber = "GM-2025"
 
 // גרסה אחת בלבד
-* version[0].value = "v2.5.1"
+* version = "v2.5.1"
 
 // תכונה לדוגמה: טווח מדידה
 * property[0].type.text = "Measurement Range"

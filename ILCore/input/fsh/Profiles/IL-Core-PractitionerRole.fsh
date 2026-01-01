@@ -14,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Practitione
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * active and period and practitioner and organization MS
 * practitioner only Reference(ILCorePractitioner)

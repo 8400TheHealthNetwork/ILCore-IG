@@ -10,31 +10,34 @@
     {
       "resourceType": "Organization",
       "id": "provider",
+      "meta": {
+        "profile": [
+          "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+        ]
+      },
       "identifier": [
         {
           "system": "http://www.jurisdiction.com/provideroffices",
           "value": "3456"
         }
-      ]
+      ],
+      "name": "מרכז רפואי מאיר"
     },
     {
       "resourceType": "Organization",
       "id": "payor",
+      "meta": {
+        "profile": [
+          "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+        ]
+      },
       "identifier": [
         {
           "system": "http://www.jurisdiction.com/insurer",
           "value": "123456"
         }
-      ]
-    },
-    {
-      "resourceType": "Practitioner",
-      "id": "requester",
-      "identifier": [
-        {
-          "value": "6789"
-        }
-      ]
+      ],
+      "name": "משרד הבריאות"
     }
   ],
   "identifier": [
@@ -91,7 +94,7 @@
   "occurrenceDateTime": "2016-06-10T11:01:10-08:00",
   "authoredOn": "2016-06-10T11:01:10-08:00",
   "requester": {
-    "reference": "#requester"
+    "reference": "practitioner/gp"
   },
   "recipient": [
     {
@@ -100,5 +103,20 @@
   ],
   "sender": {
     "reference": "#payor"
-  }
+  },
+  "reasonCode": [
+    {
+      "text": "Insurance claim missing documentation"
+    }
+  ],
+  "note": [
+    {
+      "text": "Urgent request for documentation to avoid delay in claim processing."
+    }
+  ],
+  "about": [
+    {
+      "display": "Claim DEF5647"
+    }
+  ]
 }

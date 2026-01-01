@@ -54,9 +54,23 @@
         {
           "code": "442083009",
           "system": "http://snomed.info/sct",
-          "display": "Anatomical or acquired body site (body structure)"
+          "display": "Anatomical or acquired body structure (body structure)"
         }
       ]
+    }
+  ],
+  "category": {
+    "coding": [
+      {
+        "code": "103693007",
+        "system": "http://snomed.info/sct",
+        "display": "Diagnostic procedure (procedure)"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Blood test performed 24 hours before partial parotidectomy procedure"
     }
   ]
 }

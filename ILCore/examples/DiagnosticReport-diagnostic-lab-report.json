@@ -61,5 +61,23 @@
       "reference": "Observation/obs3",
       "display": "LDL Cholesterol"
     }
+  ],
+  "conclusion": "Overall lipid panel within normal range.",
+  "conclusionCode": [
+    {
+      "coding": [
+        {
+          "code": "16254007",
+          "system": "http://snomed.info/sct",
+          "display": "Lipid panel (procedure)"
+        }
+      ]
+    }
+  ],
+  "presentedForm": [
+    {
+      "contentType": "application/pdf",
+      "url": "http://some.health.com/report123.pdf"
+    }
   ]
 }

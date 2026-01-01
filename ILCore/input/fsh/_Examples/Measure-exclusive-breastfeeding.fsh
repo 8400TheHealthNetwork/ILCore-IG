@@ -4,6 +4,7 @@ Instance: exclusive-breastfeeding
 InstanceOf: ILCoreMeasure
 Usage: #example
 * identifier.use = #official
+* identifier[0].system = "http://fhir.community-emr.co.il/identifier/entity-id/measures"
 * identifier.value = "exclusive-breastfeeding-measure"
 * version = "4.0.1"
 * title = "Exclusive Breastfeeding Measure"
@@ -39,10 +40,10 @@ Usage: #example
 * relatedArtifact[+].type = #documentation
 * relatedArtifact[=].citation = "World Health Organization. (1991). Indicators for assessing breastfeeding practices. Geneva, Switzerland: World Health Organization. Available at: http://whqlibdoc.who.int/hq/1991/WHO_CDD_SER_91.14.pdf?ua=1."
 * relatedArtifact[+].type = #predecessor
-* relatedArtifact[=].resource = "Measure/measure-predecessor-example"
+* relatedArtifact[=].resource = "http://fhir.health.org.il/fhirex/Measure/measure-predecessor-example"
 * relatedArtifact[+].type = #derived-from
-* relatedArtifact[=].resource = "Measure/measure-predecessor-example"
-* library = "Library/library-exclusive-breastfeeding-cqm-logic"
+* relatedArtifact[=].resource = "http://fhir.health.org.il/fhirex/Measure/measure-predecessor-example"
+* library = "http://fhir.health.org.il/fhirex/Library/library-exclusive-breastfeeding-cqm-logic"
 * disclaimer = "These performance measures are not clinical guidelines and do not establish a standard of medical care, and have not been tested for all potential applications. The measures and specifications are provided without warranty."
 * scoring.coding.code = #proportion
 * type.coding.code = #process

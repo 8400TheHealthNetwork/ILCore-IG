@@ -78,5 +78,19 @@
         }
       ]
     }
+  ],
+  "location": {
+    "display": "בית מרקחת כללית - סניף גדרה"
+  },
+  "context": {
+    "reference": "Encounter/community-clinic-visit"
+  },
+  "destination": {
+    "display": "מסירה ידנית למטופל בבית המרקחת"
+  },
+  "note": [
+    {
+      "text": "הרוקחת הסבירה למטופל על תופעות לוואי אפשריות וביקשה להימנע מאלכוהול"
+    }
   ]
 }

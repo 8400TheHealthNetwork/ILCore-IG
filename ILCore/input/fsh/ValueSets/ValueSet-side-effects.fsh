@@ -24,7 +24,7 @@ Description: "Codes from SNOMED CT detailing possible immunization-side-effects 
 * $sct#7180009
 * $sct#45170000
 * $sct#56905009
-* $sct#74718005
+// * $sct#74718005
 * $sct#3723001
 * $sct#40956001
 * $sct#193093009

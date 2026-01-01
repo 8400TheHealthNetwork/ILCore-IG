@@ -18,6 +18,7 @@ Description: "Adds Isareli constraints to the Flag datatype"
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 * subject only Reference(ILCorePatient or ILCoreLocation or ILCoreGroup or ILCoreOrganization or ILCorePractitioner 
             or ILCorePlanDefinition or ILCoreMedication or ILCoreProcedure)

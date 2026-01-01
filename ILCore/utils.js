@@ -7,6 +7,7 @@ import jsonata from 'jsonata';
 const server = axios.create({ timeout: 15000 });
 
 const workingDir = path.resolve('.');
+const sharedResourcesDir = path.resolve('c:\\FHIR\\fhir-shared-resources');
 
 const sushiConfigPath = path.join(workingDir, 'sushi-config.yaml');
 
@@ -17,7 +18,14 @@ export const fetch = async (url) => {
 };
 
 export const getJrePath = () => {
-    return path.join(workingDir, 'jre');
+    const sharedJre = path.join(sharedResourcesDir, 'jre');
+    const localJre = path.join(workingDir, 'jre');
+    
+    // Prefer shared, fallback to local
+    if (fs.existsSync(sharedJre)) {
+        return sharedJre;
+    }
+    return localJre;
 };
 
 const getJreVersionPath = () => {
@@ -50,7 +58,14 @@ export const getJreBin = () => {
 };
 
 export const getValidatorPath = () => {
-    return path.join(workingDir, 'validator_cli.jar');
+    const sharedValidator = path.join(sharedResourcesDir, 'validator', 'validator_cli.jar');
+    const localValidator = path.join(workingDir, 'validator_cli.jar');
+    
+    // Prefer shared, fallback to local
+    if (fs.existsSync(sharedValidator)) {
+        return sharedValidator;
+    }
+    return localValidator;
 };
 
 export const getValidationOutputPath = () => {
@@ -103,11 +118,16 @@ export const readValidationResults = (filePath) => {
 
 export const getDependencies = (sushiConfig) => {
     if (sushiConfig?.dependencies) {
-        const igs = Object.entries(sushiConfig.dependencies).filter(kv => kv[0] !== 'hl7.fhir.r4.core');
-        const igParamArray = igs.map((kv) => `-ig ${kv[0]}#${typeof kv[1] === 'string' ? kv[1] : kv[1].version}`);
-        return igParamArray.join(' ');
+        const igs = Object.entries(sushiConfig.dependencies);
+        let igParamArray = [];
+        igs.map((kv) => {
+            igParamArray.push('-ig');
+            const version = typeof kv[1] === 'string' ? kv[1] : kv[1].version;
+            igParamArray.push(`${kv[0]}#${version}`);
+        });
+        return igParamArray;
     } else {
-        return ''
+        return [];
     }
 };
 
@@ -125,28 +145,84 @@ export const extractErrorSummary = async (resource) => {
    return await expr.evaluate(resource)
 }
 
+const DEP_PREFIX_TO_FILTER = 'hl7.fhir.extensions.r';
+
+function filterDependencies(deps) {
+    if (!deps) return {};
+
+    if (!Array.isArray(deps) && typeof deps === 'object') {
+        const filtered = {};
+        for (const [k, v] of Object.entries(deps)) {
+            if (!k.startsWith(DEP_PREFIX_TO_FILTER)) filtered[k] = v;
+        }
+        return filtered;
+    }
+
+    if (Array.isArray(deps)) {
+        const normalized = {};
+        for (const item of deps) {
+            if (!item || typeof item !== 'object') continue;
+
+            if (item.packageId && item.version) {
+                if (!item.packageId.startsWith(DEP_PREFIX_TO_FILTER)) {
+                    normalized[item.packageId] = item.version;
+                }
+                continue;
+            }
+
+            const keys = Object.keys(item);
+            if (keys.length === 1) {
+                const key = keys[0];
+                if (!key.startsWith(DEP_PREFIX_TO_FILTER)) {
+                    normalized[key] = item[key];
+                }
+                continue;
+            }
+
+            if (item.packageId) {
+                const key = item.packageId;
+                const ver = item.version || item.value || item[Object.keys(item)[0]];
+                if (!key.startsWith(DEP_PREFIX_TO_FILTER)) normalized[key] = ver;
+            }
+        }
+        return normalized;
+    }
+
+    return {};
+}
+
 export const generatePackageManifest = async () => {
     const igFilePath = path.join(getFshOutputFolder(), `ImplementationGuide-${readSushiConfig().id}.json`);
     const igResource = JSON.parse(fs.readFileSync(igFilePath, 'utf8'));
     const expr = jsonata(`{
-  'name' : ImplementationGuide.packageId,
-  'version' : ImplementationGuide.version,
-  'canonical' : ImplementationGuide.url,
-  'url' : ImplementationGuide.manifest.rendering,
-  'title' : ImplementationGuide.title,
-  'description' : ImplementationGuide.description,
-  'fhirVersions': ImplementationGuide.fhirVersion[],
-  'dependencies' : ImplementationGuide.dependsOn ? ImplementationGuide.dependsOn{packageId: version},
-  'author' : ImplementationGuide.publisher,
-  'maintainers' : ImplementationGuide.contact.{
+  'name' : packageId,
+  'version' : version,
+  'canonical' : url,
+  'url' : manifest.rendering,
+  'title' : title,
+  'description' : description,
+  'fhirVersions': fhirVersion[],
+  'dependencies' : dependsOn ? dependsOn{packageId: version},
+  'author' : publisher,
+  'maintainers' : contact.{
     'name': name,
     'email': telecom[system='email'].value,
     'url': telecom[system='url'].value
   }[],
-  'license' : ImplementationGuide.license,
-  'jurisdiction' : ImplementationGuide.jurisdiction.coding[system="urn:iso:std:iso:3166"][0].(system & '#' & code)
+  'license' : license,
+  'jurisdiction' : jurisdiction.coding[system="urn:iso:std:iso:3166"][0].(system & '#' & code)
 }`);
-    const packageManifest = await expr.evaluate({ ImplementationGuide: igResource });
+    const packageManifest = await expr.evaluate(igResource);
+
+    if (packageManifest && packageManifest.dependencies) {
+        const filtered = filterDependencies(packageManifest.dependencies);
+        if (Object.keys(filtered).length > 0) {
+            packageManifest.dependencies = filtered;
+        } else {
+            delete packageManifest.dependencies;
+        }
+    }
+
     fs.writeFileSync(path.join(getFshOutputFolder(), 'package.json'), JSON.stringify(packageManifest, null, 2));
     return true;
 }

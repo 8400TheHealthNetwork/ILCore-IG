@@ -2,7 +2,7 @@
   "resourceType": "ImplementationGuide",
   "id": "il.core.fhir.r4",
   "url": "http://fhir.health.gov.il/ImplementationGuide/il.core.fhir.r4",
-  "version": "0.16.0",
+  "version": "0.19.0",
   "name": "ILCoreImplementationGuide",
   "title": "IL Core Implementation Guide",
   "status": "draft",
@@ -46,14 +46,8 @@
   ],
   "dependsOn": [
     {
-      "packageId": "hl7.fhir.r4.core",
-      "version": "4.0.1",
-      "uri": "http://hl7.org/fhir",
-      "id": "hl7_fhir_r4_core"
-    },
-    {
       "packageId": "hl7.fhir.us.core",
-      "version": "7.0.0",
+      "version": "6.1.0",
       "uri": "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
       "id": "hl7_fhir_us_core"
     }
@@ -85,16 +79,24 @@
         "reference": {
           "reference": "AllergyIntolerance/allergyIntolerance-aspirin-intolerance"
         },
-        "name": "AllergyIntollerance: aspirin-intolerance",
-        "description": "An example of ILCoreAllergyIntolerance of a aspirin intolerance",
+        "name": "AllergyIntolerance: Aspirin Intolerance",
+        "description": "An example of ILCoreAllergyIntolerance for an aspirin intolerance case.",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
       },
       {
         "reference": {
           "reference": "AllergyIntolerance/allergyIntolerance-cat-dander-allergy"
         },
-        "name": "AllergyIntollerance: cat-dander-allergy",
+        "name": "AllergyIntolerance: Cat Dander Allergy",
         "description": "An example of ILCoreAllergyIntolerance of a cat-dander allergy",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
+      },
+      {
+        "reference": {
+          "reference": "AllergyIntolerance/allergyIntolerance-no-known-allergy"
+        },
+        "name": "AllergyIntolerance: no-known-allergy",
+        "description": "An example of ILCoreAllergyIntolerance for a person with no known allergies",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
       },
       {
@@ -103,14 +105,6 @@
         },
         "name": "AllergyIntollerance: latex-allergy",
         "description": "An example of ILCoreAllergyIntolerance of a latex allergy",
-        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
-      },
-      {
-        "reference": {
-          "reference": "AllergyIntolerance/allergyIntolerance-no-known-allergy"
-        },
-        "name": "AllergyIntollerance: no-known-allergy",
-        "description": "An example of ILCoreAllergyIntolerance a person with no known allergies",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
       },
       {
@@ -178,13 +172,6 @@
         },
         "name": "cancer-patient",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-research-subject"
-      },
-      {
-        "reference": {
-          "reference": "ResearchStudy/cancer-study"
-        },
-        "name": "cancer-study",
-        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-research-study"
       },
       {
         "reference": {
@@ -257,10 +244,18 @@
       },
       {
         "reference": {
-          "reference": "Consent/consent-example-basic"
+          "reference": "Consent/consent-general"
         },
-        "name": "consent-example-basic",
+        "name": "consent-general",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-consent"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-extended-country-codes"
+        },
+        "name": "Country Codes",
+        "description": "Codes for countries according to ISO 3166",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -272,9 +267,9 @@
       },
       {
         "reference": {
-          "reference": "DeviceDefinition/definition-example"
+          "reference": "DeviceDefinition/definition-glucose-meter"
         },
-        "name": "definition-example",
+        "name": "definition-glucose-meter",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-device-definition"
       },
       {
@@ -299,6 +294,21 @@
         "name": "Department Type MoH",
         "description": "Israel ministry of health coding system for department types",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SupplyDelivery/device-dispense-digital-bp-monitor"
+        },
+        "name": "Device Dispense - Digital Blood Pressure Monitor",
+        "description": "Example of a device dispense record for a digital blood pressure monitor supplied to a patient.",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-device-dispense"
+      },
+      {
+        "reference": {
+          "reference": "DeviceUseStatement/device-use-statement-example"
+        },
+        "name": "device-use-statement-example",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-device-use-statement"
       },
       {
         "reference": {
@@ -417,6 +427,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/ext-additional-class"
+        },
+        "name": "Ext: Additional Class",
+        "description": "Extension: Additional Class. Used to add another class to an Encounter ",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/ext-administrative-parent-name"
         },
         "name": "Ext: Administrative Parent Name",
@@ -493,6 +511,14 @@
         },
         "name": "Ext: IL Core Processing Practitioner",
         "description": "Extension: IL Core Processing Practitioner",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-device-dispense-when-handed-over"
+        },
+        "name": "Ext: ILCore Device Dispense When Handed Over",
+        "description": "This extension documents the time of a device dispense.",
         "exampleBoolean": false
       },
       {
@@ -605,6 +631,13 @@
         },
         "name": "Ext: Statistical Area",
         "description": "Extension: Statistical Area. A concatination of the city symbol + 4-digit statistical area code in settelment. Full CBS number conatins two parts: City symbol + statistical number. E.g.: Jerusalem (3000) 113 area produces -> 3000113",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/ext-il-core-languages"
+        },
+        "name": "ExtILCoreLanguages",
         "exampleBoolean": false
       },
       {
@@ -817,6 +850,14 @@
       },
       {
         "reference": {
+          "reference": "CodeSystem/il-core-contact-point-purpose"
+        },
+        "name": "Il Core Contact Point Purpose",
+        "description": "Codes fro ContacPoint purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/il-core-coverage-class"
         },
         "name": "IL Core Coverage Class codes",
@@ -849,10 +890,26 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/il-core-device-type"
+        },
+        "name": "IL Core Device Type codes",
+        "description": "Codes for Device Types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/il-core-doctor-to-doctor"
         },
         "name": "IL Core Doctor To Doctor Codes",
         "description": "Codes for Doctor To Doctor encounter for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-document-type"
+        },
+        "name": "IL Core Document Type codes",
+        "description": "Codes for Document Types",
         "exampleBoolean": false
       },
       {
@@ -877,6 +934,46 @@
         },
         "name": "IL Core Error code",
         "description": "A list of error codes for ILCore profiles",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-identifier"
+        },
+        "name": "IL Core Identifier",
+        "description": "Israel Core Proposed constraints and extensions on the Identifier data type.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-identifier-type"
+        },
+        "name": "IL Core Identifier Type",
+        "description": "IL Core Identifier Type codes",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-identifier-type"
+        },
+        "name": "IL Core Identifier Type codes",
+        "description": "Codes for Identifier Types",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-linkage"
+        },
+        "name": "IL Core Linkage Profile",
+        "description": "Israel Core Linkage Profile",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-medication-administration-code"
+        },
+        "name": "IL Core Medication Administration Code",
+        "description": "A list of codes for medication administation",
         "exampleBoolean": false
       },
       {
@@ -1025,7 +1122,7 @@
       },
       {
         "reference": {
-          "reference": "ValueSet/il-core-substance"
+          "reference": "ValueSet/il-core-substance-codes"
         },
         "name": "IL Core Substance Codes",
         "description": "A list of codes for Substances for the IL Core",
@@ -1097,9 +1194,9 @@
       },
       {
         "reference": {
-          "reference": "SearchParameter/il-core-movement-sequence-number"
+          "reference": "SearchParameter/il-core-movement-number"
         },
-        "name": "il-core-movement-sequence-number",
+        "name": "il-core-movement-number",
         "description": "Returns Encounter instances where the ILCore Movement Sequence-Number extension has a specified string value.",
         "exampleBoolean": false
       },
@@ -1220,7 +1317,7 @@
           "reference": "StructureDefinition/il-core-bp"
         },
         "name": "ILCore Blood Pressure Profile",
-        "description": "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurments.",
+        "description": "Israel Core proposed constraints and extensions on the Observation Resource for use in Blood Pressure measurements.",
         "exampleBoolean": false
       },
       {
@@ -1269,6 +1366,14 @@
         },
         "name": "ILCore CommunicationRequest Profile",
         "description": "Israel Core proposed constraints and extensions on the CommunicationRequest Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-core-community-unit-type"
+        },
+        "name": "ILCore Community Unit Type",
+        "description": "ILCore Community Unit Type codes",
         "exampleBoolean": false
       },
       {
@@ -1329,10 +1434,26 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/il-core-device-dispense"
+        },
+        "name": "ILCore DeviceDispense Profile",
+        "description": "Israel Core Proposed constraints and extensions on the ILCoreSupplyDelivery profile of SupplyDelivery Resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/il-core-device-request"
         },
         "name": "ILCore DeviceRequest Profile",
         "description": "Israel Core proposed constraints and extensions on the DeviceRequest Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-device-use-statement"
+        },
+        "name": "ILCore DeviceUseStatement Profile",
+        "description": "Israel Core constraints and extensions on the Device DeviceUseStatement Resource",
         "exampleBoolean": false
       },
       {
@@ -1585,18 +1706,18 @@
       },
       {
         "reference": {
-          "reference": "StructureDefinition/il-core-nutrition-order"
-        },
-        "name": "ILCore Molecular Sequence",
-        "description": "Israel Core proposed constraints and extensions on the NutritionOrder Resource",
-        "exampleBoolean": false
-      },
-      {
-        "reference": {
           "reference": "StructureDefinition/il-core-molecular-sequence"
         },
         "name": "ILCore Molecular Sequence Profile",
         "description": "Israel Core proposed constraints and extensions on the MolecularSequence Resource",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/il-core-nutrition-order"
+        },
+        "name": "ILCore NutritionOrder",
+        "description": "Israel Core proposed constraints and extensions on the NutritionOrder Resource",
         "exampleBoolean": false
       },
       {
@@ -1745,6 +1866,14 @@
       },
       {
         "reference": {
+          "reference": "StructureDefinition/il-core-supply-delivery"
+        },
+        "name": "ILCore SupplyDelivery Profile",
+        "description": "Israel Core Proposed constraints and extensions on the SupplyDelivery Resource.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "StructureDefinition/il-core-task"
         },
         "name": "ILCore Task Profile",
@@ -1757,6 +1886,21 @@
         },
         "name": "ILCore Vital Signs Profile",
         "description": "Israel Core proposed constraints and extensions on the Observation Resource for use in querying and retrieving Vital Signs information.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Observation/VS-BodyTemperature"
+        },
+        "name": "ILCore Vital Signs — Body temperature",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-vital-signs"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/ilhdp-strong-identifier"
+        },
+        "name": "ILHDP Strong Identifier",
+        "description": "Code for ILHDP Strong Identifier as defined in the Health Data Portability (HDP) law",
         "exampleBoolean": false
       },
       {
@@ -1784,9 +1928,9 @@
       },
       {
         "reference": {
-          "reference": "Immunization/Immunization-with-product-code"
+          "reference": "Immunization/immunization-with-product-code"
         },
-        "name": "Immunization-with-product-code",
+        "name": "immunization-with-product-code",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-immunization"
       },
       {
@@ -1795,6 +1939,14 @@
         },
         "name": "immunization-with-vaccine-code",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-immunization"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/il-hdp-information-buckets"
+        },
+        "name": "Information buckets סלי מידע",
+        "description": "קודי סלי מידע כפי שהוגדרו במסגרת ניוד מידע רפואי בישראל (חוק ניוד מידע רפואי, תשפד-2024) אשר מכונה באנגלית HDP (Health Data Portability)",
+        "exampleBoolean": false
       },
       {
         "reference": {
@@ -1839,6 +1991,7 @@
           "reference": "ImagingStudy/mammography"
         },
         "name": "mammography",
+        "description": "Routine diagnostic mammography exam following reported breast lump",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-imaging-study"
       },
       {
@@ -1984,10 +2137,10 @@
       },
       {
         "reference": {
-          "reference": "Observation/hight-measurement"
+          "reference": "Observation/height-measurement"
         },
-        "name": "Observation - hight measurement",
-        "description": "Observation - hight measurement",
+        "name": "Observation - height measurement",
+        "description": "Observation - height measurement",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-observation"
       },
       {
@@ -2317,6 +2470,7 @@
           "reference": "Task/refill"
         },
         "name": "refill",
+        "description": "Patient requested a refill for Metamizole prescription for gangrenous tonsillitis",
         "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-task"
       },
       {
@@ -2370,6 +2524,14 @@
         "name": "statusReason codes for Immunization profile",
         "description": "Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SupplyDelivery/supplydelivery-sodium-chloride"
+        },
+        "name": "SupplyDelivery - Sodium Chloride for Home Care",
+        "description": "Example of SupplyDelivery resource for Sodium Chloride solution delivered to a patient during home care.",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-supply-delivery"
       },
       {
         "reference": {
@@ -2435,6 +2597,30 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/vs-il-core-languages"
+        },
+        "name": "ValueSet IL Core Languages",
+        "description": "ValueSet IL Core Languages: A list of languages in use in the ILCore project",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/il-core-community-unit-type"
+        },
+        "name": "ValueSet: ILCore Community Unit Type",
+        "description": "A list of codes for Community Unit Type for the IL Core",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/vs-il-core-contact-point-purpose"
+        },
+        "name": "Vs IL Core Contact Point Purpose",
+        "description": "Codes for ontac Point Purpose",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "Goal/weight-loss"
         },
         "name": "weight-loss",
@@ -2463,6 +2649,14 @@
         "name": "Yarpa Medication Codes",
         "description": "Codes for medications according to 'Yarpa' catalogue",
         "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/cancer-study"
+        },
+        "name": "טיפול כימותרפי מבוקר לסרטן מסוג X",
+        "description": "מחקר קליני שבחן את השפעת הטיפול הכימותרפי מסוג ABC בקרב חולי סרטן מסוג X בגילאי 18–75, כולל תופעות לוואי ויעילות הטיפול.",
+        "exampleCanonical": "http://fhir.health.gov.il/StructureDefinition/il-core-research-study"
       },
       {
         "reference": {

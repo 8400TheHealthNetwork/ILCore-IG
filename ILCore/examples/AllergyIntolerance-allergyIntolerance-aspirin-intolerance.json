@@ -51,8 +51,8 @@
     }
   ],
   "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Penut Allergy</div>",
-    "status": "generated"
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Aspirin intolerance with tinnitus.</div>"
   },
   "patient": {
     "reference": "Patient/patient-with-israeli-id"
@@ -61,7 +61,8 @@
     "coding": [
       {
         "code": "active",
-        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical",
+        "display": "Active"
       }
     ]
   },
@@ -69,7 +70,8 @@
     "coding": [
       {
         "code": "confirmed",
-        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification",
+        "display": "Confirmed"
       }
     ]
   },

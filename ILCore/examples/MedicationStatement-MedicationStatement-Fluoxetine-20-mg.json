@@ -47,10 +47,6 @@
     "reference": "Practitioner/1",
     "type": "Practitioner"
   },
-  "effectivePeriod": {
-    "start": "2022-10-05",
-    "end": "2022-10-10"
-  },
   "dateAsserted": "2022-07-30",
   "subject": {
     "reference": "Patient/patient-with-israeli-id",
@@ -60,6 +56,10 @@
   "context": {
     "reference": "Encounter/123",
     "type": "Encounter"
+  },
+  "effectivePeriod": {
+    "start": "2022-10-05",
+    "end": "2022-10-10"
   },
   "dosage": [
     {
@@ -89,22 +89,14 @@
             "unit": "mg",
             "code": "mg",
             "system": "http://unitsofmeasure.org"
-          },
-          "rateRatio": {
-            "numerator": {
-              "value": 15,
-              "unit": "mg",
-              "system": "http://snomed.info/sct"
-            },
-            "denominator": {
-              "value": 4,
-              "unit": "hour"
-            }
           }
         }
       ],
       "timing": {
         "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d",
           "when": [
             "MORN"
           ]

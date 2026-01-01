@@ -24,5 +24,10 @@
   },
   "consent": {
     "reference": "Consent/consent-example-basic"
-  }
+  },
+  "period": {
+    "start": "2020-02-07",
+    "end": "2021-03-01"
+  },
+  "assignedArm": "control"
 }

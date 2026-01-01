@@ -67,5 +67,16 @@
       "value": "09-7433376",
       "use": "work"
     }
+  ],
+  "type": [
+    {
+      "coding": [
+        {
+          "code": "77",
+          "system": "http://fhir.health.gov.il/cs/institution-type-moh",
+          "display": "בית ספר"
+        }
+      ]
+    }
   ]
 }

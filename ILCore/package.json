@@ -1,7 +1,7 @@
 {
-  "name": "il-core-ig",
-  "version": "0.18.0",
-  "description": "Israel Core FHIR Profiles",
+  "name": "il.fhir.r4.ashmc",
+  "version": "0.3.0",
+  "description": "FHIR Profiles and Implementation Guide for Assuta Ashdod Medical Center",
   "type": "module",
   "scripts": {
     "ruleset": "node updateRuleSet.js",
@@ -17,13 +17,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/8400TheHealthNetwork/ILCore-IG.git"
+    "url": "git+https://github.com/Outburn-IL/ASHMC.git"
   },
-  "author": "Division of Governmental Hospitals Israel",
+  "author": "Assuta Ashdod Medical Center",
   "bugs": {
-    "url": "https://github.com/8400TheHealthNetwork/ILCore-IG/issues"
+    "url": "https://github.com/Outburn-IL/ASHMC/issues"
   },
-  "homepage": "https://github.com/8400TheHealthNetwork/ILCore-IG#readme",
+  "homepage": "https://github.com/Outburn-IL/ASHMC#readme",
   "dependencies": {
     "adm-zip": "^0.5.14",
     "axios": "^1.7.2",

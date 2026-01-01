@@ -17,6 +17,7 @@ Description: "Israel Core proposed constraints and extensions on the CarePlan Re
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * instantiatesCanonical only Canonical(ILCorePlanDefinition or ILCoreQuestionnaire or ILCoreMeasure or ILCoreActivityDefinition or OperationDefinition)
 * basedOn only Reference(ILCoreCarePlan)

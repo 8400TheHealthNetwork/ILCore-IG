@@ -8,6 +8,6 @@ Description: "Extension: IL Core Processing Location"
 
 * ^status = #active
 * ^context.type = #element
-* ^context.expression = "Specimen"
+* ^context.expression = "Specimen.processing"
 
 * value[x] only Reference(ILCoreLocation)

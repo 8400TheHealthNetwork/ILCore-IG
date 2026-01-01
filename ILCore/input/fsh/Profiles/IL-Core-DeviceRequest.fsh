@@ -14,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the DeviceReque
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * instantiatesCanonical only Canonical(ILCorePlanDefinition or ILCoreActivityDefinition)
 * code[x] from $vs-il-core-device-type (preferred)

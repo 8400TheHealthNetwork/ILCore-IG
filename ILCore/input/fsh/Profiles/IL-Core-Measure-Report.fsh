@@ -15,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on the MeasureRepo
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * measure only Canonical(ILCoreMeasure)
 * subject only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreLocation or ILCoreDevice or ILCoreRelatedPerson or ILCoreGroup)

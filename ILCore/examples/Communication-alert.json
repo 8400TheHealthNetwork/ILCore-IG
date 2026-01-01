@@ -72,5 +72,16 @@
         "display": "Serum Potassium Observation"
       }
     }
-  ]
+  ],
+  "note": [
+    {
+      "text": "Urgent alert – requires immediate physician review."
+    }
+  ],
+  "reasonCode": [
+    {
+      "text": "Critical lab value notification"
+    }
+  ],
+  "priority": "urgent"
 }

@@ -97,5 +97,22 @@
         "unit": "hour"
       }
     }
-  }
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "213299007",
+          "system": "http://snomed.info/sct",
+          "display": "Postoperative pain"
+        }
+      ],
+      "text": "Postoperative pain due to procedure"
+    }
+  ],
+  "note": [
+    {
+      "text": "Patient requested analgesia and responded well"
+    }
+  ]
 }

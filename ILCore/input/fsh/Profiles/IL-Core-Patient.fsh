@@ -15,6 +15,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 2
+* identifier only ILCoreIdentifier
 
 
 * extension contains
@@ -22,6 +23,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
     $ext-admin-parent-name named parentName 0..* and
     $ext-birth-place named birthPlace 0..1 and 
     ext-patient-immigration named immigration 0..* and
+    // $ext-il-core-birthsex named birthSex 0..1 
     $us-core-birth-sex named birthSex 0..1 
 * extension[hmo] ^short = "Extension: Israel Core HMO (קופת חולים)"
 * extension[hmo] ^definition = "A code classifying the person's Israeli HMO"
@@ -53,8 +55,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
    prisoner-id 0..1 and
    enc-il-id 0..* and
    entry-permit 0..* and
-   enc-pna-id 0..1 and
-   ppn-no-country 0..*
+   enc-pna-id 0..1 
 //    idf-sn 0..1 and
 //    ppn-no-system 0..* 
 
@@ -131,31 +132,6 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * identifier[enc-pna-id].system = $enc-pna-id (exactly)
 * identifier[enc-pna-id].assigner only Reference(ILCoreOrganization)
 
-* identifier[ppn-no-country] ^short = "Passport Number - no country"
-* identifier[ppn-no-country] ^definition = "Passport number without a system indicating the issuing country. A passport number SHOULD  be accompanied by a system indicating the issuing country. This slice is defined only for legacy reasons to allow historical incomplete data to be represented in a uniform way"
-* identifier[ppn-no-country] ^mustSupport = false
-* identifier[ppn-no-country] obeys passport-country-required
-* identifier[ppn-no-country].system 1..1
-* identifier[ppn-no-country].system.extension contains $data-absent-reason named data-absent-reason 1..1
-* identifier[ppn-no-country].system.extension[data-absent-reason].url = $data-absent-reason (exactly)
-* identifier[ppn-no-country].value 1..1 MS
-* identifier[ppn-no-country].type 1..1
-* identifier[ppn-no-country].type = $id-type#PPN
-* identifier[ppn-no-country].assigner only Reference(ILCoreOrganization)
-
-//THE FOLLOWING IS COMMENTED OUT UNTIL AN IDF SLICE IS DECIDED UPON - 04-MAR-2024 - KIPPI
-// * identifier[idf-sn] ^short = "IDF Service Number"
-// * identifier[idf-sn] ^definition = "Israel Defence forces Sevice number (6-8 digits number). A unique identifier for any soldier currently serving or having served in the IDF"
-// * identifier[idf-sn] ^mustSupport = true
-// * identifier[idf-sn].value 1..1 MS
-// * identifier[idf-sn].value obeys idf-num
-// * identifier[idf-sn].value ^short = "IDF service number"
-// * identifier[idf-sn].system 1..1 MS
-// * identifier[idf-sn].system = $idf-sn (exactly)
-// * identifier[idf-sn].value ^example.valueString = "1234567"
-// * identifier[idf-sn].value ^example.label = "Valid Example"
-// * identifier[idf-sn].assigner only Reference(ILCoreOrganization)
-
 //address 
 * address only ILCoreAddress
 * address 0..*
@@ -168,7 +144,6 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * name obeys il-patient-name
 * name.family 0..1 MS 
 * name.given 0..* MS 
-// * name.extension contains $data-absent-reason named dataAbsentReason 0..1
 * insert HumanNameLanguage  // RuleSet that handles language extension and slices. -> see RuleSets/HumanNameLanguage // Kippi B. May-11 2023
 
 //telecom

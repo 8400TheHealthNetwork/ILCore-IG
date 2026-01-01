@@ -24,26 +24,26 @@
   "address": [
     {
       "line": [
-        "ירמיהו 39"
+        "טשרניחובסקי 59"
       ],
       "_line": [
         {
           "extension": [
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
-              "valueString": "ירמיהו"
+              "valueString": "טשרניחובסקי"
             },
             {
               "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
-              "valueString": "39"
+              "valueString": "59"
             }
           ]
         }
       ],
       "use": "work",
       "type": "physical",
-      "text": "ירמיהו 39 ירושלים",
-      "city": "ירושלים",
+      "text": "טשרניחובסקי 59, כפר סבא",
+      "city": "כפר סבא",
       "_city": {
         "extension": [
           {
@@ -51,7 +51,7 @@
             "valueCodeableConcept": {
               "coding": [
                 {
-                  "code": "3000",
+                  "code": "8900",
                   "system": "http://fhir.health.gov.il/cs/city-symbol"
                 }
               ]
@@ -59,7 +59,7 @@
           }
         ]
       },
-      "postalCode": "9446724",
+      "postalCode": "4428164",
       "country": "IL"
     }
   ],
@@ -68,11 +68,16 @@
     "status": "generated"
   },
   "active": true,
-  "name": "משרד הבריאות",
+  "name": "מרכז רפואי מאיר",
   "telecom": [
     {
       "system": "phone",
       "value": "08-6241010",
+      "use": "work"
+    },
+    {
+      "system": "email",
+      "value": "info@meir.org.il",
       "use": "work"
     }
   ],
@@ -80,9 +85,9 @@
     {
       "coding": [
         {
-          "code": "76",
+          "code": "1",
           "system": "http://fhir.health.gov.il/cs/institution-type-moh",
-          "display": "משרדי ממשלה"
+          "display": "אשפוז כללי"
         }
       ]
     }

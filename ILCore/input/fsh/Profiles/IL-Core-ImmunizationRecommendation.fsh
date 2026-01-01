@@ -14,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * patient only Reference(ILCorePatient)

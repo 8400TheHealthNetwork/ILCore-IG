@@ -10,7 +10,7 @@
   "type": "summary",
   "measure": "http://ohie.org/Measure/hiv-indicators",
   "reporter": {
-    "reference": "practitioner/md"
+    "reference": "Organization/ZW01"
   },
   "period": {
     "start": "2018-01-01",
@@ -408,5 +408,6 @@
         }
       ]
     }
-  ]
+  ],
+  "date": "2018-02-05"
 }

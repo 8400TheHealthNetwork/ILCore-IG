@@ -124,5 +124,10 @@
       }
     ],
     "instruction": "Starting on 2/10 breakfast, maximum 400 ml fluids per meal"
-  }
+  },
+  "note": [
+    {
+      "text": "הדיאטה ניתנה בהתאם להנחיות קרדיולוג עקב בצקת חריפה."
+    }
+  ]
 }

@@ -17,6 +17,7 @@ Description: "Israel Core proposed constraints and extensions on the ImagingStud
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * status and modality and subject and encounter and procedureCode 
                 and series.uid and series.modality and series.instance.uid and series.instance.sopClass MS

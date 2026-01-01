@@ -6,7 +6,8 @@ InstanceOf: ILCoreGoal
 Usage: #example
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n\t\t\t<p> A simple care goal for a patient to lose weight due to obesity.</p>\n\t\t</div>"
-* identifier.value = "123"
+* identifier[0].system = "http://fhir.community-emr.co.il/identifier/entity-id/goals"
+* identifier[0].value = "234234234"
 * lifecycleStatus = #on-hold
 * category = $goal-category#dietary
 * priority = $goal-priority#high-priority "High Priority"

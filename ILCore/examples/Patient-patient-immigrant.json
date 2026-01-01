@@ -67,12 +67,13 @@
       "valueAddress": {
         "line": [
           "New york City, NY, USA"
-        ]
+        ],
+        "country": "USA"
       }
     },
     {
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-      "valueCode": "male"
+      "valueCode": "M"
     }
   ],
   "name": [
@@ -85,7 +86,8 @@
       ],
       "family": "לוי",
       "given": [
-        "הרצל"
+        "הרצל",
+        "Herzl"
       ],
       "text": "הרצל לוי"
     }
@@ -167,7 +169,13 @@
             }
           ]
         }
-      ]
+      ],
+      "name": {
+        "given": [
+          "Baruch"
+        ],
+        "family": "Hashem"
+      }
     }
   ],
   "text": {
@@ -184,7 +192,7 @@
   "telecom": [
     {
       "system": "phone",
-      "value": "052467911",
+      "value": "0524679111",
       "use": "home"
     },
     {
@@ -192,7 +200,7 @@
       "value": "Israel@example.com"
     }
   ],
-  "gender": "female",
+  "gender": "male",
   "birthDate": "1951-04-17",
   "communication": [
     {

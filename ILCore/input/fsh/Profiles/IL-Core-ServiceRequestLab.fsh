@@ -12,6 +12,7 @@ Description: "Israel Core proposed constraints and extensions on the ILCoreServi
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 // * dataAbsentReason and performer and specimen and effectiveDateTime and valueQuantity and valueCodeableConcept and valueString and interpretation MS
 * category[il-core] 1..1 

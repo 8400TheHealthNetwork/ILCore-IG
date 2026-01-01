@@ -13,7 +13,7 @@ InstanceOf: ILCoreProcedure
 * location = Reference(Location/hospital-unit)
 * encounter = Reference(Encounter/breast-screaning)
 * reasonCode = $sct#71388002 "Procedure (procedure)"
-* bodySite = $sct#442083009 "Anatomical or acquired body site (body structure)"
+* bodySite = $sct#442083009 "Anatomical or acquired body structure (body structure)"
 // The following lines are commente out until HL7 fix theprblematic extension
 
 // * performedDateTime.extension[+].url = $relative-date

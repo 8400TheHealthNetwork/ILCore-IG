@@ -37,7 +37,28 @@
         "code": "a",
         "system": "http://unitsofmeasure.org",
         "unit": "yr"
-      }
+      },
+      "outcome": {
+        "coding": [
+          {
+            "code": "723506003",
+            "system": "http://snomed.info/sct",
+            "display": "Resolved (qualifier value)"
+          }
+        ]
+      },
+      "note": [
+        {
+          "text": "Reported by patient during intake interview"
+        }
+      ]
     }
-  ]
+  ],
+  "date": "2022-05-12",
+  "deceasedAge": {
+    "value": 78,
+    "code": "a",
+    "system": "http://unitsofmeasure.org",
+    "unit": "yr"
+  }
 }

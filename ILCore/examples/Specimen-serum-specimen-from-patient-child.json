@@ -41,20 +41,34 @@
       "system": "http://unitsofmeasure.org"
     }
   },
-  "extension": [
+  "processing": [
     {
-      "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-location",
-      "valueReference": {
-        "reference": "Location/hospital-unit",
-        "type": "Location"
-      }
-    },
-    {
-      "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner",
-      "valueReference": {
-        "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses",
-        "type": "Practitioner"
-      }
+      "extension": [
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-location",
+          "valueReference": {
+            "reference": "Location/hospital-unit",
+            "type": "Location"
+          }
+        },
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner",
+          "valueReference": {
+            "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses",
+            "type": "Practitioner"
+          }
+        }
+      ],
+      "procedure": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0373",
+            "code": "DEFB",
+            "display": "Defibrination"
+          }
+        ]
+      },
+      "timeDateTime": "2020-06-12T16:35:00+02:00"
     }
   ],
   "text": {
@@ -87,20 +101,6 @@
     {
       "reference": "ServiceRequest/987",
       "type": "ServiceRequest"
-    }
-  ],
-  "processing": [
-    {
-      "procedure": {
-        "coding": [
-          {
-            "system": "http://terminology.hl7.org/CodeSystem/v2-0373",
-            "code": "DEFB",
-            "display": "Defibrination"
-          }
-        ]
-      },
-      "timeDateTime": "2020-06-12T16:35:00+02:00"
     }
   ],
   "container": [

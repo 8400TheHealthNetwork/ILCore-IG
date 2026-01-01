@@ -62,7 +62,7 @@
         "coding": [
           {
             "code": "CC",
-            "system": "http://terminology.hl7.org/CodeSystem/diagnosis-rolee",
+            "system": "http://terminology.hl7.org/CodeSystem/diagnosis-role",
             "display": "Chief complaint"
           }
         ]
@@ -91,6 +91,12 @@
     {
       "reference": "CareTeam/example",
       "display": "example care team"
+    }
+  ],
+  "account": [
+    {
+      "reference": "Account/example-account",
+      "display": "example account"
     }
   ]
 }

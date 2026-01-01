@@ -53,7 +53,7 @@ Usage: #example
 // התאמת סכום עקב הסכם
 * payment.adjustment.value = -5.00
 * payment.adjustment.currency = #USD
-* payment.adjustmentReason = $adjudication-reason#ar005 "Contractual adjustment"
+* payment.adjustmentReason = $adjudication-reason#ar002 "Plan Limit Reached"
 
 // הפניה לקליים המקורי (חיזוק ההקשר)
 * request.reference = "Claim/dental-claim"

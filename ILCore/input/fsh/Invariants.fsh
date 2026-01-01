@@ -72,7 +72,7 @@ Expression: "partOf.empty() implies identifier.exists()"
 Severity: #error
 
 Invariant: il-organization-hosp-dept
-Description: "Hospital department numner must follow the following structure: five (5) alphanumeric characters, a hyphen (\"-\") and five (5) more alphanumeric characters"
+Description: "Hospital department number must follow the following structure: five (5) alphanumeric characters, a hyphen (\"-\") and five (5) more alphanumeric characters"
 Expression: "matches('^[a-zA-Z0-9]{5}-[a-zA-Z0-9]{5}$')"
 Severity: #error
 
@@ -160,6 +160,12 @@ Invariant: passport-country-required
 Description: "A passport number SHOULD be accompanied by a system indicating the issuing country."
 Severity: #warning
 Expression: "system.exists() and system.hasValue()"
+
+Invariant: il-core-identifier-system
+Description: "An identifier SHALL have a value in the system element, otherwise, the two following conditions must be met: a DataAbsentReason extension on system SHALL be provided AND the type SHALL be populated."
+Severity: #error
+Expression: "system.hasValue() or (system.extension.where(url='http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists() and type.exists())"
+
 
 //  Invariant: ppn-uri
 // Description: "Must be 'http://hl7.org/fhir/sid/passport-[XXX]' [XXX] is a 3-letter country code defined by ISO 3166. See [Using ISO 3166 Codes with FHIR](iso3166.html)"

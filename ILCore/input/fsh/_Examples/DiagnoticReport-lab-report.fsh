@@ -25,8 +25,8 @@ Usage: #example
 * conclusion = "Overall lipid panel within normal range."
 
 // קידוד רפואי לסיכום
-* conclusionCode = $sct#166643006 "Normal lipid panel"
+* conclusionCode = $sct#16254007 "Lipid panel (procedure)"
 
 // קובץ מצורף של הדוח בפורמט PDF
 * presentedForm.contentType = #application/pdf
-* presentedForm.url = "http://example.org/report123.pdf"
+* presentedForm.url = "http://some.health.com/report123.pdf"

@@ -3,8 +3,9 @@ InstanceOf: ILCoreCarePlan
 Usage: #example
 * text.status = #additional
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">\n      <p> A simple care plan to indicate a patient taking their weight once a day because of obesity.</p>\n    </div>"
-* contained = p1
 * identifier.value = "12345"
+* identifier.system.extension[$data-absent-reason].valueCode = #masked
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SNO "Serial Number"
 * instantiatesUri = "http://mockup.org/protocol-for-obesity"
 * basedOn.display = "Management of Type 2 Diabetes"
 * replaces.display = "Plan from urgent care clinic"
@@ -18,7 +19,7 @@ Usage: #example
 * created = "2016-01-01"
 * author = Reference(Practitioner/md) 
 * careTeam = Reference(CareTeam/example)
-* addresses = Reference(Condition/p1) "obesity"
+* addresses = Reference(Condition/type-1-diabetes) "Diabetes"
 * goal = Reference(Goal/weight-loss)
 * activity.outcomeCodeableConcept = $sct#161832001 "Progressive weight loss"
 * activity.outcomeReference = Reference(Observation/hight-measurement) 
@@ -40,11 +41,4 @@ Usage: #example
 * period.start = "2016-02-01"
 * note.text = "Patient motivated to lose 10kg within 6 months. Monitoring daily progress."
 
-Instance: p1
-InstanceOf: Condition
-Usage: #inline
-* clinicalStatus = $condition-clinical#active
-* verificationStatus = $condition-ver-status#confirmed
-* code.text = "Obesity"
-* subject = Reference(Patient/patient-immigrant)
 

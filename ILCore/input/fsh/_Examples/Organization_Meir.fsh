@@ -31,6 +31,6 @@ InstanceOf: ILCoreOrganization
 * address.country = "IL"
 
 
-* type[moh-institute-type] = $institution-type-moh#3 "בית חולים כללי"
+* type[moh-institute-type] = $institution-type-moh#1 "אשפוז כללי"
 
  

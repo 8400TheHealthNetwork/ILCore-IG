@@ -13,6 +13,7 @@ Description: "Israel Core proposed constraints and extensions on the ILCoreObser
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * . ^comment = "Note that The value[x] types might become more restrictive in the future"
 * dataAbsentReason and performer and specimen and effectiveDateTime and valueQuantity and valueCodeableConcept and valueString and interpretation MS

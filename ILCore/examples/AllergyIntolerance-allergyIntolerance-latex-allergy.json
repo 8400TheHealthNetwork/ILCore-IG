@@ -85,5 +85,14 @@
         ]
       }
     }
+  ],
+  "onsetDateTime": "2021-05-10",
+  "recorder": {
+    "reference": "Practitioner/practitioner-il-md"
+  },
+  "note": [
+    {
+      "text": "Mild skin rash and itching after using latex gloves."
+    }
   ]
 }

@@ -10,7 +10,7 @@ Usage: #example
 * extension[hmo].valueCodeableConcept = $payer#104 "קופת חולים מאוחדת"
 * extension[hmo].valueCodeableConcept.text = "קופת חולים מאוחדת"
 * active = true
-* name.extension[dataAbsentReason].valueCode = #masked
+// * name.extension[dataAbsentReason].valueCode = #masked
 * name.extension[language].valueCode = #he
 * name.family.extension[$data-absent-reason].valueCode = #masked
 * name.given.extension[$data-absent-reason].valueCode = #masked

@@ -5,7 +5,8 @@ ILCore/jre
 ILCore/node*
 ILCore/differentials
 ILCore/publisher.jar
-publisher.jar
+ILCore/examples
+publisher.jar 
 ILCore/input-cache
 ILCore/template
 ILCore/output

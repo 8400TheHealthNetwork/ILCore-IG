@@ -7,7 +7,7 @@
     ]
   },
   "type": "dna",
-  "coordinateSystem": 0,
+  "coordinateSystem": 1,
   "patient": {
     "reference": "Patient/patient-israeli"
   },
@@ -39,5 +39,15 @@
       "name": "GA4GH API",
       "variantsetId": "3:rs1333049"
     }
-  ]
+  ],
+  "identifier": [
+    {
+      "system": "http://fhir.health.gov.il/identifier/sequence",
+      "value": "rs1333049"
+    }
+  ],
+  "performer": {
+    "reference": "Practitioner/practitioner-md",
+    "display": "Dr. Moshe Ben Haim"
+  }
 }

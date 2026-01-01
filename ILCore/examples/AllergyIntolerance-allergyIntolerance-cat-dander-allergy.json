@@ -6,45 +6,18 @@
       "http://fhir.health.gov.il/StructureDefinition/il-core-allergy-intolerance"
     ]
   },
-  "text": {
-    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cat Dander Allergy</div>",
-    "status": "generated"
-  },
-  "patient": {
-    "reference": "Patient/patient-with-israeli-id"
-  },
-  "clinicalStatus": {
-    "coding": [
-      {
-        "code": "active",
-        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
-      }
-    ]
-  },
-  "verificationStatus": {
-    "coding": [
-      {
-        "code": "confirmed",
-        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
-      }
-    ]
-  },
-  "type": "allergy",
-  "criticality": "low",
-  "code": {
-    "coding": [
-      {
-        "code": "232346004",
-        "system": "http://snomed.info/sct",
-        "display": "Allergy to cat dander"
-      }
-    ]
-  },
-  "category": [
-    "biologic"
-  ],
   "reaction": [
     {
+      "extension": [
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration",
+          "valueDuration": {
+            "value": 3,
+            "code": "h",
+            "system": "http://unitsofmeasure.org"
+          }
+        }
+      ],
       "substance": {
         "coding": [
           {
@@ -84,6 +57,52 @@
           }
         ]
       }
+    }
+  ],
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Cat Dander Allergy</div>"
+  },
+  "patient": {
+    "reference": "Patient/patient-with-israeli-id"
+  },
+  "clinicalStatus": {
+    "coding": [
+      {
+        "code": "active",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-clinical"
+      }
+    ]
+  },
+  "verificationStatus": {
+    "coding": [
+      {
+        "code": "confirmed",
+        "system": "http://terminology.hl7.org/CodeSystem/allergyintolerance-verification"
+      }
+    ]
+  },
+  "type": "allergy",
+  "criticality": "low",
+  "code": {
+    "coding": [
+      {
+        "code": "232346004",
+        "system": "http://snomed.info/sct",
+        "display": "Allergy to cat dander"
+      }
+    ]
+  },
+  "category": [
+    "biologic"
+  ],
+  "onsetDateTime": "2022-11-15",
+  "recorder": {
+    "reference": "Practitioner/practitioner-il-md"
+  },
+  "note": [
+    {
+      "text": "Mild skin reaction upon exposure to household cat."
     }
   ]
 }

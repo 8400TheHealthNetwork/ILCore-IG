@@ -6,8 +6,8 @@
     {
       "coding": [
         {
-          "code": "gp",
-          "system": "http://appointments.mockup.org/service-category",
+          "code": "17",
+          "system": "http://terminology.hl7.org/CodeSystem/service-category",
           "display": "General Practice"
         }
       ]
@@ -92,6 +92,22 @@
       },
       "required": "required",
       "status": "accepted"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://hospital.smarthealth.org/appointments",
+      "value": "appt-98765"
+    }
+  ],
+  "supportingInformation": [
+    {
+      "reference": "DocumentReference/appointment-doc"
+    }
+  ],
+  "slot": [
+    {
+      "reference": "Slot/slot-1234"
     }
   ]
 }

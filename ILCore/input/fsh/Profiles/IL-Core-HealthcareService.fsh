@@ -15,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on the HealthcareS
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * providedBy only Reference(ILCoreOrganization)
 * location only Reference(ILCoreLocation)

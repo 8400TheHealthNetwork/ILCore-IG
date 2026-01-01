@@ -27,7 +27,7 @@
   "manufacturer": {
     "reference": "Organization/ministry-of-health",
     "type": "Organization",
-    "display": "TEVA PHARMACEUTICAL INDUSTRIES LTD, ISRAEL"
+    "display": "TEVA"
   },
   "form": {
     "coding": [
@@ -64,5 +64,9 @@
         }
       }
     }
-  ]
+  ],
+  "batch": {
+    "lotNumber": "123456789",
+    "expirationDate": "2025-12-31"
+  }
 }

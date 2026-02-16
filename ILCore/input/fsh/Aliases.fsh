@@ -122,6 +122,7 @@ Alias: $ext-med-req-procedure-reference = http://fhir.health.gov.il/StructureDef
 Alias: $ext-patient-birth-place =       http://fhir.health.gov.il/StructureDefinition/il-core-patient-birth-place
 Alias: $ext-language =                  http://fhir.health.gov.il/StructureDefinition/il-core-language
 Alias: $ext-il-core-birthsex =          http://fhir.health.gov.il/StructureDefinition/ext-il-core-birthsex
+Alias: $ext-resource-encounter-stage-context = http://fhir.health.gov.il/StructureDefinition/ext-resource-encounter-stage-context
 
 // Extensions - external
 Alias: $ext-birth-place =               http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -172,6 +173,7 @@ Alias: $il-core-community-unit-type =   http://fhir.health.gov.il/cs/il-core-com
 Alias: $il-core-contact-point-purpose = http://fhir.health.gov.il/cs/il-core-contact-point-purpose
 Alias: $il-core-religion-code =         http://fhir.health.gov.il/cs/il-core-religion-code
 Alias: $il-core-identifier-type =       http://fhir.health.gov.il/cs/il-core-identifier-type
+Alias: $il-core-resource-encounter-role = http://fhir.health.gov.il/cs/il-core-resource-encounter-role
 Alias: $il-core-medication-course-of-therapy-type = http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type
 Alias: $not-performed-reason =          http://fhir.health.gov.il/cs/il-core-not-performed-reason
 Alias: $il-core-encounter-class =       http://fhir.health.gov.il/cs/il-core-encounter-class
@@ -314,6 +316,7 @@ Alias: $vs-encounter-paying-entity-moh = http://fhir.health.gov.il/ValueSet/enco
 Alias: $vs-il-core-extended-country-codes = http://fhir.health.gov.il/ValueSet/il-core-extended-country-codes
 Alias: $vs-il-core-lang =               http://fhir.health.gov.il/ValueSet/il-core-languages
 Alias: $vs-il-core-birth-sex =          http://fhir.health.gov.il/ValueSet/il-core-birth-sex
+Alias: $vs-resource-encounter-role =    http://fhir.health.gov.il/ValueSet/resource-encounter-role
 // ValueSets - external
 Alias: $bodySite =                      http://hl7.org/fhir/ValueSet/body-site
 // Alias: $vs-jurisdiction =               http://hl7.org/fhir/ValueSet/jurisdiction
@@ -328,6 +331,25 @@ Alias: $vs-device-type-hl7 =            http://hl7.org/fhir/ValueSet/device-type
 
 
 
+
+// Additional aliases from Aliases-new.fsh (added via merge)
+// New Profiles
+Alias: $ILLocationNursingUnit                   = http://fhir.health.gov.il/StructureDefinition/il-core-location-nursing-unit
+Alias: $ILPatientReportedChiefComplaint         = http://fhir.health.gov.il/StructureDefinition/il-core-patient-reported-chief-complaint
+Alias: $ext-resource-role-context               = http://fhir.health.gov.il/StructureDefinition/ext-resource-role-context
+// New CodeSystems
+Alias: $il-core-encounter-type                  = http://fhir.health.gov.il/cs/il-core-encounter-type
+Alias: $il-core-hospital-nursing-unit           = http://fhir.health.gov.il/cs/il-core-hospital-nursing-unit
+Alias: $il-core-diagnosis-role                  = http://fhir.health.gov.il/cs/il-core-diagnosis-role
+Alias: $il-core-resource-role-context           = http://fhir.health.gov.il/cs/il-core-resource-role-context
+Alias: $diagnosis-role                          = http://terminology.hl7.org/CodeSystem/diagnosis-role
+// New ValueSets
+Alias: $vs-diagnosis-role                       = http://terminology.hl7.org/ValueSet/diagnosis-role
+Alias: $vs-il-core-encounter-type               = http://fhir.health.gov.il/ValueSet/il-core-encounter-type
+Alias: $vs-il-core-diagnosis-role               = http://fhir.health.gov.il/ValueSet/il-core-diagnosis-role
+Alias: $vs-il-core-encounter-reason-codes       = http://fhir.health.gov.il/ValueSet/il-core-encounter-reason-codes
+Alias: $vs-il-hdp-information-buckets           = http://fhir.health.gov.il/ValueSet/il-hdp-information-buckets
+Alias: $vs-resource-role-context                = http://fhir.health.gov.il/ValueSet/resource-role-context
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
 

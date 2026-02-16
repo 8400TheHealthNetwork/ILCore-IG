@@ -10,6 +10,7 @@ Description: "Israel Core Proposed constraints and extensions on the ILCoreSuppl
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* insert ConformanceMetadata
 * identifier only ILCoreIdentifier
 
 * basedOn.extension contains $alternate-reference named alternate-reference 0..*
@@ -23,4 +24,3 @@ Description: "Israel Core Proposed constraints and extensions on the ILCoreSuppl
 * receiver.extension contains http://hl7.org/fhir/StructureDefinition/alternate-reference named alternate-reference 0..1
 * receiver.extension[alternate-reference].url = "http://hl7.org/fhir/StructureDefinition/alternate-reference" (exactly)
 * receiver.extension[alternate-reference].valueReference only Reference(ILCorePatient)
-

@@ -1,7 +1,7 @@
 Profile: ILCoreAppointmentResponse
 Parent: AppointmentResponse
 Id: il-core-appointment-response
-Title: "IL Core Appointment Response"
+Title: "IL Core Appointment Response Profile"
 Description: "Israel Core Proposed constraints or extensions on the AppointmentResponse Resource."
 * insert ConformanceMetadata
 * ^status = #draft

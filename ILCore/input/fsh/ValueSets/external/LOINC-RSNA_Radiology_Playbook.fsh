@@ -6654,3 +6654,4 @@ Id: vs-imaging-procedure-code
 * $loinc#99705-6 "MR Brain for seizure mapping"
 * $loinc#99826-0 "US.A-scan Eye"
 * $loinc#99827-8 "US.elastography Breast"
+* insert ConformanceMetadata

@@ -7,4 +7,5 @@ Description: "This extension documents the time of a device dispense."
 * ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "SupplyDelivery"
+* insert ConformanceMetadata
 * value[x] only dateTime

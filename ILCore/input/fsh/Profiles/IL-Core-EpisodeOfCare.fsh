@@ -19,9 +19,9 @@ Description: "Israel Core proposed constraints and extensions on the EpisodeOfCa
 * ^extension[=].valueInteger = 1
 * identifier only ILCoreIdentifier
 
-* diagnosis.condition only Reference(ILCoreCondition)
-* patient only Reference(ILCorePatient) 
-* managingOrganization only Reference(ILCoreOrganization)
-* referralRequest only Reference(ILCoreServiceRequest)
-* careManager only Reference(ILCorePractitioner or ILCorePractitionerRole)
-* team only Reference(ILCoreCareTeam)
+* diagnosis.condition only Reference(Condition or ILCoreCondition)
+* patient only Reference(Patient or ILCorePatient) 
+* managingOrganization only Reference(Organization or ILCoreOrganization)
+* referralRequest only Reference(ServiceRequest or ILCoreServiceRequest)
+* careManager only Reference(Practitioner or PractitionerRole or ILCorePractitioner or ILCorePractitionerRole)
+* team only Reference(CareTeam or ILCoreCareTeam)

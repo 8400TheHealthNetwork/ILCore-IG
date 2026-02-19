@@ -165,3 +165,8 @@ Expression: "system.exists() and system.hasValue()"
 // Description: "Must be 'http://hl7.org/fhir/sid/passport-[XXX]' [XXX] is a 3-letter country code defined by ISO 3166. See [Using ISO 3166 Codes with FHIR](iso3166.html)"
 // Severity: #error
 // Expression: "startsWith('http://hl7.org/fhir/sid/passport-[XXX]')"
+
+Invariant: il-core-dosage-ext
+Description: "If extension ext-sub-dosage-steps is used, it must appear at least twice"
+Severity: #error
+Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-steps').count() = 0 or extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-steps').count() >= 2"

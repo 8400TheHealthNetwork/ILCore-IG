@@ -117,6 +117,7 @@ Alias: $ext-encounter-visitor-type =    http://fhir.health.gov.il/StructureDefin
 Alias: $ext-encounter-paying-entity =   http://fhir.health.gov.il/StructureDefinition/ext-encounter-paying-entity
 Alias: $ext-med-req-procedure-reference = http://fhir.health.gov.il/StructureDefinition/ext-medication-request-procedure-reason-reference
 Alias: $ext-patient-birth-place =       http://fhir.health.gov.il/StructureDefinition/il-core-patient-birth-place
+Alias: $ext-sub-dosage-step =       http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step
 
 // Extensions - external
 Alias: $ext-birth-place =               http://hl7.org/fhir/StructureDefinition/patient-birthPlace
@@ -321,4 +322,5 @@ Alias: $vs-device-type-hl7 =            http://hl7.org/fhir/ValueSet/device-type
 
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
-
+//mimetypes
+Alias: $mime-types =  urn:ietf:bcp:13

@@ -11,7 +11,7 @@ Usage: #example
 * subject.reference = "Patient/123"
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"
-
+* requester.reference = "Practitioner/123"
 * dosageInstruction[+].text = "Take 1 tablet 2 times per calendar month for 1 month"
 
 // Duration of the regimen: 1 month
@@ -29,4 +29,4 @@ Usage: #example
 * dosageInstruction[=].doseAndRate[0].doseQuantity.value = 1
 * dosageInstruction[=].doseAndRate[0].doseQuantity.unit = "tablet"
 * dosageInstruction[=].doseAndRate[0].doseQuantity.system = "http://unitsofmeasure.org"
-* dosageInstruction[=].doseAndRate[0].doseQuantity.code = #tbl
+* dosageInstruction[=].doseAndRate[0].doseQuantity.code = #1

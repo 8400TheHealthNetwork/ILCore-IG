@@ -9,6 +9,7 @@ Usage: #example
 * authoredOn = "2026-01-01"
 
 * dosageInstruction[0].text = "For 1 month: 100 mg in the morning and 50 mg in the evening."
+* requester.reference = "Practitioner/123"
 
 // Parent duration = 1 month
 * dosageInstruction[0].timing.repeat.boundsDuration.value = 1

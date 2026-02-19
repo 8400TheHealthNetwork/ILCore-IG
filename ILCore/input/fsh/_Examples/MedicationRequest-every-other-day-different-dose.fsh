@@ -13,6 +13,7 @@ Usage: #example
 * subject.reference = "Patient/123"
 * medicationCodeableConcept.text = "Eltroxin (Levothyroxine)"
 * authoredOn = "2026-01-01"
+* requester.reference = "Practitioner/123"
 
 * dosageInstruction[+].text = "Alternating daily dose: 100 mcg one day, 50 mcg the next day for a month"
 * dosageInstruction[=].timing.repeat.boundsDuration.value = 1

@@ -7,13 +7,11 @@ Usage: #example
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"
 * intent = #order
-
+* requester.reference = "Practitioner/123"
 * dosageInstruction[0].text = "General regimen from 1.3.2025 at hospitlizaion; detailed frequencies and doses are defined in sub-dosage extension"
 // ---- Dosage (parent) – general constraints: start at  2025-03-01 untill stopped----
 * dosageInstruction[0].timing.repeat.boundsPeriod.start =  "2025-03-01"
 
-* dosageInstruction[0].route.coding[0] = $sct#26643006 "Oral route"
-* dosageInstruction[0].method.coding[0] = $sct#738995006 "Swallow (administration method)"
 
 
 
@@ -31,7 +29,7 @@ Usage: #example
 * dosageInstruction[0].extension[=].valueDosage.doseAndRate[0].doseQuantity.value = 1
 * dosageInstruction[0].extension[=].valueDosage.doseAndRate[0].doseQuantity.unit = "tablet"
 * dosageInstruction[0].extension[=].valueDosage.doseAndRate[0].doseQuantity.system = "http://unitsofmeasure.org"
-* dosageInstruction[0].extension[=].valueDosage.doseAndRate[0].doseQuantity.code = #tbl
+* dosageInstruction[0].extension[=].valueDosage.doseAndRate[0].doseQuantity.code = #1
 * dosageInstruction[0].extension[=].valueDosage.timing.repeat.boundsDuration.value = 1
 * dosageInstruction[0].extension[=].valueDosage.timing.repeat.boundsDuration.unit = "day"
 * dosageInstruction[0].extension[=].valueDosage.timing.repeat.boundsDuration.system = "http://unitsofmeasure.org"

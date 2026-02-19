@@ -7,6 +7,7 @@ Usage: #example
 * subject.reference = "Patient/example"
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"
+* requester.reference = "Practitioner/123"
 
 * dosageInstruction[0].text = "Sequential 3-step regimen (no cycle). Shared constraint: max 90 mg/day across entire plan."
 

@@ -87,5 +87,20 @@
         "display": "Anatomic measurement (procedure)"
       }
     ]
+  },
+  "identifier": [
+    {
+      "system": "http://ehr.health.gov.il/vitals/head-circ",
+      "value": "HC-20210220-001"
+    }
+  ],
+  "bodySite": {
+    "coding": [
+      {
+        "code": "302548004",
+        "system": "http://snomed.info/sct",
+        "display": "Entire head (body structure)"
+      }
+    ]
   }
 }

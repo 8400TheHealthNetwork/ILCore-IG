@@ -54,7 +54,7 @@
         {
           "code": "442083009",
           "system": "http://snomed.info/sct",
-          "display": "Anatomical or acquired body site (body structure)"
+          "display": "Anatomical or acquired body structure (body structure)"
         }
       ]
     }
@@ -63,11 +63,20 @@
     {
       "coding": [
         {
-          "code": "49755003",
+          "code": "53933002",
           "system": "http://snomed.info/sct",
-          "display": "Morphologically abnormal structure (morphologic abnormality)"
+          "display": "Injury of facial nerve (disorder)"
         }
       ]
     }
-  ]
+  ],
+  "category": {
+    "coding": [
+      {
+        "code": "387713003",
+        "system": "http://snomed.info/sct",
+        "display": "Surgical procedure (procedure)"
+      }
+    ]
+  }
 }

@@ -14,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationA
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * status and medication[x] and effective[x] and subject and dosage.text and dosage.dose MS

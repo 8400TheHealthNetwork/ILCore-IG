@@ -9,13 +9,20 @@
   "status": "draft",
   "intent": "order",
   "code": {
+    "coding": [
+      {
+        "code": "276846000",
+        "system": "http://snomed.info/sct",
+        "display": "Refilling of implanted drug reservoir (procedure)"
+      }
+    ],
     "text": "Refill Request"
-  },
-  "focus": {
-    "reference": "MedicationRequest/metamizole-for-gangreenous-tonsolitis"
   },
   "for": {
     "reference": "Patient/patient-israeli"
+  },
+  "focus": {
+    "reference": "MedicationRequest/metamizole-for-gangreenous-tonsolitis"
   },
   "authoredOn": "2016-03-10T22:39:32-04:00",
   "lastModified": "2016-03-10T22:39:32-04:00",
@@ -31,5 +38,15 @@
         "reference": "Patient/patient-israeli"
       }
     ]
-  }
+  },
+  "location": {
+    "reference": "Location/community-pharmacy"
+  },
+  "priority": "routine",
+  "description": "Patient requested a refill for Metamizole prescription for gangrenous tonsillitis",
+  "note": [
+    {
+      "text": "Refill request initiated by patient via online portal"
+    }
+  ]
 }

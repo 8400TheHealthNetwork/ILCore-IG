@@ -17,12 +17,22 @@
       ]
     }
   ],
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "85354-9",
+        "display": "Blood pressure panel with all children optional"
+      }
+    ],
+    "text": "Blood pressure systolic and diastolic"
+  },
   "component": [
     {
       "valueQuantity": {
+        "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 109,
-        "system": "http://unitsofmeasure.org",
         "unit": "mmHg"
       },
       "code": {
@@ -38,9 +48,9 @@
     },
     {
       "valueQuantity": {
+        "system": "http://unitsofmeasure.org",
         "code": "mm[Hg]",
         "value": 44,
-        "system": "http://unitsofmeasure.org",
         "unit": "mmHg"
       },
       "code": {
@@ -55,21 +65,25 @@
       }
     }
   ],
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/observation-bodyPosition",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "33586001",
+            "system": "http://snomed.info/sct",
+            "display": "Sitting position (finding)"
+          }
+        ]
+      }
+    }
+  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">מדידת לחץ דם סיטולי ודיאסטולי</div>",
-    "status": "final"
+    "status": "generated"
   },
   "status": "final",
-  "code": {
-    "coding": [
-      {
-        "code": "85354-9",
-        "system": "http://loinc.org",
-        "display": "Blood pressure panel with all children optional"
-      }
-    ],
-    "text": "Blood pressure systolic and diastolic"
-  },
   "subject": {
     "reference": "Patient/patient-with-israeli-id",
     "display": "תמר כהן"
@@ -82,6 +96,12 @@
     {
       "reference": "Practitioner/practitioner-1",
       "display": "Dr Ronald Bone"
+    }
+  ],
+  "issued": "1999-07-02T10:15:00+03:00",
+  "note": [
+    {
+      "text": "Home blood pressure reading taken during routine visit"
     }
   ]
 }

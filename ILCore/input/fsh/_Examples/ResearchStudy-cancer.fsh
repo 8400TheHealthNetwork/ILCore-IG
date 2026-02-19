@@ -13,12 +13,8 @@ Usage: #example
 * phase.coding.code = #phase-3
 * phase.coding.display = "Phase 3"
 
-* category[0].coding.system = "http://hl7.org/fhir/research-study-category"
-* category[0].coding.code = #treatment
-* category[0].coding.display = "Treatment"
-
 * focus[0].coding.system = $sct
-* focus[0].coding.code = #363406005
+* focus[0].coding.code = #363346000 
 * focus[0].coding.display = "Malignant neoplastic disease (disorder)"
 
 * protocol = Reference(PlanDefinition/chemotherapy)
@@ -36,5 +32,5 @@ Usage: #example
 * keyword[2].text = "טיפול ממוקד"
 
 * condition[0].coding.system = $sct
-* condition[0].coding.code = #254637007
+* condition[0].coding.code = #126788000
 * condition[0].coding.display = "Neoplasm of parotid gland"

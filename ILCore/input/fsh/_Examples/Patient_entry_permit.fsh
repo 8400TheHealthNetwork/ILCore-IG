@@ -12,8 +12,10 @@ Usage: #example
 * active = true
 * name.extension[dataAbsentReason].valueCode = #masked
 * name.extension[language].valueCode = #he
-* name.family.extension[$data-absent-reason].valueCode = #masked
-* name.given.extension[$data-absent-reason].valueCode = #masked
+// * name.family.extension[$data-absent-reason].valueCode = #masked
+// * name.given.extension[$data-absent-reason].valueCode = #masked
+* name.extension[dataAbsentReason].valueCode = #masked
+* name.extension[language].valueCode = #he
 * gender = #unknown
 * gender.extension[$data-absent-reason].valueCode = #masked
 * birthDate.extension[$data-absent-reason].valueCode = #masked

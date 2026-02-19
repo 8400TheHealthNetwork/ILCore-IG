@@ -13,8 +13,8 @@ InstanceOf: ILCoreProcedure
 * location = Reference(Location/hospital-unit)
 * encounter = Reference(Encounter/breast-screaning)
 * reasonCode = $sct#71388002 "Procedure (procedure)"
-* bodySite = $sct#442083009 "Anatomical or acquired body site (body structure)"
+* bodySite = $sct#442083009 "Anatomical or acquired body structure (body structure)"
 * complication = $sct#49755003 "Morphologically abnormal structure (morphologic abnormality)"
 //תוספות
 * category = $sct#387713003 "Surgical procedure (procedure)"
-* complication = $sct#70380006 "Facial nerve injury"
+* complication = $sct#53933002 "Injury of facial nerve (disorder)"

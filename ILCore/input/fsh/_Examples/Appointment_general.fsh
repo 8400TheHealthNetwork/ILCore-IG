@@ -2,7 +2,7 @@ Instance: gp-appointment-hl7
 InstanceOf: Appointment
 Usage: #example
 * status = #booked
-* serviceCategory = http://example.org/service-category#gp "General Practice"
+* serviceCategory = http://terminology.hl7.org/CodeSystem/service-category#17 "General Practice"
 * serviceType = #52 "General Discussion"
 * specialty = $sct#394814009 "General practice"
 * appointmentType = http://terminology.hl7.org/CodeSystem/v2-0276#FOLLOWUP "A follow up visit from a previous appointment"

@@ -11,7 +11,7 @@ Usage: #example
 * date = "2022-05-12"
 
 // האם האבחנה של האם אושרה ע"י תיעוד רפואי או מדיווח עצמי
-* condition.outcome = $sct#419620001 "Recovered"
+* condition.outcome = $sct#723506003 "Resolved (qualifier value)"
 * condition.note.text = "Reported by patient during intake interview"
 
 // ניתן להוסיף גיל פטירה של האם (אם רלוונטי)

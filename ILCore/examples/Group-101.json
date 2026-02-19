@@ -42,5 +42,24 @@
       },
       "exclude": false
     }
+  ],
+  "managingEntity": {
+    "reference": "Organization/horses-care-clinic",
+    "display": "Horse Care Clinic"
+  },
+  "member": [
+    {
+      "entity": {
+        "display": "Mare A"
+      },
+      "period": {
+        "start": "2023-01-01"
+      }
+    },
+    {
+      "entity": {
+        "display": "Stallion B"
+      }
+    }
   ]
 }

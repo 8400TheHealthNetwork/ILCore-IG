@@ -8,7 +8,8 @@
   },
   "identifier": [
     {
-      "value": "12345"
+      "value": "12345",
+      "system": "http://hospital.org/flag-id"
     }
   ],
   "status": "inactive",
@@ -28,7 +29,7 @@
     "coding": [
       {
         "code": "bigdog",
-        "system": "http://mockup.org/local",
+        "system": "http://dogs.org/local",
         "display": "Big dog"
       }
     ],

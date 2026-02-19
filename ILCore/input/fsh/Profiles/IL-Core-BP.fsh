@@ -16,6 +16,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * code.coding ^definition = "Code specifying blood pressure measurement type"
 * code.coding ^slicing.discriminator[0].type = #value
@@ -27,6 +28,11 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * code.coding[ilcore].system = $loinc (exactly)
 * code.coding[ilcore].code = #85354-9 (exactly)
 * code.coding[ilcore].display = "Blood pressure panel with all children optional" (exactly)
+// * value[x] 0..0
+// * value[x] ^comment = "Should be filled in the 'component' elements"
+* valueQuantity 0..0
+* valueCodeableConcept 0..0
+* valueString 0..0
 * value[x] 0..0
 * value[x] ^comment = "Should be filled in the 'component' elements"
 * referenceRange 0..0

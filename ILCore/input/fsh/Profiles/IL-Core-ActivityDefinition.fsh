@@ -18,6 +18,7 @@ Description: "Adds several Israel-specific extensions and constraints, plus geoc
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 * subjectReference only Reference(ILCoreGroup)
 * library only Canonical(ILCoreLibrary)

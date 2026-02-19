@@ -23,5 +23,21 @@
   },
   "location": {
     "reference": "Location/hospital-unit"
-  }
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "code": "430033006",
+        "system": "http://snomed.info/sct",
+        "display": "Infusion pump (physical object)"
+      }
+    ]
+  },
+  "manufacturer": "Medtronic",
+  "manufactureDate": "2022-03-15",
+  "expirationDate": "2027-03-15",
+  "lotNumber": "LOT202203",
+  "serialNumber": "SN987654321",
+  "modelNumber": "MD-4000"
 }

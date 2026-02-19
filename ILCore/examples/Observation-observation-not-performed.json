@@ -29,5 +29,21 @@
         "display": "Not Performed"
       }
     ]
+  },
+  "note": [
+    {
+      "text": "בדיקה לא בוצעה עקב מצב קליני לא יציב"
+    }
+  ],
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-md"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/emergency-room-visit"
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli"
   }
 }

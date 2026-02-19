@@ -8,6 +8,6 @@ Description: "Extension: MedicationRequest Procedure Reason Reference. A referen
 
 * ^status = #active
 * ^context.type = #element
-* ^context.expression = "MedicationRequest.reasonRefference"
+* ^context.expression = "MedicationRequest.reasonReference"
 
 * value[x] only Reference(ILCoreProcedure)

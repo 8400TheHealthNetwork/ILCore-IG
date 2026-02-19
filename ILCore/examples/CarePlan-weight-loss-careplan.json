@@ -6,43 +6,32 @@
       "http://fhir.health.gov.il/StructureDefinition/il-core-care-plan"
     ]
   },
+  "identifier": [
+    {
+      "value": "12345",
+      "type": {
+        "coding": [
+          {
+            "code": "SNO",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Serial Number"
+          }
+        ]
+      },
+      "_system": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
   "text": {
     "status": "additional",
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>A simple care plan to indicate a patient taking their weight once a day because of obesity.</p></div>"
   },
-  "contained": [
-    {
-      "resourceType": "Condition",
-      "id": "p1",
-      "clinicalStatus": {
-        "coding": [
-          {
-            "code": "active",
-            "system": "http://terminology.hl7.org/CodeSystem/condition-clinical"
-          }
-        ]
-      },
-      "verificationStatus": {
-        "coding": [
-          {
-            "code": "confirmed",
-            "system": "http://terminology.hl7.org/CodeSystem/condition-ver-status"
-          }
-        ]
-      },
-      "code": {
-        "text": "Obesity"
-      },
-      "subject": {
-        "reference": "Patient/patient-immigrant"
-      }
-    }
-  ],
-  "identifier": [
-    {
-      "value": "12345"
-    }
-  ],
   "instantiatesUri": [
     "http://mockup.org/protocol-for-obesity"
   ],
@@ -73,7 +62,8 @@
     "reference": "Encounter/community-consultation"
   },
   "period": {
-    "end": "2017-06-01"
+    "end": "2017-06-01",
+    "start": "2016-02-01"
   },
   "created": "2016-01-01",
   "author": {
@@ -86,8 +76,8 @@
   ],
   "addresses": [
     {
-      "reference": "#p1",
-      "display": "obesity"
+      "reference": "Condition/type-1-diabetes",
+      "display": "Diabetes"
     }
   ],
   "goal": [
@@ -153,5 +143,10 @@
   ],
   "subject": {
     "reference": "Patient/patient-immigrant"
-  }
+  },
+  "note": [
+    {
+      "text": "Patient motivated to lose 10kg within 6 months. Monitoring daily progress."
+    }
+  ]
 }

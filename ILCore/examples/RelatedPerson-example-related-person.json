@@ -64,5 +64,6 @@
       "postalCode": "90210",
       "country": "USA"
     }
-  ]
+  ],
+  "gender": "male"
 }

@@ -33,7 +33,14 @@
         }
       ],
       "forecastStatus": {
-        "text": "Not Complete"
+        "text": "Not Complete",
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/immunization-recommendation-status",
+            "code": "due",
+            "display": "Due"
+          }
+        ]
       },
       "dateCriterion": [
         {
@@ -41,7 +48,7 @@
             "coding": [
               {
                 "code": "earliest",
-                "system": "http://mockup.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
+                "system": "http://somehealthcare.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
                 "display": "Earliest Date"
               }
             ]
@@ -53,7 +60,7 @@
             "coding": [
               {
                 "code": "recommended",
-                "system": "http://mockup.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
+                "system": "http://somehealthcare.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
                 "display": "Recommended"
               }
             ]
@@ -65,7 +72,7 @@
             "coding": [
               {
                 "code": "overdue",
-                "system": "http://mockup.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
+                "system": "http://somehealthcare.org/fhir/CodeSystem/immunization-recommendation-date-criterion",
                 "display": "Past Due Date"
               }
             ]
@@ -86,7 +93,16 @@
         {
           "reference": "Observation/height-measurement"
         }
-      ]
+      ],
+      "targetDisease": {
+        "coding": [
+          {
+            "code": "40468003",
+            "system": "http://snomed.info/sct",
+            "display": "Viral hepatitis, type A"
+          }
+        ]
+      }
     }
   ]
 }

@@ -13,6 +13,7 @@ Description: "Israel Core Proposed constraints or extensions on the AppointmentR
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 // th following line will be unremarked once ILCoreAppointment is created
 // * appointment only Reference(ILCoreAppointment)

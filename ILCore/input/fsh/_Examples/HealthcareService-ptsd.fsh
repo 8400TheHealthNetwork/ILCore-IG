@@ -8,7 +8,7 @@ Usage: #example
 * providedBy = Reference(Organization/hospital-unit)
 * category = $sct#103693007 "Diagnostic procedure (procedure)"
 * category.text = "Counselling"
-* type[0] = $sct#394913002 "Psychotherapy"
+* type[0] = $sct#394913002 "Psychotherapy (specialty) (qualifier value)"
 * type[+] = $sct#394587001 "Psychiatry"
 * specialty = $sct#47505003 "Posttraumatic stress disorder"
 * name = "Consulting psychologists and/or psychology services"
@@ -22,7 +22,6 @@ Usage: #example
 * telecom[=].use = #work
 * coverageArea = Reference(Location/Negev) "Greater Negev area"
 * serviceProvisionCode = http://terminology.hl7.org/CodeSystem/service-provision-conditions#cost "Fees apply"
-* eligibility.code.coding.display = "DVA Required"
 * eligibility.comment = "Evidence of application for DVA status may be sufficient for commencing assessment"
 * program.text = "PTSD outreach"
 * characteristic.coding.display = "Wheelchair access"
@@ -58,9 +57,9 @@ Usage: #example
 * availabilityExceptions = "המערך לא פעיל במהלך החגים היהודיים העיקריים"
 * extraDetails = " מומלץ לפנות לפחות חודש מראש."
 
-* eligibility.code.coding.system = "http://terminology.hl7.org/CodeSystem/eligibility-requirement"
-* eligibility.code.coding.code = #dva
-* eligibility.code.coding.display = "DVA Required"
+// * eligibility.code.coding.system = "http://hl7.org/fhir/eligibility"
+// * eligibility.code.coding.code = #uninsured-patients
+// * eligibility.code.coding.display = "Uninsured patients"
 
 
 Instance: Negev

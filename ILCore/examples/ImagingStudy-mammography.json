@@ -150,5 +150,11 @@
         }
       ]
     }
+  ],
+  "description": "Routine diagnostic mammography exam following reported breast lump",
+  "note": [
+    {
+      "text": "Patient reported slight discomfort during compression"
+    }
   ]
 }

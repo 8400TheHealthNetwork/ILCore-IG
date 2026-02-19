@@ -15,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on theILCoreFamily
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * patient only Reference(ILCorePatient)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreAllergyIntolerance or ILCoreQuestionnaireResponse or ILCoreDiagnosticReport or ILCoreDocumentReference)

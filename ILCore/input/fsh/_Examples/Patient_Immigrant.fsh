@@ -57,4 +57,5 @@ Usage: #example
 
 * deceasedBoolean = false
 * contact[parent].relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
-    
+* contact[parent].name.given = "Baruch"
+* contact[parent].name.family = "Hashem"

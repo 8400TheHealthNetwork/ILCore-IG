@@ -78,5 +78,8 @@
         }
       ]
     }
-  ]
+  ],
+  "partOf": {
+    "reference": "Organization/agaf-pnimi"
+  }
 }

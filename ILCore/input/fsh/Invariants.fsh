@@ -171,3 +171,26 @@ Expression: "system.hasValue() or (system.extension.where(url='http://hl7.org/fh
 // Description: "Must be 'http://hl7.org/fhir/sid/passport-[XXX]' [XXX] is a 3-letter country code defined by ISO 3166. See [Using ISO 3166 Codes with FHIR](iso3166.html)"
 // Severity: #error
 // Expression: "startsWith('http://hl7.org/fhir/sid/passport-[XXX]')"
+
+Invariant: il-core-dosage-ext
+Description: "If extension ext-sub-dosage-step is used, it must appear at least twice"
+Severity: #error
+Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').count() = 0 or extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').count() >= 2"
+
+
+Invariant: il-dosage-no-parent-dose-when-substeps
+Description: "If ext-sub-dosage-step extension is present on Dosage, doseAndRate SHALL NOT be present on the parent Dosage."
+Severity: #error
+Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').exists()
+    implies
+  doseAndRate.empty()"
+
+
+
+Invariant: il-dosage-no-parent-asneeded-when-substeps-have
+Description: "If any sub-dosage step has asNeeded, the parent Dosage SHALL NOT define asNeeded."
+Severity: #error
+Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').valueDosage.asNeeded.exists()
+    implies
+  asNeeded.empty()"
+

@@ -17,6 +17,8 @@ Description: "Adds several Israel-specific extensions and constraints to the Dos
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 * . obeys il-core-dosage-ext
+* . obeys il-dosage-no-parent-dose-when-substeps
+* . obeys il-dosage-no-parent-asneeded-when-substeps-have
 * text MS
 * additionalInstruction ^binding.strength = #extensible
 * asNeededCodeableConcept ^binding.strength = #extensible

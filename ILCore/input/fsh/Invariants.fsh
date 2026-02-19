@@ -184,8 +184,7 @@ Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinitio
 Invariant: il-dosage-no-parent-asneeded-when-substeps-have
 Description: "If any sub-dosage step has asNeeded, the parent Dosage SHALL NOT define asNeeded."
 Severity: #error
-Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step')
-    .valueDosage.asNeeded.exists()
+Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').valueDosage.asNeeded.exists()
     implies
   asNeeded.empty()"
 

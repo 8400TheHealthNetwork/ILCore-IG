@@ -1,4 +1,4 @@
-Instance: MedicationRequest-subdose-not-repeating
+Instance: subdose-not-repeating
 InstanceOf: MedicationRequest
 Usage: #example
 

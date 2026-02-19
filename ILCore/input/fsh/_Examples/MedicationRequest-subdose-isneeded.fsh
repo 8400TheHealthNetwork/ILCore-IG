@@ -4,7 +4,7 @@
 // then 1 tablet PRN after each bowel movement,
 // max 8 tablets per day
 // ------------------------------------------------------------
-Instance: MedicationRequest-InitialThenPRN
+Instance: initial-then-prn
 InstanceOf: MedicationRequest
 Usage: #example
 

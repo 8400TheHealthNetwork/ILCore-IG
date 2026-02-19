@@ -1,4 +1,4 @@
-Instance: MedicationRequest-3perday-every4days-year-bounds
+Instance: 3perday-every4days-year-bounds
 InstanceOf: MedicationRequest
 Usage: #example
 

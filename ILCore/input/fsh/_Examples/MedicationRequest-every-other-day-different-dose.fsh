@@ -4,7 +4,7 @@
 // Model: two subDosage entries with same 2-day cycle, different doseQuantity
 // NOTE: interpretation relies on implementer rule (e.g., order in array = day 1/day 2).
 // ------------------------------------------------------------
-Instance: MedicationRequest-every-other-day-different-dose
+Instance: every-other-day-different-dose
 InstanceOf: MedicationRequest
 Usage: #example
 

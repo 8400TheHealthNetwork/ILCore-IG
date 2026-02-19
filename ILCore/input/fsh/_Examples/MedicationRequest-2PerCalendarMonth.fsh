@@ -2,7 +2,7 @@
 // Example: "2 times per CALENDAR month" (no subDosage / no extension)
 // For 1 month, with doseQuantity
 // ------------------------------------------------------------
-Instance: MedicationRequest-2PerCalendarMonth
+Instance: 2PerCalendarMonth
 InstanceOf: MedicationRequest
 Usage: #example
 

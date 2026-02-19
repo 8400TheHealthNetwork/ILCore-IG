@@ -1,6 +1,6 @@
 Extension: SubDosageStep
 Id: ext-sub-dosage-step
-Title: "Ext: Sub Dosage Steps"
+Title: "Ext: Sub Dosage Step"
 Description: "Indicates whether a dosage decomposed into steps of sub-dosage timings"
 * ^url = $ext-sub-dosage-step
 * ^language = #en-US

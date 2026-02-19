@@ -1,4 +1,4 @@
-Instance: MedicationRequest-same-day-different-dose-month
+Instance: same-day-different-dose-month
 InstanceOf: MedicationRequest
 Usage: #example
 

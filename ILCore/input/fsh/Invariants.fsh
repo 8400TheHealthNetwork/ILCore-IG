@@ -167,6 +167,6 @@ Expression: "system.exists() and system.hasValue()"
 // Expression: "startsWith('http://hl7.org/fhir/sid/passport-[XXX]')"
 
 Invariant: il-core-dosage-ext
-Description: "If extension ext-sub-dosage-steps is used, it must appear at least twice"
+Description: "If extension ext-sub-dosage-step is used, it must appear at least twice"
 Severity: #error
-Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-steps').count() = 0 or extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-steps').count() >= 2"
+Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-steps').count() = 0 or extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').count() >= 2"

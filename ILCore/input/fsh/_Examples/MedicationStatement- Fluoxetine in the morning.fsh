@@ -1,4 +1,4 @@
-Instance: MedicationStatement-Fluoxetine-20-mg
+Instance: fluoxetine-20-mg
 InstanceOf: ILCoreMedicationStatement
 Usage: #example
 Title: "MedicationStatement-morphine-hospitalization"

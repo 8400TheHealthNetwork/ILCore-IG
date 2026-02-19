@@ -120,6 +120,7 @@ Alias: $ext-encounter-visitor-type =    http://fhir.health.gov.il/StructureDefin
 Alias: $ext-encounter-paying-entity =   http://fhir.health.gov.il/StructureDefinition/ext-encounter-paying-entity
 Alias: $ext-med-req-procedure-reference = http://fhir.health.gov.il/StructureDefinition/ext-medication-request-procedure-reason-reference
 Alias: $ext-patient-birth-place =       http://fhir.health.gov.il/StructureDefinition/il-core-patient-birth-place
+Alias: $ext-sub-dosage-step =       http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step
 Alias: $ext-language =                  http://fhir.health.gov.il/StructureDefinition/il-core-language
 Alias: $ext-il-core-birthsex =          http://fhir.health.gov.il/StructureDefinition/ext-il-core-birthsex
 Alias: $ext-resource-encounter-stage-context = http://fhir.health.gov.il/StructureDefinition/ext-resource-encounter-stage-context
@@ -352,4 +353,5 @@ Alias: $vs-il-hdp-information-buckets           = http://fhir.health.gov.il/Valu
 Alias: $vs-resource-role-context                = http://fhir.health.gov.il/ValueSet/resource-role-context
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
-
+//mimetypes
+Alias: $mime-types =  urn:ietf:bcp:13

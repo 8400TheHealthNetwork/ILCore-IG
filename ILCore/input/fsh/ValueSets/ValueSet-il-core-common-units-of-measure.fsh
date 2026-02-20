@@ -7,5 +7,5 @@ Description: "A list of codes for Units Of Measure for the IL Core. <mark>Note:<
 * insert ConformanceMetadata
 * ^experimental = false
 
-* include codes from system http://hl7.org/fhir/ValueSet/ucum-common
+* include codes from valueset http://hl7.org/fhir/ValueSet/ucum-common
 * include codes from system $sct where concept descendent-of #408102007 "Unit dose (qualifier value)"

@@ -8,7 +8,8 @@
   },
   "identifier": [
     {
-      "value": "ip_request1.1"
+      "value": "ip_request1.1",
+      "system": "http://goodcare.org/devices/requests"
     }
   ],
   "instantiatesCanonical": [
@@ -34,7 +35,8 @@
     "coding": [
       {
         "code": "43148-6",
-        "system": "http://loinc.org"
+        "system": "http://loinc.org",
+        "display": "Insulin delivery device panel"
       }
     ],
     "text": "Insulin delivery device panel"
@@ -59,7 +61,8 @@
     "text": "Nurse"
   },
   "performer": {
-    "display": "Nurse Rossignol"
+    "display": "Nurse Rossignol",
+    "reference": "Practitioner/nurse-rossignol"
   },
   "reasonCode": [
     {
@@ -68,12 +71,14 @@
   ],
   "reasonReference": [
     {
-      "display": "Gastroparesis"
+      "display": "Gastroparesis",
+      "reference": "Condition/gastroparesis"
     }
   ],
   "supportingInfo": [
     {
-      "display": "Previous results"
+      "display": "Previous results",
+      "reference": "Observation/previous-results"
     }
   ],
   "note": [
@@ -83,7 +88,8 @@
   ],
   "relevantHistory": [
     {
-      "display": "Request for unspecified device"
+      "display": "Request for unspecified device",
+      "reference": "Provenance/device-request-history"
     }
   ]
 }

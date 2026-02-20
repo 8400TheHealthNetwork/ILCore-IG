@@ -1,8 +1,9 @@
 Instance: example
 InstanceOf: ILCoreCareTeam
 Usage: #example
-* contained = pr1
 * identifier.value = "12345"
+* identifier.system.extension[$data-absent-reason].valueCode = #masked
+* identifier.type = http://terminology.hl7.org/CodeSystem/v2-0203#SNO "Serial Number"
 * status = #active
 * category = $loinc#LA27976-2 "Encounter-focused care team"
 * name = "Peter James Charlmers Care Plan for Inpatient Encounter"
@@ -12,7 +13,7 @@ Usage: #example
 * participant[0].role.text = "responsiblePerson"
 * participant[=].member = Reference(Patient/patient-immigrant) "Peter James Chalmers"
 * participant[+].role.text = "adviser"
-* participant[=].member = Reference(pr1) "Dorothy Dietition"
+* participant[=].member = Reference(practitioner-md) 
 * participant[=].onBehalfOf = Reference(Organization/meir-hospital)
 * participant[=].period.end = "2013-01-01"
 * managingOrganization = Reference(Organization/meir-hospital)
@@ -26,12 +27,4 @@ Usage: #example
 // הערת הסבר
 * note.text = "Care team formed upon hospital admission for nutrition consultation and follow-up."
 
-
-Instance: pr1
-InstanceOf: ILCorePractitioner
-Usage: #inline
-* name.family = "Dietician"
-* name.given = "Dorothy"
-* identifier[prac-lic].system = $practitioner-license-moh
-* identifier[prac-lic].value = "1-1234"
 

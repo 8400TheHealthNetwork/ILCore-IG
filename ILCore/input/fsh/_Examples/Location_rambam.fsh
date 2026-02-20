@@ -46,7 +46,7 @@ Usage: #example
 * mode = #instance
 * operationalStatus.system = "http://terminology.hl7.org/CodeSystem/v2-0116"
 * operationalStatus.code = #O
-* operationalStatus.display = "Operating"
+* operationalStatus.display = "Occupied"
 
 * type.coding.display = "Hospital Unit"
 * managingOrganization.display = "Ministry of Health"

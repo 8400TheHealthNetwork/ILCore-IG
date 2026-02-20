@@ -1,10 +1,16 @@
 import fs from 'fs-extra';
+import path from 'path';
 import { fetch, getValidatorPath } from './utils.js';
 
 const validatorUrl = 'https://github.com/hapifhir/org.hl7.fhir.core/releases/latest/download/validator_cli.jar';
 
 const getValidator = async () => {
     const jarPath = getValidatorPath();
+    
+    // Ensure parent directory exists (for shared location)
+    const jarDir = path.dirname(jarPath);
+    fs.ensureDirSync(jarDir);
+    
     if (fs.existsSync(jarPath)) {
         console.log('Java validator found :)')
         return true

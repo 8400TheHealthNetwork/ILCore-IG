@@ -24,6 +24,6 @@ Usage: #example
 * occurrenceDateTime = "2024-12-01"
 
 // הערכת רגישות/השפעה (Qualitative Risk)
-* prediction.qualitativeRisk = $sct#263502005 "High risk"
+* prediction.qualitativeRisk = $sct#723509005 "High risk"
 
 

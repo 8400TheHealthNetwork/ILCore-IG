@@ -2,6 +2,7 @@ Instance: insulinpump
 InstanceOf: ILCoreDeviceRequest
 Usage: #example
 * identifier.value = "ip_request1.1"
+* identifier.system = "http://goodcare.org/devices/requests"
 * instantiatesCanonical = "http://motivemi.com/artifacts/PlanDefinition/low-suicide-risk-order-set"
 * basedOn.display = "Homecare - DM follow-up"
 * priorRequest.display = "CGM ambulatory"

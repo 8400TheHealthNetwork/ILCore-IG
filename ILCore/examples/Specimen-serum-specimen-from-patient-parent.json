@@ -32,18 +32,23 @@
       "system": "http://unitsofmeasure.org"
     }
   },
-  "extension": [
+  "processing": [
     {
-      "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-location",
-      "valueReference": {
-        "reference": "Location/hospital-unit"
-      }
-    },
-    {
-      "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner",
-      "valueReference": {
-        "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
-      }
+      "extension": [
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-location",
+          "valueReference": {
+            "reference": "Location/hospital-unit"
+          }
+        },
+        {
+          "url": "http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner",
+          "valueReference": {
+            "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+          }
+        }
+      ],
+      "timeDateTime": "2020-06-12T14:35:00+02:00"
     }
   ],
   "text": {
@@ -68,11 +73,6 @@
   "request": [
     {
       "reference": "ServiceRequest/987"
-    }
-  ],
-  "processing": [
-    {
-      "timeDateTime": "2020-06-12T14:35:00+02:00"
     }
   ],
   "container": [

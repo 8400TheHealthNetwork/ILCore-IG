@@ -41,7 +41,7 @@ Description: "MedicationAdministration - morphine during hospitalization"
 //תוספות
 
 // תיעוד סיבת המתן – לדוגמה: ניתוח או כאב אקוטי
-* reasonCode[0].coding[0] = $sct#18286008 "Postoperative pain"
+* reasonCode[0].coding[0] = $sct#213299007 "Postoperative pain"
 * reasonCode[0].text = "Postoperative pain due to procedure"
 
 // תיעוד הוספת הערה או אינדיקציה קלינית ע"י הרופא

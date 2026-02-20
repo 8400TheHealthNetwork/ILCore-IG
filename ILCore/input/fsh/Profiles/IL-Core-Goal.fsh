@@ -15,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on the Goal Resour
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreOrganization)
 * expressedBy only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson)

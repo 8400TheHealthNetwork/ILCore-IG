@@ -10,6 +10,11 @@
     {
       "resourceType": "Location",
       "id": "Negev",
+      "meta": {
+        "profile": [
+          "http://fhir.health.gov.il/StructureDefinition/il-core-location"
+        ]
+      },
       "description": "Greater Negev area",
       "mode": "instance",
       "physicalType": {
@@ -19,6 +24,11 @@
             "display": "Area"
           }
         ]
+      },
+      "name": "נגב רבתי",
+      "position": {
+        "longitude": 30.3,
+        "latitude": 34.55
       }
     }
   ],
@@ -50,7 +60,7 @@
         {
           "code": "394913002",
           "system": "http://snomed.info/sct",
-          "display": "Psychotherapy"
+          "display": "Psychotherapy (specialty) (qualifier value)"
         }
       ]
     },
@@ -77,7 +87,7 @@
   ],
   "name": "Consulting psychologists and/or psychology services",
   "comment": "Providing Specialist psychology services to the greater Den Burg area, many years of experience dealing with PTSD issues",
-  "extraDetails": "Several assessments are required for these specialist services, and the waiting times can be greater than 3 months at times. Existing patients are prioritized when requesting appointments on the schedule.",
+  "extraDetails": " מומלץ לפנות לפחות חודש מראש.",
   "telecom": [
     {
       "system": "phone",
@@ -109,14 +119,16 @@
   ],
   "eligibility": [
     {
+      "comment": "Evidence of application for DVA status may be sufficient for commencing assessment",
       "code": {
         "coding": [
           {
-            "display": "DVA Required"
+            "system": "http://hl7.org/fhir/eligibility",
+            "code": "uninsured-patients",
+            "display": "Uninsured patients"
           }
         ]
-      },
-      "comment": "Evidence of application for DVA status may be sufficient for commencing assessment"
+      }
     }
   ],
   "program": [
@@ -210,10 +222,21 @@
       }
     }
   ],
-  "availabilityExceptions": "Reduced capacity is available during the Christmas period",
+  "availabilityExceptions": "המערך לא פעיל במהלך החגים היהודיים העיקריים",
   "endpoint": [
     {
       "reference": "Endpoint/example"
+    }
+  ],
+  "communication": [
+    {
+      "coding": [
+        {
+          "code": "he",
+          "system": "urn:ietf:bcp:47",
+          "display": "Hebrew"
+        }
+      ]
     }
   ]
 }

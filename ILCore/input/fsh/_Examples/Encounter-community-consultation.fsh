@@ -32,7 +32,7 @@ Usage: #example
 * location[0].location.reference = "Location/clinic-23"
 * location[0].status = #completed
 
-* reasonCode[0] = $sct#413839001 "Psychiatric consultation"
+* reasonCode[0] = $sct#108311000 "Psychiatric procedure, interview AND/OR consultation (procedure)"
 
 * extension[modeOfArrival].valueCoding = #W "Walk-in"
 

@@ -6,6 +6,8 @@ import AdmZip from 'adm-zip';
 import { $ } from 'execa';
 import { getJrePath, getJreBin, fetch } from "./utils.js";
 
+const sharedResourcesDir = path.resolve('c:\\FHIR\\fhir-shared-resources');
+
 const unzipDirectory = async (inputFilePath, outputDirectory) => {
   const zip = new AdmZip(inputFilePath);
   return new Promise((resolve, reject) => {
@@ -69,7 +71,9 @@ const extractTarGz = async (file, dir) => {
 }
 
 const extract = async (file) => {
-  const dir = getJrePath();
+  // Use shared location if it exists
+  const sharedJrePath = path.join(sharedResourcesDir, 'jre');
+  const dir = fs.existsSync(sharedResourcesDir) ? sharedJrePath : getJrePath();
   fs.ensureDirSync(dir);
   const extension = path.extname(file);
   if (extension === '.zip') {
@@ -91,7 +95,7 @@ const installJre = async () => {
 };
 
 const install = async () => {
-  const version = 11;
+  const version = 21;
   const options = {
     openjdk_impl: "hotspot",
     release: "latest",

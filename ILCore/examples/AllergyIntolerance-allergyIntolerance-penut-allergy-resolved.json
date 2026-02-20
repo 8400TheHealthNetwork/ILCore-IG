@@ -99,5 +99,14 @@
         ]
       }
     }
+  ],
+  "onsetDateTime": "2018-06-10",
+  "recorder": {
+    "reference": "Practitioner/practitioner-il-family-md"
+  },
+  "note": [
+    {
+      "text": "Patient previously had severe allergic reaction to peanuts, but tolerance developed after immunotherapy."
+    }
   ]
 }

@@ -21,7 +21,8 @@ const outputPathHtml = getValidationOutputPath() + '.ig.html'
 const diffFolder = getDiffFolder();
 
 const getFhirVersion = () => {
-    return sushiConfig?.fhirVersion;
+    // Ensuring we have a fallback for fhirVersion if not available
+    return sushiConfig?.fhirVersion || '4.0.1';
 };
 
 const readResults = async () => {
@@ -33,10 +34,30 @@ const readResults = async () => {
 const runValidate = async () => {
     deleteIgResource();
     if (java && jar) {
-        // const command = `"${java}" -Dfile.encoding=UTF-8 -jar "${jar}" "${diffFolder}" -version ${getFhirVersion()} -jurisdiction global -ig "${igFolder}" ${getDependencies(sushiConfig)} -output ${outputPathJson} -html-output ${outputPathHtml}`;
-        // const command = `"${java}" -Dfile.encoding=UTF-8 -jar "${jar}" "${diffFolder}" -version 4.0.1 -jurisdiction global -ig "${igFolder}" ${getDependencies(sushiConfig)} -output ${outputPathJson} -html-output ${outputPathHtml}`;
-        const command = `"${java}" -Dfile.encoding=UTF-8 -jar "${jar}" "${diffFolder}" -version 4.0.1 -ig "${igFolder}" ${getDependencies(sushiConfig)} -output ${outputPathJson} -html-output ${outputPathHtml}`;
-        const subprocess = execa(command);
+        // Build the command arguments array
+        const args = [
+            '-Dfile.encoding=UTF-8',
+            '-jar',
+            jar, // Path to the validator JAR
+            diffFolder, // The input directory (first argument)
+            '-version',
+            getFhirVersion(), // Use the function to get the version
+            // Removing '-jurisdiction global' as it's not in the problematic line
+            '-ig',
+            igFolder, // The IG folder
+            // Spreading the dependencies (e.g., -ig hl7.fhir.us.core#6.1.0)
+            ...getDependencies(sushiConfig), 
+            '-output',
+            outputPathJson,
+            '-html-output',
+            outputPathHtml
+        ];
+
+        // --- FIX: Using execa(executable, args) instead of execa(commandString) ---
+        // This is the robust fix that resolves the Windows quoting issue.
+        const subprocess = execa(java, args);
+        // -----------------------------------------------------------------------
+
         subprocess.stdout.pipe(process.stdout);
         await subprocess;
         const errors = await readResults();

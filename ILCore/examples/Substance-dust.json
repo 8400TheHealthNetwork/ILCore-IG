@@ -9,5 +9,22 @@
         "display": "House dust allergen"
       }
     ]
-  }
+  },
+  "text": {
+    "status": "generated",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">House dust allergen</div>"
+  },
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://terminology.hl7.org/CodeSystem/substance-category",
+          "code": "allergen",
+          "display": "Allergen"
+        }
+      ],
+      "text": "Environmental Allergen"
+    }
+  ]
 }

@@ -6,6 +6,16 @@
       "http://fhir.health.gov.il/StructureDefinition/il-core-medication-request"
     ]
   },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication",
+      "valueBoolean": false
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-medication-recorded-time",
+      "valueDateTime": "2022-10-11"
+    }
+  ],
   "text": {
     "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">A request by a GP in an HMO setting for 10 drops of oral Optalgin (Metamizole) up to 3 times a day for the duration of two weeks due to a diagnosis of acute gangrenous tonsillitis.</div>",
     "status": "generated"
@@ -121,5 +131,19 @@
   ],
   "substitution": {
     "allowedBoolean": true
+  },
+  "dispenseRequest": {
+    "validityPeriod": {
+      "start": "2022-05-10",
+      "end": "2022-12-24"
+    },
+    "quantity": {
+      "value": 30,
+      "unit": "drop"
+    },
+    "expectedSupplyDuration": {
+      "value": 14,
+      "unit": "day"
+    }
   }
 }

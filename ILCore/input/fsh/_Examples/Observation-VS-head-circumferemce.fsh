@@ -29,5 +29,5 @@ Description: "Observation - head circumference"
 //תוצאות 
 * identifier.system = "http://ehr.health.gov.il/vitals/head-circ"
 * identifier.value = "HC-20210220-001"
-* bodySite = $sct#38266002 "Head structure (body structure)"
+* bodySite = $sct#302548004 "Entire head (body structure)"
 

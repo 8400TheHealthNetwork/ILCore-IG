@@ -14,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the DiagnosticR
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * meta and meta.lastUpdated and status and category and code and
     subject and encounter and effective[x] and issued and performer and result MS

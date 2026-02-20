@@ -4,8 +4,8 @@ Usage: #example
 
 * status = #draft
 * intent = #order
-* code = $loinc#419099009 "Request for medication refill" // קוד SNOMED מומלץ
-* code.text = "Refill Request"
+* code = $sct#276846000 "Refilling of implanted drug reservoir (procedure)"
+// * code.text = "Refill Request"
 
 // המטופל עבורו הבקשה
 * for = Reference(Patient/patient-israeli)

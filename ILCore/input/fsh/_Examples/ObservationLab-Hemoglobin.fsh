@@ -28,8 +28,8 @@ Usage: #example
 * referenceRange.high.unit = "g/dL"
 * referenceRange.high.system = $ucum
 * referenceRange.high.code = #g/dL
-* method = $sct#104154007 "Hemoglobin measurement, automated (procedure)"
-* bodySite = $sct#122869004 "Venous blood specimen (specimen)"
+* method = $sct#104718002 "Hemoglobin, free measurement"
+* bodySite = $sct#122555007 "Venous blood specimen (specimen)"
 * interpretation = http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation#N "Normal"
 
 

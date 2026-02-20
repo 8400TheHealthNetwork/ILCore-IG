@@ -25,6 +25,11 @@
           "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
           "code": "HU",
           "display": "Hospital Unit"
+        },
+        {
+          "system": "http://snomed.info/sct",
+          "code": "309904001",
+          "display": "Intensive care unit"
         }
       ]
     }

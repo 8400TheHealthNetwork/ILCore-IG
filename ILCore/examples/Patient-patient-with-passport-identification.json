@@ -38,12 +38,13 @@
       "valueAddress": {
         "line": [
           "New york City, NY, USA"
-        ]
+        ],
+        "country": "USA"
       }
     },
     {
       "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
-      "valueCode": "male"
+      "valueCode": "M"
     }
   ],
   "name": [

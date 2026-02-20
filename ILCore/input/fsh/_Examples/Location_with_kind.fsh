@@ -17,4 +17,4 @@ Usage: #example
 //תוספת
 * type.coding[+].system = $sct
 * type.coding[=].code = #309904001
-* type.coding[=].display = "Medical ward"
+* type.coding[=].display = "Intensive care unit"

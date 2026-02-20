@@ -19,7 +19,6 @@ Description: "Adds several Israel-specific extensions and constraints, plus geoc
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
 
-
 * extension contains
     $geolocation named geolocation 0..1 and
     $ext-statistical-area named statArea 0..*

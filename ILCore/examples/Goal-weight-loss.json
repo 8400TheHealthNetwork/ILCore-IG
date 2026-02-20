@@ -12,7 +12,8 @@
   },
   "identifier": [
     {
-      "value": "123"
+      "system": "http://fhir.community-emr.co.il/identifier/entity-id/goals",
+      "value": "234234234"
     }
   ],
   "lifecycleStatus": "on-hold",
@@ -80,11 +81,29 @@
   "addresses": [
     {
       "display": "obesity condition"
+    },
+    {
+      "reference": "Condition/obesity-condition",
+      "display": "Obesity"
     }
   ],
   "outcomeReference": [
     {
       "reference": "Observation/hight-measurement"
+    }
+  ],
+  "achievementStatus": {
+    "coding": [
+      {
+        "code": "improving",
+        "system": "http://terminology.hl7.org/CodeSystem/goal-achievement",
+        "display": "Improving"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Goal was discussed with the care team and agreed upon with the patient."
     }
   ]
 }

@@ -7,7 +7,7 @@
 id: il.core.fhir.r4
 packageId: il.core.fhir.r4
 canonical: http://fhir.health.gov.il
-version: 0.20.1
+version: 0.20.0
 # version: 0.20.0 -- THIS IS THE CORRECT VALUE!! 24/12/25
 name: ILCoreImplementationGuide
 title: IL Core Implementation Guide

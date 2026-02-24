@@ -35,3 +35,4 @@ Description: "Allowed document MIME types (IANA BCP13) for general docs, Office,
 
 // 🟪 CDA
 * include $mime-types#"application/cda+xml" "HL7 Clinical Document Architecture (CDA) XML"
+* insert ConformanceMetadata

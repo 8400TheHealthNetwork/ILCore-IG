@@ -24,3 +24,4 @@ Description: "Attributes a resource instance to a specific role in the clinical 
 * extension[roleEncounterContext] ^short = "Encounter associated with the specified resource role context"
 * extension[roleEncounterContext] ^definition = "Optional reference to Encounter associated with the specified resource role context. SHOULD be used when an additional, context-specific Encounter instance should be tracked. SHALL NOT be used when the resource's standard encounter reference already points to the relevant Encounter instance."
 * extension[roleEncounterContext].value[x] only Reference(ILCoreEncounter)
+* insert ConformanceMetadata

@@ -1,6 +1,3 @@
-// ============================================================
-// MedicationAdministration (Administration) – full-ish example + same regimen metadata
-// ============================================================
 Instance: MedicationAdministration-OncologyRegimen-Full
 InstanceOf: MedicationAdministration
 Usage: #example

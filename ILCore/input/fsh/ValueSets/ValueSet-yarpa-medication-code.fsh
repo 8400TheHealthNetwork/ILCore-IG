@@ -5,7 +5,7 @@ Description: "Codes for medications according to 'Yarpa' catalogue"
 
 * ^url = $vs-yarpa-medication-code
 * ^status = #active
-* ^version = "0.13.0"
 * ^experimental = false
 
+* insert ConformanceMetadata
 * include codes from system $yarpa-medication-code

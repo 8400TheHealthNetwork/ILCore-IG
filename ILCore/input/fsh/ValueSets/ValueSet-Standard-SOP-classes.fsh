@@ -3,6 +3,7 @@ ValueSet: StandardSopClass
 Id: standard-sop-class
 Title: "Standard SOP Class"
 Description: "Standard SOP Class"
+* insert ConformanceMetadata
 * $urn#urn:oid#1.2.840.10008.5.1.4.1.1.1 "Computed Radiography Image Storage"
 * $urn#urn:oid#1.2.840.10008.5.1.4.1.1.1.1 "Digital X-Ray Image Storage - For Presentation"
 * $urn#urn:oid#1.2.840.10008.5.1.4.1.1.1.1.1 "Digital X-Ray Image Storage - For Processing"

@@ -1897,6 +1897,43 @@
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\CodeSystem-il-core-resource-encounter-role.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["CodeSystem"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>CodeSystem</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
         "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\CodeSystem-il-core-urn.json"
       }],
       "issue" : [{
@@ -4852,7 +4889,7 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>ImagingStudy.modality[0]</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>ImagingStudy.modality[0].system</td><td>Unknown User</td><td>A definition for CodeSystem 'https://dicom.nema.org' could not be found, so the code cannot be validated</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.procedureCode[0]</td><td>Invalid Code</td><td>ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.procedureCode[0].coding[0]</td><td>Business Rule Violation</td><td>The concept '39152-4' has a status of DISCOURAGED and its use should be reviewed</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].modality</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>ImagingStudy.series[0].modality.system</td><td>Unknown User</td><td>A definition for CodeSystem 'https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' could not be found, so the code cannot be validated</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[0].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[1].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[2].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[3].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.procedureCode[0]</td><td>Invalid Code</td><td>ValueSet 'http://loinc.org/vs/loinc-rsna-radiology-playbook' not found</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>ImagingStudy.modality[0].system</td><td>Not Found</td><td>A definition for CodeSystem 'https://dicom.nema.org' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>ImagingStudy.modality[0]</td><td>Invalid Code</td><td>The code provided (https://dicom.nema.org#MG) is not in the value set 'AcquisitionModality' (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html|2025.3.20250714), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>ImagingStudy.procedureCode[0]</td><td>Invalid Code</td><td>ValueSet 'http://www.rsna.org/RadLex_Playbook.aspx' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.procedureCode[0].coding[0]</td><td>Business Rule Violation</td><td>The concept '39152-4' has a status of DISCOURAGED and its use should be reviewed</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].modality.system</td><td>Not Found</td><td>A definition for CodeSystem 'https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' could not be found, so the code cannot be validated</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].modality</td><td>Invalid Code</td><td>The code provided (https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html#MG) is not in the value set 'AcquisitionModality' (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html|2025.3.20250714), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[0].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[1].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[2].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy.series[0].instance[3].sopClass</td><td>Invalid Code</td><td>ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part04/sect_B.5.html#table_B.5-1' not found</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ImagingStudy</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -4869,18 +4906,18 @@
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-          "valueString" : "InstanceValidator"
+          "valueString" : "TerminologyEngine"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueCode" : "Terminology_TX_ValueSet_NotFound"
+          "valueCode" : "UNKNOWN_CODESYSTEM"
         }],
         "severity" : "warning",
-        "code" : "code-invalid",
+        "code" : "not-found",
         "details" : {
-          "text" : "ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' not found"
+          "text" : "A definition for CodeSystem 'https://dicom.nema.org' could not be found, so the code cannot be validated"
         },
-        "expression" : ["ImagingStudy.modality[0]"]
+        "expression" : ["ImagingStudy.modality[0].system"]
       },
       {
         "extension" : [{
@@ -4893,18 +4930,18 @@
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-          "valueString" : "InstanceValidator"
+          "valueString" : "TerminologyEngine"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueCode" : "UNKNOWN_CODESYSTEM"
+          "valueCode" : "Terminology_TX_Confirm_5"
         }],
-        "severity" : "information",
-        "code" : "unknown",
+        "severity" : "warning",
+        "code" : "code-invalid",
         "details" : {
-          "text" : "A definition for CodeSystem 'https://dicom.nema.org' could not be found, so the code cannot be validated"
+          "text" : "The code provided (https://dicom.nema.org#MG) is not in the value set 'AcquisitionModality' (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html|2025.3.20250714), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)"
         },
-        "expression" : ["ImagingStudy.modality[0].system"]
+        "expression" : ["ImagingStudy.modality[0]"]
       },
       {
         "extension" : [{
@@ -4965,18 +5002,18 @@
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-          "valueString" : "InstanceValidator"
+          "valueString" : "TerminologyEngine"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueCode" : "Terminology_TX_ValueSet_NotFound"
+          "valueCode" : "UNKNOWN_CODESYSTEM"
         }],
         "severity" : "warning",
-        "code" : "code-invalid",
+        "code" : "not-found",
         "details" : {
-          "text" : "ValueSet 'http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' not found"
+          "text" : "A definition for CodeSystem 'https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' could not be found, so the code cannot be validated"
         },
-        "expression" : ["ImagingStudy.series[0].modality"]
+        "expression" : ["ImagingStudy.series[0].modality.system"]
       },
       {
         "extension" : [{
@@ -4989,18 +5026,18 @@
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-          "valueString" : "InstanceValidator"
+          "valueString" : "TerminologyEngine"
         },
         {
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueCode" : "UNKNOWN_CODESYSTEM"
+          "valueCode" : "Terminology_TX_Confirm_5"
         }],
-        "severity" : "information",
-        "code" : "unknown",
+        "severity" : "warning",
+        "code" : "code-invalid",
         "details" : {
-          "text" : "A definition for CodeSystem 'https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html' could not be found, so the code cannot be validated"
+          "text" : "The code provided (https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html#MG) is not in the value set 'AcquisitionModality' (http://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html|2025.3.20250714), and a code should come from this value set unless it has no suitable code (the validator cannot judge what is suitable)"
         },
-        "expression" : ["ImagingStudy.series[0].modality.system"]
+        "expression" : ["ImagingStudy.series[0].modality"]
       },
       {
         "extension" : [{
@@ -5121,30 +5158,6 @@
           "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
         },
         "expression" : ["ImagingStudy"]
-      },
-      {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-          "valueInteger" : 62
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-          "valueInteger" : 6
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-          "valueString" : "InstanceValidator"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueCode" : "Terminology_TX_ValueSet_NotFound"
-        }],
-        "severity" : "warning",
-        "code" : "code-invalid",
-        "details" : {
-          "text" : "ValueSet 'http://loinc.org/vs/loinc-rsna-radiology-playbook' not found"
-        },
-        "expression" : ["ImagingStudy.procedureCode[0]"]
       }]
     }
   },
@@ -9277,7 +9290,112 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.category[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Observation.bodySite</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#122555007)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.category[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)</td><td/><td>TerminologyEngine</td></tr><tr><td>Error</td><td>Observation.method</td><td>Exception</td><td>java.net.ConnectException: Failed to connect to tx.fhir.org/104.196.166.17:443</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Observation.bodySite</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#122555007)</td><td/><td>TerminologyEngine</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\Observation-hemoglobin-lab-test-discharge-stage.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 10
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)"
+        },
+        "expression" : ["Observation.category[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 96
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        }],
+        "severity" : "error",
+        "code" : "exception",
+        "details" : {
+          "text" : "java.net.ConnectException: Failed to connect to tx.fhir.org/104.196.166.17:443"
+        },
+        "expression" : ["Observation.method"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Observation"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 105
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Terminology_TX_NoValid_3_CC"
+        }],
+        "severity" : "information",
+        "code" : "code-invalid",
+        "details" : {
+          "text" : "None of the codings provided are in the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#122555007)"
+        },
+        "expression" : ["Observation.bodySite"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>Observation.category[0]</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)</td><td/><td>TerminologyEngine</td></tr><tr><td>Error</td><td>Observation.method</td><td>Exception</td><td>java.net.ConnectException: Failed to connect to tx.fhir.org/104.196.166.17:443</td><td/><td>TerminologyEngine</td></tr><tr><td>Warning</td><td>Observation</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Observation.bodySite</td><td>Invalid Code</td><td>None of the codings provided are in the value set 'SNOMED CT Body Structures' (http://hl7.org/fhir/ValueSet/body-site|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#122555007)</td><td/><td>TerminologyEngine</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
@@ -9306,6 +9424,26 @@
           "text" : "None of the codings provided are in the value set 'Observation Category Codes' (http://hl7.org/fhir/ValueSet/observation-category|4.0.1), and a coding is recommended to come from this value set (codes = http://snomed.info/sct#108252007)"
         },
         "expression" : ["Observation.category[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 70
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 4
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "TerminologyEngine"
+        }],
+        "severity" : "error",
+        "code" : "exception",
+        "details" : {
+          "text" : "java.net.ConnectException: Failed to connect to tx.fhir.org/104.196.166.17:443"
+        },
+        "expression" : ["Observation.method"]
       },
       {
         "extension" : [{
@@ -10103,6 +10241,115 @@
           "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.20.1 (this may not be a problem, but you should check that it's not intended to match a slice)"
         },
         "expression" : ["Patient.name[0].extension[0]"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Error</td><td>Patient.extension[0]</td><td>Validation rule failed</td><td>Constraint failed: ilhdp-enc-stage-ctx-1: 'This extension SHALL NOT be used on Patient, Practitioner, PractitionerRole, RelatedPerson, Organization, Location, or Group resources' (defined in http://fhir.health.gov.il/StructureDefinition/ext-resource-encounter-stage-context)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>Patient</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.extension[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.20.1 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr><tr><td>Information</td><td>Patient.name[0]</td><td>Informational Note</td><td>This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.20.1 (this may not be a problem, but you should check that it's not intended to match a slice)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\Patient-patient-with-invalid-extension.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 26
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://fhir.health.gov.il/StructureDefinition/ext-resource-encounter-stage-context#ilhdp-enc-stage-ctx-1"
+        }],
+        "severity" : "error",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: ilhdp-enc-stage-ctx-1: 'This extension SHALL NOT be used on Patient, Practitioner, PractitionerRole, RelatedPerson, Organization, Location, or Group resources' (defined in http://fhir.health.gov.il/StructureDefinition/ext-resource-encounter-stage-context)"
+        },
+        "expression" : ["Patient.extension[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["Patient"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 26
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.20.1 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Patient.extension[0]"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 16
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 6
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "Details_for__matching_against_Profile_"
+        }],
+        "severity" : "information",
+        "code" : "informational",
+        "details" : {
+          "text" : "This element does not match any known slice defined in the profile http://fhir.health.gov.il/StructureDefinition/il-core-patient|0.20.1 (this may not be a problem, but you should check that it's not intended to match a slice)"
+        },
+        "expression" : ["Patient.name[0]"]
       }]
     }
   },
@@ -13641,6 +13888,43 @@
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\StructureDefinition-ext-resource-encounter-stage-context.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["StructureDefinition"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>StructureDefinition</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
         "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\StructureDefinition-ext-specimen-collector-reference.json"
       }],
       "issue" : [{
@@ -15627,37 +15911,13 @@
       "resourceType" : "OperationOutcome",
       "text" : {
         "status" : "generated",
-        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Information</td><td>StructureDefinition.differential.element[14].binding.valueSet</td><td>Invalid Content</td><td>A definition could not be found for Canonical URL 'http://loinc.org/vs/loinc-rsna-radiology-playbook'</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>StructureDefinition</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>StructureDefinition</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr></table></div>"
       },
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
         "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\StructureDefinition-il-core-imaging-study.json"
       }],
       "issue" : [{
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
-          "valueInteger" : 211
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
-          "valueInteger" : 74
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
-          "valueString" : "InstanceValidator"
-        },
-        {
-          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
-          "valueCode" : "TYPE_SPECIFIC_CHECKS_DT_CANONICAL_RESOLVE"
-        }],
-        "severity" : "information",
-        "code" : "invalid",
-        "details" : {
-          "text" : "A definition could not be found for Canonical URL 'http://loinc.org/vs/loinc-rsna-radiology-playbook'"
-        },
-        "expression" : ["StructureDefinition.differential.element[14].binding.valueSet"]
-      },
-      {
         "extension" : [{
           "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
           "valueInteger" : 1
@@ -23287,6 +23547,63 @@
           "text" : "The concept '281399006' has a status of inactive and its use should be reviewed"
         },
         "expression" : ["ValueSet.compose.include[0].concept[0]"]
+      }]
+    }
+  },
+  {
+    "resource" : {
+      "resourceType" : "OperationOutcome",
+      "text" : {
+        "status" : "generated",
+        "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>OperationOutcome </b></p><table class=\"grid\"><tr><td><b>Severity</b></td><td><b>Location</b></td><td><b>Code</b></td><td><b>Details</b></td><td><b>Diagnostics</b></td><td><b>Source</b></td></tr><tr><td>Warning</td><td>ValueSet</td><td>Validation rule failed</td><td>Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)</td><td/><td>InstanceValidator</td></tr><tr><td>Warning</td><td>ValueSet.compose.include[0]</td><td>Invalid Content</td><td>There are multiple different potential matches for the url 'http://fhir.health.gov.il/cs/il-core-resource-encounter-role'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '0.20.1', found versions: 0.20.1. Suggested fix: change the canonical reference from 'http://fhir.health.gov.il/cs/il-core-resource-encounter-role' to 'http://fhir.health.gov.il/cs/il-core-resource-encounter-role|0.20.1'</td><td/><td>InstanceValidator</td></tr></table></div>"
+      },
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-file",
+        "valueString" : "C:\\FHIR\\ILCore-IG\\ILCore\\differentials\\fsh-generated\\resources\\ValueSet-resource-encounter-role.json"
+      }],
+      "issue" : [{
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 1
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 2
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-message-id",
+          "valueCode" : "http://hl7.org/fhir/StructureDefinition/DomainResource#dom-6"
+        }],
+        "severity" : "warning",
+        "code" : "invariant",
+        "details" : {
+          "text" : "Constraint failed: dom-6: 'A resource should have narrative for robust management' (defined in http://hl7.org/fhir/StructureDefinition/DomainResource) (Best Practice Recommendation)"
+        },
+        "expression" : ["ValueSet"]
+      },
+      {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-line",
+          "valueInteger" : 25
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-col",
+          "valueInteger" : 8
+        },
+        {
+          "url" : "http://hl7.org/fhir/StructureDefinition/operationoutcome-issue-source",
+          "valueString" : "InstanceValidator"
+        }],
+        "severity" : "warning",
+        "code" : "invalid",
+        "details" : {
+          "text" : "There are multiple different potential matches for the url 'http://fhir.health.gov.il/cs/il-core-resource-encounter-role'. It might be a good idea to fix to the correct version to reduce the likelihood of a wrong version being selected by an implementation/implementer, or use the [IG Parameter `pin-canonicals`](https://hl7.org/fhir/tools/CodeSystem-ig-parameters.html). Using version '0.20.1', found versions: 0.20.1. Suggested fix: change the canonical reference from 'http://fhir.health.gov.il/cs/il-core-resource-encounter-role' to 'http://fhir.health.gov.il/cs/il-core-resource-encounter-role|0.20.1'"
+        },
+        "expression" : ["ValueSet.compose.include[0]"]
       }]
     }
   },

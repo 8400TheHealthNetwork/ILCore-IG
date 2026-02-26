@@ -353,6 +353,3 @@ Alias: $vs-il-hdp-information-buckets           = http://fhir.health.gov.il/Valu
 Alias: $vs-resource-role-context                = http://fhir.health.gov.il/ValueSet/resource-role-context
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
-
-//HDP-mimetypes
-Alias: $hdp-mime-types =  urn:ietf:bcp:13

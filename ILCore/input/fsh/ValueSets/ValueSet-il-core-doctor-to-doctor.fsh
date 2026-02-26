@@ -7,4 +7,4 @@ Description: "Codes for Doctor To Doctor encounter for the IL Core"
 * insert ConformanceMetadata
 * ^experimental = false
 
-* $sct#1268903003 "Consultation by multidisciplinary team (procedure)"
+* include codes from system $sct where concept is-a #11429006 "Consultation"

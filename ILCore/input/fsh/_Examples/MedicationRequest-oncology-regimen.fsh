@@ -1,6 +1,3 @@
-// ============================================================
-// MedicationRequest (Order) – full-ish example + oncologyMedicationRegimen
-// ============================================================
 Instance: MedicationRequest-OncologyRegimen-Full
 InstanceOf: MedicationRequest
 Usage: #example

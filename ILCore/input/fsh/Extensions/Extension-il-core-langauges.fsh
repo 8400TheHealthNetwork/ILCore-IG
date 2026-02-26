@@ -11,6 +11,7 @@ Description: "Extension: ILCore Languages. Allowing the use of Hebrew as a langu
 * ^context[1].expression = "Practitioner.name"
 * ^context[2].type = #element
 * ^context[2].expression = "RelatedPerson.name"
+* insert ConformanceMetadata
 
 * value[x] only code
 * valueCode 1..1

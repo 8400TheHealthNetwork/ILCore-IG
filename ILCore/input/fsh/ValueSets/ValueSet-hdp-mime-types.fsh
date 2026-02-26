@@ -35,4 +35,5 @@ rich text, and CDA"
 * include $hdp-mime-types#"text/rtf" "RTF text"
 
 // 🟪 CDA
+* insert ConformanceMetadata
 * include $hdp-mime-types#"application/cda+xml" "HL7 Clinical Document Architecture (CDA) XML"

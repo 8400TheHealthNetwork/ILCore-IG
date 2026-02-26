@@ -331,5 +331,6 @@ Alias: $vs-device-type-hl7 =            http://hl7.org/fhir/ValueSet/device-type
 
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
-//mimetypes
-Alias: $mime-types =  urn:ietf:bcp:13
+
+//HDP-mimetypes
+Alias: $hdp-mime-types =  urn:ietf:bcp:13

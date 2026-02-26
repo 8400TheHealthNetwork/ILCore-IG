@@ -14,6 +14,21 @@ Usage: #example
 * medicationCodeableConcept.text = "Eltroxin (Levothyroxine)"
 * authoredOn = "2026-01-01"
 
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <p><b>MedicationRequest Example</b></p>
+  <p><b>Medication:</b> Eltroxin (Levothyroxine)</p>
+  <p><b>Regimen duration:</b> 1 month.</p>
+  <p><b>Cycle:</b> Repeats every 2 days.</p>
+  <ul>
+    <li><b>Cycle day 1:</b> 100 micrograms (ug) once daily</li>
+    <li><b>Cycle day 2:</b> 50 micrograms (ug) once daily</li>
+  </ul>
+  <p>This alternating pattern continues for the entire month.</p>
+</div>"
+
+* requester.reference = "Practitioner/123"
+
 * dosageInstruction[+].text = "Alternating daily dose: 100 mcg one day, 50 mcg the next day for a month"
 * dosageInstruction[=].timing.repeat.boundsDuration.value = 1
 * dosageInstruction[=].timing.repeat.boundsDuration.unit = "month"

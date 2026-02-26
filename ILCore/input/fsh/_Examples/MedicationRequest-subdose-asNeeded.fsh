@@ -13,7 +13,16 @@ Usage: #example
 * subject.reference = "Patient/123"
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"
+* requester.reference = "Practitioner/123"
 
+
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <p><b>MedicationRequest Example</b></p>
+  <p><b>Medication:</b> Example medication</p>
+  <p><b>Regimen:</b> Take an initial dose of <b>2 tablets</b>, then take <b>1 tablet as needed</b> after each bowel movement.</p>
+  <p><b>Limit:</b> Do not exceed <b>8 tablets per day</b>.</p>
+</div>"
 // ------------------------------------------------------------
 // Parent Dosage – only limits
 // ------------------------------------------------------------
@@ -23,7 +32,7 @@ Usage: #example
 * dosageInstruction[=].maxDosePerPeriod.numerator.value = 8
 * dosageInstruction[=].maxDosePerPeriod.numerator.unit = "tablet"
 * dosageInstruction[=].maxDosePerPeriod.numerator.system = "http://unitsofmeasure.org"
-* dosageInstruction[=].maxDosePerPeriod.numerator.code = #tbl
+* dosageInstruction[=].maxDosePerPeriod.numerator.code = #1
 * dosageInstruction[=].maxDosePerPeriod.denominator.value = 1
 * dosageInstruction[=].maxDosePerPeriod.denominator.unit = "day"
 * dosageInstruction[=].maxDosePerPeriod.denominator.system = "http://unitsofmeasure.org"
@@ -41,7 +50,7 @@ Usage: #example
 * dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.value = 2
 * dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.unit = "tablet"
 * dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.system = "http://unitsofmeasure.org"
-* dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.code = #tbl
+* dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.code = #1
 
 // ------------------------------------------------------------
 // subDosage #2 – PRN: 1 tablet after each bowel movement
@@ -57,4 +66,4 @@ Usage: #example
 * dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.value = 1
 * dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.unit = "tablet"
 * dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.system = "http://unitsofmeasure.org"
-* dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.code = #tbl
+* dosageInstruction[=].extension[=].valueDosage.doseAndRate[0].doseQuantity.code = #1

@@ -4,9 +4,9 @@ Usage: #example
 Title: "Patient with Passport Number without Country System"
 Description: "Example of ILCorePatient with a passport number without specifying the issuing country."
 
-* identifier[ppn-no-country].value = "A12345678"
-* identifier[ppn-no-country].system.extension[data-absent-reason].valueCode = #unknown
-* identifier[ppn-no-country].type = $id-type#PPN "Passport Number"
+* identifier[ppn].value = "A12345678"
+* identifier[ppn].system.extension[data-absent-reason].valueCode = #unknown
+* identifier[ppn].type = $id-type#PPN "Passport Number"
 * name[0].family = "Doe"
 * name[0].given[0] = "John"
 * gender = #male

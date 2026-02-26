@@ -1,0 +1,32 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "idf-service-number",
+  "name": "IDF Service Number",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2024-02-22",
+  "publisher": "Israeli Ministry of Health",
+  "responsible": "Israeli Defense Forces",
+  "type": {
+    "text": "Military Service Number"
+  },
+  "description": "Israel Defence forces Sevice number. A unique identifier for any soldier currently serving or having served in the IDF",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "IL",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "usage": "Used in Israel for identifying soldiers",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://fhir.health.gov.il/identifier/idf-service-number",
+      "preferred": true
+    }
+  ]
+}

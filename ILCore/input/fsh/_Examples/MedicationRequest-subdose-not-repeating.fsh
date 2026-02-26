@@ -9,6 +9,19 @@ Usage: #example
 * authoredOn = "2026-01-01"
 * requester.reference = "Practitioner/123"
 
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <p><b>MedicationRequest Example</b></p>
+  <p><b>Medication:</b> Example medication</p>
+  <p><b>Plan type:</b> Sequential 3-step regimen (no repeating cycle).</p>
+  <p><b>Shared constraint:</b> Maximum <b>90 mg per day</b> during all protocol</p>
+  <ol>
+    <li><b>Step 1 (1 week):</b> 30 mg <b>three times daily</b>.</li>
+    <li><b>Step 2 (2 weeks):</b> 25 mg <b>twice daily</b> (morning and evening).</li>
+    <li><b>Step 3 (1 month):</b> 20 mg <b>once daily</b> in the morning.</li>
+  </ol>
+</div>"
+
 * dosageInstruction[0].text = "Sequential 3-step regimen (no cycle). Shared constraint: max 90 mg/day across entire plan."
 
 // Shared constraint across all steps

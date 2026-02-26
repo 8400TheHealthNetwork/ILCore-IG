@@ -8,6 +8,20 @@ Usage: #example
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"
 
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <p><b>MedicationRequest Example</b></p>
+  <p><b>Medication:</b> Example medication</p>
+  <p><b>Duration:</b> 1 month.</p>
+  <p><b>Daily regimen:</b></p>
+  <ul>
+    <li><b>Morning:</b> 100 mg once daily</li>
+    <li><b>Evening:</b> 50 mg once daily</li>
+  </ul>
+  <p>The above dosing schedule is repeated every day for the entire month.</p>
+</div>"
+
+
 * dosageInstruction[0].text = "For 1 month: 100 mg in the morning and 50 mg in the evening."
 * requester.reference = "Practitioner/123"
 

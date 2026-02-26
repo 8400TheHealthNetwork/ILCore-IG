@@ -8,6 +8,14 @@ Usage: #example
 
 * status = #active
 * intent = #order
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <p><b>Medication Request</b></p>
+  <p>Example medication prescribed to be taken <b>2 times per calendar month</b> 
+  for a duration of <b>1 month</b>.</p>
+  <p>Dose per intake: <b>1 tablet</b>.</p>
+  <p>Start date: 01-Jan-2026.</p>
+</div>"
 * subject.reference = "Patient/123"
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"

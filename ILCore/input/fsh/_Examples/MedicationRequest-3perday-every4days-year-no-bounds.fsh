@@ -7,12 +7,23 @@ Usage: #example
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"
 * intent = #order
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <p><b>MedicationRequest Example</b></p>
+  <p>Regimen starts on <b>2025-03-01</b> (until stopped).</p>
+    <p><b>Cycle regimen:</b></p>
+    <ul>
+        <li><b>Day 1:</b> Take 1 tablet, 3 times per day.</li>
+        <li><b>Days 2–4:</b> Do not take the medication for 3 days.</li>
+    </ul>
+    <p>This 4-day cycle repeats until stopped.</p>
+    <p>Route: Oral. Method: Swallow.</p>
+ </div>"
+
 * requester.reference = "Practitioner/123"
 * dosageInstruction[0].text = "General regimen from 1.3.2025 at hospitlizaion; detailed frequencies and doses are defined in sub-dosage extension"
 // ---- Dosage (parent) – general constraints: start at  2025-03-01 untill stopped----
 * dosageInstruction[0].timing.repeat.boundsPeriod.start =  "2025-03-01"
-
-
 
 
 // ---- ext-sub-dosage extension ----

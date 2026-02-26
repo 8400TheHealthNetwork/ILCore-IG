@@ -14,6 +14,15 @@ Usage: #example
 * medicationCodeableConcept.text = "Example medication"
 * authoredOn = "2026-01-01"
 * requester.reference = "Practitioner/123"
+
+
+* text.status = #generated
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">
+  <p><b>MedicationRequest Example</b></p>
+  <p><b>Medication:</b> Example medication</p>
+  <p><b>Regimen:</b> Take an initial dose of <b>2 tablets</b>, then take <b>1 tablet as needed</b> after each bowel movement.</p>
+  <p><b>Limit:</b> Do not exceed <b>8 tablets per day</b>.</p>
+</div>"
 // ------------------------------------------------------------
 // Parent Dosage – only limits
 // ------------------------------------------------------------

@@ -167,6 +167,7 @@ Alias: $practitioner-education-type =   http://fhir.health.gov.il/cs/practitione
 Alias: $pract-certificate-type-moh =    http://fhir.health.gov.il/cs/practitioner-certificate-type-moh
 Alias: $pract-certificate-type-molsa =  http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa
 Alias: $medical-service-code-moh =      http://fhir.health.gov.il/cs/medical-service-moh
+Alias: $medication-course-of-therapy-type = http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type
 Alias: $il-core-medication-request-category =   http://fhir.health.gov.il/cs/il-core-medication-request-category
 Alias: $il-core-error-code =            http://fhir.health.gov.il/cs/il-core-error-code
 Alias: $il-core-community-unit-type =   http://fhir.health.gov.il/cs/il-core-community-unit-type

@@ -1,0 +1,223 @@
+{
+    "resourceType": "Patient",
+    "id": "PAT.1000148",
+    "meta": {
+        "profile": [
+            "http://fhir.health.gov.il/StructureDefinition/il-core-patient",
+            "http://fhir.dgmc.health.gov.il/StructureDefinition/dgmc-patient"
+        ],
+        "security": [
+            {
+                "system": "http://fhir.health.gov.il/cs/il-hdp-information-buckets",
+                "code": "patientDemographics",
+                "display": "דמוגרפיה"
+            }
+        ],
+        "lastUpdated": "2025-09-28T10:10:30+03:00",
+        "versionId": "11"
+    },
+    "extension": [
+        {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+            "valueCodeableConcept": {
+                "coding": [
+                    {
+                        "system": "http://fhir.health.gov.il/cs/paying-entity-moh",
+                        "code": "102",
+                        "display": "קופת חולים לאומית"
+                    },
+                    {
+                        "system": "http://fhir.dgmc.health.gov.il/cs/nmr-hmo-code",
+                        "code": "13",
+                        "display": "לאומית"
+                    }
+                ]
+            }
+        },
+        {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration",
+            "extension": [
+                {
+                    "url": "date",
+                    "valueDate": "1948-06-20"
+                }
+            ]
+        },
+        {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name",
+            "extension": [
+                {
+                    "url": "role",
+                    "valueCode": "FTH"
+                },
+                {
+                    "url": "given",
+                    "valueString": "אבא2"
+                }
+            ]
+        },
+        {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name",
+            "extension": [
+                {
+                    "url": "role",
+                    "valueCode": "MTH"
+                },
+                {
+                    "url": "given",
+                    "valueString": "אמא2"
+                }
+            ]
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+            "valueAddress": {
+                "country": "PL"
+            }
+        },
+        {
+            "url": "http://hl7.org/fhir/StructureDefinition/patient-nationality",
+            "extension": [
+                {
+                    "url": "code",
+                    "valueCodeableConcept": {
+                        "coding": [
+                            {
+                                "system": "urn:iso:std:iso:3166",
+                                "code": "IL"
+                            }
+                        ],
+                        "text": "ישראלי"
+                    }
+                }
+            ]
+        }
+    ],
+    "identifier": [
+        {
+            "system": "http://fhir.health.gov.il/identifier/il-national-id",
+            "value": "087654321"
+        },
+        {
+            "system": "http://fhir.b-zion.health.gov.il/identifier/nmr-pat-int-num",
+            "value": "6666666"
+        },
+        {
+            "system": "http://fhir.b-zion.health.gov.il/identifier/cml-pat-int-num",
+            "value": "77777"
+        },
+        {
+            "system": "http://fhir.b-zion.health.gov.il/identifier/nmr-pat-tmp-num",
+            "value": "Z8888888"
+        }
+    ],
+    "active": true,
+    "name": [
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/language",
+                    "valueCode": "he"
+                }
+            ],
+            "family": "מטופל2",
+            "given": [
+                "מטופל2"
+            ]
+        },
+        {
+            "extension": [
+                {
+                    "url": "http://hl7.org/fhir/StructureDefinition/language",
+                    "valueCode": "en"
+                }
+            ],
+            "family": "PATIENT2",
+            "given": [
+                "PATIENT2"
+            ]
+        }
+    ],
+    "telecom": [
+        {
+            "system": "phone",
+            "value": "050-1111111",
+            "rank": 1
+        }
+    ],
+    "gender": "female",
+    "birthDate": "1930-04-21",
+    "_birthDate": {
+        "extension": [
+            {
+                "url": "http://fhir.health.gov.il/StructureDefinition/ext-hebrew-date",
+                "extension": [
+                    {
+                        "url": "display",
+                        "valueString": "כ\"ג בניסן התר\"ץ"
+                    }
+                ]
+            }
+        ]
+    },
+    "deceasedBoolean": false,
+    "address": [
+        {
+            "line": [
+                "[none]"
+            ],
+            "_line": [
+                {
+                    "extension": [
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+                            "valueString": "הגליל"
+                        },
+                        {
+                            "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+                            "valueString": "92"
+                        }
+                    ]
+                }
+            ],
+            "_city": {
+                "extension": [
+                    {
+                        "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+                        "valueCodeableConcept": {
+                            "coding": [
+                                {
+                                    "system": "http://fhir.health.gov.il/cs/city-symbol",
+                                    "code": "4000",
+                                    "display": "חיפה"
+                                }
+                            ]
+                        }
+                    }
+                ]
+            },
+            "postalCode": "3268415",
+            "country": "IL"
+        }
+    ],
+    "maritalStatus": {
+        "coding": [
+            {
+                "system": "http://terminology.hl7.org/CodeSystem/v3-MaritalStatus",
+                "code": "W"
+            }
+        ]
+    },
+    "communication": [
+        {
+            "language": {
+                "coding": [
+                    {
+                        "system": "urn:ietf:bcp:47",
+                        "code": "he"
+                    }
+                ]
+            }
+        }
+    ]
+}

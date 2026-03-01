@@ -1,0 +1,60 @@
+{
+  "resourceType": "DeviceDefinition",
+  "id": "definition-glucose-meter",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-device-definition"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://goodcare.org/devices/id",
+      "value": "345675"
+    }
+  ],
+  "manufacturerReference": {
+    "reference": "Organization/ministry-of-health"
+  },
+  "owner": {
+    "reference": "Organization/hospital-department"
+  },
+  "deviceName": [
+    {
+      "name": "Example Glucose Meter",
+      "type": "manufacturer-name"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "337414009",
+        "system": "http://snomed.info/sct",
+        "display": "Blood glucose meter (physical object)"
+      }
+    ]
+  },
+  "modelNumber": "GM-2025",
+  "version": [
+    "v2.5.1"
+  ],
+  "property": [
+    {
+      "type": {
+        "text": "Measurement Range"
+      },
+      "valueQuantity": [
+        {
+          "value": 20,
+          "unit": "mg/dL"
+        }
+      ]
+    }
+  ],
+  "capability": [
+    {
+      "type": {
+        "text": "Blood glucose measurement"
+      }
+    }
+  ]
+}

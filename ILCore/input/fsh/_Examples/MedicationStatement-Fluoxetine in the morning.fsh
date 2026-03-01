@@ -2,8 +2,8 @@ Instance: MedicationStatement-SubDosageSteps-Invariant
 InstanceOf: ILCoreMedicationStatement
 Usage: #example
 Title: "MedicationStatement-SubDosageSteps-Invariant"
-Description: "MedicationStatement - example validating the ilcore-dosage-ext invariant: ext-sub-dosage-steps must appear at least twice if used, each containing a Dosage value representing a sub-step"
-* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Active medication statement demonstrating the use of ext-sub-dosage-steps extension appearing twice, as required by the ilcore-dosage-ext invariant. Patient is taking Fluoxetine with a titration schedule decomposed into two sub-dosage steps.</div>"
+Description: "MedicationStatement - example validating the ilcore-dosage-ext invariant: ext-sub-dosage-step must appear at least twice if used, each containing a Dosage value representing a sub-step"
+* text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Active medication statement demonstrating the use of ext-sub-dosage-step extension appearing twice, as required by the ilcore-dosage-ext invariant. Patient is taking Fluoxetine with a titration schedule decomposed into two sub-dosage steps.</div>"
 * text.status = #generated
 * status = #active
 * category.coding[0] = http://fhir.health.gov.il/cs/medication-category#community-other "Community Care/Long Term Care/Home"

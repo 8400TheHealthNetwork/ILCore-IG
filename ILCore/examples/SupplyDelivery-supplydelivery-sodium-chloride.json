@@ -1,0 +1,37 @@
+{
+  "resourceType": "SupplyDelivery",
+  "id": "supplydelivery-sodium-chloride",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-supply-delivery"
+    ]
+  },
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/patient-israeli"
+  },
+  "occurrenceDateTime": "2024-10-01T15:00:00+03:00",
+  "supplier": {
+    "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+  },
+  "destination": {
+    "reference": "Location/home-care-warehouse"
+  },
+  "receiver": [
+    {
+      "reference": "PractitionerRole/practitionerRole-gp"
+    }
+  ],
+  "suppliedItem": {
+    "quantity": {
+      "value": 2,
+      "unit": "bags",
+      "system": "http://unitsofmeasure.org",
+      "code": "1"
+    },
+    "itemReference": {
+      "reference": "Substance/sodium-chloride-0-9",
+      "display": "Sodium Chloride 0.9% Solution"
+    }
+  }
+}

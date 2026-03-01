@@ -1,5 +1,5 @@
 Instance: subdose-not-repeating
-InstanceOf: MedicationRequest
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
 * status = #active

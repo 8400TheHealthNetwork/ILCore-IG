@@ -5,7 +5,7 @@
 // NOTE: interpretation relies on implementer rule (e.g., order in array = day 1/day 2).
 // ------------------------------------------------------------
 Instance: every-other-day-different-dose
-InstanceOf: MedicationRequest
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
 * status = #active

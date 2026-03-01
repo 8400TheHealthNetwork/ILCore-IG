@@ -1,5 +1,5 @@
 Instance: MedicationRequest-OncologyRegimen-Full
-InstanceOf: MedicationRequest
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
 * status = #active

@@ -5,7 +5,7 @@
 // max 8 tablets per day
 // ------------------------------------------------------------
 Instance: initial-then-prn
-InstanceOf: MedicationRequest
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
 * status = #active

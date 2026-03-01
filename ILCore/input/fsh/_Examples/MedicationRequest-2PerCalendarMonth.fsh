@@ -3,7 +3,7 @@
 // For 1 month, with doseQuantity
 // ------------------------------------------------------------
 Instance: 2PerCalendarMonth
-InstanceOf: MedicationRequest
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
 * status = #active

@@ -1,5 +1,5 @@
 Instance: same-day-different-dose-month
-InstanceOf: MedicationRequest
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
 * status = #active

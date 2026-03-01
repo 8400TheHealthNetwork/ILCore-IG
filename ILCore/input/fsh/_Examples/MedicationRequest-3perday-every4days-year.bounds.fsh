@@ -1,5 +1,5 @@
 Instance: 3perday-every4days-year-bounds
-InstanceOf: MedicationRequest
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
 * status = #active

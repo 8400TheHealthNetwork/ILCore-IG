@@ -1,8 +1,8 @@
-Extension: OncologyMedicationRegimen
-Id: ext-oncology-medication-regimen
-Title: "Ext: Oncology Medication Regimen"
-Description: "Oncology regimen metadata for a medication order: protocol name, cycle plan and active ingredient dose information."
-* ^url = "http://fhir.health.gov.il/StructureDefinition/ext-oncology-medication-regimen"
+Extension: MedicationRegimen
+Id: ext-medication-regimen
+Title: "Ext: Medication Regimen"
+Description: "regimen metadata for a medication order: protocol name, cycle plan and active ingredient dose information."
+* ^url = $ext-medication-regimen
 * ^status = #active
 * ^language = #en-US
 * insert ConformanceMetadata
@@ -17,11 +17,18 @@ Description: "Oncology regimen metadata for a medication order: protocol name, c
 
 // Sub-extensions
 * extension contains
+    text 0..1 and
     protocolName 1..1 and
     totalCycles 0..1 and
     durationBetweenCycles 0..1 and
     currentCycleNumber 0..1 and
-    activeIngredientDose 0..1
+    activeIngredient 0..1
+// -----------------------------------------------------
+// text
+// -----------------------------------------------------
+* extension[text].url = "text" (exactly)
+* extension[text].value[x] only string
+* extension[text].valueString ^short = "text"
 
 // -----------------------------------------------------
 // protocolName
@@ -52,23 +59,31 @@ Description: "Oncology regimen metadata for a medication order: protocol name, c
 * extension[currentCycleNumber].valuePositiveInt ^short = "Current cycle number of this medication order"
 
 // -----------------------------------------------------
-// ActiveIngredientDose (COMPLEX)
+// activeIngredient (COMPLEX)
 // -----------------------------------------------------
-* extension[activeIngredientDose].url = "activeIngredientDose" (exactly)
-* extension[activeIngredientDose].value[x] 0..0
+* extension[activeIngredient].url = "activeIngredient" (exactly)
+* extension[activeIngredient].value[x] 0..0
 
-* extension[activeIngredientDose].extension contains
-    cumulativeActiveIngredientDose 0..1 and
-    activeIngredientDoseReference 0..1
+* extension[activeIngredient].extension contains
+    text 0..1 and
+    cumulativeActiveIngredient 0..1 and
+    activeIngredientReference 0..1
 
-// cumulativeActiveIngredientDose
-* extension[activeIngredientDose].extension[cumulativeActiveIngredientDose].url = "cumulativeActiveIngredientDose" (exactly)
-* extension[activeIngredientDose].extension[cumulativeActiveIngredientDose].value[x] only Quantity
-* extension[activeIngredientDose].extension[cumulativeActiveIngredientDose].valueQuantity ^short =
+// text
+* extension[activeIngredient].extension[text].url = "text" (exactly)
+* extension[activeIngredient].extension[text].value[x] only string
+* extension[activeIngredient].extension[text].valueString ^short =
+  "Text of the activeIngredient"
+
+
+// cumulativeActiveIngredient
+* extension[activeIngredient].extension[cumulativeActiveIngredient].url = "cumulativeActiveIngredient" (exactly)
+* extension[activeIngredient].extension[cumulativeActiveIngredient].value[x] only Quantity
+* extension[activeIngredient].extension[cumulativeActiveIngredient].valueQuantity ^short =
   "Cumulative active ingredient dose up to the current cycle"
 
-// activeIngredientDoseReference
-* extension[activeIngredientDose].extension[activeIngredientDoseReference].url = "activeIngredientDoseReference" (exactly)
-* extension[activeIngredientDose].extension[activeIngredientDoseReference].value[x] only Reference(Medication)
-* extension[activeIngredientDose].extension[activeIngredientDoseReference].valueReference ^short =
+// activeIngredientReference
+* extension[activeIngredient].extension[activeIngredientReference].url = "activeIngredientReference" (exactly)
+* extension[activeIngredient].extension[activeIngredientReference].value[x] only Reference(Medication)
+* extension[activeIngredient].extension[activeIngredientReference].valueReference ^short =
   "Reference to the Medication representing the active ingredient"

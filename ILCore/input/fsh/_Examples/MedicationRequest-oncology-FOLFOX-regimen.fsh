@@ -1,44 +1,49 @@
-Instance: medicationregimen-ma-oxaliplatin-cycle3
-InstanceOf: ILCoreMedicationAdministration
+Instance: oncology-FOLFOX-regimen
+InstanceOf: ILCoreMedicationRequest
 Usage: #example
 
-* status = #completed
+* status = #active
+* intent = #order
 * subject.reference = "Patient/123"
-* effectiveDateTime = "2026-02-15T09:00:00+02:00"
-* performer.actor.reference = "Practitioner/123"
-* medicationCodeableConcept.text = "Oxaliplatin administration (example)"
-
-// (optional but common)
-* request.reference = "MedicationRequest/medicationregimen-mr-folfox"
+* authoredOn = "2026-01-01"
+* requester.reference = "Practitioner/123"
+* medicationCodeableConcept.text = "FOLFOX regimen (example order)"
 
 * extension[+].url = $ext-medication-regimen
 
 // top-level text (optional)
 * extension[=].extension[+].url = "text"
-* extension[=].extension[=].valueString = "Regimen metadata captured at administration time"
+* extension[=].extension[=].valueString = "Regimen metadata for oncology order"
 
 // protocolName (required)
 * extension[=].extension[+].url = "protocolName"
 * extension[=].extension[=].valueString = "FOLFOX"
 
-// currentCycleNumber (optional)
-* extension[=].extension[+].url = "currentCycleNumber"
-* extension[=].extension[=].valuePositiveInt = 3
-
 // totalCycles (optional)
 * extension[=].extension[+].url = "totalCycles"
 * extension[=].extension[=].valuePositiveInt = 12
+
+// durationBetweenCycles (optional) – e.g., every 14 days
+* extension[=].extension[+].url = "durationBetweenCycles"
+* extension[=].extension[=].valueDuration.value = 14
+* extension[=].extension[=].valueDuration.unit = "d"
+* extension[=].extension[=].valueDuration.system = "http://unitsofmeasure.org"
+* extension[=].extension[=].valueDuration.code = #d
+
+// currentCycleNumber (optional)
+* extension[=].extension[+].url = "currentCycleNumber"
+* extension[=].extension[=].valuePositiveInt = 3
 
 // activeIngredient (optional, complex)
 * extension[=].extension[+].url = "activeIngredient"
 
 // activeIngredient.text
 * extension[=].extension[=].extension[+].url = "text"
-* extension[=].extension[=].extension[=].valueString = "Oxaliplatin cumulative dose after this administration"
+* extension[=].extension[=].extension[=].valueString = "Oxaliplatin cumulative dose up to current cycle"
 
-// activeIngredient.cumulativeactiveIngredient (updated cumulative)
+// activeIngredient.cumulativeactiveIngredient
 * extension[=].extension[=].extension[+].url = "cumulativeactiveIngredient"
-* extension[=].extension[=].extension[=].valueQuantity.value = 535
+* extension[=].extension[=].extension[=].valueQuantity.value = 450
 * extension[=].extension[=].extension[=].valueQuantity.unit = "mg"
 * extension[=].extension[=].extension[=].valueQuantity.system = "http://unitsofmeasure.org"
 * extension[=].extension[=].extension[=].valueQuantity.code = #mg

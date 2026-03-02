@@ -124,6 +124,8 @@ Alias: $ext-sub-dosage-step =       http://fhir.health.gov.il/StructureDefinitio
 Alias: $ext-language =                  http://fhir.health.gov.il/StructureDefinition/il-core-language
 Alias: $ext-il-core-birthsex =          http://fhir.health.gov.il/StructureDefinition/ext-il-core-birthsex
 Alias: $ext-resource-encounter-stage-context = http://fhir.health.gov.il/StructureDefinition/ext-resource-encounter-stage-context
+Alias: $ext-medication-regimen = http://fhir.health.gov.il/StructureDefinition/ext-medication-regimen
+
 
 // Extensions - external
 Alias: $ext-birth-place =               http://hl7.org/fhir/StructureDefinition/patient-birthPlace

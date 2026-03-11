@@ -1,4 +1,4 @@
-ValueSet: MedicalServiceMoH
+ValueSet: VsMedicalServiceMoH
 Id: medical-service-moh
 Title: "קוד מוצר או שירות"
 Description: "קוד שירותים רפואיים , כולל שירותים באשפוז, שירותים אמבולטוריים, רפואת שיניים ובריאות הנפש"

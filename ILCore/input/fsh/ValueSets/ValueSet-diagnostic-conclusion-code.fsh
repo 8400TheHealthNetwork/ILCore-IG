@@ -1,4 +1,4 @@
-ValueSet: DiagnosticConclusionCode
+ValueSet: VsDiagnosticConclusionCode
 Id: diagnostic-conclusion-code
 Title: "Diagnostic Conclusion Codes"
 Description: "A list of codes for Diagnostic Conclusion for the IL Core"

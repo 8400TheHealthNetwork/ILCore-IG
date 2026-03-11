@@ -1,4 +1,4 @@
-ValueSet: ILCoreEextendedCountryCodes
+ValueSet: VsILCoreEextendedCountryCodes
 Id: il-core-extended-country-codes
 Title: "Country Codes"
 Description: "Codes for countries according to ISO 3166"

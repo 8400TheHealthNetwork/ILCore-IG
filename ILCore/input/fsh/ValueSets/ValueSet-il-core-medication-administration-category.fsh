@@ -1,4 +1,4 @@
-ValueSet:  ILCoreMedicationAdministrartionCategory
+ValueSet:  VsILCoreMedicationAdministrartionCategory
 Id: il-core-medication-administration-category
 Title: "ILCore Medication administration Category"
 Description: "Codes for Medication administration Category"

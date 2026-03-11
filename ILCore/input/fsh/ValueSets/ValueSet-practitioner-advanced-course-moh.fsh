@@ -1,4 +1,4 @@
-ValueSet: PractitionerAdvancedCourseMoH
+ValueSet: VsPractitionerAdvancedCourseMoH
 Id: practitioner-advanced-course-moh
 Title: "קוד קורס על בסיסי לעוסק בסיעוד"
 Description: "קוד קורס על בסיסי לעוסק בסיעוד לפי רישוי משרד הבריאות"

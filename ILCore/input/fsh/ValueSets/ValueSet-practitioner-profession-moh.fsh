@@ -1,4 +1,4 @@
-ValueSet: PractitionerProfessionMoH
+ValueSet: VsPractitionerProfessionMoH
 Id: practitioner-profession-moh
 Title: "קוד מקצוע לעוסק בבריאות"
 Description: "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות. שימו לב: מקצועות הסיעוד הוחרגו מרשימה זו ונמצאים ברשימה נפרדת"

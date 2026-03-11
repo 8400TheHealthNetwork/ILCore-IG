@@ -1,4 +1,4 @@
-ValueSet:  ILCoreMedicationDispenseCategory
+ValueSet:  VsILCoreMedicationDispenseCategory
 Id: il-core-medication-dispense-category
 Title: "ILCore Medication dispense Category"
 Description: "Codes for Medication dispense Category"

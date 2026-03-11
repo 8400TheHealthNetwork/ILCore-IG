@@ -1,4 +1,4 @@
-ValueSet: OrganizationPayingEntityMoHIdentifier 
+ValueSet: VsOrganizationPayingEntityMoHIdentifier 
 Id: organization-paying-entity-moh-identifier 
 Title: "Organization Paying Entity MoH Identifier"
 Description: "This value set defines the paying entity codes (see the code system http://fhir.health.gov.il/cs/paying-entity-moh) that may be used as organization and organization units identifier."

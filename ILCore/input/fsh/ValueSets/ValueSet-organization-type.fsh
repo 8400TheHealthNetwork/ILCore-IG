@@ -1,4 +1,4 @@
-ValueSet: OrganizationType
+ValueSet: VsOrganizationType
 Id: organization-type
 Title: "Organization Type"
 Description: "SNOMED based value set of recommended types of organizations and organization units"

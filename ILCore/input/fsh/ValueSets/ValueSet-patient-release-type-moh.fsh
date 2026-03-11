@@ -1,5 +1,5 @@
 
-ValueSet: PatientRealeaseTypeMoH
+ValueSet: VsPatientRealeaseTypeMoH
 Id: patient-release-type-moh
 Title: "Patient Realease Type MoH"
 Description: "Moh Codes for Patient Realease Type 

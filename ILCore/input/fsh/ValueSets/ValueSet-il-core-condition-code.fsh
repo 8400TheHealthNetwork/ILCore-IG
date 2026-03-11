@@ -1,4 +1,4 @@
-ValueSet: ILCoreConditionCode
+ValueSet: VsILCoreConditionCode
 Id: il-core-condition-code
 Title: "IL Core Condition Code"
 Description: "A list of codes for conditions for the IL Core"

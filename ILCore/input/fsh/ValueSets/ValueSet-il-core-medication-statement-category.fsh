@@ -1,4 +1,4 @@
-ValueSet:  ILCoreMedicationStatementCategory
+ValueSet:  VsILCoreMedicationStatementCategory
 Id: il-core-medication-statement-category
 Title: "ILCore Medication statement Category"
 Description: "Codes for Medication statement Category"

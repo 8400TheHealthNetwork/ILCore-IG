@@ -1,4 +1,4 @@
-ValueSet: ILCoreEncounterReasonCodes
+ValueSet: VsILCoreEncounterReasonCodes
 Id: il-core-encounter-reason-codes
 Title: "IL Core Encounter Reason Codes"
 Description: "Encounter reason codes from HL7 and MOH"

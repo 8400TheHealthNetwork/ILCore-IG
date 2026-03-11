@@ -1,4 +1,4 @@
-ValueSet: ILCoreBodyPosition
+ValueSet: VsILCoreBodyPosition
 Id: il-core-body-position
 Title: "IL Core Body Position"
 Description: "The position of the body when the observation was made, e.g. standing, sitting"

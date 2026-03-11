@@ -1,4 +1,4 @@
-ValueSet: ILCoreSpecimenType
+ValueSet: VsILCoreSpecimenType
 Id: il-core-specimen-type
 Title: "IL Core Specimen type"
 Description: "A list of codes for Specimen types for the IL Core"

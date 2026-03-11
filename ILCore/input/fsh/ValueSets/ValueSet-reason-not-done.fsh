@@ -1,4 +1,4 @@
-ValueSet: ReasonNotDone
+ValueSet: VsReasonNotDone
 Id: reason-not-done
 Title: "statusReason codes for Immunization profile"
 Description: "Codes from SNOMED CT describing reasons for Immnization not taking place, for statusCode"

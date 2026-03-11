@@ -1,4 +1,4 @@
-ValueSet: BPUnit
+ValueSet: VsBPUnit
 Id: bp-unit
 Title: "Blood Pressure Unit code"
 Description: "A single unit code for blood presssure observations reporting"

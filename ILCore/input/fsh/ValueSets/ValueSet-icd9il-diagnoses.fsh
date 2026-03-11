@@ -1,5 +1,5 @@
 
-ValueSet: ICD9ILDiagnoses
+ValueSet: VsICD9ILDiagnoses
 Id: icd9il-diagnoses
 Title: "ICD9 IL Diagnoses"
 Description: "codes of diagnoses from ICD9-IL"

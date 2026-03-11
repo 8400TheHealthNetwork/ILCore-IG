@@ -1,4 +1,4 @@
-ValueSet: ILCoreJurisdiction
+ValueSet: VsILCoreJurisdiction
 Id: il-core-jurisdiction
 Title: "Country Codes"
 Description: "Codes for countries according to ISO 3166"

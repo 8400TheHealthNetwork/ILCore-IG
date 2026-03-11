@@ -1,4 +1,4 @@
-ValueSet: ILCoreCoverageClass
+ValueSet: VsILCoreCoverageClass
 Id: il-core-coverage-class
 Title: "IL Core Coverage Class codes"
 Description: "Codes for Coverage classes"

@@ -1,4 +1,4 @@
-ValueSet: ILCoreMedicationDoseForm
+ValueSet: VsILCoreMedicationDoseForm
 Id: il-core-medication-dose-form
 Title: "IL Core Medication Dose Form"
 Description: "A list of codes medication dose forms"

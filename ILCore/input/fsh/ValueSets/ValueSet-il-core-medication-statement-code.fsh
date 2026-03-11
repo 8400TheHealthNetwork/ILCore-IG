@@ -1,4 +1,4 @@
-ValueSet:  ILCoreMedicationStatementCode
+ValueSet:  VsILCoreMedicationStatementCode
 Id: il-core-medication-statement-code
 Title: "ILCore Medication statement Code"
 Description: "Codes for Medication statement Code"

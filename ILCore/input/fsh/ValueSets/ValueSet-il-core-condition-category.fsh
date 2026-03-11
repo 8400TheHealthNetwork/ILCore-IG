@@ -1,4 +1,4 @@
-ValueSet: ILCoreConditionCategory
+ValueSet: VsILCoreConditionCategory
 Id: il-core-condition-category
 Title: "IL Core Condition Category Codes"
 Description: "A list of category codes for conditions for the IL Core"

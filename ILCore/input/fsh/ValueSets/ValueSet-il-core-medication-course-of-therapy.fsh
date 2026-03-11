@@ -1,6 +1,6 @@
 Alias: $hl7-medication-course-of-therapy = http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy
 
-ValueSet:  ILCoreMedicationCourseOfTherapyType 
+ValueSet:  VsILCoreMedicationCourseOfTherapyType 
 Id: il-core-medication-course-of-therapy-type
 Title: "ILCore Medication Course Of Therapy type"
 Description: "Codes for Medication Course Of Therapy"

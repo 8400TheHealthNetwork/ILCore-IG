@@ -1,4 +1,4 @@
-ValueSet: ILCoreDoctorToDoctor
+ValueSet: VsILCoreDoctorToDoctor
 Id: il-core-doctor-to-doctor
 Title: "IL Core Doctor To Doctor Codes"
 Description: "Codes for Doctor To Doctor encounter for the IL Core"

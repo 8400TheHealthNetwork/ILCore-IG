@@ -1,4 +1,4 @@
-ValueSet: ILCoreEncounterType
+ValueSet: VsILCoreEncounterType
 Id: il-core-encounter-type
 Title: "IL Core Encounter Type"
 Description: "Encounter type codes used in IL Core profiles"

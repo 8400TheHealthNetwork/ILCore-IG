@@ -1,4 +1,4 @@
-ValueSet:  ILCoreMedicationRequestCategory
+ValueSet:  VsILCoreMedicationRequestCategory
 Id: il-core-medication-request-category
 Title: "ILCore Medication Request Category"
 Description: "Codes for Medication Request Category"

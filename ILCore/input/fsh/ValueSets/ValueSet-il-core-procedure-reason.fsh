@@ -1,4 +1,4 @@
-ValueSet: ILCoreProcedureReason
+ValueSet: VsILCoreProcedureReason
 Id: il-core-procedure-reason
 Title: "IL Core procedure Reason"
 Description: "A list of codes for procedure reasons for the IL Core"

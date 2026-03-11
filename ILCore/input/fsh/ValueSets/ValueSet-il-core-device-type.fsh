@@ -1,4 +1,4 @@
-ValueSet: ILCoreDeviceType
+ValueSet: VsILCoreDeviceType
 Id: il-core-device-type
 Title: "IL Core Device Type codes"
 Description: "Codes for Device Types"

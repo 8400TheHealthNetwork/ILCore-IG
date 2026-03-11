@@ -1,4 +1,4 @@
-ValueSet: InstitutionTypeMoH
+ValueSet: VsInstitutionTypeMoH
 Id: institution-type-moh
 Title: "סוג מוסד לפי רישוי משרד הבריאות"
 Description: "סוג מוסד לפי רישוי משרד הבריאות - הרוב המכריע נמצא בפרסום המאגר של רישוי מוסדות של משרד הבריאות"

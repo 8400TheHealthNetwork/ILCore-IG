@@ -1,4 +1,4 @@
-ValueSet: IsraelHMO
+ValueSet: VsIsraelHMO
 Id: israel-hmo
 Title: "Israeli Health Management Organization (קופת חולים)"
 Description: "A code classifying Health Management Organizations"

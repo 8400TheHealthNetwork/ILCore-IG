@@ -1,5 +1,5 @@
 
-ValueSet: ILCoreParentNameRole
+ValueSet: VsILCoreParentNameRole
 Id: il-core-parent-name-role
 Title: "The role of the parent (father/mother) whose name is recorded"
 Description: "This set of codes is used to mark a parent name as a father or mother’s name. Should only be used by systems that explicitly differentiate between the two."

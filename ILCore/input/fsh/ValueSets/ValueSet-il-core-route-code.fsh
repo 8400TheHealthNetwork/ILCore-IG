@@ -1,4 +1,4 @@
-ValueSet: ILCoreRouteCode
+ValueSet: VsILCoreRouteCode
 Id: il-core-route-code
 Title: "IL Core Route Code"
 Description: "A list of codes for Route for the IL Core"

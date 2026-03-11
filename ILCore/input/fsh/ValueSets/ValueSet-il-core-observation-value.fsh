@@ -1,4 +1,4 @@
-ValueSet: ILCoreObservationValue
+ValueSet: VsILCoreObservationValue
 Id: il-core-observation-value
 Title: "IL Core Observation Value Codes"
 Description: """A list of value codes for observations for the IL Core \n

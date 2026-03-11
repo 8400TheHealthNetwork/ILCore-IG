@@ -1,4 +1,4 @@
-ValueSet: BPComponents
+ValueSet: VsBPComponents
 Id: bp-components
 Title: "Blood Pressure component codes"
 Description: "A list of codes for components in the blood presssure observations reporting"

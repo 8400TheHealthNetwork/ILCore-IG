@@ -1,5 +1,5 @@
 // This is a temporary VS to try and fix the ImagingStudy sopClass problem
-ValueSet: StandardSopClass
+ValueSet: VsStandardSopClass
 Id: standard-sop-class
 Title: "Standard SOP Class"
 Description: "Standard SOP Class"

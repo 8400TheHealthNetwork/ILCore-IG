@@ -1,4 +1,4 @@
-ValueSet: CitySymbol
+ValueSet: VsCitySymbol
 Id: city-symbol
 Title: "City Symbol (סמל ישוב)"
 Description: "City classification according to the Israeli Postal Company city-symbol coding system"

@@ -1,4 +1,4 @@
-ValueSet: PractitionerCertificateType
+ValueSet: VsPractitionerCertificateType
 Id: practitioner-certificate-type
 Title: "Practitioner Certificate Types"
 Description: "A list of codes for certificate types for all medical practitioners"

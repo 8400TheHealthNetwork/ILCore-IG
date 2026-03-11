@@ -1,4 +1,4 @@
-ValueSet: HebrewDateMonth
+ValueSet: VsHebrewDateMonth
 Id: hebrew-date-month
 Title: "Hebrew Date Month"
 Description: "Codes for Hebrew date months"

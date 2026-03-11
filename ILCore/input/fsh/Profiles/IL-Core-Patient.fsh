@@ -23,8 +23,8 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
     $ext-admin-parent-name named parentName 0..* and
     $ext-birth-place named birthPlace 0..1 and 
     ext-patient-immigration named immigration 0..* and
-    // $ext-il-core-birthsex named birthSex 0..1 
-    $us-core-birth-sex named birthSex 0..1 
+    $ext-il-core-birthsex named birthSex 0..1 
+    // $us-core-birth-sex named birthSex 0..1 
 * extension[hmo] ^short = "Extension: Israel Core HMO (קופת חולים)"
 * extension[hmo] ^definition = "A code classifying the person's Israeli HMO"
 * extension[hmo] ^mustSupport = true

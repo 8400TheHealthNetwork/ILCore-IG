@@ -1,7 +1,7 @@
 CodeSystem: ILCoreDiagnosisRole
 Id: il-core-diagnosis-role
 Title: "IL Core Diagnosis Role"
-Description: "Additional diagnosis role codes used for Encounter.diagnosis.use."
+Description: "Additional diagnosis role codes used for diagnosis role elements in clinical contexts such as encounters and episodes of care."
 * ^status = #active
 * insert ConformanceMetadata
 * ^url = $il-core-diagnosis-role
@@ -9,5 +9,5 @@ Description: "Additional diagnosis role codes used for Encounter.diagnosis.use."
 * ^caseSensitive = false
 * ^experimental = false
 
-* #primary-diagnosis "Primary diagnosis" "Primary diagnosis for the encounter."
-* #secondary-diagnosis "Secondary diagnosis" "Secondary diagnosis for the encounter."
+* #primary-diagnosis "Primary diagnosis" "Primary diagnosis for the relevant clinical context (e.g., encounter or episode of care)."
+* #secondary-diagnosis "Secondary diagnosis" "Secondary diagnosis for the relevant clinical context (e.g., encounter or episode of care)."

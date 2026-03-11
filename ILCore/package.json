@@ -15,6 +15,7 @@
                     "validate:config":  "fhir-validate-config",
                     "validate:quality":  "fhir-validate-quality",
                     "validate:ig":  "fhir-validate-ig-full",
+                    "validate:ig:only":  "fhir-validate-ig",
                     "validate:examples":  "fhir-validate-examples",
                     "validate:ex":  "fhir-validate-examples",
                     "check:publication":  "fhir-check-publication",

@@ -1,13 +1,9 @@
-Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
-Alias: $roleclass = http://terminology.hl7.org/CodeSystem/v3-RoleClass
-
-
 Instance: consent-general
 InstanceOf: ILCoreConsent
 Usage: #example
 
 * status = #active
-* scope = $consentscope#patient-privacy
+* scope = http://terminology.hl7.org/CodeSystem/consentscope#patient-privacy
 * category = $loinc#59284-0
 * patient = Reference(Patient/patient-israeli)
 * dateTime = "2016-05-11"
@@ -19,5 +15,5 @@ Usage: #example
 * provision.period.end = "2016-01-01"
 
 // נוספה שורת חובה עם role לפי דרישת המבנה
-* provision.actor[0].role = $roleclass#PROV 
+* provision.actor[0].role = http://terminology.hl7.org/CodeSystem/v3-RoleClass#PROV 
 * provision.actor[0].reference = Reference(Patient/patient-israeli)

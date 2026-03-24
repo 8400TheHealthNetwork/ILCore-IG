@@ -84,7 +84,7 @@ Severity: #error
 
 Invariant: il-patient-name
 Description: "Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present."
-Expression: "(family.exists() or given.exists()) xor extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
+Expression: "(family.exists() or given.exists()) or extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
 Severity: #error
 
 Invariant: identifier-dash

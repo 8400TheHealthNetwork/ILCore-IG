@@ -1,7 +1,3 @@
-Alias: $payeetype = http://terminology.hl7.org/CodeSystem/payeetype
-Alias: $adjudication-reason = http://terminology.hl7.org/CodeSystem/adjudication-reason
-Alias: $ex-paymenttype = http://terminology.hl7.org/CodeSystem/ex-paymenttype
-
 Instance: primary-coverage
 InstanceOf: ILCoreClaimResponse
 Usage: #example
@@ -19,7 +15,7 @@ Usage: #example
 // * request = Reference(http://www.BenefitsInc.com/fhir/oralhealthclaim/15476332402)
 * outcome = #complete
 * disposition = "Claim settled as per contract."
-* payeeType = $payeetype#provider
+* payeeType = http://terminology.hl7.org/CodeSystem/payeetype#provider
 * item.itemSequence = 1
 * item.adjudication[0].category.coding.code = #eligible
 * item.adjudication[=].amount.value = 135.57
@@ -30,7 +26,7 @@ Usage: #example
 * item.adjudication[+].category.coding.code = #eligpercent
 * item.adjudication[=].value = 80
 * item.adjudication[+].category.coding.code = #benefit
-* item.adjudication[=].reason = $adjudication-reason#ar002 "Plan Limit Reached"
+* item.adjudication[=].reason = http://terminology.hl7.org/CodeSystem/adjudication-reason#ar002 "Plan Limit Reached"
 * item.adjudication[=].amount.value = 90.47
 * item.adjudication[=].amount.currency = #USD
 * total[0].category.coding.code = #submitted
@@ -39,7 +35,7 @@ Usage: #example
 * total[+].category.coding.code = #benefit
 * total[=].amount.value = 90.47
 * total[=].amount.currency = #USD
-* payment.type = $ex-paymenttype#complete
+* payment.type = http://terminology.hl7.org/CodeSystem/ex-paymenttype#complete
 * payment.date = "2014-08-31"
 * payment.amount.value = 100.47
 * payment.amount.currency = #USD
@@ -53,7 +49,7 @@ Usage: #example
 // התאמת סכום עקב הסכם
 * payment.adjustment.value = -5.00
 * payment.adjustment.currency = #USD
-* payment.adjustmentReason = $adjudication-reason#ar002 "Plan Limit Reached"
+* payment.adjustmentReason = http://terminology.hl7.org/CodeSystem/adjudication-reason#ar002 "Plan Limit Reached"
 
 // הפניה לקליים המקורי (חיזוק ההקשר)
 * request.reference = "Claim/dental-claim"

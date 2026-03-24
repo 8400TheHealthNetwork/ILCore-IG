@@ -24,10 +24,10 @@ Description: "Israel Core proposed constraints and extensions on the EpisodeOfCa
 * type ^slicing.discriminator.type = #pattern
 * type ^slicing.discriminator.path = "$this"
 * type ^slicing.rules = #open
-* type contains recurring-daily-hospitalization 0..1 and serviceType 0..1
+* type contains recurring-daily-hospitalization 0..1 and serviceType 0..*
 * type[recurring-daily-hospitalization] ^patternCodeableConcept.coding.system = $il-core-episode-of-care-type
 * type[recurring-daily-hospitalization] ^patternCodeableConcept.coding.code = #recurring-daily-hospitalization
-* type[serviceType] from $vs-il-core-service-type (extensible)
+* type[serviceType] from $vs-il-core-service-type (required)
 * type[serviceType] ^short = "Service type for the episode of care"
 * type[serviceType] ^definition = "Service type/specialty context for the episode, analogous to Encounter.serviceType."
 

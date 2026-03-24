@@ -1,4 +1,4 @@
-Instance: MedicationStatement-SubDosageSteps-Invariant
+Instance: SubDosageSteps-Invariant
 InstanceOf: ILCoreMedicationStatement
 Usage: #example
 Title: "MedicationStatement-SubDosageSteps-Invariant"
@@ -6,7 +6,7 @@ Description: "MedicationStatement - example validating the ilcore-dosage-ext inv
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Active medication statement demonstrating the use of ext-sub-dosage-step extension appearing twice, as required by the ilcore-dosage-ext invariant. Patient is taking Fluoxetine with a titration schedule decomposed into two sub-dosage steps.</div>"
 * text.status = #generated
 * status = #active
-* category.coding[0] = http://fhir.health.gov.il/cs/medication-category#community-other "Community Care/Long Term Care/Home"
+* category.coding[0] = http://fhir.health.gov.il/cs/il-core-medication-request-category#community-other "Includes medications to be administered or consumed in community care settings (this would include long term care or nursing homes, hospices, patient’s home, and home hospitalization etc.)"
 * medicationCodeableConcept.coding[0] = $sct#372767007 "Fluoxetine (substance)"
 * informationSource.reference = "Practitioner/1"
 * informationSource.type = "Practitioner"
@@ -29,7 +29,7 @@ Description: "MedicationStatement - example validating the ilcore-dosage-ext inv
 * dosage[0].timing.repeat.when = #MORN
 
 // Sub-dosage step 1: 10mg for first two weeks
-* dosage[0].extension[0].url = "http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-steps"
+* dosage[0].extension[0].url = "http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step"
 * dosage[0].extension[0].valueDosage.text = "שלב ראשון: 10mg לשבועיים הראשונים"
 * dosage[0].extension[0].valueDosage.timing.repeat.frequency = 1
 * dosage[0].extension[0].valueDosage.timing.repeat.period = 1
@@ -41,7 +41,7 @@ Description: "MedicationStatement - example validating the ilcore-dosage-ext inv
 * dosage[0].extension[0].valueDosage.doseAndRate.doseQuantity.system = $ucum
 
 // Sub-dosage step 2: 20mg from week three onwards
-* dosage[0].extension[1].url = "http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-steps"
+* dosage[0].extension[1].url = "http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step"
 * dosage[0].extension[1].valueDosage.text = "שלב שני: 20mg מהשבוע השלישי"
 * dosage[0].extension[1].valueDosage.timing.repeat.frequency = 1
 * dosage[0].extension[1].valueDosage.timing.repeat.period = 1

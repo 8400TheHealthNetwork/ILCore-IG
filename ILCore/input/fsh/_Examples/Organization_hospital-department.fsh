@@ -1,4 +1,4 @@
-Instance:   organization-hospital-department
+Instance:   hospital-department
 InstanceOf: ILCoreOrganization
 
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">מחלקת אשפוז - פנימית</div>"
@@ -28,4 +28,6 @@ InstanceOf: ILCoreOrganization
 * address.country = "IL"
 
 * type = $department-type-moh#10000 "אשפוז - פנימית"
+
+* partOf.reference = "Organization/agaf-pnimi"
  

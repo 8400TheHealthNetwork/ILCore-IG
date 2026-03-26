@@ -1,5 +1,3 @@
-Alias: $route = http://hl7.org/fhir/ValueSet/immunization-route
-
 Profile: ILCoreImmunization
 Parent: Immunization
 Id: il-core-immunization
@@ -7,13 +5,8 @@ Title: "ILCore Immunization Profile"
 Description: "Israel Core proposed constraints and extensions on the Immunization Resource"
 
 * ^url = $ILImmunization
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore Immunization Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Immunization resource profile."
 * . ^isModifier = false
@@ -21,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 * . obeys il-immunization-lot-number
 * status 1..1 MS
@@ -29,7 +23,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * statusReason ^example.valueCodeableConcept = $sct#310376006 "Immunization consent not given"
 * statusReason ^example.label = "Valid Example"
 * vaccineCode 1..1 MS
-* vaccineCode.coding ^slicing.discriminator[0].type = #value
+* vaccineCode.coding ^slicing.discriminator[0].type = #pattern
 // * vaccineCode.coding ^slicing.discriminator[0].path = "$this"
 * vaccineCode.coding ^slicing.discriminator[0].path = "$this"
 * vaccineCode.coding ^slicing.rules = #open
@@ -54,7 +48,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * site from $vs-immun-body-site (extensible)
 * site ^example.valueCodeableConcept = $sct#368208006 "Left upper arm structure (body structure)"
 * site ^example.label = "Valid Example"
-* route from $route (extensible)
+* route from http://hl7.org/fhir/ValueSet/immunization-route (extensible)
 * performer.actor only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport)
 * protocolApplied.targetDisease from $vs-target-disease (preferred)

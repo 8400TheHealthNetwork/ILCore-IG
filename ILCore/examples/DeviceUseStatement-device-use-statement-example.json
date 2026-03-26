@@ -1,0 +1,34 @@
+{
+  "resourceType": "DeviceUseStatement",
+  "id": "device-use-statement-example",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-device-use-statement"
+    ]
+  },
+  "status": "active",
+  "subject": {
+    "reference": "Patient/patient-israeli"
+  },
+  "device": {
+    "reference": "Device/example-device"
+  },
+  "recordedOn": "2023-08-15T10:00:00+03:00",
+  "source": {
+    "reference": "Practitioner/practitioner-md"
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "368209003",
+        "system": "http://snomed.info/sct",
+        "display": "Right upper arm structure (body structure)"
+      }
+    ]
+  },
+  "note": [
+    {
+      "text": "Patient reports consistent use of the glucose monitor"
+    }
+  ]
+}

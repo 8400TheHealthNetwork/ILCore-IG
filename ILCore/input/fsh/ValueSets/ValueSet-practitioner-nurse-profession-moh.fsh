@@ -1,11 +1,11 @@
-ValueSet: PractitionerNurseProfessionMoH
+ValueSet: VsPractitionerNurseProfessionMoH
 Id: practitioner-nurse-profession-moh
 Title: "קוד מקצוע לעוסק בסיעוד"
 Description: "קוד מקצוע לעוסק בסיעוד לפי רישוי משרד הבריאות"
 
 * ^url = $vs-practitioner-nurse-profession
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $practitioner-profession-moh#101 "אח/ות מוסמכ/ת" 

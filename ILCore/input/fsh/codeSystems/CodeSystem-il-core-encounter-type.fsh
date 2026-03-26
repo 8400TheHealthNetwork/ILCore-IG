@@ -1,16 +1,16 @@
-CodeSystem: ILCoreEncounterClass
-Id: il-core-encounter-class
-Title: "IL Core Encounter Class codes"
-Description: "A list of codes for class types of encounters"
-* ^status = #draft
-* ^version = "0.14.2"
-* ^url = $il-core-encounter-class
+CodeSystem: ILCoreEncounterType
+Id: il-core-encounter-type
+Title: "IL Core Encounter Type"
+Description: "Codes for encounter.type slices used in IL Core and ILHDP"
+* ^status = #active
+* insert ConformanceMetadata
+* ^url = $il-core-encounter-type
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false
-// * ^valueSet = $vs-il-core-encounter-class
-* ^extension[0].url = $effective
-* ^extension[0].valueDate = "2023-01"
 
-* #COMMUNITY-OR-HMO "Community Care/HMO setting"
-* #RALTCF "Residential Aged Care/Long Term Care Facility"
+* #hospitalization-hdp "Hospitalization (HDP encounter type)"
+* #inpatient-care-segment-hdp "Inpatient care segment (HDP encounter type)"
+* #without-patient-present "Encounter without patient present"
+* #community-hmo-ambulatory-hdp "Community/HMO ambulatory encounter (HDP encounter type)"
+* #supplemental-encounter-hdp "An Encounter shared in addition to the standard HDP encounter structure, representing local/native sub-encounters or other details"

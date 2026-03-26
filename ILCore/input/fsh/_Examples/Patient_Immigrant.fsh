@@ -13,17 +13,26 @@ Usage: #example
 * extension[immigration].extension[date].valueDate = "1982-06-30"
 * extension[immigration].extension[status].valueCodeableConcept = $loinc#LA29155-1
 * extension[immigration].extension[status].valueCodeableConcept.coding.display = "Naturalized citizen"
+* extension[birthPlace].valueAddress.line = "New york City, NY, USA"
+* extension[birthPlace].valueAddress.country = #USA
+* extension[birthSex].valueCode = #M
 * active = true
-* name.family = "לוי"
-* name.given = "הרצל"
-* name.text = "הרצל לוי"
-* name.extension[language].valueCode = #he
+// * name.family = "לוי"
+// * name.given = "הרצל"
+// * name.text = "הרצל לוי"
+// * name.given[+] = "Herzl"
+// * name.extension[language].valueCode = #he
+* name[Hebrew].family = "כהן"
+* name[Hebrew].given = "תמר"
+* name[Hebrew].text = "תמר כהן"
+* name[Hebrew].extension[language].valueCode = #he
+
 * telecom[0].system = #phone
-* telecom[0].value = "052467911"
+* telecom[0].value = "0524679111"
 * telecom[0].use = #home
 * telecom[1].system = #email
 * telecom[1].value = "Israel@example.com"
-* gender = #female
+* gender = #male
 * birthDate = "1951-04-17"
 * address.use = #home
 * address.type = #physical
@@ -52,5 +61,8 @@ Usage: #example
   * display = "Arabic"
 
 * deceasedBoolean = false
-
-    
+* contact[parent].relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
+* contact[parent].name.given = "Baruch"
+* contact[parent].name.family = "Cohen"
+* contact[parent].telecom.extension[+].url = $contact-point-purpose
+* contact[parent].telecom.extension[=].valueCodeableConcept = http://terminology.hl7.org/CodeSystem/v2-0131#EP "Emergency contact person"

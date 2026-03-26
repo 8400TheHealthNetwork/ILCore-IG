@@ -5,13 +5,8 @@ Title: "ILCore QuestionnaireResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the QuestionnaireResponse Resource"
 
 * ^url = $ILQuestionnaireResponse
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore QuestionnaireResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the QuestionnaireResponse resource profile."
 * . ^isModifier = false
@@ -19,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Questionnai
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * basedOn only Reference(ILCoreCarePlan or ILCoreServiceRequest)
@@ -27,3 +23,10 @@ Description: "Israel Core proposed constraints and extensions on the Questionnai
 * author only Reference(ILCoreDevice or ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson or ILCoreOrganization)
 * source only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson)
 * questionnaire only Canonical(ILCoreQuestionnaire)
+
+
+
+
+
+
+

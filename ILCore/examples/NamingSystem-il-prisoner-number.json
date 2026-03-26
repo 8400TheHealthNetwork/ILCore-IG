@@ -1,0 +1,32 @@
+{
+  "resourceType": "NamingSystem",
+  "id": "il-prisoner-number",
+  "name": "Israeli Prisoner Number",
+  "status": "active",
+  "kind": "identifier",
+  "date": "2024-02-22",
+  "publisher": "Israeli Ministry of Health",
+  "responsible": "Israeli Prison Service",
+  "type": {
+    "text": "Prisoner Number"
+  },
+  "description": "Israel Prison Service prisoner number. A unique identifier for any prisoner currently serving a prison sentence",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "IL",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "usage": "Used in Israel for identifying prisoners",
+  "uniqueId": [
+    {
+      "type": "uri",
+      "value": "http://fhir.health.gov.il/identifier/il-prisoner-number",
+      "preferred": true
+    }
+  ]
+}

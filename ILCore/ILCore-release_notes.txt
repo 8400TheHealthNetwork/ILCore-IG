@@ -1,0 +1,972 @@
+Package 0.19.2
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-device
+		il-core-device-request
+		il-core-device-dispense
+		il-core-supply-delivery
+		il-core-device-use-statement
+		ext-il-core-patient-birth-place
+		ext-device-dispense-when-handed-over
+
+	CodeSystem:
+		il-core-contact-point-purpose
+
+	ValueSet:
+		il-core-contact-point-purpose
+		il-core-medication-administration-code
+		il-core-document-type
+		il-core-device-type
+		il-core-extended-country-codes
+
+	SearchParameters:
+		il-core-statistical-area
+		il-core-parent-name-given
+		il-core-reaction-duration
+		il-core-city-code
+		il-core-movement-sequence-number
+		il-core-encounter-paying-entity
+		il-core-encounter-visitor-type
+		il-core-imagingstudy-accession-number
+		il-core-recorded-time
+		il-core-medication-course-of-therapy-type
+		il-core-narcotic-medication
+		il-core-qualification-practice
+		il-core-specimen-processing-location
+		il-core-specimen-processing-practitioner
+
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-observation-lab:
+			removed superfluous slicing on 'performer' element
+			corrected slicing on 'category' element
+		il-core-bp:
+			changed cardinality of 'value[x]' and 'referenceRange' to 0..0, as they are supposed to populated only under 'component' element
+		il-core-encounter:
+			corrected slicing on 'type' element
+		il-core-patient:
+			added contact-point-extension to 'contact' and 'telecom' elements
+			added slice identifier:enc-pna-id
+		il-core-practitioner:
+			added slice identifier:enc-pna-id
+		il-core-related-person:
+			added slice identifier:enc-pna-id
+		il-core-specimen:
+			changed the location of 2 root extensions to the 'processing' element
+		il-core-dosage:
+			changed binding on 'method' element
+		il-core-medication-administration:
+			changed binding on 'dosage.method' element
+		il-core-condition:
+			added extension "alternate reference" to 'recorder' element
+		ext-specimen-collector-reference:
+			corrected the allowed References on 'value[x]' element
+		ext-processing-practitioner:
+			added "organization" as a possible reference in 'value[x]' element
+			
+
+	CodeSystem:
+		updated the codes in the following :
+			institution-type-moh
+			medical-service-moh
+			city-symbol
+			department-type-moh
+			practitioner-profession-moh
+
+
+Package 0.17.0
+--------------
+1. Added the following resources:
+	
+	CodeSystem:
+		passport-enc-uri
+
+	ValueSet:
+		vs-passport-enc-uri
+
+	Examples: 37 new examples added to the project
+
+	
+	
+2. Modified the following resources:
+	StructureDefinition:
+		The following StructurDefinitions have had the slicing on 'name' element updated:
+			il-core-patient
+			il-core-practitioner
+			il-core-related-person
+		il-core-practitioner:
+			added 2 more slices to the identifier:
+				- enc-il-id
+				- enc-ppn
+		il-core-encounter:
+			corrected slicing on 'type' element
+		il-core-observation-lab:
+			corrected cardinality on 'code' element
+			corrected slicing on 'performer' element
+
+			
+
+
+Package 0.16.0
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-service-request-lab
+		ext-medicationrequest-procedure-reason-reference:
+			replaces ext-procedure-reference
+		ext-medication-recorded-time:
+			replaces ext-recorded-time
+
+	The following StructerDefinition was localized - References only:
+		il-core-appointment-response	
+	
+	CodeSystem:
+		hdp-information-buckets
+
+	ValueSet:
+		diagnostic-conclusion-code
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-service-request:
+			corrected slicing on category element
+		il-core-risk-assessment:
+			corrected canonical URL
+		il-core-location:
+			updated constraints - please make sure to look at the StructureDefinition
+		il-core-diagnostic-report:
+			reworked according to ILCore specification
+		il-core-observation-lab:
+			updated slicing on category element
+		il-core-service-request:
+			updated slicing on category element
+	
+	CodeSystem:
+		il-core-medication-request-category:
+			corrected erroneous id
+
+	ValueSet:
+		il-core-procedure-code:
+			added all codes from ValueSet il-core-observation-lab-code
+
+
+
+Package 0.15.0
+--------------
+
+1. Added the following resources:
+	StructureDefinition:
+		il-core-service-request-lab
+
+	ValueSet:
+		standard-sop-class
+		organization-paying-entity-moh-identifier
+		il-core-body-position
+		
+	SearchParameter:
+		il-core-patient-hmo
+
+1. Added the following resources:
+	The following StructureDefinitions have been localized only (all references are to ILCore profiles, no other changes):
+		il-core-activity-definition
+		il-core-care-plan
+		il-core-claim-response
+		il-core-communication
+		il-core-communication-request
+		il-core-consent
+		il-core-device-request
+		il-core-episode-of-care
+		il-core-flag
+		il-core-goal
+		il-core-healthcare-service
+		il-core-library
+		il-core-measure
+		il-core-measure-report
+		il-core-nutrition-order
+		il-core-research-study
+		il-core-research-subject
+		il-core-risk-assesment
+		il-core-task
+
+	StructureDefinition:
+		il-core-imaging-study
+		ext-accession-number
+
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-patient:
+			added identifier:entry-permit slice
+		il-core-encounter:
+			moved the ext-movement-sequence-number extension to root
+		il-core-specimen:
+			overhaul. Make sure to look at the profile page in the IG before use!
+		ext-movement-sequence-number:
+			changed value type to String
+
+	
+	ValueSet:
+		il-core-medication-code:
+			removed unnecessary code-systems from the list
+		il-core-virtual-type:
+			changed to extensional by updating "children of" to "is-a", thus including the parent code http://snomed.info/sct/185316007 "Indirect encounter (procedure)"
+		israel-hmo:
+			added extra designations to most codes, to allow for shorthand names. example: "קופת חולים כללית" (code 101) will now
+				also accept "כללית"
+
+3. Removed the following resources:
+	CodeSystem:
+		moh-medication-code
+
+
+Package 0.14.0
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-vital-signs
+		il-core-molecular-sequence (no changes, only changed references to ILCore Resources)
+		ext-medication-dose-form
+		ext-encounter-visitor-type
+		ext-encounter-paying-entity
+
+	CodeSystem:
+		patient-admit-source-moh
+		patient-mode-of-arrival-moh
+		patient-release-type-moh
+		patient-visitor-type-moh
+		patient-visit-reason-moh
+		
+	ValueSet:
+		bp-components
+		bp-unit
+		il-core-medication-dose-form
+		patient-admit-source-moh
+		patient-mode-of-arrival-moh
+		patient-release-type-moh
+		patient-visitor-type-moh
+		patient-visit-reason-moh
+
+	NamingSystem:
+		idf-service-number
+		il-prisoner-number
+		
+
+2. Modified the following resources:
+	StructureDefinition:
+		All StructureDefinitions: 
+			added 2 HL7 extensions:
+				fmm
+				standard-status
+		il-core-practitioner:
+			major changes to qualification slices
+			added slices to identifier
+		il-core-medication-dispense:
+			added max-binding to quantity
+		il-core-patient:
+			added slices to identifier
+		il-core-encounter:
+			major overhaul
+		StructureDefinition-il-core-organization:
+			added slices
+
+	Updated references in several profiles. should not affect any current projects. Please notify us if something stops working!
+
+
+Package 0.13.1:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-patient:
+			updated the "all-slices" in the "name" element - removed "language" extension
+		il-core-practitioner:
+			see il-core-patient
+		il-core-related-person:
+			see il-core-patient
+
+
+Package 0.13.0:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-coverage
+		il-core-questionnaire
+
+	CodeSystem:
+		il-core-coverage-type
+		il-core-coverage-class
+		il-core-coverage-premium-type
+		moh-tofes17-issue-code
+		il-core-error-code
+
+	ValueSet: 
+		il-core-coverage-type
+		il-core-coverage-class
+		il-core-coverage-premium-type
+		tofes17-error-codes
+		tofes17-reject-codes
+
+
+Package 0.12.0:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-medication
+		il-core-medication-request
+		il-core-medication-statement
+		il-core-medication-administrartion
+		il-core-care-plan (No actual Characterization. Diff: updated references to IL-Core resources only)
+		il-core-substance (No actual Characterization. Diff: updated references to IL-Core resources only)
+		il-core-immunization-recommendation (No actual Characterization. Diff: updated references to IL-Core resources only)
+		ext-il-core-recorded-time
+		ext-il-core-narcotic-medication
+		ext-il-core-procedure-refference
+		ext-medication-course-of-therapy-type
+		ext-diagnostic-report-note
+
+	CodeSystem:
+		medicationrequest-category
+		medicationrequest-course-of-therapy
+		il-core-encounter-type
+		il-core-medication-course-of-therapy-type
+		il-core-urn
+		patient-admit-source-moh
+		patient-release-type-moh
+		patient-visit-reason-moh
+
+	ValueSet:
+		il-core-medication-request-category
+		il-core-medication-request-course-of-therapy
+		il-core-medication-statement-category
+		il-core-medication-administration-category
+		il-core-medication-administration-code
+		il-core-medication-statement-code
+		il-core-medication-course-of-therapy-type
+		il-core-encounter-type
+		il-core-virtual-type
+		il-core-doctor-to-doctor
+		il-core-units-of-measure
+		il-core-common-units-of-measure
+		moh-admit-source
+		moh-discharge-disposition
+		moh-reason-codes
+		patient-admit-source-moh
+		patient-release-type-moh
+		patient-visit-reason-moh
+
+	Example:
+		Medication-paracetamol
+		MedicationAdministration-morphine-hospitalization
+		MedicationRequest-metamizole-for-gangreenous-tonsolitis
+		MedicationStatement-Fluoxetine-20-mg
+		Organization-organization-hospital-department
+		Observation-hight
+		Encounter-breast-screening
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-patient:
+			Updated invariant on name.family
+			added language extension on the `name` element + slicing
+		il-core-practitioner:
+			added language extension on the `name` element + slicing
+		il-core-related-person:
+			added language extension on the `name` element + slicing	
+		il-core-dosage:
+			added MS
+		il-core-encounter:
+			complete rework, including new bindings. Please make sure to familiarize yourself with it!
+		il-core-medication-request:
+			complete rework, including new bindings. Please make sure to familiarize yourself with it!
+		il-core-address:
+			updated invariant to allow for empty postalCode
+		il-core-organization:
+			added a new slice - identifier:moh-hospital-department
+
+			
+	CodeSystem:
+		il-core-not-performed-reason
+			corrected typos in definitions
+		il-core-not-performed-reason:
+			updated codes
+		department-type-moh:
+			changed content element from #example to #complete
+
+		the following CodeSystems had the effectiveDate extension added:
+			city-symbol
+			icd9il
+			institution-type-moh
+			medical-service-moh
+			paying-entity-moh
+			practitioner-advanced-course-moh
+			practitioner-certificate-type-moh
+			practitioner-certificate-type-molsa
+			practitioner-education-type-moh
+			practitioner-expertise-moh
+			practitioner-profession-moh
+			course-of-therapy
+			department-type-moh
+
+	ValueSet:
+		organization-type:
+			updated codes
+		department-type-moh:
+			updated codes
+		passport-uri:
+			codes now taken from CodeSystem il-core-urn
+		statistical-area-uri
+			codes now taken from CodeSystem il-core-urn
+		il-core-service-type:
+			changed the VS to include all SNOMED-CT codes that are of relationship is-a "Healthcare services (qualifier value)" (224891009)
+
+Package 0.11.0:
+--------------
+1. Added the following resources:
+	CodeSystem:
+		il-core-not-performed-reason
+
+	ValueSet:
+		il-core-procedure-reason
+		il-core-service-category
+		il-core-not-performed-reason
+		
+	
+	NamingSystem:
+		practitioner-license
+		nurse-registration
+		practitioner-instructor
+		practitioner-expertise
+		nurse-expertise
+		social-worker
+
+	Example:
+		bloodwork-before-partial-parotidectomy
+		condition-type-1-diabetes
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-service-request:
+			Fleshed out to conform to the IL-Core profiling
+		il-core-observation:
+			Fleshed out to conform to the IL-Core profiling
+		il-core-allergy-intollerance:
+			changed binding strenght for several elements
+		il-core-patient:
+			removed the cardinality on identifier:il-id.period - it was erroneous 
+		il-core-organization:
+			Changed the name of the slice identifier:moh-inst-license to identifier:moh-inst-symbol. 
+			This change should not affect your work
+	
+		CodeSystem:
+			medical-service-moh:
+				updated list of codes
+
+		ValueSet:
+			vs-prcatitioner-profession-moh:
+				removed 3 codes (101, 102, 103)
+	
+		Example:
+			All practitioner examples have been updated to represent the extensive changes to the qualification section
+			both immunization examples have been updated with a new SNOMED-CT code
+
+
+Package 0.11.0:
+--------------
+1. Added the following resources:
+	ValueSet:
+		il-core-procedure-reason
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-procedure:
+			Added binding to reasonCode element
+
+Package 0.10.0:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-allergy-intollerance
+		ext-allergy-intolerance-end 
+		ext-reaction-duration
+		ext-admin-parent-name
+
+	CodeSystem:
+		practitioner-advanced-course-moh
+		practitioner-certificate-type-molsa
+		moh-medication-code
+	
+	ValueSet:
+		practitioner-advanced-course-moh
+		practitioner-nurse-expertise-moh
+		practitioner-nurse-profession-moh		
+		practitioner-certificate-type
+		moh-medication-code
+		il-core-parent-name-role
+		il-core-substance
+		il-core-allergy-intolerance-code
+		il-core-allergy-intolerance-end-reason
+		il-core-manifestation
+		il-core-route-code
+
+	NamingSystem:
+		cbs-statistical-area
+		legal-entity
+		il-national-id
+		pna-national-id
+
+	example:
+		practitioner-nurse-no-expertise-with-advanced-courses
+		practitioner-nurse-with-expertise-and-advanced-courses
+		allergyIntolerance-aspirin-intolerance
+		allergyIntolerance-penut-allergy
+		allergyIntolerance-no-known-allergy
+		allergyIntolerance-cat-dander-allergy
+		allergyIntolerance-medication-yarpa
+		
+
+2. Modified the following resources:
+	StructureDefinition:
+		All StructreDefinitions:
+			Removed "must support" flag from resource level
+		il-core-patient:
+			Cahnged the cardinality on name.given and name.family
+			changed the parent-name extension to admin-parent-name
+		il-core-practitioner:
+			I. added Practitioner.identifier:molsa-sw-lic slice
+			II. Added following slices to Practitioner.qualification:
+				1. :moh-nurse-temp-permit
+   				2. :moh-nurse-registration-certificate
+   				3. :moh-nurse-expertise
+   				4. :moh-advanced-course
+   				5. :molsa-practitioner-sw-license
+		il-core-organization:
+			I. Added "must support" flag to element "telecom" and to identifier:moh-inst-lic slice
+			II. Removed binding from identifier:moh-inst-lic.type
+			III. Added binding to type element
+			IV. Changed cardinality on: 1.Organization.address to 0..*; 2. Organization.active to 0..1
+		il-core-related-person:
+			Changed cardinatlity RelatedPerson.active to 0..1
+			changed the parent-name extension to admin-parent-name
+		ext-city-code:
+			Corrected extension context
+		ext-parent-name:
+			Deprecated - please use ext-admin-parent-name
+
+	CodeSystem:
+		ALL CODE SYSTEMS:
+			Updated cannonical URLs to meet FHIR convention
+		medical-service-moh:
+			Updated codes from MoH price list (v. July 2022)
+		practitioner-profession-moh:
+			updated code for "עבודה סוציאלית": from 55 --> to 45
+		practitioner-certficate-type-moh:
+			removed codes 35, 123 which are no longer in use
+
+	ValueSet:
+		il-core-condition-code:
+			added more concepts to ValueSet
+		il-core-procedure-code:
+			removed CPT from ValueSet
+		practitioner-certificate-type-moh:
+			updated list of codes 
+
+	example:
+		Updated many examples
+
+3. Removed the following resources:
+	ValueSet:
+		practitioner-certificate-type-moh:
+			Folded into ValueSet practitioner-certificate-type
+
+Package 0.9.0:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		ext-event-occurrence-location
+
+	example:
+		patient-with-two-addresses
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-address:
+			I. Updated invariant (now constrains Israeli postal codes to be 5 OR 7 digits), which is now set on entire structreDefinition, instead of a specific element
+			II. Added binding to "country" element
+			III. updated extension names to conform to camelCase
+		il-core-immunization:
+			Invariant now set on entire structreDefinition, instead of a specific element
+		il-core-location:
+			I. Invariant now set on entire structreDefinition, instead of a specific element
+			II. Changed cardinality of "status" from 1..1 to 0..1
+			III. Removed MS flag which was set to entire profile			
+		il-core-patient, il-core-practitioner, il-core-related-person: 
+			Updated 'issuer' reference in identifier slices
+		ext-parent-name:
+			Added "Practitioner" and "RelatedPerson" to the context
+
+	ValueSet:
+		passport-uri:
+			Changed the codesystem from which the values are derived to urn:ietf:rfc:3986
+		
+	CodeSystem:
+		medical-service-moh:
+			1. Reverted back to CodeSytem from package 0.2.0
+			2. Updated codes from MoH price list (v. July 2022)
+
+3. Removed the following resources:
+
+	CodeSystem:
+		passport-uri
+
+
+Package 0.8.1:
+--------------
+1. Modified the following resources:
+	StructureDefinition:
+		ext-hebrew-date:
+			changed element Extension.extension:day.value[x] from Code to CodeableConcept
+	
+	CodeSystem:
+		hebrew-date-day:
+			updated codes to include numeric codes and Hebrew display
+
+	examples:
+		patient-with-hebrew-date:
+			updated to include a Hebrew date reflection the change to the extension	
+
+Package 0.8.0:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-immunization
+		il-core-immunization-reaction-observation
+		ext-hebrew-date
+
+	CodeSystem:
+		hebrew-date-day
+		hebrew-date-month
+
+	ValueSet:
+		immunization-body-site
+		reason-not-done
+		vaccine-code
+		vaccine-product-code
+		target-disease
+		hebrew-date-day
+		hebrew-date-month
+		immunization-side-effect
+	
+	example:
+		Immunization-with-product-code
+		Immunization-with-snomed-code
+		patient-with-hebrew-date
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-practitioner:
+			made the identifier system display explicit and mandatory
+		il-core-location:
+			Added an invariant and changed cardinality on "address" element
+	
+	example:
+		location-general-kind-hospital-ward
+
+
+Package 0.7.0:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-procedure
+
+	CodeSystem:
+		icd9-il
+	
+	ValueSet:
+		patient-relationship-type
+		icd9-cm-diagnoses
+		icd9-cm-procedures
+		icd9-il-diagnoses
+		icd9-il-procedures
+		il-core-procedure-code
+	
+	example:
+		patient-israeli-redacted
+		location-general-kind-hospital-ward
+
+2. Modified the following resources:
+	CodeSystem:
+		medical-service-moh:
+			updated list of concepts
+
+	ValueSet:
+		il-core-condition-code:
+			updated concept sources
+
+	extensions:
+		ext-statistical-area:
+			corrected context
+
+Package 0.6.0:
+--------------
+1. Added the following resources:
+	StructureDefinition:
+		il-core-condition
+	
+	ValueSet:
+		il-core-condition-code
+		il-core-condition-category
+
+	Example:
+		prcatitioner-anesthesiologist-with-expertise
+		condition-burnt-ear
+
+2. Modified the following resources:
+	
+	StructureDefinition:
+		il-core-practitioner:
+			Added qualification
+
+3. Removed the following resources:
+	NamingSystem:
+		All
+
+Package 0.5.0:
+--------------
+1. Added the follwing resources:
+	
+	Extension:
+		ext-statistical-area
+		ext-qualification-practice
+
+	CodeSystem:
+		practitioner-certificate-type-moh
+		practitioner-education-type-moh
+
+	ValueSet:
+		statistical-area-uri
+		practitioner-certificate-type-moh
+		practitioner-education-type-moh
+
+	NamingSystem:
+		cbs-statistical-area
+
+	Example:
+		patient-israeli-with-statistical-area
+		patient-with-multiple-birth
+		practitioner-psychologist
+		organization-school-moe
+			
+2. Modified the following resources:
+	
+	StructureDefinition:
+		il-core-address:
+			Added the statistical area extension to the "extension" element
+		il-core-organization:
+			Added an Identifier Slice: "MoE institute symbol"
+		il-core-patient:
+			Added us-core-birth-sex as "birth-sex"
+		il-core-relatedPerson:
+			Changed address to il-core-address
+
+	Examples:
+		All examples were given more descriptive IDs. e.g.: patient-passport --> patient-with-passport-identification 
+		Patient:
+			-israeli-with-two-identifiers / patient-with-passport-identification:
+				Added "statisticalArea" extension
+
+3. Corrected uri for MOH-institution-licences (https --> http)
+
+Package 0.4.0
+--------------
+1. Added the follwing resources:
+	NamingSystem (instances):
+	** Note: these were created to allow for the use of both the new `health.gov.il` and the erroneous `health.org.il` domains 
+	for previously defined identifiers and CodeSystems **
+		il-national-id
+		pna-national-id
+		legal-entity
+		city-symbol
+		paying-entity-moh
+		passport-uri
+		practitioner-profession-moh
+		practitioner-expertise-moh
+		institution-type-moh
+		medical-service-moh
+	
+	CodeSystem:
+		yarpa-medication-code
+
+	ValueSet:
+		vs-yarpa-medication-code
+
+	Extension:
+		ext-patient-immigration
+
+	Example:
+		Patient-immigrant
+
+
+2. Modified the following resources:
+	StructureDefinition:
+		il-core-medication-request:
+			Added a new "yarpa" slice to the code
+			Added a new reference to ILCoreMedication
+		il-core-medication:
+			Added a new "yarpa" slice to the code
+			Changed the "manufacturer" element Reference from ILCoreOrganization to Organization 
+		il-core-patient:
+			Added a new "Person's Identifier - encrypted" identifier
+			Added 2 extensions:
+				ext-patient-immigration
+				birthPlace (official HL7 extension)
+			Corrected the "short description" of 'enc' slice to include the fact that the encryption is by MoH 
+		il-core-related-person:
+			added identifier slices (same as patient's)
+			corrected the title (added a missing space in the name)
+			Corrected the "short description" of 'enc' slice to include the fact that the encryption is by MoH 
+
+
+Package 0.3.0:
+--------------
+1. The following resources (id) have been retired:
+    ValueSets:
+	    medical-service-code
+
+2. Changed id of the following resources ([old id]  --> [new id]):
+	
+    StructureDefinition:
+        il-core-practitionerrole                    --> il-core-practitioner-role
+
+    Extension:
+        il-hmo 		                            --> ext-il-hmo
+        il-parent-name 	                            --> ext-parent-name
+	
+    CodeSystem:
+        cs-paying-entity-moh 		            --> paying-entity-moh
+	
+    ValueSet:
+        institution-types-moh-vs 		    --> institution-type-moh
+        practitioner-expertise-moh-vs               --> practitioner-expertise-moh
+        practitioner-profession-vs 	            --> practitioner-profession-moh
+
+3. Added following resources (id):
+    ValueSet:
+        medical-service-moh
+
+    CodeSystem:
+        medical-service-moh
+
+4. Fixed all hanging references in resources due to these changes
+
+5. Changed canonical base URL of entire project to http://fhir.health.gov.il. 
+   This change affects all URIs that were previously under the domain http://fhir.health.org.il and all it's subdomains. 
+
+
+Package 0.2.0:
+--------------
+1. Various bug fixes and updates
+
+2. The following resources (id) have been added:
+    
+    StructureDefinition: 
+        il-core-allergy-intolerance
+        il-core-claim
+        il-core-condition
+        il-core-coverage-eligibility-request
+        il-core-coverage-eligibility-response
+        il-core-device-definition
+        il-core-device
+        il-core-diagnostic-report
+        il-core-encounter
+        il-core-family-member-history
+        il-core-imaging-study
+        il-core-media
+        il-core-medication-request
+        il-core-medication
+        il-core-observation
+        il-core-procedure
+        il-core-questionnaire-response
+        il-core-related-Person
+        il-core-service-request
+        il-core-specimen
+
+    CodeSystem:
+        institution-types-moh
+        practitioner-expertise-moh
+        practitioner-profession-moh
+
+    ValueSet:
+        institution-types-moh-vs
+        medical-service-code
+        practitioner-expertise-moh-vs
+        practitioner-profession-vs
+
+
+Package 0.1.0:
+--------------
+1. The following resources (id) have been added:
+
+    StructureDefinition: 
+        il-core-address
+        il-core-location
+        il-core-organization
+        il-core-patient
+        il-core-practitioner
+        il-core-practitionerrole
+    
+    Extension:
+        ext-city-code
+        il-hmo
+        parent-name
+
+     CodeSystem:
+        city-symbol
+        cs-paying-entity
+        passport-uri
+
+    ValueSet:
+        city-symbol
+        israel-hmo
+        passport-uri
+
+    Example:
+        Location-rambam
+        Organization-ministry-of-health
+        Patient-israeli
+        Patient-palestinian
+        Patient-passport
+        Practitioner-gp
+        Practitioner-nurse
+        PractitionerRole-gp-role
+
+
+
+
+
+
+
+Here are a few issues:
+
+1. Currently there is no way to add a `newline` to a package description. Not even while using markdown. We want to have a spacing between different parts of the description and cannot find a way to do so. 
+
+2. When downloading all files from a project it downloads them according to the original file names. But, if you try to D/L all valid JSON files, the files are named in 2 different ways: All structureDefinitions are named like the original file but anything else is named like the id. This is a very odd convention and feels like a bug. 
+
+3. In one of our files - https://simplifier.net/ilcore/ilcorepatient - the identifier "pna-id" has a pattern. It does not appear in its children in the simplifier even though they should inherit it. 
+
+4. In the same file as number 3: "Identifier(All Slices).system" has a cardinality of 1..1 but the slices do not inherit this cardinality. 
+
+
+my-project/
+├── input/
+│   ├── fsh/
+│   │   ├── myPatient.fsh
+│   │   └── myPractitioner.fsh
+│   ├──────── examples/
+│      	 ├── patientWithProblem.fsh
+│      	 └── generalPractitioner.fsh
+└── sushi.yaml

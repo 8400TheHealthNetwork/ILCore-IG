@@ -1,0 +1,50 @@
+{
+  "resourceType": "Flag",
+  "id": "safety-dog",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-flag"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "12345",
+      "system": "http://hospital.org/flag-id"
+    }
+  ],
+  "status": "inactive",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "safety",
+          "system": "http://terminology.hl7.org/CodeSystem/flag-category",
+          "display": "Safety"
+        }
+      ],
+      "text": "Safety"
+    }
+  ],
+  "code": {
+    "coding": [
+      {
+        "code": "bigdog",
+        "system": "http://dogs.org/local",
+        "display": "Big dog"
+      }
+    ],
+    "text": "Patient has a big dog at his home. Always always wear a suit of armor or take other active counter-measures"
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli",
+    "display": "Peter Patient"
+  },
+  "period": {
+    "start": "2015-01-17",
+    "end": "2016-12-01"
+  },
+  "author": {
+    "reference": "Practitioner/practitioner-nurse",
+    "display": "Nancy Nurse"
+  }
+}

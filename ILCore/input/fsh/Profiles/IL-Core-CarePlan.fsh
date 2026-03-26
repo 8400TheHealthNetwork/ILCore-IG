@@ -5,12 +5,10 @@ Title: "ILCore CarePlan Profile"
 Description: "Israel Core proposed constraints and extensions on the CarePlan Resource"
 
 * ^url = $ILCarePlan
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore CarePlan Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the CarePlan resource profile."
@@ -19,6 +17,7 @@ Description: "Israel Core proposed constraints and extensions on the CarePlan Re
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * instantiatesCanonical only Canonical(ILCorePlanDefinition or ILCoreQuestionnaire or ILCoreMeasure or ILCoreActivityDefinition or OperationDefinition)
 * basedOn only Reference(ILCoreCarePlan)

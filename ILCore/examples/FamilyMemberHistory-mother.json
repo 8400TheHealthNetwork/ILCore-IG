@@ -1,0 +1,64 @@
+{
+  "resourceType": "FamilyMemberHistory",
+  "id": "mother",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-family-member-history"
+    ]
+  },
+  "status": "completed",
+  "patient": {
+    "reference": "Patient/patient-israeli",
+    "display": "Peter Patient"
+  },
+  "relationship": {
+    "coding": [
+      {
+        "code": "MTH",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode",
+        "display": "mother"
+      }
+    ]
+  },
+  "condition": [
+    {
+      "code": {
+        "coding": [
+          {
+            "code": "371041009",
+            "system": "http://snomed.info/sct",
+            "display": "Embolic Stroke"
+          }
+        ],
+        "text": "Stroke"
+      },
+      "onsetAge": {
+        "value": 56,
+        "code": "a",
+        "system": "http://unitsofmeasure.org",
+        "unit": "yr"
+      },
+      "outcome": {
+        "coding": [
+          {
+            "code": "723506003",
+            "system": "http://snomed.info/sct",
+            "display": "Resolved (qualifier value)"
+          }
+        ]
+      },
+      "note": [
+        {
+          "text": "Reported by patient during intake interview"
+        }
+      ]
+    }
+  ],
+  "date": "2022-05-12",
+  "deceasedAge": {
+    "value": 78,
+    "code": "a",
+    "system": "http://unitsofmeasure.org",
+    "unit": "yr"
+  }
+}

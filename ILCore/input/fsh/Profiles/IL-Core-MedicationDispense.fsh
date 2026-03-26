@@ -5,13 +5,8 @@ Title: "ILCore MedicationDispense Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationDispense Resource"
 
 * ^url = $ILMedicationDispense
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore MedicationDispense Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationDispense resource profile."
 * . ^isModifier = false
@@ -19,17 +14,19 @@ Description: "Israel Core proposed constraints and extensions on the MedicationD
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * obeys il-medicationdispense-whenhandedover
-* status and medication[x] and subject and performer and performer.actor and authorizingPrescription and type and quantity and whenHandedOver and dosageInstruction MS
+* status and medication[x] and subject and performer and performer.actor and authorizingPrescription 
+    and type and quantity and whenHandedOver and dosageInstruction MS
 * status ^short = "ILCore MedicationDispense Status"
 * status ^definition = "ILCore MedicationDispense Status"
 * subject 1..1
 * extension contains 
     $ext-recorded-time named recorded 0..1
 * extension[recorded] ^short = "Ext: Recorded Time"
-* extension[recorded] ^definition = "Extension: The time in whitch an event was recorded"
+* extension[recorded] ^definition = "Extension: The time in which an event was recorded"
 * partOf only Reference(ILCoreProcedure)
 * category from $vs-il-core-medication-dispense-category (extensible)
 * medication[x] from $vs-il-core-medication-code

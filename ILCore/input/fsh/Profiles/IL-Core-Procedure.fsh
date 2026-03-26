@@ -1,4 +1,3 @@
-Alias: $sct-body-strct = http://hl7.org/fhir/ValueSet/body-site
 
 Profile: ILCoreProcedure
 Parent: Procedure
@@ -7,20 +6,16 @@ Title: "ILCore Procedure Profile"
 Description: "Israel Core proposed constraints and extensions on the Procedure Resource"
 
 * ^url = $ILProcedure
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
 * . ^short = "ILCore Procedure Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Procedure resource profile."
 * . ^isModifier = false
+* insert ConformanceMetadata
+* ^status = #active
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * status MS
@@ -46,7 +41,7 @@ Description: "Israel Core proposed constraints and extensions on the Procedure R
 * location only Reference(ILCoreLocation)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreProcedure or ILCoreDiagnosticReport or ILCoreDocumentReference)
 * reasonCode from $vs-il-core-procedure-reason
-* bodySite from $sct-body-strct (extensible)
+* bodySite from $bodySite (extensible)
 * bodySite ^example.valueCodeableConcept = $sct#344001 "Ankle"
 * bodySite ^example.label = "Valid Example"
 * report only Reference(ILCoreDiagnosticReport or ILCoreDocumentReference or Composition)

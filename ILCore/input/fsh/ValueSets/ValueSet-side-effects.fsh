@@ -1,10 +1,10 @@
-ValueSet: ImmunizationSideEffects
+ValueSet: VsImmunizationSideEffects
 Id: immunization-side-effect
 Title: "Immunization side-effect codes"
 Description: "Codes from SNOMED CT detailing possible immunization-side-effects for ILCoreImmunizationReactionObservation profile"
 * ^url = $vs-immunization-side-effects
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 // * ^comment = "This is an initial set and will be revised in the future"
@@ -24,7 +24,7 @@ Description: "Codes from SNOMED CT detailing possible immunization-side-effects 
 * $sct#7180009
 * $sct#45170000
 * $sct#56905009
-* $sct#74718005
+// * $sct#74718005
 * $sct#3723001
 * $sct#40956001
 * $sct#193093009

@@ -1,10 +1,13 @@
-
 Instance: community-consultation
 InstanceOf: ILCoreEncounter
 Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Encounter: Community Consultation</div>"
 * text.status = #generated
 
+* extension[paying-entity].url = $ext-encounter-paying-entity
+* extension[paying-entity].valueCodeableConcept = $payer#101 "קופת חולים כללית"
+* extension[movement-number].url = $ext-movement-number
+* extension[movement-number].valueString = "12345"
 * identifier[0].system = "http://fhir.community-emr.co.il/identifier/entity-id/encounter"
 * identifier[0].value = "234234234"
 * status = #in-progress
@@ -19,3 +22,17 @@ Usage: #example
 * serviceProvider.identifier.system = $legal-entity
 * serviceProvider.identifier.value = "589902279"
 * serviceProvider.display = "מכבי שירותי בריאות"
+
+
+// --- תוספות מוצעות לפי הפרופיל ---
+
+* period.start = "2024-10-01T09:00:00+02:00"
+* period.end = "2024-10-01T09:45:00+02:00"
+
+* location[0].location.reference = "Location/clinic-23"
+* location[0].status = #completed
+
+* reasonCode[0] = $sct#108311000 "Psychiatric procedure, interview AND/OR consultation (procedure)"
+
+* extension[modeOfArrival].valueCoding = #W "Walk-in"
+

@@ -4,9 +4,9 @@ Title: "Ext: ILCore Documented Event Date"
 Description: "Extension: The date of the event this DocumentReference describes"
 * . ^definition = "When a DocumentReference describes an event, this extension will hold the actual event occurrence date. This is different from DocumentReference.created which refers only to the resource creation date."
 * ^url = $ext-documented-event-date
-* ^version = "0.14.2"
-* insert CurrentDate
-* ^status = #draft
+* insert ConformanceMetadata
+
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "DocumentReference"
 

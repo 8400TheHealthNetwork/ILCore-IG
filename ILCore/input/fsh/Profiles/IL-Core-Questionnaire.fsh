@@ -5,12 +5,10 @@ Title: "ILCore Questionnaire Profile"
 Description: "Israel Core proposed constraints and extensions on the Questionnaire Resource"
 
 * ^url = $ILQuestionnaire
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore Questionnaire Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Questionnaire resource profile."
@@ -19,6 +17,7 @@ Description: "Israel Core proposed constraints and extensions on the Questionnai
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * url 1..1

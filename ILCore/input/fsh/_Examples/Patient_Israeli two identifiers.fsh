@@ -19,7 +19,7 @@ Usage: #example
 * name.extension[language].valueCode = #he
 * telecom[0].system = #phone
 * telecom[0].value = "052467911"
-* telecom[0].use = #home
+* telecom[0].use = #mobile
 * telecom[1].system = #email
 * telecom[1].value = "Israel@example.com"
 * gender = #male
@@ -46,6 +46,8 @@ Usage: #example
 * address.extension[geolocation].extension[latitude].valueDecimal = 670131.38
 * address.extension[statArea].valueIdentifier.system = "http://fhir.health.gov.il/identifier/cbs-statistical-area"
 * address.extension[statArea].valueIdentifier.value = "50000935"
-
+* contact[parent].relationship = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
+* contact[parent].telecom.value = "0525555555"
+* contact[parent].telecom.system = http://hl7.org/fhir/contact-point-system#phone "Phone"
 * deceasedBoolean = false
  

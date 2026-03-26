@@ -1,0 +1,152 @@
+{
+  "resourceType": "CarePlan",
+  "id": "weight-loss-careplan",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-care-plan"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "12345",
+      "type": {
+        "coding": [
+          {
+            "code": "SNO",
+            "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
+            "display": "Serial Number"
+          }
+        ]
+      },
+      "_system": {
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
+            "valueCode": "masked"
+          }
+        ]
+      }
+    }
+  ],
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>A simple care plan to indicate a patient taking their weight once a day because of obesity.</p></div>"
+  },
+  "instantiatesUri": [
+    "http://mockup.org/protocol-for-obesity"
+  ],
+  "basedOn": [
+    {
+      "display": "Management of Type 2 Diabetes"
+    }
+  ],
+  "replaces": [
+    {
+      "display": "Plan from urgent care clinic"
+    }
+  ],
+  "partOf": [
+    {
+      "display": "Overall wellness plan"
+    }
+  ],
+  "status": "active",
+  "intent": "plan",
+  "category": [
+    {
+      "text": "Weight management plan"
+    }
+  ],
+  "description": "Manage obesity and weight loss",
+  "encounter": {
+    "reference": "Encounter/community-consultation"
+  },
+  "period": {
+    "end": "2017-06-01",
+    "start": "2016-02-01"
+  },
+  "created": "2016-01-01",
+  "author": {
+    "reference": "Practitioner/md"
+  },
+  "careTeam": [
+    {
+      "reference": "CareTeam/example"
+    }
+  ],
+  "addresses": [
+    {
+      "reference": "Condition/type-1-diabetes",
+      "display": "Diabetes"
+    }
+  ],
+  "goal": [
+    {
+      "reference": "Goal/weight-loss"
+    }
+  ],
+  "activity": [
+    {
+      "outcomeCodeableConcept": [
+        {
+          "coding": [
+            {
+              "code": "161832001",
+              "system": "http://snomed.info/sct",
+              "display": "Progressive weight loss"
+            }
+          ]
+        }
+      ],
+      "outcomeReference": [
+        {
+          "reference": "Observation/hight-measurement"
+        }
+      ],
+      "detail": {
+        "code": {
+          "coding": [
+            {
+              "code": "3141-9",
+              "system": "http://loinc.org",
+              "display": "Weight Measured"
+            },
+            {
+              "code": "27113001",
+              "system": "http://snomed.info/sct",
+              "display": "Body weight"
+            }
+          ]
+        },
+        "status": "completed",
+        "statusReason": {
+          "text": "Achieved weight loss to mitigate diabetes risk."
+        },
+        "doNotPerform": false,
+        "scheduledTiming": {
+          "repeat": {
+            "frequency": 1,
+            "period": 1,
+            "periodUnit": "d"
+          }
+        },
+        "location": {
+          "display": "Patient's home"
+        },
+        "performer": [
+          {
+            "reference": "Patient/patient-immigrant"
+          }
+        ]
+      }
+    }
+  ],
+  "subject": {
+    "reference": "Patient/patient-immigrant"
+  },
+  "note": [
+    {
+      "text": "Patient motivated to lose 10kg within 6 months. Monitoring daily progress."
+    }
+  ]
+}

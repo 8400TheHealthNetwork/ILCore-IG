@@ -1,0 +1,95 @@
+{
+  "resourceType": "DeviceRequest",
+  "id": "insulinpump",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-device-request"
+    ]
+  },
+  "identifier": [
+    {
+      "value": "ip_request1.1",
+      "system": "http://goodcare.org/devices/requests"
+    }
+  ],
+  "instantiatesCanonical": [
+    "http://motivemi.com/artifacts/PlanDefinition/low-suicide-risk-order-set"
+  ],
+  "basedOn": [
+    {
+      "display": "Homecare - DM follow-up"
+    }
+  ],
+  "priorRequest": [
+    {
+      "display": "CGM ambulatory"
+    }
+  ],
+  "groupIdentifier": {
+    "value": "ip_request1"
+  },
+  "status": "active",
+  "intent": "instance-order",
+  "priority": "routine",
+  "codeCodeableConcept": {
+    "coding": [
+      {
+        "code": "43148-6",
+        "system": "http://loinc.org",
+        "display": "Insulin delivery device panel"
+      }
+    ],
+    "text": "Insulin delivery device panel"
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli"
+  },
+  "encounter": {
+    "display": "Encounter 1"
+  },
+  "occurrenceDateTime": "2013-05-08T09:33:27+07:00",
+  "authoredOn": "2013-05-08T09:33:27+07:00",
+  "requester": {
+    "reference": "Practitioner/md"
+  },
+  "performerType": {
+    "coding": [
+      {
+        "display": "Qualified nurse"
+      }
+    ],
+    "text": "Nurse"
+  },
+  "performer": {
+    "display": "Nurse Rossignol",
+    "reference": "Practitioner/nurse-rossignol"
+  },
+  "reasonCode": [
+    {
+      "text": "gastroparesis"
+    }
+  ],
+  "reasonReference": [
+    {
+      "display": "Gastroparesis",
+      "reference": "Condition/gastroparesis"
+    }
+  ],
+  "supportingInfo": [
+    {
+      "display": "Previous results",
+      "reference": "Observation/previous-results"
+    }
+  ],
+  "note": [
+    {
+      "text": "this is the right device brand and model"
+    }
+  ],
+  "relevantHistory": [
+    {
+      "display": "Request for unspecified device",
+      "reference": "Provenance/device-request-history"
+    }
+  ]
+}

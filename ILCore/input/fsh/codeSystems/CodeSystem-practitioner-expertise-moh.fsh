@@ -3,8 +3,8 @@ Id: practitioner-expertise-moh
 Title: "קוד מומחיות לעוסק בבריאות"
 Description: "קוד מומחיות לעוסק בבריאות לפי רישוי משרד הבריאות"
 
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^url = $practitioner-expertise-moh
 * ^content = #complete
 * ^valueSet = $vs-practitioner-expertise
@@ -13,10 +13,16 @@ Description: "קוד מומחיות לעוסק בבריאות לפי רישוי 
 * ^extension[0].url = $effective
 * ^extension[0].valueDate = "2023-01"
 
+// declaration of "status" property
+* ^property[0].code = #status
+* ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
+* ^property[=].description = "A property that indicates the status of the concept. One of active, experimental, deprecated, retired"
+* ^property[=].type = #code
+
 // add a column to the codesystem, called "profession"
-* ^property.code = #profession
-* ^property.uri = $practitioner-profession-moh
-* ^property.type = #Coding
+* ^property[+].code = #profession
+* ^property[=].uri = $practitioner-profession-moh
+* ^property[=].type = #Coding
 
 * #-999 "לא ידוע" "לא ידוע"
   * ^property.code = #status

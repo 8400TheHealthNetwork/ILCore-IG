@@ -5,12 +5,10 @@ Title: "ILCore ImmunizationReactionObservation Profile"
 Description: "Israel Core proposed constraints and extensions on the ImmunizationReactionObservation Resource"
 
 * ^url = $ILImmunizationReactionObs
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore ImmunizationReactionObservation Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ImmunizationReactionObservation resource profile."
@@ -19,6 +17,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * partOf only Reference(ILCoreImmunization) 
@@ -31,5 +30,5 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * subject only Reference(ILCorePatient)
 * value[x] 1..1
 * value[x] only CodeableConcept
-* valueCodeableConcept from $vs-immunization-side-effects (extensible)  // doesn't exist yet
+* valueCodeableConcept from $vs-immunization-side-effects (extensible)
 * bodySite from $bodySite (preferred)

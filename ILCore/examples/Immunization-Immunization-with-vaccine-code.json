@@ -1,0 +1,81 @@
+{
+  "resourceType": "Immunization",
+  "id": "immunization-with-vaccine-code",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-immunization"
+    ]
+  },
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immunization with a SNOMED code</div>",
+    "status": "generated"
+  },
+  "status": "completed",
+  "vaccineCode": {
+    "coding": [
+      {
+        "system": "http://snomed.info/sct",
+        "code": "871738001",
+        "display": "Live attenuated mumps vaccine"
+      }
+    ]
+  },
+  "patient": {
+    "reference": "Patient/patient-with-israeli-id"
+  },
+  "occurrenceDateTime": "2020-02-07",
+  "primarySource": true,
+  "lotNumber": "54321",
+  "site": {
+    "coding": [
+      {
+        "code": "368208006",
+        "system": "http://snomed.info/sct",
+        "display": "Left upper arm structure (body structure)"
+      }
+    ]
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/practitioner-md",
+        "display": "Dr. Dana Mor"
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "Routine school-based immunization program"
+    }
+  ],
+  "doseQuantity": {
+    "value": 0.5,
+    "unit": "mL"
+  },
+  "route": {
+    "coding": [
+      {
+        "code": "78421000",
+        "system": "http://snomed.info/sct",
+        "display": "Intramuscular route (qualifier value)"
+      }
+    ]
+  },
+  "education": [
+    {
+      "documentType": "patient-information-leaflet",
+      "publicationDate": "2020-01-15",
+      "presentationDate": "2020-02-07"
+    }
+  ],
+  "protocolApplied": [
+    {
+      "series": "Mumps Series",
+      "authority": {
+        "display": "Ministry of Health"
+      },
+      "doseNumberPositiveInt": 1,
+      "seriesDosesPositiveInt": 2
+    }
+  ]
+}

@@ -1,0 +1,60 @@
+{
+  "resourceType": "RiskAssessment",
+  "id": "breastcancer-risk",
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><table><tr><td colspan=\"2\"><h1>Information about your risk score:</h1></td></tr><tr><td><strong>Birthdate:</strong></td><td>1981-01-01</td></tr><tr><td><strong>Gender:</strong></td><td>female</td></tr><tr><td><strong>Ethnicity:</strong></td><td>Unknown / Not Reported</td></tr></table></div>"
+  },
+  "identifier": [
+    {
+      "use": "official",
+      "system": "http://mockup.org",
+      "value": "risk-assessment-breastcancer1"
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "code": "709510001",
+        "system": "http://snomed.info/sct",
+        "display": "Assessment of risk for disease (procedure)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli"
+  },
+  "performer": {
+    "reference": "Practitioner/md"
+  },
+  "basis": [
+    {
+      "reference": "Observation/hemoglobin-lab-test"
+    }
+  ],
+  "prediction": [
+    {
+      "outcome": {
+        "text": "Unknown risk of developing breast cancer"
+      },
+      "probabilityDecimal": 0.45,
+      "rationale": "Positive family history and BRCA1 mutation carrier",
+      "qualitativeRisk": {
+        "coding": [
+          {
+            "code": "723509005",
+            "system": "http://snomed.info/sct",
+            "display": "High risk"
+          }
+        ]
+      }
+    }
+  ],
+  "note": [
+    {
+      "text": "This risk assessment is based on BRCA1 and BRCA2 genetic mutation test"
+    }
+  ],
+  "occurrenceDateTime": "2024-12-01"
+}

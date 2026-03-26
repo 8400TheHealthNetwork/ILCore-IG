@@ -1,0 +1,99 @@
+{
+  "resourceType": "Observation",
+  "id": "hemoglobin-lab-test",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-observation-lab"
+    ]
+  },
+  "category": [
+    {
+      "coding": [
+        {
+          "system": "http://snomed.info/sct",
+          "code": "108252007",
+          "display": "Laboratory procedure"
+        }
+      ]
+    }
+  ],
+  "status": "final",
+  "code": {
+    "coding": [
+      {
+        "system": "http://loinc.org",
+        "code": "718-7",
+        "display": "Hemoglobin [Mass/volume] in Blood"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli-redacted"
+  },
+  "performer": [
+    {
+      "reference": "Practitioner/practitioner-nurse-no-expertise-with-advanced-courses"
+    },
+    {
+      "reference": "Organization/hospital-department"
+    }
+  ],
+  "effectiveDateTime": "2024-11-27T10:30:00Z",
+  "valueQuantity": {
+    "value": 13.5,
+    "code": "g/dL",
+    "system": "http://unitsofmeasure.org",
+    "unit": "g/dL"
+  },
+  "identifier": [
+    {
+      "system": "http://labs.clalit.org.il/tests",
+      "value": "HEMOGLOBIN-20241127-001"
+    }
+  ],
+  "referenceRange": [
+    {
+      "low": {
+        "value": 12,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      },
+      "high": {
+        "value": 16,
+        "unit": "g/dL",
+        "system": "http://unitsofmeasure.org",
+        "code": "g/dL"
+      }
+    }
+  ],
+  "method": {
+    "coding": [
+      {
+        "code": "104718002",
+        "system": "http://snomed.info/sct",
+        "display": "Hemoglobin, free measurement"
+      }
+    ]
+  },
+  "bodySite": {
+    "coding": [
+      {
+        "code": "122555007",
+        "system": "http://snomed.info/sct",
+        "display": "Venous blood specimen (specimen)"
+      }
+    ]
+  },
+  "interpretation": [
+    {
+      "coding": [
+        {
+          "code": "N",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ObservationInterpretation",
+          "display": "Normal"
+        }
+      ]
+    }
+  ]
+}

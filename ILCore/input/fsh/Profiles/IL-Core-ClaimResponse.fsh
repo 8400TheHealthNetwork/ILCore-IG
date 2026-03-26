@@ -5,12 +5,8 @@ Title: "ILCore ClaimResponse Profile"
 Description: "Israel Core proposed constraints and extensions on the ClaimResponse Resource"
 
 * ^url = $ILClaimResponse
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+* insert ConformanceMetadata
+* ^status = #active
 
 * . ^short = "ILCore ClaimResponse Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ClaimResponse resource profile."
@@ -19,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on the ClaimRespon
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 
 * patient only Reference(ILCorePatient) 

@@ -1,11 +1,11 @@
-ValueSet: IsraelHMO
+ValueSet: VsIsraelHMO
 Id: israel-hmo
 Title: "Israeli Health Management Organization (קופת חולים)"
 Description: "A code classifying Health Management Organizations"
 
 * ^url = $vs-hmo
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $payer#101 "קופת חולים כללית"

@@ -5,13 +5,8 @@ Title: "ILCore Specimen Profile"
 Description: "Israel Core proposed constraints and extensions on the Specimen Resource"
 
 * ^url = $ILSpecimen
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore Specimen Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Specimen resource profile."
 * . ^isModifier = false
@@ -19,11 +14,8 @@ Description: "Israel Core proposed constraints and extensions on the Specimen Re
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
-
-* extension contains 
-    $ext-processing-location named processing-location 0..* and
-    $ext-processing-practitioner named processing-practitioner 0..*
 * type MS 
 * type 1..1
 * type from $vs-il-core-specimen-type (extensible)
@@ -42,8 +34,11 @@ Description: "Israel Core proposed constraints and extensions on the Specimen Re
 * parent only Reference(ILCoreSpecimen)
 * request only Reference(ILCoreServiceRequest)
 * collection.collector only Reference(ILCorePractitioner or ILCorePractitionerRole)
-* collection.collector.extension contains $ext-specimen-collector-reference named specimen-collector 0..1
+* collection.collector.extension contains $ext-specimen-collector-reference named other-collector 0..1 // add remark! Kippi 09/07/24 - explain that allows other types of collectors
 * collection.bodySite ^binding.strength = #extensible
 * processing.additive only Reference(ILCoreSubstance)
+* processing.extension contains 
+    $ext-processing-location named processing-location 0..* and
+    $ext-processing-practitioner named processing-practitioner 0..*
 * container.additiveReference only Reference(ILCoreSubstance)
 * container.type ^binding.strength = #extensible

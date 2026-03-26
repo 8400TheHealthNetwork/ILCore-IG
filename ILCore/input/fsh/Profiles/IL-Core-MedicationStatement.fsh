@@ -5,13 +5,8 @@ Title: "ILCore MedicationStatement Profile"
 Description: "Israel Core proposed constraints and extensions on the MedicationStatement Resource"
 
 * ^url = $ILMedicationStatement
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore MedicationStatement Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the MedicationStatement resource profile."
 * . ^isModifier = false
@@ -19,7 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
-
+* identifier only ILCoreIdentifier
 
 * status and medication[x] and subject and dateAsserted and dosage MS
 * extension contains 
@@ -27,15 +22,15 @@ Description: "Israel Core proposed constraints and extensions on the MedicationS
 * extension[courseOfTherapyType] ^short = "Ext: Medication Course-Of-Therapy Type"
 * extension[courseOfTherapyType] ^definition = "Extension: A coded representation of the type of course-of-therapy"
 * basedOn only Reference(ILCoreCarePlan or ILCoreMedicationRequest or ILCoreServiceRequest)
-* partOf only Reference(ILCoreMedicationAdministration or MedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation)
+* partOf only Reference(ILCoreMedicationAdministration or ILCoreMedicationDispense or ILCoreMedicationStatement or ILCoreProcedure or ILCoreObservation)
 * category from $vs-il-core-medication-statement-category (extensible)
 * medication[x] 1..1
 * medicationCodeableConcept from $vs-il-core-medication-statement-code (extensible)
 * medicationReference only Reference(ILCoreMedication)
 * subject only Reference(ILCorePatient or ILCoreGroup) 
-* context only Reference(ILCoreEncounter or EpisodeOfCare) 
+* context only Reference(ILCoreEncounter or ILCoreEpisodeOfCare) 
 * informationSource only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreRelatedPerson or ILCoreOrganization)
 * reasonCode from $vs-il-core-procedure-reason (extensible)
-// * reasonReference.extension contains $ext-procedure-reference named procedureReference 0..*
+// * reasonReference.extension contains $ext-med-req-procedure-reference named procedureReference 0..*
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport)
 * dosage only ILCoreDosage

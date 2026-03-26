@@ -1,16 +1,14 @@
 Profile: ILCoreRiskAssessment
 Parent: RiskAssessment
-Id: il-core-risk-assesment
+Id: il-core-risk-assessment
 Title: "ILCore RiskAssessment Profile"
 Description: "Israel Core proposed constraints and extensions on the RiskAssessment Resource"
 
 * ^url = $ILRiskAssessment
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore RiskAssessment Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the RiskAssessment resource profile."
@@ -19,6 +17,7 @@ Description: "Israel Core proposed constraints and extensions on the RiskAssessm
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 
 * subject only Reference(ILCorePatient or ILCoreGroup) 

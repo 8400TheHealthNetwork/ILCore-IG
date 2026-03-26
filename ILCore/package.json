@@ -1,0 +1,49 @@
+{
+    "name":  "il.fhir.r4.ashmc",
+    "version":  "0.3.0",
+    "description":  "FHIR Profiles and Implementation Guide for Assuta Ashdod Medical Center",
+    "type":  "module",
+    "scripts":  {
+                    "manifest":  "node createManifest.js",
+                    "sushi":  "npm run validate:fsh \u0026\u0026 npm run ruleset \u0026\u0026 sushi build -s \u0026\u0026 npm run manifest",
+                    "sushi:diff":  "sushi build --out differentials",
+                    "check:java":  "node installJava.js",
+                    "check:validator":  "node downloadValidator.js",
+                    "prepare:validation":  "npm run check:java \u0026\u0026 npm run check:validator",
+                    "test":  "fhir-test",
+                    "validate:fsh":  "fhir-validate-fsh",
+                    "validate:config":  "fhir-validate-config",
+                    "validate:quality":  "fhir-validate-quality",
+                    "validate:ig":  "fhir-validate-ig-full",
+                    "validate:ig:only":  "fhir-validate-ig",
+                    "validate:examples":  "fhir-validate-examples",
+                    "validate:ex":  "fhir-validate-examples",
+                    "check:publication":  "fhir-check-publication",
+                    "ruleset":  "fhir-update-ruleset",
+                    "install:java":  "fhir-install-java",
+                    "sync:version":  "fhir-sync-version"
+                },
+    "repository":  {
+                       "type":  "git",
+                       "url":  "git+https://github.com/Outburn-IL/ASHMC.git"
+                   },
+    "author":  "Assuta Ashdod Medical Center",
+    "bugs":  {
+                 "url":  "https://github.com/Outburn-IL/ASHMC/issues"
+             },
+    "homepage":  "https://github.com/Outburn-IL/ASHMC#readme",
+    "dependencies":  {
+                         "adm-zip":  "^0.5.14",
+                         "axios":  "^1.7.2",
+                         "execa":  "^9.3.0",
+                         "fs-extra":  "^11.2.0",
+                         "js-yaml":  "^4.1.0",
+                         "jsonata":  "^2.0.5",
+                         "path":  "^0.12.7",
+                         "tar":  "^7.4.0",
+                         "fsh-sushi":  "^3.17.0"
+                     },
+    "devDependencies":  {
+                            "fsh-and-chips":  "git+https://github.com/Outburn-IL/fhir-ig-tools.git"
+                        }
+}

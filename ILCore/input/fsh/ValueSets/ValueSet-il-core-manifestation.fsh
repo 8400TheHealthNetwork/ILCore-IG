@@ -1,10 +1,10 @@
-ValueSet: ILCoreManifestation
+ValueSet: VsILCoreManifestation
 Id: il-core-manifestation
 Title: "IL Core Condition Codes"
 Description: "A list of codes for intolerance manifestation for the IL Core"
 * ^url = $vs-il-core-manifestation
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #404684003 "Clinical finding (finding)"

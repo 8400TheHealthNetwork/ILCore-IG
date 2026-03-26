@@ -5,12 +5,10 @@ Title: "ILCore EpisodeOfCare Profile"
 Description: "Israel Core proposed constraints and extensions on the EpisodeOfCare Resource"
 
 * ^url = $ILEpisodeOfCare
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 
 * . ^short = "ILCore EpisodeOfCare Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the EpisodeOfCare resource profile."
@@ -19,8 +17,22 @@ Description: "Israel Core proposed constraints and extensions on the EpisodeOfCa
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
+
+* type ^definition = "Type/classification of the episode of care."
+* type from $vs-il-core-episode-of-care-type-and-service-type (extensible)
+* type ^slicing.discriminator.type = #pattern
+* type ^slicing.discriminator.path = "$this"
+* type ^slicing.rules = #open
+* type contains recurring-daily-hospitalization 0..1 and serviceType 0..*
+* type[recurring-daily-hospitalization] ^patternCodeableConcept.coding.system = $il-core-episode-of-care-type
+* type[recurring-daily-hospitalization] ^patternCodeableConcept.coding.code = #recurring-daily-hospitalization
+* type[serviceType] from $vs-il-core-service-type (required)
+* type[serviceType] ^short = "Service type for the episode of care"
+* type[serviceType] ^definition = "Service type/specialty context for the episode, analogous to Encounter.serviceType."
 
 * diagnosis.condition only Reference(ILCoreCondition)
+* diagnosis.role from $vs-il-core-diagnosis-role (extensible)
 * patient only Reference(ILCorePatient) 
 * managingOrganization only Reference(ILCoreOrganization)
 * referralRequest only Reference(ILCoreServiceRequest)

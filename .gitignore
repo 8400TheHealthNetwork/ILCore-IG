@@ -1,8 +1,11 @@
 .DS_Store
 ILCore/fsh-generated
 ILCore/temp
+ILCore/jre
+ILCore/node*
+ILCore/differentials
 ILCore/publisher.jar
-publisher.jar
+publisher.jar 
 ILCore/input-cache
 ILCore/template
 ILCore/output
@@ -14,8 +17,10 @@ ig-registry
 Webroot/core
 Webroot/0.*
 Webroot/ig-build-zips
-ILCore/_updatePublisher.sh
-ILCore/_gencontinuous.bat
-ILCore/_updatePublisher.sh
-ILCore/_updatePublisher.bat
+validator.cli
 Files to add later on
+ILCore/validator_cli.jar
+ILCore/examples
+*gitignore*
+ILCore/validator_cli_output.ex.html
+ILCore/validator_cli_output.ex.html

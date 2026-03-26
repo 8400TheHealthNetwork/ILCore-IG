@@ -1,0 +1,43 @@
+{
+  "resourceType": "Device",
+  "id": "example-device",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-device"
+    ]
+  },
+  "identifier": [
+    {
+      "system": "http://goodcare.org/devices/id",
+      "value": "345675"
+    }
+  ],
+  "definition": {
+    "reference": "DeviceDefinition/definition-example"
+  },
+  "patient": {
+    "reference": "Patient/patient-israeli"
+  },
+  "owner": {
+    "reference": "Organization/hospital-department"
+  },
+  "location": {
+    "reference": "Location/hospital-unit"
+  },
+  "status": "active",
+  "type": {
+    "coding": [
+      {
+        "code": "430033006",
+        "system": "http://snomed.info/sct",
+        "display": "Infusion pump (physical object)"
+      }
+    ]
+  },
+  "manufacturer": "Medtronic",
+  "manufactureDate": "2022-03-15",
+  "expirationDate": "2027-03-15",
+  "lotNumber": "LOT202203",
+  "serialNumber": "SN987654321",
+  "modelNumber": "MD-4000"
+}

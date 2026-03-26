@@ -1,10 +1,10 @@
-ValueSet: ILCoreServiceCategory
+ValueSet: VsILCoreServiceCategory
 Id: il-core-service-category
 Title: "IL Core ServiceCategory"
 Description: "A list of codes for Service Category for the IL Core"
 * ^url = $vs-il-core-service-category
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $sct#103693007 "Diagnostic procedure (procedure)"

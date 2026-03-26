@@ -6,7 +6,13 @@ table.grid {
   margin-right: inherit;
 }
 
-
+p > img {
+  float: none;
+  margin-top: 0;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
 
 nav.navbar.navbar-inverse {
   direction: rtl;

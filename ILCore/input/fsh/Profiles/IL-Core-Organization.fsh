@@ -6,13 +6,8 @@ Title: "ILCore Organization Profile"
 Description: "Israel Core proposed constraints and extensions on the Organization Resource"
 
 * ^url = $ILOrganization
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore Organization Profile"
 * . ^definition = "The Organization Profile is based upon the core FHIR Organization Resource"
 * . ^isModifier = false
@@ -20,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 * . obeys il-organization-identifier
 
@@ -33,11 +29,12 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
    moh-inst-symbol 0..1 and
    legal-entity 0..1 and
    moe-inst 0..1 and
-   moh-hospital-department 0..1
+   moh-hospital-department 0..1 and
+   paying-entity-moh 0..1
 
 * identifier[moh-inst-symbol].system 1..1 MS
 * identifier[moh-inst-symbol].value 1..1 MS
-* identifier[moh-inst-symbol] ^short = "MoH institute sympbol number"
+* identifier[moh-inst-symbol] ^short = "MoH institute symbol number"
 * identifier[moh-inst-symbol] ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - https://institutions.health.gov.il/Institutions"
 * identifier[moh-inst-symbol] ^mustSupport = true
 * identifier[moh-inst-symbol].system ^definition = "Institute symbol number as issued by Israeli Ministry of Health (MoH). MoH portal - https://institutions.health.gov.il/Institutions"
@@ -73,23 +70,35 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * identifier[moh-hospital-department].system = $moh-hosp-department (exactly)
 * identifier[moh-hospital-department].value ^short = "An MoH hospital depratment symbol"
 
+* identifier[paying-entity-moh] MS
+* identifier[paying-entity-moh].system 1..1 MS
+* identifier[paying-entity-moh].value from http://fhir.health.gov.il/ValueSet/organization-paying-entity-moh-identifier (required)
+* identifier[paying-entity-moh] ^short = "MoH Paying Entity Identifier"
+* identifier[paying-entity-moh] ^definition = "paying entity codes that may be used as organization and organization units identifier"
+* identifier[paying-entity-moh].system ^definition = "An institute (hospital) department identifier consisting of five alphanumeric cahracters, a hyphen (\"-\") and five alphanumeric cahracters once again"
+* identifier[paying-entity-moh].system = $payer (exactly)
+
 //active
 * active 0..1 MS
 
 //type
-* type from $vs-organization-type (extensible)
+* type from $vs-organization-type (example)
 * type ^slicing.discriminator[0].type = #value
 * type ^slicing.discriminator[0].path = "$this"
 * type ^slicing.rules = #open
 * type contains 
       moh-institute-type 0..1 and
-      moh-department-type 0..1
+      moh-department-type 0..1 and
+      il-community-unit-type 0..1
 * type[moh-institute-type] from $vs-institution-type-moh (required)
 * type[moh-institute-type] ^example.valueCodeableConcept = $institution-type-moh#76 "משרדי ממשלה"
 * type[moh-institute-type] ^example.label = "Valid Example"
 * type[moh-department-type] from $vs-department-type-moh (required)
 * type[moh-department-type] ^example.valueCodeableConcept = $department-type-moh#10000 "אשפוז - פנימית"
 * type[moh-department-type] ^example.label = "Valid Example"
+* type[il-community-unit-type] from $vs-il-core-community-unit-type (required)
+* type[il-community-unit-type] ^example.valueCodeableConcept = $il-core-community-unit-type#101 "מעבדה"
+* type[il-community-unit-type] ^example.label = "Valid Example"
 
 //name
 * name 1..1 MS

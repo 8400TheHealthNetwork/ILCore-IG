@@ -1,10 +1,10 @@
-ValueSet: ILCoreEncounterClass
+ValueSet: VsILCoreEncounterClass
 Id: il-core-encounter-class
 Title: "IL Core Encounter Class Codes"
 Description: "A list of class codes for Encounters for the IL Core"
 * ^url = $vs-il-core-encounter-class
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $il-core-encounter-class

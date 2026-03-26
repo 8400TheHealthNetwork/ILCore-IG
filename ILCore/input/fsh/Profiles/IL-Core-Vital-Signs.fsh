@@ -5,20 +5,19 @@ Title: "ILCore Vital Signs Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource for use in querying and retrieving Vital Signs information."
 
 * ^url = $ILVitalSigns
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore Vital Signs Profile"
 * . ^isModifier = false
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status"
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * obeys il-vs2
+* extension contains $body-position named body-position 0..1
+* extension[body-position].valueCodeableConcept from $vs-il-core-body-position (example)
 * category ^slicing.discriminator[0].type = #value
 * category ^slicing.discriminator[0].path = "coding.code"
 * category ^slicing.discriminator[1].type = #value
@@ -52,7 +51,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
   * ^definition = "Used when reporting vital signs panel components"
 * component obeys il-vs3
 * component MS
-  * code from $vs-bp-components (extensible)
+  // * code from $vs-bp-components (extensible)
   * code MS
   * value[x] only Quantity or CodeableConcept or string
     * ^condition = "il-vs3"
@@ -61,5 +60,6 @@ Description: "Israel Core proposed constraints and extensions on the Observation
     * ^short = "BP values are recorded with UCUM"
   * dataAbsentReason ^condition = "il-vs3"
   * dataAbsentReason MS
+* derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreVitalSigns or ILCoreMolecularSequence)
 
 

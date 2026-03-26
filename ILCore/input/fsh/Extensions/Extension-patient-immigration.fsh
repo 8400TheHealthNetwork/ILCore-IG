@@ -1,13 +1,12 @@
-Alias: $LL5005 = http://loinc.org/vs/LL5005-5
 Extension: PatientImmigration
 Id: ext-patient-immigration
 Title: "Ext: Patient Immigration"
 Description: "Extension: Immigration information for patient - for the purpose of this extension - immigration is an international movement of a person to a destination country in order to settle as permanent resident"
 
 * ^url = $ext-patient-immigration
-* ^version = "0.14.2"
-* insert CurrentDate
-* ^status = #draft
+* insert ConformanceMetadata
+
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 * . ^comment = "In case of an Aliyah (A jew immigrating to Israel), the destination should be 'IL' (Israel)"
@@ -49,6 +48,6 @@ Description: "Extension: Immigration information for patient - for the purpose o
 * extension[status].url only uri
 * extension[status].value[x] 1..
 * extension[status].value[x] only CodeableConcept
-* extension[status].valueCodeableConcept from $LL5005 (required)
+* extension[status].valueCodeableConcept from http://loinc.org/vs/LL5005-5 (required)
 * extension[status].valueCodeableConcept ^example.valueCodeableConcept = $loinc#LA29155-1 "Naturalized citizen"
 * extension[status].valueCodeableConcept ^example.label = "Valid Example"

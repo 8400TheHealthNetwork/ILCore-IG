@@ -1,0 +1,65 @@
+{
+  "resourceType": "Group",
+  "id": "101",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-group"
+    ]
+  },
+  "text": {
+    "status": "additional",
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p>Herd of 25 horses</p><p>Gender: mixed</p><p>Owner: John Smith</p></div>"
+  },
+  "identifier": [
+    {
+      "system": "http://someveterinarianclinic.org/fhir/NamingSystem/herds",
+      "value": "12345"
+    }
+  ],
+  "type": "animal",
+  "actual": true,
+  "code": {
+    "text": "Horse"
+  },
+  "name": "John's herd",
+  "quantity": 25,
+  "characteristic": [
+    {
+      "code": {
+        "text": "gender"
+      },
+      "valueCodeableConcept": {
+        "text": "mixed"
+      },
+      "exclude": false
+    },
+    {
+      "code": {
+        "text": "owner"
+      },
+      "valueCodeableConcept": {
+        "text": "John Smith"
+      },
+      "exclude": false
+    }
+  ],
+  "managingEntity": {
+    "reference": "Organization/horses-care-clinic",
+    "display": "Horse Care Clinic"
+  },
+  "member": [
+    {
+      "entity": {
+        "display": "Mare A"
+      },
+      "period": {
+        "start": "2023-01-01"
+      }
+    },
+    {
+      "entity": {
+        "display": "Stallion B"
+      }
+    }
+  ]
+}

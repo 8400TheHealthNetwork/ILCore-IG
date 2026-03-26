@@ -1,11 +1,11 @@
-ValueSet: ILCoreMedicationCode
+ValueSet: VsILCoreMedicationCode
 Id: il-core-medication-code
 Title: "ILCore Medication Code"
 Description: "Codes for medications according to ILCore catalogue"
 
 * ^url = $vs-il-core-medication-code
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 // * include codes from system $moh-medication-code

@@ -1,9 +1,134 @@
-### Current Release - 0.14.0
-- Publication date: 10.04.2024
+### Current Release - 0.17.0
+- Publication date: 04.03.2025
 - Based on FHIR version: 4.0.1
 
 To help implementers, only the more significant changes are listed here.
+#### Changes in this version
+1.  **Added the following resources:**
+    
+    *   **CodeSystem:**
+        
+        *   `passport-enc-uri`
+    *   **ValueSet:**
+        
+        *   `passport-enc-uri`
+    *   **Examples:** 37 new examples added to the project
+        
+2.  **Modified the following resources:**
+    
+    *   **StructureDefinition:**
+        
+        *   The following StructureDefinitions have had the slicing on 'name' element updated:
+        
+        *   `il-core-patient`
+        *   `il-core-practitioner`
+        *   `il-core-related-person`
+        
+        *   `il-core-practitioner`: added 2 more slices to the identifier:
+            *   enc-il-id
+            *   enc-ppn
+        *   `il-core-encounter`: corrected slicing on 'type' element
+        *   `il-core-observation-lab`: corrected cardinality on 'code' element
+        *   `il-core-observation-lab`: corrected slicing on 'performer' element
 
+
+
+
+### Release - 0.16.0
+- Publication date: 06.11.2024
+- Based on FHIR version: 4.0.1
+#### Changes in this version
+1. **Added the following resources:**
+   
+     - **StructureDefinition:**
+        - `il-core-service-request-lab`
+         - `ext-medicationrequest-procedure-reason-reference`: replaces             `ext-procedure-reference`
+         - `ext-medication-recorded-time`: replaces `ext-recorded-time`
+
+    - **Localized StructureDefinition - References only:**
+      - `il-core-appointment-response`  
+   
+     - **CodeSystem:**
+        - `hdp-information-buckets`
+
+    - **ValueSet:**
+        - `diagnostic-conclusion-code`
+
+2. **Modified the following resources:**
+   
+     - **StructureDefinition:**
+        - `il-core-service-request`: corrected slicing on category element
+        - `il-core-risk-assessment`: corrected canonical URL
+        - `il-core-location`: updated constraints - please make sure to     look at the StructureDefinition
+         - `il-core-diagnostic-report`: reworked according to ILCore specification
+        - `il-core-observation-lab`: updated slicing on category element
+        - `il-core-service-request`: updated slicing on category element
+       
+     - **CodeSystem:**
+        - `il-core-medication-request-category`: corrected erroneous id
+    
+     - **ValueSet:**
+        - `il-core-procedure-code`: added all codes from ValueSet               `il-core-observation-lab-code` ``
+
+### Release - 0.15.0
+- Publication date: 18.06.2024
+- Based on FHIR version: 4.0.1
+#### Changes in this version
+- Added the following resources:
+	-  The following StructureDefinitions have been localized only (all references are to ILCore profiles, no other changes):
+		- il-core-activity-definition
+		- il-core-care-plan
+		- il-core-claim-response
+		- il-core-communication
+		- il-core-communication-request
+        - il-core-consent
+		- il-core-device-request
+		- il-core-episode-of-care
+		- il-core-flag
+		- il-core-goal
+		- il-core-healthcare-service
+		- il-core-library
+		- il-core-measure
+		- il-core-measure-report
+		- il-core-nutrition-order
+		- il-core-research-study
+		- il-core-research-subject
+		- il-core-risk-assessment
+		- il-core-task
+
+	- StructureDefinition:
+		- il-core-imaging-study
+		- ext-accession-number
+
+- Modified the following resources:
+	- StructureDefinition:
+		- il-core-patient:
+			- added identifier:entry-permit slice
+		- il-core-encounter:
+			- moved the ext-movement-sequence-number extension to root
+		- il-core-specimen:
+			- overhaul. Make sure to look at the profile page in the IG before use!
+		- ext-movement-sequence-number:
+			- changed value type to String
+	
+	- ValueSet:
+		- il-core-medication-code:
+			- removed unnecessary code-systems from the list"
+                - moh-medication-code
+                - 
+		- il-core-virtual-type:
+			- changed to extensional by updating "children of" to "is-a", thus including the parent code http://snomed.info/sct/185316007 "Indirect encounter (procedure)"
+		- israel-hmo:
+			- added extra designations to most codes, to allow for shorthand names. example: "קופת חולים כללית" (code 101) will now also accept "כללית"
+
+- Removed the following resources:
+	- CodeSystem:
+		- moh-medication-code
+
+
+### Release - 0.14.0
+- Publication date: 10.04.2024
+- Based on FHIR version: 4.0.1
 #### Changes in this version
 - Added the following resources:
 	- StructureDefinition:

@@ -5,12 +5,8 @@ Title: "ILCore ServiceRequest Profile"
 Description: "Israel Core proposed constraints and extensions on the ServiceRequest Resource"
 
 * ^url = $ILServiceRequest
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore ServiceRequest Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ServiceRequest resource profile."
 * . ^isModifier = false
@@ -18,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * status and intent and category and code and subject and occurrence[x] and occurrenceDateTime and occurrencePeriod and authoredOn and requester and reasonCode MS
@@ -30,12 +27,11 @@ Description: "Israel Core proposed constraints and extensions on the ServiceRequ
 * category ^slicing.rules = #open
 * category contains 
     il-core 0..*
+* category[il-core] from $vs-il-core-service-category (required)
 * category[il-core].coding
   * system 1..1
-  * system = $sct
   * code 1..1
   * display 1..1
-* category[il-core] from $vs-il-core-service-category (required)
 * code 1..1
 * code from $vs-il-core-procedure-code (extensible)
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreLocation or ILCoreDevice)

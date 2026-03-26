@@ -1,10 +1,10 @@
-ValueSet: ILCoreVirtualType
+ValueSet: VsILCoreVirtualType
 Id: il-core-virtual-type
 Title: "IL Core Virtual encounter Type Codes"
 Description: "A list of type codes for Virtual Encounters for the IL Core"
 * ^url = $vs-il-core-virtual-type
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #185316007 "Indirect encounter (procedure)"

@@ -2,8 +2,8 @@ CodeSystem: ILCoreErrorCode
 Id: il-core-error-code
 Title: "IL Core Error code"
 Description: "A list of error codes for ILCore profiles"
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^url = $il-core-error-code
 * ^content = #complete
 * ^caseSensitive = false

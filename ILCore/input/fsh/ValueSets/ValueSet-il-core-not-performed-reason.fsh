@@ -1,10 +1,10 @@
-ValueSet: ILCoreNotPerformedReason
+ValueSet: VsILCoreNotPerformedReason
 Id: il-core-not-performed-reason
 Title: "IL Core procedure Reason"
 Description: "A list of codes for procedure reasons for the IL Core"
 * ^url = $vs-not-performed-reason
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $not-performed-reason

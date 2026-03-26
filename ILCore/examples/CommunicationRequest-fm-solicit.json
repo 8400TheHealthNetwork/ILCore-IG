@@ -1,0 +1,122 @@
+{
+  "resourceType": "CommunicationRequest",
+  "id": "fm-solicit",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-communication-request"
+    ]
+  },
+  "contained": [
+    {
+      "resourceType": "Organization",
+      "id": "provider",
+      "meta": {
+        "profile": [
+          "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "http://www.jurisdiction.com/provideroffices",
+          "value": "3456"
+        }
+      ],
+      "name": "מרכז רפואי מאיר"
+    },
+    {
+      "resourceType": "Organization",
+      "id": "payor",
+      "meta": {
+        "profile": [
+          "http://fhir.health.gov.il/StructureDefinition/il-core-organization"
+        ]
+      },
+      "identifier": [
+        {
+          "system": "http://www.jurisdiction.com/insurer",
+          "value": "123456"
+        }
+      ],
+      "name": "משרד הבריאות"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://www.jurisdiction.com/insurer/123456",
+      "value": "ABC123"
+    }
+  ],
+  "basedOn": [
+    {
+      "display": "EligibilityRequest"
+    }
+  ],
+  "replaces": [
+    {
+      "display": "prior CommunicationRequest"
+    }
+  ],
+  "groupIdentifier": {
+    "value": "12345"
+  },
+  "status": "active",
+  "category": [
+    {
+      "coding": [
+        {
+          "code": "SolicitedAttachmentRequest",
+          "system": "http://acme.org/messagetypes"
+        }
+      ]
+    }
+  ],
+  "priority": "routine",
+  "medium": [
+    {
+      "coding": [
+        {
+          "code": "WRITTEN",
+          "system": "http://terminology.hl7.org/CodeSystem/v3-ParticipationMode",
+          "display": "written"
+        }
+      ],
+      "text": "written"
+    }
+  ],
+  "encounter": {
+    "reference": "Encounter/breast-screaning"
+  },
+  "payload": [
+    {
+      "contentString": "Please provide the accident report and any associated pictures to support your Claim# DEF5647."
+    }
+  ],
+  "occurrenceDateTime": "2016-06-10T11:01:10-08:00",
+  "authoredOn": "2016-06-10T11:01:10-08:00",
+  "requester": {
+    "reference": "practitioner/gp"
+  },
+  "recipient": [
+    {
+      "reference": "#provider"
+    }
+  ],
+  "sender": {
+    "reference": "#payor"
+  },
+  "reasonCode": [
+    {
+      "text": "Insurance claim missing documentation"
+    }
+  ],
+  "note": [
+    {
+      "text": "Urgent request for documentation to avoid delay in claim processing."
+    }
+  ],
+  "about": [
+    {
+      "display": "Claim DEF5647"
+    }
+  ]
+}

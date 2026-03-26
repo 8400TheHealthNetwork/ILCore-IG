@@ -1,11 +1,11 @@
-ValueSet: MoHAdmitSource
+ValueSet: VsMoHAdmitSource
 Id: moh-admit-source
 Title: "MoH Admit Source Codes"
 Description: "Codes for admit source according to MoH catalogue"
 
 * ^url = $vs-moh-admit-source
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $patient-admit-source-moh

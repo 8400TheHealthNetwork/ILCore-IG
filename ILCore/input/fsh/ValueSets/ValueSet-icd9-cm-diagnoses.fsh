@@ -1,10 +1,10 @@
-ValueSet: Icd9CmDiagnoses
+ValueSet: VsIcd9CmDiagnoses
 Id: icd9-cm-diagnoses
 Title: "Icd9 Cm diagnoses"
 Description: "All Diagnosis codes from ICD9-CM codesystem"
 * ^url = $vs-icd9-cm-diagnoses
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $icd9-cm#001.0 "Cholera due to vibrio cholerae"

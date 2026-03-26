@@ -2,7 +2,7 @@ Instance: il-prisoner-number
 InstanceOf: NamingSystem
 Usage: #definition
 
-* name = "IDF Service Nuber"
+* name = "Israeli Prisoner Number"
 * status = #active
 * kind = #identifier
 * date = "2024-02-22"

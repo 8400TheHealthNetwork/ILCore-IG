@@ -1,10 +1,10 @@
-ValueSet: ILCoreObservationCode
+ValueSet: VsILCoreObservationCode
 Id: il-core-observation-code
 Title: "IL Core Observation Codes"
 Description: """A list of code codes for observations for the IL Core"""
 * ^url = $vs-il-core-observation-code
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $loinc

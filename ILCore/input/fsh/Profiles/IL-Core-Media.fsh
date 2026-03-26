@@ -5,13 +5,8 @@ Title: "ILCore Media Profile"
 Description: "Israel Core proposed constraints and extensions on the Media Resource"
 
 * ^url = $ILMedia
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
 * . ^short = "ILCore Media Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Media resource profile."
 * . ^isModifier = false
@@ -19,7 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Media Resou
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
-
+* identifier only ILCoreIdentifier
 
 * basedOn only Reference(ILCoreServiceRequest or ILCoreCarePlan)
 * subject only Reference(ILCorePatient or ILCorePractitioner or ILCorePractitionerRole or ILCoreGroup or ILCoreDevice or ILCoreSpecimen or ILCoreLocation) 

@@ -1,10 +1,10 @@
-ValueSet: PassportUri
+ValueSet: VsPassportUri
 Id: passport-uri
 Title: "Passport URIs"
 Description: "A country specific URI for passport numbers"
 * ^url = $vs-pp-uri
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $urn#http://hl7.org/fhir/sid/passport-AFG "Afghanistan"

@@ -1,10 +1,10 @@
-ValueSet: BPComponents
+ValueSet: VsBPComponents
 Id: bp-components
 Title: "Blood Pressure component codes"
 Description: "A list of codes for components in the blood presssure observations reporting"
 * ^url = $vs-bp-components
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * $loinc#8480-6 "Systolic blood pressure"

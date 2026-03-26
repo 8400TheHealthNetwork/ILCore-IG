@@ -5,13 +5,8 @@ Title: "ILCore ImmunizationRecommendation Profile"
 Description: "Israel Core proposed constraints and extensions on the ImmunizationRecommendation Resource"
 
 * ^url = $ILImmunizationRecommendation
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
 * . ^short = "ILCore ImmunizationRecommendation Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the ImmunizationRecommendation resource profile."
 * . ^isModifier = false
@@ -19,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * patient only Reference(ILCorePatient)

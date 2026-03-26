@@ -1,0 +1,118 @@
+{
+  "resourceType": "MedicationAdministration",
+  "id": "morphine-hospitalization",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-medication-administration"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-narcotic-medication",
+      "valueBoolean": true
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-medication-recorded-time",
+      "valueDateTime": "2022-10-11"
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Exmple of a MedicationAdministration - morphine administered during hospitalization. Completed inpatient administration of 15mg of oral morphine every 4 hours as needed by a practitioner to a patient due to a procedure.</div>",
+    "status": "generated"
+  },
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "inpatient",
+        "system": "http://fhir.health.gov.il/cs/il-core-medication-request-category",
+        "display": "Inpatient"
+      }
+    ]
+  },
+  "medicationCodeableConcept": {
+    "coding": [
+      {
+        "code": "373529000",
+        "system": "http://snomed.info/sct",
+        "display": "Morphine (substance)"
+      }
+    ]
+  },
+  "subject": {
+    "reference": "Patient/patient-with-israeli-id",
+    "type": "Patient",
+    "display": "תמר כהן"
+  },
+  "context": {
+    "reference": "Encounter/home-visit",
+    "type": "Encounter"
+  },
+  "effectivePeriod": {
+    "start": "2022-10-05",
+    "end": "2022-10-10"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/practitioner-md",
+        "type": "Practitioner"
+      }
+    }
+  ],
+  "dosage": {
+    "text": "15mg every 4 hours",
+    "route": {
+      "coding": [
+        {
+          "code": "26643006",
+          "system": "http://snomed.info/sct",
+          "display": "Oral route"
+        }
+      ]
+    },
+    "method": {
+      "coding": [
+        {
+          "code": "738995006",
+          "system": "http://snomed.info/sct",
+          "display": "Swallow (administration method)"
+        }
+      ]
+    },
+    "dose": {
+      "value": 15,
+      "unit": "mg",
+      "code": "mg",
+      "system": "http://unitsofmeasure.org"
+    },
+    "rateRatio": {
+      "numerator": {
+        "value": 15,
+        "unit": "mg",
+        "system": "http://snomed.info/sct"
+      },
+      "denominator": {
+        "value": 4,
+        "unit": "hour"
+      }
+    }
+  },
+  "reasonCode": [
+    {
+      "coding": [
+        {
+          "code": "213299007",
+          "system": "http://snomed.info/sct",
+          "display": "Postoperative pain"
+        }
+      ],
+      "text": "Postoperative pain due to procedure"
+    }
+  ],
+  "note": [
+    {
+      "text": "Patient requested analgesia and responded well"
+    }
+  ]
+}

@@ -5,12 +5,10 @@ Title: "ILCore Location Profile"
 Description: "Israel Core proposed constraints and extensions on the Location Resource"
 
 * ^url = $ILLocation
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 * . ^short = "Israel Core Location Profile"
 * . ^definition = "The Location Profile is based upon the core FHIR Location Resource"
 * . ^isModifier = false
@@ -18,9 +16,10 @@ Description: "Israel Core proposed constraints and extensions on the Location Re
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 * . obeys il-location-mode
-
+* . obeys il-location-address
 * status 0..1 MS
 * name 1..1 MS
 * telecom.system 1..1 MS

@@ -1,0 +1,44 @@
+{
+  "resourceType": "SearchParameter",
+  "id": "il-core-parent-name-given",
+  "url": "http://fhir.health.gov.il/SearchParameter/il-core-parent-name-given",
+  "version": "1.0.0",
+  "name": "ILCoreParentNameGiven",
+  "status": "active",
+  "date": "2024-09-13",
+  "publisher": "Israel Core Team",
+  "contact": [
+    {
+      "name": "Israel Core Team",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "tal.primak@moh.gov.il"
+        }
+      ]
+    }
+  ],
+  "description": "Returns resources (e.g. Patient, Practitioner, RelatedPerson) where the AdminParentName extension’s given name matches the specified value.",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "IL",
+          "system": "urn:iso:std:iso:3166"
+        }
+      ]
+    }
+  ],
+  "code": "parent-name-given",
+  "base": [
+    "Patient",
+    "Practitioner",
+    "RelatedPerson",
+    "Person"
+  ],
+  "type": "string",
+  "expression": "extension('http://fhir.health.gov.il/StructureDefinition/ext-administrative-parent-name').extension('given').value",
+  "xpathUsage": "normal",
+  "multipleOr": true,
+  "multipleAnd": false
+}

@@ -1,0 +1,236 @@
+{
+  "resourceType": "Patient",
+  "id": "patient-immigrant",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-patient"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-hmo",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "code": "103",
+            "system": "http://fhir.health.gov.il/cs/paying-entity-moh",
+            "display": "קופת חולים מכבי"
+          }
+        ]
+      }
+    },
+    {
+      "extension": [
+        {
+          "url": "origin",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "USA",
+                "system": "urn:iso:std:iso:3166"
+              }
+            ]
+          }
+        },
+        {
+          "url": "destination",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "IL",
+                "system": "urn:iso:std:iso:3166"
+              }
+            ]
+          }
+        },
+        {
+          "url": "date",
+          "valueDate": "1982-06-30"
+        },
+        {
+          "url": "status",
+          "valueCodeableConcept": {
+            "coding": [
+              {
+                "code": "LA29155-1",
+                "system": "http://loinc.org",
+                "display": "Naturalized citizen"
+              }
+            ]
+          }
+        }
+      ],
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-patient-immigration"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/patient-birthPlace",
+      "valueAddress": {
+        "line": [
+          "New york City, NY, USA"
+        ],
+        "country": "USA"
+      }
+    },
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-core-birthsex",
+      "valueCode": "M"
+    }
+  ],
+  "name": [
+    {
+      "extension": [
+        {
+          "url": "http://hl7.org/fhir/StructureDefinition/language",
+          "valueCode": "he"
+        }
+      ],
+      "family": "כהן",
+      "given": [
+        "תמר"
+      ],
+      "text": "תמר כהן"
+    }
+  ],
+  "address": [
+    {
+      "line": [
+        "אילת 34"
+      ],
+      "_line": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-streetName",
+              "valueString": "אילת"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-houseNumber",
+              "valueString": "34"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID",
+              "valueString": "2"
+            },
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox",
+              "valueString": "1446"
+            }
+          ]
+        }
+      ],
+      "extension": [
+        {
+          "extension": [
+            {
+              "url": "longitude",
+              "valueDecimal": 34.764885
+            },
+            {
+              "url": "latitude",
+              "valueDecimal": 32.058317
+            }
+          ],
+          "url": "http://hl7.org/fhir/StructureDefinition/geolocation"
+        }
+      ],
+      "use": "home",
+      "type": "physical",
+      "text": "אילת 34 תל אביב דירה 2",
+      "city": "תל אביב",
+      "_city": {
+        "extension": [
+          {
+            "url": "http://fhir.health.gov.il/StructureDefinition/ext-city-code",
+            "valueCodeableConcept": {
+              "coding": [
+                {
+                  "code": "5000",
+                  "system": "http://fhir.health.gov.il/cs/city-symbol"
+                }
+              ]
+            }
+          }
+        ]
+      },
+      "postalCode": "6684501",
+      "district": "תל אביב",
+      "country": "IL"
+    }
+  ],
+  "contact": [
+    {
+      "relationship": [
+        {
+          "coding": [
+            {
+              "code": "PRN",
+              "system": "http://terminology.hl7.org/CodeSystem/v3-RoleCode"
+            }
+          ]
+        }
+      ],
+      "name": {
+        "given": [
+          "Baruch"
+        ],
+        "family": "Cohen"
+      },
+      "telecom": [
+        {
+          "extension": [
+            {
+              "url": "http://hl7.org/fhir/StructureDefinition/contactpoint-purpose",
+              "valueCodeableConcept": {
+                "coding": [
+                  {
+                    "code": "EP",
+                    "system": "http://terminology.hl7.org/CodeSystem/v2-0131",
+                    "display": "Emergency contact person"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "text": {
+    "div": "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient - immigrant</div>",
+    "status": "generated"
+  },
+  "identifier": [
+    {
+      "system": "http://fhir.health.gov.il/identifier/il-national-id",
+      "value": "000000018"
+    }
+  ],
+  "active": true,
+  "telecom": [
+    {
+      "system": "phone",
+      "value": "0524679111",
+      "use": "home"
+    },
+    {
+      "system": "email",
+      "value": "Israel@example.com"
+    }
+  ],
+  "gender": "male",
+  "birthDate": "1951-04-17",
+  "communication": [
+    {
+      "language": {
+        "coding": [
+          {
+            "system": "urn:ietf:bcp:47",
+            "code": "ar",
+            "display": "Arabic"
+          }
+        ]
+      }
+    }
+  ],
+  "deceasedBoolean": false
+}

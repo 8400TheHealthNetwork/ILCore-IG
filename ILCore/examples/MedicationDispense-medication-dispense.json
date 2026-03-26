@@ -1,0 +1,96 @@
+{
+  "resourceType": "MedicationDispense",
+  "id": "medication-dispense",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-medication-dispense"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-medication-recorded-time",
+      "valueDateTime": "2024-05-21T14:00:00Z"
+    }
+  ],
+  "status": "completed",
+  "category": {
+    "coding": [
+      {
+        "code": "community-hmo",
+        "system": "http://fhir.health.gov.il/cs/il-core-medication-request-category",
+        "display": "Community Care/HMO"
+      }
+    ]
+  },
+  "medicationReference": {
+    "reference": "Medication/paracetamol"
+  },
+  "subject": {
+    "reference": "Patient/patient-israeli-with-statistical-area"
+  },
+  "performer": [
+    {
+      "actor": {
+        "reference": "Practitioner/practitioner-md"
+      }
+    }
+  ],
+  "authorizingPrescription": [
+    {
+      "reference": "MedicationRequest/metamizole-for-gangreenous-tonsolitis"
+    }
+  ],
+  "type": {
+    "coding": [
+      {
+        "code": "RFP",
+        "system": "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+        "display": "Refill - Part Fill"
+      }
+    ]
+  },
+  "quantity": {
+    "value": 10,
+    "unit": "Tablet",
+    "system": "http://snomed.info/sct",
+    "code": "428673006"
+  },
+  "whenHandedOver": "2024-05-21T14:30:00Z",
+  "dosageInstruction": [
+    {
+      "sequence": 1,
+      "text": "Take one tablet daily",
+      "timing": {
+        "repeat": {
+          "frequency": 1,
+          "period": 1,
+          "periodUnit": "d"
+        }
+      },
+      "doseAndRate": [
+        {
+          "doseQuantity": {
+            "value": 1,
+            "unit": "Tablet",
+            "system": "http://snomed.info/sct",
+            "code": "428673006"
+          }
+        }
+      ]
+    }
+  ],
+  "location": {
+    "display": "בית מרקחת כללית - סניף גדרה"
+  },
+  "context": {
+    "reference": "Encounter/community-clinic-visit"
+  },
+  "destination": {
+    "display": "מסירה ידנית למטופל בבית המרקחת"
+  },
+  "note": [
+    {
+      "text": "הרוקחת הסבירה למטופל על תופעות לוואי אפשריות וביקשה להימנע מאלכוהול"
+    }
+  ]
+}

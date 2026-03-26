@@ -1,0 +1,53 @@
+{
+  "resourceType": "MolecularSequence",
+  "id": "simple-sequence",
+  "meta": {
+    "profile": [
+      "http://fhir.health.gov.il/StructureDefinition/il-core-molecular-sequence"
+    ]
+  },
+  "type": "dna",
+  "coordinateSystem": 1,
+  "patient": {
+    "reference": "Patient/patient-israeli"
+  },
+  "referenceSeq": {
+    "referenceSeqId": {
+      "coding": [
+        {
+          "code": "NC_000009.11",
+          "system": "http://www.ncbi.nlm.nih.gov/nuccore"
+        }
+      ]
+    },
+    "strand": "watson",
+    "windowStart": 22125500,
+    "windowEnd": 22125510
+  },
+  "variant": [
+    {
+      "start": 22125503,
+      "end": 22125504,
+      "observedAllele": "C",
+      "referenceAllele": "G"
+    }
+  ],
+  "repository": [
+    {
+      "type": "openapi",
+      "url": "http://grch37.rest.ensembl.org/ga4gh/variants/3:rs1333049?content-type=application/json",
+      "name": "GA4GH API",
+      "variantsetId": "3:rs1333049"
+    }
+  ],
+  "identifier": [
+    {
+      "system": "http://fhir.health.gov.il/identifier/sequence",
+      "value": "rs1333049"
+    }
+  ],
+  "performer": {
+    "reference": "Practitioner/practitioner-md",
+    "display": "Dr. Moshe Ben Haim"
+  }
+}

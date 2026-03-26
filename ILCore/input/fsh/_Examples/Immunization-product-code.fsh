@@ -1,4 +1,4 @@
-Instance:   Immunization-with-product-code
+Instance:   immunization-with-product-code
 InstanceOf: ILCoreImmunization
 
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Immunization with a Product code and SNOMED code</div>"
@@ -15,3 +15,9 @@ InstanceOf: ILCoreImmunization
 * primarySource = true
 * lotNumber = "12345"
 * site = $sct#368208006 "Left upper arm structure (body structure)"
+// תוספות מוצעות
+* performer.actor = Reference(Practitioner/practitioner-md) "Dr. Dana Mor"
+* note.text = "Administered as part of school immunization program"
+* doseQuantity.value = 0.5
+* doseQuantity.unit = "mL"
+* route = $sct#78421000 "Intramuscular route (qualifier value)"

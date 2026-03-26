@@ -1,11 +1,11 @@
-ValueSet: DepartmentTypeMoH
+ValueSet: VsDepartmentTypeMoH
 Id: department-type-moh
 Title: "Department Type MoH"
 Description: "Israel ministry of health coding system for department types"
 
-* ^status = #draft
+* ^status = #active
 * ^url = $vs-department-type-moh
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $department-type-moh

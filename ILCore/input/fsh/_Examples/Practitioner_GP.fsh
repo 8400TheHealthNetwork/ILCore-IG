@@ -7,6 +7,10 @@ Usage: #example
 
 * identifier[prac-lic].system = $practitioner-license-moh
 * identifier[prac-lic].value = "1-22947"
+* identifier[il-id].value = "000000018"
+* identifier[ppn].type = $id-type#PPN
+* identifier[ppn].system = $urn#http://hl7.org/fhir/sid/passport-USA "United States"
+* identifier[ppn].value = "8876543"
 * active = true
 * name.prefix = "דר'"
 * name.family = "גרינפלד"
@@ -20,7 +24,7 @@ Usage: #example
 * telecom[1].value = "DG@example.com"
 * gender = #female
 * birthDate = "1979-04-30"
-* qualification[+].identifier[0].system = $practitioner-certificate
+* qualification[+].identifier[0].system = $practitioner-license-moh
 * qualification[=].identifier[0].value = "1-22947"
 * qualification[=].identifier[0].period.start = "2012-09-06"
 * qualification[=].code = $pract-certificate-type-moh#2 "רשיון קבוע"

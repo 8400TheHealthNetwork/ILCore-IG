@@ -4,10 +4,10 @@ Title: "Patient Realease Type MoH"
 Description: "Moh Codes for Patient Realease Type 
  **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 
-* ^status = #draft
+* ^status = #active
 * ^url = $patient-release-type-moh
 * ^content = #example
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = true
 * ^extension[0].url = $effective

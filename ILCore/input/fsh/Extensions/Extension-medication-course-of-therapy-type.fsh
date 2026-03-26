@@ -4,9 +4,9 @@ Title: "Ext: Medication Course-Of-Therapy Type"
 Description: "Extension: A coded representation of the type of course-of-therapy"
 
 * ^url = $ext-medication-course-of-therapy-type
-* ^version = "0.14.2"
-* insert CurrentDate
-* ^status = #draft
+* insert ConformanceMetadata
+
+* ^status = #active
 * ^context.type = #element
 * ^context.expression = "MedicationStatement"
 * value[x] only CodeableConcept

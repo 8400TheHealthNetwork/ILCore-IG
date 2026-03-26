@@ -1,10 +1,10 @@
-ValueSet: PractitionerCertificateType
+ValueSet: VsPractitionerCertificateType
 Id: practitioner-certificate-type
 Title: "Practitioner Certificate Types"
 Description: "A list of codes for certificate types for all medical practitioners"
 * ^url = $vs-pract-certificate-type
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 // codes from certificate type MoLSA

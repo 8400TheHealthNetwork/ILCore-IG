@@ -1,0 +1,63 @@
+Instance:  mammography
+InstanceOf: ILCoreImagingStudy
+Usage: #example
+*  status = #available
+*  identifier[uid].system  = "urn:dicom:uid"
+*  identifier[uid].value = "1234"
+// *  extension[accession-num].valueIdentifier = 9876
+*  extension[accession-num].valueIdentifier.type = $id-type#ACSN "Accession ID"
+*  modality.system = "https://dicom.nema.org" 
+*  modality.code = #MG
+*  modality.display = "Mammography"
+*  subject.reference = "Patient/patient-with-israeli-id"
+*  encounter.reference = "Encounter/breast-screaning"
+*  started = "2020-06-20T12:49:00+02:00"
+*  basedOn.reference = "ServiceRequest/456"
+*  referrer.reference = "Practitioner/practitioner-md"
+*  interpreter.reference = "Practitioner/practitioner-md"
+*  numberOfSeries = 1
+*  numberOfInstances = 4
+*  procedureCode.coding[0].system = "http://loinc.org"
+*  procedureCode.coding[0].code = #39152-4
+*  procedureCode.coding[0].display = "FFD mammogram Breast Diagnostic"
+*  location.reference = "Location/hospital-unit"
+*  reasonCode.coding[0].system = $sct
+*  reasonCode.coding[0].code = #89164003
+*  reasonCode.coding[0].display = "Breast lump"
+*  reasonReference.reference = "Condition/9876"
+*  series.uid = "1.2.840.113619.2.55.3.283116435.20230215154500.3"
+*  series.number = 1
+*  series.modality.system = "https://dicom.nema.org/medical/dicom/current/output/chtml/part16/sect_CID_29.html"
+*  series.modality.code = #MG
+*  series.modality.display = "Mammography"
+*  series.numberOfInstances = 4
+*  series.bodySite.system = $sct
+*  series.bodySite.code = #361716006
+*  series.bodySite.display = "Entire left breast"
+*  series.started = "2020-06-20T12:49:00+02:00"
+*  series.performer.actor.reference = "Practitioner/practitioner-md"
+*  series.instance[0].uid = "1.2.840.118719.2.55.3.283116435.20230215159800.5"
+*  series.instance[0].sopClass.system = "urn:ietf:rfc:3986"
+// *  series.instance[0].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2
+*  series.instance[0].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2  // show Erez this missing prefix (urn:oid)
+*  series.instance[0].sopClass.display = "Digital Mammography X-Ray Image Storage - For Presentation"
+*  series.instance[0].number = 1
+*  series.instance[1].uid = "1.2.840.118719.2.55.3.283116435.20230215159800.6"
+*  series.instance[1].sopClass.system = "urn:ietf:rfc:3986"
+*  series.instance[1].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2
+*  series.instance[1].sopClass.display = "Digital Mammography X-Ray Image Storage - For Presentation"
+*  series.instance[1].number = 2
+*  series.instance[2].uid = "1.2.840.118719.2.55.3.283116435.20230215159800.7"
+*  series.instance[2].sopClass.system = "urn:ietf:rfc:3986"
+*  series.instance[2].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2
+*  series.instance[2].sopClass.display = "Digital Mammography X-Ray Image Storage - For Presentation"
+*  series.instance[2].number = 3
+*  series.instance[3].uid = "1.2.840.118719.2.55.3.283116435.20230215159800.8"
+*  series.instance[3].sopClass.system = "urn:ietf:rfc:3986"
+*  series.instance[3].sopClass.code = #urn:oid:1.2.840.10008.5.1.4.1.1.1.2
+*  series.instance[3].sopClass.display = "Digital Mammography X-Ray Image Storage - For Presentation"
+*  series.instance[3].number = 4
+// תוספות מוצעות
+* description = "Routine diagnostic mammography exam following reported breast lump"
+* note.text = "Patient reported slight discomfort during compression"
+

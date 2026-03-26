@@ -3,9 +3,9 @@ Id: ext-administrative-parent-name
 Title: "Ext: Administrative Parent Name"
 Description: "Extension: The name of a person’s parent, recorded for administrative purposes as part of the person’s demographics (e.g to help with identification). This SHOULD NOT be confused with a parent whose details are recorded for contact purposes (Patient.contact) or as a family member (RelatedPerson). Most systems will use the “father’s name” field as the source of data for this extension. NOTE: This extension replaces the old ParentName extension and is the PREFFERED extension. Note: there SHOULD be only one parent marked as 'official'"
 * ^url = $ext-admin-parent-name
-* ^version = "0.14.2"
-* insert CurrentDate
-* ^status = #draft
+* insert ConformanceMetadata
+
+* ^status = #active
 * ^context[0].type = #element
 * ^context[0].expression = "Patient"
 * ^context[+].type = #element
@@ -44,3 +44,29 @@ Description: "Extension: The name of a person’s parent, recorded for administr
 * extension[official].value[x] only boolean
 * extension[official].valueBoolean ^example.valueBoolean = true
 * extension[official].valueBoolean ^example.label = "Valid Example"
+
+// Profile: FatherName
+// Parent: AdminParentName
+// Id: ext-father-name
+// Title: "Father Name"
+// Description: "Profile on ILCore extension Administrative-parent-name for father name"
+// * extension[role] 1..1
+// * extension[role].valueCode 1..1
+// * extension[role].valueCode = #FTH (exactly)
+
+// Profile: MotherName
+// Parent: AdminParentName
+// Id: ext-mother-name
+// Title: "Mother Name"
+// Description: "Profile on ILCore extension Administrative-parent-name for mother name"
+// * extension[role] 1..1
+// * extension[role].valueCode 1..1
+// * extension[role].valueCode = #MTH (exactly)
+
+// Profile: HearingLossDisability
+// Id: ext-hearing-loss
+// Parent: http://hl7.org/fhir/StructureDefinition/patient-disability
+
+// * valueCodeableConcept 1..1
+// * valueCodeableConcept.coding 1..*
+// * valueCodeableConcept.coding = $sct#15188001 "Hearing loss (disorder)" (exactly)

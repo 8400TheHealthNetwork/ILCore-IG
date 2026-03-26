@@ -4,11 +4,11 @@ Title: "Patient Mode of Arrival MoH"
 Description: "MoH Codes for Patient Mode of Arrival 
  **Note that this code system is not yet finalized and approved and might change in the future. It's provided only for general reference.**"
 
-* ^status = #draft
+* ^status = #active
 * ^url = $patient-mode-of-arrival-moh
 * ^content = #example
 * ^valueSet = $vs-patient-mode-of-arrival-moh
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = true
 

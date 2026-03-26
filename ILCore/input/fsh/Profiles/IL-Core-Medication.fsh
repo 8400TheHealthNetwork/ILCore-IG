@@ -5,13 +5,8 @@ Title: "ILCore Medication Profile"
 Description: "Israel Core proposed constraints and extensions on the Medication Resource"
 
 * ^url = $ILMedication
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore Medication Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Medication resource profile."
 * . ^isModifier = false
@@ -19,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Medication 
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * extension contains $ext-narcotic-medication named narcotic 0..1

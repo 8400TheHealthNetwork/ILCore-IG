@@ -4,9 +4,9 @@ Id: practitioner-advanced-course-moh
 Title: "Ministry of Health practitioner advanced courses codes"
 Description: "Codes for practitioner advanced courses according to Israeli MoH"
 
-* ^status = #draft
+* ^status = #active
 * ^url = $practitioner-advanced-course-moh
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^content = #complete
 * ^caseSensitive = false
 * ^experimental = false

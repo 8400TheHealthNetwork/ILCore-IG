@@ -1,10 +1,10 @@
-ValueSet: ILCoreServiceType
+ValueSet: VsILCoreServiceType
 Id: il-core-service-type
 Title: "IL Core Service type"
 Description: "A list of codes for Service types for the IL Core"
 * ^url = $vs-il-core-service-type
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #224891009 "Healthcare services (qualifier value)"

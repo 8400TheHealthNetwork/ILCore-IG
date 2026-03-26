@@ -1,0 +1,1 @@
+Detected FSH entity definitions with duplicate names.*

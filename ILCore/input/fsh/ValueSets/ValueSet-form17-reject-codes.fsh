@@ -1,11 +1,11 @@
-ValueSet: Tofes17RejectCodes
+ValueSet: VsTofes17RejectCodes
 Id: tofes17-reject-codes
 Title: "Tofes17 Reject Codes"
 Description: "קודי שגיאה לתהליכים הקשורים לטופס 17"
 
 * ^url = $vs-tofes17-reject-codes
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 * ^publisher = "Israeli Ministry of Health, Digital Health Unit"
 * ^contact[0].telecom[0].system = #email

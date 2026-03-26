@@ -1,11 +1,11 @@
-ValueSet: PractitionerProfessionMoH
+ValueSet: VsPractitionerProfessionMoH
 Id: practitioner-profession-moh
 Title: "קוד מקצוע לעוסק בבריאות"
 Description: "קוד מקצוע לעוסק בבריאות לפי רישוי משרד הבריאות. שימו לב: מקצועות הסיעוד הוחרגו מרשימה זו ונמצאים ברשימה נפרדת"
 
 * ^url = $vs-practitioner-profession-moh
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $practitioner-profession-moh

@@ -1,10 +1,10 @@
-ValueSet: ILCoreDoctorToDoctor
+ValueSet: VsILCoreDoctorToDoctor
 Id: il-core-doctor-to-doctor
 Title: "IL Core Doctor To Doctor Codes"
 Description: "Codes for Doctor To Doctor encounter for the IL Core"
 * ^url = $vs-il-core-doctor-to-doctor
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
-* $sct#1268903003 "Consultation by multidisciplinary team (procedure)"
+* include codes from system $sct where concept is-a #11429006 "Consultation"

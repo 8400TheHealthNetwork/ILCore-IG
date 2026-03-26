@@ -5,12 +5,8 @@ Title: "ILCore Goal Profile"
 Description: "Israel Core proposed constraints and extensions on the Goal Resource"
 
 * ^url = $ILGoal
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
 
 * . ^short = "ILCore Goal Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Goal resource profile."
@@ -19,6 +15,7 @@ Description: "Israel Core proposed constraints and extensions on the Goal Resour
 * ^extension[=].valueCode = #draft
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 0
+* identifier only ILCoreIdentifier
 
 * subject only Reference(ILCorePatient or ILCoreGroup or ILCoreOrganization)
 * expressedBy only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson)

@@ -1,11 +1,11 @@
-ValueSet: Tofes17ErrorCodes
+ValueSet: VsTofes17ErrorCodes
 Id: tofes17-error-codes
 Title: "Tofes17 Error Codes"
 Description: "קודי שגיאה לתהליכים הקשורים לטופס 17"
 
 * ^url = $vs-tofes17-error-codes
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 * ^publisher = "Israeli Ministry of Health, Digital Health Unit"
 * ^contact[0].telecom[0].system = #email

@@ -4,11 +4,11 @@ Title: "Hebrew Date Day"
 Description: "Codes for Hebrew date days"
 
 
-* ^status = #draft
+* ^status = #active
 * ^url = $hebrew-date-day
 * ^content = #complete
 * ^valueSet = $vs-hebrew-date-day
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^caseSensitive = false
 * ^experimental = false
 

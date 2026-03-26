@@ -1,4 +1,3 @@
-Alias: $HL7medreqCOT = http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy
 Instance: metamizole-for-gangreenous-tonsolitis
 InstanceOf: ILCoreMedicationRequest
 Usage: #example
@@ -8,12 +7,12 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 * text.status = #generated
 * status = #completed
 * intent = #order
-* category[0].coding[0] = $il-core-medication-category#community-hmo "Community Care/HMO"
+* category[0].coding[0] = $il-core-medication-request-category#community-hmo "Community Care/HMO"
 * medicationCodeableConcept.coding[0] = $sct#22165008 "Metamizole sodium (substance)"
-* subject.reference = "Patient/1"
+* subject.reference = "Patient/patient-immigrant"
 * subject.type = "Patient"
 * subject.display = "Ben Binyamini"
-* encounter.reference = "Encounter/123"
+* encounter.reference = "Encounter/community-consultation"
 * encounter.type = "Encounter" 
 * encounter.display = "GP HMO visit"
 * authoredOn = "2022-12-10"
@@ -21,11 +20,11 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 * requester.type = "Practitioner" 
 * requester.display = "Dr. Moshe Ben Haim"
 * supportingInformation[bodyWeight].type = "Observation"  
-* supportingInformation[bodyWeight].reference = "Observation/1"
-* recorder.reference = "Practitioner/10"
+* supportingInformation[bodyWeight].reference = "Observation/hight-measurement"
+* recorder.reference = "Practitioner/practitioner-md"
 // * recorder.type = GP // can't be right
 * reasonCode.coding = $sct#652005 "Gangrenous tonsillitis"
-* courseOfTherapyType.coding = $HL7medreqCOT#acute "Short course (acute) therapy"
+* courseOfTherapyType.coding = http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy#acute "Short course (acute) therapy"
 * dosageInstruction.text =  "10 טיפות כל 8 שעות עד 3 פעמים בבליעה דרך הפה"
 * dosageInstruction.route.coding[0] = $sct#26643006 "Oral route"
 * dosageInstruction.method.coding[0] = $sct#738995006 "Swallow (administration method)"
@@ -40,5 +39,13 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 // * dispenseRequest.numberOfRepeatsAllowed = 3  // this is wrong
 * substitution.allowedBoolean = true
 
+//תוספות
 
-
+* dispenseRequest.validityPeriod.start = "2022-05-10"
+* dispenseRequest.validityPeriod.end = "2022-12-24"
+* dispenseRequest.quantity.value = 30
+* dispenseRequest.quantity.unit = "drop"
+* dispenseRequest.expectedSupplyDuration.value = 14
+* dispenseRequest.expectedSupplyDuration.unit = "day"
+* extension[narcotic].valueBoolean = false
+* extension[recorded].valueDateTime = "2022-10-11"

@@ -1,11 +1,11 @@
-ValueSet: OrganizationType
+ValueSet: VsOrganizationType
 Id: organization-type
 Title: "Organization Type"
 Description: "SNOMED based value set of recommended types of organizations and organization units"
 
 * ^url = $vs-organization-type
-* ^status = #draft
-* ^version = "0.14.2"
+* ^status = #active
+* insert ConformanceMetadata
 * ^experimental = false
 
 * include codes from system $sct where concept is-a #285201006 "Hospital environment (environment)"

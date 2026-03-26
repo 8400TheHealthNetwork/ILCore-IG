@@ -8,6 +8,10 @@ Usage: #example
 * identifier[0].system = $il-id
 * identifier[0].value = "000000018"
 * extension[hmo].valueCodeableConcept = $payer#103 "קופת חולים מכבי"
+* extension[parentName]
+  * extension[given].valueString = "אברהם"
+  * extension[role].valueCode = #FTH
+  * extension[official].valueBoolean = true
 * active = true
 * name.family = "חרזי"
 * name.given = "רונן"

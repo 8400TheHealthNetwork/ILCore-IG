@@ -5,13 +5,8 @@ Title: "ILCore Observation Profile"
 Description: "Israel Core proposed constraints and extensions on the Observation Resource"
 
 * ^url = $ILObservation
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
-
+* insert ConformanceMetadata
+* ^status = #active
 * . ^short = "ILCore Observation Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Observation resource profile."
 * . ^isModifier = false
@@ -19,6 +14,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * status and category and code and subject and value[x] MS
@@ -37,8 +33,10 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * device only Reference(ILCoreDevice or DeviceMetric)
 * referenceRange.low obeys il-obs-ucum
 * referenceRange.high obeys il-obs-ucum
-* referenceRange.age.low from $age-units
-* referenceRange.age.high from $age-units
+* referenceRange.age.low.system = $ucum (exactly)
+* referenceRange.age.low.code from $age-units (required)
+* referenceRange.age.high.system = $ucum (exactly)
+* referenceRange.age.high.code from $age-units (required)
 * hasMember only Reference(ILCoreObservation or ILCoreQuestionnaireResponse or MolecularSequence)
 * derivedFrom only Reference(ILCoreDocumentReference or ILCoreImagingStudy or ILCoreMedia or ILCoreQuestionnaireResponse or ILCoreObservation or ILCoreMolecularSequence)
 * dataAbsentReason.coding ^slicing.discriminator.type = #value
@@ -47,7 +45,7 @@ Description: "Israel Core proposed constraints and extensions on the Observation
 * dataAbsentReason.coding contains 
     not-performed-reason 0..1
 // * dataAbsentReason.coding[not-performed-reason] from $vs-not-performed-reason (required)
-* dataAbsentReason.coding[not-performed-reason].system = $not-performed-reason
+* dataAbsentReason.coding[not-performed-reason].system = $not-performed-reason (exactly)
 * dataAbsentReason.coding[not-performed-reason].system 1..1
 * dataAbsentReason.coding[not-performed-reason].code 1..1
 * dataAbsentReason obeys il-obs-not-performed

@@ -5,12 +5,12 @@ Usage: #example
 * text.div = "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient with missing</div>"
 * text.status = #generated
 
-* identifier[0].system = $il-id
-* identifier[0].value = "000000018"
+* identifier[enc-il-id].system = $enc
+* identifier[enc-il-id].value = "ghblsdmdma"
 * extension[hmo].valueCodeableConcept = $payer#104 "קופת חולים מאוחדת"
 * extension[hmo].valueCodeableConcept.text = "קופת חולים מאוחדת"
 * active = true
-* name.extension[dataAbsentReason].valueCode = #masked
+// * name.extension[dataAbsentReason].valueCode = #masked
 * name.extension[language].valueCode = #he
 * name.family.extension[$data-absent-reason].valueCode = #masked
 * name.given.extension[$data-absent-reason].valueCode = #masked

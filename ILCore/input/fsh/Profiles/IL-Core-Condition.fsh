@@ -5,12 +5,8 @@ Title: "ILCore Condition Profile"
 Description: "Israel Core proposed constraints and extensions on the Condition Resource"
 
 * ^url = $ILCondition
-* ^version = "0.14.2"
-* ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+* insert ConformanceMetadata
+* ^status = #active
 
 * . ^short = "ILCore Condition Profile"
 * . ^definition = "Israel Core proposed constraints and extensions on the Condition resource profile."
@@ -19,14 +15,19 @@ Description: "Israel Core proposed constraints and extensions on the Condition R
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 
 * clinicalStatus MS
 * verificationStatus MS
 * category 1..* MS
-* category from $vs-il-core-condition-category (extensible)
-* category ^example.valueCodeableConcept = $condition-category#encounter-diagnosis "Encounter Diagnosis"
-* category ^example.label = "Valid Example"
+* category ^slicing.discriminator.type = #pattern
+* category ^slicing.discriminator.path = "$this"
+* category ^slicing.rules = #open
+* category contains ilcore 1..*
+* category[ilcore] from $vs-il-core-condition-category (required)
+* category[ilcore] ^example.valueCodeableConcept = $condition-category#encounter-diagnosis "Encounter Diagnosis"
+* category[ilcore] ^example.label = "Valid Example"
 * code 1..1 MS
 * code from $vs-il-core-condition-code (extensible)
 * code obeys il-condition-sct 
@@ -36,6 +37,9 @@ Description: "Israel Core proposed constraints and extensions on the Condition R
 * subject only Reference(ILCorePatient or ILCoreGroup)
 * encounter only Reference(ILCoreEncounter)
 * recorder only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson)
+* recorder.extension contains http://hl7.org/fhir/StructureDefinition/alternate-reference named alternate-reference 0..1
+* recorder.extension[alternate-reference].url = "http://hl7.org/fhir/StructureDefinition/alternate-reference" (exactly)
+* recorder.extension[alternate-reference].valueReference only Reference(ILCoreDevice)
 * asserter only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCorePatient or ILCoreRelatedPerson)
 * stage.assessment only Reference(ClinicalImpression or ILCoreDiagnosticReport or ILCoreObservation)
 * bodySite ^example.valueCodeableConcept = $sct#49521004 "Left external ear structure"

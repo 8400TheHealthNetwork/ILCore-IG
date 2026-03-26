@@ -6,12 +6,10 @@ Title: "ILCore ActivityDefinition Profile"
 Description: "Adds several Israel-specific extensions and constraints, plus geocode extension to the ActivityDefinition datatype"
 
 * ^url = $ILActivityDefinition
-* ^version = "0.14.2"
+* insert ConformanceMetadata
 * ^status = #draft
-* insert CurrentDate
-* ^publisher = "Israel Core Team"
-* ^contact[0].telecom[0].system = #email
-* ^contact[0].telecom[0].value = "tal.primak@moh.gov.il"
+
+
 * ^contact[0].telecom[0].use = #work
 * ^jurisdiction[0] = urn:iso:std:iso:3166#IL
 * ^copyright = "Israeli Ministry of Health" 
@@ -20,6 +18,7 @@ Description: "Adds several Israel-specific extensions and constraints, plus geoc
 * ^extension[=].valueCode = #trial-use
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-fmm"
 * ^extension[=].valueInteger = 1
+* identifier only ILCoreIdentifier
 
 * subjectReference only Reference(ILCoreGroup)
 * library only Canonical(ILCoreLibrary)

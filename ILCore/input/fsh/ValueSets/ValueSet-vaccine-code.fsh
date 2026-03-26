@@ -1,4 +1,4 @@
-ValueSet: VaccineCode
+ValueSet: VsVaccineCode
 Id: vaccine-code
 Title: "Vaccine Codes"
 Description: "A list of SNOMED codes for vaccines"

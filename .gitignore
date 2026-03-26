@@ -22,3 +22,5 @@ Files to add later on
 ILCore/validator_cli.jar
 ILCore/examples
 *gitignore*
+ILCore/validator_cli_output.ex.html
+ILCore/validator_cli_output.ex.html

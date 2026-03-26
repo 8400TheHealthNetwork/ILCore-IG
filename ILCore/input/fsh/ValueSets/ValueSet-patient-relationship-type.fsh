@@ -1,5 +1,5 @@
 
-ValueSet: ILCorePatientRelationshipType
+ValueSet: VsILCorePatientRelationshipType
 Id: patient-relationship-type
 Title: "IL Core Patient Relationship Type codes"
 Description: "A set of codes that can be used to indicate the relationship between a Patient and a Related Person."

@@ -1,4 +1,4 @@
-ValueSet: ILCoreUnitsOfMeasure
+ValueSet: VsILCoreUnitsOfMeasure
 Id: il-core-units-of-measure
 Title: "IL Core Units Of Measure Codes"
 Description: "A list of codes for Units Of Measure for the IL Core. <mark>Note:</mark> UCUM code SHALL be used, unless one cannot be found, in which case a SNOMED-CT code SHALL be used"

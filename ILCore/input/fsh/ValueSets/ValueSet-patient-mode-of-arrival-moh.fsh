@@ -1,5 +1,5 @@
 
-ValueSet: PatientModeOfArrivalMoH
+ValueSet: VsPatientModeOfArrivalMoH
 Id: patient-mode-of-arrival-moh
 Title: "Patient Mode of Arrival MoH"
 Description: "Moh Codes for Patient Mode of Arrival 

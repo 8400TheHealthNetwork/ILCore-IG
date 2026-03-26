@@ -1,4 +1,4 @@
-ValueSet: ILCoreManifestation
+ValueSet: VsILCoreManifestation
 Id: il-core-manifestation
 Title: "IL Core Condition Codes"
 Description: "A list of codes for intolerance manifestation for the IL Core"

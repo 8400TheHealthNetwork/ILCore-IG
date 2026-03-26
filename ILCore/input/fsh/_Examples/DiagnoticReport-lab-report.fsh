@@ -1,10 +1,9 @@
-Alias: $v2-0074 = http://terminology.hl7.org/CodeSystem/v2-0074
 
 Instance: diagnostic-lab-report
 InstanceOf: ILCoreDiagnosticReport
 Usage: #example
 * status = #final
-* category = $v2-0074#LAB "Laboratory"
+* category = http://terminology.hl7.org/CodeSystem/v2-0074#LAB "Laboratory"
 * code = $loinc#57698-3 "Lipid panel with direct LDL - Serum or Plasma"
 * code.text = "Lipid Panel Report"
 * subject = Reference(Patient/patient-with-israeli-id) "תמר כהן"

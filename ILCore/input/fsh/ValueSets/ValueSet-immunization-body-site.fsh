@@ -1,4 +1,4 @@
-ValueSet: ImmunizationBodySite
+ValueSet: VsImmunizationBodySite
 Id: immunization-body-site
 Title: "Immunization Observation Body Site list"
 Description: "All codes from SNOMED CT describing body sites for Immunization Observation"

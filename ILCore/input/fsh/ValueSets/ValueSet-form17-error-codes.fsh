@@ -1,4 +1,4 @@
-ValueSet: Tofes17ErrorCodes
+ValueSet: VsTofes17ErrorCodes
 Id: tofes17-error-codes
 Title: "Tofes17 Error Codes"
 Description: "קודי שגיאה לתהליכים הקשורים לטופס 17"

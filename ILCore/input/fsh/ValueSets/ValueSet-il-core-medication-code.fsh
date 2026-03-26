@@ -1,4 +1,4 @@
-ValueSet: ILCoreMedicationCode
+ValueSet: VsILCoreMedicationCode
 Id: il-core-medication-code
 Title: "ILCore Medication Code"
 Description: "Codes for medications according to ILCore catalogue"

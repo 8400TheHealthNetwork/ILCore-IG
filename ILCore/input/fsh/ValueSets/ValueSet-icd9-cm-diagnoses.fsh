@@ -1,4 +1,4 @@
-ValueSet: Icd9CmDiagnoses
+ValueSet: VsIcd9CmDiagnoses
 Id: icd9-cm-diagnoses
 Title: "Icd9 Cm diagnoses"
 Description: "All Diagnosis codes from ICD9-CM codesystem"

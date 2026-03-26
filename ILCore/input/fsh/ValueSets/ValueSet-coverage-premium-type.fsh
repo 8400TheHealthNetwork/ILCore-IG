@@ -1,4 +1,4 @@
-ValueSet: ILCorePremiumType
+ValueSet: VsILCorePremiumType
 Id: il-core-premium-type
 Title: "IL Core Premium Type codes"
 Description: "Codes for Types of premium payment methods"

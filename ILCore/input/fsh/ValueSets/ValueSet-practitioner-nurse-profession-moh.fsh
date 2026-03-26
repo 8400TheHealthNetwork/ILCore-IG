@@ -1,4 +1,4 @@
-ValueSet: PractitionerNurseProfessionMoH
+ValueSet: VsPractitionerNurseProfessionMoH
 Id: practitioner-nurse-profession-moh
 Title: "קוד מקצוע לעוסק בסיעוד"
 Description: "קוד מקצוע לעוסק בסיעוד לפי רישוי משרד הבריאות"

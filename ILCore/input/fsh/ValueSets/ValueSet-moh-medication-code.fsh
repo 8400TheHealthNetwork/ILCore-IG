@@ -1,4 +1,4 @@
-ValueSet: MoHMedicationCode
+ValueSet: VsMoHMedicationCode
 Id: moh-medication-code
 Title: "MoH Medication Code"
 Description: "Codes for medications according to MoH catalogue"

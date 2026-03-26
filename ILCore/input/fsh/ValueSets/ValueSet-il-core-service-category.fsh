@@ -1,4 +1,4 @@
-ValueSet: ILCoreServiceCategory
+ValueSet: VsILCoreServiceCategory
 Id: il-core-service-category
 Title: "IL Core ServiceCategory"
 Description: "A list of codes for Service Category for the IL Core"

@@ -1,4 +1,4 @@
-ValueSet: ResourceRoleContext
+ValueSet: VsResourceRoleContext
 Id: resource-role-context
 Title: "Resource Role Context"
 Description: "Value set used to attribute a resource instance to a specific role in the clinical or business process."

@@ -1,4 +1,4 @@
-ValueSet: ILCoreObservationLabCode
+ValueSet: VsILCoreObservationLabCode
 Id: il-core-observation-lab-code
 Title: "IL Core Observation Lab Code"
 Description: "A list of lab-code codes for lab observations for the IL Core"

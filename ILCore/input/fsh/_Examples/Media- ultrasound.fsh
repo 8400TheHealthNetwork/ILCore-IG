@@ -1,5 +1,3 @@
-Alias: $DCM = http://dicom.nema.org/resources/ontology/DCM
-
 Instance: ultrasound
 InstanceOf: ILCoreMedia
 Usage: #example
@@ -19,7 +17,7 @@ Usage: #example
 * identifier[=].system = "urn:dicom:uid"
 * identifier[=].value = "urn:oid:1.2.840.113619.2.21.3408.700.0.757923840.3.0"
 * status = #completed
-* modality = $DCM#US
+* modality = http://dicom.nema.org/resources/ontology/DCM#US
 * view = $sct#399067008 "Lateral projection"
 * subject = Reference(Patient/patient-isreali)
 * basedOn = Reference(ServiceRequest/chest-xray)

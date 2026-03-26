@@ -1,4 +1,4 @@
-ValueSet: ImmunizationSideEffects
+ValueSet: VsImmunizationSideEffects
 Id: immunization-side-effect
 Title: "Immunization side-effect codes"
 Description: "Codes from SNOMED CT detailing possible immunization-side-effects for ILCoreImmunizationReactionObservation profile"

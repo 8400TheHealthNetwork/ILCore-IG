@@ -1,4 +1,4 @@
-ValueSet: ILCoreDocumentType
+ValueSet: VsILCoreDocumentType
 Id: il-core-document-type
 Title: "IL Core Document Type codes"
 Description: "Codes for Document Types"

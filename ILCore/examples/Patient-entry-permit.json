@@ -40,28 +40,6 @@
         {
           "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
           "valueCode": "masked"
-        },
-        {
-          "url": "http://hl7.org/fhir/StructureDefinition/language",
-          "valueCode": "he"
-        }
-      ],
-      "_family": {
-        "extension": [
-          {
-            "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-            "valueCode": "masked"
-          }
-        ]
-      },
-      "_given": [
-        {
-          "extension": [
-            {
-              "url": "http://hl7.org/fhir/StructureDefinition/data-absent-reason",
-              "valueCode": "masked"
-            }
-          ]
         }
       ]
     }

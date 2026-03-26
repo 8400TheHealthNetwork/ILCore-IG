@@ -1,4 +1,4 @@
-ValueSet: PassportUri
+ValueSet: VsPassportUri
 Id: passport-uri
 Title: "Passport URIs"
 Description: "A country specific URI for passport numbers"

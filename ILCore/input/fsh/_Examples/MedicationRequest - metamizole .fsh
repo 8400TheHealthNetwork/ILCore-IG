@@ -1,4 +1,3 @@
-Alias: $HL7medreqCOT = http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy
 Instance: metamizole-for-gangreenous-tonsolitis
 InstanceOf: ILCoreMedicationRequest
 Usage: #example
@@ -25,7 +24,7 @@ Description: "MedicationRequest for Metamizole sodium, for a case of Gangrenous 
 * recorder.reference = "Practitioner/practitioner-md"
 // * recorder.type = GP // can't be right
 * reasonCode.coding = $sct#652005 "Gangrenous tonsillitis"
-* courseOfTherapyType.coding = $HL7medreqCOT#acute "Short course (acute) therapy"
+* courseOfTherapyType.coding = http://terminology.hl7.org/CodeSystem/medicationrequest-course-of-therapy#acute "Short course (acute) therapy"
 * dosageInstruction.text =  "10 טיפות כל 8 שעות עד 3 פעמים בבליעה דרך הפה"
 * dosageInstruction.route.coding[0] = $sct#26643006 "Oral route"
 * dosageInstruction.method.coding[0] = $sct#738995006 "Swallow (administration method)"

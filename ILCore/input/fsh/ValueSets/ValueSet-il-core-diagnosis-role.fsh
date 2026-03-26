@@ -1,7 +1,7 @@
-ValueSet: ILCoreDiagnosisRole
+ValueSet: VsILCoreDiagnosisRole
 Id: il-core-diagnosis-role
 Title: "IL Core Diagnosis Role"
-Description: "Encounter.diagnosis.use value set combining HL7 diagnosis roles and IL Core additions."
+Description: "Diagnosis role value set combining HL7 diagnosis roles and IL Core additions for use across clinical contexts."
 * ^url = $vs-il-core-diagnosis-role
 * ^status = #active
 * insert ConformanceMetadata

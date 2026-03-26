@@ -1,5 +1,5 @@
 
-ValueSet: PatientVisitorTypeMoH
+ValueSet: VsPatientVisitorTypeMoH
 Id: patient-visitor-type-moh
 Title: "Patient Visitor Type MoH"
 Description: "MoH Codes for visitor type (סוג מבקר/סוג כניסה) 

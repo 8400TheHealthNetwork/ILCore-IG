@@ -11,16 +11,55 @@ const duplicateAliases = [];
 const duplicateUrls = [];
 const filesFixed = [];
 
-// Read aliases.fsh file
+const findAliasesFiles = (dir) => {
+    const matches = [];
+    const items = fs.readdirSync(dir);
+
+    items.forEach(item => {
+        const fullPath = path.join(dir, item);
+        const stat = fs.statSync(fullPath);
+
+        if (stat.isDirectory()) {
+            matches.push(...findAliasesFiles(fullPath));
+            return;
+        }
+
+        const lower = item.toLowerCase();
+        if (lower.endsWith('.fsh') && lower.includes('aliases')) {
+            matches.push(fullPath);
+        }
+    });
+
+    return matches;
+};
+
+const pickAliasesFile = (aliasesFiles) => {
+    if (aliasesFiles.length === 0) return null;
+    if (aliasesFiles.length === 1) return aliasesFiles[0];
+
+    const exact = aliasesFiles.find(p => path.basename(p).toLowerCase() === 'aliases.fsh');
+    if (exact) return exact;
+
+    const sorted = [...aliasesFiles].sort((a, b) => a.localeCompare(b, 'en', { sensitivity: 'base' }));
+    return sorted[0];
+};
+
+// Read aliases file (any *.fsh containing "aliases" in its name, case-insensitive)
 const readAliases = () => {
-    const aliasesPath = path.join(fshFolder, 'aliases.fsh');
+    const aliasesFiles = findAliasesFiles(fshFolder);
+    const aliasesPath = pickAliasesFile(aliasesFiles);
     
-    if (!fs.existsSync(aliasesPath)) {
-        console.log('⚠️  No aliases.fsh file found');
+    if (!aliasesPath) {
+        console.log('⚠️  No aliases file found (looked for any *.fsh containing "aliases" in the name)');
         return;
     }
+
+    const aliasesRelative = path.relative(fshFolder, aliasesPath);
+    if (aliasesFiles.length > 1) {
+        console.log(`⚠️  Multiple aliases files found; using: ${aliasesRelative}`);
+    }
     
-    console.log('📖 Reading aliases.fsh...');
+    console.log(`📖 Reading ${aliasesRelative}...`);
     const content = fs.readFileSync(aliasesPath, 'utf8');
     const lines = content.split('\n');
     
@@ -49,7 +88,7 @@ const readAliases = () => {
             duplicateAliases.push({
                 url: url,
                 aliases: aliasNames,
-                file: 'aliases.fsh'
+                file: aliasesRelative
             });
         }
     });

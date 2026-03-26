@@ -1,4 +1,4 @@
-ValueSet: MoHAdmitSource
+ValueSet: VsMoHAdmitSource
 Id: moh-admit-source
 Title: "MoH Admit Source Codes"
 Description: "Codes for admit source according to MoH catalogue"

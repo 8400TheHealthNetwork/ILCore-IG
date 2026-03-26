@@ -1,4 +1,4 @@
-ValueSet: ILCoreCoverageType
+ValueSet: VsILCoreCoverageType
 Id: il-core-coverage-type
 Title: "IL Core Coverage Type codes"
 Description: "Codes for expressing general heigh level coverage types unique to Israel health system"

@@ -1,4 +1,4 @@
-ValueSet: PassportEncUri
+ValueSet: VsPassportEncUri
 Id: passport-enc-uri
 Title: "Encoded Passport URIs"
 Description: "An encoded country specific URI for passport numbers"

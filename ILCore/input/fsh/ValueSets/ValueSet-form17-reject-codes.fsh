@@ -1,4 +1,4 @@
-ValueSet: Tofes17RejectCodes
+ValueSet: VsTofes17RejectCodes
 Id: tofes17-reject-codes
 Title: "Tofes17 Reject Codes"
 Description: "קודי שגיאה לתהליכים הקשורים לטופס 17"

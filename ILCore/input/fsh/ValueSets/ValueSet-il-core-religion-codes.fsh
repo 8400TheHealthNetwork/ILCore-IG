@@ -1,4 +1,4 @@
-ValueSet: ILCoreReligionCode
+ValueSet: VsILCoreReligionCode
 Id: il-core-religion-code
 Title: "IL Core Religion Code"
 Description: "A list of codes for Religion for the IL Core"

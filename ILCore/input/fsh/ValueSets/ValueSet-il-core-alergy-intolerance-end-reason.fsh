@@ -1,4 +1,4 @@
-ValueSet: ILCoreAllergyIntoleranceEndReason
+ValueSet: VsILCoreAllergyIntoleranceEndReason
 Id: il-core-allergy-intolerance-end-reason
 Title: "IL Core Condition End Reason"
 Description: "A list of codes for End Reasons of Allergy Intolerance for the IL Core"

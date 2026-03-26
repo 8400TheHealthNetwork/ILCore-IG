@@ -119,16 +119,7 @@
   ],
   "eligibility": [
     {
-      "comment": "Evidence of application for DVA status may be sufficient for commencing assessment",
-      "code": {
-        "coding": [
-          {
-            "system": "http://hl7.org/fhir/eligibility",
-            "code": "uninsured-patients",
-            "display": "Uninsured patients"
-          }
-        ]
-      }
+      "comment": "Evidence of application for DVA status may be sufficient for commencing assessment"
     }
   ],
   "program": [

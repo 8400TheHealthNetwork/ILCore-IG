@@ -1,4 +1,4 @@
-ValueSet: PractitionerEducationMoH
+ValueSet: VsPractitionerEducationMoH
 Id: practitioner-education-moh
 Title: "קוד השכלה לעוסק בבריאות"
 Description: "קוד השכלה לעוסק בבריאות לפי רישוי משרד הבריאות"

@@ -1,4 +1,4 @@
-ValueSet: HebrewDateDay
+ValueSet: VsHebrewDateDay
 Id: hebrew-date-day
 Title: "Hebrew Date Day"
 Description: "Codes for Hebrew date days"

@@ -1,5 +1,3 @@
-Alias: $route = http://hl7.org/fhir/ValueSet/immunization-route
-
 Profile: ILCoreImmunization
 Parent: Immunization
 Id: il-core-immunization
@@ -50,7 +48,7 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * site from $vs-immun-body-site (extensible)
 * site ^example.valueCodeableConcept = $sct#368208006 "Left upper arm structure (body structure)"
 * site ^example.label = "Valid Example"
-* route from $route (extensible)
+* route from http://hl7.org/fhir/ValueSet/immunization-route (extensible)
 * performer.actor only Reference(ILCorePractitioner or ILCorePractitionerRole or ILCoreOrganization)
 * reasonReference only Reference(ILCoreCondition or ILCoreObservation or ILCoreDiagnosticReport)
 * protocolApplied.targetDisease from $vs-target-disease (preferred)

@@ -1,5 +1,5 @@
 
-ValueSet: ICD9ILProcedures
+ValueSet: VsICD9ILProcedures
 Id: icd9il-procedures
 Title: "ICD9 IL Procedures"
 Description: "codes of procedures from ICD9-IL"

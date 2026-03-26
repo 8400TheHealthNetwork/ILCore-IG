@@ -121,7 +121,7 @@ Alias: $ext-encounter-paying-entity =   http://fhir.health.gov.il/StructureDefin
 Alias: $ext-med-req-procedure-reference = http://fhir.health.gov.il/StructureDefinition/ext-medication-request-procedure-reason-reference
 Alias: $ext-patient-birth-place =       http://fhir.health.gov.il/StructureDefinition/il-core-patient-birth-place
 Alias: $ext-sub-dosage-step =       http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step
-Alias: $ext-language =                  http://fhir.health.gov.il/StructureDefinition/il-core-language
+Alias: $ext-languages-il-core =         http://fhir.health.gov.il/StructureDefinition/il-core-language
 Alias: $ext-il-core-birthsex =          http://fhir.health.gov.il/StructureDefinition/ext-il-core-birthsex
 Alias: $ext-resource-encounter-stage-context = http://fhir.health.gov.il/StructureDefinition/ext-resource-encounter-stage-context
 Alias: $ext-medication-regimen = http://fhir.health.gov.il/StructureDefinition/ext-medication-regimen
@@ -135,11 +135,10 @@ Alias: $bldng-num-suffx =               http://hl7.org/fhir/StructureDefinition/
 Alias: $unit-id =                       http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-unitID
 Alias: $post-box =                      http://hl7.org/fhir/StructureDefinition/iso21090-ADXP-postBox
 Alias: $geolocation =                   http://hl7.org/fhir/StructureDefinition/geolocation
-Alias: $us-core-birth-sex =             http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex
 Alias: $data-absent-reason =            http://hl7.org/fhir/StructureDefinition/data-absent-reason
 Alias: $relative-date =                 http://hl7.org/fhir/StructureDefinition/relative-date
 Alias: $effective =                     http://hl7.org/fhir/StructureDefinition/codesystem-effectiveDate
-// Alias: $ext-language =                  http://hl7.org/fhir/StructureDefinition/language
+Alias: $ext-language =                  http://hl7.org/fhir/StructureDefinition/language
 Alias: $maxValueSet =                   http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet
 Alias: $modeOfArrival =                 http://hl7.org/fhir/StructureDefinition/encounter-modeOfArrival
 Alias: $body-position =                 http://hl7.org/fhir/StructureDefinition/observation-bodyPosition
@@ -169,7 +168,7 @@ Alias: $practitioner-education-type =   http://fhir.health.gov.il/cs/practitione
 Alias: $pract-certificate-type-moh =    http://fhir.health.gov.il/cs/practitioner-certificate-type-moh
 Alias: $pract-certificate-type-molsa =  http://fhir.health.gov.il/cs/practitioner-certificate-type-molsa
 Alias: $medical-service-code-moh =      http://fhir.health.gov.il/cs/medical-service-moh
-Alias: $medication-course-of-therapy-type = http://fhir.health.gov.il/cs/il-core-medication-course-of-therapy-type
+Alias: $il-core-episode-of-care-type = http://fhir.health.gov.il/cs/il-core-episode-of-care-type
 Alias: $il-core-medication-request-category =   http://fhir.health.gov.il/cs/il-core-medication-request-category
 Alias: $il-core-error-code =            http://fhir.health.gov.il/cs/il-core-error-code
 Alias: $il-core-community-unit-type =   http://fhir.health.gov.il/cs/il-core-community-unit-type
@@ -189,6 +188,8 @@ Alias: $patient-visitor-type-moh =      http://fhir.health.gov.il/cs/patient-vis
 Alias: $info-buckets =                  http://fhir.health.gov.il/cs/il-hdp-information-buckets
 Alias: $strong-identifier =             http://fhir.health.gov.il/cs/il-hdp-strong-identifier
 Alias: $pp-enc-uri =                    http://fhir.health.gov.il/cs/passport-enc-uri
+Alias: $il-core-location-physical-type = http://fhir.health.gov.il/cs/il-core-location-physical-type
+
 // Alias: $urn =                           http://fhir.health.gov.il/cs/il-core-urn
 
 // Codesystems - external
@@ -259,6 +260,11 @@ Alias: $vs-il-core-condition-code =     http://fhir.health.gov.il/ValueSet/il-co
 Alias: $vs-il-core-device-type =        http://fhir.health.gov.il/ValueSet/il-core-device-type
 Alias: $vs-il-core-document-type =      http://fhir.health.gov.il/ValueSet/il-core-document-type
 Alias: $vs-il-core-doctor-to-doctor =   http://fhir.health.gov.il/ValueSet/il-core-doctor-to-doctor
+Alias: $vs-il-core-episode-of-care-type-and-service-type = http://fhir.health.gov.il/ValueSet/il-core-episode-of-care-type-and-service-type
+Alias: $vs-il-core-episode-of-care-type = http://fhir.health.gov.il/ValueSet/il-core-episode-of-care-type
+Alias: $vs-il-core-allergy-codes =  http://fhir.health.gov.il/ValueSet/il-core-allergy-codes
+Alias: $vs-il-core-drug-allergy-codes =  http://fhir.health.gov.il/ValueSet/il-core-drug-allergy-codes
+Alias: $vs-il-core-non-drug-allergy-codes =  http://fhir.health.gov.il/ValueSet/il-core-non-drug-allergy-codes
 Alias: $vs-il-core-encounter-class =    http://fhir.health.gov.il/ValueSet/il-core-encounter-class
 Alias: $vs-il-core-identifier-type =    http://fhir.health.gov.il/ValueSet/il-core-identifier-type
 Alias: $vs-il-core-virtual-type =       http://fhir.health.gov.il/ValueSet/il-core-virtual-type
@@ -308,7 +314,7 @@ Alias: $vs-vaccine-product-code =       http://fhir.health.gov.il/ValueSet/vacci
 Alias: $vs-target-disease =             http://fhir.health.gov.il/ValueSet/target-disease
 Alias: $vs-moh-medication-code =        http://fhir.health.gov.il/ValueSet/moh-medication-code
 Alias: $vs-moh-admit-source =           http://fhir.health.gov.il/ValueSet/moh-admit-source
-Alias: $vs-yarpa-medication-code =      http://fhir.health.gov.il/ValueSet/yarpa-medication-code
+// Alias: $vs-yarpa-medication-code =      http://fhir.health.gov.il/ValueSet/yarpa-medication-code
 Alias: $vs-not-performed-reason =       http://fhir.health.gov.il/ValueSet/il-core-not-performed-reason
 Alias: $vs-patient-visit-reason-moh =   http://fhir.health.gov.il/ValueSet/patient-visit-reason-moh
 Alias: $vs-patient-admit-source-moh =   http://fhir.health.gov.il/ValueSet/patient-admit-source-moh
@@ -331,7 +337,7 @@ Alias: $vitalsigns =                    http://hl7.org/fhir/ValueSet/observation
 Alias: $hl7-vs-coverage-class =         http://hl7.org/fhir/ValueSet/coverage-class
 Alias: $vs-ucum =                       http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $vs-device-type-hl7 =            http://hl7.org/fhir/ValueSet/device-type
-
+Alias: $vs-il-core-location-physical-type = http://fhir.health.gov.il/ValueSet/il-core-location-physical-type
 
 
 
@@ -355,3 +361,6 @@ Alias: $vs-il-hdp-information-buckets           = http://fhir.health.gov.il/Valu
 Alias: $vs-resource-role-context                = http://fhir.health.gov.il/ValueSet/resource-role-context
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
+//mimetypes
+Alias: $mime-types =  urn:ietf:bcp:13
+

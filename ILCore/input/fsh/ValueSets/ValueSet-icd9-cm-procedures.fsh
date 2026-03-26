@@ -1,4 +1,4 @@
-ValueSet: Icd9CmProcedures
+ValueSet: VsIcd9CmProcedures
 Id: icd9-cm-procedures
 Title: "Icd9 Cm Procedures"
 Description: "All Procedure codes from ICD9-CM codesystem"

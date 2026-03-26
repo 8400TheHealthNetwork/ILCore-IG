@@ -1,5 +1,5 @@
 
-ValueSet: EncounterPayingEntityMoH
+ValueSet: VsEncounterPayingEntityMoH
 Id: encounter-paying-entity-moh
 Title: "Encounter Paying Entity MoH"
 Description: "MoH Codes for the Paying Entity for the Encounter 

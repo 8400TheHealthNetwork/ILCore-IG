@@ -1,4 +1,4 @@
-ValueSet: ILCoreProcedureCode
+ValueSet: VsILCoreProcedureCode
 Id: il-core-procedure-code
 Title: "IL Core procedure Codes"
 Description: "A list of codes for procedures for the IL Core"

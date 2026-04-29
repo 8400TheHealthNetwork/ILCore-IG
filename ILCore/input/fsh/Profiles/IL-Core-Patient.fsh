@@ -23,8 +23,7 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
     $ext-admin-parent-name named parentName 0..* and
     $ext-birth-place named birthPlace 0..1 and 
     ext-patient-immigration named immigration 0..* and
-    $ext-il-core-birthsex named birthSex 0..1 
-    // $us-core-birth-sex named birthSex 0..1 
+    $ext-birth-sex named birthSex 0..1 
 * extension[hmo] ^short = "Extension: Israel Core HMO (קופת חולים)"
 * extension[hmo] ^definition = "A code classifying the person's Israeli HMO"
 * extension[hmo] ^mustSupport = true
@@ -37,8 +36,10 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * extension[birthPlace].valueAddress.country from $vs-il-core-extended-country-codes (required)
 * extension[immigration] ^short = "Extension: Patient Immigration"
 * extension[immigration] ^definition = "Extension: Immigration information for a patient - for the purpose of this extension - immigration is an international movement of a person to a destination country in order to settle as permanent resident"
-* extension[birthSex] ^short = "Extension: US Core Birth Sex Extension"
-* extension[birthSex] ^definition = "A code classifying the person’s sex assigned at birth as specified by the Office of the National Coordinator for Health IT (ONC). This extension aligns with the C-CDA Birth Sex Observation (LOINC 76689-9)."
+* extension[birthSex] ^short = "Extension: Person Recorded Sex Or Gender"
+* extension[birthSex] ^definition = "A recorded sex or gender property for the individual"
+* extension[birthSex].extension[type].valueCodeableConcept = $loinc#76689-9 "Sex assigned at birth"
+* extension[birthSex].extension[value].valueCodeableConcept from http://hl7.org/fhir/ValueSet/administrative-gender (required)
 
 * identifier ^min = 1
 * identifier.system 1..1 MS
@@ -164,8 +165,8 @@ Description: "Israel Core Proposed constraints and extensions on the Patient Res
 * contact ^slicing.discriminator.path = "relationship"
 * contact ^slicing.rules = #open
 * contact contains parent 0..*
-* contact.extension contains $contact-point-purpose named purpose 0..1
-* contact.extension[purpose].valueCodeableConcept from $vs-il-core-contact-point-purpose (extensible)
+* contact.telecom.extension contains $contact-point-purpose named purpose 0..1
+* contact.telecom.extension[purpose].valueCodeableConcept from $vs-il-core-contact-point-purpose (extensible)
 * contact[parent].relationship ^patternCodeableConcept = http://terminology.hl7.org/CodeSystem/v3-RoleCode#PRN
 // * contact[Child].relationship.coding ^patternCoding = {system: "http://terminology.hl7.org/CodeSystem/v2-0131", code: "CHD"}
 

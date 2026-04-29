@@ -1,6 +1,3 @@
-Alias: $messagetypes = http://acme.org/messagetypes
-Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
-
 Instance: alert
 InstanceOf: ILCoreCommunication
 Usage: #example
@@ -10,9 +7,9 @@ Usage: #example
 * instantiatesUri = "http://mockup.org/hyperkalemia"
 * partOf.display = "Serum Potassium Observation"
 * status = #completed
-* category = $messagetypes#Alert
+* category = http://acme.org/messagetypes#Alert
 * category.text = "Alert"
-* medium = $v3-ParticipationMode#WRITTEN "written"
+* medium = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode#WRITTEN "written"
 * medium.text = "written"
 * subject = Reference(Patient/patient-israeli)
 * encounter = Reference(Encounter/home-visit)

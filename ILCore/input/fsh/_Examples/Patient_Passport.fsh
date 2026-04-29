@@ -12,7 +12,7 @@ Usage: #example
 * extension[hmo].valueCodeableConcept = $payer#101 "קופת חולים כללית"
 * extension[birthPlace].valueAddress.line = "New york City, NY, USA"
 * extension[birthPlace].valueAddress.country = #USA
-* extension[birthSex].valueCode = #M
+* extension[birthSex].extension[value].valueCodeableConcept = http://hl7.org/fhir/administrative-gender#male "Male"
 * active = true
 * name.family = "Smith"
 * name.given[0] = "David" 

@@ -1,6 +1,3 @@
-Alias: $goal-category = http://terminology.hl7.org/CodeSystem/goal-category
-Alias: $goal-priority = http://terminology.hl7.org/CodeSystem/goal-priority
-
 Instance: weight-loss
 InstanceOf: ILCoreGoal
 Usage: #example
@@ -9,8 +6,8 @@ Usage: #example
 * identifier[0].system = "http://fhir.community-emr.co.il/identifier/entity-id/goals"
 * identifier[0].value = "234234234"
 * lifecycleStatus = #on-hold
-* category = $goal-category#dietary
-* priority = $goal-priority#high-priority "High Priority"
+* category = http://terminology.hl7.org/CodeSystem/goal-category#dietary
+* priority = http://terminology.hl7.org/CodeSystem/goal-priority#high-priority "High Priority"
 * priority.text = "high"
 * description.text = "Target weight is 160 to 180 lbs."
 * subject = Reference(Patient/patient-immigrant)

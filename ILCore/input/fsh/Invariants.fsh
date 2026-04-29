@@ -84,7 +84,7 @@ Severity: #error
 
 Invariant: il-patient-name
 Description: "Either Patient.name.given and/or Patient.name.family SHALL be present or a Data Absent Reason Extension SHALL be present."
-Expression: "(family.exists() or given.exists()) xor extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
+Expression: "(family.exists() or given.exists()) or extension('http://hl7.org/fhir/StructureDefinition/data-absent-reason').exists()"
 Severity: #error
 
 Invariant: identifier-dash
@@ -173,9 +173,9 @@ Expression: "system.hasValue() or (system.extension.where(url='http://hl7.org/fh
 // Expression: "startsWith('http://hl7.org/fhir/sid/passport-[XXX]')"
 
 Invariant: il-core-dosage-ext
-Description: "If extension ext-sub-dosage-step is used, it must appear at least twice"
+Description: "If extension ext-sub-dosage-step is used, it must appear at least once"
 Severity: #error
-Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').count() = 0 or extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').count() >= 2"
+Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').count() = 0 or extension.where(url = 'http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').count() >= 1"
 
 
 Invariant: il-dosage-no-parent-dose-when-substeps

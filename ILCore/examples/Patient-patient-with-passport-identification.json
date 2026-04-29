@@ -43,7 +43,7 @@
       }
     },
     {
-      "url": "http://hl7.org/fhir/us/core/StructureDefinition/us-core-birthsex",
+      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-core-birthsex",
       "valueCode": "M"
     }
   ],

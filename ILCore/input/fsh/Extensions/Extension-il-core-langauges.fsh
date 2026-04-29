@@ -1,18 +1,20 @@
 Extension: ExtILCoreLanguages
+Parent: http://hl7.org/fhir/StructureDefinition/language
 Id: ext-il-core-languages
 Title: "Extension: ILCore Languages"
-Description: "Extension: ILCore Languages. Allowing the use of Hebrew as a language in 'name' elements"
-
+Description: "Profile on the HL7 Extension: Human Language. Allowing the use of Hebrew as a language"
 * ^status = #active
-* ^url = $ext-language
-* ^context[0].type = #element
-* ^context[0].expression = "Patient.name"
-* ^context[1].type = #element
-* ^context[1].expression = "Practitioner.name"
-* ^context[2].type = #element
-* ^context[2].expression = "RelatedPerson.name"
+* ^url = $ext-languages-il-core
+* ^context[+].type = #element
+* ^context[=].expression = "HumanName"
+* ^context[+].type = #element
+* ^context[=].expression = "Address"
+* ^context[+].type = #element
+* ^context[=].expression = "Annotation"
+* ^context[+].type = #element
+* ^context[=].expression = "string"
+* ^context[+].type = #element
+* ^context[=].expression = "markdown"
 * insert ConformanceMetadata
 
-* value[x] only code
-* valueCode 1..1
-* valueCode from $vs-il-core-lang (preferred)
+* valueCode from $vs-il-core-lang (required)

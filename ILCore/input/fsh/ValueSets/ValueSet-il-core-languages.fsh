@@ -7,6 +7,5 @@ Description: "ValueSet IL Core Languages: A list of languages in use in the ILCo
 * ^status = #active
 * insert ConformanceMetadata
 * ^experimental = false
+* include codes from valueset http://hl7.org/fhir/ValueSet/languages
 * urn:ietf:bcp:47#he "Hebrew"
-// * urn:ietf:bcp:47#en "English"
-* urn:ietf:bcp:47#ar "Arabic"

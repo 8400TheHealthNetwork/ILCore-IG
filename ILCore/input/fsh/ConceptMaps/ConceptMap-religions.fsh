@@ -4,7 +4,7 @@ Usage: #definition
 Title: "IL Core Religions"
 Description: "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"
 * url = $concept-religion
-* version = "0.20.1"
+* version = "0.20.4"
 * name = "Religion code mapping from Israeli MoH to HL7 v3-ReligiousAffiliation"
 * status = #active
 * experimental = false

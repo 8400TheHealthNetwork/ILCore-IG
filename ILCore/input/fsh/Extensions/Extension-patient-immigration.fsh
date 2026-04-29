@@ -1,4 +1,3 @@
-Alias: $LL5005 = http://loinc.org/vs/LL5005-5
 Extension: PatientImmigration
 Id: ext-patient-immigration
 Title: "Ext: Patient Immigration"
@@ -49,6 +48,6 @@ Description: "Extension: Immigration information for patient - for the purpose o
 * extension[status].url only uri
 * extension[status].value[x] 1..
 * extension[status].value[x] only CodeableConcept
-* extension[status].valueCodeableConcept from $LL5005 (required)
+* extension[status].valueCodeableConcept from http://loinc.org/vs/LL5005-5 (required)
 * extension[status].valueCodeableConcept ^example.valueCodeableConcept = $loinc#LA29155-1 "Naturalized citizen"
 * extension[status].valueCodeableConcept ^example.label = "Valid Example"

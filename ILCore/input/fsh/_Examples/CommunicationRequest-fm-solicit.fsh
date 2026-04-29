@@ -1,6 +1,3 @@
-Alias: $messagetypes = http://acme.org/messagetypes
-Alias: $v3-ParticipationMode = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode
-
 Instance: fm-solicit
 InstanceOf: ILCoreCommunicationRequest
 Usage: #example
@@ -12,9 +9,9 @@ Usage: #example
 * replaces.display = "prior CommunicationRequest"
 * groupIdentifier.value = "12345"
 * status = #active
-* category = $messagetypes#SolicitedAttachmentRequest
+* category = http://acme.org/messagetypes#SolicitedAttachmentRequest
 * priority = #routine
-* medium = $v3-ParticipationMode#WRITTEN "written"
+* medium = http://terminology.hl7.org/CodeSystem/v3-ParticipationMode#WRITTEN "written"
 * medium.text = "written"
 * encounter = Reference(Encounter/breast-screaning)
 * payload.contentString = "Please provide the accident report and any associated pictures to support your Claim# DEF5647."

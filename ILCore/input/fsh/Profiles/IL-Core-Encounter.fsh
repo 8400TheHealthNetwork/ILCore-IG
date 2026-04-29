@@ -107,5 +107,6 @@ Description: "Israel Core proposed constraints and extensions on the Encounter R
 * hospitalization.destination only Reference(ILCoreLocation or ILCoreOrganization)
 * hospitalization.dischargeDisposition from $vs-patient-release-type-moh (example)
 * location.location only Reference(ILCoreLocation)
+* location.physicalType from $vs-il-core-location-physical-type (preferred)
 * serviceProvider only Reference(ILCoreOrganization)
 * partOf only Reference(ILCoreEncounter)

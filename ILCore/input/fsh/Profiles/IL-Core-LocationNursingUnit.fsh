@@ -17,7 +17,7 @@ Description: "Israel Core constraints for nursing unit locations"
 * type.coding[nursing-unit].system = $il-core-location-physical-type (exactly)
 * type.coding[nursing-unit].code = #hospital-nursing-unit (exactly)
 * type.coding[nursing-unit].display = "Hospital nursing unit" (exactly)
-* type.coding[hospital-unit].system = "http://hl7.org/fhir/ValueSet/location-physical-type" (exactly)
+* type.coding[hospital-unit].system = $il-core-location-physical-type (exactly)
 * type.coding[hospital-unit].code = #HU (exactly)
 * type.coding[hospital-unit].display = "Hospital unit" (exactly)
 * type.coding ^short = "Hospital nursing unit"

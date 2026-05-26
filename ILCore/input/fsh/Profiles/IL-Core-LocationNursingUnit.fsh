@@ -22,4 +22,3 @@ Description: "Israel Core constraints for nursing unit locations"
 * type.coding[hospital-unit].display = "Hospital unit" (exactly)
 * type.coding ^short = "Hospital nursing unit"
 * type.coding ^definition = "Fixed to the IL Core hospital nursing unit code."
-* mode = #kind

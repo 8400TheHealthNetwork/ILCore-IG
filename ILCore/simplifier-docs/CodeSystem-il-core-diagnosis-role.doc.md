@@ -1,5 +1,5 @@
 # IL Core Diagnosis Role CodeSystem
-Additional diagnosis role codes used with diagnosis role elements in IL Core clinical contexts.
+Deprecated diagnosis role codes formerly used with diagnosis role elements in IL Core clinical contexts.
 
 ## Canonical
 [http://fhir.health.gov.il/cs/il-core-diagnosis-role](http://fhir.health.gov.il/cs/il-core-diagnosis-role)
@@ -8,8 +8,8 @@ Additional diagnosis role codes used with diagnosis role elements in IL Core cli
 - [IL Core Diagnosis Role ValueSet](./ValueSet-il-core-diagnosis-role.doc.md)
 
 ## Diagnosis roles
-This code system adds IL Core diagnosis roles (primary and secondary) used alongside HL7 diagnosis roles. It is intended for diagnosis role elements such as `Encounter.diagnosis.use`, `EpisodeOfCare.diagnosis.role`, and other compatible contexts.
+This code system is retired. Its local primary and secondary diagnosis concepts are deprecated and are no longer included in the IL Core Diagnosis Role ValueSet. Use the corresponding SNOMED CT diagnosis role qualifier values instead. Originally it was intended for diagnosis role elements such as `Encounter.diagnosis.use`, `EpisodeOfCare.diagnosis.role`, and other compatible contexts.
 
 ## Codes
-- `primary-diagnosis` Primary diagnosis for the relevant clinical context.
-- `secondary-diagnosis` Secondary diagnosis for the relevant clinical context.
+- `primary-diagnosis` Primary diagnosis for the relevant clinical context. Deprecated; map to SNOMED CT `8319008` Principal diagnosis (contextual qualifier) (qualifier value).
+- `secondary-diagnosis` Secondary diagnosis for the relevant clinical context. Deprecated; map to SNOMED CT `85097005` Secondary diagnosis (contextual qualifier) (qualifier value).

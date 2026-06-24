@@ -70,7 +70,7 @@
         {
           "code": "6030B",
           "system": "http://fhir.health.gov.il/cs/department-type-moh",
-          "display": "מעבדות - נוירוגנ. טרשת-מחקר"
+          "display": "נוירוגנ. טרשת-מחקר"
         }
       ]
     }

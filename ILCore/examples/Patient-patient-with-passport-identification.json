@@ -43,8 +43,8 @@
       }
     },
     {
-      "url": "http://fhir.health.gov.il/StructureDefinition/ext-il-core-birthsex",
-      "valueCode": "M"
+      "url": "http://hl7.org/fhir/StructureDefinition/individual-recordedSexOrGender",
+      "valueCode": "male"
     }
   ],
   "name": [

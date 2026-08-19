@@ -1,7 +1,11 @@
 ValueSet: VsILCoreAllergyIntoleranceCode
 Id: il-core-allergy-intolerance-code
 Title: "IL Core Allergy Intolerance Code"
-Description: "A list of codes for Allergy Intolerance for the IL Core"
+Description: """
+A list of codes for Allergy Intolerance for the IL Core.
+
+Usage note for 716186003 "No known allergy (situation)": יש להשתמש במושג רק כשלא ידועה רגישות בכלל, לתרופות או לחומרים שאינם תרופות.
+"""
 * ^url = $vs-il-core-allergy-intolerance-code
 * ^status = #active
 * insert ConformanceMetadata
@@ -19,3 +23,7 @@ Description: "A list of codes for Allergy Intolerance for the IL Core"
 // * include codes from valueset $vs-icd9-cm-diagnoses
 // * include codes from valueset $vs-icd9-il-diagnoses 
 // * include codes from valueset $vs-il-core-substance
+* $sct#716186003 "No known allergy (situation)"
+
+* $sct#409137002 "No known drug allergy (situation)"
+

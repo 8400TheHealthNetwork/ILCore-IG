@@ -31,11 +31,11 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
     product 0..1 MS
 * vaccineCode.coding[vaccine] only ILCoreVaccineCoding
 * vaccineCode.coding[vaccine] from $vs-vaccine-code (required)
-* vaccineCode.coding[vaccine] ^example.valueCodeableConcept = $sct#346313005 "Allergen extract vaccines"
+* vaccineCode.coding[vaccine] ^example.valueCoding = $sct#346313005 "Allergen extract vaccines"
 * vaccineCode.coding[vaccine] ^example.label = "Valid Example"
 * vaccineCode.coding[product] only ILCoreVaccineProductCVXCoding or ILCoreVaccineProductATCCoding
 * vaccineCode.coding[product] from $vs-vaccine-product-code (required)
-* vaccineCode.coding[product] ^example.valueCodeableConcept = $atc#J07AC "Anthrax vaccines"
+* vaccineCode.coding[product] ^example.valueCoding = $atc#J07AC "Anthrax vaccines"
 * vaccineCode.coding[product] ^example.label = "Valid Example"
 * patient 1..1 MS
 * patient only Reference(ILCorePatient)

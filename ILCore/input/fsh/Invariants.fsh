@@ -185,7 +185,10 @@ Expression: "extension.where(url = 'http://fhir.health.gov.il/StructureDefinitio
     implies
   doseAndRate.empty()"
 
-
+Invariant: il-dosage-dose-required-when-no-substeps
+Description: "If ext-sub-dosage-step extension is NOT present on Dosage, doseAndRate SHALL be present."
+* severity = #error
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-sub-dosage-step').exists().not() implies doseAndRate.exists()"
 
 Invariant: il-dosage-no-parent-asneeded-when-substeps-have
 Description: "If any sub-dosage step has asNeeded, the parent Dosage SHALL NOT define asNeeded."

@@ -18,6 +18,7 @@ Description: "Adds several Israel-specific extensions and constraints to the Dos
 * ^extension[=].valueInteger = 1
 * . obeys il-core-dosage-ext
 * . obeys il-dosage-no-parent-dose-when-substeps
+* . obeys il-dosage-dose-required-when-no-substeps
 * . obeys il-dosage-no-parent-asneeded-when-substeps-have
 * text MS
 * additionalInstruction ^binding.strength = #extensible

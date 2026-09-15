@@ -314,6 +314,7 @@ Alias: $vs-reason-not-done =            http://fhir.health.gov.il/ValueSet/reaso
 Alias: $vs-immunization-side-effects =  http://fhir.health.gov.il/ValueSet/immunization-side-effect
 Alias: $vs-vaccine-code =               http://fhir.health.gov.il/ValueSet/vaccine-code
 Alias: $vs-vaccine-product-code =       http://fhir.health.gov.il/ValueSet/vaccine-product-code
+Alias: $vs-vaccine-product-system =     http://fhir.health.gov.il/ValueSet/vaccine-product-system
 Alias: $vs-target-disease =             http://fhir.health.gov.il/ValueSet/target-disease
 Alias: $vs-moh-medication-code =        http://fhir.health.gov.il/ValueSet/moh-medication-code
 Alias: $vs-moh-admit-source =           http://fhir.health.gov.il/ValueSet/moh-admit-source

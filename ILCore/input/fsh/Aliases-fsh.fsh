@@ -192,7 +192,6 @@ Alias: $strong-identifier =             http://fhir.health.gov.il/cs/il-hdp-stro
 Alias: $pp-enc-uri =                    http://fhir.health.gov.il/cs/passport-enc-uri
 Alias: $il-core-location-physical-type = http://fhir.health.gov.il/cs/il-core-location-physical-type
 
-// Alias: $urn =                           http://fhir.health.gov.il/cs/il-core-urn
 
 // Codesystems - external
 // Alias: $medical-service-code =       http://www.ama-assn.org/go/cpt
@@ -223,7 +222,6 @@ Alias: $pharmasoft-medication-code =    http://pharma-soft.co.il/catalog
 Alias: $moh-medication-code =           http://israeldrugs.health.gov.il
 // Alias: $moh-admit-source =              http://fhir.health.gov.il/ValueSet/moh-admit-source
 Alias: $country-codes  =                urn:iso:std:iso:3166
-// Alias: $urn =                           urn:ietf:rfc:3986  // created a new CS in IL-CORE section
 
 // ValueSets - ILcore
 Alias: $vs-bp-components =              http://fhir.health.gov.il/ValueSet/bp-components

@@ -23,18 +23,21 @@ Description: "Israel Core proposed constraints and extensions on the Immunizatio
 * statusReason ^example.valueCodeableConcept = $sct#310376006 "Immunization consent not given"
 * statusReason ^example.label = "Valid Example"
 * vaccineCode 1..1 MS
-* vaccineCode.coding ^slicing.discriminator[0].type = #pattern
-// * vaccineCode.coding ^slicing.discriminator[0].path = "$this"
-* vaccineCode.coding ^slicing.discriminator[0].path = "$this"
+* vaccineCode.coding ^slicing.discriminator[0].type = #value
+* vaccineCode.coding ^slicing.discriminator[0].path = "system"
 * vaccineCode.coding ^slicing.rules = #open
 * vaccineCode.coding contains
     vaccine 1..1 MS and
     product 0..1 MS
+* vaccineCode.coding[vaccine].system 1..1
+* vaccineCode.coding[vaccine].system = $sct (exactly)
 * vaccineCode.coding[vaccine] from $vs-vaccine-code (required)
-* vaccineCode.coding[vaccine] ^example.valueCodeableConcept = $sct#346313005 "Allergen extract vaccines"
+* vaccineCode.coding[vaccine] ^example.valueCoding = $sct#346313005 "Allergen extract vaccines"
 * vaccineCode.coding[vaccine] ^example.label = "Valid Example"
+* vaccineCode.coding[product].system 1..1
+* vaccineCode.coding[product].system from $vs-vaccine-product-system (required)
 * vaccineCode.coding[product] from $vs-vaccine-product-code (required)
-* vaccineCode.coding[product] ^example.valueCodeableConcept = $atc#J07AC "Anthrax vaccines"
+* vaccineCode.coding[product] ^example.valueCoding = $atc#J07AC "Anthrax vaccines"
 * vaccineCode.coding[product] ^example.label = "Valid Example"
 * patient 1..1 MS
 * patient only Reference(ILCorePatient)

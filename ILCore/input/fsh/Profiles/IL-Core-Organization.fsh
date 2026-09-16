@@ -94,7 +94,7 @@ Description: "Israel Core proposed constraints and extensions on the Organizatio
 * type[moh-institute-type] ^example.valueCodeableConcept = $institution-type-moh#76 "משרדי ממשלה"
 * type[moh-institute-type] ^example.label = "Valid Example"
 * type[moh-department-type] from $vs-department-type-moh (required)
-* type[moh-department-type] ^example.valueCodeableConcept = $department-type-moh#10000 "אשפוז - פנימית"
+* type[moh-department-type] ^example.valueCodeableConcept = $department-type-moh#10000 "פנימית"
 * type[moh-department-type] ^example.label = "Valid Example"
 * type[il-community-unit-type] from $vs-il-core-community-unit-type (required)
 * type[il-community-unit-type] ^example.valueCodeableConcept = $il-core-community-unit-type#101 "מעבדה"

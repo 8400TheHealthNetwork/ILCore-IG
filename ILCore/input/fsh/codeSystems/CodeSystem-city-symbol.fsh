@@ -2985,8 +2985,6 @@ Description: "Codes for cities in Israel"
 * #1377 ^designation[=].value = "Shave Darom"
 * #1378 "שיזף"
 * #1401 "בת חצור"
-* #1401 ^designation[0].language = #en
-* #1401 ^designation[=].value = ""
 * #1402 "חצרות חולדה"
 * #1409 "חצר בארותיים"
 * #1411 "מחנה הילה"
@@ -3017,154 +3015,58 @@ Description: "Codes for cities in Israel"
 * #1419 ^designation[0].language = #en
 * #1419 ^designation[=].value = "Nizzan B"
 * #1701 "מפעלי נחם הרטוב"
-* #1701 ^designation[0].language = #en
-* #1701 ^designation[=].value = ""
 * #1702 "נווה אילן מ. תעסוקה"
-* #1702 ^designation[0].language = #en
-* #1702 ^designation[=].value = ""
 * #1705 "מרכז כ\"ח"
 * #1706 "מפעלי גליל עליון"
-* #1706 ^designation[0].language = #en
-* #1706 ^designation[=].value = ""
 * #1707 "תל חי (מכללה)"
-* #1707 ^designation[0].language = #en
-* #1707 ^designation[=].value = ""
 * #1709 "דלתון - פארק תעשיה"
-* #1709 ^designation[0].language = #en
-* #1709 ^designation[=].value = ""
 * #1711 "מפעלי צמח"
-* #1711 ^designation[0].language = #en
-* #1711 ^designation[=].value = ""
 * #1712 "בית חולים פוריה"
-* #1712 ^designation[0].language = #en
-* #1712 ^designation[=].value = ""
 * #1713 "מרכז אזורי כדורי"
-* #1713 ^designation[0].language = #en
-* #1713 ^designation[=].value = ""
 * #1714 "תעשיות גליל תחתון"
-* #1714 ^designation[0].language = #en
-* #1714 ^designation[=].value = ""
 * #1715 "מרכז מיר\"ב"
 * #1716 "אילון תבור"
-* #1716 ^designation[0].language = #en
-* #1716 ^designation[=].value = ""
 * #1717 "מפעלי העמק (יזרעאל)"
-* #1717 ^designation[0].language = #en
-* #1717 ^designation[=].value = ""
 * #1719 "מפעלי שאן"
-* #1719 ^designation[0].language = #en
-* #1719 ^designation[=].value = ""
 * #1722 "מגדל תפן"
-* #1722 ^designation[0].language = #en
-* #1722 ^designation[=].value = ""
 * #1723 "מרכז אזורי משגב"
-* #1723 ^designation[0].language = #en
-* #1723 ^designation[=].value = ""
 * #1725 "ביה'ס אזורי מטה אשר"
 * #1728 "בר-לב"
-* #1728 ^designation[0].language = #en
-* #1728 ^designation[=].value = ""
 * #1729 "מפעלי חבל מודיעים"
-* #1729 ^designation[0].language = #en
-* #1729 ^designation[=].value = ""
 * #1736 "בתי זיקוק - קישון"
-* #1736 ^designation[0].language = #en
-* #1736 ^designation[=].value = ""
 * #1739 "מפעלי גרנות"
-* #1739 ^designation[0].language = #en
-* #1739 ^designation[=].value = ""
 * #1740 "גבעת חביבה"
-* #1740 ^designation[0].language = #en
-* #1740 ^designation[=].value = ""
 * #1741 "תעשיון השרון"
-* #1741 ^designation[0].language = #en
-* #1741 ^designation[=].value = ""
 * #1742 "תעשיון חצב"
-* #1742 ^designation[0].language = #en
-* #1742 ^designation[=].value = ""
 * #1744 "תעשיון בינימין"
-* #1744 ^designation[0].language = #en
-* #1744 ^designation[=].value = ""
 * #1745 "מפעלי חפר"
-* #1745 ^designation[0].language = #en
-* #1745 ^designation[=].value = ""
 * #1746 "קרית תעופה"
-* #1746 ^designation[0].language = #en
-* #1746 ^designation[=].value = ""
 * #1747 "מרכז אזורי שוהם"
-* #1747 ^designation[0].language = #en
-* #1747 ^designation[=].value = ""
 * #1748 "נמל תעופה בן-גוריון"
-* #1748 ^designation[0].language = #en
-* #1748 ^designation[=].value = ""
 * #1749 "תעשיון צריפין"
-* #1749 ^designation[0].language = #en
-* #1749 ^designation[=].value = ""
 * #1750 "תעשיון חבל יבנה"
-* #1750 ^designation[0].language = #en
-* #1750 ^designation[=].value = ""
 * #1751 "המרכז למחקר-נחל שורק"
-* #1751 ^designation[0].language = #en
-* #1751 ^designation[=].value = ""
 * #1753 "מפעלי כנות"
-* #1753 ^designation[0].language = #en
-* #1753 ^designation[=].value = ""
 * #1754 "תעשיון מבצע"
-* #1754 ^designation[0].language = #en
-* #1754 ^designation[=].value = ""
 * #1755 "תעשיון ראם"
-* #1755 ^designation[0].language = #en
-* #1755 ^designation[=].value = ""
 * #1761 "מפעלי צומת מלאכי"
-* #1761 ^designation[0].language = #en
-* #1761 ^designation[=].value = ""
 * #1762 "עד הלום"
-* #1762 ^designation[0].language = #en
-* #1762 ^designation[=].value = ""
 * #1763 "פארק תעשיות ספירים"
-* #1763 ^designation[0].language = #en
-* #1763 ^designation[=].value = ""
 * #1765 "עידן הנגב"
-* #1765 ^designation[0].language = #en
-* #1765 ^designation[=].value = ""
 * #1766 "קרית חינוך עזתה"
-* #1766 ^designation[0].language = #en
-* #1766 ^designation[=].value = ""
 * #1767 "מפעלי אבשלו\"ם"
 * #1768 "קריית חינוך מרחבים"
-* #1768 ^designation[0].language = #en
-* #1768 ^designation[=].value = ""
 * #1769 "מפעלי מעון"
-* #1769 ^designation[0].language = #en
-* #1769 ^designation[=].value = ""
 * #1770 "נאות חובב"
-* #1770 ^designation[0].language = #en
-* #1770 ^designation[=].value = ""
 * #1771 "אורון"
-* #1771 ^designation[0].language = #en
-* #1771 ^designation[=].value = ""
 * #1772 "ים המלח - בתי מלון"
-* #1772 ^designation[0].language = #en
-* #1772 ^designation[=].value = ""
 * #1773 "מפעלי מישור רותם"
-* #1773 ^designation[0].language = #en
-* #1773 ^designation[=].value = ""
 * #1775 "מפעלי ים המלח(סדום)"
-* #1775 ^designation[0].language = #en
-* #1775 ^designation[=].value = ""
 * #1776 "מפעלי צין - ערבה"
-* #1776 ^designation[0].language = #en
-* #1776 ^designation[=].value = ""
 * #1791 "מפעלי ברקן"
-* #1791 ^designation[0].language = #en
-* #1791 ^designation[=].value = ""
 * #1792 "תעשיון שח\"ק"
 * #1793 "שלומציון"
-* #1793 ^designation[0].language = #en
-* #1793 ^designation[=].value = ""
 * #1794 "תעשיון מיתרים"
-* #1794 ^designation[0].language = #en
-* #1794 ^designation[=].value = ""
 * #1801 "הרי יהודה מ\"א 26"
 * #1802 "הרי יהודה של\"ש"
 * #1803 "שפלת יהודה מ\"א 26"
@@ -4388,8 +4290,6 @@ Description: "Codes for cities in Israel"
   * ^property.code =  #status
   * ^property.valueCode =  #deprecated
 * #1218 "מחנה גבעת חנניה"
-* #1218 ^designation[0].language = #en
-* #1218 ^designation[=].value = ""
   * ^property.code =  #status
   * ^property.valueCode =  #deprecated
 * #1250 "מעוף"

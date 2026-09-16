@@ -27,7 +27,7 @@ InstanceOf: ILCoreOrganization
 * address.postalCode = "9446724"  
 * address.country = "IL"
 
-* type = $department-type-moh#10000 "אשפוז - פנימית"
+* type = $department-type-moh#10000 "פנימית"
 
 * partOf.reference = "Organization/agaf-pnimi"
  

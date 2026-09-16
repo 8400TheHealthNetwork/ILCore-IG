@@ -74,7 +74,7 @@
         {
           "code": "10000",
           "system": "http://fhir.health.gov.il/cs/department-type-moh",
-          "display": "אשפוז - פנימית"
+          "display": "פנימית"
         }
       ]
     }

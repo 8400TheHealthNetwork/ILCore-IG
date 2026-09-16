@@ -356,6 +356,7 @@ Alias: $il-core-diagnosis-role                  = http://fhir.health.gov.il/cs/i
 Alias: $il-core-resource-role-context           = http://fhir.health.gov.il/cs/il-core-resource-role-context
 Alias: $il-core-practitioner-role               = http://fhir.health.gov.il/cs/il-core-practitioner-role
 Alias: $diagnosis-role                          = http://terminology.hl7.org/CodeSystem/diagnosis-role
+Alias: $list-example-use-codes                  = http://terminology.hl7.org/CodeSystem/list-example-use-codes
 // New ValueSets
 Alias: $vs-diagnosis-role                       = http://terminology.hl7.org/ValueSet/diagnosis-role
 Alias: $vs-il-core-encounter-type               = http://fhir.health.gov.il/ValueSet/il-core-encounter-type

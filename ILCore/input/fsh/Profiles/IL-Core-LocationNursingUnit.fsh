@@ -17,9 +17,8 @@ Description: "Israel Core constraints for nursing unit locations"
 * type.coding[nursing-unit].system = $il-core-location-physical-type (exactly)
 * type.coding[nursing-unit].code = #hospital-nursing-unit (exactly)
 * type.coding[nursing-unit].display = "Hospital nursing unit" (exactly)
-* type.coding[hospital-unit].system = $il-core-location-physical-type (exactly)
+* type.coding[hospital-unit].system = $v3-RoleCode (exactly)
 * type.coding[hospital-unit].code = #HU (exactly)
 * type.coding[hospital-unit].display = "Hospital unit" (exactly)
 * type.coding ^short = "Hospital nursing unit"
 * type.coding ^definition = "Fixed to the IL Core hospital nursing unit code."
-* mode = #kind

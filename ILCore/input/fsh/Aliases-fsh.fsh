@@ -192,7 +192,6 @@ Alias: $strong-identifier =             http://fhir.health.gov.il/cs/il-hdp-stro
 Alias: $pp-enc-uri =                    http://fhir.health.gov.il/cs/passport-enc-uri
 Alias: $il-core-location-physical-type = http://fhir.health.gov.il/cs/il-core-location-physical-type
 
-// Alias: $urn =                           http://fhir.health.gov.il/cs/il-core-urn
 
 // Codesystems - external
 // Alias: $medical-service-code =       http://www.ama-assn.org/go/cpt
@@ -223,7 +222,6 @@ Alias: $pharmasoft-medication-code =    http://pharma-soft.co.il/catalog
 Alias: $moh-medication-code =           http://israeldrugs.health.gov.il
 // Alias: $moh-admit-source =              http://fhir.health.gov.il/ValueSet/moh-admit-source
 Alias: $country-codes  =                urn:iso:std:iso:3166
-// Alias: $urn =                           urn:ietf:rfc:3986  // created a new CS in IL-CORE section
 
 // ValueSets - ILcore
 Alias: $vs-bp-components =              http://fhir.health.gov.il/ValueSet/bp-components
@@ -314,6 +312,7 @@ Alias: $vs-reason-not-done =            http://fhir.health.gov.il/ValueSet/reaso
 Alias: $vs-immunization-side-effects =  http://fhir.health.gov.il/ValueSet/immunization-side-effect
 Alias: $vs-vaccine-code =               http://fhir.health.gov.il/ValueSet/vaccine-code
 Alias: $vs-vaccine-product-code =       http://fhir.health.gov.il/ValueSet/vaccine-product-code
+Alias: $vs-vaccine-product-system =     http://fhir.health.gov.il/ValueSet/vaccine-product-system
 Alias: $vs-target-disease =             http://fhir.health.gov.il/ValueSet/target-disease
 Alias: $vs-moh-medication-code =        http://fhir.health.gov.il/ValueSet/moh-medication-code
 Alias: $vs-moh-admit-source =           http://fhir.health.gov.il/ValueSet/moh-admit-source
@@ -353,7 +352,9 @@ Alias: $il-core-encounter-type                  = http://fhir.health.gov.il/cs/i
 Alias: $il-core-hospital-nursing-unit           = http://fhir.health.gov.il/cs/il-core-hospital-nursing-unit
 Alias: $il-core-diagnosis-role                  = http://fhir.health.gov.il/cs/il-core-diagnosis-role
 Alias: $il-core-resource-role-context           = http://fhir.health.gov.il/cs/il-core-resource-role-context
+Alias: $il-core-practitioner-role               = http://fhir.health.gov.il/cs/il-core-practitioner-role
 Alias: $diagnosis-role                          = http://terminology.hl7.org/CodeSystem/diagnosis-role
+Alias: $list-example-use-codes                  = http://terminology.hl7.org/CodeSystem/list-example-use-codes
 // New ValueSets
 Alias: $vs-diagnosis-role                       = http://terminology.hl7.org/ValueSet/diagnosis-role
 Alias: $vs-il-core-encounter-type               = http://fhir.health.gov.il/ValueSet/il-core-encounter-type
@@ -363,6 +364,6 @@ Alias: $vs-il-hdp-information-buckets           = http://fhir.health.gov.il/Valu
 Alias: $vs-resource-role-context                = http://fhir.health.gov.il/ValueSet/resource-role-context
 // ConceptMaps
 Alias: $concept-religion =              http://fhir.health.gov.il/ConceptMap/il-core-religions
+Alias: $concept-il-core-diagnosis-role-to-snomed = http://fhir.health.gov.il/ConceptMap/il-core-diagnosis-role-to-snomed
 //mimetypes
 Alias: $mime-types =  urn:ietf:bcp:13
-

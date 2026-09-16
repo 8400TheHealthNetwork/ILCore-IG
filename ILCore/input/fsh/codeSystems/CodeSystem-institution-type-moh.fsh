@@ -7,7 +7,7 @@ Description: "סוג מוסד לפי רישוי משרד הבריאות - הרו
 * insert ConformanceMetadata
 * ^content = #complete
 * ^extension[0].url = $effective
-* ^extension[0].valueDate = "2025-04"
+* ^extension[0].valueDate = "2026-04"
 * ^valueSet = $vs-institution-type-moh
 * ^caseSensitive = false
 * ^experimental = false

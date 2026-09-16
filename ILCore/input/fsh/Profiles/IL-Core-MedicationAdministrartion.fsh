@@ -39,7 +39,7 @@ Description: "Israel Core proposed constraints and extensions on the MedicationA
 // * reasonCode from $vs-il-core-procedure-reason (extensible)  // shouldn't this be here? EREZ???
 * request only Reference(ILCoreMedicationRequest)
 * device only Reference(ILCoreDevice)
-* dosage.site ^binding.strength = #extensible
+* dosage.site from $bodySite (extensible)
 * dosage.route ^binding.strength = #extensible
 * dosage.method from $vs-il-core-medication-administration-code (preferred)
 * dosage.dose from $vs-il-core-common-units-of-measure (extensible)

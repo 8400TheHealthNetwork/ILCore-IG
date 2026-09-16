@@ -1,7 +1,7 @@
 CodeSystem: ILCoreDesignationUse
 Id: il-core-designation-use
 Title: "IL Core Designation Use"
-Description: "Codes used in designation.use to identify the role or policy interpretation of a designation in IL Core terminology artifacts."
+Description: "Codes used in ValueSet.compose.concept.designation.use to identify the role or policy interpretation of a designation in IL Core terminology artifacts."
 * ^status = #active
 * insert ConformanceMetadata
 * ^url = $il-core-designation-use

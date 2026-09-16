@@ -26,3 +26,5 @@ ILCore/validator_cli_output.ex.html
 ILCore/validator_cli_output.ex.html
 *.bat
 *.sh
+*.py
+.claude/settings.local.json

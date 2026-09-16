@@ -22,7 +22,7 @@ Description: "Adds several Israel-specific extensions and constraints to the Dos
 * text MS
 * additionalInstruction ^binding.strength = #extensible
 * asNeededCodeableConcept ^binding.strength = #extensible
-* site ^binding.strength = #extensible
+* site from $bodySite (extensible)
 * route ^binding.strength = #extensible
 * method from $vs-il-core-medication-administration-code (preferred)
 * doseAndRate.type ^binding.strength = #extensible

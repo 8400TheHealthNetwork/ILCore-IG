@@ -11,4 +11,4 @@ Context: Encounter
 * ^context.expression = "Encounter"
 * value[x] 1..
 * value[x] only CodeableConcept
-* valueCodeableConcept from $vs-encounter-paying-entity-moh (example)
+* valueCodeableConcept from $vs-encounter-paying-entity-moh (extensible)

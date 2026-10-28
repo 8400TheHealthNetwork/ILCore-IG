@@ -11,7 +11,7 @@ Description: "Israel ministry of health coding system for department types"
 * ^experimental = false
 * ^count = 1736
 * ^extension[0].url = $effective
-* ^extension[0].valueDate = "2026-04"
+* ^extension[0].valueDate = "2026-08"
 // declaration of "status" property
 * ^property[0].code = #status
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"

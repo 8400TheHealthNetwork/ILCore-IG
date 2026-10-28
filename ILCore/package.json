@@ -1,6 +1,6 @@
 {
     "name": "il.core.fhir.r4",
-    "version": "0.21.0",
+    "version": "0.22.1",
     "description": "FHIR Profiles and Implementation Guide for Assuta Ashdod Medical Center",
     "type": "module",
     "scripts": {

@@ -23,7 +23,7 @@ Description: "Israel Core proposed constraints and extensions on the AllergyInto
     $ext-allergy-intolerance-end named AllergyIntoleranceEnd 0..1
 * clinicalStatus and verificationStatus and code MS
 * code 1..1
-* code.coding 1..*
+* code.coding 0..*
 * code.coding.system 1..1
 * code.coding.code 1..1
 * code from $vs-il-core-allergy-intolerance-code (extensible)

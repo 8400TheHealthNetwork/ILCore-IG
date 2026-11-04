@@ -339,7 +339,7 @@ Alias: $hl7-vs-coverage-class =         http://hl7.org/fhir/ValueSet/coverage-cl
 Alias: $vs-ucum =                       http://hl7.org/fhir/ValueSet/ucum-units
 Alias: $vs-device-type-hl7 =            http://hl7.org/fhir/ValueSet/device-type
 Alias: $vs-il-core-location-physical-type = http://fhir.health.gov.il/ValueSet/il-core-location-physical-type
-
+Alias: $vs-il-core-medication-form-codes = http://fhir.health.gov.il/ValueSet/il-core-medication-form-codes
 
 
 // Additional aliases from Aliases-new.fsh (added via merge)

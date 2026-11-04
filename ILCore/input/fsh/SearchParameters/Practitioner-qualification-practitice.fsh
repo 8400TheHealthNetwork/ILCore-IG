@@ -15,8 +15,7 @@ Usage: #definition
 * code = #qualification-practice
 * base = #Practitioner
 * type = #token
-* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice').value as CodeableConcept"
-// * expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice').valueCodeableConcept"
+* expression = "Practitioner.qualification.extension('http://fhir.health.gov.il/StructureDefinition/ext-qualification-practice').value.ofType(CodeableConcept)"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

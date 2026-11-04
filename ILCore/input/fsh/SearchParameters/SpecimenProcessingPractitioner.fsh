@@ -15,7 +15,7 @@ Usage: #definition
 * code = #processing-practitioner
 * base[0] = #Specimen
 * type = #reference
-* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner').value"
+* expression = "Specimen.processing.extension('http://fhir.health.gov.il/StructureDefinition/ext-processing-practitioner').value.ofType(Reference)"
 * xpathUsage = #normal
 * target[0] = #Practitioner
 * target[+] = #PractitionerRole

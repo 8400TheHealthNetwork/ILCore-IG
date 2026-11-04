@@ -15,8 +15,7 @@ Usage: #definition
 * code = #visitor-type
 * base = #Encounter
 * type = #token
-* expression = "subject.extension('http://fhir.health.gov.il/StructureDefinition/ext-encounter-visitor-type').value as CodeableConcept"
-// * expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-encounter-visitor-type').valueCodeableConcept"
+* expression = "subject.extension('http://fhir.health.gov.il/StructureDefinition/ext-encounter-visitor-type').value.ofType(CodeableConcept)"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

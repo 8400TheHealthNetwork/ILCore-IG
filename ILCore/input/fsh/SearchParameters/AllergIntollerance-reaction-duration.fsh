@@ -15,8 +15,7 @@ Usage: #definition
 * code = #reaction-duration
 * base = #AllergyIntolerance
 * type = #quantity
-// * expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration').valueDuration"
-* expression = "reaction.extension('http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration').value.as(Duration)"
+* expression = "reaction.extension('http://fhir.health.gov.il/StructureDefinition/ext-reaction-duration').value.ofType(Duration)"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

@@ -17,8 +17,7 @@ Usage: #definition
 * base[1] = #Organization
 * base[2] = #Practitioner
 * type = #token
-* expression = "address.city.extension('http://fhir.health.gov.il/StructureDefinition/ext-city-code').value as CodeableConcept"
-// * expression = "address.extension('http://fhir.health.gov.il/StructureDefinition/ext-city-code').value"
+* expression = "address.city.extension('http://fhir.health.gov.il/StructureDefinition/ext-city-code').value.ofType(CodeableConcept)"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

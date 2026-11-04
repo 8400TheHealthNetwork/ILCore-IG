@@ -18,11 +18,8 @@ Usage: #definition
 * base[+] = #Practitioner
 * base[+] = #Organization
 * base[+] = #RelatedPerson
-* base[+] = #HealthcareService
-* base[+] = #Encounter
 * type = #token
-* expression = "address.extension('http://fhir.health.gov.il/StructureDefinition/ext-statistical-area').value as Identifier"
-// * expression = "address.extension('http://fhir.health.gov.il/StructureDefinition/ext-statistical-area').valueIdentifier"
+* expression = "address.extension('http://fhir.health.gov.il/StructureDefinition/ext-statistical-area').value.ofType(Identifier)"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

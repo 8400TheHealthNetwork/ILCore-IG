@@ -28,3 +28,7 @@ ILCore/validator_cli_output.ex.html
 *.sh
 *.py
 .claude/settings.local.json
+ILCore/validator_cli_output.ex.html
+ILCore/validator_cli_output.ex.json
+ILCore/validator_cli_output.ig.html
+ILCore/validator_cli_output.ig.json

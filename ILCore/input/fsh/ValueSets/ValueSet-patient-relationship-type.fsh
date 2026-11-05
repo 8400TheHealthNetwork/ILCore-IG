@@ -15,3 +15,5 @@ Description: "A set of codes that can be used to indicate the relationship betwe
 * $v3-RoleCode#GUARD "Guardian"
 * $v3-RoleCode#HPOWATT "healthcare power of attorney"
 
+* $sct#133932002 "Caregiver (person)"
+* $sct#1287116005 "Chaperone (person)"

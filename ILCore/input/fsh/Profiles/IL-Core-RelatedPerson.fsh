@@ -101,7 +101,7 @@ Description: "Israel Core proposed constraints and extensions on the RelatedPers
 * patient only Reference(ILCorePatient)
 * relationship MS
 * relationship 0..*
-* relationship from $vs-patient-relationship-type
+* relationship from $vs-patient-relationship-type (extensible)
 * name MS
 * insert HumanNameLanguage  // RuleSet that handles language extension and slices. -> see RuleSets/HumanNameLanguage // Kippi B. May-11 2023
 * telecom MS

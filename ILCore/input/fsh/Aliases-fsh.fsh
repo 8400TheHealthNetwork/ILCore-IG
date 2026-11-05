@@ -189,6 +189,7 @@ Alias: $patient-mode-of-arrival-moh =   http://fhir.health.gov.il/cs/patient-mod
 Alias: $patient-visitor-type-moh =      http://fhir.health.gov.il/cs/patient-visitor-type-moh
 Alias: $info-buckets =                  http://fhir.health.gov.il/cs/il-hdp-information-buckets
 Alias: $strong-identifier =             http://fhir.health.gov.il/cs/il-hdp-strong-identifier
+Alias: $hdp-resource-tags =             http://fhir.health.gov.il/cs/il-hdp-resource-tags
 Alias: $pp-enc-uri =                    http://fhir.health.gov.il/cs/passport-enc-uri
 Alias: $il-core-location-physical-type = http://fhir.health.gov.il/cs/il-core-location-physical-type
 

@@ -17,8 +17,7 @@ Usage: #definition
 * base[+] = #MedicationAdministration
 * base[+] = #MedicationDispense
 * type = #date
-* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-recorded-time').value as dateTime"
-// * expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-recorded-time').valueDateTime"
+* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-medication-recorded-time').value.ofType(dateTime)"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

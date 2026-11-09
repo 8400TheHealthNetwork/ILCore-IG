@@ -15,7 +15,7 @@ Usage: #definition
 * code = #when-handed-over
 * base = #SupplyDelivery
 * type = #date
-* expression = "SupplyDelivery.extension('http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over').value as dateTime"
+* expression = "SupplyDelivery.extension('http://fhir.health.gov.il/StructureDefinition/ext-device-dispense-when-handed-over').value.ofType(dateTime)"
 * xpathUsage = #normal
 * multipleOr = true
 * multipleAnd = false

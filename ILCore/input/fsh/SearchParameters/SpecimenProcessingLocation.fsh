@@ -1,7 +1,7 @@
 Instance: il-core-specimen-processing-location
 InstanceOf: SearchParameter
 Usage: #definition
-* url = "http://fhir.health.gov.il/SearchParameter/il-core-processing-location"
+* url = "http://fhir.health.gov.il/SearchParameter/il-core-specimen-processing-location"
 * version = "1.0.0"
 * name = "ILCoreProcessingLocation"
 * status = #active
@@ -15,7 +15,7 @@ Usage: #definition
 * code = #processing-location
 * base[0] = #Specimen
 * type = #reference
-* expression = "extension('http://fhir.health.gov.il/StructureDefinition/ext-processing-location').value"
+* expression = "Specimen.processing.extension('http://fhir.health.gov.il/StructureDefinition/ext-processing-location').value.ofType(Reference)"
 * xpathUsage = #normal
 * target[0] = #Location
 * multipleOr = true
